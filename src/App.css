@@ -1,0 +1,16 @@
+
+.leftContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%; 
+    background: #cccc55;
+}
+
+.rightContainer {
+    margin-left: 50%;
+    background: #fbfbfb;
+    height: 800px;
+}
+
