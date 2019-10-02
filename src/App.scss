@@ -1,0 +1,90 @@
+p {
+	margin-top: 0;
+	margin-bottom: 20px;
+} 
+
+
+.portfolioContainer {
+	.leftContainer {
+		/*background: #cccc55;*/
+		background: #e4e469;
+		display: flex;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	    text-align: center;
+
+		.infoContainer {
+			.bigText { 
+				font-weight: bold;
+				color: #fcfcf0;
+			}
+			.circleDivider {
+/*			    background-color: #f9f9ee;
+*/			    background-color: #fcfcf0;
+			    border-radius: 50%;
+			    display: inline-block;
+			    bottom: 5px;
+			    position: relative;
+			}	
+		}
+	}
+	.rightContainer {
+		background: #f9f9ee;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.portfolioContainer {
+		.leftContainer {
+		    position: fixed;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    width: 50%;
+		    .infoContainer {
+		    	.bigText { 
+		    		font-size: 48px;
+		    	}
+		    	.circleDivider {
+		    		height: 15px;
+		    	    width: 15px;
+		    	    border-radius: 50%;
+		    	    display: inline-block;
+		    	    bottom: 5px;
+		    	    position: relative;
+		    	}	
+		    }
+		}
+
+		.rightContainer {
+		    margin-left: 50%;
+		    height: 800px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.portfolioContainer {
+		.leftContainer {
+			position: relative;
+			width: auto;
+			height: 300px;
+			.infoContainer {
+				.bigText { 
+					font-size: 32px;	
+				}
+				.circleDivider {
+					height: 10px;
+				    width: 10px;
+				}	
+			}
+		}
+		.rightContainer {
+		    position: relative;
+		    width: auto;
+		    height: 500px;
+		}
+	}
+}
