@@ -56,24 +56,51 @@ function Home() {
 function Works() {
 	return (
 		<div className="section worksSection">
-			<div className="rightWorksContainer">
-				<div className="worksCategory">
-					<p>Title ONE</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			<div className="leftWorksContainer">
+				<div className="studiesTitleContainer">
+					<div className="worksCategory">
+						<p className="categoryTitle">Title ONE</p>
+						<p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
 				</div>
-				<div className="worksCategory">
-					<p>Title ONE</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				</div>	
-				<div className="worksCategory">
-					<p>Title ONE</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				<div className="projectsTitleContainer">
+					<div className="worksCategory">
+						<p className="categoryTitle">Title ONE</p>
+						<p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>	
+				</div>
+				<div className="articlesTitleContainer">
+					<div className="worksCategory">
+						<p className="categoryTitle">Title ONE</p>
+						<p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
 				</div>	
 			</div>
-			<div className="leftWorksContainer">
-				<p></p>
-				<p></p>
-				<p></p>
+			<div className="rightWorksContainer">
+				<div className="studiesLinksContainer">
+					<div>
+						<a href="#">Link One</a>
+						<p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+					</div>
+					<div>
+						<a href="#">Link Two</a>
+						<p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+					</div>
+					<div>
+						<a href="#">Link Three</a>
+						<p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
+					</div>
+				</div>
+				<div className="projectsLinksContainer">
+					<a href="#">Link One</a>
+					<a href="#">Link One</a>
+					<a href="#">Link One</a>
+				</div>
+				<div className="articlesLinksContainer">
+					<a href="#">Link One</a>
+					<a href="#">Link One</a>
+					<a href="#">Link One</a>
+				</div>
 			</div>
 		</div>
 	);

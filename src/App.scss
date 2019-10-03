@@ -3,6 +3,20 @@ p {
 	margin-bottom: 20px;
 }
 
+.sampleDiv {
+	/*border: 1px solid black;*/
+	height: 120px;
+	width: 200px;
+	margin: 15px;
+	display: inline-block;
+	&:nth-of-type(even) {
+		border-left: 1px solid black;
+	}
+	&:nth-of-type(odd) {
+		border-right: 1px solid black;
+	}
+}
+
 
 .portfolioContainer {
 	.leftContainer {
@@ -38,6 +52,8 @@ p {
     	    a {
     	    	color: #D0021B;
     	    	text-decoration: none;
+    	    	margin-bottom: 5px;
+    	    	font-size: 1em;
     	    }
 	    }
 	    .firstName {
@@ -58,42 +74,66 @@ p {
 /*    		        letter-spacing: 0.1rem;
 */    		        letter-spacing: 0.05rem;
     		        font-weight: 400;
-    		        transition: color 0.25s ease;
-    		        -moz-transition: color .25s ease;
-    		        -webkit-transition: color .25s
-		    	}
-		    	li {
-		    		margin-left: 15px;
-		    		cursor: pointer;
+    		        margin-left: 15px;
+    		        cursor: pointer;
+	
 		    		a {
 		    			text-decoration: none;
 		    			color: #000;
-		    			&:hover {
-		    				color: #999;
-		    			}
+		    			transition: color 0.2s ease-in;
+		    			-moz-transition: color 0.2s ease-in;
+		    			-webkit-transition: color 0.2s ease-in;
+		    			-o-transition: all 0.2s ease-in;
+		    		}
+		    		a:hover {
+		    			color: #999;
 		    		}
 		    	}
 		    }
 	    }
 	    .worksSection {
-	    	padding-bottom: 50px;
-		    .rightWorksContainer {
+	    	padding-bottom: 35px;
+		    .leftWorksContainer {
 				height: 300px;
 				width: 200px;
 				display: inline-block;
 				margin-right: 50px;
 				border-right: 1px solid #999;
 				vertical-align: top;
+				/*padding-right: 50px;*/
 				.worksCategory {
 					margin-bottom: 30px;
+					.categoryTitle {
+						font-size: 2em;
+						color: #000;
+						margin-bottom: 5px;
+					}
 				}
 		    }
-		    .leftWorksContainer {
+		    .rightWorksContainer {
 				height: 300px;
 				width: 200px;
 				display: inline-block;
 				border-left: 1px solid #999;
 				vertical-align: top;
+				/*padding-left: 50px;*/
+				a {
+					display: block;
+				}
+		    }
+		    .studiesTitleContainer, .studiesLinksContainer {
+		    	height: 175px;
+		    }
+		    .projectsTitleContainer, .articlesTitleContainer, .projectsLinksContainer, .articlesLinksContainer {
+		    	height: 125px;
+		    	margin-top: 45px;
+		    }
+		    .articlesTitleContainer, .articlesLinksContainer {
+		    	margin-top: 5px;
+		    }
+		    .categoryDescription {
+		    	font-size: 0.8em;
+		    	margin-bottom: 10px;
 		    }
 	    }
 	}
@@ -126,27 +166,61 @@ p {
 
 		.rightContainer {
 			.homeSection {
-				padding-bottom: 66px;
+				padding-bottom: 226px;
 			}
 			padding-top: 125px;
 			padding-bottom: 125px;
 		    margin-left: 50%;
 		   /* height: 500px;*/
 		    .section {
-				padding-left: 100px;
-				padding-right: 100px;
+				padding-left: 75px;
+				padding-right: 75px;
 		    }
 		    .navbarContainer {
 		    	float: right;
 		    	padding-right: 100px;
-		    	position: relative;
-		    	top: 150px;
+		    	/*position: relative;
+		    	top: 150px;*/
 		    	.navbar {
 		    		.homeLink {
 		    			margin-right: 265px;
 		    		}
 		    	}
 		    }
+	        .worksSection {
+	        	padding-bottom: 35px;
+	    	    .leftWorksContainer {
+	    			height: auto;
+	    			width: 200px;
+	    			display: inline-block;
+	    			margin-right: 50px;
+	    			border-right: 1px solid #999;
+	    			vertical-align: top;
+	    			padding-right: 50px;
+	    			.worksCategory {
+	    				margin-bottom: 30px;
+	    				.categoryTitle {
+	    					font-size: 2em;
+	    					color: #000;
+	    					margin-bottom: 5px;
+	    				}
+	    			}
+	    	    }
+	    	    .rightWorksContainer {
+	    			height: auto;
+	    			width: 200px;
+	    			display: inline-block;
+	    			border-left: 1px solid #999;
+	    			vertical-align: top;
+	    			padding-left: 50px;
+	    			a {
+	    				display: block;
+	    			}
+	    	    }
+	    	    .categoryDescription {
+	    	    	font-size: 0.75em;
+	    	    }
+	        }
 		}
 	}
 }
@@ -154,11 +228,14 @@ p {
 /* Mobile Media Query  */
 
 @media only screen and (max-width: 1000px) {
+	.mobileHide {
+		display: none;
+	}
 	.portfolioContainer {
 		.leftContainer {
 			position: relative;
 			width: auto;
-			height: 300px;
+			height: 220px;
 			.infoContainer {
 				.name, .title { 
 					font-size: 32px;	
@@ -174,12 +251,10 @@ p {
 		    width: auto;
 		    height: 500px;
 		    padding-top: 50px;
-		    .section {
+		    .homeSection {
+		    	padding-bottom: 95px;
 		    	padding-right: 30px;
 		    	padding-left: 30px;
-		    }
-		    .homeSection {
-		    	padding-bottom: 35px;
 		    }
 		    .navbarContainer {
 		    	margin-left: auto;
@@ -190,6 +265,28 @@ p {
 		    		padding-left: 0;
 		    	}
 		    }
+    	    .worksSection {
+    	    	.leftWorksContainer {
+    	    		padding-top: 15px;
+    	    		height: 300px;
+        		    width: 125px;
+        		    display: inline-block;
+        		    margin-right: 28px;
+        		    border-right: 1px solid #999;
+        		    vertical-align: top;
+        		    /* padding-right: 25px; */
+        		    margin-left: 44px;
+    	    	}
+    	    	.rightWorksContainer {
+    	    		padding-top: 15px;
+    	    		height: 300px;
+	    		    width: 125px;
+	    		    display: inline-block;
+	    		    border-left: 1px solid #999;
+	    		    vertical-align: top;
+	    		    padding-left: 46px;
+    	    	}
+    	    }
 		}
 	}
 }
