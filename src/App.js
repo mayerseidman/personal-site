@@ -1,20 +1,88 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.scss';
 
+// import logo from './logo.svg';
 // img src={logo}
 
-function App() {
-    return (
-        <div className="portfolioContainer">
-            <div className="leftContainer">
-            	<div className="infoContainer">
-            		<p className="name bigText">Mayer Seidman</p>
-            		<p className="title bigText">Designer <span className="circleDivider"></span> Developer</p>
-            	</div>
-            </div>
-            <div className="rightContainer"></div>
-        </div>
-    );
+export default class App extends Component {
+	constructor(props) {
+	    super(props);
+	    this.state = { };
+	}
+
+	render() {
+		return (
+			<div className="portfolioContainer">
+			    <div className="leftContainer">
+			    	<div className="infoContainer">
+			    		<p className="name">Mayer Seidman</p>
+			    		<p className="title">Designer <span className="circleDivider"></span> Developer</p>
+			    	</div>
+			    </div>
+			    <div className="rightContainer">
+		    		<Router>
+			    		<Route exact path="/" component={ Home } />
+			    		<Route exact path="/works" component={ Works } />
+			    		<Route path="/about" component={ About } />
+			    		<div className="navbarContainer">
+				    		<ul className="navbar">
+				    			<li className="navItem homeLink"><Link to="/">//</Link></li>
+				    			<li className="navItem"><Link to="/works">Works</Link></li>
+				    			<li className="navItem"><Link to="/about">About</Link></li>
+				    			<li className="navItem"><a href="#">Resume</a></li>
+				    		</ul>
+				    	</div>
+			    	</Router>	
+			    </div>
+			</div>
+		)
+	}
 }
-export default App;
+
+function Home() {
+	return (
+		<div className="section homeSection">
+			<p>Hi, I’m <span className="firstName">Mayer</span>.</p>
+			<p>No, I am not perfect. This quote means a lot to me because I think the details are essential. People can feel the sweat and effort that goes into everything we produce…</p>
+			<p>I spend my days as a designer and developer at <a href="" target="_blank">WhooosReading</a>.</p>
+			<p>I like creating things that help others and… <a href="" target="_blank">link to github...</a>  </p>
+			<p>I enjoy writing about <a href="" target="_blank">UI/UX topics</a>. </p>
+			<p>I help others grow and share skills as a moderator in <a href="" target="_blank">React FB Group</a></p>
+		</div>
+  	);
+}
+
+function Works() {
+	return (
+		<div className="section worksSection">
+			<div className="rightWorksContainer">
+				<div className="worksCategory">
+					<p>Title ONE</p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>
+				<div className="worksCategory">
+					<p>Title ONE</p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>	
+				<div className="worksCategory">
+					<p>Title ONE</p>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+				</div>	
+			</div>
+			<div className="leftWorksContainer">
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+		</div>
+	);
+}
+
+function About() {
+  return (
+    <div>
+      <h2>About</h2>
+    </div>
+  );
+}
