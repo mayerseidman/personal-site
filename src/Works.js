@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 class Works extends React.Component {
     render() {
-        const Work = ({ match }) => <p>{ this.props.match.params.id }</p>
+        const { workId } = this.props.match.params;
         return (
             <div className="section worksSection">
                 <div className="leftWorksContainer">
@@ -30,11 +30,11 @@ class Works extends React.Component {
                 <div className="rightWorksContainer">
                     <div className="studiesLinksContainer">     
                         <div>
-                          <Link to={`${this.props.match.url}/one`}>Link One</Link>
+                          <Link to={`${this.props.match.path}/one`}>Link One</Link>
                             <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
                         </div>
                         <div>
-                            <Link to="/works/2">Link Two</Link>
+                            <Link to={`${this.props.match.path}/two`}>Link Two</Link>
                             <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
                         </div>
                         <div>
@@ -53,7 +53,7 @@ class Works extends React.Component {
                         <a href="#">Link One</a>
                     </div>
                 </div>
-                <Route path={`${this.props.match.path}/:workId`} component={ Work } />
+                { /* workId && <StudyOne workId={workId} /> */ }
             </div>
         );
     }
