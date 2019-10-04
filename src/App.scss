@@ -92,7 +92,6 @@ p {
 		    }
 	    }
 	    .worksSection {
-	    	padding-bottom: 35px;
 		    .leftWorksContainer {
 				height: 300px;
 				width: 200px;
@@ -104,7 +103,6 @@ p {
 				.worksCategory {
 					margin-bottom: 30px;
 					.categoryTitle {
-						font-size: 2em;
 						color: #000;
 						margin-bottom: 5px;
 					}
@@ -121,11 +119,8 @@ p {
 					display: block;
 				}
 		    }
-		    .studiesTitleContainer, .studiesLinksContainer {
-		    	height: 175px;
-		    }
 		    .projectsTitleContainer, .articlesTitleContainer, .projectsLinksContainer, .articlesLinksContainer {
-		    	height: 125px;
+		    	height: 100px;
 		    	margin-top: 45px;
 		    }
 		    .articlesTitleContainer, .articlesLinksContainer {
@@ -188,7 +183,7 @@ p {
 		    	}
 		    }
 	        .worksSection {
-	        	padding-bottom: 35px;
+	        	padding-bottom: 45px;
 	    	    .leftWorksContainer {
 	    			height: auto;
 	    			width: 200px;
@@ -219,6 +214,12 @@ p {
 	    	    }
 	    	    .categoryDescription {
 	    	    	font-size: 0.75em;
+	    	    }
+	    	    .studiesTitleContainer, .studiesLinksContainer {
+	    	    	height: 175px;
+	    	    }
+	    	    .projectsTitleContainer, .articlesTitleContainer, .projectsLinksContainer, .articlesLinksContainer {
+	    	    	margin-top: 45px;
 	    	    }
 	        }
 		}
@@ -266,9 +267,10 @@ p {
 		    	}
 		    }
     	    .worksSection {
+    	    	padding-bottom: 84px;
     	    	.leftWorksContainer {
     	    		padding-top: 15px;
-    	    		height: 300px;
+    	    		height: auto;
         		    width: 125px;
         		    display: inline-block;
         		    margin-right: 28px;
@@ -277,14 +279,29 @@ p {
         		    /* padding-right: 25px; */
         		    margin-left: 44px;
     	    	}
+    	    	.worksCategory {
+    	    		.categoryTitle {
+    	    			font-size: 1.4em;
+    	    		}
+    	    	}
     	    	.rightWorksContainer {
     	    		padding-top: 15px;
-    	    		height: 300px;
+    	    		height: auto;
 	    		    width: 125px;
 	    		    display: inline-block;
 	    		    border-left: 1px solid #999;
 	    		    vertical-align: top;
 	    		    padding-left: 46px;
+    	    	}
+    	    	.studiesTitleContainer, .studiesLinksContainer {
+    	    		height: 125px;
+    	    	}
+    	    	.studiesTitleContainer, .studiesLinksContainer, .projectsTitleContainer, .articlesTitleContainer, .projectsLinksContainer, .articlesLinksContainer {
+    	    		margin-top: 15px;
+    	    	}
+    	    	.projectsTitleContainer, .articlesTitleContainer, .projectsLinksContainer, .articlesLinksContainer {
+    	    		height: 100px;
+    	    		/*margin-top: 45px;*/
     	    	}
     	    }
 		}
