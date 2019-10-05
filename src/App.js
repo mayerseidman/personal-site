@@ -11,15 +11,54 @@ import StudyTwo from './StudyTwo';
 export default class App extends Component {
 	constructor(props) {
 	    super(props);
-	    this.state = { };
+	    this.state = { wordValue: "Designer", currentCount: 10 };
+	}
+
+	getChangedText() {
+		var words = ["neat", "great", "best", "groovy"];
+	    i = (i + 1) % words.length;
+	    return words[i];
+	}
+	changeText() {
+	    var text = this.getChangedText();
+	    console.log(text);
+	    this.setState({ wordValue: text })
+	}
+
+	componentDidMount() {
+		var intervalIdTimer = setInterval(this.timer.bind(this), 1000);
+		var intervalIdScrambler = setInterval(this.changeText.bind(this), 1000);
+		this.setState({ intervalIdTimer: intervalIdTimer, intervalIdScrambler: intervalIdScrambler });
+	}
+
+	componentWillUnmount() {
+	   // use intervalId from the state to clear the interval
+	   clearInterval(this.state.intervalIdTimer);
+	}
+
+	timer() {
+	   // setState method is used to update the state
+		var newCount = this.state.currentCount - 1;
+		if(newCount >= 0) { 
+		  this.setState({ currentCount: newCount });
+		} else {
+		  clearInterval(this.state.intervalIdTimer);
+		  clearInterval(this.state.intervalIdScrambler)
+		}
 	}
 
 	render() {
+		if (this.state.currentCount == 0) {
+			var title = "UI UX Designer";
+		} else {
+			var title = this.state.wordValue
+		}
 		var leftContainer = (
 			<div className="leftContainer">
 				<div className="infoContainer">
 					<p className="name">Mayer Seidman</p>
-					<p className="title">Designer <span className="circleDivider"></span> Developer</p>
+					<span className="circleDivider"></span>
+					<p className="title">{ title }</p>
 				</div>
 			</div>
 		)
@@ -49,6 +88,8 @@ export default class App extends Component {
 		)
 	}
 }
+
+var i = 0;
 
 function Home() {
 	return (
