@@ -160,16 +160,17 @@ p {
 		}
 
 		.rightContainer {
+			/*padding-top: 125px;*/
+			padding-bottom: 125px;
+		    margin-left: 50%;
 			.homeSection {
 				padding-bottom: 226px;
 			}
-			padding-top: 125px;
-			padding-bottom: 125px;
-		    margin-left: 50%;
 		   /* height: 500px;*/
 		    .section {
 				padding-left: 75px;
 				padding-right: 75px;
+				padding-top: 125px;
 		    }
 		    .navbarContainer {
 		    	float: right;

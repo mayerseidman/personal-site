@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
 import './App.scss';
 import Works from './Works';
 import StudyOne from './StudyOne';
 import StudyTwo from './StudyTwo';
+import Navbar from './Navbar';
 
 // import logo from './logo.svg';
 // img src={logo}
@@ -72,16 +74,9 @@ export default class App extends Component {
 		    				<Route exact path="/works" component={ Works } />
 		    				<Route exact path="/works/one" component={ StudyOne } />
 		    				<Route exact path="/works/two" component={ StudyTwo } />
-		    				<Route exact path="/about" component={ About } />	
+		    				<Route exact path="/about" component={ About } />
 		    			</Switch>
-			    		<div className="navbarContainer">
-				    		<ul className="navbar">
-				    			<li className="navItem homeLink"><Link to="/">//</Link></li>
-				    			<li className="navItem"><Link to="/works">Works</Link></li>
-				    			<li className="navItem"><Link to="/about">About</Link></li>
-				    			<li className="navItem"><a href="#">Resume</a></li>
-				    		</ul>
-				    	</div>
+			    		<Navbar />
 			    	</Router>	
 			    </div>
 			</div>

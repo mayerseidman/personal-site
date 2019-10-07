@@ -1,0 +1,42 @@
+.workOuterContainer {
+	padding-top: 87px;
+	.workTitle {
+		margin-bottom: 0;
+	}
+	.workContainer {
+		height: 500px;
+		width:95%; 
+		padding:30px; 
+		padding-top: 0;
+	/*	padding-bottom: 10px;
+	*/	padding-left: 25px;
+		.workContent {
+			height:475px;
+			overflow:auto;
+		}
+	}
+}
+
+
+.skill-bar span {
+    background: #00edc2;
+    height: 7px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.skill-bar span {
+    -webkit-animation: w70 1s ease forwards;
+}
+.skill-bar span {
+    width: 70%;
+}
+
+@-webkit-keyframes w70 {
+    from { width: 70%; }
+    to { width: 30%; }
+}
+
+@keyframes w70 {
+    from { width: 70%; }
+    to { width: 30%; }
+}
