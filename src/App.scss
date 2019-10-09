@@ -65,6 +65,13 @@ p {
 		    	list-style: none;
 		    	/*margin-bottom: 0;*/
 		    	margin: 0 auto;
+		    	padding-left: 0px;
+		    	.homeLink {
+		    		float: left;
+		    	}
+		    	.rightLinks {
+		    		float: right;
+		    	}
 		    	.navItem {
 		    		position: relative;
 	    		    display: inline-block;
@@ -135,7 +142,6 @@ p {
 }
 
 /* WEB Media Query  */
-
 @media only screen and (min-width: 1000px) {
 	.portfolioContainer {
 		.leftContainer {
@@ -164,7 +170,13 @@ p {
 			padding-bottom: 125px;
 		    margin-left: 50%;
 			.homeSection {
-				padding-bottom: 226px;
+				padding-bottom: 208px;
+				.quoteContainer {
+					margin-bottom: 0;
+					.quote {
+						color: #000;
+					}
+				}
 			}
 		   /* height: 500px;*/
 		    .section {
@@ -173,13 +185,14 @@ p {
 				padding-top: 125px;
 		    }
 		    .navbarContainer {
-		    	float: right;
-		    	padding-right: 100px;
+		    	/*float: left;*/
+		    	/*padding-right: 100px;*/
+		    	padding-left: 10px;
 		    	/*position: relative;
 		    	top: 150px;*/
 		    	.navbar {
 		    		.homeLink {
-		    			margin-right: 265px;
+		    			/*margin-right: 265px;*/
 		    		}
 		    	}
 		    }
@@ -228,7 +241,6 @@ p {
 }
 
 /* Mobile Media Query  */
-
 @media only screen and (max-width: 1000px) {
 	.mobileHide {
 		display: none;
@@ -254,7 +266,7 @@ p {
 		    height: 500px;
 		    padding-top: 50px;
 		    .homeSection {
-		    	padding-bottom: 95px;
+		    	padding-bottom: 57px;
 		    	padding-right: 30px;
 		    	padding-left: 30px;
 		    }

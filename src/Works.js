@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 class Works extends React.Component {
     render() {
-        const { workId } = this.props.match.params;
+        console.log(this.props.history.location.pathname)
         return (
             <div className="section worksSection">
                 <div className="leftWorksContainer">

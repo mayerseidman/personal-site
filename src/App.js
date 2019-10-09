@@ -1,95 +1,57 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { withRouter, useLocation } from "react-router";
+import { createBrowserHistory } from "history";
 
 import './App.scss';
 import Works from './Works';
 import StudyOne from './StudyOne';
 import StudyTwo from './StudyTwo';
 import Navbar from './Navbar';
+import LeftContainer from './LeftContainer';
 
 // import logo from './logo.svg';
 // img src={logo}
+const history = createBrowserHistory();
 
-export default class App extends Component {
+class App extends Component {
 	constructor(props) {
 	    super(props);
 	    this.state = { wordValue: "Designer", currentCount: 10 };
 	}
-
-	getChangedText() {
-		var words = ["neat", "great", "best", "groovy"];
-	    i = (i + 1) % words.length;
-	    return words[i];
-	}
-	changeText() {
-	    var text = this.getChangedText();
-	    console.log(text);
-	    this.setState({ wordValue: text })
-	}
-
 	componentDidMount() {
-		var intervalIdTimer = setInterval(this.timer.bind(this), 1000);
-		var intervalIdScrambler = setInterval(this.changeText.bind(this), 1000);
-		this.setState({ intervalIdTimer: intervalIdTimer, intervalIdScrambler: intervalIdScrambler });
-	}
-
-	componentWillUnmount() {
-	   // use intervalId from the state to clear the interval
-	   clearInterval(this.state.intervalIdTimer);
-	}
-
-	timer() {
-	   // setState method is used to update the state
-		var newCount = this.state.currentCount - 1;
-		if(newCount >= 0) { 
-		  this.setState({ currentCount: newCount });
-		} else {
-		  clearInterval(this.state.intervalIdTimer);
-		  clearInterval(this.state.intervalIdScrambler)
-		}
+		
 	}
 
 	render() {
-		if (this.state.currentCount == 0) {
-			var title = "UI UX Designer";
-		} else {
-			var title = this.state.wordValue
-		}
-		var leftContainer = (
-			<div className="leftContainer">
-				<div className="infoContainer">
-					<p className="name">Mayer Seidman</p>
-					<span className="circleDivider"></span>
-					<p className="title">{ title }</p>
-				</div>
-			</div>
-		)
+		var leftContainer = (<LeftContainer history={ history } />)
 		return (
 			<div className="portfolioContainer">
-				{ leftContainer }
-			    <div className="rightContainer">
-		    		<Router>
+				<Router history={ history }>
+					{ leftContainer }
+				    <div className="rightContainer">
 		    			<Switch>
-		    				<Route exact path="/" component={ Home } />
 		    				<Route exact path="/works" component={ Works } />
 		    				<Route exact path="/works/one" component={ StudyOne } />
 		    				<Route exact path="/works/two" component={ StudyTwo } />
 		    				<Route exact path="/about" component={ About } />
+		    				<Route exact path="/" component={ Home } />
 		    			</Switch>
 			    		<Navbar />
-			    	</Router>	
-			    </div>
+				    </div>
+			    </Router>	
 			</div>
 		)
 	}
 }
 
-var i = 0;
+export default App;
 
 function Home() {
 	return (
 		<div className="section homeSection">
 			<p>Hi, I’m <span className="firstName">Mayer</span>.</p>
+			<p className="quoteContainer"><span className="quote">"People can feel perfection."</span> - Walt Disney</p>
 			<p>No, I am not perfect. This quote means a lot to me because I think the details are essential. People can feel the sweat and effort that goes into everything we produce…</p>
 			<p>I spend my days as a designer and developer at <a href="" target="_blank">WhooosReading</a>.</p>
 			<p>I like creating things that help others and… <a href="" target="_blank">link to github...</a>  </p>
@@ -98,7 +60,6 @@ function Home() {
 		</div>
   	);
 }
-
 
 function About() {
   return (
