@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
+import './index.scss';
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -12,7 +13,10 @@ class Navbar extends React.Component {
         var path = location.pathname;
        if (path == "/works/one") {
             var homeLink = (
-                <li className="navItem homeLink"><Link to="/works">Mayer / Designer</Link></li>
+                <span>
+                    <li className="navItem homeLinkName mobileHide"><Link to="/works">Mayer // Designer</Link></li>
+                    <li className="navItem homeLinkName webHide"><Link to="/works">Mayer //</Link></li>
+                </span>
             )
         } else {
             var homeLink = (

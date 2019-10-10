@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import { withRouter, useLocation } from "react-router";
-import { createBrowserHistory } from "history";
 
 import './App.scss';
 import Works from './Works';
@@ -12,7 +10,6 @@ import LeftContainer from './LeftContainer';
 
 // import logo from './logo.svg';
 // img src={logo}
-const history = createBrowserHistory();
 
 class App extends Component {
 	constructor(props) {
@@ -24,10 +21,10 @@ class App extends Component {
 	}
 
 	render() {
-		var leftContainer = (<LeftContainer history={ history } />)
+		var leftContainer = (<LeftContainer />)
 		return (
 			<div className="portfolioContainer">
-				<Router history={ history }>
+				<Router>
 					{ leftContainer }
 				    <div className="rightContainer">
 		    			<Switch>

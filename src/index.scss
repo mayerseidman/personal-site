@@ -14,3 +14,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media only screen and (max-width: 1000px) {
+	.mobileHide {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.webHide {
+		display: none;
+	}
+}

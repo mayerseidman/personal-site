@@ -61,17 +61,12 @@ p {
 	    	color: #000;
 	    }
 	    .navbarContainer {
+	    	width: 89%;
 		    .navbar {
 		    	list-style: none;
 		    	/*margin-bottom: 0;*/
 		    	margin: 0 auto;
 		    	padding-left: 0px;
-		    	.homeLink {
-		    		float: left;
-		    	}
-		    	.rightLinks {
-		    		float: right;
-		    	}
 		    	.navItem {
 		    		position: relative;
 	    		    display: inline-block;
@@ -95,6 +90,16 @@ p {
 		    		a:hover {
 		    			color: #999;
 		    		}
+		    	}
+		    	.rightLinks {
+		    		float: right;
+		    	}
+		    	.homeLink {
+		    		float: left;
+		    		margin-left: 64px;
+		    	}
+		    	.homeLinkName {
+		    		margin-left: 39px;
 		    	}
 		    }
 	    }
@@ -143,6 +148,9 @@ p {
 
 /* WEB Media Query  */
 @media only screen and (min-width: 1000px) {
+	.webHide {
+		display: none !important;
+	}
 	.portfolioContainer {
 		.leftContainer {
 		    position: fixed;
@@ -243,7 +251,7 @@ p {
 /* Mobile Media Query  */
 @media only screen and (max-width: 1000px) {
 	.mobileHide {
-		display: none;
+		display: none !important;
 	}
 	.portfolioContainer {
 		.leftContainer {
@@ -273,10 +281,16 @@ p {
 		    .navbarContainer {
 		    	margin-left: auto;
 		    	margin-right: auto;
-		    	width: 291px;
+		    	width: 325px;
 		    	position: relative;
 		    	.navbar {
 		    		padding-left: 0;
+		    		.homeLink {
+		    			margin-left: 0px;
+		    		}
+		    		.homeLinkName {
+		    			margin-left: 0px;
+		    		}
 		    	}
 		    }
     	    .worksSection {
