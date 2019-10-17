@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 class Works extends React.Component {
     render() {
-        console.log(this.props.history.location.pathname)
         return (
             <div className="section worksSection">
                 <div className="leftWorksContainer">
@@ -30,7 +29,7 @@ class Works extends React.Component {
                 <div className="rightWorksContainer">
                     <div className="studiesLinksContainer">     
                         <div>
-                          <Link to={`${this.props.match.path}/one`}>Link One</Link>
+                          <Link to={`${this.props.match.path}/one`} onClick={ this.props.changeLeftContainer }>Link One</Link>
                             <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
                         </div>
                         <div>

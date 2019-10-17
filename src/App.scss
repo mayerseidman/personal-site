@@ -90,16 +90,21 @@ p {
 		    		a:hover {
 		    			color: #999;
 		    		}
+		    		a.selected {
+		    			color: #999;
+		    		}
 		    	}
 		    	.rightLinks {
 		    		float: right;
+		    		position: relative;
+		    		left: 6px;
 		    	}
 		    	.homeLink {
 		    		float: left;
 		    		margin-left: 64px;
 		    	}
 		    	.homeLinkName {
-		    		margin-left: 39px;
+		    		margin-left: 31px;
 		    	}
 		    }
 	    }
@@ -171,6 +176,29 @@ p {
 		    	    position: relative;
 		    	}	
 		    }
+		}
+		.minimize {
+			background: #e4e469;
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+		}
+		.minimize {
+		    -webkit-animation: w70 1.3s ease forwards;
+		}
+		.minimize {
+		    width: 70%;
+		}
+
+		@-webkit-keyframes w70 {
+		    from { width: 50%; }
+		    to { width: 40%; }
+		}
+
+		@keyframes w70 {
+		    from { width: 50%; }
+		    to { width: 40%; }
 		}
 
 		.rightContainer {
@@ -245,6 +273,22 @@ p {
 	    	    }
 	        }
 		}
+		.expand {
+		    -webkit-animation: w50 1.3s ease forwards;
+		}
+		.expand {
+		   margin-left: 50%;
+		}
+
+		@-webkit-keyframes w50 {
+		    from { margin-left: 50%; }
+		    to { margin-left: 43%; }
+		}
+
+		@keyframes w50 {
+		    from { margin-left: 50%; }
+		    to { margin-left: 43%; }
+		}
 	}
 }
 
@@ -267,6 +311,32 @@ p {
 				    width: 10px;
 				}	
 			}
+		}
+		.minimize {
+			background: #e4e469;
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+		}
+		.minimize {
+		    -webkit-animation: w70 1.3s ease forwards;
+		}
+		.minimize {
+		    height: 220px;
+		    width: 100%;
+		    position: static;
+		    margin-bottom: 182px;
+		}
+
+		@-webkit-keyframes w70 {
+		    from { height: 220px; }
+		    to { height: 500px; }
+		}
+
+		@keyframes w70 {
+		    from { height: 220px; }
+		    to { height: 500px; }
 		}
 		.rightContainer {
 		    position: relative;

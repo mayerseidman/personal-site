@@ -6,7 +6,7 @@ import { withRouter } from "react-router";
 class leftContainer extends React.Component {
 	constructor(props) {
 	    super(props);
-	    this.state = { wordValue: "Designer", currentCount: 10 };
+	    this.state = { wordValue: "Designer", currentCount: 10, minimized: false };
 	}
 
 	getChangedText() {
@@ -16,7 +16,6 @@ class leftContainer extends React.Component {
 	}
 	changeText() {
 	    var text = this.getChangedText();
-	    console.log(text);
 	    this.setState({ wordValue: text })
 	}
 
@@ -24,6 +23,12 @@ class leftContainer extends React.Component {
 		var intervalIdTimer = setInterval(this.timer.bind(this), 1000);
 		var intervalIdScrambler = setInterval(this.changeText.bind(this), 1000);
 		this.setState({ intervalIdTimer: intervalIdTimer, intervalIdScrambler: intervalIdScrambler });
+
+		let { match, location, history } = this.props;
+		var path = location.pathname;
+		if (path == "/works/one") {
+			this.setState({ minimized: true })
+		}
 	}
 
 	componentWillUnmount() {
@@ -49,10 +54,15 @@ class leftContainer extends React.Component {
     	}
     	let { match, location, history } = this.props;
     	var path = location.pathname;
-    	if (path == "/works/one") {
+    	if (path === "/works/one") {
     		var infoContainer = (
-    			<div className="infoContainer">Case study stuff</div>
+    			<div className="infoContainer">Case study stuff goes here...</div>
     		)
+    		if (this.props.currentView == "preview") {
+				var className = "minimize"    			
+    		} else if (this.props.currentView == "startStudy") {
+    			var className = "exterminate"
+    		}
     	} else {
     		var infoContainer = (
     			<div className="infoContainer">
@@ -63,7 +73,7 @@ class leftContainer extends React.Component {
     		)
     	}
     	return (
-    		<div className="leftContainer">
+    		<div className={ "leftContainer " + className }>
     			{ infoContainer }
     		</div>
     	)
