@@ -55,11 +55,11 @@ class leftContainer extends React.Component {
     	let { match, location, history } = this.props;
     	var path = location.pathname;
     	if (path === "/works/one") {
-    		var infoContainer = (
-    			<div className="infoContainer">Case study stuff goes here...</div>
-    		)
     		if (this.props.currentView == "preview") {
-				var className = "minimize"    			
+				var className = "minimize"
+				var infoContainer = (
+					<div className="infoContainer">Case study stuff goes here...</div>
+				)	
     		} else if (this.props.currentView == "startStudy") {
     			var className = "exterminate"
     		}
