@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import './App.scss';
+import About from './About';
 import Works from './Works';
 import StudyOne from './StudyOne';
 import StudyTwo from './StudyTwo';
@@ -14,7 +15,6 @@ class RightContainer extends React.Component {
     render() {
     	let { match, location } = this.props;
     	var path = location.pathname;
-    	console.log(path)
     	if (path === "/works/one") {
 			var className = "expand";		
     	}
@@ -47,12 +47,4 @@ function Home() {
 			<p>I help others grow and share skills as a moderator in <a href="" target="_blank">React FB Group</a></p>
 		</div>
   	);
-}
-
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
 }

@@ -39,13 +39,22 @@
 		.workTitle {
 			margin-left: 19px;
 		}
+		.startLinkContainer {
+			position: relative;
+		    bottom: 30px;
+		    text-align: center;
+		    color: red;
+		    a {
+		    	cursor: pointer;
+		    }
+		}
 		.workContainer {
 			padding-bottom: 41px;
-			height: 410px;
+			height: 605px;
 			width: 89%; 
 			padding-left: 22px;
 			.workContent {
-				height: 410px;
+				height: 605px;
 			}
 		}
 	}		

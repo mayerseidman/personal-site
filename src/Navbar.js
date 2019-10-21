@@ -18,6 +18,7 @@ class Navbar extends React.Component {
             return "";
         } else {
             var className = this.state.activeView === route? "selected" : "";
+            console.log(className, route)
             return className;
         }
     }
@@ -45,7 +46,7 @@ class Navbar extends React.Component {
                     { homeLink }
                     <div className="rightLinks">
                         <li className="navItem"><Link to="/works" onClick={ this.changeView.bind(this, "/works") } className={ this.setClass("/works") }>Works</Link></li>
-                        <li className="navItem"><Link to="/about">About</Link></li>
+                        <li className="navItem"><Link to="/about" onClick={ this.changeView.bind(this, "/about") } className={ this.setClass("/about") }>About</Link></li>
                         <li className="navItem"><a href="#">Resume</a></li>
                     </div>
                 </ul>

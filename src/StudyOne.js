@@ -11,7 +11,7 @@ class StudyOne extends React.Component {
         }
         var studyContent = (
             <div className="workOuterContainer">
-                <div className="webHide">
+                <div className="webHide startLinkContainer">
                     { startStudyLink }
                 </div>
                 <div className={ className }>

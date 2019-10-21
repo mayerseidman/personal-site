@@ -5,9 +5,6 @@ import './App.scss';
 import LeftContainer from './LeftContainer';
 import RightContainer from './RightContainer';
 
-// import logo from './logo.svg';
-// img src={logo}
-
 class App extends Component {
 	constructor(props) {
 	    super(props);

@@ -1,0 +1,37 @@
+.aboutSection {
+	padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+	.topContainer {
+		margin-bottom: 30px;
+		.img {
+			width: 150px;
+			border: 4px solid red;	
+		}
+	}
+	.textContainer {
+		margin-bottom: 55px;
+	}
+	.bottomContainer {
+		width: 40%;
+		.chatButton {
+			width: 100%;
+		    height: 35px;
+		    background: red;
+		    color: white;
+		    font-size: 1em;
+		    margin-bottom: 5px;
+		}
+		p {
+			font-size: 0.8em;
+			text-align: center;
+		}
+	}
+}
+.aboutLoadingSection {
+	padding-bottom: 532px;
+	.MuiCircularProgress-colorPrimary {
+		color: red
+	}
+}

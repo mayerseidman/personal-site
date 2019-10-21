@@ -323,20 +323,19 @@ p {
 		    -webkit-animation: w70 1.3s ease forwards;
 		}
 		.minimize {
-		    height: 220px;
 		    width: 100%;
 		    position: static;
-		    margin-bottom: 182px;
+		    margin-bottom: 21px;
 		}
 
 		@-webkit-keyframes w70 {
 		    from { height: 220px; }
-		    to { height: 500px; }
+		    to { height: 650px; }
 		}
 
 		@keyframes w70 {
 		    from { height: 220px; }
-		    to { height: 500px; }
+		    to { height: 650px; }
 		}
 		.exterminate {
 		    -webkit-animation: w50 1.3s ease forwards;
