@@ -2,11 +2,19 @@ import React from 'react'
 import './About.scss';
 import personalImg from './linkedIn.jpg';
 import CircularProgress from '@material-ui/core/CircularProgress'
+import Chatbot from "./Chatbot";
+import Webcam from "react-webcam";
+import WebcamCapture from './WebcamCapture';
 
 class About extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { isLoading: true };
+        this.state = { isLoading: true, imageSrc: "" };
+    }
+
+    setImage(stringSrc) {
+        console.log("SET IMAGE BISCH", stringSrc)
+        this.setState({ imageSrc: stringSrc })
     }
     
     componentDidMount() {
@@ -18,10 +26,16 @@ class About extends React.Component {
         );
     }
     render() {
+        return (
+            <div className="chatSection">
+                <Chatbot imageSrc={ this.state.imageSrc } />
+                <WebcamCapture setImage={ this.setImage.bind(this) } />    
+            </div>
+        )
         if (this.state.isLoading) {
             return (
                 <div className="aboutLoadingSection">
-                    <CircularProgress className="" size={100}/>
+                    <CircularProgress className="" size={ 100 }/>
                 </div>
             )
         } else {
