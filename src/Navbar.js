@@ -16,7 +16,8 @@ class Navbar extends React.Component {
         var path = location.pathname;
         if (path === "/works/one") {
             return "";
-        } else {
+        } 
+        else {
             var className = this.state.activeView === route? "selected" : "";
             console.log(className, route)
             return className;

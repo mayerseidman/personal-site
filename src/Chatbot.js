@@ -251,7 +251,7 @@ export default class Chatbot extends Component {
                 <UserInput userMessages = { this.state.userMessages } 
                     updateUserMessages = { this.updateUserMessages.bind(this) }
                     topic={ this.state.topic } subtopic={ this.state.subtopic } />
-                <a onClick={ this.returnToBeginning.bind(this) }>Take me back to the beginning</a>  
+                <a className="backLink" onClick={ this.returnToBeginning.bind(this) }>Back to beginning</a>  
             </div>
             
         )
@@ -308,7 +308,7 @@ class UserInput extends Component {
         var optionThree = "Journey";
         
         return (
-            <div>
+            <div className="categoryOptions">
                 <button onClick={ this.optionSelected.bind(this, 1, optionOne) }>{ optionOne }</button>
                 <button onClick={ this.optionSelected.bind(this, 1, optionTwo) }>{ optionTwo }</button>
                 <button onClick={ this.optionSelected.bind(this, 1, optionThree) }>{ optionThree }</button>    
@@ -320,7 +320,7 @@ class UserInput extends Component {
         var optionTwo = "Languages";
         var optionThree = "Music";
         return (
-            <div>
+            <div className="interestsOptions">
                 <button onClick={ this.optionSelected.bind(this, 1, optionOne) }>{ optionOne }</button>
                 <button onClick={ this.optionSelected.bind(this, 1, optionTwo) }>{ optionTwo }</button>
                 <button onClick={ this.optionSelected.bind(this, 1, optionThree) }>{ optionThree }</button>    

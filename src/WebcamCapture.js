@@ -28,7 +28,8 @@ export default class WebcamCapture extends React.Component {
             var display = ""
         } else {
             var display = (
-                <div>
+                <div className="innerWebcamContainer">
+                    <p>Smile and take a pic for your chatbot icon!</p>
                     <Webcam
                         audio={false}
                         height={350}
@@ -36,6 +37,7 @@ export default class WebcamCapture extends React.Component {
                         screenshotFormat="image/jpeg"
                         width={350}
                         videoConstraints={videoConstraints}
+                        className="video"
                     />
                     <button onClick={this.capture.bind(this)}>Capture photo</button>
                 </div>
@@ -43,7 +45,7 @@ export default class WebcamCapture extends React.Component {
         }
 
         return (
-            <div>
+            <div className="webcamContainer">
                 { display }
             </div>
         );  

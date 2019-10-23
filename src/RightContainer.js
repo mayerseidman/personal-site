@@ -17,9 +17,9 @@ class RightContainer extends React.Component {
     	var path = location.pathname;
     	if (path === "/works/one") {
 			var className = "expand";		
-    	}
+    	} 
     	return (
-		    <div className={ "rightContainer " + className }>
+		    <div className="rightContainer">
 				<Switch>
 					<Route exact path="/works" component={ Works }/>
 					<Route exact path="/works/one" render={(props) => <StudyOne {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>

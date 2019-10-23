@@ -325,9 +325,68 @@ $defaultFadeAmount: 75px;
 #app-container {
   /*  padding: 10px;*/
     margin: 0 auto;   
-    width: 100%;
-    max-width: 420px;
-    margin-top: 10%;
+    width: 55%;
+    /*max-width: 420px;*/
+    margin-top: 6%;
+    margin-left: 36%;
+}
+
+.chatSection {
+    .innerWebcamContainer {
+        text-align: center;
+        button {
+            width: 200px;
+            height: 30px;
+            background: red;
+            display: inline-block;
+        }
+        .video {
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+    }
+}
+/* WEB Media Query  */
+@media only screen and (min-width: 1000px) {
+    .chatSection {
+        padding-bottom: 94px;
+        .innerWebcamContainer {
+            text-align: center;
+            padding-top: 15%;
+        }
+        .innerWebcamContainer {
+            button {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+/* Mobile Media Query  */
+@media only screen and (max-width: 1000px) {
+    .chatSection {
+        padding-bottom: 36px;
+        .webcamContainer {
+            position: relative;
+            bottom: 35px;
+        }
+        .innerWebcamContainer {
+            button {
+                margin-top: 15px;
+                position: relative;
+                bottom: 50px;
+            }
+            p {
+                position: relative;
+                top: 60px;
+            }
+        }
+    }
+}
+.chatbotContainer {
+    height: 475px;
+    padding-bottom: 117px;
 }
 
 /*::-webkit-scrollbar {
@@ -343,12 +402,13 @@ $defaultFadeAmount: 75px;
     overflow: scroll;
     margin-bottom: 15px;
     max-height: 475px;
+    padding-top: 20px;
 }
 
 .input-container {
-    width: 100%;
+    display: inline-block;
    /* background: #fff;*/
-    max-width: 420px;
+   /* max-width: 420px;*/
    /* position: fixed;
     bottom: 0;
     left: auto;
@@ -359,7 +419,18 @@ $defaultFadeAmount: 75px;
     button {
       cursor: pointer;
       margin-right: 5px;
+      width: 100px;
     }
+}
+.categoryOptions, .interestsOptions {
+    button {
+        width: 75px;
+    }
+}
+.backLink {
+    margin-left: 19px;
+    vertical-align: baseline;
+    font-size: 0.8em;
 }
 .input-container input {
     width: 100%;
@@ -406,7 +477,11 @@ $defaultFadeAmount: 75px;
     display: flex;
     margin: 10px 0;
 /*    animation: revealup .5s .2s cubic-bezier(0,.57,.81,1.01) forwards;
-*/}
+*/
+    &:nth-of-type(0) {
+        margin-top: 100px;
+    }
+}
 
     .bot-message-container > div:first-child {
         margin-right: 10px;
@@ -421,7 +496,6 @@ $defaultFadeAmount: 75px;
     border-radius: 50%;
     max-width: 30px;
 }
-
 
 /* General bubble styles for both USER & BOT */
 .hidden {

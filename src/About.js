@@ -9,12 +9,15 @@ import WebcamCapture from './WebcamCapture';
 class About extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { isLoading: true, imageSrc: "" };
+        this.state = { isLoading: true, imageSrc: "", currentView: "intro" };
     }
 
     setImage(stringSrc) {
-        console.log("SET IMAGE BISCH", stringSrc)
-        this.setState({ imageSrc: stringSrc })
+        this.setState({ imageSrc: stringSrc, currentView: "chat" })
+    }
+
+    startChat() {
+        this.setState({ currentView: "bioPic" })
     }
     
     componentDidMount() {
@@ -26,12 +29,6 @@ class About extends React.Component {
         );
     }
     render() {
-        return (
-            <div className="chatSection">
-                <Chatbot imageSrc={ this.state.imageSrc } />
-                <WebcamCapture setImage={ this.setImage.bind(this) } />    
-            </div>
-        )
         if (this.state.isLoading) {
             return (
                 <div className="aboutLoadingSection">
@@ -39,29 +36,46 @@ class About extends React.Component {
                 </div>
             )
         } else {
-            return (
-                <div className="aboutSection">
-                    <div className="topContainer">
-                        <a>Link One</a><a>Link Two</a>
-                        <img className="img" src={ personalImg } alt="profile"/>
+            if (this.state.currentView == "intro") {
+                var pageContent = (
+                    <div className="aboutSection">
+                        <div className="topContainer">
+                            <a>Link One</a><a>Link Two</a>
+                            <img className="img" src={ personalImg } alt="profile"/>
+                        </div>
+                        <div className="textContainer">
+                            <div className="innerTextContainer">
+                                <p>
+                                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                                </p>
+                                <p>
+                                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                                    Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                                </p> 
+                            </div>   
+                        </div>
+                        <div className="bottomContainer">
+                            <button className="chatButton" onClick={ this.startChat.bind(this) }>Let's Chat</button>
+                            <p>Don't worry, this bot does'nt bite.</p>
+                        </div>
                     </div>
-                    <div className="textContainer">
-                        <p>
-                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                        </p>
-                        <p>
-                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                        </p>    
+                )
+            } else if (this.state.currentView == "bioPic") {
+                var pageContent = (
+                    <div className="chatSection">
+                        <WebcamCapture setImage={ this.setImage.bind(this) } />    
                     </div>
-                    <div className="bottomContainer">
-                        <button className="chatButton">Let's Chat</button>
-                        <p>Don't worry, this bot does'nt bite.</p>
-                    </div>
-                </div>
-            )
+                )
+            } else if (this.state.currentView == "chat") {
+                var pageContent = (
+                    <Chatbot imageSrc={ this.state.imageSrc } />   
+                )
+            }
         }
+        return (
+            <div>{ pageContent }</div>
+        )
     }
 }
 
