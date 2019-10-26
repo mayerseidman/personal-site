@@ -16,10 +16,13 @@ class App extends Component {
 	startStudy() {
 		this.setState({ currentView: "startStudy" })
 	}
+	closeStudy() {
+		this.setState({  currentView: "preview" })
+	}
 
 	render() {
 		var leftContainer = (<LeftContainer currentView={ this.state.currentView } />)
-		var rightContainer = (<RightContainer currentView={ this.state.currentView } startStudy={ this.startStudy.bind(this) } />)
+		var rightContainer = (<RightContainer currentView={ this.state.currentView } startStudy={ this.startStudy.bind(this) } closeStudy={ this.closeStudy.bind(this) } />)
 		return (
 			<div className="portfolioContainer">
 				<Router>

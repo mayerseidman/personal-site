@@ -10,6 +10,7 @@ class Navbar extends React.Component {
     }
     changeView(view) {
         this.setState({ activeView: view })
+        this.props.closeStudy()
     }
     setClass(route) {
         let { match, location } = this.props;
@@ -25,6 +26,7 @@ class Navbar extends React.Component {
     }
     render() {
         var path = this.props.location.pathname;
+        console.log(path)
        if (path === "/works/one") {
             var homeLink = (
                 <span>

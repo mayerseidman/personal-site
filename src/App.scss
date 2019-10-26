@@ -30,9 +30,9 @@ p {
 	    text-align: center;
 
 		.infoContainer {
+			color: #fcfcf0;
 			.name, .title { 
 				font-weight: bold;
-				color: #fcfcf0;
 			}
 			.circleDivider {
 /*			    background-color: #f9f9ee;
@@ -168,8 +168,8 @@ p {
 		    		font-size: 48px;
 		    	}
 		    	.circleDivider {
-		    		height: 15px;
-		    	    width: 15px;
+		    		height: 20px;
+		    	    width: 20px;
 		    	    border-radius: 50%;
 		    	    display: inline-block;
 		    	    bottom: 5px;
@@ -187,9 +187,9 @@ p {
 		.minimize {
 		    -webkit-animation: w70 1.3s ease forwards;
 		}
-		.minimize {
+		/*.minimize {
 		    width: 70%;
-		}
+		}*/
 
 		@-webkit-keyframes w70 {
 		    from { width: 50%; }
@@ -303,12 +303,26 @@ p {
 			width: auto;
 			height: 220px;
 			.infoContainer {
+				margin: auto;
+				width: 78%;
+				&.preview {
+					p {
+						font-weight: bold;
+					    font-size: 18px;
+					    text-align: left;
+					    margin-bottom: 55px;
+					}
+					.circleDivider {
+					    position: relative;
+					    bottom: 25px;
+					}	
+				}
 				.name, .title { 
-					font-size: 32px;	
+					font-size: 32px !important;
 				}
 				.circleDivider {
-					height: 10px;
-				    width: 10px;
+					height: 15px;
+				    width: 15px;
 				}	
 			}
 		}
@@ -337,23 +351,43 @@ p {
 		    from { height: 220px; }
 		    to { height: 650px; }
 		}
+		/*.previewTop {
+			margin-top: -150px
+		}*/
+		.previewTop {
+		    -webkit-animation: w99 1.3s ease forwards;
+		}
+
+		@-webkit-keyframes w99 {
+		    from { margin-top: -150px; }
+		    to { margin-top: 0px; }
+		}
+
+		@keyframes w99 {
+		    from { margin-top: -150px; }
+		    to { margin-top: 100px; }
+		}
 		.exterminate {
 		    -webkit-animation: w50 1.3s ease forwards;
 		}
 		.exterminate {
-		    height: 0px;
 		    width: 100%;
 		    position: static;
+		    .infoContainer {
+		    	.title { 
+		    		margin-bottom: 2px;	
+		    	}
+		    }
 		}
 
 		@-webkit-keyframes w50 {
 		    from { height: 500px; }
-		    to { height: 25px; }
+		    to { height: 75px; }
 		}
 
 		@keyframes w50 {
 		    from { height: 500px; }
-		    to { height: 25px; }
+		    to { height: 75px; }
 		}
 		.rightContainer {
 		    position: relative;

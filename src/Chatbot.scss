@@ -368,6 +368,9 @@ $defaultFadeAmount: 75px;
         height: 475px;
         padding-bottom: 117px;
     }
+    .backLink {
+        margin-left: 19px;
+    }
 }
 
 /* Mobile Media Query  */
@@ -403,6 +406,20 @@ $defaultFadeAmount: 75px;
         height: 469px;
         padding-bottom: 0px;
     }
+    .input-container {
+        padding: 5px;
+
+        button {
+          cursor: pointer;
+          margin-right: 5px;
+          width: 100px;
+        }
+    }
+    .backLink {
+        display: block;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
 }
 
 /*::-webkit-scrollbar {
@@ -428,12 +445,15 @@ $defaultFadeAmount: 75px;
     left: auto;
     right: auto;
     box-sizing: border-box;*/
-    padding: 10px;
+    padding: 5px;
 
     button {
       cursor: pointer;
       margin-right: 5px;
       width: 100px;
+      background-color: red;
+      color: #fff;
+      height: 35px;
     }
 }
 .categoryOptions, .interestsOptions {
@@ -442,7 +462,6 @@ $defaultFadeAmount: 75px;
     }
 }
 .backLink {
-    margin-left: 19px;
     vertical-align: baseline;
     font-size: 0.8em;
 }

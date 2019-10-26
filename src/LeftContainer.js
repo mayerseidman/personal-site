@@ -3,6 +3,8 @@ import React from 'react'
 import './App.scss';
 import { withRouter } from "react-router";
 
+// Is there a way to access like this -- this.interval - dont use state?
+
 class leftContainer extends React.Component {
 	constructor(props) {
 	    super(props);
@@ -57,11 +59,27 @@ class leftContainer extends React.Component {
     	if (path === "/works/one") {
     		if (this.props.currentView == "preview") {
 				var className = "minimize"
+				var previewTopClassName = "previewTop"
 				var infoContainer = (
-					<div className="infoContainer">Case study stuff goes here...</div>
+					<div className={ "infoContainer preview " + previewTopClassName }>
+				    	<p className="title">Title goes here...</p>
+				        <span className="circleDivider"></span>
+				        <p>Study description goes here....blah... ..blah blah blah</p>
+				        <span className="circleDivider"></span>
+				        <p>Roles go here....blah... ..blah blah blah</p>
+				        <span className="circleDivider"></span>
+				        <p>Challenge goes here....blah... ..blah blah blah</p> 
+					</div>
 				)	
     		} else if (this.props.currentView == "startStudy") {
     			var className = "exterminate"
+    			var infoContainer = (
+    				<div className="infoContainer">
+    				    <div>
+    				    	<p className="title">Title goes here...</p>
+    				    </div>
+    				</div>
+    			)
     		}
     	} else {
     		var infoContainer = (

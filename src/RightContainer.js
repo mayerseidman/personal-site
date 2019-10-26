@@ -19,7 +19,7 @@ class RightContainer extends React.Component {
 			var className = "expand";		
     	} 
     	return (
-		    <div className="rightContainer">
+		    <div className={ "rightContainer " + className }>
 				<Switch>
 					<Route exact path="/works" component={ Works }/>
 					<Route exact path="/works/one" render={(props) => <StudyOne {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
@@ -27,7 +27,7 @@ class RightContainer extends React.Component {
 					<Route exact path="/about" component={ About } />
 					<Route exact path="/" component={ Home } />
 				</Switch>
-				<Navbar location={ path } />
+				<Navbar location={ path } closeStudy={ this.props.closeStudy } />
 		    </div>	
     	)
     }
