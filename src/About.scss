@@ -6,14 +6,11 @@
 		}
 	}
 	.bottomContainer {
-		width: 40%;
 		.chatButton {
-			width: 100%;
 		    height: 35px;
 		    background: red;
 		    color: white;
 		    font-size: 1em;
-		    margin-bottom: 5px;
 		}
 		p {
 			font-size: 0.8em;
@@ -36,6 +33,13 @@
 		padding-bottom: 50px;
 		padding-left: 75px;
 	    padding-right: 75px;
+        .bottomContainer {
+        	width: 40%;
+    		.chatButton {
+    			width: 100%;
+    		    margin-bottom: 5px;
+    		}
+        }
 		.topContainer {
 			.img {
 				width: 150px;
@@ -54,9 +58,15 @@
 /* Mobile Media Query  */
 @media only screen and (max-width: 1000px) {
 	.aboutSection {
-		padding-bottom: 3px;
+		padding-bottom: 13px;
 		padding-left: 30px;
 	    padding-right: 30px;
+	    .bottomContainer {
+			.chatButton {
+				width: 92%;
+			    margin-bottom: 10px;
+			}
+	    }
 		.topContainer {
 			.img {
 				width: 100px;

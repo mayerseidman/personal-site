@@ -248,10 +248,13 @@ export default class Chatbot extends Component {
                     <BotBubble message={this.state.botGreeting} key="bot-00" />
                     {this.showMessages()}
                 </div>
-                <UserInput userMessages = { this.state.userMessages } 
-                    updateUserMessages = { this.updateUserMessages.bind(this) }
-                    topic={ this.state.topic } subtopic={ this.state.subtopic } />
-                <a className="backLink" onClick={ this.returnToBeginning.bind(this) }>Back to beginning</a>  
+                <div>
+                    <UserInput userMessages = { this.state.userMessages } 
+                        updateUserMessages = { this.updateUserMessages.bind(this) }
+                        topic={ this.state.topic } subtopic={ this.state.subtopic } />
+                    <a className="backLink mobileHide" onClick={ this.returnToBeginning.bind(this) }>Back to beginning</a>
+                    <a className="backLink webHide mobileBackLink" onClick={ this.returnToBeginning.bind(this) }>Back</a>                
+                </div> 
             </div>
             
         )
