@@ -1,12 +1,36 @@
 .workOuterContainer {
-	.workTitle {
+	/*.workTitle {
 		margin-bottom: 0;
-	}
+	}*/
 	.workContainer {
 		padding:30px; 
 		padding-top: 0;
 		.workContent {
 			overflow:auto;
+			.headlineText {
+				color: #D0021B;
+				font-size: 1.2em;
+			}
+			.workSection {
+				margin-bottom: 25px;
+				.workHeader {
+					font-size: 1.2em;
+					font-weight: bold;
+					margin-bottom: 15px;
+					color: #000;
+				}
+				.andText {
+					font-size: 0.8em;
+				}
+				&.goalsContainer {
+					.goalContainer {
+						p, img {
+							display: inline-block;
+							margin-right: 15px;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -16,10 +40,6 @@
 	.workOuterContainer {
 		padding-top: 87px;
 		padding-bottom: 0px;
-		.workTitle {
-			margin-bottom: 0;
-			margin-left: 39px;
-		}
 		.workContainer {
 			height: 500px;
 			width: 85%; 
@@ -27,6 +47,7 @@
 		*/	padding-left: 42px;
 			.workContent {
 				height: 500px;
+				padding-right: 20px;
 				overflow:auto;
 			}
 		}
@@ -43,7 +64,7 @@
 			position: relative;
 		    bottom: 30px;
 		    text-align: center;
-		    color: red;
+		    color: #D0021B;
 		    a {
 		    	cursor: pointer;
 		    }
