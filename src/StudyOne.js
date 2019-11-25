@@ -1,5 +1,7 @@
 import React from 'react'
 import './StudyOne.scss';
+import rosterImg from './lofi7.png';
+import rosterImg2 from './lofi5.png'
 
 class StudyOne extends React.Component {
     constructor(props) {
@@ -75,7 +77,15 @@ class StudyOne extends React.Component {
                                  <p>
                                      blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...
                                 </p>
-                            </div>       
+                            </div>
+                            <div className="lofiContainer workSection">
+                                <p className="workHeader">Lo-fi Mockups</p>
+                                 <p>
+                                     blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...
+                                </p>
+                                <img src={ rosterImg } alt=""/>
+                                <img src={ rosterImg2 } alt=""/>
+                            </div>      
                         </div>
                     </div>
                 </div>
