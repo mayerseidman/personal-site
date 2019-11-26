@@ -1,7 +1,16 @@
 import React from 'react'
 import './StudyOne.scss';
-import rosterImg from './lofi7.png';
-import rosterImg2 from './lofi5.png'
+import rosterImg from './lofi5.png'
+import fullView from './images/student-roster/full-view.png'
+import addClass from './images/student-roster/add-class.png'
+import editClass from './images/student-roster/edit-class.png'
+import addStudents from './images/student-roster/add-students.png'
+import editStudent from './images/student-roster/edit-student.png'
+import logReading from './images/student-roster/log-reading.png'
+import sendCoins from './images/student-roster/send-coins.png'
+import sendNote from './images/student-roster/send-note.png'
+import usernames from './images/student-roster/usernames.png'
+import ImageGallery from 'react-image-gallery';
 
 class StudyOne extends React.Component {
     constructor(props) {
@@ -32,6 +41,35 @@ class StudyOne extends React.Component {
         }
       };
     render() {
+        const images = [
+              {
+                original: fullView
+              },
+              {
+                original: addClass,
+              },
+              {
+                original: editClass,
+              },
+              {
+                original: addStudents
+              },
+              {
+                original: editStudent,
+              },
+              {
+                original: logReading,
+              },
+              {
+                original: sendCoins,
+              },
+              {
+                original: sendNote,
+              },
+              {
+                original: usernames,
+              },
+        ];
         if (this.props.currentView == "preview") {
             var startStudyLink = (
                 <a onClick={ this.props.startStudy }>START THE STUDY!</a>
@@ -84,8 +122,15 @@ class StudyOne extends React.Component {
                                      blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...
                                 </p>
                                 <img src={ rosterImg } alt=""/>
-                                <img src={ rosterImg2 } alt=""/>
-                            </div>      
+                            </div> 
+                            <div className="hifiContainer workSection">
+                                <p className="workHeader">Hi-fi Mockups</p>
+                                 <p>
+                                     blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...
+                                </p>
+                                <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
+                                    showThumbnails={ false } />
+                            </div>        
                         </div>
                     </div>
                 </div>

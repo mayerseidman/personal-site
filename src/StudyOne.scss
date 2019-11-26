@@ -31,8 +31,13 @@
 					}
 				}
 				&.lofiContainer {
-					img {
-						margin-bottom: 50px;
+				}
+				&.hifiContainer {
+					.image-gallery-left-nav::before, .image-gallery-right-nav::before {
+						color: black;
+					}
+					.image-gallery-left-nav, .image-gallery-right-nav {
+						font-size: 2em;
 					}
 				}
 			}
