@@ -1,11 +1,15 @@
 import React from 'react'
 import './StudyOne.scss';
+import oldOne from './images/student-roster/old-old.png'
+import oldTwo from './images/student-roster/old-two.png'
+
 import rosterImg from './lofi5.png'
 import fullView from './images/student-roster/full-view.png'
 import addClass from './images/student-roster/add-class.png'
 import editClass from './images/student-roster/edit-class.png'
 import addStudents from './images/student-roster/add-students.png'
 import editStudent from './images/student-roster/edit-student.png'
+import fullViewSelected from './images/student-roster/full-view-selected.png'
 import logReading from './images/student-roster/log-reading.png'
 import sendCoins from './images/student-roster/send-coins.png'
 import sendNote from './images/student-roster/send-note.png'
@@ -41,7 +45,7 @@ class StudyOne extends React.Component {
         }
       };
     render() {
-        const images = [
+        const imagesTwo = [
               {
                 original: fullView
               },
@@ -58,6 +62,9 @@ class StudyOne extends React.Component {
                 original: editStudent,
               },
               {
+                original: fullViewSelected,
+              },
+              {
                 original: logReading,
               },
               {
@@ -68,8 +75,16 @@ class StudyOne extends React.Component {
               },
               {
                 original: usernames,
-              },
+              }
         ];
+        const images = [
+            {
+              original: oldOne
+            },
+            {
+              original: oldTwo,
+            },
+        ]
         if (this.props.currentView == "preview") {
             var startStudyLink = (
                 <a onClick={ this.props.startStudy }>START THE STUDY!</a>
@@ -86,23 +101,33 @@ class StudyOne extends React.Component {
                         <div className="workContent">
                             <div className="introContainer workSection">
                                  <p className="workHeader">Intro</p>
-                                 <p className="headlineText">The text goes here and then goes like this and then goes like this!</p>
-                                 <p>
-                                     blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...
+                                 <p className="headlineText">How can we create one place where teachers could perform any of these tasks? Additionally, how can we enable teachers to perform these tasks on behalf of multiple students-easily, all at once, and across different classes?</p>
+                                <p>
+                                    On Whooo’s Reading’s <i>Student Roster</i>, teachers can do a variety of tasks, such as, editing student or class information/settings, logging reading (for students), sending notes/coins (to students), adding/uploading students, adding classes, and retrieving student login information.
                                 </p>
+                                <p>
+                                    Previously, these actions were all on separate pages and the links (for these actions) were spread between the home and settings pages.
+                                </p>
+                                <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
+                                    showThumbnails={ false } />
                             </div>
                             <div className="goalsContainer workSection">
-                                <p className="workHeader">Goals</p>  
-                                 <p>
-                                    short general description of challenge
-                                </p>
-                                <div className="goalContainer">
+                                <p className="workHeader">Goals</p>
+                                <div className="goalContainer"> 
                                     <p>Title</p>
-                                    IMG
-                                    <p>goal text goes here...</p>
+                                    <span className="circleDivider"></span>
+                                    <p className="goalText">goal text goes here..goal text goes here...goal text goes here...goal text goes here....</p>
                                 </div>
-                                <div></div>
-                                <div></div>
+                                <div className="goalContainer"> 
+                                    <p>Title</p>
+                                    <span className="circleDivider"></span>
+                                    <p className="goalText">goal text goes here..goal text goes here...goal text goes here...goal text goes here....</p>
+                                </div>
+                                <div className="goalContainer"> 
+                                    <p>Title</p>
+                                    <span className="circleDivider"></span>
+                                    <p className="goalText">goal text goes here..goal text goes here...goal text goes here...goal text goes here....</p>
+                                </div>
                             </div>
                             <div className="strategyContainer workSection">
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
@@ -128,8 +153,14 @@ class StudyOne extends React.Component {
                                  <p>
                                      blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...
                                 </p>
-                                <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
+                                <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
                                     showThumbnails={ false } />
+                            </div>
+                            <div className="takeawaysContainer workSection">
+                                <p className="workHeader">Takeaways</p>
+                                 <p>
+                                     blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah... ..blah blah blah...
+                                </p>
                             </div>        
                         </div>
                     </div>

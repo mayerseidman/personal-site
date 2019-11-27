@@ -24,21 +24,41 @@
 				}
 				&.goalsContainer {
 					.goalContainer {
-						p, img {
+						margin-bottom: 10px;
+						p {
+							margin-bottom: 15px;
+						}
+						img {
 							display: inline-block;
 							margin-right: 15px;
+						}
+						.circleDivider {
+					    	background-color: red;
+						    border-radius: 50%;
+						    display: inline-block;
+							width: 20px;
+							height: 20px;
+						}
+						.goalText {
+							display: inline-block;
+							vertical-align: middle;
+							margin-left: 10px;
+							width: 95%;
 						}
 					}
 				}
 				&.lofiContainer {
+					img {
+						width: 100%;
+					}
 				}
 				&.hifiContainer {
-					.image-gallery-left-nav::before, .image-gallery-right-nav::before {
-						color: black;
-					}
-					.image-gallery-left-nav, .image-gallery-right-nav {
-						font-size: 2em;
-					}
+				}
+				.image-gallery-left-nav::before, .image-gallery-right-nav::before {
+					color: black;
+				}
+				.image-gallery-left-nav, .image-gallery-right-nav {
+					font-size: 2em;
 				}
 			}
 		}
@@ -57,7 +77,7 @@
 		*/	padding-left: 42px;
 			.workContent {
 				height: 500px;
-				padding-right: 20px;
+				padding-right: 50px;
 				overflow:auto;
 			}
 		}
