@@ -20,22 +20,22 @@ class About extends React.Component {
         this.setState({ currentView: "bioPic" })
     }
     
-    componentDidMount() {
-        setTimeout(
-            function() {
-             this.setState({ isLoading: false });
-            }.bind(this),
-           800
-        );
-    }
+    // componentDidMount() {
+    //     setTimeout(
+    //         function() {
+    //          this.setState({ isLoading: false });
+    //         }.bind(this),
+    //        800
+    //     );
+    // }
     render() {
-        if (this.state.isLoading) {
-            return (
-                <div className="aboutLoadingSection">
-                    <CircularProgress className="" size={ 100 }/>
-                </div>
-            )
-        } else {
+        // if (this.state.isLoading) {
+        //     return (
+        //         <div className="aboutLoadingSection">
+        //             <CircularProgress className="" size={ 100 }/>
+        //         </div>
+        //     )
+        // } else {}
             if (this.state.currentView == "intro") {
                 var pageContent = (
                     <div className="aboutSection">
@@ -72,11 +72,10 @@ class About extends React.Component {
                     <Chatbot imageSrc={ this.state.imageSrc } />   
                 )
             }
-        }
         return (
             <div>{ pageContent }</div>
         )
-    }
+    }    
 }
 
 export default About

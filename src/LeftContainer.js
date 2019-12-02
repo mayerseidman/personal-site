@@ -56,19 +56,17 @@ class leftContainer extends React.Component {
     	}
     	let { match, location, history } = this.props;
     	var path = location.pathname;
-    	if (path === "/works/one") {
+    	if (path === "/works/Studies/StudyOne") {
     		if (this.props.currentView == "preview") {
 				var className = "minimize"
 				var previewTopClassName = "previewTop"
 				var infoContainer = (
 					<div className={ "infoContainer preview " + previewTopClassName }>
-				    	<p className="title">Title goes here...</p>
+				    	<p className="title">Student Roster Design</p>
 				        <span className="circleDivider"></span>
-				        <p>Study description goes here....blah... ..blah blah blah</p>
+				        <p className="studyPreviewText">Created a new interface to handle batch processing for teachers and their students.</p>
 				        <span className="circleDivider"></span>
-				        <p>Roles go here....blah... ..blah blah blah</p>
-				        <span className="circleDivider"></span>
-				        <p>Challenge goes here....blah... ..blah blah blah</p> 
+				        <p className="studyRolesText">Research, UI/UX, Visual</p>
 					</div>
 				)	
     		} else if (this.props.currentView == "startStudy") {

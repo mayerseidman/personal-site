@@ -5,25 +5,24 @@ import { withRouter } from "react-router";
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-import './App.scss';
 import About from './About';
 import Works from './Works';
-import StudyOne from './StudyOne';
-import StudyTwo from './StudyTwo';
+import StudyOne from './Studies/StudyOne';
+import StudyTwo from './Studies/StudyTwo';
 
 class RightContainer extends React.Component {
     render() {
     	let { match, location } = this.props;
     	var path = location.pathname;
-    	if (path === "/works/one") {
+    	if (path === "/works/Studies/StudyOne") {
 			var className = "expand";		
     	} 
     	return (
 		    <div className={ "rightContainer " + className }>
 				<Switch>
 					<Route exact path="/works" component={ Works }/>
-					<Route exact path="/works/one" render={(props) => <StudyOne {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
-					<Route exact path="/works/two" component={ StudyTwo } />
+					<Route exact path="/works/Studies/StudyOne" render={(props) => <StudyOne {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
+					<Route exact path="/works/Studies/StudyTwo" render={(props) => <StudyTwo {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
 					<Route exact path="/about" component={ About } />
 					<Route exact path="/" component={ Home } />
 				</Switch>

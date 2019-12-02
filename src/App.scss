@@ -111,11 +111,11 @@ p {
 	    .worksSection {
 		    .leftWorksContainer {
 				height: 300px;
-				width: 200px;
+				width: 250px;
 				display: inline-block;
 				margin-right: 50px;
-				border-right: 1px solid #999;
-				vertical-align: top;
+/*				border-right: 1px solid #999;
+*/				vertical-align: top;
 				/*padding-right: 50px;*/
 				.worksCategory {
 					margin-bottom: 30px;
@@ -127,10 +127,10 @@ p {
 		    }
 		    .rightWorksContainer {
 				height: 300px;
-				width: 200px;
+				width: 250px;
 				display: inline-block;
-				border-left: 1px solid #999;
-				vertical-align: top;
+/*				border-left: 1px solid #999;
+*/				vertical-align: top;
 				/*padding-left: 50px;*/
 				a {
 					display: block;
@@ -142,6 +142,9 @@ p {
 		    }
 		    .articlesTitleContainer, .articlesLinksContainer {
 		    	margin-top: 5px;
+		    }
+		    .articlesLinksContainer a {
+		    	margin-bottom: 10px;
 		    }
 		    .categoryDescription {
 		    	font-size: 0.8em;
@@ -164,7 +167,7 @@ p {
 		    bottom: 0;
 		    width: 50%;
 		    .infoContainer {
-		    	.name, .title { 
+		    	.name { 
 		    		font-size: 48px;
 		    	}
 		    	.circleDivider {
@@ -174,7 +177,21 @@ p {
 		    	    display: inline-block;
 		    	    bottom: 5px;
 		    	    position: relative;
-		    	}	
+		    	}
+		    	.title {
+		    		font-size: 40px;
+		    		font-weight: 600;
+		    	}
+		    	.studyPreviewText {
+		    		width: 58%;
+	    		    margin: auto;
+	    		    text-align: left;
+	    		    margin-bottom: 20px;
+	    		    font-weight: 600;
+		    	}
+		    	.studyRolesText {
+		    		font-weight: 600;
+		    	}
 		    }
 		}
 		.minimize {
@@ -236,12 +253,12 @@ p {
 	        	padding-bottom: 45px;
 	    	    .leftWorksContainer {
 	    			height: auto;
-	    			width: 200px;
+	    			width: 250px;
 	    			display: inline-block;
 	    			margin-right: 50px;
-	    			border-right: 1px solid #999;
+	    			/*border-right: 1px solid #999;*/
 	    			vertical-align: top;
-	    			padding-right: 50px;
+	    			/*padding-right: 50px;*/
 	    			.worksCategory {
 	    				margin-bottom: 30px;
 	    				.categoryTitle {
@@ -253,11 +270,11 @@ p {
 	    	    }
 	    	    .rightWorksContainer {
 	    			height: auto;
-	    			width: 200px;
+	    			width: 250px;
 	    			display: inline-block;
-	    			border-left: 1px solid #999;
+	    			/*border-left: 1px solid #999;*/
 	    			vertical-align: top;
-	    			padding-left: 50px;
+	    			/*padding-left: 50px;*/
 	    			a {
 	    				display: block;
 	    			}
@@ -422,8 +439,8 @@ p {
         		    width: 125px;
         		    display: inline-block;
         		    margin-right: 28px;
-        		    border-right: 1px solid #999;
-        		    vertical-align: top;
+/*        		    border-right: 1px solid #999;
+*/        		    vertical-align: top;
         		    /* padding-right: 25px; */
         		    margin-left: 44px;
     	    	}
@@ -437,8 +454,8 @@ p {
     	    		height: auto;
 	    		    width: 125px;
 	    		    display: inline-block;
-	    		    border-left: 1px solid #999;
-	    		    vertical-align: top;
+/*	    		    border-left: 1px solid #999;
+*/	    		    vertical-align: top;
 	    		    padding-left: 46px;
     	    	}
     	    	.studiesTitleContainer, .studiesLinksContainer {

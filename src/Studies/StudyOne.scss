@@ -12,7 +12,7 @@
 				font-size: 1.2em;
 			}
 			.workSection {
-				margin-bottom: 25px;
+				margin-bottom: 30px;
 				.workHeader {
 					font-size: 1.2em;
 					font-weight: bold;
@@ -24,27 +24,40 @@
 				}
 				&.goalsContainer {
 					.goalContainer {
-						margin-bottom: 10px;
-						p {
+						margin-bottom: 15px;
+						/*p {
 							margin-bottom: 15px;
-						}
+						}*/
 						img {
 							display: inline-block;
 							margin-right: 15px;
 						}
-						.circleDivider {
-					    	background-color: red;
-						    border-radius: 50%;
-						    display: inline-block;
-							width: 20px;
-							height: 20px;
-						}
-						.goalText {
-							display: inline-block;
-							vertical-align: middle;
-							margin-left: 10px;
-							width: 95%;
-						}
+					}
+				}
+				&.strategyContainer {
+					img {
+						width: 100%;
+						margin-bottom: 25px;
+					}
+					.circleDivider {
+						background-color: black;
+						width: 8px;
+						height: 8px;
+						position: relative;
+						bottom: 8px;
+					}
+					.subText {
+						width: 96%;
+						margin-bottom: 10px;
+					}
+					.classDojoText {
+						margin-bottom: 15px;
+					}
+				}
+				&.structureContainer {
+					img {
+						width: 100%;
+						margin-bottom: 25px;
 					}
 				}
 				&.lofiContainer {
@@ -60,6 +73,23 @@
 				.image-gallery-left-nav, .image-gallery-right-nav {
 					font-size: 2em;
 				}
+				.subHeader {
+					font-weight: bold;
+					margin-bottom: 10px;
+				}
+				.subText {
+					display: inline-block;
+					vertical-align: middle;
+					margin-left: 10px;
+					width: 95%;
+				}
+				.circleDivider {
+			    	background-color: red;
+				    border-radius: 50%;
+				    display: inline-block;
+					width: 20px;
+					height: 20px;
+				}
 			}
 		}
 	}
@@ -69,7 +99,7 @@
 @media only screen and (min-width: 1000px) {
 	.workOuterContainer {
 		padding-top: 87px;
-		padding-bottom: 0px;
+		padding-bottom: 18px;
 		.workContainer {
 			height: 500px;
 			width: 85%; 
