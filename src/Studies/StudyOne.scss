@@ -39,13 +39,6 @@
 						width: 100%;
 						margin-bottom: 25px;
 					}
-					.circleDivider {
-						background-color: black;
-						width: 8px;
-						height: 8px;
-						position: relative;
-						bottom: 8px;
-					}
 					.subText {
 						width: 96%;
 						margin-bottom: 10px;
@@ -81,14 +74,25 @@
 					display: inline-block;
 					vertical-align: middle;
 					margin-left: 10px;
-					width: 95%;
+					width: 96%;
 				}
 				.circleDivider {
 			    	background-color: red;
 				    border-radius: 50%;
 				    display: inline-block;
-					width: 20px;
-					height: 20px;
+					width: 15px;
+					height: 15px;
+					bottom: 8px;
+					position: relative;
+				}
+				.circleDividerSmall {
+					background-color: black;
+					width: 8px;
+					height: 8px;
+					position: relative;
+					bottom: 8px;
+					display: inline-block;
+					border-radius: 50%;
 				}
 			}
 		}

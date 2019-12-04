@@ -1,6 +1,7 @@
 p {
 	margin-top: 0;
 	margin-bottom: 20px;
+	line-height: 1.4;
 }
 
 .sampleDiv {
@@ -181,12 +182,15 @@ p {
 		    	.title {
 		    		font-size: 40px;
 		    		font-weight: 600;
+		    		width: 90%;
+		    		    margin: auto;
+		    		    margin-bottom: 20px;
 		    	}
 		    	.studyPreviewText {
 		    		width: 58%;
 	    		    margin: auto;
 	    		    text-align: left;
-	    		    margin-bottom: 20px;
+	    		    margin-bottom: 10px;
 	    		    font-weight: 600;
 		    	}
 		    	.studyRolesText {
@@ -223,7 +227,7 @@ p {
 			/*padding-bottom: 125px;*/
 		    margin-left: 50%;
 			.homeSection {
-				padding-bottom: 208px;
+				padding-bottom: 170px;
 				.quoteContainer {
 					margin-bottom: 0;
 					.quote {

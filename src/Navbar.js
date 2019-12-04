@@ -15,7 +15,7 @@ class Navbar extends React.Component {
     setClass(route) {
         let { match, location } = this.props;
         var path = location.pathname;
-        if (path === "/works/one") {
+        if (path.includes("Studies")) {
             return "";
         } 
         else {
@@ -27,7 +27,7 @@ class Navbar extends React.Component {
     render() {
         var path = this.props.location.pathname;
         console.log(path)
-       if (path === "/works/Studies/StudyOne") {
+       if (path.includes("Studies")) {
             var homeLink = (
                 <span>
                     <li className="navItem homeLinkName mobileHide">

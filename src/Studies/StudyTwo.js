@@ -4,24 +4,21 @@ import ImageGallery from 'react-image-gallery';
 
 // Images
 
-import oldOne from '../images/student-roster/old-one.png';
-import oldTwo from '../images/student-roster/old-two.png';
+import oldOne from '../images/owl-shop/old-one.png';
+import oldTwo from '../images/owl-shop/old-two.png';
+import gameOne from '../images/owl-shop/game-one.png';
+import gameTwo from '../images/owl-shop/game-two.png';
 
-import flowStructure from '../images/student-roster/flow-and-structure-2.png';
-import lofiImg from '../lofi5.png';
-import classDojoOne from '../images/student-roster/class-dojo-one.png';
-import classDojoTwo from '../images/student-roster/class-dojo-two.png';
+import lofiOne from '../images/owl-shop/lofi-one.png';
+import lofiTwo from '../images/owl-shop/lofi-two.png';
+import lofiThree from '../images/owl-shop/lofi-three.png';
+import lofiFour from '../images/owl-shop/lofi-four.png';
 
-import fullView from '../images/student-roster/full-view.png';
-import addClass from '../images/student-roster/add-class.png';
-import editClass from '../images/student-roster/edit-class.png';
-import addStudents from '../images/student-roster/add-students.png';
-import editStudent from '../images/student-roster/edit-student.png';
-import fullViewSelected from '../images/student-roster/full-view-selected.png';
-import logReading from '../images/student-roster/log-reading.png';
-import sendCoins from '../images/student-roster/send-coins.png';
-import sendNote from '../images/student-roster/send-note.png';
-import usernames from '../images/student-roster/usernames.png';
+import lofiFive from '../images/owl-shop/lofi-five.png';
+import finalVersion from '../images/owl-shop/final.png';
+
+
+import galleryImg from '../images/owl-shop/gallery.png';
 
 class StudyTwo extends React.Component {
     constructor(props) {
@@ -52,44 +49,28 @@ class StudyTwo extends React.Component {
         }
       };
     render() {
-        const imagesTwo = [
-              {
-                original: fullView
-              },
-              {
-                original: addClass,
-              },
-              {
-                original: editClass,
-              },
-              {
-                original: addStudents
-              },
-              {
-                original: editStudent,
-              },
-              {
-                original: fullViewSelected,
-              },
-              {
-                original: logReading,
-              },
-              {
-                original: sendCoins,
-              },
-              {
-                original: sendNote,
-              },
-              {
-                original: usernames,
-              }
-        ];
         const images = [
             {
-              original: oldOne
+                original: oldOne
             },
             {
-              original: oldTwo,
+                original: oldTwo
+            },
+        ]
+        const imagesTwo = [
+            {
+                original: gameOne
+            },
+            {
+                original: gameTwo
+            },
+        ]
+        const imagesThree = [
+            {
+                original: lofiThree
+            },
+            {
+                original: lofiFour
             },
         ]
         if (this.props.currentView == "preview") {
@@ -105,81 +86,95 @@ class StudyTwo extends React.Component {
                 </div>
                 <div className={ className }>
                     <div className="workContainer" ref="container">
-                        <div className="workContent">
+                        <div className="studyTwoPage workContent">
                             <div className="introContainer workSection">
                                  <p className="workHeader">Intro</p>
-                                 <p className="headlineText">How can we create one place where teachers can perform a variety of actions? Additionally, how can we enable teachers to perform these actions on behalf of multiple students-easily, all at once, and across different classes?</p>
+                                 <p className="headlineText">How can we present accessories ("products”) and shop (“marketplace”) interactions in a new and cleaner way.</p>
                                 <p>
-                                    On Whooo’s Reading’s <i>Student Roster</i>, teachers can do a variety of actions, such as, editing students or class settings, logging reading (for students), sending notes/coins (to students), adding students, adding classes, and retrieving student login information.
+                                    Gamification is a cornerstone of the Whooo’s Reading student experience. Students earn coins by answering reading comprehension questions and use them to purchase accessories and other fun items from the <i>Owl Shop</i>.
                                 </p>
-                                <p>
-                                    Previously, these actions were all on separate pages and their links were spread between the home and settings pages.
-                                </p>
+                                <p>Previously, the <i>Owl Shop</i> was a bit cumbersome and not easy to navigate.</p>
                                 <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
                                     showThumbnails={ false } />
                             </div>
                             <div className="goalsContainer workSection">
                                 <p className="workHeader">Goals</p>
                                 <div className="goalContainer"> 
-                                    <p className="subHeader">Consolidate</p>
+                                    <p className="subHeader">Simplify</p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">Since actions were spread out over a number of pages, to log student reading, add new students, and send a note, teachers had to navigate to multiple pages. Already crunched for time, teachers were losing even more time.</p>
+                                    <p className="subText">The accordion navigation and modal made the experience clunky, constraining, and disorienting. Too purchase or preview one accessory this was the flow: item category > accessory > buy accessory (modal) > close out modal (to try another).</p>
                                 </div>
                                 <div className="goalContainer"> 
-                                    <p className="subHeader">Cleanup Navigation</p>
+                                    <p className="subHeader">Display More Accessories</p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">Navigationally, the groupings of the different actions didn’t seem to have much of a connection; making it hard to know where to go. Additionally, a few actions were placed in a sidebar by themselves (as <i>Quick Links</i>). The groupings were confusing even for regular users of the site.</p>
+                                    <p className="subText">Only 5 accessories were viewable at a given time. Again, this contributed to an overall inefficient experience.</p>
                                 </div>
-                                <div className="goalContainer"> 
-                                    <p className="subHeader">Batch Functionality</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Some of the actions were rigid in that they could only be performed for one or all students.
-                                        A teacher wanting to award 5 students (from two classes) 50 points for a good job reading, would have to do this separately for each student. Without support for batch processing (taking action on/for numerous students at once), simple tasks took a long time.</p>
+                                <div className="requirementsText">
+                                    <p className="subHeader">Must Include</p>
+
+                                    <span className="circleDividerSmall"></span>
+                                    <p className="subText">Student's owlvatar</p>
+
+                                    <span className="circleDividerSmall"></span>
+                                    <p className="subText">Student's coins total</p>
+                                    <span className="circleDividerSmall"></span>
+                                    <p className="subText">Accessory information: title, price, and description</p>
+                                    <span className="circleDividerSmall"></span>
+                                    <p className="subText">A way for students to preview the accessory</p>
                                 </div>
                             </div>
                             <div className="strategyContainer workSection">
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
-                                 <p>
-                                    While doing a competitive analysis, I came across <b>Class Dojo</b>, a highly popular classroom-management tool that is fun, elegant, and easy to use. Their first screen is a list of the teacher’s classes (on little cards). On this page, you can do two things: add more classes and change a class's settings (via the gears icon).
-                                </p>
-                                <img src={ classDojoOne } alt=""/>
-                                <p>
-                                    The class card brings you to that classes students page, where you can select (any or all) students and take a variety of the actions (from their toolbar).
-                                </p>
-                                <img src={ classDojoTwo } alt=""/>
-                                <p>We took a similar approach to Class Dojo’s but with a few important twists.</p>
-                                <div className="classDojoText">
-                                    <p className="subHeader"><b>Similarities to Class Dojo</b></p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Students can be selected and batched for different actions.</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">The batch-able actions are on a toolbar and clicking an action brings down an interface with the relevant forms and details.</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Clicking on a student or class brings up their information for viewing and editing.</p>
+                                <div>
+                                    <p>My only initial thought was that I wanted to keep the basic layout the same; student’s Owlvatar (including the save button underneath it) on the left and the accessories and information on the right.</p>
+                                    <p>For inspiration, I looked at two online dress up games; where you essentially dress up and play around with an avatar.</p>
+                                    <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
+                                        showThumbnails={ false } />
+                                    <p>I noticed several similarities between these two games:</p>
+                                    <span className="circleDividerSmall"></span>
+                                    <p className="subText">The accessory categories are separated from the owlvatar display area-either above or around it.</p>
+                                    <span className="circleDividerSmall"></span>
+                                    <p className="subText">The avatar is prominent.</p>
+                                    <span className="circleDividerSmall"></span>
+                                    <p className="subText">Clicking on an item, shows you a preview of how it will look.</p>
+                                    <span className="circleDividerSmall"></span>
+                                    <p className="subText">When an accessory is selected, the color picker is easily accessible.</p>    
                                 </div>
                                 <div>
-                                    <p className="subHeader">How We Differed and Why</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p>
+                                    <p className="subHeader">Navigation</p>
+                                    <p>
+                                        In the second example, the accessories surround the avatar. Although intrigued, I felt it was too crammed and the lack of titles made it unclear what each accessory was. 
+                                        I wanted each category to have an icon and a title underneath it, so that the categories would be easily understood. Like the first example, we wanted two rows of icons. By shrinking the icons and trimming down the display we could comfortably fit the icons on two rows.
+                                    </p>
+                                    <img src={ lofiOne } alt=""/>
+                                    <p className="subHeader">Accessories Layout</p>
+                                    <p>The first step was to remove our clunky accordion setup and go with a simple grid layout. This simplified the experience and also provided enough space to show eight accessories at once, instead of five. The added space also enabled us to display the title and price tag of each accessory.</p>
+                                    <img src={ lofiTwo } alt=""/>
+                                    <p>I wanted to continue using a gallery layout to display the additional accessories. This was similar to an e-commerce platform where you see the items in a grid and can cycle through them. </p>
+                                    <img src={ galleryImg } alt=""/>
+                                    <p>With this grid layout, we could now show the accessory’s description directly underneath it. This was a major improvement over having to click on the accessory and view the description within a modal.</p>
+                                    <p className="colonText">The placement of the description was a little tricky though. Placing it only underneath the item selected seemed off for two reasons:</p>
+                                    <ol>
+                                        <li>When one of the top items was selected, the description would appear between the two rows and disrupted the flow of the interface.</li>
+                                        <li className="secondItem">Depending on the item selected, the description would at times appear below the first row sand at times appear below both.</li>
+                                    </ol>
+                                    
+                                    <ImageGallery items={ imagesThree } showFullscreenButton={ false } showPlayButton={ false }
+                                        showThumbnails={ false } />
+                                    <p>I preferred to place the description of the accessory (and the purchasing button) always above the two rows of accessories. To ensure it was clear which accessory was selected, we added a border around it once clicked.</p>
+                                    <p className="subHeader">Color-Picker</p>
+                                    <p>We used to have a category called colors, that would allow you to change the color of a variety of different owl parts. There were two issues with this:</p>
+                                    <ol>
+                                        <li>It was confusing to have a category that was a style and not a type of body part.</li>
+                                        <li>If you wanted to do multiple things, for example, change the wing’s color and place something on the wing, you had to navigate to two separate places. This did not feel intuitive.</li>
+                                    </ol>
+                                    <p>We consolidated everything related to say the wings within the wings tab. The color options for the wings, are included below the accessories. I preferred to use little color boxes over our previous color adjustment bar, as it is less distracting and more minimal.</p>
+                                    <img src={ lofiFive } alt=""/>
                                 </div>
-                            </div> 
-                            <div className="structureContainer workSection">
-                                <p className="workHeader">Flow <span className="andText">and</span> Structure</p>
-                                 <p>There were two levels in our structure. The surface level contains classes, students, and the adding classes and students modals. The second level contained the student and class information modals and the action modals triggered after selecting students.</p>
-                                <img src={ flowStructure} alt=""/>
                             </div>
-                            <div className="lofiContainer workSection">
-                                <p className="workHeader">Lo-fi</p>
-                                <img src={ lofiImg } alt=""/>
-                            </div> 
                             <div className="hifiContainer workSection">
                                 <p className="workHeader">Final Version</p>
-                                <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
-                                    showThumbnails={ false } />
+                                <img src={ finalVersion } alt=""/>
                             </div>     
                         </div>
                     </div>

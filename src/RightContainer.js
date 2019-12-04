@@ -14,7 +14,8 @@ class RightContainer extends React.Component {
     render() {
     	let { match, location } = this.props;
     	var path = location.pathname;
-    	if (path === "/works/Studies/StudyOne") {
+    	
+    	if (path.includes("Studies")) {
 			var className = "expand";		
     	} 
     	return (

@@ -56,7 +56,7 @@ class leftContainer extends React.Component {
     	}
     	let { match, location, history } = this.props;
     	var path = location.pathname;
-    	if (path === "/works/Studies/StudyOne") {
+    	if (path.includes("StudyOne")) {
     		if (this.props.currentView == "preview") {
 				var className = "minimize"
 				var previewTopClassName = "previewTop"
@@ -79,6 +79,29 @@ class leftContainer extends React.Component {
     				</div>
     			)
     		}
+    	} else if (path.includes("StudyTwo")) {
+    		if (this.props.currentView == "preview") {
+				var className = "minimize"
+				var previewTopClassName = "previewTop"
+				var infoContainer = (
+					<div className={ "infoContainer preview " + previewTopClassName }>
+				    	<p className="title">Avatars and E-Commerce Design</p>
+				        <span className="circleDivider"></span>
+				        <p className="studyPreviewText">Re-designed a fun shop for a better user experience.</p>
+				        <span className="circleDivider"></span>
+				        <p className="studyRolesText">Research, UI/UX, Visual</p>
+					</div>
+				)	
+    		} else if (this.props.currentView == "startStudy") {
+    			var className = "exterminate"
+    			var infoContainer = (
+    				<div className="infoContainer">
+    				    <div>
+    				    	<p className="title">Title goes here...</p>
+    				    </div>
+    				</div>
+    			)
+    		}
     	} else {
     		var infoContainer = (
     			<div className="infoContainer">
@@ -86,7 +109,7 @@ class leftContainer extends React.Component {
     				<span className="circleDivider"></span>
     				<p className="title">{ title }</p>
     			</div>	
-    		)
+    		)	
     	}
     	return (
     		<div className={ "leftContainer " + className }>
