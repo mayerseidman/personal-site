@@ -89,7 +89,7 @@ class StudyTwo extends React.Component {
                         <div className="studyTwoPage workContent">
                             <div className="introContainer workSection">
                                  <p className="workHeader">Intro</p>
-                                 <p className="headlineText">How can we present accessories ("products”) and shop (“marketplace”) interactions in a new and cleaner way.</p>
+                                 <p className="headlineText">How can we present accessories (products) and shop (marketplace) interactions in a new and cleaner way?</p>
                                 <p>
                                     Gamification is a cornerstone of the Whooo’s Reading student experience. Students earn coins by answering reading comprehension questions and use them to purchase accessories and other fun items from the <i>Owl Shop</i>.
                                 </p>
@@ -102,12 +102,12 @@ class StudyTwo extends React.Component {
                                 <div className="goalContainer"> 
                                     <p className="subHeader">Simplify</p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">The accordion navigation and modal made the experience clunky, constraining, and disorienting. Too purchase or preview one accessory this was the flow: item category > accessory > buy accessory (modal) > close out modal (to try another).</p>
+                                    <p className="subText">The accordion navigation and modal made the experience clunky, constraining, and disorienting. Too purchase or preview one accessory this was the flow: <br/> item category > accessory > buy accessory (modal) > close out modal (to try another).</p>
                                 </div>
                                 <div className="goalContainer"> 
                                     <p className="subHeader">Display More Accessories</p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">Only 5 accessories were viewable at a given time. Again, this contributed to an overall inefficient experience.</p>
+                                    <p className="subText">Only five accessories were viewable at a given time. Again, this contributed to an overall inefficient experience.</p>
                                 </div>
                                 <div className="requirementsText">
                                     <p className="subHeader">Must Include</p>
@@ -125,8 +125,8 @@ class StudyTwo extends React.Component {
                             </div>
                             <div className="strategyContainer workSection">
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
-                                <div>
-                                    <p>My only initial thought was that I wanted to keep the basic layout the same; student’s Owlvatar (including the save button underneath it) on the left and the accessories and information on the right.</p>
+                                <div className="inspiration">
+                                    <p>My first thought was that I wanted to keep the basic layout the same; student’s Owlvatar (including the save button underneath it) on the left and the accessories and information on the right.</p>
                                     <p>For inspiration, I looked at two online dress up games; where you essentially dress up and play around with an avatar.</p>
                                     <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
                                         showThumbnails={ false } />
@@ -136,7 +136,7 @@ class StudyTwo extends React.Component {
                                     <span className="circleDividerSmall"></span>
                                     <p className="subText">The avatar is prominent.</p>
                                     <span className="circleDividerSmall"></span>
-                                    <p className="subText">Clicking on an item, shows you a preview of how it will look.</p>
+                                    <p className="subText">Clicking on an item, gives you a preview of how it will look.</p>
                                     <span className="circleDividerSmall"></span>
                                     <p className="subText">When an accessory is selected, the color picker is easily accessible.</p>    
                                 </div>
@@ -147,16 +147,19 @@ class StudyTwo extends React.Component {
                                         I wanted each category to have an icon and a title underneath it, so that the categories would be easily understood. Like the first example, we wanted two rows of icons. By shrinking the icons and trimming down the display we could comfortably fit the icons on two rows.
                                     </p>
                                     <img src={ lofiOne } alt=""/>
+                                    
                                     <p className="subHeader">Accessories Layout</p>
-                                    <p>The first step was to remove our clunky accordion setup and go with a simple grid layout. This simplified the experience and also provided enough space to show eight accessories at once, instead of five. The added space also enabled us to display the title and price tag of each accessory.</p>
+                                    <p>The first step was to remove our clunky accordion setup and go with a simple grid layout. This simplified the experience and also provided enough space to show eight accessories (at once), instead of five. The added space also enabled us to display the title and price tag of each accessory.</p>
                                     <img src={ lofiTwo } alt=""/>
                                     <p>I wanted to continue using a gallery layout to display the additional accessories. This was similar to an e-commerce platform where you see the items in a grid and can cycle through them. </p>
                                     <img src={ galleryImg } alt=""/>
+
+                                    <p className="subHeader">Accessory Description</p>
                                     <p>With this grid layout, we could now show the accessory’s description directly underneath it. This was a major improvement over having to click on the accessory and view the description within a modal.</p>
                                     <p className="colonText">The placement of the description was a little tricky though. Placing it only underneath the item selected seemed off for two reasons:</p>
                                     <ol>
                                         <li>When one of the top items was selected, the description would appear between the two rows and disrupted the flow of the interface.</li>
-                                        <li className="secondItem">Depending on the item selected, the description would at times appear below the first row sand at times appear below both.</li>
+                                        <li className="secondItem">Depending on the item selected, the description would at times appear below the first row and at times appear below both rows.</li>
                                     </ol>
                                     
                                     <ImageGallery items={ imagesThree } showFullscreenButton={ false } showPlayButton={ false }
@@ -165,11 +168,11 @@ class StudyTwo extends React.Component {
                                     <p className="subHeader">Color-Picker</p>
                                     <p>We used to have a category called colors, that would allow you to change the color of a variety of different owl parts. There were two issues with this:</p>
                                     <ol>
-                                        <li>It was confusing to have a category that was a style and not a type of body part.</li>
-                                        <li>If you wanted to do multiple things, for example, change the wing’s color and place something on the wing, you had to navigate to two separate places. This did not feel intuitive.</li>
+                                        <li>It was confusing to have one category that was a style and not a type of body part.</li>
+                                        <li>If you wanted to do multiple things, for example, change a wing’s color and place something on it, you had to navigate to two separate places. This was not intuitive.</li>
                                     </ol>
-                                    <p>We consolidated everything related to say the wings within the wings tab. The color options for the wings, are included below the accessories. I preferred to use little color boxes over our previous color adjustment bar, as it is less distracting and more minimal.</p>
-                                    <img src={ lofiFive } alt=""/>
+                                    <p>Instead, we consolidated everything related to the wings within the wings tab. We put the color options for the wings below the wing accessories. I preferred to use little color boxes over our previous color bar, as it was less distracting and more minimal.</p>
+                                    <img className="lofiFiveImg" src={ lofiFive } alt=""/>
                                 </div>
                             </div>
                             <div className="hifiContainer workSection">

@@ -85,7 +85,7 @@ class leftContainer extends React.Component {
 				var previewTopClassName = "previewTop"
 				var infoContainer = (
 					<div className={ "infoContainer preview " + previewTopClassName }>
-				    	<p className="title">Avatars and E-Commerce Design</p>
+				    	<p className="title">Avatars <span className="andText">and</span> E-Commerce Design</p>
 				        <span className="circleDivider"></span>
 				        <p className="studyPreviewText">Re-designed a fun shop for a better user experience.</p>
 				        <span className="circleDivider"></span>

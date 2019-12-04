@@ -44,6 +44,9 @@ p {
 			    position: relative;
 			}	
 		}
+		.andText {
+     		font-size: 0.8em;
+    	}
 	}
 	.rightContainer {
 	    .section {
@@ -133,6 +136,7 @@ p {
 /*				border-left: 1px solid #999;
 */				vertical-align: top;
 				/*padding-left: 50px;*/
+				padding-left: 38px;
 				a {
 					display: block;
 				}
@@ -238,8 +242,9 @@ p {
 		   /* height: 500px;*/
 		    .section {
 				padding-left: 75px;
-				padding-right: 75px;
+				/*padding-right: 75px;*/
 				padding-top: 125px;
+				padding-right: 55px;
 		    }
 		    .navbarContainer {
 		    	/*float: left;*/

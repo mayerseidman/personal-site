@@ -33,8 +33,8 @@ class Works extends React.Component {
                             <p className="categoryDescription mobileHide">Research, UI/UX, Visual</p>
                         </div>
                         <div>
-                            <Link to={`${this.props.match.path}/Studies/StudyTwo`}>Link Two</Link>
-                            <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the</p>
+                            <Link to={`${this.props.match.path}/Studies/StudyTwo`}>Avatars and E-Commerce Design</Link>
+                            <p className="categoryDescription mobileHide">Research, UI/UX, Visual</p>
                         </div>
                         <div>
                            <Link to="/works/3">Link Three</Link>
