@@ -99,11 +99,25 @@
 	}
 }
 
+.studyOnePage {
+	.circleDivider {
+		bottom: 0px !important;
+	}
+	.highlightedWord {
+		color: black;
+		font-weight: 500;
+	}
+	img { 
+		width: 100%;
+		margin-bottom: 20px; 
+	}
+}
+
 /* WEB Media Query  */
 @media only screen and (min-width: 1000px) {
 	.workOuterContainer {
 		padding-top: 87px;
-		padding-bottom: 18px;
+		padding-bottom: 13px;
 		.workContainer {
 			height: 500px;
 			width: 85%; 

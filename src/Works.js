@@ -27,18 +27,18 @@ class Works extends React.Component {
                     </div>  
                 </div>
                 <div className="rightWorksContainer">
-                    <div className="studiesLinksContainer">     
+                    <div className="studiesLinksContainer">
                         <div>
-                          <Link to={`${this.props.match.path}/Studies/StudyOne`} onClick={ this.props.changeLeftContainer }>Student Roster Design</Link>
+                          <Link to={`${this.props.match.path}/Studies/StudyOne`} onClick={ this.props.changeLeftContainer }>Reading Comprehension Tool</Link>
+                            <p className="categoryDescription mobileHide">Research, UI/UX, Visual, Feedback</p>
+                        </div>
+                        <div>
+                          <Link to={`${this.props.match.path}/Studies/StudyTwo`}>Student Roster Design</Link>
                             <p className="categoryDescription mobileHide">Research, UI/UX, Visual</p>
                         </div>
                         <div>
-                            <Link to={`${this.props.match.path}/Studies/StudyTwo`}>Avatars and E-Commerce Design</Link>
+                            <Link to={`${this.props.match.path}/Studies/StudyThree`}>Avatars and E-Commerce Design</Link>
                             <p className="categoryDescription mobileHide">Research, UI/UX, Visual</p>
-                        </div>
-                        <div>
-                           <Link to="/works/3">Link Three</Link>
-                            <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the</p>
                         </div>
                         <div>
                            <Link to="/works/3">Link Four</Link>

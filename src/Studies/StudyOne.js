@@ -1,27 +1,14 @@
 import React from 'react';
 import './StudyOne.scss';
+import './StudyThree.scss';
+
 import ImageGallery from 'react-image-gallery';
+import multipleChoice from '../images/wr-lite/multiple-choice.png';
+import comprehension from '../images/wr-lite/comprehension.png';
+import jobToBeDone from '../images/wr-lite/job-to-be-done-border.png';
 
 // Images
 
-import oldOne from '../images/student-roster/old-one.png';
-import oldTwo from '../images/student-roster/old-two.png';
-
-import flowStructure from '../images/student-roster/flow-and-structure-2.png';
-import lofiImg from '../lofi5.png';
-import classDojoOne from '../images/student-roster/class-dojo-one.png';
-import classDojoTwo from '../images/student-roster/class-dojo-two.png';
-
-import fullView from '../images/student-roster/full-view.png';
-import addClass from '../images/student-roster/add-class.png';
-import editClass from '../images/student-roster/edit-class.png';
-import addStudents from '../images/student-roster/add-students.png';
-import editStudent from '../images/student-roster/edit-student.png';
-import fullViewSelected from '../images/student-roster/full-view-selected.png';
-import logReading from '../images/student-roster/log-reading.png';
-import sendCoins from '../images/student-roster/send-coins.png';
-import sendNote from '../images/student-roster/send-note.png';
-import usernames from '../images/student-roster/usernames.png';
 
 class StudyOne extends React.Component {
     constructor(props) {
@@ -52,46 +39,6 @@ class StudyOne extends React.Component {
         }
       };
     render() {
-        const imagesTwo = [
-              {
-                original: fullView
-              },
-              {
-                original: addClass,
-              },
-              {
-                original: editClass,
-              },
-              {
-                original: addStudents
-              },
-              {
-                original: editStudent,
-              },
-              {
-                original: fullViewSelected,
-              },
-              {
-                original: logReading,
-              },
-              {
-                original: sendCoins,
-              },
-              {
-                original: sendNote,
-              },
-              {
-                original: usernames,
-              }
-        ];
-        const images = [
-            {
-              original: oldOne
-            },
-            {
-              original: oldTwo,
-            },
-        ]
         if (this.props.currentView == "preview") {
             var startStudyLink = (
                 <a onClick={ this.props.startStudy }>START THE STUDY!</a>
@@ -105,81 +52,80 @@ class StudyOne extends React.Component {
                 </div>
                 <div className={ className }>
                     <div className="workContainer" ref="container">
-                        <div className="workContent">
+                        <div className="workContent studyOnePage">
                             <div className="introContainer workSection">
-                                 <p className="workHeader">Intro</p>
-                                 <p className="headlineText">How can we create one place where teachers can perform a variety of actions? Additionally, how can we enable teachers to perform these actions on behalf of multiple students-easily, all at once, and across different classes?</p>
-                                <p>
-                                    On Whooo’s Reading’s <i>Student Roster</i>, teachers can do a variety of actions, such as, editing students or class settings, logging reading (for students), sending notes/coins (to students), adding students, adding classes, and retrieving student login information.
-                                </p>
-                                <p>
-                                    Previously, these actions were all on separate pages and their links were spread between the home and settings pages.
-                                </p>
-                                <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
-                                    showThumbnails={ false } />
-                            </div>
-                            <div className="goalsContainer workSection">
-                                <p className="workHeader">Goals</p>
-                                <div className="goalContainer"> 
-                                    <p className="subHeader">Consolidate</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Since actions were spread out over a number of pages, to log student reading, add new students, and send a note, teachers had to navigate to multiple pages. Already crunched for time, teachers were losing even more time.</p>
-                                </div>
-                                <div className="goalContainer"> 
-                                    <p className="subHeader">Cleanup Navigation</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Navigationally, the groupings of the different actions didn’t seem to have much of a connection; making it hard to know where to go. Additionally, a few actions were placed in a sidebar by themselves (as <i>Quick Links</i>). The groupings were confusing even for regular users of the site.</p>
-                                </div>
-                                <div className="goalContainer"> 
-                                    <p className="subHeader">Batch Functionality</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Some of the actions were rigid in that they could only be performed for one or all students.
-                                        A teacher wanting to award 5 students (from two classes) 50 points for a good job reading, would have to do this separately for each student. Without support for batch processing (taking action on/for numerous students at once), simple tasks took a long time.</p>
-                                </div>
+                                <p className="workHeader">Intro</p>
+                                <p className="headlineText">text goes here...</p>
+                                <p>Since the beginning, Whooo’s Reading has been very good at helping teachers track their students’ independent reading and motivating students to read more on their own. While Whooo’s Reading did a good job managing and motivating independent reading, we discovered that teachers and schools were most interested in WR because of the questions that ask students about the books they read.</p>
+                                <img src={ comprehension } alt=""/>
+
+                                <p>We learned that teachers were fed up with the factual-recall multiple choice questions that programs would ask students.</p>
+                                <img src={ multipleChoice } alt=""/>
+                                <p>Questions like these do not prepare students for a world in which they need to think creatively and analytically and one in which they can easily google the answer to fact-recall questions. Moreover the new standards ask students to synthesize, cite evidence, analyze, and write and these ‘old-school’ multiple choice assessments were not cutting it anymore. </p>
+                                <p>As a result, we realized that the best way we could continue to help teachers with our program was by improving our reading questions and assessment content. To make these improvements, we turned to our teachers for their invaluable feedback and input.</p>
                             </div>
                             <div className="strategyContainer workSection">
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
-                                 <p>
-                                    While doing a competitive analysis, I came across <b>Class Dojo</b>, a highly popular classroom-management tool that is fun, elegant, and easy to use. Their first screen is a list of the teacher’s classes (on little cards). On this page, you can do two things: add more classes and change a class's settings (via the gears icon).
-                                </p>
-                                <img src={ classDojoOne } alt=""/>
-                                <p>
-                                    The class card brings you to that classes students page, where you can select (any or all) students and take a variety of the actions (from their toolbar).
-                                </p>
-                                <img src={ classDojoTwo } alt=""/>
-                                <p>We took a similar approach to Class Dojo’s but with a few important twists.</p>
-                                <div className="classDojoText">
-                                    <p className="subHeader"><b>Similarities to Class Dojo</b></p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Students can be selected and batched for different actions.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">The batch-able actions are on a toolbar and clicking an action brings down an interface with the relevant forms and details.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Clicking on a student or class brings up their information for viewing and editing.</p>
-                                </div>
-                                <div>
-                                    <p className="subHeader">How We Differed and Why</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p>
+                                <div className="">
+                                    <p className="subHeader"><b>General Discovery</b></p>
+                                    <p>For two weeks we had phone calls with dozens of teachers around the country and learned that a major problem is finding formative assessments that align with the standards and reinforce the reading units they teach. While some sites (e.g. Pinterest) offer graphic organizers and other forms of assessments-- it often takes many hours to find the right types of reading exercises and they rarely are engaging for students. In fact nearly every teacher we spoke to brought up some version of this problem. </p>
+                                    <p>
+                                        <i>"I might have a student who is missing a particular skill: maybe inferring, drawing conclusions, answering open ended questions, main ideas, supporting details, using evidence. The way I currently handle this is to introduce a concept to the whole class (e.g. main ideas) then do a lesson on the concept. Then I break them into groups of 4 so they can start getting practice and so they can give support to each other. 
+                                       <br/> <br/> The worst part of this process is coming up with activities for the 3 or 4 person groups and grading them. My expertise is in teaching the lesson and helping groups and students understand what was taught. I want to hand off coming up with ways to practice the reading skills.”</i>
+                                    </p>
+                                    <p className="subHeader"><b>Creating Assignments</b></p>
+                                    <p>Teachers want to assign anywhere between 1-3 exercises that are aligned with standards. They want their students to then work on these exercises. Teachers want to assign different assignments to different groups of students (depending on their specific needs and pace).</p>
+                                    <p>
+                                        <i>
+                                        “I want to assign exercises for students to work on that’s aligned with unit I am focusing on. I want to check up on my computer during the period, where students are with regards to finishing the exercises (I like how google classroom does this). 
+                                        <br/> <br/>Its very important for me to be able to assign students exercises based on their individual needs.”
+                                        </i>
+                                    </p>
+                                    <p className="subHeader">Data</p>
+                                    <p>Teachers are very short on time. They usually have to look in several places to analyze data to determine where their students are at. Teachers highly value data that shows outliers: who is totally underperforming (and needs more hands on attention) and who is over-performing (needs to be challenged). They want to see this data broken down by skillset comprehension.</p>
+                                    <p>
+                                        <i>“My time is so limited. At the beginning of the year, you have to look at their test scores from last year or get to know them before you can determine how to group them. I want reports that tell me who’s mastering which skill sets. I would still look deep into it, but when I'm short on time, I would have the information right at my fingertips.
+                                            <br/> <br/>Both individual and group data are crucial. I would use individual data for small groups, and whole class data for informing my instruction.”</i>
+                                    </p>
+                                    <p className="subHeader">Jobs To Be Done</p>
+                                    <img src={ jobToBeDone } alt=""/>
+                                    <p>To further distill our research down to actionable steps, we then plugged it into the Jobs To Be Done Framework. The Jobs To Be Done framework is focused on the "job" or task a user is trying to accomplish. We were able to turn our reasearch into these statements:</p>
+                                    
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">
+                                        Situation: <span className="highlightedWord">When</span> I assign reading and exercises <br/>
+                                        Motivation: <span className="highlightedWord">I want</span> to find content (texts and questions) in one place (that’s accessible by the students) <br/>
+                                        Result: <span className="highlightedWord">So I can</span> spend more time on lesson-prep.
+                                    </p>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">
+                                        Situation: <span className="highlightedWord">When</span> I am using exercises and questions (from software) <br/>
+                                        Motivation: <span className="highlightedWord">I want</span> to have higher level thinking exercises <br/>
+                                        Result: <span className="highlightedWord">So I can</span> be sure they are fully mastering higher-level thinking and reinforce my lessons.
+                                    </p>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">
+                                        Situation: <span className="highlightedWord">When</span> I am assigning reading and exercises <br/>
+                                        Motivation: <span className="highlightedWord">I want</span> the kids to enjoy the program <br/>
+                                        Result: <span className="highlightedWord">So I can</span>they develop a love for reading.
+                                    </p>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">
+                                        Situation: <span className="highlightedWord">When</span> I am assessing student growth <br/>
+                                        Motivation: <span className="highlightedWord">I want</span> receive a report (on their strengths and weaknesses) <br/>
+                                        Result: <span className="highlightedWord">So I can</span> provide them with the necessary support.
+                                    </p>
                                 </div>
                             </div> 
                             <div className="structureContainer workSection">
                                 <p className="workHeader">Flow <span className="andText">and</span> Structure</p>
-                                 <p>There were two levels in our structure. The surface level contains classes, students, and the adding classes and students modals. The second level contained the student and class information modals and the action modals triggered after selecting students.</p>
-                                <img src={ flowStructure} alt=""/>
                             </div>
                             <div className="lofiContainer workSection">
                                 <p className="workHeader">Lo-fi</p>
-                                <img src={ lofiImg } alt=""/>
                             </div> 
                             <div className="hifiContainer workSection">
                                 <p className="workHeader">Final Version</p>
-                                <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
-                                    showThumbnails={ false } />
+                               
                             </div>     
                         </div>
                     </div>
@@ -191,5 +137,4 @@ class StudyOne extends React.Component {
         );
     }
 }
-
 export default StudyOne

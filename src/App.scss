@@ -231,7 +231,7 @@ p {
 			/*padding-bottom: 125px;*/
 		    margin-left: 50%;
 			.homeSection {
-				padding-bottom: 170px;
+				padding-bottom: 165px;
 				.quoteContainer {
 					margin-bottom: 0;
 					.quote {
@@ -297,6 +297,12 @@ p {
 	    	    .projectsTitleContainer, .articlesTitleContainer, .projectsLinksContainer, .articlesLinksContainer {
 	    	    	margin-top: 45px;
 	    	    }
+    	    	.projectsTitleContainer, .projectsLinksContainer {
+					margin-top: 60px;
+    	    	}
+    	    	.articlesTitleContainer, .articlesLinksContainer {
+					margin-top: 25px;
+    	    	}
 	        }
 		}
 		.expand {

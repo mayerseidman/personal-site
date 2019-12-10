@@ -58,17 +58,17 @@ class leftContainer extends React.Component {
     	var path = location.pathname;
     	if (path.includes("StudyOne")) {
     		if (this.props.currentView == "preview") {
-				var className = "minimize"
-				var previewTopClassName = "previewTop"
-				var infoContainer = (
-					<div className={ "infoContainer preview " + previewTopClassName }>
-				    	<p className="title">Student Roster Design</p>
-				        <span className="circleDivider"></span>
-				        <p className="studyPreviewText">Created a new interface to handle batch processing for teachers and their students.</p>
-				        <span className="circleDivider"></span>
-				        <p className="studyRolesText">Research, UI/UX, Visual</p>
-					</div>
-				)	
+    			var className = "minimize"
+    			var previewTopClassName = "previewTop"
+    			var infoContainer = (
+    				<div className={ "infoContainer preview " + previewTopClassName }>
+    			    	<p className="title">Title here...</p>
+    			        <span className="circleDivider"></span>
+    			        <p className="studyPreviewText">Description...</p>
+    			        <span className="circleDivider"></span>
+    			        <p className="studyRolesText">Research, UI/UX, Visual</p>
+    				</div>
+    			)	
     		} else if (this.props.currentView == "startStudy") {
     			var className = "exterminate"
     			var infoContainer = (
@@ -80,7 +80,30 @@ class leftContainer extends React.Component {
     			)
     		}
     	} else if (path.includes("StudyTwo")) {
-    		if (this.props.currentView == "preview") {
+			if (this.props.currentView == "preview") {
+				var className = "minimize"
+				var previewTopClassName = "previewTop"
+				var infoContainer = (
+					<div className={ "infoContainer preview " + previewTopClassName }>
+				    	<p className="title">Student Roster Design</p>
+				        <span className="circleDivider"></span>
+				        <p className="studyPreviewText">Created a new interface to handle batch processing for teachers and their students.</p>
+				        <span className="circleDivider"></span>
+				        <p className="studyRolesText">Research, UI/UX, Visual</p>
+					</div>
+				)	
+			} else if (this.props.currentView == "startStudy") {
+				var className = "exterminate"
+				var infoContainer = (
+					<div className="infoContainer">
+					    <div>
+					    	<p className="title">Title goes here...</p>
+					    </div>
+					</div>
+				)
+			}
+    	} else if (path.includes("StudyThree")) {
+			if (this.props.currentView == "preview") {
 				var className = "minimize"
 				var previewTopClassName = "previewTop"
 				var infoContainer = (
@@ -92,16 +115,16 @@ class leftContainer extends React.Component {
 				        <p className="studyRolesText">Research, UI/UX, Visual</p>
 					</div>
 				)	
-    		} else if (this.props.currentView == "startStudy") {
-    			var className = "exterminate"
-    			var infoContainer = (
-    				<div className="infoContainer">
-    				    <div>
-    				    	<p className="title">Title goes here...</p>
-    				    </div>
-    				</div>
-    			)
-    		}
+			} else if (this.props.currentView == "startStudy") {
+				var className = "exterminate"
+				var infoContainer = (
+					<div className="infoContainer">
+					    <div>
+					    	<p className="title">Title goes here...</p>
+					    </div>
+					</div>
+				)
+			}
     	} else {
     		var infoContainer = (
     			<div className="infoContainer">
