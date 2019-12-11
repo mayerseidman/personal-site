@@ -111,6 +111,23 @@
 		width: 100%;
 		margin-bottom: 20px; 
 	}
+	/*.click-zoom input[type=checkbox] {
+	  display: none
+	}
+
+	.click-zoom img {
+	  transition: transform 0.25s ease;
+	  cursor: zoom-in
+	}
+
+	.zoomIn {
+		transform: scale(2);
+		cursor: zoom-out
+	}*/
+
+	/*.click-zoom input[type=checkbox]:checked~img {
+	  
+	}*/
 }
 
 /* WEB Media Query  */
