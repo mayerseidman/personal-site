@@ -15,11 +15,18 @@ import trello from '../images/wr-lite/trello.png';
 import teacherSiteMap from '../images/wr-lite/teacher-site-map.png';
 import teacherSM from '../images/wr-lite/teacher-exercises-sm.png';
 import teacherGAS from '../images/wr-lite/teacher-exercises-gas.png';
+import teacherAssignmentsSpec from '../images/wr-lite/teacher-assignments-spec.png';
+import teacherAssignmentsSpecTwo from '../images/wr-lite/teacher-assignments-spec-two.png';
+
 
 import studentSiteMap from '../images/wr-lite/student-site-map-two.png';
 import studentSM from '../images/wr-lite/student-exercises-sm.png';
 import studentGAS from '../images/wr-lite/student-exercises-gas.png';
 import studentGASTwo from '../images/wr-lite/student-exercises-gas-two.png';
+import studentAssignmentsSpec from '../images/wr-lite/student-assignments-spec.png';
+
+import diagnosticIndivImg from '../images/wr-lite/diagnostic-individuals.png';
+import diagnosticGroupImg from '../images/wr-lite/diagnostic-group.png';
 
 // Images
 
@@ -175,22 +182,36 @@ class StudyOne extends React.Component {
                                 <p className="subHeader">Teacher Experience</p>
                                 <div className="click-zoom">
                                     <img src={ teacherSiteMap } alt=""/>
-                                    <p className="subHeader">Viewing and Editing Exercises</p>
+                                    <p className="secondaryHeader">Viewing and Editing Exercises</p>
                                     <img src={ teacherSM } alt=""/>
                                     <img src={ teacherGAS } alt=""/>
+                                    <p className="secondaryHeader">Creating Assignments</p>
+                                    <img src={ teacherAssignmentsSpec } alt=""/>
+
+                                    <p className="secondaryHeader">Viewing Student Progress</p>
+                                    <img src={ teacherAssignmentsSpecTwo } alt=""/>
                                 </div>
 
                                 <p className="subHeader">Student Experience</p>
                                 <img src={ studentSiteMap } alt=""/>
-                                <p className="subHeader">Viewing Exercises</p>
+                                <p className="secondaryHeader">Viewing Exercises</p>
                                 <img src={ studentSM } alt=""/>
-                                <p className="subHeader">Entering text details</p>
-                                <img src={ studentGAS } alt=""/>
-                                <p className="subHeader">...</p>
-                                <img src={ studentGASTwo } alt=""/>
-                                <p>
+                                <p className="secondaryHeader">Entering text details</p>
+                                 <p>
                                     We used a Goals Actions Screen Framework (I put together) which clearly delineates these different requirements in an easy to understand visual language. 
                                 </p>
+                                <img src={ studentGAS } alt=""/>
+                                <p className="secondaryHeader">...</p>
+                                <img src={ studentGASTwo } alt=""/>
+                               
+                                <p className="secondaryHeader">Viewing Progress</p>
+                                <img src={ studentAssignmentsSpec } alt=""/>
+
+                                <p className="secondaryHeader">Teacher Diagnostics - Individual Student Layer</p>
+                                <img src={ diagnosticIndivImg } alt=""/>
+
+                                <p className="secondaryHeader">Teacher Diagnostics - Group Layer</p>
+                                <img src={ diagnosticGroupImg } alt=""/>
 
                             </div>
                             <div className="lofiContainer workSection">

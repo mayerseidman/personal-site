@@ -14,8 +14,8 @@
 			.workSection {
 				margin-bottom: 30px;
 				.workHeader {
-					font-size: 1.2em;
-					font-weight: bold;
+					font-size: 1.4em;
+					font-weight: 500;
 					margin-bottom: 15px;
 					color: #000;
 				}
@@ -67,14 +67,22 @@
 					font-size: 2em;
 				}
 				.subHeader {
-					font-weight: bold;
 					margin-bottom: 10px;
+					font-size: 1.2em;
+				    color: black;
+				    font-weight: 500
 				}
 				.subText {
 					display: inline-block;
 					vertical-align: middle;
 					margin-left: 10px;
 					width: 96%;
+				}
+				.secondaryHeader {
+					margin-bottom: 10px;
+					font-size: 1em;
+				    color: black;
+				    font-weight: 500
 				}
 				.circleDivider {
 			    	background-color: red;
