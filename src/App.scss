@@ -321,6 +321,7 @@ p {
 		    from { margin-left: 50%; }
 		    to { margin-left: 43%; }
 		}
+		
 	}
 }
 
@@ -376,12 +377,12 @@ p {
 
 		@-webkit-keyframes w70 {
 		    from { height: 220px; }
-		    to { height: 650px; }
+		    to { height: 600px; }
 		}
 
 		@keyframes w70 {
 		    from { height: 220px; }
-		    to { height: 650px; }
+		    to { height: 600px; }
 		}
 		/*.previewTop {
 			margin-top: -150px
@@ -426,6 +427,9 @@ p {
 		    width: auto;
 		    height: 500px;
 		    padding-top: 50px;
+		    &.preview {
+		    	height: 0px;
+		    }
 		    .homeSection {
 		    	padding-bottom: 57px;
 		    	padding-right: 30px;

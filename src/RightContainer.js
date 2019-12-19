@@ -15,10 +15,22 @@ class RightContainer extends React.Component {
     render() {
     	let { match, location } = this.props;
     	var path = location.pathname;
-    	
-    	if (path.includes("Studies")) {
-			var className = "expand";		
-    	} 
+
+    	// if (this.props.currentView == "preview") {
+    	// 
+    	// }
+
+    	// Seudo Check for mobile or web...
+		if(window.innerWidth <= 800 && window.innerHeight <= 820) {
+			console.log("SWITCH IT UP")
+			var className = " preview";
+		} else {
+			console.log("NNOOPE")
+	    	if (path.includes("Studies")) {
+				var className = "expand";		
+	    	}
+	   }
+
     	return (
 		    <div className={ "rightContainer " + className }>
 				<Switch>
