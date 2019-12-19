@@ -8,7 +8,7 @@ import oldOne from '../images/student-roster/old-one.png';
 import oldTwo from '../images/student-roster/old-two.png';
 
 import flowStructure from '../images/student-roster/flow-and-structure-2.png';
-import lofiImg from '../lofi5.png';
+import lofiImg from '../images/student-roster/lofi.png';
 import classDojoOne from '../images/student-roster/class-dojo-one.png';
 import classDojoTwo from '../images/student-roster/class-dojo-two.png';
 

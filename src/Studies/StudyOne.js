@@ -28,6 +28,20 @@ import studentAssignmentsSpec from '../images/wr-lite/student-assignments-spec.p
 import diagnosticIndivImg from '../images/wr-lite/diagnostic-individuals.png';
 import diagnosticGroupImg from '../images/wr-lite/diagnostic-group.png';
 
+import exercisesSkillsetsOne from '../images/wr-lite/exercises-skillsets-one.png';
+import exercisesDisplayOne from '../images/wr-lite/exercises-display-one.png';
+import teacherAssignmentsTable from '../images/wr-lite/assignments-table.png';
+import insightsIndividualLofi from '../images/wr-lite/insights-individual-annotated.png';
+import insightsGroupLofi from '../images/wr-lite/insights-group-lofi.png';
+
+import teacherExercisesTwo from '../images/wr-lite/teacher-exercises-two.png';
+import studentExercisesTwo from '../images/wr-lite/student-exercises-two.png';
+
+import teacherHomePageTwo from '../images/wr-lite/teacher-homepage-two.png';
+import insightsIndividualTwo from '../images/wr-lite/insights-individual-two.png';
+
+// import insightsGroupLofi from '../images/wr-lite/insights-group.png';
+
 // Images
 
 
@@ -216,11 +230,88 @@ class StudyOne extends React.Component {
                             </div>
                             <div className="lofiContainer workSection">
                                 <p className="workHeader">Lo-fi</p>
-                            </div> 
+                                <div>
+                                    <p className="subHeader">Browsing and Selecting Exercises (for teachers and students)</p>
+                                    <p>discuss...</p>
+                                    <img src={ exercisesSkillsetsOne } alt=""/>
+                                    <img src={ exercisesDisplayOne } alt=""/>
+                                </div>
+                                <div>
+                                    <p className="subHeader">Teacher Assignments Progress Table</p>
+                                    <p>discuss...</p>
+                                    <img src={ teacherAssignmentsTable } alt=""/>
+                                </div>
+                                <div className="insightsLofi">
+                                    <p className="subHeader">Individual Insights</p>
+                                    <img src={ insightsIndividualLofi } alt=""/>
+
+                                    <p className="subHeader">Group Insights</p>
+                                    <img className="insightsGroupLofiImg" src={ insightsGroupLofi } alt=""/>
+                                </div>
+                                <div className="feedbackContainerOne workSection">
+                                    <p className="workHeader">Feedback</p>
+                                    <p>user testing in office really quick and simple to get some feel for it...</p>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">...too many clicks! so went w version 2</p>
+                                </div>
+                            </div>
                             <div className="hifiContainer workSection">
+                                <p className="workHeader">Hi-fi 1.0</p>
+                                <div>
+                                    <p className="subHeader">Exercises - Teachers</p>
+                                    <p className="subText">...</p>
+                                    <img src={ teacherExercisesTwo } alt=""/>
+
+                                    <p className="subHeader">Exercises - Students</p>
+                                    <p className="subText">...</p>
+                                    <img src={ studentExercisesTwo } alt=""/>
+                                </div>
+                                <div>
+                                    <p className="subHeader">Assignments</p>
+                                    <p className="subText">...</p>
+                                    <img src={ teacherHomePageTwo } alt=""/>
+                                </div>
+                                <div>
+                                    <p className="subHeader">Insights</p>
+                                    <p className="subText">...inspiration...</p>
+                                    <img src={ insightsIndividualTwo } alt=""/>
+                                </div>
+                                <div className="feedbackContainerOne workSection">
+                                    <p className="workHeader">Feedback</p>
+                                    <p>got feedback from teachers...</p>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">...feedback onn filters!</p>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">I prefer the Media and Format cards with the bottom text incorporated into the card over the Comprehension cards with the text floating outside.</p>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">interest in assigning batches of students different exercises. </p>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">Pinterest breakthrough discuss! (perhaps also show image of newsfeed?)</p>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText">.beacame clear that we needed to add "frequencey" table for asignments so space concern. over 3o studentds... </p>
+                                </div>
+                            </div>
+                            <div className="finalVersion workSection">
                                 <p className="workHeader">Final Version</p>
-                               
-                            </div>     
+                                <div>
+                                    <p className="subHeader">Exercises</p>
+                                    <p className="subText">...</p>
+
+                                    <p className="subText">...</p>
+                                </div>
+                                <div>
+                                    <p className="subHeader">Assignments</p>
+                                    <p className="subText">...</p>
+                                </div>
+                                <div>
+                                    <p className="subHeader">Individual Insights</p>
+                                    <p className="subText">....</p>
+                                    <p className="subHeader">Group Insights</p>
+                                    <p className="subText">....</p>
+                                </div>
+                            </div>
+                            <div>Feedback...</div>
+                            <div>Exercises content talk goes here...</div>
                         </div>
                     </div>
                 </div>

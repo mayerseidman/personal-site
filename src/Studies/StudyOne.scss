@@ -57,6 +57,16 @@
 					img {
 						width: 100%;
 					}
+					.insightsLofi {
+						img {
+							/*transform: scale(0.95);*/
+							transform-origin: top left;
+						}
+						.insightsGroupLofiImg {
+							transform: scale(0.874);
+							transform-origin: top left;
+						}
+					}
 				}
 				&.hifiContainer {
 				}
