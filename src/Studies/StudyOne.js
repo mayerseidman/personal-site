@@ -40,6 +40,10 @@ import studentExercisesTwo from '../images/wr-lite/student-exercises-two.png';
 import teacherHomePageTwo from '../images/wr-lite/teacher-homepage-two.png';
 import insightsIndividualTwo from '../images/wr-lite/insights-individual-two.png';
 
+import teacherExercisesGif from '../images/wr-lite/teacher-exercises.gif';
+import teacherExercisesFinal from '../images/wr-lite/teacher-exercises-final.png';
+import teacherHomePageFinal from '../images/wr-lite/teacher-homepage-final.png';
+
 // import insightsGroupLofi from '../images/wr-lite/insights-group.png';
 
 // Images
@@ -295,13 +299,13 @@ class StudyOne extends React.Component {
                                 <p className="workHeader">Final Version</p>
                                 <div>
                                     <p className="subHeader">Exercises</p>
-                                    <p className="subText">...</p>
-
-                                    <p className="subText">...</p>
+                                    <p className="subText"></p>
+                                    <img src={ teacherExercisesGif } alt=""/>
                                 </div>
                                 <div>
                                     <p className="subHeader">Assignments</p>
                                     <p className="subText">...</p>
+                                    <img src={ teacherHomePageFinal } alt=""/>
                                 </div>
                                 <div>
                                     <p className="subHeader">Individual Insights</p>
