@@ -22,6 +22,12 @@
 				.andText {
 					font-size: 0.8em;
 				}
+				.captionText {
+					text-align: center;
+				    font-size: 0.8em;
+				    color: #999;
+				    margin-bottom: 15px;
+				}
 				&.goalsContainer {
 					.goalContainer {
 						margin-bottom: 15px;
@@ -45,6 +51,16 @@
 					}
 					.classDojoText {
 						margin-bottom: 15px;
+					}
+					.discoveryContainer {
+						.summaryText {
+							margin-top: 10px;
+						}
+					}
+				}
+				&.scopeContainer {
+					.featuresTableImg {
+						margin-bottom: 5px;
 					}
 				}
 				&.structureContainer {

@@ -43,6 +43,8 @@ import insightsIndividualTwo from '../images/wr-lite/insights-individual-two.png
 import teacherExercisesGif from '../images/wr-lite/teacher-exercises.gif';
 import teacherExercisesFinal from '../images/wr-lite/teacher-exercises-final.png';
 import teacherHomePageFinal from '../images/wr-lite/teacher-homepage-final.png';
+import insightsIndividualFinal from '../images/wr-lite/insights-individual-final.png';
+import insightsGroupFinal from '../images/wr-lite/insights-group-final.png';
 
 // import insightsGroupLofi from '../images/wr-lite/insights-group.png';
 
@@ -94,7 +96,7 @@ class StudyOne extends React.Component {
                         <div className="workContent studyOnePage">
                             <div className="introContainer workSection">
                                 <p className="workHeader">Intro</p>
-                                <p className="headlineText">text goes here...</p>
+                                <p className="headlineText">How to prepare students to think creatively and analytically in an engaging way?</p>
                                 <p>Since the beginning, Whooo’s Reading has been very good at helping teachers track their students’ independent reading and motivating students to read more on their own. While Whooo’s Reading did a good job managing and motivating independent reading, we discovered that teachers and schools were most interested in WR because of the questions that ask students about the books they read.</p>
                                 <img src={ comprehension } alt=""/>
 
@@ -105,7 +107,7 @@ class StudyOne extends React.Component {
                             </div>
                             <div className="strategyContainer workSection">
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
-                                <div className="">
+                                <div className="discoveryContainer">
                                     <p className="subHeader"><b>General Discovery</b></p>
                                     <p>For two weeks we had phone calls with dozens of teachers around the country and learned that a major problem is finding formative assessments that align with the standards and reinforce the reading units they teach. While some sites (e.g. Pinterest) offer graphic organizers and other forms of assessments-- it often takes many hours to find the right types of reading exercises and they rarely are engaging for students. In fact nearly every teacher we spoke to brought up some version of this problem. </p>
                                     <p>
@@ -128,8 +130,7 @@ class StudyOne extends React.Component {
                                     </p>
                                     <p className="subHeader">Jobs To Be Done</p>
                                     <img src={ jobToBeDone } alt=""/>
-                                    <p>To further distill our research down to actionable steps, we then plugged it into the Jobs To Be Done Framework. The Jobs To Be Done framework is focused on the "job" or task a user is trying to accomplish. We were able to turn our reasearch into these statements:</p>
-                                    <p style={{ "color" : "purple" }}>Maybe talk somewhere about stayed away from typical demographics and focused more on mindset...</p>
+                                    <p>To further distill our research down to actionable steps, we then plugged it into the Jobs To Be Done (JBD) Framework. JBD is focused on the "job" or task a user is trying to accomplish. We were able to turn our research into these statements:</p>
                                     <div>
                                         <span className="circleDivider"></span>
                                         <p className="subText">
@@ -156,13 +157,17 @@ class StudyOne extends React.Component {
                                             Result: <span className="highlightedWord">So I can</span> provide them with the necessary support.
                                         </p>
                                     </div>
+                                    <p className="summaryText">
+                                        When constructing our product plan we focused more on a user's mindset than on traditional personas (based on demographics). As you can see, this framework really cuts to the chase of a user's intentions.
+                                    </p>
                                    
                                     <div>
                                         <p className="subHeader">User Needs</p>
                                         <p>Teachers <span className="highlightedWord">need</span> better ways to help students practice and master higher-order thinking skills reading comprehension. </p>
-                                        <p>Teachers <span className="highlightedWord">need</span> to easily find and assign exercises tied explicitly to specific standards they are working on in class and the student’s reading level.</p>
+                                        <p>*Teachers <span className="highlightedWord">need</span> to easily find and assign practice work tied explicitly to specific standards they are working on in class and the student’s reading level.</p>
                                         <p>Teachers <span className="highlightedWord">need</span> to be able to see student progress on assignments.</p>
                                         <p>Teachers  <span className="highlightedWord">need</span> proof and justification on where students are specifically struggling in reading comprehension, and methods to remedy those weaknesses. </p>
+                                        <p>*After all of our research, it became clear that the foundation of our next development would be creating graphic organizers, or "exercises," that students could do on our site. </p>
                                     </div>
                                 </div>
                             </div> 
@@ -170,8 +175,9 @@ class StudyOne extends React.Component {
                                 <p className="workHeader">Scope</p>
                                 <div>
                                     <p className="subHeader">Features</p>
-                                    <p>discuss...</p>
-                                    <img src={ featuresTable } alt=""/>
+                                    <p>We had a very long (for me this means over 30 minutes) meeting and discussed the various features we could build to help meet the needs of our users.</p>
+                                    <img src={ featuresTable } alt="" className="featuresTableImg" />
+                                    <p className="captionText">Some of the features from our iteration</p>
                                 </div>
                                <div>
                                    <p className="subHeader">Time Estimates</p>
@@ -309,9 +315,10 @@ class StudyOne extends React.Component {
                                 </div>
                                 <div>
                                     <p className="subHeader">Individual Insights</p>
-                                    <p className="subText">....</p>
+                                    <p className="subText"><img src={ insightsIndividualFinal } alt=""/></p>
                                     <p className="subHeader">Group Insights</p>
                                     <p className="subText">....</p>
+                                    <p className="subText"><img src={ insightsGroupFinal } alt=""/></p>
                                 </div>
                             </div>
                             <div>Feedback...</div>
