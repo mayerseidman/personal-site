@@ -137,6 +137,11 @@
 	.circleDivider {
 		bottom: 0px !important;
 	}
+	.feedbackContainerOne {
+		.circleDivider {
+			bottom: 5px !important;
+		}
+	}
 	.highlightedWord {
 		color: black;
 		font-weight: 500;

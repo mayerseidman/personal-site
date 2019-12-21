@@ -180,75 +180,95 @@ class StudyOne extends React.Component {
                                     <p className="captionText">Some of the features from our iteration</p>
                                 </div>
                                <div>
-                                   <p className="subHeader">Time Estimates</p>
-                                   <p>discuss...</p>
+                                   <p className="subHeader">Feature Planning</p>
+                                   <p>We had lots of features but we needed to figure out what we could accomplish within the dev cycle. Everyone (product team) estimated the amount of days each feature/task should take. We then took the average sum from everyone's estimates and could forecast how many features we could complete.</p>
                                    <img src={ estimates } alt=""/>
                                </div>
                                <div>
                                    <p className="subHeader">Task Management</p>
-                                   <p>discuss...</p>
+                                   <p>We used Trello to manage our team's tasks. Each feature/task had its own card and would be assigned to the appropriate person. As progress was made, these cards would move through the various stages.</p>
                                    <img src={ trello } alt=""/>
                                </div>
                             </div>
                             <div className="structureContainer workSection">
                                 <p className="workHeader">Flow <span className="andText">and</span> Structure</p>
-                                <p>In our structure phase, we sought to answer these three questions:</p>
+                                <p>In our structure phase, we sought to answer three questions:</p>
                                 <ol>
                                     <li>What could be done specifically within each part of the user experience?</li>
                                     <li>How to accomplish that within the interface?</li>
                                     <li>What was then needed on the page to support this?</li>
                                 </ol>
-                                <p style={{ "color" : "purple" }}>
-                                    Mention that since we were still learning about what works for us as a team in UX etc, we tested out a variety of different formats.
-                                    Here we used GAS framework and we also wrote out the narrative in full which I also found oddly helpful despite seeming maybe overly simplistic...
-                                    Also we used the "flow" images-describe that...via the scenario mapping...
+                                <p style={{ "color" : "red" }}>
+                                    Integrating a user experience framework in our building stage was new to us and had not been done comprehensively within a project. I tested out a variety of formats in our structure phase to see how they worked for us.
                                 </p>
                                 <p className="subHeader">Teacher Experience</p>
                                 <div className="click-zoom">
-                                    <img src={ teacherSiteMap } alt=""/>
-                                    <p className="secondaryHeader">Viewing and Editing Exercises</p>
-                                    <img src={ teacherSM } alt=""/>
-                                    <img src={ teacherGAS } alt=""/>
-                                    <p className="secondaryHeader">Creating Assignments</p>
-                                    <img src={ teacherAssignmentsSpec } alt=""/>
-
-                                    <p className="secondaryHeader">Viewing Student Progress</p>
-                                    <img src={ teacherAssignmentsSpecTwo } alt=""/>
+                                    <div>
+                                        <p className="secondaryHeader">Site Map and Flow</p>
+                                        <img src={ teacherSiteMap } alt=""/>
+                                        <p className="secondaryHeader">Viewing and Editing Exercises</p>
+                                        <p>This Scenario Mapping focused mostly on what a teacher could do at a given point and how that would be facilitated.</p>
+                                        <img src={ teacherSM } alt=""/>
+                                    </div>
+                                    <div>
+                                        <p>I created a Goals Actions Screen (GAS) framework that incorporates the user's goal, what they will do to achieve that goal, and what is needed on the screen for such.</p>
+                                        <img src={ teacherGAS } alt=""/>
+                                    </div>
+                                    <div>
+                                        <p className="secondaryHeader">Creating Assignments</p>
+                                        <p>Plotting out the flow of a user's exprience in question/answer format was the simplest method out of the bunch. Perhaps due to its simplicity and contrast, I found it remarkably helpful.</p>
+                                        <img src={ teacherAssignmentsSpec } alt=""/>
+                                    </div>
+                                    <div>
+                                        <p className="secondaryHeader">Viewing Student Progress</p>
+                                        <img src={ teacherAssignmentsSpecTwo } alt=""/>
+                                    </div>
                                 </div>
 
-                                <p className="subHeader">Student Experience</p>
-                                <img src={ studentSiteMap } alt=""/>
-                                <p className="secondaryHeader">Viewing Exercises</p>
-                                <img src={ studentSM } alt=""/>
-                                <p className="secondaryHeader">Entering text details</p>
-                                 <p>
-                                    We used a Goals Actions Screen Framework (I put together) which clearly delineates these different requirements in an easy to understand visual language. 
-                                </p>
-                                <img src={ studentGAS } alt=""/>
-                                <p className="secondaryHeader">...</p>
-                                <img src={ studentGASTwo } alt=""/>
-                               
-                                <p className="secondaryHeader">Viewing Progress</p>
-                                <img src={ studentAssignmentsSpec } alt=""/>
+                                <div>
+                                    <p className="subHeader">Student Experience</p>
+                                    <div>
+                                        <p className="secondaryHeader">Site Map</p>
+                                        <img src={ studentSiteMap } alt=""/>
+                                    </div>
+                                   <div>
+                                       <p className="secondaryHeader">Viewing Exercises</p>
+                                       <img src={ studentSM } alt=""/>
+                                   </div>
+                                   <div>
+                                       <p className="secondaryHeader">Entering text details</p>
+                                       <img src={ studentGAS } alt=""/>
+                                   </div>
+                                    <div>
+                                        <p className="secondaryHeader">Selecting Exercises</p>
+                                        <img src={ studentGASTwo } alt=""/> 
+                                    </div>
+                                    <div>
+                                        <p className="secondaryHeader">Viewing Progress</p>
+                                        <img src={ studentAssignmentsSpec } alt=""/>
+                                    </div>
+                                    <div>
+                                        <p className="secondaryHeader">Insights - Individual Student Layer</p>
+                                        <img src={ diagnosticIndivImg } alt=""/>
+                                    </div>
 
-                                <p className="secondaryHeader">Teacher Diagnostics - Individual Student Layer</p>
-                                <img src={ diagnosticIndivImg } alt=""/>
-
-                                <p className="secondaryHeader">Teacher Diagnostics - Group Layer</p>
-                                <img src={ diagnosticGroupImg } alt=""/>
-
+                                    <div>
+                                        <p className="secondaryHeader">Insights - Group Layer</p>
+                                        <img src={ diagnosticGroupImg } alt=""/>
+                                    </div>
+                                </div>
                             </div>
                             <div className="lofiContainer workSection">
                                 <p className="workHeader">Lo-fi</p>
                                 <div>
                                     <p className="subHeader">Browsing and Selecting Exercises (for teachers and students)</p>
-                                    <p>discuss...</p>
+                                    <p>Two slightly different versions of how to view various skillsets and exercises.</p>
                                     <img src={ exercisesSkillsetsOne } alt=""/>
                                     <img src={ exercisesDisplayOne } alt=""/>
                                 </div>
                                 <div>
                                     <p className="subHeader">Teacher Assignments Progress Table</p>
-                                    <p>discuss...</p>
+                                    <p>The table on this page simply shows the progress students have made on the teacher's assignment (assigned exercises).</p>
                                     <img src={ teacherAssignmentsTable } alt=""/>
                                 </div>
                                 <div className="insightsLofi">
@@ -260,30 +280,29 @@ class StudyOne extends React.Component {
                                 </div>
                                 <div className="feedbackContainerOne workSection">
                                     <p className="workHeader">Feedback</p>
-                                    <p>user testing in office really quick and simple to get some feel for it...</p>
+                                    <p>We did user testing in the office (with non product employees) to get a quick feel for the basic layouts we chose.</p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">...too many clicks! so went w version 2</p>
+                                    <p className="subText">Version 2 for browsing exercises was preferred since it was more direct and less clunky; all filters/controls were placed above the exercises.</p>
                                 </div>
                             </div>
                             <div className="hifiContainer workSection">
                                 <p className="workHeader">Hi-fi 1.0</p>
                                 <div>
                                     <p className="subHeader">Exercises - Teachers</p>
-                                    <p className="subText">...</p>
                                     <img src={ teacherExercisesTwo } alt=""/>
 
                                     <p className="subHeader">Exercises - Students</p>
-                                    <p className="subText">...</p>
+                                    <p className="">The student experience is very simple as the only thing they can do is select and work on exercises.</p>
                                     <img src={ studentExercisesTwo } alt=""/>
                                 </div>
                                 <div>
                                     <p className="subHeader">Assignments</p>
-                                    <p className="subText">...</p>
+                                    <p className="">...</p>
                                     <img src={ teacherHomePageTwo } alt=""/>
                                 </div>
                                 <div>
                                     <p className="subHeader">Insights</p>
-                                    <p className="subText">...inspiration...</p>
+                                    <p className="">...inspiration...</p>
                                     <img src={ insightsIndividualTwo } alt=""/>
                                 </div>
                                 <div className="feedbackContainerOne workSection">
@@ -305,20 +324,20 @@ class StudyOne extends React.Component {
                                 <p className="workHeader">Final Version</p>
                                 <div>
                                     <p className="subHeader">Exercises</p>
-                                    <p className="subText"></p>
+                                    <p className=""></p>
                                     <img src={ teacherExercisesGif } alt=""/>
                                 </div>
                                 <div>
                                     <p className="subHeader">Assignments</p>
-                                    <p className="subText">...</p>
+                                    <p className="">...</p>
                                     <img src={ teacherHomePageFinal } alt=""/>
                                 </div>
                                 <div>
                                     <p className="subHeader">Individual Insights</p>
-                                    <p className="subText"><img src={ insightsIndividualFinal } alt=""/></p>
+                                    <p className=""><img src={ insightsIndividualFinal } alt=""/></p>
                                     <p className="subHeader">Group Insights</p>
-                                    <p className="subText">....</p>
-                                    <p className="subText"><img src={ insightsGroupFinal } alt=""/></p>
+                                    <p className="">....</p>
+                                    <p className=""><img src={ insightsGroupFinal } alt=""/></p>
                                 </div>
                             </div>
                             <div>Feedback...</div>
