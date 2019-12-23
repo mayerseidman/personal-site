@@ -315,7 +315,7 @@ class StudyOne extends React.Component {
                                         </ol>
                                     </p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">I prefer the Media and Format cards with the bottom text incorporated into the card over the Comprehension cards with the text floating outside.</p>
+                                    <p className="subText">the word "delete" was connfusing </p>
                                     <span className="circleDivider"></span>
                                     <p className="subText">interest in assigning batches of students different exercises. </p>
                                     <span className="circleDivider"></span>
