@@ -282,7 +282,7 @@ class StudyOne extends React.Component {
                                     <p className="workHeader">Feedback</p>
                                     <p>We did user testing in the office (with non product employees) to get a quick feel for the basic layouts we chose.</p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">Version 2 for browsing exercises was preferred since it was more direct and less clunky; all filters/controls were placed above the exercises.</p>
+                                    <p className="subText">They preferred Version two for browsing exercises since it was more direct and less clunky; all filters/controls were placed above the exercises.</p>
                                 </div>
                             </div>
                             <div className="hifiContainer workSection">
@@ -296,20 +296,24 @@ class StudyOne extends React.Component {
                                     <img src={ studentExercisesTwo } alt=""/>
                                 </div>
                                 <div>
-                                    <p className="subHeader">Assignments</p>
-                                    <p className="">...</p>
+                                    <p className="subHeader">Assignments - Teachers</p>
+                                    <p className="">The teacher dashboard has a progress table (bottom right) that shows student progression on their assignment.</p>
                                     <img src={ teacherHomePageTwo } alt=""/>
-                                </div>
-                                <div>
-                                    <p className="subHeader">Insights</p>
-                                    <p className="">...inspiration...</p>
-                                    <img src={ insightsIndividualTwo } alt=""/>
                                 </div>
                                 <div className="feedbackContainerOne workSection">
                                     <p className="workHeader">Feedback</p>
-                                    <p>got feedback from teachers...</p>
+                                    <p>We sent our mockups to multiple teachers for feedback.</p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">...feedback onn filters!</p>
+                                    <p className="subText">
+                                        <span>Finding various activities. </span>While teachers enjoyed browsing, some had trouble finding the activities they wanted. We came up with several ideas of potential filters:
+                                        <ol>
+                                            <li>Filter activities by learning type (visual, audible, reading etc.)</li>
+                                            <li>Filter activities by prior reading vs. text provided in exercise</li>
+                                            <li>Filter activities by time estimate</li>
+                                            <li>Filter activities by traditional (mostly writing) vs. reward (more creative)</li>
+                                            <li>Filter activities by difficulty level</li>
+                                        </ol>
+                                    </p>
                                     <span className="circleDivider"></span>
                                     <p className="subText">I prefer the Media and Format cards with the bottom text incorporated into the card over the Comprehension cards with the text floating outside.</p>
                                     <span className="circleDivider"></span>
@@ -334,10 +338,20 @@ class StudyOne extends React.Component {
                                 </div>
                                 <div>
                                     <p className="subHeader">Individual Insights</p>
-                                    <p className=""><img src={ insightsIndividualFinal } alt=""/></p>
-                                    <p className="subHeader">Group Insights</p>
-                                    <p className="">....</p>
-                                    <p className=""><img src={ insightsGroupFinal } alt=""/></p>
+                                    <div>
+                                        <p className="">This was an alternative version I created while brainstorming. This was mostly to see what else it could look like when focusing on an individual student.</p>
+                                        <img src={ insightsIndividualTwo } alt=""/>
+                                    </div>
+                                    <div>
+                                        <p>...</p>
+                                        <img src={ insightsIndividualFinal } alt=""/>
+                                    </div>
+
+                                    <div>
+                                        <p className="subHeader">Group Insights</p>
+                                        <p className="">....</p>
+                                        <img src={ insightsGroupFinal } alt=""/>
+                                    </div>
                                 </div>
                             </div>
                             <div>Feedback...</div>
