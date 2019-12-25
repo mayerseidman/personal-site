@@ -29,29 +29,29 @@ class Works extends React.Component {
                 <div className="rightWorksContainer">
                     <div className="studiesLinksContainer">
                         <div>
-                          <Link to={`${this.props.match.path}/Studies/StudyOne`} onClick={ this.props.changeLeftContainer }>Reading Comprehension Tool</Link>
-                            <p className="categoryDescription mobileHide">Research, UI/UX, Visual, Feedback</p>
+                          <Link className="regularLink" to={`${this.props.match.path}/Studies/StudyOne`} onClick={ this.props.changeLeftContainer }>Reading Comprehension Tool</Link>
+                            <p className="categoryDescription mobileHide">Research, UI/UX, Visual, User Feedback</p>
                         </div>
                         <div>
-                          <Link to={`${this.props.match.path}/Studies/StudyTwo`}>Student Roster Design</Link>
+                          <Link className="regularLink" to={`${this.props.match.path}/Studies/StudyTwo`}>Student Roster Design</Link>
                             <p className="categoryDescription mobileHide">Research, UI/UX, Visual</p>
                         </div>
                         <div>
-                            <Link to={`${this.props.match.path}/Studies/StudyThree`}>Avatars and E-Commerce Design</Link>
+                            <Link className="regularLink" to={`${this.props.match.path}/Studies/StudyThree`}>Avatars and E-Commerce Design</Link>
                             <p className="categoryDescription mobileHide">Research, UI/UX, Visual</p>
                         </div>
                         <div>
-                           <Link to="/works/3">Link Four</Link>
+                           <Link className="regularLink" to={`${this.props.match.path}/Studies/StudyFour`}>Link Four</Link>
                             <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the</p>
                         </div>
                     </div>
                     <div className="projectsLinksContainer">
-                        <a href="#">Link One</a>
+                        <a className="regularLink" href="#">Link One</a>
                     </div>
                     <div className="articlesLinksContainer">
-                        <a href="https://medium.com/design-ideas-thoughts/designing-multi-step-processes-bd432bad78dd" target="_blank">Designing Multi-Step Processes</a>
-                        <a href="https://medium.com/design-ideas-thoughts/designing-error-pages-8d82e16e3472" target="_blank">How to Design Better Error Pages</a>
-                        <a href="#">Link One</a>
+                        <a className="regularLink" href="https://medium.com/design-ideas-thoughts/designing-multi-step-processes-bd432bad78dd" target="_blank">Designing Multi-Step Processes</a>
+                        <a className="regularLink" href="https://medium.com/design-ideas-thoughts/designing-error-pages-8d82e16e3472" target="_blank">How to Design Better Error Pages</a>
+                        <a className="regularLink" href="https://medium.com/design-ideas-thoughts" target="_blank">UI UX Design Publication</a>
                     </div>
                 </div>
                 { /* workId && <StudyOne workId={workId} /> */ }

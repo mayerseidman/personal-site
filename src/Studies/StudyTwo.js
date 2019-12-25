@@ -1,6 +1,9 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
 import './StudyOne.scss';
 import ImageGallery from 'react-image-gallery';
+import Fade from 'react-reveal/Fade';
 
 // Images
 
@@ -106,81 +109,95 @@ class StudyTwo extends React.Component {
                 <div className={ className }>
                     <div className="workContainer" ref="container">
                         <div className="workContent">
-                            <div className="introContainer workSection">
-                                 <p className="workHeader">Intro</p>
-                                 <p className="headlineText">How can we create one place where teachers can perform a variety of actions? Additionally, how can we enable teachers to perform these actions on behalf of multiple students-easily, all at once, and across different classes?</p>
-                                <p>
-                                    On Whooo’s Reading’s <i>Student Roster</i>, teachers can do a variety of actions, such as, editing students or class settings, logging reading (for students), sending notes/coins (to students), adding students, adding classes, and retrieving student login information.
-                                </p>
-                                <p>
-                                    Previously, these actions were all on separate pages and their links were spread between the home and settings pages.
-                                </p>
-                                <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
-                                    showThumbnails={ false } />
-                            </div>
-                            <div className="goalsContainer workSection">
-                                <p className="workHeader">Goals</p>
-                                <div className="goalContainer"> 
-                                    <p className="subHeader">Consolidate</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Since actions were spread out over a number of pages, to log student reading, add new students, and send a note, teachers had to navigate to multiple pages. Already crunched for time, teachers were losing even more time.</p>
+                            <Fade bottom>
+                                <div className="introContainer workSection">
+                                     <p className="workHeader">Intro</p>
+                                     <p className="headlineText">How can we create one place where teachers can perform a variety of actions? Additionally, how can we enable teachers to perform these actions on behalf of multiple students-easily, all at once, and across different classes?</p>
+                                    <p>
+                                        On Whooo’s Reading’s <i>Student Roster</i>, teachers can do a variety of actions, such as, editing students or class settings, logging reading (for students), sending notes/coins (to students), adding students, adding classes, and retrieving student login information.
+                                    </p>
+                                    <p>
+                                        Previously, these actions were all on separate pages and their links were spread between the home and settings pages.
+                                    </p>
+                                    <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
+                                        showThumbnails={ false } />
                                 </div>
-                                <div className="goalContainer"> 
-                                    <p className="subHeader">Cleanup Navigation</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Navigationally, the groupings of the different actions didn’t seem to have much of a connection; making it hard to know where to go. Additionally, a few actions were placed in a sidebar by themselves (as <i>Quick Links</i>). The groupings were confusing even for regular users of the site.</p>
+                            </Fade>
+                            <Fade bottom>
+                                <div className="goalsContainer workSection">
+                                    <div className="goalContainer"> 
+                                        <p className="workHeader">Goals</p>
+                                        <p className="subHeader">Consolidate</p>
+                                        <span className="circleDivider"></span>
+                                        <p className="subText">Since actions were spread out over a number of pages, to log student reading, add new students, and send a note, teachers had to navigate to multiple pages. Already crunched for time, teachers were losing even more time.</p>
+                                    </div>
+                                    <div className="goalContainer"> 
+                                        <p className="subHeader">Cleanup Navigation</p>
+                                        <span className="circleDivider"></span>
+                                        <p className="subText">Navigationally, the groupings of the different actions didn’t seem to have much of a connection; making it hard to know where to go. Additionally, a few actions were placed in a sidebar by themselves (as <i>Quick Links</i>). The groupings were confusing even for regular users of the site.</p>
+                                    </div>
+                                    <div className="goalContainer"> 
+                                        <p className="subHeader">Batch Functionality</p>
+                                        <span className="circleDivider"></span>
+                                        <p className="subText">Some of the actions were rigid in that they could only be performed for one or all students.
+                                            A teacher wanting to award 5 students (from two classes) 50 points for a good job reading, would have to do this separately for each student. Without support for batch processing (taking action on/for numerous students at once), simple tasks took a long time.</p>
+                                    </div>
                                 </div>
-                                <div className="goalContainer"> 
-                                    <p className="subHeader">Batch Functionality</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Some of the actions were rigid in that they could only be performed for one or all students.
-                                        A teacher wanting to award 5 students (from two classes) 50 points for a good job reading, would have to do this separately for each student. Without support for batch processing (taking action on/for numerous students at once), simple tasks took a long time.</p>
+                             </Fade> 
+                           
+                            <Fade bottom>
+                                <div className="strategyContainer workSection">
+                                    <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
+                                     <p>
+                                        While doing a competitive analysis, I came across <b>Class Dojo</b>, a highly popular classroom-management tool that is fun, elegant, and easy to use. Their first screen is a list of the teacher’s classes (on little cards). On this page, you can do two things: add more classes and change a class's settings (via the gears icon).
+                                    </p>
+                                    <img src={ classDojoOne } alt=""/>
+                                    <p>
+                                        The class card brings you to that classes students page, where you can select (any or all) students and take a variety of the actions (from their toolbar).
+                                    </p>
+                                    <img src={ classDojoTwo } alt=""/>
+                                    <p>We took a similar approach to Class Dojo’s but with a few important twists.</p>
+                                    <div className="classDojoText">
+                                        <p className="subHeader"><b>Similarities to Class Dojo</b></p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">Students can be selected and batched for different actions.</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">The batch-able actions are on a toolbar and clicking an action brings down an interface with the relevant forms and details.</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">Clicking on a student or class brings up their information for viewing and editing.</p>
+                                    </div>
+                                    <div>
+                                        <p className="subHeader">How We Differed and Why</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="strategyContainer workSection">
-                                <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
-                                 <p>
-                                    While doing a competitive analysis, I came across <b>Class Dojo</b>, a highly popular classroom-management tool that is fun, elegant, and easy to use. Their first screen is a list of the teacher’s classes (on little cards). On this page, you can do two things: add more classes and change a class's settings (via the gears icon).
-                                </p>
-                                <img src={ classDojoOne } alt=""/>
-                                <p>
-                                    The class card brings you to that classes students page, where you can select (any or all) students and take a variety of the actions (from their toolbar).
-                                </p>
-                                <img src={ classDojoTwo } alt=""/>
-                                <p>We took a similar approach to Class Dojo’s but with a few important twists.</p>
-                                <div className="classDojoText">
-                                    <p className="subHeader"><b>Similarities to Class Dojo</b></p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Students can be selected and batched for different actions.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">The batch-able actions are on a toolbar and clicking an action brings down an interface with the relevant forms and details.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Clicking on a student or class brings up their information for viewing and editing.</p>
+                            </Fade>
+                            <Fade bottom> 
+                                <div className="structureContainer workSection">
+                                    <p className="workHeader">Flow <span className="andText">and</span> Structure</p>
+                                     <p>There were two levels in our structure. The surface level contains classes, students, and the adding classes and students modals. The second level contained the student and class information modals and the action modals triggered after selecting students.</p>
+                                    <img src={ flowStructure} alt=""/>
                                 </div>
-                                <div>
-                                    <p className="subHeader">How We Differed and Why</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p>
+                            </Fade>
+                            <Fade bottom> 
+                                <div className="lofiContainer workSection">
+                                    <p className="workHeader">Lo-fi</p>
+                                    <img src={ lofiImg } alt=""/>
+                                </div> 
+                            </Fade>
+                            <Fade bottom> 
+                                <div className="hifiContainer workSection">
+                                    <p className="workHeader">Final Version</p>
+                                    <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
+                                        showThumbnails={ false } />
                                 </div>
-                            </div> 
-                            <div className="structureContainer workSection">
-                                <p className="workHeader">Flow <span className="andText">and</span> Structure</p>
-                                 <p>There were two levels in our structure. The surface level contains classes, students, and the adding classes and students modals. The second level contained the student and class information modals and the action modals triggered after selecting students.</p>
-                                <img src={ flowStructure} alt=""/>
-                            </div>
-                            <div className="lofiContainer workSection">
-                                <p className="workHeader">Lo-fi</p>
-                                <img src={ lofiImg } alt=""/>
-                            </div> 
-                            <div className="hifiContainer workSection">
-                                <p className="workHeader">Final Version</p>
-                                <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
-                                    showThumbnails={ false } />
-                            </div>     
+                            </Fade>
+                            <Link className="regularLink nextStudyLink" to="/works/Studies/StudyThree">Next Study</Link>   
                         </div>
                     </div>
                 </div>

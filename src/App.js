@@ -21,9 +21,19 @@ class App extends Component {
 	}
 
 	render() {
-		var leftContainer = (<LeftContainer currentView={ this.state.currentView } />)
+    	// Seudo Check for mobile or web...
+		if(window.innerWidth <= 800 && window.innerHeight <= 820) {
+			var leftContainer = (
+				<div>
+					<a onClick={ this.closeStudy.bind(this) }><LeftContainer currentView={ this.state.currentView } /></a>
+				</div>
+			)
+		} else {
+			var leftContainer = (<LeftContainer currentView={ this.state.currentView } />)
+	   }
 		var rightContainer = (<RightContainer currentView={ this.state.currentView } 
-			startStudy={ this.startStudy.bind(this) } closeStudy={ this.closeStudy.bind(this) } />)
+			startStudy={ this.startStudy.bind(this) } closeStudy={ this.closeStudy.bind(this) } />
+		)
 		return (
 			<div className="portfolioContainer">
 				<Router>

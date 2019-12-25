@@ -1,3 +1,10 @@
+a.regularLink {
+	&:hover {
+		color: #B51A17 !important;
+		text-decoration: underline !important;
+	}
+}
+
 p {
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -16,6 +23,20 @@ p {
 	&:nth-of-type(odd) {
 		border-right: 1px solid black;
 	}
+}
+
+.animation {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInBottom { animation-name: fadeInBottom }
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to { opacity: 1 }
 }
 
 
@@ -38,27 +59,205 @@ p {
 			.circleDivider {
 /*			    background-color: #f9f9ee;
 */			    background-color: #fcfcf0;
-			    border-radius: 50%;
-			    display: inline-block;
-			    bottom: 5px;
-			    position: relative;
-			}	
+		    	height: 20px;
+		        width: 20px;
+		        border-radius: 50%;
+		        display: inline-block;
+		        bottom: 5px;
+		        position: relative;
+			}
+			body {
+			  font-size: 62.5%;
+			  font-style: Arial;
+			}
+
+			.animation-box {
+			  width: 75%;
+			  height: 27.5rem;
+			  background-color: blue;
+			  margin: 0 auto;
+			  overflow: hidden;
+			  position: relative;
+			}
+
+			.animation-container {
+			  width: 1000rem;
+			  height: 30rem;
+			}
 		}
+		@keyframes topFadeOut {
+		  0% {
+		    position: absolute;
+		    top: -3rem;
+		    opacity: 0;
+		  }
+
+		  75% {
+		    position: absolute;
+		    top: 25%;
+		    opacity: 1;
+		  }
+
+		  100% {
+		    opacity: 0;
+		  }
+		}
+
+		@keyframes bottomFadeOut {
+		  0% {
+		    position: absolute;
+		    bottom: -5rem;
+		    opacity: 0;
+		  }
+
+		  75% {
+		    position: absolute;
+		    bottom: 25%;
+		    opacity: 1;
+		  }
+
+		  100% {
+		    opacity: 0;
+		  }
+		  
+		}
+
+		@keyframes topFadeOutVertical {
+		  0% {
+		    position: absolute;
+		    top: -3rem;
+		    opacity: 0;
+		  }
+
+		  75% {
+		    position: absolute;
+		    top: 45%;
+		    opacity: 1;
+		  }
+
+		  100% {
+		    opacity: 0;
+		  }
+		}
+
+		@keyframes leftFadeInOut {
+		  0% {
+		    opacity: 0;
+		    -webkit-transform: translateX(-400px);
+		  }
+
+		  100% {
+		    opacity: 1;
+		    -webkit-transform: translateX(0);
+		  }
+		}
+
+		/*@keyframes leftFadeInOut {
+		  0% {
+		    position: absolute;
+		    right: -3rem;
+		    opacity: 0;
+		  }
+
+		  75% {
+		    position: absolute;
+		    right: 10rem;
+		    opacity: 1;
+		  }
+
+		  100% {
+		    opacity: 0;
+		    right: 10rem;
+		  }
+		}*/
+
+		@keyframes fadeInOut {
+		  0% {
+		    opacity: 0;
+		  }
+
+		  45% {
+		    opacity: 1;
+		  }
+
+		  100% {
+		    opacity: 0%;
+		  }
+		}
+
+		/*.first-text {
+		  font-size: 4.4rem;
+		  position: absolute;
+		  left: 2.5rem;
+		  top: 5rem;
+		  opacity: 0;
+		  animation-name: topFadeOut;
+		  animation-duration: 5s;
+		  color: white;
+		}*/
+
+		.fadeInLeft {
+		  animation-name: leftFadeInOut;
+		  animation-delay: 0s;
+		  animation-duration: 1.3s;
+		}
+
+		/*.third-text {
+		  transform: rotate(-90deg);
+		  font-size: 2rem;
+		  position: absolute;
+		  left: 45%;
+		  top: 45%;
+		  opacity: 0;
+		  animation-name: topFadeOutVertical;
+		  animation-delay: 7.5s;
+		  animation-duration: 6s;
+		  color: #A3DDF0;
+		  white-space: nowrap;
+		}
+
+		.fourth-text {
+		  font-size: 3.4rem;
+		  position: absolute;
+		  top: 10.5rem;
+		  left: 10%;
+		  opacity: 0;
+		  color: #F0A3BE;
+		  animation-name: fadeInOut;
+		  animation-delay: 8.5s;
+		  animation-duration: 9s;
+		}
+
+		.fifth-text {
+		  font-size: 5rem;
+		  position: absolute;
+		  left: 5%;
+		  bottom: 25%;
+		  opacity: 0;
+		  color: #F0EBA3;
+		  animation-name: bottomFadeOut;
+		  animation-delay: 10s;
+		  animation-duration: 9s;
+		}*/
 		.andText {
      		font-size: 0.8em;
     	}
 	}
 	.rightContainer {
+		a {
+			color: #D0021B;
+			text-decoration: none;
+			margin-bottom: 5px;
+			font-size: 1em;
+			cursor: pointer;
+		}
+		.nextStudyLink {
+			float: right;
+		}
 	    .section {
 	    	max-width: 700px;
     	    margin-left: auto;
     	    margin-right: auto;
-    	    a {
-    	    	color: #D0021B;
-    	    	text-decoration: none;
-    	    	margin-bottom: 5px;
-    	    	font-size: 1em;
-    	    }
 	    }
 	    .firstName {
 	    	font-size: 32px;
@@ -175,14 +374,6 @@ p {
 		    	.name { 
 		    		font-size: 48px;
 		    	}
-		    	.circleDivider {
-		    		height: 20px;
-		    	    width: 20px;
-		    	    border-radius: 50%;
-		    	    display: inline-block;
-		    	    bottom: 5px;
-		    	    position: relative;
-		    	}
 		    	.title {
 		    		font-size: 40px;
 		    		font-weight: 600;
@@ -238,6 +429,40 @@ p {
 						color: #000;
 					}
 				}
+			}
+			&.fadeInRight {
+				animation-name: rightFadeInOut;
+				animation-delay: 0s;
+				animation-duration: 1.3s;
+				animation-fill-mode: backwards;
+			}
+			@keyframes rightFadeInOut {
+			  0% {
+			    opacity: 0;
+			    -webkit-transform: translateX(400px);
+			  }
+
+			  100% {
+			    opacity: 1;
+			    -webkit-transform: translateX(0);
+			  }
+			}
+			.fadeInRightLast {
+				animation-name: rightFadeInOutLast;
+				animation-delay: 15s;
+				animation-duration: 1.3s;
+				animation-fill-mode: backwards;
+			}
+			@keyframes rightFadeInOutLast {
+			  0% {
+			    opacity: 0;
+			    -webkit-transform: translateX(400px);
+			  }
+
+			  100% {
+			    opacity: 1;
+			    -webkit-transform: translateX(0);
+			  }
 			}
 		   /* height: 500px;*/
 		    .section {
@@ -353,10 +578,6 @@ p {
 				.name, .title { 
 					font-size: 32px !important;
 				}
-				.circleDivider {
-					height: 15px;
-				    width: 15px;
-				}	
 			}
 		}
 		.minimize {

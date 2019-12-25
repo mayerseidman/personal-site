@@ -1,5 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import ImageGallery from 'react-image-gallery';
+import Fade from 'react-reveal/Fade';
 
 // Images
 
@@ -86,66 +88,76 @@ class StudyThree extends React.Component {
                 <div className={ className }>
                     <div className="workContainer" ref="container">
                         <div className="studyTwoPage workContent">
-                            <div className="introContainer workSection">
-                                 <p className="workHeader">Intro</p>
-                                 <p className="headlineText">How can we present accessories ("products”) and shop (“marketplace”) interactions in a new and cleaner way.</p>
-                                <p>
-                                    Gamification is a cornerstone of the Whooo’s Reading student experience. Students earn coins by answering reading comprehension questions and use them to purchase accessories and other fun items from the <i>Owl Shop</i>.
-                                </p>
-                                <p>Previously, the <i>Owl Shop</i> was a bit cumbersome and not easy to navigate.</p>
-                                <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
-                                    showThumbnails={ false } />
-                            </div>
-                            <div className="goalsContainer workSection">
-                                <p className="workHeader">Goals</p>
-                                <div className="goalContainer"> 
-                                    <p className="subHeader">Simplify</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">The accordion navigation and modal made the experience clunky, constraining, and disorienting. Too purchase or preview one accessory this was the flow: item category > accessory > buy accessory (modal) > close out modal (to try another).</p>
-                                </div>
-                                <div className="goalContainer"> 
-                                    <p className="subHeader">Display More Accessories</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">Only 5 accessories were viewable at a given time. Again, this contributed to an overall inefficient experience.</p>
-                                </div>
-                                <div className="requirementsText">
-                                    <p className="subHeader">Must Include</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Student's owlvatar</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Student's coins total</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Accessory information: title, price, and description</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">A way for students to preview the accessory</p>
-                                </div>
-                            </div>
-                            <div className="strategyContainer workSection">
-                                <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
-                                <div>
-                                    <p>My only initial thought was that I wanted to keep the basic layout the same; student’s Owlvatar (including the save button underneath it) on the left and the accessories and information on the right.</p>
-                                    <p>For inspiration, I looked at two online dress up games; where you essentially dress up and play around with an avatar.</p>
-                                    <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
-                                        showThumbnails={ false } />
-                                    <p>I noticed several similarities between these two games:</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">The accessory categories are separated from the owlvatar display area-either above or around it.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">The avatar is prominent.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">Clicking on an item, shows you a preview of how it will look.</p>
-                                    <span className="circleDividerSmall"></span>
-                                    <p className="subText">When an accessory is selected, the color picker is easily accessible.</p>    
-                                </div>
-                                <div>
-                                    <p className="subHeader">Navigation</p>
+                            <Fade bottom>
+                                <div className="introContainer workSection">
+                                     <p className="workHeader">Intro</p>
+                                     <p className="headlineText">How can we present accessories ("products”) and shop (“marketplace”) interactions in a new and cleaner way.</p>
                                     <p>
-                                        In the second example, the accessories surround the avatar. Although intrigued, I felt it was too crammed and the lack of titles made it unclear what each accessory was. 
-                                        I wanted each category to have an icon and a title underneath it, so that the categories would be easily understood. Like the first example, we wanted two rows of icons. By shrinking the icons and trimming down the display we could comfortably fit the icons on two rows.
+                                        Gamification is a cornerstone of the Whooo’s Reading student experience. Students earn coins by answering reading comprehension questions and use them to purchase accessories and other fun items from the <i>Owl Shop</i>.
                                     </p>
-                                    <img src={ lofiOne } alt=""/>
-                                    <p className="subHeader">Accessories Layout</p>
-                                    <p>The first step was to remove our clunky accordion setup and go with a simple grid layout. This simplified the experience and also provided enough space to show eight accessories at once, instead of five. The added space also enabled us to display the title and price tag of each accessory.</p>
+                                    <p>Previously, the <i>Owl Shop</i> was a bit cumbersome and not easy to navigate.</p>
+                                    <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
+                                        showThumbnails={ false } />
+                                </div>
+                            </Fade>
+                            <Fade bottom>  
+                                <div className="goalsContainer workSection">
+                                    <p className="workHeader">Goals</p>
+                                    <div className="goalContainer"> 
+                                        <p className="subHeader">Simplify</p>
+                                        <span className="circleDivider"></span>
+                                        <p className="subText">The accordion navigation and modal made the experience clunky, constraining, and disorienting. Too purchase or preview one accessory this was the flow: item category > accessory > buy accessory (modal) > close out modal (to try another).</p>
+                                    </div>
+                                    <div className="goalContainer"> 
+                                        <p className="subHeader">Display More Accessories</p>
+                                        <span className="circleDivider"></span>
+                                        <p className="subText">Only 5 accessories were viewable at a given time. Again, this contributed to an overall inefficient experience.</p>
+                                    </div>
+                                    <div className="requirementsText">
+                                        <p className="subHeader">Must Include</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">Student's owlvatar</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">Student's coins total</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">Accessory information: title, price, and description</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">A way for students to preview the accessory</p>
+                                    </div>
+                                </div>
+                            </Fade>
+                            <Fade bottom>  
+                                <div className="strategyContainer workSection">
+                                    <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
+                                    <div>
+                                        <p>My only initial thought was that I wanted to keep the basic layout the same; student’s Owlvatar (including the save button underneath it) on the left and the accessories and information on the right.</p>
+                                        <p>For inspiration, I looked at two online dress up games; where you essentially dress up and play around with an avatar.</p>
+                                        <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
+                                            showThumbnails={ false } />
+                                        <p>I noticed several similarities between these two games:</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">The accessory categories are separated from the owlvatar display area-either above or around it.</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">The avatar is prominent.</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">Clicking on an item, shows you a preview of how it will look.</p>
+                                        <span className="circleDividerSmall"></span>
+                                        <p className="subText">When an accessory is selected, the color picker is easily accessible.</p>    
+                                    </div>
+                                    <div>
+                                        <p className="subHeader">Navigation</p>
+                                        <p>
+                                            In the second example, the accessories surround the avatar. Although intrigued, I felt it was too crammed and the lack of titles made it unclear what each accessory was. 
+                                            I wanted each category to have an icon and a title underneath it, so that the categories would be easily understood. Like the first example, we wanted two rows of icons. By shrinking the icons and trimming down the display we could comfortably fit the icons on two rows.
+                                        </p>
+                                        <img src={ lofiOne } alt=""/>
+                                        <p className="subHeader">Accessories Layout</p>
+                                        <p>The first step was to remove our clunky accordion setup and go with a simple grid layout. This simplified the experience and also provided enough space to show eight accessories at once, instead of five. The added space also enabled us to display the title and price tag of each accessory.</p>
+                                    </div>
+                                </div>
+                             </Fade>
+                             <Fade bottom> 
+                                <div className="strategyContainer workSection">
                                     <img src={ lofiTwo } alt=""/>
                                     <p>I wanted to continue using a gallery layout to display the additional accessories. This was similar to an e-commerce platform where you see the items in a grid and can cycle through them. </p>
                                     <img src={ galleryImg } alt=""/>
@@ -168,11 +180,14 @@ class StudyThree extends React.Component {
                                     <p>We consolidated everything related to say the wings within the wings tab. The color options for the wings, are included below the accessories. I preferred to use little color boxes over our previous color adjustment bar, as it is less distracting and more minimal.</p>
                                     <img src={ lofiFive } alt=""/>
                                 </div>
-                            </div>
-                            <div className="hifiContainer workSection">
-                                <p className="workHeader">Final Version</p>
-                                <img src={ finalVersion } alt=""/>
-                            </div>     
+                            </Fade>
+                            <Fade bottom>    
+                                <div className="hifiContainer workSection">
+                                    <p className="workHeader">Final Version</p>
+                                    <img src={ finalVersion } alt=""/>
+                                </div>
+                            </Fade> 
+                            <Link className="regularLink nextStudyLink" to="/works/Studies/StudyFour">Next Study</Link>   
                         </div>
                     </div>
                 </div>

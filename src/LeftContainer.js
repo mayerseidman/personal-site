@@ -56,17 +56,18 @@ class leftContainer extends React.Component {
     	}
     	let { match, location, history } = this.props;
     	var path = location.pathname;
+    	console.log(path)
     	if (path.includes("StudyOne")) {
     		if (this.props.currentView == "preview") {
     			var className = "minimize"
     			var previewTopClassName = "previewTop"
     			var infoContainer = (
     				<div className={ "infoContainer preview " + previewTopClassName }>
-    			    	<p className="title">Title here...</p>
+    			    	<p className="title">Reading Comprehension Tool</p>
     			        <span className="circleDivider"></span>
-    			        <p className="studyPreviewText">Description...</p>
+    			        <p className="studyPreviewText">Led team in creating several interfaces from scratch, carrying them through the various stages of UX design.</p>
     			        <span className="circleDivider"></span>
-    			        <p className="studyRolesText">Research, UI/UX, Visual</p>
+    			        <p className="studyRolesText">Research, UI/UX, Visual, User Feedback</p>
     				</div>
     			)	
     		} else if (this.props.currentView == "startStudy") {
@@ -126,13 +127,16 @@ class leftContainer extends React.Component {
 				)
 			}
     	} else {
+    		if (path == "/") {
+    			var className = " fadeInLeft"
+    		}
     		var infoContainer = (
-    			<div className="infoContainer">
+    			<div className={ "infoContainer " + className}>
     				<p className="name">Mayer Seidman</p>
     				<span className="circleDivider"></span>
     				<p className="title">{ title }</p>
     			</div>	
-    		)	
+    		)
     	}
     	return (
     		<div className={ "leftContainer " + className }>

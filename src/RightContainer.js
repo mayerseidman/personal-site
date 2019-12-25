@@ -16,10 +16,6 @@ class RightContainer extends React.Component {
     	let { match, location } = this.props;
     	var path = location.pathname;
 
-    	// if (this.props.currentView == "preview") {
-    	// 
-    	// }
-
     	// Seudo Check for mobile or web...
 		if(window.innerWidth <= 800 && window.innerHeight <= 820) {
 			console.log("SWITCH IT UP")
@@ -29,7 +25,11 @@ class RightContainer extends React.Component {
 	    	if (path.includes("Studies")) {
 				var className = "expand";		
 	    	}
-	   }
+	   	}
+
+	   	if (path == "/") {
+	   		var className = " fadeInRight";
+	   	}
 
     	return (
 		    <div className={ "rightContainer " + className }>
@@ -52,13 +52,16 @@ export default withRouter(RightContainer)
 function Home() {
 	return (
 		<div className="section homeSection">
-			<p>Hi, I’m <span className="firstName">Mayer</span>.</p>
-			<p className="quoteContainer"><span className="quote">"People can feel perfection."</span> - Walt Disney</p>
-			<p>No, I am not perfect. This quote means a lot to me because I think the details are essential. People can feel the sweat and effort that goes into everything we produce…</p>
-			<p>I spend my days as a designer and developer at <a href="" target="_blank">WhooosReading</a>.</p>
-			<p>I like creating things that help others and… <a href="" target="_blank">link to github...</a>  </p>
-			<p>I enjoy writing about <a href="" target="_blank">UI/UX topics</a>. </p>
-			<p>I help others grow and share skills as a moderator in <a href="" target="_blank">React FB Group</a></p>
+			<div className="">
+				<p>Hi, I’m <span className="firstName">Mayer</span>.</p>
+				<p className="quoteContainer"><span className="quote">"People can feel perfection."</span> - Walt Disney</p>
+				<p>No, I am not perfect. This quote means a lot to me because I think the details are essential. People can feel the sweat and effort that goes into everything we produce…</p>
+	
+				<p>I spend my days as a designer and developer at <a className="regularLink" href="" target="_blank">WhooosReading</a>.</p>
+				<p>I like creating things that help others and… <a className="regularLink" href="" target="_blank">link to github...</a>  </p>
+				<p>I enjoy writing about <a className="regularLink" href="" target="_blank">UI/UX topics</a>. </p>
+				<p>I help others grow and share skills as a moderator in <a className="regularLink" href="" target="_blank">React FB Group</a></p>
+			</div>
 		</div>
   	);
 }
