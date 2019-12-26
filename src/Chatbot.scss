@@ -327,7 +327,7 @@ $defaultFadeAmount: 75px;
         text-align: center;
         button {
             width: 200px;
-            height: 30px;
+            height: 35px;
             background: #D0021B;
             display: inline-block;
         }
@@ -342,14 +342,14 @@ $defaultFadeAmount: 75px;
 @media only screen and (min-width: 1000px) {
     #app-container {
       /*  padding: 10px;*/
-        margin: 0 auto;   
-        width: 55%;
+        /*margin: 0 auto;  */ 
+        width: 60%;
         /*max-width: 420px;*/
-        margin-top: 6%;
-        margin-left: 36%;
+        /*margin-top: 6%;*/
+        margin-left: 31%;
     }
     .chatSection {
-        padding-bottom: 94px;
+        padding-bottom: 80px;
         .innerWebcamContainer {
             text-align: center;
             padding-top: 15%;
@@ -357,16 +357,24 @@ $defaultFadeAmount: 75px;
         .innerWebcamContainer {
             button {
                 margin-top: 15px;
+                color: #fff;
+                font-size: 16px;
+                margin-right: 8%;
+            }
+            .defaultLink {
+              position: relative;
+              right: 5%;
+              color: #000;
             }
         }
     }
     .convo-container {
         height: 100%;
-        padding-top: 20px;
+        margin-top: 30px;
     }
     .chatbotContainer {
         height: 475px;
-        padding-bottom: 117px;
+        padding-bottom: 125px;
     }
     .backLink {
         margin-left: 19px;
@@ -435,13 +443,13 @@ $defaultFadeAmount: 75px;
     }*/
 
 .convo-container {
-    max-width: 100%;
-    max-height: 80vh;
+/*    max-width: 100%;
+    max-height: 80vh;*/
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     overflow: scroll;
     margin-bottom: 15px;
-    max-height: 475px;
+    max-height: 450px;
 }
 
 .input-container {

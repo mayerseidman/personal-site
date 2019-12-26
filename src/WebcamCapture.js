@@ -16,6 +16,11 @@ export default class WebcamCapture extends React.Component {
     this.setState({ imageSrc: imageSrc })
     this.props.setImage(imageSrc);
   };
+
+  setDefaultImage() {
+    var imageSrc =  "https://imgplaceholder.com/420x320/cccccc/000/glyphicon-user";
+    this.props.setImage(imageSrc);
+  }
  
     render() {
         const videoConstraints = {
@@ -29,7 +34,7 @@ export default class WebcamCapture extends React.Component {
         } else {
             var display = (
                 <div className="innerWebcamContainer">
-                    <p>Smile and take a pic for your chatbot icon!</p>
+                    <p>Smile and take a pic for your chatbot icon (this will not be saved)!</p>
                     <Webcam
                         audio={false}
                         height={350}
@@ -39,7 +44,8 @@ export default class WebcamCapture extends React.Component {
                         videoConstraints={videoConstraints}
                         className="video"
                     />
-                    <button onClick={this.capture.bind(this)}>Capture photo</button>
+                    <button onClick={ this.capture.bind(this) }>Capture photo</button>
+                    <a className="defaultLink regularLink" onClick={ this.setDefaultImage.bind(this) }>I'd rather not</a>
                 </div>
             )
         }

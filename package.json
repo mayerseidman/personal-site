@@ -12,10 +12,13 @@
     "react-dom": "^16.10.1",
     "react-fade-animation": "^1.0.5",
     "react-image-gallery": "^0.9.1",
+    "react-image-zoom": "^1.1.0",
+    "react-magnifier": "^3.0.4",
     "react-reveal": "^1.1.9-beta.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.2",
-    "react-webcam": "^3.1.1"
+    "react-webcam": "^3.1.1",
+    "wow.js": "^1.2.2"
   },
   "scripts": {
     "start": "react-scripts start",

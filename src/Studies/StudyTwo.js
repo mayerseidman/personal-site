@@ -109,21 +109,20 @@ class StudyTwo extends React.Component {
                 <div className={ className }>
                     <div className="workContainer" ref="container">
                         <div className="workContent">
-                            <Fade bottom>
-                                <div className="introContainer workSection">
-                                     <p className="workHeader">Intro</p>
-                                     <p className="headlineText">How can we create one place where teachers can perform a variety of actions? Additionally, how can we enable teachers to perform these actions on behalf of multiple students-easily, all at once, and across different classes?</p>
-                                    <p>
-                                        On Whooo’s Reading’s <i>Student Roster</i>, teachers can do a variety of actions, such as, editing students or class settings, logging reading (for students), sending notes/coins (to students), adding students, adding classes, and retrieving student login information.
-                                    </p>
-                                    <p>
-                                        Previously, these actions were all on separate pages and their links were spread between the home and settings pages.
-                                    </p>
-                                    <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
-                                        showThumbnails={ false } />
-                                </div>
-                            </Fade>
-                            <Fade bottom>
+                                <Fade bottom>
+                                    <div className="introContainer workSection">
+                                         <p className="workHeader">Intro</p>
+                                         <p className="headlineText">How can we create one place where teachers can perform a variety of actions? Additionally, how can we enable teachers to perform these actions on behalf of multiple students-easily, all at once, and across different classes?</p>
+                                        <p>
+                                            On Whooo’s Reading’s <i>Student Roster</i>, teachers can do a variety of actions, such as, editing students or class settings, logging reading (for students), sending notes/coins (to students), adding students, adding classes, and retrieving student login information.
+                                        </p>
+                                        <p>
+                                            Previously, these actions were all on separate pages and their links were spread between the home and settings pages.
+                                        </p>
+                                        <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
+                                            showThumbnails={ false } />
+                                    </div>
+                                </Fade>    
                                 <div className="goalsContainer workSection">
                                     <div className="goalContainer"> 
                                         <p className="workHeader">Goals</p>
@@ -142,10 +141,8 @@ class StudyTwo extends React.Component {
                                         <p className="subText">Some of the actions were rigid in that they could only be performed for one or all students.
                                             A teacher wanting to award 5 students (from two classes) 50 points for a good job reading, would have to do this separately for each student. Without support for batch processing (taking action on/for numerous students at once), simple tasks took a long time.</p>
                                     </div>
-                                </div>
-                             </Fade> 
+                                </div> 
                            
-                            <Fade bottom>
                                 <div className="strategyContainer workSection">
                                     <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
                                      <p>
@@ -175,28 +172,21 @@ class StudyTwo extends React.Component {
                                         <span className="circleDividerSmall"></span>
                                         <p className="subText">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p>
                                     </div>
-                                </div>
-                            </Fade>
-                            <Fade bottom> 
+                                </div> 
                                 <div className="structureContainer workSection">
                                     <p className="workHeader">Flow <span className="andText">and</span> Structure</p>
                                      <p>There were two levels in our structure. The surface level contains classes, students, and the adding classes and students modals. The second level contained the student and class information modals and the action modals triggered after selecting students.</p>
                                     <img src={ flowStructure} alt=""/>
-                                </div>
-                            </Fade>
-                            <Fade bottom> 
+                                </div> 
                                 <div className="lofiContainer workSection">
                                     <p className="workHeader">Lo-fi</p>
                                     <img src={ lofiImg } alt=""/>
-                                </div> 
-                            </Fade>
-                            <Fade bottom> 
+                                </div>  
                                 <div className="hifiContainer workSection">
                                     <p className="workHeader">Final Version</p>
                                     <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
                                         showThumbnails={ false } />
                                 </div>
-                            </Fade>
                             <Link className="regularLink nextStudyLink" to="/works/Studies/StudyThree">Next Study</Link>   
                         </div>
                     </div>
