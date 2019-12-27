@@ -9,7 +9,8 @@ class Works extends React.Component {
                 <div className="leftWorksContainer">
                     <div className="studiesTitleContainer">
                         <div className="worksCategory">
-                            <p className="categoryTitle">Case Studies</p>
+                            <p className="categoryTitle mobileHide">Case Studies</p>
+                            <p className="categoryTitle webHide">Studies</p>
                             <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                     </div>

@@ -187,6 +187,9 @@
   .ActionBar-enter.ActionBar-enter-active {
     transform: translate3d(0, 0, 0);
     transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
   }
 
   .ActionBar-exit {
@@ -196,6 +199,9 @@
   .ActionBar-exit.ActionBar-exit-active {
     opacity: 0;
     transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
   }
 
   // - Messages
@@ -210,6 +216,9 @@
   .Messages-enter.Messages-enter-active {
     transform: translate3d(0, 0, 0);
     transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
   }
 
   .Messages-exit {
@@ -219,6 +228,9 @@
   .Messages-exit.Messages-exit-active {
     opacity: 0;
     transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
   }
 
   // - Message-Content
@@ -229,6 +241,9 @@
   .Message-Content-enter.Message-Content-enter-active {
     opacity: 1;
     transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -webkit-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
   }
 
   .Message-Content-exit {
@@ -241,6 +256,9 @@
   .Message-Content-exit.Message-Content-exit-active {
     opacity: 0;
     transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
   }
 }
 
@@ -396,7 +414,7 @@ $defaultFadeAmount: 75px;
         /*max-width: 420px;*/
     }
     .chatSection {
-        padding-bottom: 20px;
+        padding-bottom: 46px;
         .webcamContainer {
             position: relative;
         }
@@ -428,7 +446,7 @@ $defaultFadeAmount: 75px;
     }
     .chatbotContainer {
         height: 469px;
-        padding-bottom: 0px;
+        padding-bottom: 26px;
     }
     .input-container {
         padding: 5px;
@@ -442,15 +460,12 @@ $defaultFadeAmount: 75px;
     .defaultLink {
       position: static !important;
     }
-    .backLink {
-        display: block;
-        margin-left: 5px;
-        margin-top: 5px;
-    }
+    
     .mobileBackLink {
-        position: relative;
-        bottom: 45px;
-        margin-left: 93%;
+      position: relative;
+      bottom: 32px;
+      margin-left: 90%;
+      color: #000;
     }
 }
 
@@ -497,10 +512,6 @@ $defaultFadeAmount: 75px;
     button {
         width: 75px;
     }
-}
-.backLink {
-    vertical-align: baseline;
-    font-size: 0.8em;
 }
 .input-container input {
     width: 100%;

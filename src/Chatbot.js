@@ -89,14 +89,14 @@ export default class Chatbot extends Component {
         var updatedBotMessagesArr = this.state.botMessages;
 
         if (text) {
-            var newText = text;
+            var text = text;
         } else {
-            var newText = topic;
+            var text = topic;
         }
         this.setState({
             topic: topic,
             subtopic: subtopic,
-            userMessages: updatedUserMessagesArr.concat(newText),
+            userMessages: updatedUserMessagesArr.concat(text),
             // botLoading: true,
             botMessages: updatedBotMessagesArr.concat(botResponse)
         })

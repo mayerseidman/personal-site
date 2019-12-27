@@ -88,8 +88,9 @@ class StudyThree extends React.Component {
                 <div className={ className }>
                     <div className="workContainer" ref="container">
                         <div className="studyTwoPage workContent">
-                            <Fade bottom>
+                           
                                 <div className="introContainer workSection">
+                                 <Fade bottom>
                                      <p className="workHeader">Intro</p>
                                      <p className="headlineText">How can we present accessories (products) and shop (marketplace) interactions in a new and cleaner way?</p>
                                     <p>
@@ -98,8 +99,9 @@ class StudyThree extends React.Component {
                                     <p>Previously, the <i>Owl Shop</i> was a bit cumbersome and not easy to navigate.</p>
                                     <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
                                         showThumbnails={ false } />
+                               </Fade>
                                 </div>
-                            </Fade>    
+                                
                             <div className="goalsContainer workSection">
                                 <p className="workHeader">Goals</p>
                                 <div className="goalContainer"> 

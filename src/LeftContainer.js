@@ -58,7 +58,7 @@ class leftContainer extends React.Component {
     	var path = location.pathname;
     	if (path.includes("StudyOne")) {
     		if (this.props.currentView == "preview") {
-    			var className = "minimize"
+    			var classNameOne = "minimize"
     			var previewTopClassName = "previewTop"
     			var infoContainer = (
     				<div className={ "infoContainer preview " + previewTopClassName }>
@@ -70,7 +70,7 @@ class leftContainer extends React.Component {
     				</div>
     			)	
     		} else if (this.props.currentView == "startStudy") {
-    			var className = "exterminate"
+    			var classNameOne = "exterminate"
     			var infoContainer = (
     				<div className="infoContainer">
     				    <div>
@@ -81,7 +81,7 @@ class leftContainer extends React.Component {
     		}
     	} else if (path.includes("StudyTwo")) {
 			if (this.props.currentView == "preview") {
-				var className = "minimize"
+				var classNameOne = "minimize"
 				var previewTopClassName = "previewTop"
 				var infoContainer = (
 					<div className={ "infoContainer preview " + previewTopClassName }>
@@ -93,7 +93,7 @@ class leftContainer extends React.Component {
 					</div>
 				)	
 			} else if (this.props.currentView == "startStudy") {
-				var className = "exterminate"
+				var classNameOne = "exterminate"
 				var infoContainer = (
 					<div className="infoContainer">
 					    <div>
@@ -104,7 +104,7 @@ class leftContainer extends React.Component {
 			}
     	} else if (path.includes("StudyThree")) {
 			if (this.props.currentView == "preview") {
-				var classNameTwo = "minimize"
+				var classNameOne = "minimize"
 				var previewTopClassName = "previewTop"
 				var infoContainer = (
 					<div className={ "infoContainer preview " + previewTopClassName }>
@@ -116,7 +116,7 @@ class leftContainer extends React.Component {
 					</div>
 				)	
 			} else if (this.props.currentView == "startStudy") {
-				var className = "exterminate"
+				var classNameOne = "exterminate"
 				var infoContainer = (
 					<div className="infoContainer">
 					    <div>
@@ -130,7 +130,7 @@ class leftContainer extends React.Component {
     			var className = " fadeInLeft"
     		}
     		var infoContainer = (
-    			<div className={ "infoContainer " + className}>
+    			<div className={ "infoContainer " + className }>
     				<p className="name">Mayer Seidman</p>
     				<span className="circleDivider"></span>
     				<p className="title">{ title }</p>
@@ -138,7 +138,7 @@ class leftContainer extends React.Component {
     		)
     	}
     	return (
-    		<div className={ "leftContainer " + className }>
+    		<div className={ "leftContainer " + classNameOne }>
     			{ infoContainer }
     		</div>
     	)

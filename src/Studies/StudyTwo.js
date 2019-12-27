@@ -109,8 +109,9 @@ class StudyTwo extends React.Component {
                 <div className={ className }>
                     <div className="workContainer" ref="container">
                         <div className="workContent">
-                                <Fade bottom>
+                                
                                     <div className="introContainer workSection">
+                                    <Fade bottom>
                                          <p className="workHeader">Intro</p>
                                          <p className="headlineText">How can we create one place where teachers can perform a variety of actions? Additionally, how can we enable teachers to perform these actions on behalf of multiple students-easily, all at once, and across different classes?</p>
                                         <p>
@@ -121,8 +122,9 @@ class StudyTwo extends React.Component {
                                         </p>
                                         <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
                                             showThumbnails={ false } />
+                                   </Fade>    
                                     </div>
-                                </Fade>    
+                                
                                 <div className="goalsContainer workSection">
                                     <div className="goalContainer"> 
                                         <p className="workHeader">Goals</p>

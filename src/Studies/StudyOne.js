@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Magnifier from "react-magnifier";
 import Fade from 'react-reveal/Fade';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 
 import './StudyOne.scss';
 import './StudyThree.scss';
@@ -98,19 +100,22 @@ class StudyOne extends React.Component {
                 <div className={ className }>
                     <div className="workContainer" ref="container">
                         <div className="workContent studyOnePage">
-                            <Fade bottom>
+                            <ScrollAnimation animateIn="fadeIn">
+                                    
+                                
                                 <div className="introContainer workSection">
-                                    <p className="workHeader">Intro</p>
-                                    <p className="headlineText">How to prepare students to think creatively and analytically in an engaging way?</p>
-                                    <p>Since the beginning, Whooo's Reading (WR) has been very good at helping teachers track their students’ independent reading and motivating students to read more on their own. While Whooo's Reading did a good job managing and motivating independent reading, we discovered that teachers and schools were most interested in WR because of the questions that ask students about the books they read.</p>
-                                    <img src={ comprehension } alt=""/>
-
+                                    
+                                        <p className="workHeader">Intro</p>
+                                        <p className="headlineText">How to prepare students to think creatively and analytically in an engaging way?</p>
+                                        <p>Since the beginning, Whooo's Reading (WR) has been very good at helping teachers track their students’ independent reading and motivating students to read more on their own. While Whooo's Reading did a good job managing and motivating independent reading, we discovered that teachers and schools were most interested in WR because of the questions that ask students about the books they read.</p>
+                                        <img src={ comprehension } alt=""/>
+                                    
                                     <p>We learned that teachers were fed up with the factual-recall multiple choice questions that programs would ask students.</p>
                                     <img src={ multipleChoice } alt=""/>
                                     <p>Questions like these do not prepare students for a world in which they need to think creatively and analytically and one in which they can easily google the answer to fact-recall questions. Moreover, the new standards ask students to synthesize, cite evidence, analyze, and write and these ‘old-school’ multiple choice assessments were not cutting it anymore. </p>
                                     <p>As a result, we realized that the best way we could continue to help teachers with our program was by improving our reading questions and assessment content. To make these improvements, we turned to our teachers for their invaluable feedback and input.</p>
                                 </div>
-                            </Fade>
+                           </ScrollAnimation>
                             <div className="strategyContainer workSection">
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
                                 <div className="discoveryContainer">
