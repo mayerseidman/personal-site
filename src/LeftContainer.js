@@ -56,7 +56,6 @@ class leftContainer extends React.Component {
     	}
     	let { match, location, history } = this.props;
     	var path = location.pathname;
-    	console.log(path)
     	if (path.includes("StudyOne")) {
     		if (this.props.currentView == "preview") {
     			var className = "minimize"
@@ -105,7 +104,7 @@ class leftContainer extends React.Component {
 			}
     	} else if (path.includes("StudyThree")) {
 			if (this.props.currentView == "preview") {
-				var className = "minimize"
+				var classNameTwo = "minimize"
 				var previewTopClassName = "previewTop"
 				var infoContainer = (
 					<div className={ "infoContainer preview " + previewTopClassName }>
@@ -139,7 +138,7 @@ class leftContainer extends React.Component {
     		)
     	}
     	return (
-    		<div className={ "leftContainer "}>
+    		<div className={ "leftContainer " + className }>
     			{ infoContainer }
     		</div>
     	)
