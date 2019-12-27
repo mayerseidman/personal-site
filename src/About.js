@@ -44,8 +44,8 @@ class About extends React.Component {
                 var pageContent = (
                     <div className="introContainer">
                         <p>
-                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                            Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                            Hi there again! <br/>
+                            Feel free to use the chatbot or the various links to learn more about me. <br/><br/>TLDR; I love learning, connecting with other people, and the Teenage Mutant Ninja Turtles.
                         </p> 
                         <div className="bottomContainer">
                             <button className="chatButton" onClick={ this.startChat.bind(this) }>Let's Chat</button>
@@ -106,12 +106,15 @@ class About extends React.Component {
                     <div className="textContainer journeyContainer">
                         <div className="innerTextContainer">
                             <p>
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                                I got my bachelors in Talmudic Law (I'm totally willing to tell you more about this or free too google it!) and then an MBA.
+                                Wanting to gain tech skills, I attended a coding bootcamp in Austin, Texas. I left with solid programming skills and an excitement for technology.
                             </p>
                             <p>
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-                                Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+                                I got a job as the first technical (non founding) employee at a small startup in San Diego, where I was fortunate to be exposed to all aspects of a company, including design. I fell in love with design and grew into the team design lead.
+                            </p>
+                            <p>
+                                I started working remotely a few years ago. It enabled me to travel the world (literally) and to settle down in beautiful Vancouver, Canada.
+                                I am now currently the UI/UX design lead at an Ed-Tech company.
                             </p>
                         </div>   
                     </div>
@@ -124,7 +127,7 @@ class About extends React.Component {
                         <a className={ this.state.currentView == "hobbies" ? "selected" : "" } onClick={ this.changeView.bind(this, "hobbies") }>Hobbies</a>
                         <a className={ this.state.currentView == "skills" ? "selected" : "" } onClick={ this.changeView.bind(this, "skills") }>Skills</a>
                         <a className={ this.state.currentView == "journey" ? "selected" : "" } onClick={ this.changeView.bind(this, "journey") }>Journey</a>
-                        <a className={ this.state.currentView == "chat" ? "selected" : "" } onClick={ this.changeView.bind(this, "chat") }>Chat</a>
+                        <a className={ this.state.currentView == "chat" || this.state.currentView == "intro" ? "selected" : "" } onClick={ this.changeView.bind(this, "intro") }>Chat</a>
                     </div>    
                 )
                 var pageContainer = (

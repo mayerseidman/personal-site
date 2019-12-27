@@ -330,11 +330,18 @@ $defaultFadeAmount: 75px;
             height: 35px;
             background: #D0021B;
             display: inline-block;
+            color: #fff;
+            font-size: 16px;
         }
         .video {
             display: block;
             width: 50%;
             margin: auto;
+        }
+        .defaultLink {
+          position: relative;
+          right: 5%;
+          color: #000;
         }
     }
 }
@@ -351,20 +358,15 @@ $defaultFadeAmount: 75px;
     .chatSection {
         padding-bottom: 80px;
         .innerWebcamContainer {
-            text-align: center;
             padding-top: 15%;
         }
         .innerWebcamContainer {
+          .buttonsContainer {
+            text-align: center;
+          }
             button {
                 margin-top: 15px;
-                color: #fff;
-                font-size: 16px;
                 margin-right: 8%;
-            }
-            .defaultLink {
-              position: relative;
-              right: 5%;
-              color: #000;
             }
         }
     }
@@ -377,10 +379,11 @@ $defaultFadeAmount: 75px;
         padding-bottom: 125px;
     }
     .backLink {
-        margin-left: 19px;
-        position: relative;
-        top: 5px;
-        cursor: pointer;
+      cursor: pointer;
+      margin-left: 0px;
+      position: relative;
+      top: 8px;
+      color: #000 !important;
     }
 }
 
@@ -393,20 +396,30 @@ $defaultFadeAmount: 75px;
         /*max-width: 420px;*/
     }
     .chatSection {
-        padding-bottom: 36px;
+        padding-bottom: 20px;
         .webcamContainer {
             position: relative;
-            bottom: 35px;
         }
         .innerWebcamContainer {
+          padding-left: 25px;
+          padding-right: 25px;
+          .buttonsContainer {
+            position: relative;
+            bottom: 70px;
+          }
             button {
-                margin-top: 15px;
-                position: relative;
-                bottom: 50px;
+              position: relative;
+              margin-right: 10px;
             }
             p {
-                position: relative;
-                top: 60px;
+              position: relative;
+            }
+            .video {
+              display: block;
+              width: 75%;
+              margin: auto;
+              position: relative;
+              bottom: 45px;
             }
         }
     }
@@ -425,6 +438,9 @@ $defaultFadeAmount: 75px;
           margin-right: 5px;
           width: 100px;
         }
+    }
+    .defaultLink {
+      position: static !important;
     }
     .backLink {
         display: block;
@@ -466,12 +482,15 @@ $defaultFadeAmount: 75px;
     button {
         cursor: pointer;
         margin-right: 5px;
-        width: 100px;
+        width: 90px;
+        /*width: 100px;*/
         background-color: #D0021B;
         color: #fff;
-        height: 55px;
-        border-radius: 25px;
+       /* height: 55px;*/
+        /*height: 70px;*/
+       /* border-radius: 25px;*/
         vertical-align: top;
+        padding: 10px;
     }
 }
 .categoryOptions, .interestsOptions {

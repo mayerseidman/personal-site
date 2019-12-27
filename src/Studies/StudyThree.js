@@ -91,7 +91,7 @@ class StudyThree extends React.Component {
                             <Fade bottom>
                                 <div className="introContainer workSection">
                                      <p className="workHeader">Intro</p>
-                                     <p className="headlineText">How can we present accessories ("products”) and shop (“marketplace”) interactions in a new and cleaner way.</p>
+                                     <p className="headlineText">How can we present accessories (products) and shop (marketplace) interactions in a new and cleaner way?</p>
                                     <p>
                                         Gamification is a cornerstone of the Whooo’s Reading student experience. Students earn coins by answering reading comprehension questions and use them to purchase accessories and other fun items from the <i>Owl Shop</i>.
                                     </p>
@@ -157,7 +157,7 @@ class StudyThree extends React.Component {
                                     <p className="colonText">The placement of the description was a little tricky though. Placing it only underneath the item selected seemed off for two reasons:</p>
                                     <ol>
                                         <li>When one of the top items was selected, the description would appear between the two rows and disrupted the flow of the interface.</li>
-                                        <li className="secondItem">Depending on the item selected, the description would at times appear below the first row sand at times appear below both.</li>
+                                        <li className="secondItem">Depending on the item selected, the description would at times appear below the first row and at times appear below both.</li>
                                     </ol>
                                     
                                     <ImageGallery items={ imagesThree } showFullscreenButton={ false } showPlayButton={ false }

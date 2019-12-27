@@ -44,8 +44,10 @@ export default class WebcamCapture extends React.Component {
                         videoConstraints={videoConstraints}
                         className="video"
                     />
-                    <button onClick={ this.capture.bind(this) }>Capture photo</button>
-                    <a className="defaultLink regularLink" onClick={ this.setDefaultImage.bind(this) }>I'd rather not</a>
+                    <div className="buttonsContainer">
+                      <button onClick={ this.capture.bind(this) }>Capture photo</button>
+                      <a className="defaultLink regularLink" onClick={ this.setDefaultImage.bind(this) }>I'd rather not</a>
+                    </div>
                 </div>
             )
         }

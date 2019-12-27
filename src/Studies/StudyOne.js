@@ -102,12 +102,12 @@ class StudyOne extends React.Component {
                                 <div className="introContainer workSection">
                                     <p className="workHeader">Intro</p>
                                     <p className="headlineText">How to prepare students to think creatively and analytically in an engaging way?</p>
-                                    <p>Since the beginning, Whooo’s Reading has been very good at helping teachers track their students’ independent reading and motivating students to read more on their own. While Whooo’s Reading did a good job managing and motivating independent reading, we discovered that teachers and schools were most interested in WR because of the questions that ask students about the books they read.</p>
+                                    <p>Since the beginning, Whooo's Reading (WR) has been very good at helping teachers track their students’ independent reading and motivating students to read more on their own. While Whooo's Reading did a good job managing and motivating independent reading, we discovered that teachers and schools were most interested in WR because of the questions that ask students about the books they read.</p>
                                     <img src={ comprehension } alt=""/>
 
                                     <p>We learned that teachers were fed up with the factual-recall multiple choice questions that programs would ask students.</p>
                                     <img src={ multipleChoice } alt=""/>
-                                    <p>Questions like these do not prepare students for a world in which they need to think creatively and analytically and one in which they can easily google the answer to fact-recall questions. Moreover the new standards ask students to synthesize, cite evidence, analyze, and write and these ‘old-school’ multiple choice assessments were not cutting it anymore. </p>
+                                    <p>Questions like these do not prepare students for a world in which they need to think creatively and analytically and one in which they can easily google the answer to fact-recall questions. Moreover, the new standards ask students to synthesize, cite evidence, analyze, and write and these ‘old-school’ multiple choice assessments were not cutting it anymore. </p>
                                     <p>As a result, we realized that the best way we could continue to help teachers with our program was by improving our reading questions and assessment content. To make these improvements, we turned to our teachers for their invaluable feedback and input.</p>
                                 </div>
                             </Fade>
@@ -115,16 +115,16 @@ class StudyOne extends React.Component {
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
                                 <div className="discoveryContainer">
                                     <p className="subHeader"><b>General Discovery</b></p>
-                                    <p>For two weeks we had phone calls with dozens of teachers around the country and learned that a major problem is finding formative assessments that align with the standards and reinforce the reading units they teach. While some sites (e.g. Pinterest) offer graphic organizers and other forms of assessments-- it often takes many hours to find the right types of reading exercises and they rarely are engaging for students. In fact nearly every teacher we spoke to brought up some version of this problem. </p>
+                                    <p>For two weeks we had phone calls with dozens of teachers around the country and learned that a major problem is finding formative assessments that align with the standards and reinforce the reading units they teach. While some sites (e.g. Pinterest) offer graphic organizers and other forms of assessments-- it often takes many hours to find the right types of reading exercises, and they are rarely engaging for students. In fact nearly every teacher we spoke to brought up some version of this problem. </p>
                                     <p>
-                                        <i>"I might have a student who is missing a particular skill: maybe inferring, drawing conclusions, answering open ended questions, main ideas, supporting details, using evidence. The way I currently handle this is to introduce a concept to the whole class (e.g. main ideas) then do a lesson on the concept. Then I break them into groups of 4 so they can start getting practice and so they can give support to each other. 
+                                        <i>"I might have a student who is missing a particular skill: maybe inferring, drawing conclusions, answering open-ended questions, main ideas, supporting details, using evidence. The way I currently handle this is to introduce a concept to the whole class (e.g. main ideas) then do a lesson on the concept. Then I break them into groups of 4, so they can start getting practice, and so they can give support to each other. 
                                        <br/> <br/> The worst part of this process is coming up with activities for the 3 or 4 person groups and grading them. My expertise is in teaching the lesson and helping groups and students understand what was taught. I want to hand off coming up with ways to practice the reading skills.”</i>
                                     </p>
                                     <p className="subHeader"><b>Creating Assignments</b></p>
                                     <p>Teachers want to assign anywhere between 1-3 exercises that are aligned with standards. They want their students to then work on these exercises. Teachers want to assign different assignments to different groups of students (depending on their specific needs and pace).</p>
                                     <p>
                                         <i>
-                                        “I want to assign exercises for students to work on that’s aligned with unit I am focusing on. I want to check up on my computer during the period, where students are with regards to finishing the exercises (I like how google classroom does this). 
+                                        “I want to assign exercises for students to work on that’s aligned with unit I am focusing on. I want to check up on my computer during the period, where students are regarding finishing the exercises (I like how google classroom does this). 
                                         <br/> <br/>Its very important for me to be able to assign students exercises based on their individual needs.”
                                         </i>
                                     </p>
@@ -154,7 +154,7 @@ class StudyOne extends React.Component {
                                         <p className="subText">
                                             Situation: <span className="highlightedWord">When</span> I am assigning reading and exercises <br/>
                                             Motivation: <span className="highlightedWord">I want</span> the kids to enjoy the program <br/>
-                                            Result: <span className="highlightedWord">So I can</span>they develop a love for reading.
+                                            Result: <span className="highlightedWord">So I can</span>help them develop a love for reading.
                                         </p>
                                         <span className="circleDivider"></span>
                                         <p className="subText">
@@ -183,11 +183,11 @@ class StudyOne extends React.Component {
                                     <p className="subHeader">Features</p>
                                     <p>We had a very long (for me this means over 30 minutes) meeting and discussed the various features we could build to help meet the needs of our users.</p>
                                     <img src={ featuresTable } alt="" className="featuresTableImg" />
-                                    <p className="captionText">Some of the features from our iteration</p>
+                                    <p className="captionText">Some features from our iteration</p>
                                 </div>
                                <div>
                                    <p className="subHeader">Feature Planning</p>
-                                   <p>We had lots of features but we needed to figure out what we could accomplish within the dev cycle. Everyone (product team) estimated the amount of days each feature/task should take. We then took the average sum from everyone's estimates and could forecast how many features we could complete.</p>
+                                   <p>We had lots of features but needed to figure out what we could accomplish within the dev cycle. Everyone (product team) estimated the amount of days each feature/task should take. We then took the average sum from everyone's estimates and could forecast how many features we could complete.</p>
                                    <img src={ estimates } alt=""/>
                                </div>
                                <div>
@@ -222,7 +222,7 @@ class StudyOne extends React.Component {
                                     </div>
                                     <div>
                                         <p className="secondaryHeader">Creating Assignments</p>
-                                        <p>Plotting out the flow of a user's exprience in question/answer format was the simplest method out of the bunch. Perhaps due to its simplicity and contrast, I found it remarkably helpful.</p>
+                                        <p>Plotting out the flow of a user's experience in question/answer format was the simplest method out of the bunch. Perhaps due to its simplicity and contrast, I found it remarkably helpful.</p>
                                         <img src={ teacherAssignmentsSpec } alt=""/>
                                     </div>
                                     <div>
@@ -362,7 +362,7 @@ class StudyOne extends React.Component {
                                 </div>
                             </div>
                             <div>Feedback...</div>
-                            <div>Exercises content talk goes here...</div>
+                            <div>Exercises content talk goes here...Also talk about "board" breakthrough for both code and design...show student newsfeed?</div>
                             <Link className="regularLink nextStudyLink" to="/works/Studies/StudyTwo">Next Study</Link>
                         </div>
                     </div>

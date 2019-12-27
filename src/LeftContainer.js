@@ -139,7 +139,7 @@ class leftContainer extends React.Component {
     		)
     	}
     	return (
-    		<div className={ "leftContainer " + className }>
+    		<div className={ "leftContainer "}>
     			{ infoContainer }
     		</div>
     	)

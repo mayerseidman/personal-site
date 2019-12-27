@@ -252,8 +252,8 @@ export default class Chatbot extends Component {
                     <UserInput userMessages = { this.state.userMessages } 
                         updateUserMessages = { this.updateUserMessages.bind(this) }
                         topic={ this.state.topic } subtopic={ this.state.subtopic } />
-                    <a className="backLink mobileHide" onClick={ this.returnToBeginning.bind(this) }>Back to beginning</a>
-                    <a className="backLink webHide mobileBackLink" onClick={ this.returnToBeginning.bind(this) }>Back</a>                
+                    <a className="regularLink backLink mobileHide" onClick={ this.returnToBeginning.bind(this) }>Back to beginning</a>
+                    <a className="regularLink backLink webHide mobileBackLink" onClick={ this.returnToBeginning.bind(this) }>Back</a>                
                 </div> 
             </div>
             
@@ -447,7 +447,7 @@ class UserInput extends Component {
                 <div>{ optionTwo }</div>
             )
         } else if (subtopic == "design2" || subtopic == "programming2") {
-            var optionTwoText = "Any other tasks within your work you’d like to mention?";
+            var optionTwoText = "Anything else within your work you’d like to mention?";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Skills", "other", optionTwoText) }>{ optionTwoText }</button>
             )

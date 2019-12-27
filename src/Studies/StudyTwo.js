@@ -138,7 +138,7 @@ class StudyTwo extends React.Component {
                                     <div className="goalContainer"> 
                                         <p className="subHeader">Batch Functionality</p>
                                         <span className="circleDivider"></span>
-                                        <p className="subText">Some of the actions were rigid in that they could only be performed for one or all students.
+                                        <p className="subText">Some actions were rigid in that they could only be performed for one or all students.
                                             A teacher wanting to award 5 students (from two classes) 50 points for a good job reading, would have to do this separately for each student. Without support for batch processing (taking action on/for numerous students at once), simple tasks took a long time.</p>
                                     </div>
                                 </div> 

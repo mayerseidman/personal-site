@@ -31,6 +31,7 @@
 		    background: #D0021B;
 		    color: white;
 		    font-size: 1em;
+		    cursor: pointer;
 		}
 		p {
 			font-size: 0.8em;
@@ -76,9 +77,9 @@
 			}
 		}
 		.introContainer {
-			padding-bottom: 154px;
+			padding-bottom: 132px;
 		}
-		.skillsContainer {
+		.skillsContainer, .journeyContainer {
 			padding-bottom: 59px;
 		}
 	}
@@ -93,7 +94,7 @@
 	.aboutSection {
 		padding-bottom: 13px;
 		padding-left: 30px;
-	    padding-right: 30px;
+	    padding-right: 15px;
 	    .bottomContainer {
 			.chatButton {
 				width: 92%;
@@ -101,8 +102,13 @@
 			}
 	    }
 		.topContainer {
+			margin-bottom: 15px;
 			.img {
 				width: 100px;
+				left: 31%;
+			}
+			.linksContainer {
+				margin-bottom: 15px;
 			}
 		}
 		.textContainer {
@@ -112,7 +118,13 @@
 			}
 		}
 		.textContainer, .innerTextContainer {
-			height: 220px;
+			height: 250px;
+			&.hobbiesContainer, &.journeyContainer, &.skillsContainer {
+				padding-bottom: 32px;
+			}
+		}
+		.introContainer {
+			padding-bottom: 41px;
 		}
 	}
 	.aboutLoadingSection {
