@@ -134,7 +134,7 @@ class About extends React.Component {
                     <div className="aboutSection">
                         <div className="topContainer">
                             { linksContainer }
-                            { image }
+                            <div style={{ display: "inline-block", height: "100px" }}>{ image }</div>
                         </div>
                         { pageContent }
                     </div>
