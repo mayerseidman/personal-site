@@ -149,7 +149,7 @@ export default class Chatbot extends Component {
                 } else if (subtopic == "programming" || subtopic == "programming2") {
                     var botResponse = "On the front end, I have experience coding in Javascript (mostly REACT) and CSS. On the back end, I have experience in Ruby and Swift.";
                 } else if (subtopic == "other") {
-                    var botResponse = "Yes! I have often done the role of design education from within our team. I have given design talks and breakdowns to non-technical colleagues-helping them understand from a design perspective the product decisions we made.";
+                    var botResponse = "Yes! I have a lot of experience working in small teams where communication and interaction across departments is essential. I have also often done the role of design education from within our team. I have given design talks and breakdowns to non-technical colleagues-helping them understand from a design perspective the product decisions we made.";
                 } else {
                     var botResponse = "I am a UI/UX Designer and have coding experience as well (code quite often)."   
                 }
@@ -447,7 +447,7 @@ class UserInput extends Component {
                 <div>{ optionTwo }</div>
             )
         } else if (subtopic == "design2" || subtopic == "programming2") {
-            var optionTwoText = "Anything else within your work you’d like to mention?";
+            var optionTwoText = "Have experience working alongside non-technical people?";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Skills", "other", optionTwoText) }>{ optionTwoText }</button>
             )
@@ -461,7 +461,7 @@ class UserInput extends Component {
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 2, "Skills","design", optionOneText) } key={ Math.random() }>{ optionOneText }</button>
             )
-            var optionTwoText = "Tell me more about programming";
+            var optionTwoText = "Tell me more about coding";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Skills", "programming", optionTwoText) }>{ optionTwoText }</button>
             )

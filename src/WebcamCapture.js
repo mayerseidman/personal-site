@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Webcam from "react-webcam";
+import defaultUser from './images/default-user.png';
+
 
 export default class WebcamCapture extends React.Component {
   // setRef()webcam => {
@@ -18,8 +20,7 @@ export default class WebcamCapture extends React.Component {
   };
 
   setDefaultImage() {
-    var imageSrc =  "https://imgplaceholder.com/420x320/cccccc/000/glyphicon-user";
-    this.props.setImage(imageSrc);
+    this.props.setImage(defaultUser);
   }
  
     render() {
@@ -45,7 +46,7 @@ export default class WebcamCapture extends React.Component {
                         className="video"
                     />
                     <div className="buttonsContainer">
-                      <button onClick={ this.capture.bind(this) }>Capture photo</button>
+                      <button onClick={ this.capture.bind(this) }>Snap Snap</button>
                       <a className="defaultLink regularLink" onClick={ this.setDefaultImage.bind(this) }>I'd rather not</a>
                     </div>
                 </div>

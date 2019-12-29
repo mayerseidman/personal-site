@@ -141,7 +141,7 @@ class leftContainer extends React.Component {
     	}
     	return (
     		<div className={ "leftContainer " + classNameOne }>
-    			{ infoContainer }
+    			<div className="outerContainer">{ infoContainer }</div>
     		</div>
     	)
     }

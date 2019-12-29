@@ -92,6 +92,27 @@ class StudyOne extends React.Component {
             )
             var className = "mobileHide"
         }
+        if(window.innerWidth <= 800 && window.innerHeight <= 820) {
+            var featuresTableImg = <Magnifier className="featuresTableImg" src={ featuresTable }></Magnifier>
+            var teacherScenarioMapImg = <Magnifier src={ teacherSM }></Magnifier>
+            var teacherGASImg = <Magnifier src={ teacherGAS }></Magnifier>
+            var studentScenarioMapImg = <Magnifier src={ studentSM }></Magnifier>
+            var studentGASImg = <Magnifier src={ studentGAS }></Magnifier>
+            var lofiInsightsIndividualImg = <Magnifier src={ insightsIndividualLofi }></Magnifier>
+            var lofiInsightsGroupImg = <Magnifier className="insightsGroupLofiImg" src={ insightsGroupLofi }></Magnifier>
+
+            var finalTeacherExercisesImg = <Magnifier src={ teacherExercisesGif }></Magnifier>
+        } else {
+            var featuresTableImg = <img className="featuresTableImg" src={ featuresTable }/>
+            var teacherScenarioMapImg = <img src={ teacherSM } alt=""/>
+            var teacherGASImg = <img src={ teacherGAS } alt=""/>
+            var studentScenarioMapImg = <img src={ studentSM } alt=""/>
+            var studentGASImg = <img src={ studentGAS } alt=""/>
+            var lofiInsightsIndividualImg = <img src={ insightsIndividualLofi } alt=""/>
+            var lofiInsightsGroupImg = <img className="insightsGroupLofiImg" src={ insightsGroupLofi } alt=""/>
+            var finalTeacherExercisesImg = <img src={ teacherExercisesGif } alt=""/>
+        }
+
         var studyContent = (
             <div className="workOuterContainer">
                 <div className="webHide startLinkContainer">
@@ -100,16 +121,12 @@ class StudyOne extends React.Component {
                 <div className={ className }>
                     <div className="workContainer" ref="container">
                         <div className="workContent studyOnePage fadeInBottom">
-                           
-                                    
-                                
                                 <div className="introContainer workSection">
-                                    
-                                        <p className="workHeader">Intro</p>
-                                        <p className="headlineText">How to prepare students to think creatively and analytically in an engaging way?</p>
-                                        <p>Since the beginning, Whooo's Reading (WR) has been very good at helping teachers track their students’ independent reading and motivating students to read more on their own. While Whooo's Reading did a good job managing and motivating independent reading, we discovered that teachers and schools were most interested in WR because of the questions that ask students about the books they read.</p>
-                                        <img src={ comprehension } alt=""/>
-                                    
+                                    <p className="workHeader">Intro</p>
+                                    <p className="headlineText">How to prepare students to think creatively and analytically in an engaging way?</p>
+                                    <p>Since the beginning, Whooo's Reading (WR) has been very good at helping teachers track their students’ independent reading and motivating students to read more on their own. While Whooo's Reading did a good job managing and motivating independent reading, we discovered that teachers and schools were most interested in WR because of the questions that ask students about the books they read.</p>
+                                    <img src={ comprehension } alt=""/>
+                                
                                     <p>We learned that teachers were fed up with the factual-recall multiple choice questions that programs would ask students.</p>
                                     <img src={ multipleChoice } alt=""/>
                                     <p>Questions like these do not prepare students for a world in which they need to think creatively and analytically and one in which they can easily google the answer to fact-recall questions. Moreover, the new standards ask students to synthesize, cite evidence, analyze, and write and these ‘old-school’ multiple choice assessments were not cutting it anymore. </p>
@@ -187,7 +204,7 @@ class StudyOne extends React.Component {
                                 <div>
                                     <p className="subHeader">Features</p>
                                     <p>We had a very long (for me this means over 30 minutes) meeting and discussed the various features we could build to help meet the needs of our users.</p>
-                                    <img src={ featuresTable } alt="" className="featuresTableImg" />
+                                    { featuresTableImg }
                                     <p className="captionText">Some features from our iteration</p>
                                 </div>
                                <div>
@@ -219,11 +236,11 @@ class StudyOne extends React.Component {
                                         <Magnifier src={ teacherSiteMap } />
                                         <p className="secondaryHeader">Viewing and Editing Exercises</p>
                                         <p>This Scenario Mapping focused mostly on what a teacher could do at a given point and how that would be facilitated.</p>
-                                        <img src={ teacherSM } alt=""/>
+                                        { teacherScenarioMapImg }
                                     </div>
                                     <div>
                                         <p>I created a Goals Actions Screen (GAS) framework that incorporates the user's goal, what they will do to achieve that goal, and what is needed on the screen for such.</p>
-                                        <img src={ teacherGAS } alt=""/>
+                                        { teacherGASImg }
                                     </div>
                                     <div>
                                         <p className="secondaryHeader">Creating Assignments</p>
@@ -244,11 +261,11 @@ class StudyOne extends React.Component {
                                     </div>
                                    <div>
                                        <p className="secondaryHeader">Viewing Exercises</p>
-                                       <img src={ studentSM } alt=""/>
+                                       { studentScenarioMapImg }
                                    </div>
                                    <div>
                                        <p className="secondaryHeader">Entering text details</p>
-                                       <img src={ studentGAS } alt=""/>
+                                       { studentGASImg }
                                    </div>
                                     <div>
                                         <p className="secondaryHeader">Selecting Exercises</p>
@@ -284,10 +301,10 @@ class StudyOne extends React.Component {
                                 </div>
                                 <div className="insightsLofi">
                                     <p className="subHeader">Individual Insights</p>
-                                    <img src={ insightsIndividualLofi } alt=""/>
+                                    { lofiInsightsIndividualImg }
 
                                     <p className="subHeader">Group Insights</p>
-                                    <img className="insightsGroupLofiImg" src={ insightsGroupLofi } alt=""/>
+                                    { lofiInsightsGroupImg }
                                 </div>
                                 <div className="feedbackContainerOne workSection">
                                     <p className="workHeader">Feedback</p>
@@ -343,7 +360,7 @@ class StudyOne extends React.Component {
                                         The exercises-loading animation, buttons and thumbnail image on each exercise were all designed to orient our users to their experience on Pinterest.
                                         We also decided to simplify it and remove the "inactive" exercises section. Meaning, that outside of assignments, teachers would not be able to control the exercises students do (on their own).
                                     </p>
-                                    <img src={ teacherExercisesGif } alt=""/>
+                                    { finalTeacherExercisesImg }
                                 </div>
                                 <div>
                                     <p className="subHeader">Assignments</p>

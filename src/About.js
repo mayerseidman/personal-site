@@ -127,14 +127,13 @@ class About extends React.Component {
                         <a className={ this.state.currentView == "hobbies" ? "selected" : "" } onClick={ this.changeView.bind(this, "hobbies") }>Hobbies</a>
                         <a className={ this.state.currentView == "skills" ? "selected" : "" } onClick={ this.changeView.bind(this, "skills") }>Skills</a>
                         <a className={ this.state.currentView == "journey" ? "selected" : "" } onClick={ this.changeView.bind(this, "journey") }>Journey</a>
-                        <a className={ this.state.currentView == "chat" || this.state.currentView == "intro" ? "selected" : "" } onClick={ this.changeView.bind(this, "intro") }>Chat</a>
                     </div>    
                 )
                 var pageContainer = (
                     <div className="aboutSection">
                         <div className="topContainer">
                             { linksContainer }
-                            <div style={{ display: "inline-block", height: "100px" }}>{ image }</div>
+                            <div style={{ display: "inline-block", height: "100px", width: "0%" }}>{ image }</div>
                         </div>
                         { pageContent }
                     </div>
@@ -145,5 +144,7 @@ class About extends React.Component {
         )
     }    
 }
+
+// <a className={ this.state.currentView == "chat" || this.state.currentView == "intro" ? "selected" : "" } onClick={ this.changeView.bind(this, "intro") }>Chat</a>
 
 export default About

@@ -16,6 +16,7 @@
 .userInnerContainer {
   float: right;
   padding-right: 15px;
+  width: 80%;
   .user-message-container, .img-avatar-container {
     display: inline-block;
     img {
@@ -24,6 +25,18 @@
     }
     .chat-bubble {
       border-radius: 20px 3px 20px 20px !important;
+    }
+  }
+  .user-message-container {
+    width: 80%;
+  }
+  .img-avatar-container {
+    vertical-align: top;
+    img {
+      height: 30px;
+      max-width: 30px;
+      position: relative;
+      top: 15px;
     }
   }
 }
@@ -414,7 +427,9 @@ $defaultFadeAmount: 75px;
         /*max-width: 420px;*/
     }
     .chatSection {
-        padding-bottom: 46px;
+        /*padding-bottom: 46px;*/
+        height: 376px;
+
         .webcamContainer {
             position: relative;
         }
@@ -423,21 +438,23 @@ $defaultFadeAmount: 75px;
           padding-right: 25px;
           .buttonsContainer {
             position: relative;
-            bottom: 70px;
+            bottom: 100px;
           }
             button {
               position: relative;
               margin-right: 10px;
+              border-radius: 5px;
+              border: none;
             }
             p {
               position: relative;
             }
             .video {
               display: block;
-              width: 75%;
+              width: 65%;
               margin: auto;
               position: relative;
-              bottom: 45px;
+              bottom: 60px;
             }
         }
     }
@@ -445,26 +462,34 @@ $defaultFadeAmount: 75px;
         height: 75%;
     }
     .chatbotContainer {
-        height: 469px;
+        height: 350px;
         padding-bottom: 26px;
     }
     .input-container {
-        padding: 5px;
+        height: 70px;
 
         button {
           cursor: pointer;
           margin-right: 5px;
-          width: 100px;
+          /*width: 100px;*/
+          width: 125px;
+          height: 70px;
         }
+    }
+    .categoryOptions, .interestsOptions {
+      button {
+        width: 125px !important;
+        height: 40px;
+      }
     }
     .defaultLink {
       position: static !important;
     }
     
     .mobileBackLink {
-      position: relative;
-      bottom: 32px;
-      margin-left: 90%;
+      /*position: relative;
+      bottom: 32px;*/
+      margin-left: 97%;
       color: #000;
     }
 }
@@ -492,27 +517,29 @@ $defaultFadeAmount: 75px;
     left: auto;
     right: auto;
     box-sizing: border-box;*/
-    padding: 5px;
+    /*padding: 5px;*/
 
     button {
         cursor: pointer;
         margin-right: 5px;
-        width: 90px;
         /*width: 100px;*/
         background-color: #D0021B;
         color: #fff;
        /* height: 55px;*/
         /*height: 70px;*/
        /* border-radius: 25px;*/
-        vertical-align: top;
-        padding: 10px;
+        /*vertical-align: top;
+        padding: 10px;*/
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 5px;
     }
 }
-.categoryOptions, .interestsOptions {
+/*.categoryOptions, .interestsOptions {
     button {
         width: 75px;
     }
-}
+}*/
 .input-container input {
     width: 100%;
     padding: 6px 10px;

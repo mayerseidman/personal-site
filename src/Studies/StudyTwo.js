@@ -5,6 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import './StudyOne.scss';
 import ImageGallery from 'react-image-gallery';
 import Fade from 'react-reveal/Fade';
+import Magnifier from "react-magnifier";
 
 // Images
 
@@ -56,6 +57,16 @@ class StudyTwo extends React.Component {
         }
       };
     render() {
+        if(window.innerWidth <= 800 && window.innerHeight <= 820) {
+            var classDojoTwoImg = <Magnifier src={ classDojoTwo }></Magnifier>
+            var siteMapImg = <Magnifier src={ flowStructure }></Magnifier>
+            var lofiImage = <Magnifier src={ lofiImg }></Magnifier>
+        } else {
+            var classDojoTwoImg = <img src={ classDojoTwo } alt=""/>
+            var siteMapImg = <img src={ flowStructure } alt=""/>
+            var lofiImage = <img src={ lofiImg } alt=""/>
+        }
+
         const imagesTwo = [
               {
                 original: fullView
@@ -155,7 +166,7 @@ class StudyTwo extends React.Component {
                                     <p>
                                         The class card brings you to that classes students page, where you can select (any or all) students and take a variety of the actions (from their toolbar).
                                     </p>
-                                    <img src={ classDojoTwo } alt=""/>
+                                    { classDojoTwoImg }
                                     <p>We took a similar approach to Class Dojo’s but with a few important twists.</p>
                                     <div className="classDojoText">
                                         <p className="subHeader"><b>Similarities to Class Dojo</b></p>
@@ -179,11 +190,11 @@ class StudyTwo extends React.Component {
                                 <div className="structureContainer workSection">
                                     <p className="workHeader">Flow <span className="andText">and</span> Structure</p>
                                      <p>There were two levels in our structure. The surface level contains classes, students, and the adding classes and students modals. The second level contained the student and class information modals and the action modals triggered after selecting students.</p>
-                                    <img src={ flowStructure} alt=""/>
+                                     { siteMapImg }
                                 </div> 
                                 <div className="lofiContainer workSection">
                                     <p className="workHeader">Lo-fi</p>
-                                    <img src={ lofiImg } alt=""/>
+                                    { lofiImage }
                                 </div>  
                                 <div className="hifiContainer workSection">
                                     <p className="workHeader">Final Version</p>
