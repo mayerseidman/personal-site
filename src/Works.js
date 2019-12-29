@@ -41,13 +41,13 @@ class Works extends React.Component {
                             <Link className="regularLink" to={`${this.props.match.path}/Studies/StudyThree`}>Avatars and E-Commerce Design</Link>
                             <p className="categoryDescription mobileHide">Research, UI/UX, Visual</p>
                         </div>
-                        <div>
+                        <div style={{ display: "none" }}>
                            <Link className="regularLink" to={`${this.props.match.path}/Studies/StudyFour`}>Link Four</Link>
                             <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the</p>
                         </div>
                     </div>
                     <div className="projectsLinksContainer">
-                        <a className="regularLink" href="#">Link One</a>
+                        <a className="regularLink" href="#">Porftolio</a>
                     </div>
                     <div className="articlesLinksContainer">
                         <a className="regularLink" href="https://medium.com/design-ideas-thoughts/designing-multi-step-processes-bd432bad78dd" target="_blank">Designing Multi-Step Processes</a>
