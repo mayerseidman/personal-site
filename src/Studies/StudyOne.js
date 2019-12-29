@@ -99,8 +99,8 @@ class StudyOne extends React.Component {
                 </div>
                 <div className={ className }>
                     <div className="workContainer" ref="container">
-                        <div className="workContent studyOnePage">
-                            <ScrollAnimation animateIn="fadeIn">
+                        <div className="workContent studyOnePage fadeInBottom">
+                           
                                     
                                 
                                 <div className="introContainer workSection">
@@ -115,7 +115,7 @@ class StudyOne extends React.Component {
                                     <p>Questions like these do not prepare students for a world in which they need to think creatively and analytically and one in which they can easily google the answer to fact-recall questions. Moreover, the new standards ask students to synthesize, cite evidence, analyze, and write and these ‘old-school’ multiple choice assessments were not cutting it anymore. </p>
                                     <p>As a result, we realized that the best way we could continue to help teachers with our program was by improving our reading questions and assessment content. To make these improvements, we turned to our teachers for their invaluable feedback and input.</p>
                                 </div>
-                           </ScrollAnimation>
+                           
                             <div className="strategyContainer workSection">
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
                                 <div className="discoveryContainer">
@@ -209,7 +209,7 @@ class StudyOne extends React.Component {
                                     <li>How to accomplish that within the interface?</li>
                                     <li>What was then needed on the page to support this?</li>
                                 </ol>
-                                <p style={{ "color" : "red" }}>
+                                <p className="noteText">
                                     Integrating a user experience framework in our building stage was new to us and had not been done comprehensively within a project. I tested out a variety of formats in our structure phase to see how they worked for us.
                                 </p>
                                 <p className="subHeader">Teacher Experience</p>

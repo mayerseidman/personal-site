@@ -8,7 +8,7 @@
 		.workContent {
 			overflow:auto;
 			.headlineText {
-				color: #D0021B;
+				color: #B51A17;
 				font-size: 1.2em;
 			}
 			.workSection {
@@ -46,7 +46,6 @@
 						margin-bottom: 20px;
 					}
 					.subText {
-						width: 96%;
 						margin-bottom: 10px;
 					}
 					.classDojoText {
@@ -103,7 +102,6 @@
 					display: inline-block;
 					vertical-align: middle;
 					margin-left: 10px;
-					width: 96%;
 				}
 				.secondaryHeader {
 					margin-bottom: 10px;
@@ -112,7 +110,7 @@
 				    font-weight: 500
 				}
 				.circleDivider {
-			    	background-color: red;
+			    	background: #D0021B;
 				    border-radius: 50%;
 				    display: inline-block;
 					width: 15px;
@@ -168,6 +166,11 @@
 				padding-right: 50px;
 				overflow:auto;
 			}
+			.workSection {
+				.subText {
+					width: 94%;
+				}
+			}
 		}
 	}
 }
@@ -180,7 +183,7 @@
 		}
 		.startLinkContainer {
 			position: relative;
-		    bottom: 30px;
+		    bottom: 15px;
 		    text-align: center;
 		    color: #D0021B;
 		    a {
@@ -194,6 +197,14 @@
 			padding-left: 22px;
 			.workContent {
 				height: 555px;
+			}
+			.workSection {
+				.subText {
+					width: 92%;
+				}
+				.biggerSubText {
+					width: 94%
+				}
 			}
 		}
 	}		

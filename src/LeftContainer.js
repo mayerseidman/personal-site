@@ -57,12 +57,13 @@ class leftContainer extends React.Component {
     	let { match, location, history } = this.props;
     	var path = location.pathname;
     	if (path.includes("StudyOne")) {
+    		var title = "Reading Comprehension Tool";
     		if (this.props.currentView == "preview") {
     			var classNameOne = "minimize"
     			var previewTopClassName = "previewTop"
     			var infoContainer = (
     				<div className={ "infoContainer preview " + previewTopClassName }>
-    			    	<p className="title">Reading Comprehension Tool</p>
+    			    	<p className="title">{ title }</p>
     			        <span className="circleDivider"></span>
     			        <p className="studyPreviewText">Led team in creating several interfaces from scratch, carrying them through the various stages of UX design.</p>
     			        <span className="circleDivider"></span>
@@ -74,18 +75,19 @@ class leftContainer extends React.Component {
     			var infoContainer = (
     				<div className="infoContainer">
     				    <div>
-    				    	<p className="title">Title goes here...</p>
+    				    	<p className="title">{ title }</p>
     				    </div>
     				</div>
     			)
     		}
     	} else if (path.includes("StudyTwo")) {
+    		var title = "Student Roster Design";
 			if (this.props.currentView == "preview") {
 				var classNameOne = "minimize"
 				var previewTopClassName = "previewTop"
 				var infoContainer = (
 					<div className={ "infoContainer preview " + previewTopClassName }>
-				    	<p className="title">Student Roster Design</p>
+				    	<p className="title">{ title }</p>
 				        <span className="circleDivider"></span>
 				        <p className="studyPreviewText">Created a new interface to handle batch processing for teachers and their students.</p>
 				        <span className="circleDivider"></span>
@@ -97,7 +99,7 @@ class leftContainer extends React.Component {
 				var infoContainer = (
 					<div className="infoContainer">
 					    <div>
-					    	<p className="title">Title goes here...</p>
+					    	<p className="title">{ title }</p>
 					    </div>
 					</div>
 				)
@@ -120,7 +122,7 @@ class leftContainer extends React.Component {
 				var infoContainer = (
 					<div className="infoContainer">
 					    <div>
-					    	<p className="title">Title goes here...</p>
+					    <p className="title">Avatars <span className="andText">and</span> E-Commerce Design</p>
 					    </div>
 					</div>
 				)

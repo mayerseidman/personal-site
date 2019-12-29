@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import ImageGallery from 'react-image-gallery'
 import Fade from 'react-reveal/Fade';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 // Images
 
@@ -88,9 +89,8 @@ class StudyThree extends React.Component {
                 <div className={ className }>
                     <div className="workContainer" ref="container">
                         <div className="studyTwoPage workContent">
-                           
-                                <div className="introContainer workSection">
-                                 <Fade bottom>
+                                <div className="introContainer workSection fadeInBottom">
+                                
                                      <p className="workHeader">Intro</p>
                                      <p className="headlineText">How can we present accessories (products) and shop (marketplace) interactions in a new and cleaner way?</p>
                                     <p>
@@ -99,9 +99,8 @@ class StudyThree extends React.Component {
                                     <p>Previously, the <i>Owl Shop</i> was a bit cumbersome and not easy to navigate.</p>
                                     <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
                                         showThumbnails={ false } />
-                               </Fade>
+                              
                                 </div>
-                                
                             <div className="goalsContainer workSection">
                                 <p className="workHeader">Goals</p>
                                 <div className="goalContainer"> 
@@ -117,13 +116,13 @@ class StudyThree extends React.Component {
                                 <div className="requirementsText">
                                     <p className="subHeader">Must Include</p>
                                     <span className="circleDividerSmall"></span>
-                                    <p className="subText">Student's owlvatar</p>
+                                    <p className="subText biggerSubText">Student's owlvatar</p><br/>
                                     <span className="circleDividerSmall"></span>
-                                    <p className="subText">Student's coins total</p>
+                                    <p className="subText biggerSubText">Student's coins total</p><br/>
                                     <span className="circleDividerSmall"></span>
-                                    <p className="subText">Accessory information: title, price, and description</p>
+                                    <p className="subText biggerSubText">Accessory information: title, price, and description</p><br/>
                                     <span className="circleDividerSmall"></span>
-                                    <p className="subText">A way for students to preview the accessory</p>
+                                    <p className="subText biggerSubText">A way for students to preview the accessory</p>
                                 </div>
                             </div>
                             <div className="strategyContainer workSection">
@@ -135,13 +134,13 @@ class StudyThree extends React.Component {
                                         showThumbnails={ false } />
                                     <p>I noticed several similarities between these two games:</p>
                                     <span className="circleDividerSmall"></span>
-                                    <p className="subText">The accessory categories are separated from the owlvatar display area-either above or around it.</p>
+                                    <p className="subText biggerSubText">The accessory categories are separated from the owlvatar display area-either above or around it.</p><br/>
                                     <span className="circleDividerSmall"></span>
-                                    <p className="subText">The avatar is prominent.</p>
+                                    <p className="subText biggerSubText">The avatar is prominent.</p><br/>
                                     <span className="circleDividerSmall"></span>
-                                    <p className="subText">Clicking on an item, shows you a preview of how it will look.</p>
+                                    <p className="subText biggerSubText">Clicking on an item, shows you a preview of how it will look.</p><br/>
                                     <span className="circleDividerSmall"></span>
-                                    <p className="subText">When an accessory is selected, the color picker is easily accessible.</p>    
+                                    <p className="subText biggerSubText">When an accessory is selected, the color picker is easily accessible.</p><br/>
                                 </div>
                                 <div>
                                     <p className="subHeader">Navigation</p>

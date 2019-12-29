@@ -5,6 +5,10 @@ a.regularLink {
 	}
 }
 
+.noteText {
+	color: #B51A17;
+}
+
 p {
 	margin-top: 0;
 	margin-bottom: 20px;
@@ -30,12 +34,19 @@ p {
     animation-fill-mode: both;
 }
 
-.fadeInBottom { animation-name: fadeInBottom }
+.fadeInBottom { 
+	animation-name: fadeInBottom;
+	opacity: 1;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1.2s;
+}
+
 @keyframes fadeInBottom {
     from {
         opacity: 0;
-        transform: translateY(100%);
-        -webkit-transform: translateY(100%);
+        /*transform: translateY(0%);
+        -webkit-transform: translateY(0%);*/
     }
     to { opacity: 1 }
 }
@@ -249,13 +260,13 @@ p {
     	}
 	}
 	.rightContainer {
+		a {
+			color: #D0021B;
+			text-decoration: none;
+			margin-bottom: 5px;
+			cursor: pointer;
+		}
 		.worksSection {
-			a {
-				color: #D0021B;
-				text-decoration: none;
-				margin-bottom: 5px;
-				cursor: pointer;
-			}
 		}
 		.nextStudyLink {
 			float: right;
@@ -578,7 +589,7 @@ p {
 			height: 175px;
 			.infoContainer {
 				margin: auto;
-				margin-bottom: 5px;
+				/*margin-bottom: 5px;*/
 				width: 78%;
 				&.preview {
 					p {
@@ -593,7 +604,7 @@ p {
 					}	
 				}
 				.name, .title { 
-					font-size: 32px !important;
+					font-size: 30px !important;
 				}
 			}
 		}
@@ -615,12 +626,12 @@ p {
 
 		@-webkit-keyframes w70 {
 		    from { height: 220px; }
-		    to { height: 600px; }
+		    to { height: 525px; }
 		}
 
 		@keyframes w70 {
 		    from { height: 220px; }
-		    to { height: 600px; }
+		    to { height: 525px; }
 		}
 		/*.previewTop {
 			margin-top: -150px
@@ -653,12 +664,12 @@ p {
 
 		@-webkit-keyframes w50 {
 		    from { height: 500px; }
-		    to { height: 75px; }
+		    to { height: 125px; }
 		}
 
 		@keyframes w50 {
 		    from { height: 500px; }
-		    to { height: 75px; }
+		    to { height: 125px; }
 		}
 		.rightContainer {
 		    position: relative;

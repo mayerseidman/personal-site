@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import './StudyOne.scss';
 import ImageGallery from 'react-image-gallery';
@@ -108,10 +109,11 @@ class StudyTwo extends React.Component {
                 </div>
                 <div className={ className }>
                     <div className="workContainer" ref="container">
-                        <div className="workContent">
+
+                        <div className="workContent fadeInBottom">
                                 
                                     <div className="introContainer workSection">
-                                    <Fade bottom>
+                                   
                                          <p className="workHeader">Intro</p>
                                          <p className="headlineText">How can we create one place where teachers can perform a variety of actions? Additionally, how can we enable teachers to perform these actions on behalf of multiple students-easily, all at once, and across different classes?</p>
                                         <p>
@@ -122,9 +124,8 @@ class StudyTwo extends React.Component {
                                         </p>
                                         <ImageGallery items={ images } showFullscreenButton={ false } showPlayButton={ false }
                                             showThumbnails={ false } />
-                                   </Fade>    
+                                 
                                     </div>
-                                
                                 <div className="goalsContainer workSection">
                                     <div className="goalContainer"> 
                                         <p className="workHeader">Goals</p>
@@ -159,20 +160,20 @@ class StudyTwo extends React.Component {
                                     <div className="classDojoText">
                                         <p className="subHeader"><b>Similarities to Class Dojo</b></p>
                                         <span className="circleDividerSmall"></span>
-                                        <p className="subText">Students can be selected and batched for different actions.</p>
+                                        <p className="subText">Students can be selected and batched for different actions.</p><br/>
                                         <span className="circleDividerSmall"></span>
-                                        <p className="subText">The batch-able actions are on a toolbar and clicking an action brings down an interface with the relevant forms and details.</p>
+                                        <p className="subText">The batch-able actions are on a toolbar and clicking an action brings down an interface with the relevant forms and details.</p><br/>
                                         <span className="circleDividerSmall"></span>
-                                        <p className="subText">Clicking on a student or class brings up their information for viewing and editing.</p>
+                                        <p className="subText">Clicking on a student or class brings up their information for viewing and editing.</p><br/>
                                     </div>
                                     <div>
                                         <p className="subHeader">How We Differed and Why</p>
                                         <span className="circleDividerSmall"></span>
-                                        <p className="subText">Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p>
+                                        <p className="subText">Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p><br/>
                                         <span className="circleDividerSmall"></span>
-                                        <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p>
+                                        <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p><br/>
                                         <span className="circleDividerSmall"></span>
-                                        <p className="subText">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p>
+                                        <p className="subText">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p><br/>
                                     </div>
                                 </div> 
                                 <div className="structureContainer workSection">
