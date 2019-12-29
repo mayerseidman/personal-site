@@ -575,9 +575,10 @@ p {
 		.leftContainer {
 			position: relative;
 			width: auto;
-			height: 220px;
+			height: 175px;
 			.infoContainer {
 				margin: auto;
+				margin-bottom: 5px;
 				width: 78%;
 				&.preview {
 					p {
@@ -662,13 +663,20 @@ p {
 		.rightContainer {
 		    position: relative;
 		    width: auto;
-		    height: 500px;
+		    /*height: 500px;*/
+		    height: auto;
 		    padding-top: 15px;
+		    a {
+		    	color: #D0021B;
+		    	text-decoration: none;
+		    	margin-bottom: 5px;
+		    	cursor: pointer;
+		    }
 		    &.preview {
 		    	height: 0px;
 		    }
 		    .homeSection {
-		    	padding-bottom: 25px;
+		    	padding-bottom: 75px;
 		    	padding-right: 30px;
 		    	padding-left: 30px;
 		    }
@@ -688,12 +696,12 @@ p {
 		    	}
 		    }
     	    .worksSection {
-    	    	padding-bottom: 95px;
+    	    	padding-bottom: 41px;
     	    	a {
     	    		margin-bottom: 10px;
     	    	}
     	    	.leftWorksContainer {
-    	    		padding-top: 15px;
+    	    		/*padding-top: 15px;*/
 	    		    height: auto;
 	    		    width: 100px;
 	    		    display: inline-block;
@@ -717,7 +725,7 @@ p {
 */	    		   /* vertical-align: top;
 	    		    padding-left: 46px;*/
 					padding-left: 0;
-	    		    padding-top: 15px;
+	    		    padding-top: 5px;
     		        height: auto;
     		        width: 190px;
     		        display: inline-block;
@@ -727,18 +735,18 @@ p {
     	    	.studiesTitleContainer, .studiesLinksContainer {
     	    		height: 125px;
     	    	}
-    	    	.studiesTitleContainer, .studiesLinksContainer {
+    	    	/*.studiesTitleContainer, .studiesLinksContainer {
     	    		margin-top: 15px;
-    	    	}
-    	    	.projectsTitleContainer, .projectsLinksContainer {
+    	    	}*/
+    	    	/*.projectsTitleContainer, .projectsLinksContainer {
     	    		margin-top: 65px;;
-    	    	}
+    	    	}*/
     	    	.projectsTitleContainer, .articlesTitleContainer, .projectsLinksContainer {
     	    		height: 100px;
     	    		/*margin-top: 45px;*/
     	    	}
     	    	.articlesTitleContainer, .articlesLinksContainer {
-    	    		margin-top: -20px;
+    	    		margin-top: -40px;
     	    	}
     	    }
 		}
