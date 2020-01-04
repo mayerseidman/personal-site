@@ -11,19 +11,19 @@ class Works extends React.Component {
                         <div className="worksCategory">
                             <p className="categoryTitle mobileHide">Case Studies</p>
                             <p className="categoryTitle webHide">Studies</p>
-                            <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p className="categoryDescription mobileHide">Some deeper dives into my past design work</p>
                         </div>
                     </div>
                     <div className="projectsTitleContainer">
                         <div className="worksCategory">
                             <p className="categoryTitle">Projects</p>
-                            <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p className="categoryDescription mobileHide">Some fun projects I've worked on</p>
                         </div>  
                     </div>
                     <div className="articlesTitleContainer">
                         <div className="worksCategory">
                             <p className="categoryTitle">Articles</p>
-                            <p className="categoryDescription mobileHide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <p className="categoryDescription mobileHide">Some articles I've written</p>
                         </div>
                     </div>  
                 </div>
@@ -47,7 +47,7 @@ class Works extends React.Component {
                         </div>
                     </div>
                     <div className="projectsLinksContainer">
-                        <a className="regularLink" href="#">Porftolio</a>
+                        <a className="regularLink" href="https://github.com/mayerseidman/Portfolio" target="_blank">Porftolio</a>
                     </div>
                     <div className="articlesLinksContainer">
                         <a className="regularLink" href="https://medium.com/design-ideas-thoughts/designing-multi-step-processes-bd432bad78dd" target="_blank">Designing Multi-Step Processes</a>

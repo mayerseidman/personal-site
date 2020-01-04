@@ -363,6 +363,8 @@ $defaultFadeAmount: 75px;
             display: inline-block;
             color: #fff;
             font-size: 16px;
+            border-radius: 5px;
+            border: none;
         }
         .video {
             display: block;
@@ -401,9 +403,16 @@ $defaultFadeAmount: 75px;
             }
         }
     }
+
+    .interestsOptions, .categoryOptions {
+      button {
+        width: 75px !important;
+      } 
+    }
     .convo-container {
         height: 100%;
         margin-top: 30px;
+        margin-bottom: 50px;
     }
     .chatbotContainer {
         height: 475px;
@@ -413,7 +422,7 @@ $defaultFadeAmount: 75px;
       cursor: pointer;
       margin-left: 0px;
       position: relative;
-      top: 8px;
+      top: 15px;
       color: #000 !important;
     }
 }
@@ -460,6 +469,7 @@ $defaultFadeAmount: 75px;
     }
     .convo-container {
         height: 75%;
+        margin-bottom: 30px;
     }
     .chatbotContainer {
         height: 350px;
@@ -478,7 +488,7 @@ $defaultFadeAmount: 75px;
     }
     .categoryOptions, .interestsOptions {
       button {
-        width: 125px !important;
+        width: 70px !important;
         height: 40px;
       }
     }
@@ -489,8 +499,10 @@ $defaultFadeAmount: 75px;
     .mobileBackLink {
       /*position: relative;
       bottom: 32px;*/
-      margin-left: 97%;
-      color: #000;
+      margin-left: 5px;
+      color: #000 !important;
+      position: relative;
+      top: 15px;
     }
 }
 
@@ -504,7 +516,6 @@ $defaultFadeAmount: 75px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     overflow: scroll;
-    margin-bottom: 15px;
     max-height: 450px;
 }
 
@@ -522,10 +533,11 @@ $defaultFadeAmount: 75px;
     button {
         cursor: pointer;
         margin-right: 5px;
-        /*width: 100px;*/
+        width: 100px;
         background-color: #D0021B;
         color: #fff;
-       /* height: 55px;*/
+        height: 55px;
+        vertical-align: top;
         /*height: 70px;*/
        /* border-radius: 25px;*/
         /*vertical-align: top;

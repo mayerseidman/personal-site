@@ -45,7 +45,7 @@ class About extends React.Component {
                     <div className="introContainer">
                         <p>
                             Hi there again! <br/>
-                            Feel free to use the chatbot or the various links to learn more about me. <br/><br/>TLDR; I love learning, connecting with other people, and the Teenage Mutant Ninja Turtles.
+                            Feel free to use the chatbot or the various links to learn more about me. <br/><br/><span className="tldr">TLDR</span>: I love learning, connecting with other people, and the Teenage Mutant Ninja Turtles.
                         </p> 
                         <div className="bottomContainer">
                             <button className="chatButton" onClick={ this.startChat.bind(this) }>Let's Chat</button>

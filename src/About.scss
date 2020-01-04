@@ -26,6 +26,12 @@
 			}
 		}
 	}
+	.introContainer {
+		.tldr {
+			font-weight: 450;
+			color: black;
+		}
+	}
 	.bottomContainer {
 		.chatButton {
 		    height: 35px;
@@ -83,7 +89,7 @@
 			}
 		}
 		.introContainer {
-			padding-bottom: 133px;
+			padding-bottom: 129px;
 		}
 		.skillsContainer, .journeyContainer {
 			padding-bottom: 59px;
