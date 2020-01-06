@@ -6,7 +6,7 @@
 			border: 4px solid #D0021B;
 			/*margin-left: 45%;*/
 			position: relative;
-			left: 91%;
+			/*left: 91%;*/
 		}
 		.imgContainer {
 			height: 160px;
@@ -47,6 +47,14 @@
 			text-align: center;
 		}
 	}
+	.topContainer {
+		.imageContainer {
+			display: inline-block;
+			height: 100px;
+			width: 0%;
+			position: relative;
+		}
+	}
 }
 .aboutLoadingSection {
 	padding-left: 200px;
@@ -77,22 +85,26 @@
 			.linksContainer {
 				margin-top: 25%;
 			}
+			.imageContainer {
+				position: relative;
+				left: 33%;
+			}
 		}
 		/*.textContainer {
 			margin-bottom: 55px;
 		}*/
 		.hobbiesContainer {
 			margin-bottom: 35px;
-			.favourite {
-				color: #000;
-				font-weight: 450;
-			}
 		}
 		.introContainer {
 			padding-bottom: 129px;
 		}
 		.skillsContainer, .journeyContainer {
 			padding-bottom: 59px;
+		}
+		.bold {
+			color: #000;
+			font-weight: 450;
 		}
 	}
 	.aboutLoadingSection {

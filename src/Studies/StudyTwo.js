@@ -59,12 +59,12 @@ class StudyTwo extends React.Component {
     render() {
         if(window.innerWidth <= 800 && window.innerHeight <= 820) {
             var classDojoTwoImg = <Magnifier src={ classDojoTwo }></Magnifier>
-            var siteMapImg = <Magnifier src={ flowStructure }></Magnifier>
-            var lofiImage = <Magnifier src={ lofiImg }></Magnifier>
+            var siteMapImg = <Magnifier src={ flowStructure } className="noMargin"></Magnifier>
+            var lofiImage = <Magnifier src={ lofiImg } className="noMargin"></Magnifier>
         } else {
             var classDojoTwoImg = <img src={ classDojoTwo } alt=""/>
-            var siteMapImg = <img src={ flowStructure } alt=""/>
-            var lofiImage = <img src={ lofiImg } alt=""/>
+            var siteMapImg = <img src={ flowStructure } alt="" className="noMargin"/>
+            var lofiImage = <img src={ lofiImg } alt="" className="noMargin"/>
         }
 
         const imagesTwo = [
@@ -119,7 +119,7 @@ class StudyTwo extends React.Component {
                     { startStudyLink }
                 </div>
                 <div className={ className }>
-                    <div className="workContainer" ref="container">
+                    <div className="workContainer studyTwoPage" ref="container">
 
                         <div className="workContent fadeInBottom">
                                 
@@ -152,7 +152,7 @@ class StudyTwo extends React.Component {
                                     <div className="goalContainer"> 
                                         <p className="subHeader">Batch Functionality</p>
                                         <span className="circleDivider"></span>
-                                        <p className="subText">Some actions were rigid in that they could only be performed for one or all students.
+                                        <p className="subText noMargin">Some actions were rigid in that they could only be performed for one or all students.
                                             A teacher wanting to award 5 students (from two classes) 50 points for a good job reading, would have to do this separately for each student. Without support for batch processing (taking action on/for numerous students at once), simple tasks took a long time.</p>
                                     </div>
                                 </div> 
@@ -184,7 +184,7 @@ class StudyTwo extends React.Component {
                                         <span className="circleDividerSmall"></span>
                                         <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p><br/>
                                         <span className="circleDividerSmall"></span>
-                                        <p className="subText">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p><br/>
+                                        <p className="subText noMargin">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p><br/>
                                     </div>
                                 </div> 
                                 <div className="structureContainer workSection">

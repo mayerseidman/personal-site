@@ -99,7 +99,7 @@ class StudyOne extends React.Component {
             var studentScenarioMapImg = <Magnifier src={ studentSM }></Magnifier>
             var studentGASImg = <Magnifier src={ studentGAS }></Magnifier>
             var lofiInsightsIndividualImg = <Magnifier src={ insightsIndividualLofi }></Magnifier>
-            var lofiInsightsGroupImg = <Magnifier className="insightsGroupLofiImg" src={ insightsGroupLofi }></Magnifier>
+            var lofiInsightsGroupImg = <Magnifier className="insightsGroupLofiImg noMargin" src={ insightsGroupLofi }></Magnifier>
 
             var finalTeacherExercisesImg = <Magnifier src={ teacherExercisesGif }></Magnifier>
         } else {
@@ -109,7 +109,7 @@ class StudyOne extends React.Component {
             var studentScenarioMapImg = <img src={ studentSM } alt=""/>
             var studentGASImg = <img src={ studentGAS } alt=""/>
             var lofiInsightsIndividualImg = <img src={ insightsIndividualLofi } alt=""/>
-            var lofiInsightsGroupImg = <img className="insightsGroupLofiImg" src={ insightsGroupLofi } alt=""/>
+            var lofiInsightsGroupImg = <img className="insightsGroupLofiImg noMargin" src={ insightsGroupLofi } alt=""/>
             var finalTeacherExercisesImg = <img src={ teacherExercisesGif } alt=""/>
         }
 
@@ -215,7 +215,7 @@ class StudyOne extends React.Component {
                                <div>
                                    <p className="subHeader">Task Management</p>
                                    <p>We used Trello to manage our team's tasks. Each feature/task had its own card and would be assigned to the appropriate person. As progress was made, these cards would move through the various stages.</p>
-                                   <img src={ trello } alt=""/>
+                                   <img src={ trello } alt="" className="noMargin" />
                                </div>
                             </div>
                             <div className="structureContainer workSection">
@@ -282,7 +282,7 @@ class StudyOne extends React.Component {
 
                                     <div>
                                         <p className="secondaryHeader">Insights - Group Layer</p>
-                                        <img src={ diagnosticGroupImg } alt=""/>
+                                        <img src={ diagnosticGroupImg } className="noMargin" alt=""/>
                                     </div>
                                 </div>
                             </div>
@@ -310,7 +310,7 @@ class StudyOne extends React.Component {
                                     <p className="workHeader">Feedback</p>
                                     <p>We did user testing in the office (with non product employees) to get a quick feel for the basic layouts we chose.</p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">They preferred Version two for browsing exercises since it was more direct and less clunky; all filters/controls were placed above the exercises.</p>
+                                    <p className="subText noMargin">They preferred Version two for browsing exercises since it was more direct and less clunky; all filters/controls were placed above the exercises.</p>
                                 </div>
                             </div>
                             <div className="hifiContainer workSection">
@@ -348,7 +348,7 @@ class StudyOne extends React.Component {
                                     <span className="circleDivider"></span>
                                     <p className="subText">To start, we only supported the ability to assign exercises to all of a teacher's students at once. There was already a lot of interest in being able to assign groups of students different exercises.</p>
                                     <span className="circleDivider"></span>
-                                    <p className="subText">Teachers often have 20 or 30 students in their assignment progress table, and maybe only assign 2 exercises. This would create a pretty big discrepancy between the height of the assignments box and the height of the progress table-making it a bit of an awkward experience.</p>
+                                    <p className="subText noMargin">Teachers often have 20 or 30 students in their assignment progress table, and maybe only assign 2 exercises. This would create a pretty big discrepancy between the height of the assignments box and the height of the progress table-making it a bit of an awkward experience.</p>
                                 </div>
                             </div>
                             <div className="finalVersion workSection">
@@ -379,7 +379,7 @@ class StudyOne extends React.Component {
 
                                     <div>
                                         <p className="subHeader">Group Insights</p>
-                                        <img src={ insightsGroupFinal } alt=""/>
+                                        <img src={ insightsGroupFinal } className="noMargin" alt=""/>
                                     </div>
                                 </div>
                             </div>

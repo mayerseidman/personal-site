@@ -261,6 +261,15 @@ p {
     	}
 	}
 	.rightContainer {
+		.outerContainer {
+			/*height: 350px;*/
+/*			border: 1px solid black;
+*/			margin-bottom: 25px;
+			border: 1px solid #f9f9ee;
+		}
+		/*.push, .navbarContainer {
+			height: 165px;
+		}*/
 		a {
 			color: #D0021B;
 			text-decoration: none;
@@ -272,11 +281,6 @@ p {
 		.nextStudyLink {
 			float: right;
 		}
-	    .section {
-	    	max-width: 700px;
-    	    margin-left: auto;
-    	    margin-right: auto;
-	    }
 	    .firstName {
 	    	font-size: 32px;
 	    	color: #000;
@@ -332,9 +336,9 @@ p {
 	    .worksSection {
 		    .leftWorksContainer {
 				height: 300px;
-				width: 250px;
+				width: 225px;
 				display: inline-block;
-				margin-right: 50px;
+				/*margin-right: 50px;*/
 /*				border-right: 1px solid #999;
 */				vertical-align: top;
 				/*padding-right: 50px;*/
@@ -348,12 +352,12 @@ p {
 		    }
 		    .rightWorksContainer {
 				height: 300px;
-				width: 250px;
+				width: 225px;
 				display: inline-block;
 /*				border-left: 1px solid #999;
 */				vertical-align: top;
 				/*padding-left: 50px;*/
-				padding-left: 38px;
+				/*padding-left: 38px;*/
 				a {
 					display: block;
 				}
@@ -376,8 +380,28 @@ p {
 	}
 }
 
+@media only screen and (min-width: 1075px) and (max-width: 1200px) {
+	.leftWorksContainer {
+		.categoryDescription {
+			width: 80%;
+		}
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.rightWorksContainer {
+		margin-left: 10%;
+	}
+}
+
+@media only screen and (min-width: 1315px) {
+	.rightWorksContainer {
+		margin-left: 19%;
+	}
+}
+
 /* WEB Media Query  */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1075px) {
 	.webHide {
 		display: none !important;
 	}
@@ -411,6 +435,9 @@ p {
 		    	}
 		    }
 		}
+		.outerContainer {
+			height: 600px;
+		}
 		.minimize {
 			background: #e4e469;
 			position: fixed;
@@ -440,7 +467,7 @@ p {
 			/*padding-bottom: 125px;*/
 		    margin-left: 50%;
 			.homeSection {
-				padding-bottom: 165px;
+				/*padding-bottom: 165px;*/
 				.quoteContainer {
 					margin-bottom: 0;
 					.quote {
@@ -494,10 +521,13 @@ p {
 			}
 		   /* height: 500px;*/
 		    .section {
-				padding-left: 75px;
+				/*padding-left: 8%;*/
 				/*padding-right: 75px;*/
 				padding-top: 125px;
-				padding-right: 55px;
+				/*padding-right: 55px;*/
+		    	width: 85%;
+	    	    margin-left: auto;
+	    	    margin-right: auto;
 		    }
 		    .navbarContainer {
 		    	/*float: left;*/
@@ -512,12 +542,12 @@ p {
 		    	}
 		    }
 	        .worksSection {
-	        	padding-bottom: 45px;
+	        	/*padding-bottom: 45px;*/
 	    	    .leftWorksContainer {
 	    			height: auto;
-	    			width: 250px;
+	    			width: 225px;
 	    			display: inline-block;
-	    			margin-right: 50px;
+	    			/*margin-right: 50px;*/
 	    			/*border-right: 1px solid #999;*/
 	    			vertical-align: top;
 	    			/*padding-right: 50px;*/
@@ -532,7 +562,7 @@ p {
 	    	    }
 	    	    .rightWorksContainer {
 	    			height: auto;
-	    			width: 250px;
+	    			width: 225px;
 	    			display: inline-block;
 	    			/*border-left: 1px solid #999;*/
 	    			vertical-align: top;
@@ -578,8 +608,20 @@ p {
 	}
 }
 
+@media only screen and (min-width: 750px) and (max-width: 1075px) {
+	.homeSection {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.homeSection {
+		width: 75%;
+	}
+}
+
 /* Mobile Media Query  */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1075px) {
 	.mobileHide {
 		display: none !important;
 	}
@@ -611,6 +653,9 @@ p {
 					font-size: 30px !important;
 				}
 			}
+		}
+		.outerContainer {
+			height: 350px;
 		}
 		.minimize {
 			background: #e4e469;
@@ -693,8 +738,9 @@ p {
 		    }
 		    .homeSection {
 		    	padding-bottom: 75px;
-		    	padding-right: 30px;
-		    	padding-left: 30px;
+/*		    	padding-right: 30px;
+		    	padding-left: 30px;*/
+		    	margin: auto;
 		    }
 		    .navbarContainer {
 		    	margin-left: auto;
@@ -712,6 +758,7 @@ p {
 		    	}
 		    }
     	    .worksSection {
+    	    	text-align: center;
     	    	padding-bottom: 41px;
     	    	a {
     	    		margin-bottom: 10px;
@@ -721,11 +768,11 @@ p {
 	    		    height: auto;
 	    		    width: 100px;
 	    		    display: inline-block;
-	    		    margin-right: 28px;
+	    		   /* margin-right: 28px;*/
 	    		    /* border-right: 1px solid #999; */
 	    		    vertical-align: top;
 	    		    /* padding-right: 25px; */
-	    		    margin-left: 28px
+	    		    /*margin-left: 28px*/
     	    	}
     	    	.worksCategory {
     	    		.categoryTitle {
@@ -740,12 +787,19 @@ p {
 /*	    		    border-left: 1px solid #999;
 */	    		   /* vertical-align: top;
 	    		    padding-left: 46px;*/
-					padding-left: 0;
-	    		    padding-top: 5px;
+					/*padding-left: 0;*/
+					padding-left: 25px;
+	    		    padding-top: 3px;
     		        height: auto;
     		        width: 190px;
     		        display: inline-block;
     		        vertical-align: top;
+    	    	}
+
+    	    	.studiesLinksContainer, .projectsLinksContainer, .articlesLinksContainer {
+    	    		.regularLink {
+    	    			text-align: left;
+    	    		}
     	    	}
 
     	    	.studiesTitleContainer, .studiesLinksContainer {

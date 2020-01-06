@@ -45,7 +45,7 @@ class About extends React.Component {
                     <div className="introContainer">
                         <p>
                             Hi there again! <br/>
-                            Feel free to use the chatbot or the various links to learn more about me. <br/><br/><span className="tldr">TLDR</span>: I love learning, connecting with other people, and the Teenage Mutant Ninja Turtles.
+                            Feel free to use the chatbot or the links to learn more about me. <br/><br/><span className="tldr">TLDR</span>: I love learning, connecting with other people, and the Teenage Mutant Ninja Turtles.
                         </p> 
                         <div className="bottomContainer">
                             <button className="chatButton" onClick={ this.startChat.bind(this) }>Let's Chat</button>
@@ -71,18 +71,20 @@ class About extends React.Component {
                     <div className="textContainer hobbiesContainer">
                         <div className="innerTextContainer">
                             <p>
+                                <span className="bold">📚Reading </span>
                                 I love diving into a great book. My favourite book genre is non-fiction. I am currently reading The Death and Life of Great American Cities by Jane Jacobs; its about urban and city design.
-                                <br/><span className="favourite">Favourite Book</span>: Great Expectations by Charles Dickens
+                                <br/><span className="bold">Favourite Book</span>: Great Expectations by Charles Dickens
                             </p>
                             <p>
-                                Learning languages is always a challenge and also helps me connect culturally with others (especially while traveling).
+                                <span className="bold">🗣️Languages </span>Learning languages is always a challenge and also helps me connect with others (especially while traveling).
                                 In order of fluency, I speak: English, Hebrew, German, Spanish.
                                 My name is actually a Hebrew name as well (it means 'to illuminate').
-                                <br/><span className="favourite">Favourite Language</span>: Hebrew
+                                <br/><span className="bold">Favourite Language</span>: Hebrew
                             </p> 
                             <p>
-                                I really enjoy the nuances and the details of mixing music. Check me out on Mixcloud: https://soundcloud.com/mayer-seidman"
-                                <br/><span className="favourite">Favourite Band</span>: Outkast
+                                <span className="bold">📻Music </span>
+                                I really enjoy the nuances and the details of mixing music. If interestd, check out <a className="regularLink" href="https://www.mixcloud.com/mayer-seidman/" target="_blank">my Mixcloud</a>.
+                                <br/><span className="bold">Favourite Band</span>: Outkast
                             </p>
                         </div>   
                     </div>
@@ -92,12 +94,14 @@ class About extends React.Component {
                     <div className="textContainer skillsContainer">
                         <div className="innerTextContainer">
                             <p>
+                                <span className="bold">🗂️Design </span>
                                 I have been involved in almost every aspect of design; UX Research, UX Strategy, Lo-fi and Hi-fi Mockups, Copy Writing, User Testing, Design (internal) Critiques, and Email Marketing/AB Testing.
                             </p>
+                            <p>As a lead designer I have often done the role of design education from within our team. I have given design talks and breakdowns to non-technical colleagues-helping them understand from a design perspective the product decisions made.</p>
                             <p>
+                                <span className="bold">💻Coding </span>
                                 Whether for work or for pleasure I have a lot of experience coding. On the front end, I have experience coding in Javascript (mostly REACT) and CSS. On the back end, I have experience in Ruby and Swift.
                             </p>
-                            <p>As a lead designer I have often done the role of design education from within our team. I have given design talks and breakdowns to non-technical colleagues-helping them understand from a design perspective the product decisions made.</p>
                         </div>   
                     </div>
                 )
@@ -106,6 +110,7 @@ class About extends React.Component {
                     <div className="textContainer journeyContainer">
                         <div className="innerTextContainer">
                             <p>
+                                <span className="bold">🛣️Journey </span>
                                 I got my bachelors in Talmudic Law (I'm totally willing to tell you more about this or free too google it!) and then an MBA.
                                 Wanting to gain tech skills, I attended a coding bootcamp in Austin, Texas. I left with solid programming skills and an excitement for technology.
                             </p>
@@ -133,7 +138,7 @@ class About extends React.Component {
                     <div className="aboutSection">
                         <div className="topContainer">
                             { linksContainer }
-                            <div style={{ display: "inline-block", height: "100px", width: "0%" }}>{ image }</div>
+                            <div className="imageContainer">{ image }</div>
                         </div>
                         { pageContent }
                     </div>

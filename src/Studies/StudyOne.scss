@@ -13,6 +13,9 @@
 			}
 			.workSection {
 				margin-bottom: 30px;
+				.noMargin {
+					margin-bottom: 0px !important;
+				}
 				.workHeader {
 					font-size: 1.4em;
 					font-weight: 500;
@@ -29,6 +32,7 @@
 				    margin-bottom: 15px;
 				}
 				&.goalsContainer {
+					margin-top: 15px;
 					.goalContainer {
 						margin-bottom: 15px;
 						/*p {
@@ -127,6 +131,16 @@
 					display: inline-block;
 					border-radius: 50%;
 				}
+			}
+		}
+		&.studyTwoPage {
+			.goalsContainer {
+				margin-top: 60px !important;
+			}
+		}
+		&.studyThreePage {
+			.goalsContainer {
+				margin-bottom: 10px !important;
 			}
 		}
 	}

@@ -34,14 +34,17 @@ class RightContainer extends React.Component {
 
     	return (
 		    <div className={ "rightContainer " + className }>
-				<Switch>
-					<Route exact path="/works" component={ Works }/>
-					<Route exact path="/works/Studies/StudyOne" render={(props) => <StudyOne {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
-					<Route exact path="/works/Studies/StudyTwo" render={(props) => <StudyTwo {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
-					<Route exact path="/works/Studies/StudyThree" render={(props) => <StudyThree {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
-					<Route exact path="/about" component={ About } />
-					<Route exact path="/" component={ Home } />
-				</Switch>
+		    	<div className="outerContainer">
+		    		<Switch>
+		    			<Route exact path="/works" component={ Works }/>
+		    			<Route exact path="/works/Studies/StudyOne" render={(props) => <StudyOne {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
+		    			<Route exact path="/works/Studies/StudyTwo" render={(props) => <StudyTwo {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
+		    			<Route exact path="/works/Studies/StudyThree" render={(props) => <StudyThree {...props} currentView={ this.props.currentView } startStudy={ this.props.startStudy } />}/>
+		    			<Route exact path="/about" component={ About } />
+		    			<Route exact path="/" component={ Home } />
+		    		</Switch>
+		    		<div class="push"></div>
+		    	</div>
 				<Navbar location={ path } closeStudy={ this.props.closeStudy } />
 		    </div>	
     	)

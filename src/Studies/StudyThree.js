@@ -87,8 +87,8 @@ class StudyThree extends React.Component {
                     { startStudyLink }
                 </div>
                 <div className={ className }>
-                    <div className="workContainer" ref="container">
-                        <div className="studyTwoPage workContent">
+                    <div className="workContainer studyThreePage" ref="container">
+                        <div className="workContent">
                                 <div className="introContainer workSection fadeInBottom">
                                 
                                      <p className="workHeader">Intro</p>
@@ -132,7 +132,7 @@ class StudyThree extends React.Component {
                                     <p>For inspiration, I looked at two online dress up games; where you essentially dress up and play around with an avatar.</p>
                                     <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
                                         showThumbnails={ false } />
-                                    <p>I noticed several similarities between these two games:</p>
+                                    <br/><p>I noticed several similarities between these two games:</p>
                                     <span className="circleDividerSmall"></span>
                                     <p className="subText biggerSubText">The accessory categories are separated from the owlvatar display area-either above or around it.</p><br/>
                                     <span className="circleDividerSmall"></span>
@@ -163,7 +163,7 @@ class StudyThree extends React.Component {
                                     
                                     <ImageGallery items={ imagesThree } showFullscreenButton={ false } showPlayButton={ false }
                                         showThumbnails={ false } />
-                                    <p>I preferred to place the description of the accessory (and the purchasing button) always above the two rows of accessories. To ensure it was clear which accessory was selected, we added a border around it once clicked.</p>
+                                    <br/><p>I preferred to place the description of the accessory (and the purchasing button) always above the two rows of accessories. To ensure it was clear which accessory was selected, we added a border around it once clicked.</p>
                                     <p className="subHeader">Color-Picker</p>
                                     <p>We used to have a category called colors, that would allow you to change the color of a variety of different owl parts. There were two issues with this:</p>
                                     <ol>
@@ -171,14 +171,13 @@ class StudyThree extends React.Component {
                                         <li>If you wanted to do multiple things, for example, change the wing’s color and place something on the wing, you had to navigate to two separate places. This did not feel intuitive.</li>
                                     </ol>
                                     <p>We consolidated everything related to say the wings within the wings tab. The color options for the wings, are included below the accessories. I preferred to use little color boxes over our previous color adjustment bar, as it is less distracting and more minimal.</p>
-                                    <img src={ lofiFive } alt=""/>
+                                    <img src={ lofiFive } className="noMargin" alt=""/>
                                 </div>
                             </div>
                             <div className="hifiContainer workSection">
                                 <p className="workHeader">Final Version</p>
                                 <img src={ finalVersion } alt=""/>
                             </div>
-                            <Link className="regularLink nextStudyLink" to="/works/Studies/StudyFour">Next Study</Link>   
                         </div>
                     </div>
                 </div>

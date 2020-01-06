@@ -110,13 +110,13 @@ export default class Chatbot extends Component {
                 var botResponse = "Ok, kool. What specifically would you like to know more about?";
             } else if (topic == "Reading") {
                 if (subtopic == "favourite") {
-                    var botResponse = "My favourite book is Great Expectations by Charles Dickens. I won't spoil it for you :) .";
+                    var botResponse = "Yes! My favourite book is Great Expectations by Charles Dickens. I won't spoil it for you :) .";
                 } else if (subtopic == "favourite2") {
-                    var botResponse = "My favourite book is Great Expectations by Charles Dickens. I won't spoil it for you :) . \n What else would you like to know about me?";
+                    var botResponse = "Yes! My favourite book is Great Expectations by Charles Dickens. I won't spoil it for you :) . \n What else would you like to know about me?";
                 } else if (subtopic == "currently-reading") {
-                    var botResponse = "I am currently reading The Death and Life of Great American Cities by Jane Jacobs. Its urban and city design.";
+                    var botResponse = "I am currently reading The Death and Life of Great American Cities by Jane Jacobs. Its about urban and city design.";
                 } else if (subtopic == "currently-reading2") {
-                    var botResponse = "I am currently reading The Death and Life of Great American Cities by Jane Jacobs. Its urban and city design. \n What else would you like to know about me?";
+                    var botResponse = "I am currently reading The Death and Life of Great American Cities by Jane Jacobs. Its about urban and city design. \n What else would you like to know about me?";
                 } else {
                     var botResponse = "I generally like reading non-fiction. When I read fiction I stick to the classics.";
                 }
@@ -132,7 +132,7 @@ export default class Chatbot extends Component {
                 }
             } else if (topic == "Music") {
                 if (subtopic == "mixing" || subtopic == "mixing2") {
-                    var botResponse = "Yeah I really enjoy it. Check me out on Soundcloud: https://soundcloud.com/mayer-seidman"
+                    var botResponse = "Yeah I really having fun with it and creating something unique. All kinds of genres."
                     // var str = "Free Web Building Tutorials!";
                     // var result = str.link("https://www.w3schools.com");
                     // document.getElementById("demo").textContent = result;
@@ -155,13 +155,13 @@ export default class Chatbot extends Component {
                 }
             } else if (topic == "Journey") {
                 if (subtopic == "start") {
-                    var botResponse = "I got my bachelors in Talmudic Law and then got my MBA.";
+                    var botResponse = "I spent most of my childhood in Pittsburgh. I like school. A lot. I got my bachelors degree in Talmudic Law and then an MBA.";
                 } else if (subtopic == "talmud" || subtopic == "talmud2") {
-                    var botResponse = "Good question! fill this in...";
+                    var botResponse = "The Talmud is comprehensive written version of the Jewish oral law and the subsequent commentaries on it (stemming back to the 2nd century).";
                 } else if (subtopic == "tech" || subtopic == "tech2") {
-                    var botResponse = "I wanted to gain some tech skills, so I attended a 2 month coding bootcamp in Austin, Texas. I left with solid programming skills and an excitement for technology.";
+                    var botResponse = "I wanted to gain some tech skills, so I decided to attend a coding bootcamp in Austin, Texas. I left with solid programming skills and a deep excitement for technology.";
                 } else if (subtopic == "afterATX") {
-                    var botResponse = "I got a job as a programmer at a small startup in San Diego, where I was fortunate to be exposed to all aspects of a company, including design. I fell in love with design and ultimately became the design lead."
+                    var botResponse = "I got a job as the first technical employee at a small startup in San Diego, where I was fortunate to be exposed to all aspects of a company, including design. I fell in love with design and ultimately became the design lead."
                 } else if (subtopic == "currentLocation") {
                     var botResponse = "No, I started working remotely a few years ago. It enabled me to travel the world (literally) and to then settle down in beautiful Vancouver, Canada."
                 } else {
@@ -293,7 +293,12 @@ class BotBubble extends Component {
 
 class UserInput extends Component {
     optionSelected(value, topic, subtopic="", text="") {
-        this.props.updateUserMessages(value, topic, subtopic, text);
+        console.log(topic)
+        if (topic == "Language") {
+            this.props.updateUserMessages(value, "Languages", "Languages", text);
+        } else {
+            this.props.updateUserMessages(value, topic, subtopic, text);
+        }
     }
     handleChange(event) {
         if (event.key === 'Enter') {
@@ -320,7 +325,7 @@ class UserInput extends Component {
     }
     renderHobbiesOptions() {
         var optionOne = "Reading";
-        var optionTwo = "Language";
+        var optionTwo = "Languages";
         var optionThree = "Music";
         return (
             <div className="interestsOptions">
@@ -447,7 +452,7 @@ class UserInput extends Component {
                 <div>{ optionTwo }</div>
             )
         } else if (subtopic == "design2" || subtopic == "programming2") {
-            var optionTwoText = "Ever work alongside non-technical people?";
+            var optionTwoText = "Ever work with non-technical people?";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Skills", "other", optionTwoText) }>{ optionTwoText }</button>
             )
