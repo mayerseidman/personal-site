@@ -88,7 +88,7 @@ class StudyOne extends React.Component {
     render() {
         if (this.props.currentView == "preview") {
             var startStudyLink = (
-                <button onClick={ this.props.startStudy }>START THE STUDY!</button>
+                <button onClick={ this.props.startStudy }>Start the Study</button>
             )
             var className = "mobileHide"
         }
@@ -332,23 +332,31 @@ class StudyOne extends React.Component {
                                 <div className="feedbackContainerOne workSection">
                                     <p className="workHeader">Feedback</p>
                                     <p>We sent our mockups to multiple teachers for feedback.</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">
-                                        <span>Finding various activities. </span>While teachers enjoyed browsing, some had trouble finding the activities they wanted. We came up with several ideas of potential filters:
-                                        <ol>
-                                            <li>Filter activities by learning type (visual, audible, reading etc.)</li>
-                                            <li>Filter activities by prior reading vs. text provided in exercise</li>
-                                            <li>Filter activities by time estimate</li>
-                                            <li>Filter activities by traditional (mostly writing) vs. reward (more creative)</li>
-                                            <li>Filter activities by difficulty level</li>
-                                        </ol>
-                                    </p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">In the assignment creation, the word "delete" was confusing as it seemed to imply that doing so would delete the activities (instead of merely deleting the assignment).</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText">To start, we only supported the ability to assign exercises to all of a teacher's students at once. There was already a lot of interest in being able to assign groups of students different exercises.</p>
-                                    <span className="circleDivider"></span>
-                                    <p className="subText noMargin">Teachers often have 20 or 30 students in their assignment progress table, and maybe only assign 2 exercises. This would create a pretty big discrepancy between the height of the assignments box and the height of the progress table-making it a bit of an awkward experience.</p>
+                                    <div>
+                                        <span className="circleDivider"></span>
+                                        <p className="subText">
+                                            <span>Finding various activities. </span>While teachers enjoyed browsing, some had trouble finding the activities they wanted. We came up with several ideas of potential filters:
+                                            <ol>
+                                                <li>Filter activities by learning type (visual, audible, reading etc.)</li>
+                                                <li>Filter activities by prior reading vs. text provided in exercise</li>
+                                                <li>Filter activities by time estimate</li>
+                                                <li>Filter activities by traditional (mostly writing) vs. reward (more creative)</li>
+                                                <li>Filter activities by difficulty level</li>
+                                            </ol>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <span className="circleDivider"></span>
+                                        <p className="subText">In the assignment creation, the word "delete" was confusing as it seemed to imply that doing so would delete the activities (instead of merely deleting the assignment).</p>  
+                                    </div>
+                                    <div>
+                                        <span className="circleDivider"></span>
+                                        <p className="subText">To start, we only supported the ability to assign exercises to all of a teacher's students at once. There was already a lot of interest in being able to assign groups of students different exercises.</p>
+                                    </div>
+                                    <div>
+                                        <span className="circleDivider"></span>
+                                        <p className="subText noMargin">Teachers often have 20 or 30 students in their assignment progress table, and maybe only assign 2 exercises. This would create a pretty big discrepancy between the height of the assignments box and the height of the progress table-making it a bit of an awkward experience.</p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="finalVersion workSection">

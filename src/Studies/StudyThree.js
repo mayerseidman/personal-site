@@ -77,7 +77,7 @@ class StudyThree extends React.Component {
         ]
         if (this.props.currentView == "preview") {
             var startStudyLink = (
-                <button onClick={ this.props.startStudy }>START THE STUDY!</button>
+                <button onClick={ this.props.startStudy }>Start the Study</button>
             )
             var className = "mobileHide"
         }
