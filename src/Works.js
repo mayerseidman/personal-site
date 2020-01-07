@@ -30,7 +30,7 @@ class Works extends React.Component {
                 <div className="rightWorksContainer">
                     <div className="studiesLinksContainer">
                         <div>
-                          <Link className="regularLink" to={`${this.props.match.path}/Studies/StudyOne`} onClick={ this.props.changeLeftContainer }>Reading Comprehension Tool</Link>
+                          <Link className="regularLink" to={`${this.props.match.path}/Studies/StudyOne`} onClick={ this.props.onClick }>Reading Comprehension Tool</Link>
                             <p className="categoryDescription mobileHide">Research, UI/UX, Visual, User Feedback</p>
                         </div>
                         <div>

@@ -166,7 +166,7 @@
 }
 
 /* WEB Media Query  */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1075px) {
 	.workOuterContainer {
 		padding-top: 87px;
 		padding-bottom: 13px;
@@ -190,7 +190,7 @@
 }
 
 /* Mobile Media Query  */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1075px) {
 	.workOuterContainer {
 		.workTitle {
 			margin-left: 19px;
@@ -200,22 +200,32 @@
 		    bottom: 15px;
 		    text-align: center;
 		    color: #D0021B;
+		    margin-bottom: 7px;
 		    a {
 		    	cursor: pointer;
 		    }
-		    margin-bottom: 12px;
+		    button {
+		    	height: 45px;
+	    	    width: 100%;
+	    	    background: #D0021B;
+	    	    color: white;
+	    	    font-size: 16px;
+	    	    border: none;
+		    }
 		}
 		.workContainer {
-			padding-bottom: 60px;
-			height: 555px;
+			/*padding-bottom: 60px;*/
+			height: 390px;
 			width: 89%; 
-			padding-left: 22px;
+			padding-left: 20px;
 			.workContent {
-				height: 555px;
+				height: 390px;
+				/*padding-right: 20px;*/
+				/*padding-left: 5px;*/
 			}
 			.workSection {
 				.subText {
-					width: 92%;
+					width: 90%;
 				}
 				.biggerSubText {
 					width: 94%

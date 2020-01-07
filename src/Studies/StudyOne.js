@@ -88,7 +88,7 @@ class StudyOne extends React.Component {
     render() {
         if (this.props.currentView == "preview") {
             var startStudyLink = (
-                <a onClick={ this.props.startStudy }>START THE STUDY!</a>
+                <button onClick={ this.props.startStudy }>START THE STUDY!</button>
             )
             var className = "mobileHide"
         }

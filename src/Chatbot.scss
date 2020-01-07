@@ -379,7 +379,7 @@ $defaultFadeAmount: 75px;
     }
 }
 /* WEB Media Query  */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1075px) {
     #app-container {
       /*  padding: 10px;*/
         /*margin: 0 auto;  */ 
@@ -428,11 +428,11 @@ $defaultFadeAmount: 75px;
 }
 
 /* Mobile Media Query  */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1075px) {
     #app-container {
       /*  padding: 10px;*/
         margin: 0 auto;   
-        width: 75%;
+        width: 80%;
         /*max-width: 420px;*/
     }
     .chatSection {

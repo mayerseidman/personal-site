@@ -325,7 +325,7 @@ class UserInput extends Component {
     }
     renderHobbiesOptions() {
         var optionOne = "Reading";
-        var optionTwo = "Languages";
+        var optionTwo = "Language";
         var optionThree = "Music";
         return (
             <div className="interestsOptions">
