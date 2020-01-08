@@ -8,11 +8,11 @@ import { withRouter } from "react-router";
 class leftContainer extends React.Component {
 	constructor(props) {
 	    super(props);
-	    this.state = { wordValue: "Designer", currentCount: 10, minimized: false };
+	    this.state = { wordValue: "UI UX Designer", currentCount: 8, minimized: false };
 	}
 
 	getChangedText() {
-		var words = ["neat", "great", "best", "groovy"];
+		var words = ["Human", "Illustrator", "Brother", "Dad-jokes", "Pescatarian", "Surfer", "Coder"];
 	    i = (i + 1) % words.length;
 	    return words[i];
 	}

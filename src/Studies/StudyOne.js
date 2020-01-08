@@ -160,30 +160,38 @@ class StudyOne extends React.Component {
                                     <img src={ jobToBeDone } alt=""/>
                                     <p>To further distill our research down to actionable steps, we then plugged it into the Jobs To Be Done (JBD) Framework. JBD is focused on the "job" or task a user is trying to accomplish. We were able to turn our research into these statements:</p>
                                     <div>
-                                        <span className="circleDivider"></span>
-                                        <p className="subText">
-                                            Situation: <span className="highlightedWord">When</span> I assign reading and exercises <br/>
-                                            Motivation: <span className="highlightedWord">I want</span> to find content (texts and questions) in one place (that’s accessible by the students) <br/>
-                                            Result: <span className="highlightedWord">So I can</span> spend more time on lesson-prep.
-                                        </p>
-                                        <span className="circleDivider"></span>
-                                        <p className="subText">
-                                            Situation: <span className="highlightedWord">When</span> I am using exercises and questions (from software) <br/>
-                                            Motivation: <span className="highlightedWord">I want</span> to have higher level thinking exercises <br/>
-                                            Result: <span className="highlightedWord">So I can</span> be sure they are fully mastering higher-level thinking and reinforce my lessons.
-                                        </p>
-                                        <span className="circleDivider"></span>
-                                        <p className="subText">
-                                            Situation: <span className="highlightedWord">When</span> I am assigning reading and exercises <br/>
-                                            Motivation: <span className="highlightedWord">I want</span> the kids to enjoy the program <br/>
-                                            Result: <span className="highlightedWord">So I can</span>help them develop a love for reading.
-                                        </p>
-                                        <span className="circleDivider"></span>
-                                        <p className="subText">
-                                            Situation: <span className="highlightedWord">When</span> I am assessing student growth <br/>
-                                            Motivation: <span className="highlightedWord">I want</span> receive a report (on their strengths and weaknesses) <br/>
-                                            Result: <span className="highlightedWord">So I can</span> provide them with the necessary support.
-                                        </p>
+                                        <div>
+                                            <span className="circleDivider"></span>
+                                            <p className="subText">
+                                                Situation: <span className="highlightedWord">When</span> I assign reading and exercises <br/>
+                                                Motivation: <span className="highlightedWord">I want</span> to find content (texts and questions) in one place (that’s accessible by the students) <br/>
+                                                Result: <span className="highlightedWord">So I can</span> spend more time on lesson-prep.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <span className="circleDivider"></span>
+                                            <p className="subText">
+                                                Situation: <span className="highlightedWord">When</span> I am using exercises and questions (from software) <br/>
+                                                Motivation: <span className="highlightedWord">I want</span> to have higher level thinking exercises <br/>
+                                                Result: <span className="highlightedWord">So I can</span> be sure they are fully mastering higher-level thinking and reinforce my lessons.
+                                            </p>
+                                        </div>
+                                        <div>
+                                          <span className="circleDivider"></span>
+                                          <p className="subText">
+                                              Situation: <span className="highlightedWord">When</span> I am assigning reading and exercises <br/>
+                                              Motivation: <span className="highlightedWord">I want</span> the kids to enjoy the program <br/>
+                                              Result: <span className="highlightedWord">So I can</span>help them develop a love for reading.
+                                          </p>  
+                                        </div>
+                                        <div>
+                                            <span className="circleDivider"></span>
+                                            <p className="subText">
+                                                Situation: <span className="highlightedWord">When</span> I am assessing student growth <br/>
+                                                Motivation: <span className="highlightedWord">I want</span> receive a report (on their strengths and weaknesses) <br/>
+                                                Result: <span className="highlightedWord">So I can</span> provide them with the necessary support.
+                                            </p> 
+                                        </div>
                                     </div>
                                     <p className="summaryText">
                                         When constructing our product plan we focused more on a user's mindset than on traditional personas (based on demographics). As you can see, this framework really cuts to the chase of a user's intentions.

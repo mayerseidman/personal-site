@@ -127,7 +127,7 @@ class StudyThree extends React.Component {
                             </div>
                             <div className="strategyContainer workSection">
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
-                                <div>
+                                <div className="firstContainer">
                                     <p>My only initial thought was that I wanted to keep the basic layout the same; student’s Owlvatar (including the save button underneath it) on the left and the accessories and information on the right.</p>
                                     <p>For inspiration, I looked at two online dress up games; where you essentially dress up and play around with an avatar.</p>
                                     <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }

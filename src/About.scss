@@ -1,4 +1,6 @@
 .aboutSection {
+	margin: auto;
+	width: 80%;
 	.topContainer {
 		/*height: 160px;*/
 		margin-bottom: 30px;
@@ -55,6 +57,13 @@
 			position: relative;
 		}
 	}
+	.bold {
+		color: #000;
+		font-weight: 450;
+	}
+	.smBold {
+		font-weight: 425;
+	}
 }
 .aboutLoadingSection {
 	padding-left: 200px;
@@ -64,13 +73,31 @@
 	}
 }
 
+@media only screen and (min-width: 1075px) and (max-width: 1300px) {
+	.imageContainer {
+		left: 20%;
+	}
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1075px) {
+	.imageContainer {
+		left: 3%;
+	}	
+}
+
+@media only screen and (min-width: 1300px) {
+	.imageContainer {
+		left: 33%;
+	}
+}
+
 /* WEB Media Query  */
 @media only screen and (min-width: 1075px) {
 	.aboutSection {
 		padding-top: 100px;
 		/*padding-bottom: 11px;*/
-		padding-left: 75px;
-	    padding-right: 62px;
+		/*padding-left: 75px;
+	    padding-right: 62px;*/
         .bottomContainer {
         	width: 40%;
     		.chatButton {
@@ -82,13 +109,9 @@
 			.img {
 				width: 150px;
 			}
-			.linksContainer {
+			/*.linksContainer {
 				margin-top: 25%;
-			}
-			.imageContainer {
-				position: relative;
-				left: 33%;
-			}
+			}*/
 		}
 		/*.textContainer {
 			margin-bottom: 55px;
@@ -97,14 +120,10 @@
 			margin-bottom: 35px;
 		}
 		.introContainer {
-			padding-bottom: 129px;
+			/*padding-bottom: 129px;*/
 		}
 		.skillsContainer, .journeyContainer {
 			padding-bottom: 59px;
-		}
-		.bold {
-			color: #000;
-			font-weight: 450;
 		}
 	}
 	.aboutLoadingSection {
@@ -117,8 +136,8 @@
 @media only screen and (max-width: 1075px) {
 	.aboutSection {
 		padding-bottom: 0px;
-		padding-left: 30px;
-	    padding-right: 15px;
+		/*padding-left: 30px;
+	    padding-right: 15px;*/
 	    .bottomContainer {
 			.chatButton {
 				width: 98%;
@@ -130,18 +149,19 @@
 			.img {
 				/*width: 100px;
 				left: 31%;*/
-				width: 90px;
+				width: 85px;
 			}
 			.linksContainer {
 				/*margin-bottom: 15px;*/
 				width: 65%;
+				margin-right: 10%;
 			}
 		}
 		.textContainer {
 			padding-bottom: 26px;
-			padding-right: 5px;
 			.innerTextContainer {
 				overflow: auto;
+				padding-right: 5px;
 			}
 		}
 		.textContainer, .innerTextContainer {

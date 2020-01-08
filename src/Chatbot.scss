@@ -386,7 +386,7 @@ $defaultFadeAmount: 75px;
         width: 60%;
         /*max-width: 420px;*/
         /*margin-top: 6%;*/
-        margin-left: 31%;
+        margin: auto;
     }
     .chatSection {
         padding-bottom: 80px;
@@ -411,12 +411,13 @@ $defaultFadeAmount: 75px;
     }
     .convo-container {
         height: 100%;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        /*margin-top: 30px;*/
+        margin-bottom: 30px;
     }
     .chatbotContainer {
         height: 475px;
         padding-bottom: 125px;
+        padding-top: 40px;
     }
     .backLink {
       cursor: pointer;

@@ -287,7 +287,9 @@ p {
 	    	color: #000;
 	    }
 	    .navbarContainer {
-	    	width: 89%;
+	    	margin-left: auto;
+	    	margin-right: auto;
+	    	position: relative;
 		    .navbar {
 		    	list-style: none;
 		    	/*margin-bottom: 0;*/
@@ -326,8 +328,8 @@ p {
 		    		left: 6px;
 		    	}
 		    	.homeLink {
-		    		float: left;
-		    		margin-left: 64px;
+		    		/*float: left;*/
+		    		margin-left: 0px !important;
 		    	}
 		    	.homeLinkName {
 		    		margin-left: 31px;
@@ -381,7 +383,7 @@ p {
 	}
 }
 
-@media only screen and (min-width: 1075px) and (max-width: 1200px) {
+@media only screen and (min-width: 1075px) and (max-width: 1275px) {
 	.leftWorksContainer {
 		.categoryDescription {
 			width: 80%;
@@ -389,13 +391,13 @@ p {
 	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1275px) {
 	.rightWorksContainer {
 		margin-left: 10%;
 	}
 }
 
-@media only screen and (min-width: 1315px) {
+@media only screen and (min-width: 1400px) {
 	.rightWorksContainer {
 		margin-left: 19%;
 	}
@@ -526,14 +528,16 @@ p {
 				/*padding-right: 75px;*/
 				padding-top: 125px;
 				/*padding-right: 55px;*/
-		    	width: 85%;
+		    	width: 80%;
 	    	    margin-left: auto;
 	    	    margin-right: auto;
 		    }
 		    .navbarContainer {
+		    	width: 80%;
+		    	margin: auto;
 		    	/*float: left;*/
 		    	/*padding-right: 100px;*/
-		    	padding-left: 10px;
+		    	/*padding-left: 10px;*/
 		    	/*position: relative;
 		    	top: 150px;*/
 		    	.navbar {
@@ -609,16 +613,8 @@ p {
 	}
 }
 
-@media only screen and (min-width: 750px) and (max-width: 1075px) {
-	.homeSection {
-		width: 50%;
-	}
-}
-
-@media only screen and (max-width: 750px) {
-	.homeSection {
-		width: 75%;
-	}
+.homeSection, .navbarContainer  {
+	width: 80%;
 }
 
 /* Mobile Media Query  */
@@ -632,7 +628,7 @@ p {
 			width: auto;
 			height: 175px;
 			.infoContainer {
-				/*padding-top: 7%;*/
+				padding-top: 7%;
 				margin: auto;
 				/*margin-bottom: 5px;*/
 				/*width: 78%;*/
@@ -744,12 +740,8 @@ p {
 		    	margin: auto;
 		    }
 		    .navbarContainer {
-		    	margin-left: auto;
-		    	margin-right: auto;
-		    	width: 325px;
-		    	position: relative;
 		    	.navbar {
-		    		padding-left: 0;
+		    		/*padding-left: 0;*/
 		    		.homeLink {
 		    			margin-left: 0px;
 		    		}

@@ -3,8 +3,12 @@
 		margin-bottom: 0;
 	}*/
 	.workContainer {
-		padding:30px; 
+		/*padding:30px;*/ 
 		padding-top: 0;
+		width: 76.5%;
+	    padding: 0;
+	    margin: auto;
+	    margin-left: 14%;
 		.workContent {
 			overflow:auto;
 			.headlineText {
@@ -43,6 +47,9 @@
 							display: inline-block;
 							margin-right: 15px;
 						}
+						.batch {
+							bottom: 0px;
+						}
 					}
 				}
 				&.strategyContainer {
@@ -53,8 +60,13 @@
 					.subText {
 						margin-bottom: 10px;
 					}
-					.classDojoText {
-						margin-bottom: 15px;
+					.classDojoContainer {
+						.circleDividerSmall {
+							bottom: 5px;
+						}
+						.classDojoText {
+							margin-bottom: 15px;
+						}
 					}
 					.discoveryContainer {
 						.summaryText {
@@ -132,11 +144,11 @@
 					display: inline-block;
 					border-radius: 50%;
 				}
-			}
-		}
-		&.studyTwoPage {
-			.goalsContainer {
-				margin-top: 60px !important;
+				.firstContainer {
+					.circleDividerSmall {
+						bottom: 5px;
+					}
+				}
 			}
 		}
 		&.studyThreePage {
@@ -173,13 +185,18 @@
 		padding-bottom: 13px;
 		.workContainer {
 			height: 500px;
-			width: 85%; 
+			/*width: 85%; */
 		/*	padding-bottom: 10px;
-		*/	padding-left: 42px;
+		*/	/*padding-left: 42px;*/
 			.workContent {
 				height: 500px;
 				padding-right: 50px;
 				overflow:auto;
+			}
+			&.studyTwoPage {
+				.goalsContainer {
+					margin-top: 60px !important;
+				}
 			}
 			.workSection {
 				.subText {
@@ -217,16 +234,22 @@
 		.workContainer {
 			/*padding-bottom: 60px;*/
 			height: 390px;
-			width: 89%; 
-			padding-left: 20px;
+			margin-bottom: 30px;
+			/*width: 89%; 
+			padding-left: 20px;*/
 			.workContent {
 				height: 390px;
 				/*padding-right: 20px;*/
 				/*padding-left: 5px;*/
 			}
+			&.studyTwoPage {
+				.goalsContainer {
+					margin-top: 0px !important;
+				}
+			}
 			.workSection {
 				.subText {
-					width: 92%;
+					width: 90%;
 				}
 				.biggerSubText {
 					width: 94%

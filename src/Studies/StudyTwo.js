@@ -151,7 +151,7 @@ class StudyTwo extends React.Component {
                                     </div>
                                     <div className="goalContainer"> 
                                         <p className="subHeader">Batch Functionality</p>
-                                        <span className="circleDivider"></span>
+                                        <span className="circleDivider batch"></span>
                                         <p className="subText noMargin">Some actions were rigid in that they could only be performed for one or all students.
                                             A teacher wanting to award 5 students (from two classes) 50 points for a good job reading, would have to do this separately for each student. Without support for batch processing (taking action on/for numerous students at once), simple tasks took a long time.</p>
                                     </div>
@@ -168,23 +168,37 @@ class StudyTwo extends React.Component {
                                     </p>
                                     { classDojoTwoImg }
                                     <p>We took a similar approach to Class Dojo’s but with a few important twists.</p>
-                                    <div className="classDojoText">
-                                        <p className="subHeader"><b>Similarities to Class Dojo</b></p>
-                                        <span className="circleDividerSmall"></span>
-                                        <p className="subText">Students can be selected and batched for different actions.</p><br/>
-                                        <span className="circleDividerSmall"></span>
-                                        <p className="subText">The batch-able actions are on a toolbar and clicking an action brings down an interface with the relevant forms and details.</p><br/>
-                                        <span className="circleDividerSmall"></span>
-                                        <p className="subText">Clicking on a student or class brings up their information for viewing and editing.</p><br/>
-                                    </div>
-                                    <div>
-                                        <p className="subHeader">How We Differed and Why</p>
-                                        <span className="circleDividerSmall"></span>
-                                        <p className="subText">Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p><br/>
-                                        <span className="circleDividerSmall"></span>
-                                        <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p><br/>
-                                        <span className="circleDividerSmall"></span>
-                                        <p className="subText noMargin">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p><br/>
+                                    <div className="classDojoContainer">
+                                        <div className="classDojoText">
+                                            <p className="subHeader">Similarities to Class Dojo</p>
+                                            <div>
+                                                <span className="circleDividerSmall"></span>
+                                                <p className="subText">Students can be selected and batched for different actions.</p><br/>
+                                            </div>
+                                           <div>
+                                                <span className="circleDividerSmall"></span>
+                                                <p className="subText">The batch-able actions are on a toolbar and clicking an action brings down an interface with the relevant forms and details.</p><br/>   
+                                           </div>
+                                           <div>
+                                               <span className="circleDividerSmall"></span>
+                                               <p className="subText">Clicking on a student or class brings up their information for viewing and editing.</p><br/>
+                                           </div>
+                                        </div>
+                                        <div>
+                                            <p className="subHeader">How We Differed and Why</p>
+                                            <div>
+                                                <span className="circleDividerSmall"></span>
+                                                <p className="subText">Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p>
+                                            </div>
+                                            <div>
+                                                <span className="circleDividerSmall"></span>
+                                                <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p>
+                                            </div>
+                                            <div>
+                                                <span className="circleDividerSmall"></span>
+                                                <p className="subText noMargin">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p>
+                                            </div>
+                                        </div>    
                                     </div>
                                 </div> 
                                 <div className="structureContainer workSection">
