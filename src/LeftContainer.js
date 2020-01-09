@@ -65,7 +65,7 @@ class leftContainer extends React.Component {
     				<div className={ "infoContainer preview " + previewTopClassName }>
     			    	<p className="title">{ title }</p>
     			        <span className="circleDivider"></span>
-    			        <p className="studyPreviewText">Led team in creating several interfaces from scratch, carrying them through the various stages of UX design.</p>
+    			        <p className="studyPreviewText">Led team in creating several interfaces from scratch; carried product through the various stages of UX design.</p>
     			        <span className="circleDivider"></span>
     			        <p className="studyRolesText">Research, UI/UX, Visual, User Feedback</p>
     				</div>

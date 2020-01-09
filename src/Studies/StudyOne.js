@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Magnifier from "react-magnifier";
 import Fade from 'react-reveal/Fade';
 import ScrollAnimation from 'react-animate-on-scroll';
+import ReactTooltip from 'react-tooltip'
 
 
 import './StudyOne.scss';
@@ -11,6 +12,7 @@ import './StudyThree.scss';
 import ImageGallery from 'react-image-gallery';
 import multipleChoice from '../images/wr-lite/multiple-choice.png';
 import comprehension from '../images/wr-lite/comprehension.png';
+import questionImg from '../images/wr-lite/question.png';
 
 import jobToBeDone from '../images/wr-lite/job-to-be-done-border.png';
 
@@ -93,17 +95,17 @@ class StudyOne extends React.Component {
             var className = "mobileHide"
         }
         if(window.innerWidth <= 800 && window.innerHeight <= 820) {
-            var featuresTableImg = <Magnifier className="featuresTableImg" src={ featuresTable }></Magnifier>
+            var featuresTableImg = <Magnifier className="featuresTableImg lessMarginImg" src={ featuresTable }></Magnifier>
             var teacherScenarioMapImg = <Magnifier src={ teacherSM }></Magnifier>
             var teacherGASImg = <Magnifier src={ teacherGAS }></Magnifier>
             var studentScenarioMapImg = <Magnifier src={ studentSM }></Magnifier>
             var studentGASImg = <Magnifier src={ studentGAS }></Magnifier>
             var lofiInsightsIndividualImg = <Magnifier src={ insightsIndividualLofi }></Magnifier>
             var lofiInsightsGroupImg = <Magnifier className="insightsGroupLofiImg noMargin" src={ insightsGroupLofi }></Magnifier>
-
             var finalTeacherExercisesImg = <Magnifier src={ teacherExercisesGif }></Magnifier>
         } else {
-            var featuresTableImg = <img className="featuresTableImg" src={ featuresTable }/>
+            var featuresTableImg = <img className="" src={ featuresTable }/>
+            var teacherSiteMapImg = <Magnifier src={ teacherSiteMap } className="lessMarginImg" />
             var teacherScenarioMapImg = <img src={ teacherSM } alt=""/>
             var teacherGASImg = <img src={ teacherGAS } alt=""/>
             var studentScenarioMapImg = <img src={ studentSM } alt=""/>
@@ -136,8 +138,9 @@ class StudyOne extends React.Component {
                             <div className="strategyContainer workSection">
                                 <p className="workHeader">Research, Strategy, <span className="andText">and</span> Concept</p>
                                 <div className="discoveryContainer">
+                                    <ReactTooltip />
                                     <p className="subHeader"><b>General Discovery</b></p>
-                                    <p>For two weeks we had phone calls with dozens of teachers around the country and learned that a major problem is finding formative assessments that align with the standards and reinforce the reading units they teach. While some sites (e.g. Pinterest) offer graphic organizers and other forms of assessments-- it often takes many hours to find the right types of reading exercises, and they are rarely engaging for students. In fact nearly every teacher we spoke to brought up some version of this problem. </p>
+                                    <p>For two weeks <span className="questionContainer" data-tip="I use 'we' when I collborated or got feedback from others">we<img src={ questionImg } alt=""/></span> had phone calls with dozens of teachers around the country and learned that a major problem is finding formative assessments that align with the standards and reinforce the reading units they teach. While some sites (e.g. Pinterest) offer graphic organizers and other forms of assessments-- it often takes many hours to find the right types of reading exercises, and they are rarely engaging for students. In fact nearly every teacher we spoke to brought up some version of this problem. </p>
                                     <p>
                                         <i>"I might have a student who is missing a particular skill: maybe inferring, drawing conclusions, answering open-ended questions, main ideas, supporting details, using evidence. The way I currently handle this is to introduce a concept to the whole class (e.g. main ideas) then do a lesson on the concept. Then I break them into groups of 4, so they can start getting practice, and so they can give support to each other. 
                                        <br/> <br/> The worst part of this process is coming up with activities for the 3 or 4 person groups and grading them. My expertise is in teaching the lesson and helping groups and students understand what was taught. I want to hand off coming up with ways to practice the reading skills.”</i>
@@ -158,7 +161,7 @@ class StudyOne extends React.Component {
                                     </p>
                                     <p className="subHeader">Jobs To Be Done</p>
                                     <img src={ jobToBeDone } alt=""/>
-                                    <p>To further distill our research down to actionable steps, we then plugged it into the Jobs To Be Done (JBD) Framework. JBD is focused on the "job" or task a user is trying to accomplish. We were able to turn our research into these statements:</p>
+                                    <p>To further distill the research down to actionable steps, we then plugged it into the Jobs To Be Done (JBD) Framework. JBD is focused on the "job" or task a user is trying to accomplish. We were able to turn our research into these statements:</p>
                                     <div>
                                         <div>
                                             <span className="circleDivider"></span>
@@ -203,7 +206,7 @@ class StudyOne extends React.Component {
                                         <p>*Teachers <span className="highlightedWord">need</span> to easily find and assign practice work tied explicitly to specific standards they are working on in class and the student’s reading level.</p>
                                         <p>Teachers <span className="highlightedWord">need</span> to be able to see student progress on assignments.</p>
                                         <p>Teachers  <span className="highlightedWord">need</span> proof and justification on where students are specifically struggling in reading comprehension, and methods to remedy those weaknesses. </p>
-                                        <p>*After all of our research, it became clear that the foundation of our next development would be creating graphic organizers, or "exercises," that students could do on our site. </p>
+                                        <p>*After all the research, it became clear that the foundation of our next development would be creating graphic organizers, or "exercises," that students could do on our site. </p>
                                     </div>
                                 </div>
                             </div> 
@@ -211,18 +214,18 @@ class StudyOne extends React.Component {
                                 <p className="workHeader">Scope</p>
                                 <div>
                                     <p className="subHeader">Features</p>
-                                    <p>We had a very long (for me this means over 30 minutes) meeting and discussed the various features we could build to help meet the needs of our users.</p>
+                                    <p>We had a very long (over 30 minutes 😀) meeting and discussed the various features we could build to help meet the needs of our users.</p>
                                     { featuresTableImg }
-                                    <p className="captionText">Some features from our iteration</p>
+                                    <p className="captionText webHide">Scroll over image to zoom in</p>
                                 </div>
                                <div>
                                    <p className="subHeader">Feature Planning</p>
-                                   <p>We had lots of features but needed to figure out what we could accomplish within the dev cycle. Everyone (product team) estimated the amount of days each feature/task should take. We then took the average sum from everyone's estimates and could forecast how many features we could complete.</p>
+                                   <p>We had many ideas for features and needed to figure out what we could accomplish within the dev cycle. Everyone (product team) estimated the amount of days each feature/task should take. We then took the average sum from everyone's estimates and could forecast how many features we could complete.</p>
                                    <img src={ estimates } alt=""/>
                                </div>
                                <div>
                                    <p className="subHeader">Task Management</p>
-                                   <p>We used Trello to manage our team's tasks. Each feature/task had its own card and would be assigned to the appropriate person. As progress was made, these cards would move through the various stages.</p>
+                                   <p>We used Trello to manage our team's tasks. Each feature/task had its own card and was assigned to the appropriate person. As we made progress, the cards were moved through the different stages.</p>
                                    <img src={ trello } alt="" className="noMargin" />
                                </div>
                             </div>
@@ -235,13 +238,14 @@ class StudyOne extends React.Component {
                                     <li>What was then needed on the page to support this?</li>
                                 </ol>
                                 <p className="noteText">
-                                    Integrating a user experience framework in our building stage was new to us and had not been done comprehensively within a project. I tested out a variety of formats in our structure phase to see how they worked for us.
+                                    Integrating a user experience framework throughout the entirety of a product's lifecycle was new to us. I tested out a variety of formats in our structure phase to see how they worked and what worked best.
                                 </p>
                                 <p className="subHeader">Teacher Experience</p>
                                 <div className="click-zoom">
                                     <div>
                                         <p className="secondaryHeader">Site Map and Flow</p>
-                                        <Magnifier src={ teacherSiteMap } />
+                                        { teacherSiteMapImg }
+                                        <p className="captionText mobileHide">Scroll over image to zoom in</p>
                                         <p className="secondaryHeader">Viewing and Editing Exercises</p>
                                         <p>This Scenario Mapping focused mostly on what a teacher could do at a given point and how that would be facilitated.</p>
                                         { teacherScenarioMapImg }
@@ -325,7 +329,6 @@ class StudyOne extends React.Component {
                                 <p className="workHeader">Hi-fi 1.0</p>
                                 <div>
                                     <p className="subHeader">Exercises - Teachers</p>
-                                    <p>Talk about the ARROWS...</p>
                                     <img src={ teacherExercisesTwo } alt=""/>
 
                                     <p className="subHeader">Exercises - Students</p>
@@ -343,9 +346,9 @@ class StudyOne extends React.Component {
                                     <div>
                                         <span className="circleDivider"></span>
                                         <p className="subText">
-                                            <span>Finding various activities. </span>While teachers enjoyed browsing, some had trouble finding the activities they wanted. We came up with several ideas of potential filters:
+                                            <span className="bold">Filtering </span> While teachers enjoyed browsing, some had trouble finding the activities they wanted. We came up with several ideas of potential filters:
                                             <ol>
-                                                <li>Filter activities by learning type (visual, audible, reading etc.)</li>
+                                                <li>Filter activities by learning type (visual, audible, reading, etc.)</li>
                                                 <li>Filter activities by prior reading vs. text provided in exercise</li>
                                                 <li>Filter activities by time estimate</li>
                                                 <li>Filter activities by traditional (mostly writing) vs. reward (more creative)</li>
@@ -355,15 +358,15 @@ class StudyOne extends React.Component {
                                     </div>
                                     <div>
                                         <span className="circleDivider"></span>
-                                        <p className="subText">In the assignment creation, the word "delete" was confusing as it seemed to imply that doing so would delete the activities (instead of merely deleting the assignment).</p>  
+                                        <p className="subText"><span className="bold">Wording</span> In the assignment creation, the word "delete" was confusing as it seemed to imply that doing so would delete the activities (instead of merely deleting the assignment).</p>  
                                     </div>
                                     <div>
                                         <span className="circleDivider"></span>
-                                        <p className="subText">To start, we only supported the ability to assign exercises to all of a teacher's students at once. There was already a lot of interest in being able to assign groups of students different exercises.</p>
+                                        <p className="subText"><span className="bold">Sub-group assignments</span> To start, we only supported the ability to assign exercises to all of a teacher's students at once. There was already a lot of interest in being able to assign groups of students different exercises.</p>
                                     </div>
                                     <div>
                                         <span className="circleDivider"></span>
-                                        <p className="subText noMargin">Teachers often have 20 or 30 students in their assignment progress table, and maybe only assign 2 exercises. This would create a pretty big discrepancy between the height of the assignments box and the height of the progress table-making it a bit of an awkward experience.</p>
+                                        <p className="subText noMargin"><span className="bold">Assignments display</span> Teachers often have 20 or 30 students in their assignment progress table, and maybe only assign 2 exercises. This would create a pretty big discrepancy between the height of the assignments box and the height of the progress table-making it a bit of an awkward experience.</p>
                                     </div>
                                 </div>
                             </div>
@@ -376,6 +379,7 @@ class StudyOne extends React.Component {
                                         The exercises-loading animation, buttons and thumbnail image on each exercise were all designed to orient our users to their experience on Pinterest.
                                         We also decided to simplify it and remove the "inactive" exercises section. Meaning, that outside of assignments, teachers would not be able to control the exercises students do (on their own).
                                     </p>
+                                    <p>Talk about "board" breakthrough for both code and design...show student newsfeed?................</p>
                                     { finalTeacherExercisesImg }
                                 </div>
                                 <div>
@@ -399,8 +403,28 @@ class StudyOne extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                            <div>Feedback...</div>
-                            <div>Exercises content talk goes here...Also talk about "board" breakthrough for both code and design...show student newsfeed?</div>
+                            <div className="workSection finalFeedback">
+                                <p className="workHeader">Feedback</p>
+                                <div>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText"><span className="bold">Browsing</span> Teachers generally enjoy the experience of browsing (i.e. we nailed the Pinterest effect).</p>
+                                </div>
+                                <div>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText"><span className="bold">Quantity</span> They love that the exercises are creative. They like the drawing and creative activities the most.</p>
+                                </div>
+                                <div>
+                                    <span className="circleDivider"></span>
+                                    <p className="subText"><span className="bold">Quality</span> They love how many exercises there are within grade levels.</p>
+                                </div>
+                            </div>
+                            <div className="workSection">
+                                <p className="workHeader">Exercise Content Creation</p>
+                                1. show some of the skillsets <br/>
+                                2. Talk about mapping standards to skillsets <br/>
+                                3. Show the list of activities <br/>
+                                4. Show an actual activity
+                            </div>
                             <Link className="regularLink nextStudyLink" to="/works/Studies/StudyTwo">Next Study</Link>
                         </div>
                     </div>

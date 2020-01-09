@@ -17,6 +17,7 @@
     "react-reveal": "^1.1.9-beta.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.1.2",
+    "react-tooltip": "^3.11.2",
     "react-webcam": "^3.1.1",
     "wow.js": "^1.2.2"
   },

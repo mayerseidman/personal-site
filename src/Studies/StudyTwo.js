@@ -59,7 +59,7 @@ class StudyTwo extends React.Component {
     render() {
         if(window.innerWidth <= 800 && window.innerHeight <= 820) {
             var classDojoTwoImg = <Magnifier src={ classDojoTwo }></Magnifier>
-            var siteMapImg = <Magnifier src={ flowStructure } className="noMargin"></Magnifier>
+            var siteMapImg = <Magnifier src={ flowStructure } className="lessMarginImg"></Magnifier>
             var lofiImage = <Magnifier src={ lofiImg } className="noMargin"></Magnifier>
         } else {
             var classDojoTwoImg = <img src={ classDojoTwo } alt=""/>
@@ -188,15 +188,15 @@ class StudyTwo extends React.Component {
                                             <p className="subHeader">How We Differed and Why</p>
                                             <div>
                                                 <span className="circleDividerSmall"></span>
-                                                <p className="subText">Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p>
+                                                <p className="subText"><span className="bold">Student Groupings </span>Class Dojo has the students of each class nested within that class. To get to a specific student you navigate first to the student's class and then the student. We wanted all of a teacher’s students (across different classes) accessible simultaneously. This way, teachers could perform actions for many students with one click.</p>
                                             </div>
                                             <div>
                                                 <span className="circleDividerSmall"></span>
-                                                <p className="subText">While Class Dojo has editing student information tucked away, we made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p>
+                                                <p className="subText"><span className="bold">Editing Student Information </span>While Class Dojo has editing student information tucked away, I made it so that clicking on a student card brings up their account information. This was a more intuitive and easier way to access the information.</p>
                                             </div>
                                             <div>
                                                 <span className="circleDividerSmall"></span>
-                                                <p className="subText noMargin">Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> We wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p>
+                                                <p className="subText noMargin"><span className="bold">Selecting Students </span>Selecting multiple students posed a problem since clicking on a student triggers an immediate response (in our case, the student information modal). Class Dojo solved this with a "select multiple" action on their toolbar, which then allows you to select multiple students. <br/> I wanted to keep it simple; select students by clicking on them. We added a checkbox on the right corner of each student's card so that the student can be selected without triggering the information modal.</p>
                                             </div>
                                         </div>    
                                     </div>
@@ -205,6 +205,7 @@ class StudyTwo extends React.Component {
                                     <p className="workHeader">Flow <span className="andText">and</span> Structure</p>
                                      <p>There were two levels in our structure. The surface level contains classes, students, and the adding classes and students modals. The second level contained the student and class information modals and the action modals triggered after selecting students.</p>
                                      { siteMapImg }
+                                     <p className="captionText webHide">Scroll over image to zoom in</p>
                                 </div> 
                                 <div className="lofiContainer workSection">
                                     <p className="workHeader">Lo-fi</p>

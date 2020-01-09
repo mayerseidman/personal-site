@@ -324,15 +324,16 @@ p {
 		    	}
 		    	.rightLinks {
 		    		float: right;
-		    		position: relative;
-		    		left: 6px;
+		    		/*position: relative;
+		    		left: 6px;*/
 		    	}
 		    	.homeLink {
 		    		/*float: left;*/
 		    		margin-left: 0px !important;
 		    	}
 		    	.homeLinkName {
-		    		margin-left: 31px;
+		    		/*margin-left: 31px;*/
+		    		margin-left: 0;
 		    	}
 		    }
 	    }

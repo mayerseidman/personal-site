@@ -146,7 +146,7 @@ class StudyThree extends React.Component {
                                     <p className="subHeader">Navigation</p>
                                     <p>
                                         In the second example, the accessories surround the avatar. Although intrigued, I felt it was too crammed and the lack of titles made it unclear what each accessory was. 
-                                        I wanted each category to have an icon and a title underneath it, so that the categories would be easily understood. Like the first example, we wanted two rows of icons. By shrinking the icons and trimming down the display we could comfortably fit the icons on two rows.
+                                        I wanted each category to have an icon and a title underneath it, so that the categories would be easily understood. Like the first example, we wanted two rows of icons. By shrinking the icons and trimming down the display I could comfortably fit the icons on two rows.
                                     </p>
                                     <img src={ lofiOne } alt=""/>
                                     <p className="subHeader">Accessories Layout</p>
@@ -163,14 +163,14 @@ class StudyThree extends React.Component {
                                     
                                     <ImageGallery items={ imagesThree } showFullscreenButton={ false } showPlayButton={ false }
                                         showThumbnails={ false } />
-                                    <br/><p>I preferred to place the description of the accessory (and the purchasing button) always above the two rows of accessories. To ensure it was clear which accessory was selected, we added a border around it once clicked.</p>
+                                    <br/><p>I preferred to place the description of the accessory (and the purchasing button) always above the two rows of accessories. To ensure it was clear which accessory was selected, I added a border around it once clicked.</p>
                                     <p className="subHeader">Color-Picker</p>
                                     <p>We used to have a category called colors, that would allow you to change the color of a variety of different owl parts. There were two issues with this:</p>
                                     <ol>
                                         <li>It was confusing to have a category that was a style and not a type of body part.</li>
                                         <li>If you wanted to do multiple things, for example, change the wing’s color and place something on the wing, you had to navigate to two separate places. This did not feel intuitive.</li>
                                     </ol>
-                                    <p>We consolidated everything related to say the wings within the wings tab. The color options for the wings, are included below the accessories. I preferred to use little color boxes over our previous color adjustment bar, as it is less distracting and more minimal.</p>
+                                    <p>I consolidated everything related to wings within the wings tab. The color options for the wings, are included below the accessories. I preferred to use little color boxes over our previous color adjustment bar, as it is less distracting and more minimal.</p>
                                     <img src={ lofiFive } className="noMargin" alt=""/>
                                 </div>
                             </div>
