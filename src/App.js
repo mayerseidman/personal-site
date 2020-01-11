@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
+import "typeface-muli";
+import "typeface-roboto";
+import "typeface-karla";
 
 import './App.scss';
 import LeftContainer from './LeftContainer';

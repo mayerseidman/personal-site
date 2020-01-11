@@ -16,8 +16,9 @@ import lofiTwo from '../images/owl-shop/lofi-two.png';
 import lofiThree from '../images/owl-shop/lofi-three.png';
 import lofiFour from '../images/owl-shop/lofi-four.png';
 
+import colorPickerImg from '../images/owl-shop/color-picker-one.png';
 import lofiFive from '../images/owl-shop/lofi-five.png';
-import finalVersion from '../images/owl-shop/final.png';
+import finalVersion from '../images/owl-shop/final-two.png';
 
 
 import galleryImg from '../images/owl-shop/gallery.png';
@@ -166,8 +167,9 @@ class StudyThree extends React.Component {
                                     <br/><p>I preferred to place the description of the accessory (and the purchasing button) always above the two rows of accessories. To ensure it was clear which accessory was selected, I added a border around it once clicked.</p>
                                     <p className="subHeader">Color-Picker</p>
                                     <p>We used to have a category called colors, that would allow you to change the color of a variety of different owl parts. There were two issues with this:</p>
+                                    <img src={ colorPickerImg } alt=""/>
                                     <ol>
-                                        <li>It was confusing to have a category that was a style and not a type of body part.</li>
+                                        <li>It was confusing to have one category that was a style and not a body part (like the rest).</li>
                                         <li>If you wanted to do multiple things, for example, change the wing’s color and place something on the wing, you had to navigate to two separate places. This did not feel intuitive.</li>
                                     </ol>
                                     <p>I consolidated everything related to wings within the wings tab. The color options for the wings, are included below the accessories. I preferred to use little color boxes over our previous color adjustment bar, as it is less distracting and more minimal.</p>

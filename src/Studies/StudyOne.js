@@ -53,6 +53,7 @@ import teacherExercisesFinal from '../images/wr-lite/teacher-exercises-final.png
 import teacherHomePageFinal from '../images/wr-lite/teacher-homepage-final.png';
 import insightsIndividualFinal from '../images/wr-lite/insights-individual-final.png';
 import insightsGroupFinal from '../images/wr-lite/insights-group-final.png';
+import studentNewsfeedImg from '../images/wr-lite/newsfeed.png';
 
 // import insightsGroupLofi from '../images/wr-lite/insights-group.png';
 
@@ -346,19 +347,19 @@ class StudyOne extends React.Component {
                                     <div>
                                         <span className="circleDivider"></span>
                                         <p className="subText">
-                                            <span className="bold">Filtering </span> While teachers enjoyed browsing, some had trouble finding the activities they wanted. We came up with several ideas of potential filters:
+                                            <span className="bold">Filtering </span> While teachers enjoyed browsing, some had trouble finding the exercises they wanted. We came up with several ideas of potential filters:
                                             <ol>
-                                                <li>Filter activities by learning type (visual, audible, reading, etc.)</li>
-                                                <li>Filter activities by prior reading vs. text provided in exercise</li>
-                                                <li>Filter activities by time estimate</li>
-                                                <li>Filter activities by traditional (mostly writing) vs. reward (more creative)</li>
-                                                <li>Filter activities by difficulty level</li>
+                                                <li>Filter exercises by learning type (visual, audible, reading, etc.)</li>
+                                                <li>Filter exercises by prior reading vs. text provided in exercise</li>
+                                                <li>Filter exercises by time estimate</li>
+                                                <li>Filter exercises by traditional (mostly writing) vs. reward (more creative)</li>
+                                                <li>Filter exercises by difficulty level</li>
                                             </ol>
                                         </p>
                                     </div>
                                     <div>
                                         <span className="circleDivider"></span>
-                                        <p className="subText"><span className="bold">Wording</span> In the assignment creation, the word "delete" was confusing as it seemed to imply that doing so would delete the activities (instead of merely deleting the assignment).</p>  
+                                        <p className="subText"><span className="bold">Wording</span> In the assignment creation, the word "delete" was confusing as it seemed to imply that doing so would delete the exercises (instead of merely deleting the assignment).</p>  
                                     </div>
                                     <div>
                                         <span className="circleDivider"></span>
@@ -379,8 +380,17 @@ class StudyOne extends React.Component {
                                         The exercises-loading animation, buttons and thumbnail image on each exercise were all designed to orient our users to their experience on Pinterest.
                                         We also decided to simplify it and remove the "inactive" exercises section. Meaning, that outside of assignments, teachers would not be able to control the exercises students do (on their own).
                                     </p>
-                                    <p>Talk about "board" breakthrough for both code and design...show student newsfeed?................</p>
                                     { finalTeacherExercisesImg }
+                                    <p className="subHeader">Reusability</p>
+                                    <p>
+                                        A really neat thing that came out of this was that we used the same board interface (for exercises) for students and teachers. 
+                                        This reusability saved us (both design and coding) time and also created a more seamless user experience in two ways: 
+                                        <ol>
+                                            <li>Teachers showing or helping students with exercises could jump right in and need not learn another interface.</li>
+                                            <li>When redesigning the student newsfeed, we used a very similar board layout; capitalizing on students' familiarity of the exercises board.</li>
+                                        </ol>
+                                        <img src={ studentNewsfeedImg } className="newsfeedImg" alt=""/>
+                                    </p>
                                 </div>
                                 <div>
                                     <p className="subHeader">Assignments</p>
@@ -411,7 +421,7 @@ class StudyOne extends React.Component {
                                 </div>
                                 <div>
                                     <span className="circleDivider"></span>
-                                    <p className="subText"><span className="bold">Quantity</span> They love that the exercises are creative. They like the drawing and creative activities the most.</p>
+                                    <p className="subText"><span className="bold">Quantity</span> They love that the exercises are creative. They like the drawing and creative exercises the most.</p>
                                 </div>
                                 <div>
                                     <span className="circleDivider"></span>
@@ -422,7 +432,7 @@ class StudyOne extends React.Component {
                                 <p className="workHeader">Exercise Content Creation</p>
                                 1. show some of the skillsets <br/>
                                 2. Talk about mapping standards to skillsets <br/>
-                                3. Show the list of activities <br/>
+                                3. Show the list of exercises <br/>
                                 4. Show an actual activity
                             </div>
                             <Link className="regularLink nextStudyLink" to="/works/Studies/StudyTwo">Next Study</Link>
