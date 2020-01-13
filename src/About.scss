@@ -1,6 +1,6 @@
 .aboutSection {
 	margin: auto;
-	width: 80%;
+	width: 85%;
 	.topContainer {
 		/*height: 160px;*/
 		margin-bottom: 30px;
@@ -15,7 +15,8 @@
 			position: relative;
 		}
 		.linksContainer {
-			display: inline-block;
+			/*display: inline-block;*/
+			float: left;
 			/*margin-right: 43%;*/
 			a {
 				margin-right: 15px;
@@ -29,6 +30,7 @@
 		}
 	}
 	.introContainer {
+		clear: both;
 		.tldr {
 			font-weight: 450;
 			color: black;
@@ -51,10 +53,12 @@
 	}
 	.topContainer {
 		.imageContainer {
-			display: inline-block;
+			/*display: inline-block;
 			height: 100px;
-			width: 0%;
+			width: 0%;*/
 			position: relative;
+			float: right;
+			/*margin-bottom: 25px;*/
 		}
 	}
 	.bold {
@@ -75,19 +79,19 @@
 
 @media only screen and (min-width: 1075px) and (max-width: 1300px) {
 	.imageContainer {
-		left: 20%;
+		/*left: 20%;*/
 	}
 }
 
 @media only screen and (min-width: 750px) and (max-width: 1075px) {
 	.imageContainer {
-		left: 3%;
+		/*left: 3%;*/
 	}	
 }
 
 @media only screen and (min-width: 1300px) {
 	.imageContainer {
-		left: 33%;
+		/*left: 33%;*/
 	}
 }
 
@@ -109,9 +113,9 @@
 			.img {
 				width: 150px;
 			}
-			/*.linksContainer {
-				margin-top: 25%;
-			}*/
+			.linksContainer {
+				transform: translateY(825%);
+			}
 		}
 		/*.textContainer {
 			margin-bottom: 55px;
@@ -140,12 +144,12 @@
 	    padding-right: 15px;*/
 	    .bottomContainer {
 			.chatButton {
-				width: 98%;
+				width: 100%;
 			    margin-bottom: 10px;
 			}
 	    }
 		.topContainer {
-			margin-bottom: 15px;
+			/*margin-bottom: 15px;*/
 			.img {
 				/*width: 100px;
 				left: 31%;*/
@@ -153,8 +157,9 @@
 			}
 			.linksContainer {
 				/*margin-bottom: 15px;*/
-				width: 65%;
-				margin-right: 10%;
+				/*width: 65%;
+				margin-right: 10%;*/
+				transform: translateY(425%);
 			}
 		}
 		.textContainer {

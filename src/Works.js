@@ -11,19 +11,19 @@ class Works extends React.Component {
                         <div className="worksCategory">
                             <p className="categoryTitle mobileHide">Case Studies</p>
                             <p className="categoryTitle webHide">Studies</p>
-                            <p className="categoryDescription mobileHide">Some deeper dives into my past design work</p>
+                            <p className="categoryDescription mobileHide" style={{ display: "none" }}>Some deeper dives into my past design work</p>
                         </div>
                     </div>
                     <div className="projectsTitleContainer">
                         <div className="worksCategory">
                             <p className="categoryTitle">Projects</p>
-                            <p className="categoryDescription mobileHide">Some fun projects I've worked on</p>
+                            <p className="categoryDescription mobileHide" style={{ display: "none" }}>Some fun projects I've worked on</p>
                         </div>  
                     </div>
                     <div className="articlesTitleContainer">
                         <div className="worksCategory">
                             <p className="categoryTitle">Articles</p>
-                            <p className="categoryDescription mobileHide">Some articles I've written</p>
+                            <p className="categoryDescription mobileHide" style={{ display: "none" }}>Some articles I've written</p>
                         </div>
                     </div>  
                 </div>

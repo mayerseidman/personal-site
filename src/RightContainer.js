@@ -61,7 +61,6 @@ class RightContainer extends React.Component {
 		    			<Route exact path="/about" component={ About } />
 		    			<Route exact path="/" component={ Home } />
 		    		</Switch>
-		    		<div class="push"></div>
 		    	</div>
 				<Navbar location={ path } closeStudy={ this.props.closeStudy } />
 		    </div>	
