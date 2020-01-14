@@ -1,6 +1,6 @@
 .aboutSection {
 	margin: auto;
-	width: 85%;
+	width: 87%;
 	.topContainer {
 		/*height: 160px;*/
 		margin-bottom: 30px;
@@ -58,7 +58,6 @@
 			width: 0%;*/
 			position: relative;
 			float: right;
-			/*margin-bottom: 25px;*/
 		}
 	}
 	.bold {
@@ -95,6 +94,10 @@
 	}
 }
 
+.skillsContainer, .journeyContainer, .hobbiesContainer {
+	clear: both;
+}
+
 /* WEB Media Query  */
 @media only screen and (min-width: 1075px) {
 	.aboutSection {
@@ -110,11 +113,15 @@
     		}
         }
 		.topContainer {
+			.imageContainer {
+				margin-bottom: 15px;
+			}
 			.img {
 				width: 150px;
+				height: 150px;
 			}
 			.linksContainer {
-				transform: translateY(825%);
+				transform: translateY(715%);
 			}
 		}
 		/*.textContainer {
@@ -149,6 +156,9 @@
 			}
 	    }
 		.topContainer {
+			.imageContainer {
+				margin-bottom: 5px;
+			}
 			/*margin-bottom: 15px;*/
 			.img {
 				/*width: 100px;
@@ -159,7 +169,7 @@
 				/*margin-bottom: 15px;*/
 				/*width: 65%;
 				margin-right: 10%;*/
-				transform: translateY(425%);
+				transform: translateY(370%);
 			}
 		}
 		.textContainer {

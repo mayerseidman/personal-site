@@ -135,7 +135,7 @@ class About extends React.Component {
                     </div>    
                 )
                 var pageContainer = (
-                    <div className="aboutSection">
+                    <div className="aboutSection fadeInBottom">
                         <div className="topContainer">
                             { linksContainer }
                             <div className="imageContainer">{ image }</div>

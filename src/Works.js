@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 class Works extends React.Component {
     render() {
         return (
-            <div className="section worksSection wow slideInLeft">
+            <div className="section worksSection wow fadeInBottom">
                 <div className="leftWorksContainer">
                     <div className="studiesTitleContainer">
                         <div className="worksCategory">

@@ -25,7 +25,7 @@ class Home extends React.Component {
 		}
 	   	
 	   	return (
-	   		<div className={ "section homeSection " + className }>
+	   		<div className={ "section homeSection fadeInBottom " + className }>
     		<div className="">
     			<p>Hi, I’m <span className="firstName">Mayer</span>.</p>
     			<p className="quoteContainer mobileHide"><span className="quote">"People can feel perfection."</span> - Walt Disney</p>

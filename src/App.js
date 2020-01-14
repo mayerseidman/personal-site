@@ -3,6 +3,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import "typeface-muli";
 import "typeface-roboto";
 import "typeface-karla";
+import "typeface-inconsolata";
+import "typeface-inter";
+import "typeface-martel";
 
 import './App.scss';
 import LeftContainer from './LeftContainer';

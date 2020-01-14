@@ -9,7 +9,7 @@
 	.workContainer {
 		/*padding:30px;*/ 
 		padding-top: 0;
-		width: 85%;
+		width: 87%;
 	    padding: 0;
 	    margin: auto;
 	    /*margin-left: 14%;*/
@@ -201,6 +201,9 @@
 	img { 
 		width: 100%;
 		margin-bottom: 20px; 
+	}
+	.lessMarginImg {
+		margin-bottom: 5px !important;
 	}
 	.newsfeedImg {
 		/*transform: scale(0.85);

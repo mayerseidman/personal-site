@@ -54,6 +54,11 @@ import teacherHomePageFinal from '../images/wr-lite/teacher-homepage-final.png';
 import insightsIndividualFinal from '../images/wr-lite/insights-individual-final.png';
 import insightsGroupFinal from '../images/wr-lite/insights-group-final.png';
 import studentNewsfeedImg from '../images/wr-lite/newsfeed.png';
+import skillsetsImg from '../images/wr-lite/skillsets.png';
+import mappingsImg from '../images/wr-lite/mappings.png';
+import exercisesListImg from '../images/wr-lite/exercises-list.png';
+import exerciseOneImg from '../images/wr-lite/exercise-one.png';
+import exerciseTwoImg from '../images/wr-lite/exercise-two.png';
 
 // import insightsGroupLofi from '../images/wr-lite/insights-group.png';
 
@@ -349,7 +354,7 @@ class StudyOne extends React.Component {
                                         <p className="subText">
                                             <span className="bold">Filtering </span> While teachers enjoyed browsing, some had trouble finding the exercises they wanted. We came up with several ideas of potential filters:
                                             <ol>
-                                                <li>Filter exercises by learning type (visual, audible, reading, etc.)</li>
+                                                <li>Filter exercises by learning type (visual, audible, reading, etc)</li>
                                                 <li>Filter exercises by prior reading vs. text provided in exercise</li>
                                                 <li>Filter exercises by time estimate</li>
                                                 <li>Filter exercises by traditional (mostly writing) vs. reward (more creative)</li>
@@ -430,10 +435,28 @@ class StudyOne extends React.Component {
                             </div>
                             <div className="workSection">
                                 <p className="workHeader">Exercise Content Creation</p>
-                                1. show some of the skillsets <br/>
-                                2. Talk about mapping standards to skillsets <br/>
-                                3. Show the list of exercises <br/>
-                                4. Show an actual activity
+                                <div>
+                                    <p>
+                                        With the help of 20 teachers we created 1,600 activities aligned with 14 skill sets (main ideas, inference, vocabulary, theme, etc) that are differentiated for different levels and learning styles, and can be applied to any text students read (fiction or non-fiction).
+                                    </p>
+                                    <p className="subHeader">Skill Sets</p>
+                                    <img src={ skillsetsImg } className="lessMarginImg" alt=""/>
+                                    <p className="captionText">A few of the skill sets</p>
+                                   <p>  
+                                        Skill sets are the academic categories of our exercises, and are based on state standards.
+                                        We knew that integrating our skillsets within the Common Core State Standards (CCSS) would be imperative. While many state standards essentially mimic the CCSS, we heard from teachers across several states that wanted us to map our exercises specifically to their state standards.
+                                    </p>
+                                    <img src={ mappingsImg } alt=""/>
+                               </div>
+                               <div>
+                                   <p>Documentation was highly important for the ultimate integration of exercises within the codebase.</p>
+                                   <img src={ exercisesListImg } alt=""/>
+                               </div>
+                               <div>
+                                    <p className="subHeader">Some Example Exercises</p>
+                                    <img src={ exerciseOneImg } alt=""/>
+                                    <img src={ exerciseTwoImg } alt=""/>
+                               </div>
                             </div>
                             <Link className="regularLink nextStudyLink" to="/works/Studies/StudyTwo">Next Study</Link>
                         </div>
