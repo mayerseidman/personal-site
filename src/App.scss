@@ -347,7 +347,9 @@ p {
 */				vertical-align: top;
 				/*padding-right: 50px;*/
 				.worksCategory {
-					margin-bottom: 30px;
+					position: relative;
+					bottom: 5px;
+					/*margin-bottom: 30px;*/
 					.categoryTitle {
 						color: #000;
 						margin-bottom: 5px;
@@ -368,10 +370,13 @@ p {
 		    }
 		    .projectsTitleContainer, .articlesTitleContainer, .projectsLinksContainer, .articlesLinksContainer {
 		    	height: 100px;
+		    }
+		    .projectsTitleContainer, .projectsLinksContainer, .articlesLinksContainer {
 		    	margin-top: 45px;
 		    }
 		    .articlesTitleContainer, .articlesLinksContainer {
-		    	margin-top: 5px;
+		    	/*margin-top: 5px;*/
+		    	margin-top: -15px;
 		    }
 		    .articlesLinksContainer a {
 		    	margin-bottom: 10px;
