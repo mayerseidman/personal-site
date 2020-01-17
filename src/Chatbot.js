@@ -519,7 +519,7 @@ class UserInput extends Component {
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Journey", "afterATX", optionOneText) }>{ optionOneText }</button>
             )
-            var optionTwoText = "Wtf is Talmudic Law?";
+            var optionTwoText = "Talmudic Law? What?";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Journey", "talmud2", optionTwoText) }>{ optionTwoText }</button>
             )
@@ -540,7 +540,7 @@ class UserInput extends Component {
                 </div>
             )
         } else if (subtopic == "start") {
-            var optionOneText = "Wtf is Talmudic Law?";
+            var optionOneText = "Talmudic Law? What?";
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 2, "Journey","talmud", optionOneText) } key={ Math.random() }>{ optionOneText }</button>
             )

@@ -34,24 +34,6 @@ p {
     animation-fill-mode: both;
 }
 
-.fadeInBottom { 
-	animation-name: fadeInBottom;
-	opacity: 1;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 1.2s;
-}
-
-@keyframes fadeInBottom {
-    from {
-        opacity: 0;
-        /*transform: translateY(0%);
-        -webkit-transform: translateY(0%);*/
-    }
-    to { opacity: 1 }
-}
-
-
 .portfolioContainer {
 	.fadeInLeft {
 	  animation-name: leftFadeInOut;
@@ -432,6 +414,22 @@ p {
 		display: none !important;
 	}
 	.portfolioContainer {
+		.fadeInBottom { 
+			animation-name: fadeInBottom;
+			opacity: 1;
+			animation-iteration-count: 1;
+			animation-timing-function: ease-in;
+			animation-duration: 1.5s;
+		}
+
+		@keyframes fadeInBottom {
+		    from {
+		        opacity: 0;
+		        /*transform: translateY(0%);
+		        -webkit-transform: translateY(0%);*/
+		    }
+		    to { opacity: 1 }
+		}
 		.leftContainer {
 		    position: fixed;
 		    top: 0;
@@ -614,10 +612,11 @@ p {
 	    	    	margin-top: 45px;
 	    	    }
     	    	.projectsTitleContainer, .projectsLinksContainer {
-					margin-top: 60px;
+					/*margin-top: 60px;*/
+					margin-top: 45px;
     	    	}
     	    	.articlesTitleContainer, .articlesLinksContainer {
-					margin-top: 25px;
+					margin-top: -10px;
     	    	}
 	        }
 		}

@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Magnifier from "react-magnifier";
 import Fade from 'react-reveal/Fade';
-import ScrollAnimation from 'react-animate-on-scroll';
+// import ScrollAnimation from 'react-animate-on-scroll';
 import ReactTooltip from 'react-tooltip'
 
 

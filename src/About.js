@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.scss';
 import personalImg from './linkedIn.jpg';
-import CircularProgress from '@material-ui/core/CircularProgress'
+// import CircularProgress from '@material-ui/core/CircularProgress'
 import Chatbot from "./Chatbot";
 import Webcam from "react-webcam";
 import WebcamCapture from './WebcamCapture';
