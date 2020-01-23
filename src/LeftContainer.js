@@ -12,7 +12,7 @@ class leftContainer extends React.Component {
 	}
 
 	getChangedText() {
-		var words = ["Human", "Illustrator", "Brother", "Dad-jokes", "Pescatarian", "Surfer", "Coder"];
+		var words = ["Human", "Doodler", "Brother", "Dad-jokes", "Pescatarian", "Surfer", "Coder"];
 	    i = (i + 1) % words.length;
 	    return words[i];
 	}
