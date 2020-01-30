@@ -74,12 +74,14 @@ p {
 			.circleDivider {
 /*			    background-color: #f9f9ee;
 */			    background-color: #fcfcf0;
-		    	height: 20px;
-		        width: 20px;
+		    	height: 15px;
+		        width: 15px;
 		        border-radius: 50%;
 		        display: inline-block;
-		        bottom: 5px;
+		        /*bottom: 5px;
+		        position: relative;*/
 		        position: relative;
+		        margin-bottom: 10px;
 			}
 			body {
 			  font-size: 62.5%;
@@ -445,14 +447,14 @@ p {
 		    		font-size: 40px;
 		    		font-weight: 600;
 		    		width: 90%;
-		    		    margin: auto;
-		    		    margin-bottom: 20px;
+		    		margin: auto;
+		    		margin-bottom: 5px;
 		    	}
 		    	.studyPreviewText {
 		    		width: 58%;
 	    		    margin: auto;
-	    		    text-align: left;
-	    		    margin-bottom: 10px;
+	    		    
+	    		    margin-bottom: 15px;
 	    		    font-weight: 600;
 		    	}
 		    	.studyRolesText {
@@ -673,12 +675,15 @@ p {
 					p {
 						font-weight: bold;
 					    font-size: 18px;
-					    text-align: left;
-					    margin-bottom: 55px;
+					    text-align: center;
+					    margin-bottom: 40px;
 					}
 					.circleDivider {
 					    position: relative;
-					    bottom: 25px;
+					    bottom: 20px;
+					    width: 20px;
+					    height: 20px;
+					    margin-bottom: 0;
 					}	
 				}
 				.name, .title { 

@@ -47,7 +47,7 @@ class Works extends React.Component {
                         </div>
                     </div>
                     <div className="projectsLinksContainer">
-                        <a className="regularLink" href="https://github.com/mayerseidman/Portfolio" target="_blank">Porftolio</a>
+                        <a className="regularLink" href="https://github.com/mayerseidman/Portfolio" target="_blank">Portfolio Code</a>
                     </div>
                     <div className="articlesLinksContainer">
                         <a className="regularLink" href="https://medium.com/design-ideas-thoughts/designing-multi-step-processes-bd432bad78dd" target="_blank">Designing Multi-Step Processes</a>

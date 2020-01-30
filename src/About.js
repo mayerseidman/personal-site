@@ -17,21 +17,17 @@ class About extends React.Component {
     }
 
     startChat() {
-        this.setState({ currentView: "bioPic" })
+        if (this.state.imageSrc) {
+            this.setState({ currentView: "chat" })
+        } else {
+            this.setState({ currentView: "bioPic" }) 
+        }
     }
 
     changeView(view) {
         this.setState({ currentView: view })
     }
     
-    // componentDidMount() {
-    //     setTimeout(
-    //         function() {
-    //          this.setState({ isLoading: false });
-    //         }.bind(this),
-    //        800
-    //     );
-    // }
     render() {
         // if (this.state.isLoading) {
         //     return (
@@ -62,7 +58,7 @@ class About extends React.Component {
             } else if (this.state.currentView == "chat") {
                 var pageContainer = (
                      <div className="topContainer">
-                        <Chatbot imageSrc={ this.state.imageSrc } />   
+                        <Chatbot imageSrc={ this.state.imageSrc } revertDisplay={ this.changeView.bind(this, "intro") } />   
                      </div>
                 )
             } else if (this.state.currentView == "hobbies") {
@@ -83,7 +79,7 @@ class About extends React.Component {
                             </p> 
                             <p>
                                 <span className="bold">📻 Music </span>
-                                I really enjoy the nuances and the details of mixing music. If interestd, check out <a className="regularLink" href="https://www.mixcloud.com/mayer-seidman/" target="_blank">my Mixcloud</a>.
+                                I really enjoy the nuances and the details of mixing music. Interested? Feel free to check out my <a className="regularLink" href="https://www.mixcloud.com/mayer-seidman/" target="_blank">Mixcloud</a>.
                                 <br/><span className="bold smBold">Favourite Band</span>: Outkast
                             </p>
                         </div>   
@@ -132,6 +128,7 @@ class About extends React.Component {
                         <a className={ this.state.currentView == "hobbies" ? "selected" : "" } onClick={ this.changeView.bind(this, "hobbies") }>Hobbies</a>
                         <a className={ this.state.currentView == "skills" ? "selected" : "" } onClick={ this.changeView.bind(this, "skills") }>Skills</a>
                         <a className={ this.state.currentView == "journey" ? "selected" : "" } onClick={ this.changeView.bind(this, "journey") }>Journey</a>
+                        <a className={ this.state.currentView == "chat" ? "selected" : "" } onClick={ this.startChat.bind(this) }>Chat</a>
                     </div>    
                 )
                 var pageContainer = (

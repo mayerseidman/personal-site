@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import './Chatbot.scss';
 import personalImg from './linkedIn.jpg';
+import arrowImg from './images/arrow.png'
 // import $ from 'jquery';
 // import img from './components/images/linkedin-profile.jpg';
 
@@ -244,6 +245,7 @@ export default class Chatbot extends Component {
 
         return (
             <div id="app-container" className="chatbotContainer">
+                <img src={ arrowImg } className="arrowImg" onClick={ this.props.revertDisplay } />
                 <div className="convo-container">
                     <BotBubble message={this.state.botGreeting} key="bot-00" />
                     {this.showMessages()}
