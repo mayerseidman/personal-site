@@ -20,13 +20,11 @@ class Navbar extends React.Component {
         } 
         else {
             var className = this.state.activeView === route? "selected" : "";
-            console.log(className, route)
             return className;
         }
     }
     render() {
         var path = this.props.location.pathname;
-        console.log(path)
        if (path.includes("Studies")) {
             var homeLink = (
                 <span>

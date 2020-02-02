@@ -14,7 +14,6 @@ import StudyThree from './Studies/StudyThree';
 
 class RightContainer extends React.Component {
 	startPreview() {
-		console.log("PREVIEW")
 	}
 	componentDidMount() {
 	  window.addEventListener('resize', this.resize.bind(this))
@@ -31,7 +30,6 @@ class RightContainer extends React.Component {
 
     	// Seudo Check for mobile or web...
 		if(window.innerWidth <= 1075 && window.innerHeight <= 820) {
-			console.log("SWITCH IT UP")
 			var className = " preview";
 			if (path.includes("works/Studies/StudyOne") || path.includes("works/Studies/StudyTwo") || path.includes("works/Studies/StudyThree")) {
 				var container = "noContainer";
@@ -39,7 +37,6 @@ class RightContainer extends React.Component {
 				var container = "outerContainer";
 			}
 		} else {
-			console.log("NNOOPE")
 	    	if (path.includes("Studies")) {
 				var className = "expand";		
 	    	}

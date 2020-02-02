@@ -18,7 +18,6 @@ class Home extends React.Component {
     	var path = location.pathname;
 
     	if(window.innerWidth <= 800 && window.innerHeight <= 820) {
-			console.log("SWITCH IT UP")
 			if (path == "/") {
 				var className = " fadeInLeft";
 			}

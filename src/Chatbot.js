@@ -43,12 +43,9 @@ export default class Chatbot extends Component {
         //         seconds: currentSeconds,
         //     }
         // })
-
-        // console.log('minutes =>', minutes, 'seconds =>', seconds)
     }
 
     checkAgain() {
-        console.log("HICK")
     }
 
     returnToBeginning() {
@@ -295,7 +292,6 @@ class BotBubble extends Component {
 
 class UserInput extends Component {
     optionSelected(value, topic, subtopic="", text="") {
-        console.log(topic)
         if (topic == "Language") {
             this.props.updateUserMessages(value, "Languages", "Languages", text);
         } else {
@@ -352,7 +348,6 @@ class UserInput extends Component {
         } else if (subtopic == "favourite2" || subtopic == "currently-reading2") {
             var options = this.renderHobbiesOptions();
         } else {
-            console.log("READING")
             var optionOneText = "What are you reading now?"
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Reading", "currently-reading", optionOneText) }>{ optionOneText }</button>
