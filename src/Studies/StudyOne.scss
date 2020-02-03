@@ -5,6 +5,7 @@
 	.bold {
 		font-weight: 450;
 		color: #000;
+		color: #363D45;
 	}
 	.workContainer {
 		/*padding:30px;*/ 
@@ -17,6 +18,7 @@
 			overflow:auto;
 			.headlineText {
 				color: #B51A17;
+				color: #DE4D40;
 				font-size: 1.2em;
 			}
 			.workSection {
@@ -30,6 +32,7 @@
 					font-weight: 500;
 					margin-bottom: 15px;
 					color: #000;
+					color: #363D45;
 				}
 				.andText {
 					font-size: 0.8em;
@@ -130,7 +133,8 @@
 					margin-bottom: 10px;
 					font-size: 1.2em;
 				    color: black;
-				    font-weight: 500
+				    color: #363D45;
+				    font-weight: 550;
 				}
 				.subText {
 					display: inline-block;
@@ -141,10 +145,12 @@
 					margin-bottom: 10px;
 					font-size: 1em;
 				    color: black;
-				    font-weight: 500
+				    color: #363D45;
+				    font-weight: 550;
 				}
 				.circleDivider {
-			    	background: #D0021B;
+/*			    	background: #D0021B;
+*/			    	background: #DE4D40;
 				    border-radius: 50%;
 				    display: inline-block;
 					width: 15px;
@@ -154,6 +160,7 @@
 				}
 				.circleDividerSmall {
 					background-color: black;
+					background-color: #363D45;
 					width: 8px;
 					height: 8px;
 					position: relative;
@@ -196,6 +203,7 @@
 	}
 	.highlightedWord {
 		color: black;
+		color: #363D45;
 		font-weight: 500;
 	}
 	img { 
@@ -252,7 +260,8 @@
 			position: relative;
 		    bottom: 15px;
 		    text-align: center;
-		    color: #D0021B;
+		   /* color: #D0021B;*/
+		    color: #DE4D40;
 		    margin-bottom: 7px;
 		    a {
 		    	cursor: pointer;

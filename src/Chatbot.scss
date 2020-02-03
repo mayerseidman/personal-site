@@ -186,6 +186,7 @@
         div.Message-Content {
           background-color: lightgray;
           color: black;
+          color: #363D45;
         }
       }
     }
@@ -359,12 +360,14 @@ $defaultFadeAmount: 75px;
         button {
             width: 200px;
             height: 35px;
-            background: #D0021B;
+            /*background: #D0021B;*/
+            background: #408BDE;
             display: inline-block;
             color: #fff;
             font-size: 16px;
             border-radius: 5px;
             border: none;
+            cursor: pointer;
         }
         .video {
             display: block;
@@ -375,6 +378,7 @@ $defaultFadeAmount: 75px;
           position: relative;
           right: 5%;
           color: #000;
+          color: #363D45;
         }
     }
 }
@@ -432,6 +436,7 @@ $defaultFadeAmount: 75px;
       position: relative;
       top: 15px;
       color: #000 !important;
+      color: #363D45 !important;
     }
 }
 
@@ -542,7 +547,8 @@ $defaultFadeAmount: 75px;
         cursor: pointer;
         margin-right: 5px;
         width: 100px;
-        background-color: #D0021B;
+/*        background-color: #D0021B;
+*/        background-color: #DE4D40;
         color: #fff;
         height: 55px;
         vertical-align: top;

@@ -5,7 +5,7 @@
 		/*height: 160px;*/
 		/*margin-bottom: 30px;*/
 		.img {
-			border: 4px solid #D0021B;
+			/*border: 4px solid #D0021B;*/
 			/*margin-left: 45%;*/
 			position: relative;
 			/*left: 91%;*/
@@ -34,12 +34,14 @@
 		.tldr {
 			font-weight: 450;
 			color: black;
+			color: #363D45;
 		}
 	}
 	.bottomContainer {
 		.chatButton {
 		    height: 35px;
-		    background: #D0021B;
+		    /*background: #D0021B;*/
+		    background: #408BDE;
 		    color: white;
 		    font-size: 1em;
 		    cursor: pointer;
@@ -62,6 +64,7 @@
 	}
 	.bold {
 		color: #000;
+		color: #363D45;
 		font-weight: 450;
 	}
 	.smBold {
