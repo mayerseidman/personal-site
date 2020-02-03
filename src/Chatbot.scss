@@ -377,8 +377,9 @@ $defaultFadeAmount: 75px;
         .defaultLink {
           position: relative;
           right: 5%;
-          color: #000;
-          color: #363D45;
+         /* color: #000;
+          color: #363D45;*/
+          color: #DE4D40;
         }
     }
 }
@@ -435,8 +436,9 @@ $defaultFadeAmount: 75px;
       margin-left: 0px;
       position: relative;
       top: 15px;
-      color: #000 !important;
-      color: #363D45 !important;
+     /* color: #000 !important;
+      color: #363D45 !important;*/
+      coloor: #DE4D40 !important;
     }
 }
 
@@ -548,8 +550,9 @@ $defaultFadeAmount: 75px;
         margin-right: 5px;
         width: 100px;
 /*        background-color: #D0021B;
-*/        background-color: #DE4D40;
-        color: #fff;
+*/        /*background-color: #DE4D40;*/
+          background-color: #408BDE;
+        color: #fcfcfc;
         height: 55px;
         vertical-align: top;
         /*height: 70px;*/
