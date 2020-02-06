@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
 import './index.scss';
+import resume from './design-resume.pdf';
 
 class Navbar extends React.Component {
     constructor(props) {
@@ -48,7 +49,7 @@ class Navbar extends React.Component {
                     <div className="rightLinks">
                         <li className="navItem"><Link to="/works" onClick={ this.changeView.bind(this, "/works") } className={ this.setClass("/works") }>Works</Link></li>
                         <li className="navItem"><Link to="/about" onClick={ this.changeView.bind(this, "/about") } className={ this.setClass("/about") }>About</Link></li>
-                        <li className="navItem"><a href="#">Resume</a></li>
+                        <li className="navItem"><a href={ resume } target="_blank">Resume</a></li>
                     </div>
                 </ul>
             </div>

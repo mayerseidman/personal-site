@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.c90c9465.chunk.css",
-    "main.js": "/static/js/main.d88c76da.chunk.js",
-    "main.js.map": "/static/js/main.d88c76da.chunk.js.map",
+    "main.css": "/static/css/main.661998a2.chunk.css",
+    "main.js": "/static/js/main.7c0fe8df.chunk.js",
+    "main.js.map": "/static/js/main.7c0fe8df.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.107bb8ca.js",
     "runtime-main.js.map": "/static/js/runtime-main.107bb8ca.js.map",
     "static/css/2.366fd4d3.chunk.css": "/static/css/2.366fd4d3.chunk.css",
     "static/js/2.185dcf05.chunk.js": "/static/js/2.185dcf05.chunk.js",
     "static/js/2.185dcf05.chunk.js.map": "/static/js/2.185dcf05.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.706a77cad6ef75a91aef08d28c5d1a2d.js": "/precache-manifest.706a77cad6ef75a91aef08d28c5d1a2d.js",
+    "precache-manifest.9f10e16c14931a19d77c47670465c389.js": "/precache-manifest.9f10e16c14931a19d77c47670465c389.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.366fd4d3.chunk.css.map": "/static/css/2.366fd4d3.chunk.css.map",
-    "static/css/main.c90c9465.chunk.css.map": "/static/css/main.c90c9465.chunk.css.map",
+    "static/css/main.661998a2.chunk.css.map": "/static/css/main.661998a2.chunk.css.map",
     "static/js/2.185dcf05.chunk.js.LICENSE": "/static/js/2.185dcf05.chunk.js.LICENSE",
     "static/media/inter.css": "/static/media/Inter.var.feca908d.woff2",
     "static/media/add-class.png": "/static/media/add-class.c83b017f.png",
@@ -42,8 +42,8 @@
     "static/media/game-two.png": "/static/media/game-two.778a5a12.png",
     "static/media/index.css": "/static/media/roboto-latin-900italic.ebf6d164.woff2",
     "static/media/insights-group-final.png": "/static/media/insights-group-final.71494cd2.png",
-    "static/media/insights-group-lofi.png": "/static/media/insights-group-lofi.2163c436.png",
-    "static/media/insights-individual-annotated.png": "/static/media/insights-individual-annotated.ae70904f.png",
+    "static/media/insights-group-lofi.png": "/static/media/insights-group-lofi.330f3ec8.png",
+    "static/media/insights-individual-annotated.png": "/static/media/insights-individual-annotated.892dcdc4.png",
     "static/media/insights-individual-final.png": "/static/media/insights-individual-final.7710be98.png",
     "static/media/insights-individual-two.png": "/static/media/insights-individual-two.e9c94360.png",
     "static/media/linkedIn.jpg": "/static/media/linkedIn.a89f37bf.jpg",
@@ -52,7 +52,7 @@
     "static/media/lofi-one.png": "/static/media/lofi-one.727dd347.png",
     "static/media/lofi-three.png": "/static/media/lofi-three.2f8ff5d5.png",
     "static/media/lofi-two.png": "/static/media/lofi-two.b3ce3140.png",
-    "static/media/lofi.png": "/static/media/lofi.551a363b.png",
+    "static/media/lofi.png": "/static/media/lofi.3f7a9f27.png",
     "static/media/log-reading.png": "/static/media/log-reading.de04f747.png",
     "static/media/mappings.png": "/static/media/mappings.013dd448.png",
     "static/media/multiple-choice.png": "/static/media/multiple-choice.b19b5790.png",
@@ -85,7 +85,7 @@
     "static/js/runtime-main.107bb8ca.js",
     "static/css/2.366fd4d3.chunk.css",
     "static/js/2.185dcf05.chunk.js",
-    "static/css/main.c90c9465.chunk.css",
-    "static/js/main.d88c76da.chunk.js"
+    "static/css/main.661998a2.chunk.css",
+    "static/js/main.7c0fe8df.chunk.js"
   ]
 }

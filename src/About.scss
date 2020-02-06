@@ -47,6 +47,9 @@
 		    cursor: pointer;
 		    border-radius: 5px;
 		    border: none;
+		    &:hover {
+				cursor: pointer;
+		    }
 		}
 		p {
 			font-size: 0.8em;
