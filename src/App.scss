@@ -85,7 +85,7 @@ p {
 		        /*bottom: 5px;
 		        position: relative;*/
 		        position: relative;
-		        margin-bottom: 10px;
+		        /*margin-bottom: 10px;*/
 			}
 			body {
 			  font-size: 62.5%;
@@ -269,7 +269,7 @@ p {
 		}
 		.nextStudyLink {
 			float: right;
-			/*margin-right: 10px;*/
+			margin-right: 10px;
 		}
 	    .firstName {
 	    	font-size: 32px;
@@ -451,13 +451,15 @@ p {
 		    	padding-top: 250px;
 		    	.name { 
 		    		font-size: 48px;
+		    		margin-bottom: 10px;
 		    	}
 		    	.title {
 		    		font-size: 40px;
 		    		font-weight: 500;
 		    		width: 90%;
 		    		margin: auto;
-		    		margin-bottom: 5px;
+		    		/*margin-bottom: 5px;*/
+		    		margin-top: 5px;
 		    	}
 		    	.studyPreviewText {
 		    		width: 58%;
@@ -510,6 +512,7 @@ p {
 					.quote {
 						color: #000;
 						color: #363D45;
+						font-weight: 550;
 					}
 				}
 				a {

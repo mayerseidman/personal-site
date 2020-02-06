@@ -150,7 +150,8 @@
 				}
 				.circleDivider {
 /*			    	background: #D0021B;
-*/			    	background: #DE4D40;
+*/			    	/*background: #DE4D40;*/
+					background-color: #408BDE;
 				    border-radius: 50%;
 				    display: inline-block;
 					width: 15px;
@@ -178,6 +179,7 @@
 		&.studyThreePage {
 			.goalsContainer {
 				margin-bottom: 10px !important;
+				margin-top: 50px !important;
 			}
 			.biggerSubText {
 				width: 90% !important;
@@ -198,7 +200,8 @@
 	}
 	.feedbackContainerOne {
 		.circleDivider {
-			bottom: 5px !important;
+			/*bottom: 5px !important;*/
+			top: 5px;
 		}
 	}
 	.highlightedWord {
@@ -238,7 +241,7 @@
 			}
 			&.studyTwoPage {
 				.goalsContainer {
-					margin-top: 60px !important;
+					margin-top: 90px !important;
 				}
 			}
 			.workSection {

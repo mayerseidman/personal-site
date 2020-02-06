@@ -14,7 +14,7 @@ import multipleChoice from '../images/wr-lite/multiple-choice.png';
 import comprehension from '../images/wr-lite/comprehension.png';
 import questionImg from '../images/wr-lite/question.png';
 
-import jobToBeDone from '../images/wr-lite/job-to-be-done-border.png';
+import jobToBeDone from '../images/wr-lite/job-to-be-done-blue.png';
 
 import featuresTable from '../images/wr-lite/features-table.png';
 import estimates from '../images/wr-lite/estimates.png';
