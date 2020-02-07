@@ -107,7 +107,7 @@ class About extends React.Component {
                         <div className="innerTextContainer">
                             <p>
                                 <span className="bold">🛣️ Journey </span>
-                                I got my bachelors in Talmudic Law (I'm totally down to chat with you about this or feel free to <a href="https://lmgtfy.com/?q=what+is+talmudic+law">google it</a>) and then an MBA.
+                                I got my bachelors in Talmudic Law (I'm totally down to chat with you about this or feel free to <a href="https://lmgtfy.com/?q=what+is+talmudic+law" target="_blank">google it</a>) and then an MBA.
                                 Wanting to gain tech skills, I attended a coding bootcamp in Austin, Texas. I left with solid programming skills and an excitement for technology.
                             </p>
                             <p>
