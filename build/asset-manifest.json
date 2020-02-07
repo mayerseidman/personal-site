@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.661998a2.chunk.css",
-    "main.js": "/static/js/main.7c0fe8df.chunk.js",
-    "main.js.map": "/static/js/main.7c0fe8df.chunk.js.map",
+    "main.css": "/static/css/main.3f667059.chunk.css",
+    "main.js": "/static/js/main.0e32eacf.chunk.js",
+    "main.js.map": "/static/js/main.0e32eacf.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.107bb8ca.js",
     "runtime-main.js.map": "/static/js/runtime-main.107bb8ca.js.map",
     "static/css/2.366fd4d3.chunk.css": "/static/css/2.366fd4d3.chunk.css",
-    "static/js/2.185dcf05.chunk.js": "/static/js/2.185dcf05.chunk.js",
-    "static/js/2.185dcf05.chunk.js.map": "/static/js/2.185dcf05.chunk.js.map",
+    "static/js/2.571372e1.chunk.js": "/static/js/2.571372e1.chunk.js",
+    "static/js/2.571372e1.chunk.js.map": "/static/js/2.571372e1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9f10e16c14931a19d77c47670465c389.js": "/precache-manifest.9f10e16c14931a19d77c47670465c389.js",
+    "precache-manifest.555f148e565a2db664b7cbef8bb6f717.js": "/precache-manifest.555f148e565a2db664b7cbef8bb6f717.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.366fd4d3.chunk.css.map": "/static/css/2.366fd4d3.chunk.css.map",
-    "static/css/main.661998a2.chunk.css.map": "/static/css/main.661998a2.chunk.css.map",
-    "static/js/2.185dcf05.chunk.js.LICENSE": "/static/js/2.185dcf05.chunk.js.LICENSE",
+    "static/css/main.3f667059.chunk.css.map": "/static/css/main.3f667059.chunk.css.map",
+    "static/js/2.571372e1.chunk.js.LICENSE": "/static/js/2.571372e1.chunk.js.LICENSE",
     "static/media/inter.css": "/static/media/Inter.var.feca908d.woff2",
     "static/media/add-class.png": "/static/media/add-class.c83b017f.png",
     "static/media/add-students.png": "/static/media/add-students.68f5d1d6.png",
@@ -22,6 +22,7 @@
     "static/media/class-dojo-two.png": "/static/media/class-dojo-two.66b5fb4b.png",
     "static/media/color-picker-one.png": "/static/media/color-picker-one.e931cf1c.png",
     "static/media/comprehension.png": "/static/media/comprehension.74f16d62.png",
+    "static/media/design-resume.pdf": "/static/media/design-resume.73445470.pdf",
     "static/media/diagnostic-group.png": "/static/media/diagnostic-group.0b13be20.png",
     "static/media/diagnostic-individuals.png": "/static/media/diagnostic-individuals.ab161f02.png",
     "static/media/edit-class.png": "/static/media/edit-class.b07dd489.png",
@@ -84,8 +85,8 @@
   "entrypoints": [
     "static/js/runtime-main.107bb8ca.js",
     "static/css/2.366fd4d3.chunk.css",
-    "static/js/2.185dcf05.chunk.js",
-    "static/css/main.661998a2.chunk.css",
-    "static/js/main.7c0fe8df.chunk.js"
+    "static/js/2.571372e1.chunk.js",
+    "static/css/main.3f667059.chunk.css",
+    "static/js/main.0e32eacf.chunk.js"
   ]
 }
