@@ -7,9 +7,9 @@ import "typeface-inconsolata";
 import "typeface-inter";
 import "typeface-martel";
 
-import './App.scss';
-import LeftContainer from './LeftContainer';
-import RightContainer from './RightContainer';
+import './assets/sass/App.scss';
+import LeftContainer from './components/LeftContainer';
+import RightContainer from './components/RightContainer';
 
 class App extends Component {
 	constructor(props) {
