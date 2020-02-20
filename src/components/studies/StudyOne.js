@@ -6,8 +6,8 @@ import Fade from 'react-reveal/Fade';
 import ReactTooltip from 'react-tooltip'
 
 
-import './StudyOne.scss';
-import './StudyThree.scss';
+import '../../assets/sass/study_one.scss';
+import '../../assets/sass/study_three.scss';
 
 import ImageGallery from 'react-image-gallery';
 import multipleChoice from '../../assets/images/wr-lite/multiple-choice.png';

@@ -7,7 +7,7 @@ import "typeface-inconsolata";
 import "typeface-inter";
 import "typeface-martel";
 
-import './assets/sass/App.scss';
+import './assets/sass/app.scss';
 import LeftContainer from './components/LeftContainer';
 import RightContainer from './components/RightContainer';
 

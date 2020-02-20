@@ -1,11 +1,11 @@
 
 import React from 'react'
-import '../assets/sass/App.scss';
+import '../assets/sass/app.scss';
 import { withRouter } from "react-router";
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-import About from './About';
+import About from './about/About';
 import Works from './Works';
 import StudyOne from './studies/StudyOne';
 import StudyTwo from './studies/StudyTwo';

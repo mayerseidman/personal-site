@@ -1,11 +1,11 @@
 import React from 'react'
 // import './leftContainer.scss';
-import '../assets/sass/App.scss';
+import '../assets/sass/app.scss';
 import { withRouter } from "react-router";
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
-import About from './About';
+import About from './about/About';
 import Home from './Home';
 import Works from './Works';
 import StudyOne from './studies/StudyOne';

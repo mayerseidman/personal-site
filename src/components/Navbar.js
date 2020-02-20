@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
 import '../assets/sass/index.scss';
-import resume from '../design-resume.pdf';
+import resume from '../assets/design-resume.pdf';
 
 class Navbar extends React.Component {
     constructor(props) {
