@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import '../../assets/sass/chatbot.scss';
+import '../../assets/sass/about/chatbot.scss';
 import personalImg from '../../assets/images/misc/linkedIn.jpg';
 import arrowImg from '../../assets/images/misc/arrow.png'
 

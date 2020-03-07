@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/sass/app.scss';
+import '../../assets/sass/app.scss';
 import { withRouter } from "react-router";
 
 // Is there a way to access like this -- this.interval - dont use state?

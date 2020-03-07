@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 // import ScrollAnimation from 'react-animate-on-scroll';
 
-import '../../assets/sass/study_one.scss';
+import '../../assets/sass/studies/study_one.scss';
 import ImageGallery from 'react-image-gallery';
 import Fade from 'react-reveal/Fade';
 import Magnifier from "react-magnifier";

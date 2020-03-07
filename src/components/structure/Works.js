@@ -1,5 +1,5 @@
 import React from 'react'
-import StudyOne from './studies/StudyOne';
+import StudyOne from '../studies/StudyOne';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 class Works extends React.Component {

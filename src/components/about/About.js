@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../assets/sass/about.scss';
+import '../../assets/sass/about/about.scss';
 import personalImg from '../../assets/images/misc/linkedIn.jpg';
 import Chatbot from "./Chatbot";
 import Webcam from "react-webcam";

@@ -8,8 +8,8 @@ import "typeface-inter";
 import "typeface-martel";
 
 import './assets/sass/app.scss';
-import LeftContainer from './components/LeftContainer';
-import RightContainer from './components/RightContainer';
+import LeftContainer from './components/structure/LeftContainer';
+import RightContainer from './components/structure/RightContainer';
 
 class App extends Component {
 	constructor(props) {
