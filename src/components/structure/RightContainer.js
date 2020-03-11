@@ -3,7 +3,7 @@ import React from 'react'
 import '../../assets/sass/app.scss';
 import { withRouter } from "react-router";
 import Navbar from './Navbar';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import About from '../about/About';
 import Home from './Home';
@@ -25,7 +25,7 @@ class RightContainer extends React.Component {
 		this.forceUpdate()
 	}
     render() {
-    	let { match, location } = this.props;
+    	let { location } = this.props;
     	var path = location.pathname;
 
     	// Seudo Check for mobile or web...
@@ -43,9 +43,9 @@ class RightContainer extends React.Component {
 	    	var container = "outerContainer";
 	   	}
 
-	   	if (path == "/") {
+	   	if (path === "/") {
 	   		var className = " fadeInRight";
-	   	} else if (path == "ab") {}
+	   	} else if (path === "ab") {}
 
     	return (
 		    <div className={ "rightContainer " + className }>

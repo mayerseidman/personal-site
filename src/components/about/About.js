@@ -2,7 +2,6 @@ import React from 'react'
 import '../../assets/sass/about/about.scss';
 import personalImg from '../../assets/images/misc/linkedIn.jpg';
 import Chatbot from "./Chatbot";
-import Webcam from "react-webcam";
 import WebcamCapture from './WebcamCapture';
 
 class About extends React.Component {
@@ -35,7 +34,7 @@ class About extends React.Component {
         //         </div>
         //     )
         // } else {}
-            if (this.state.currentView == "intro") {
+            if (this.state.currentView === "intro") {
                 var pageContent = (
                     <div className="introContainer">
                         <p>
@@ -48,20 +47,19 @@ class About extends React.Component {
                         </div>
                     </div>
                 )
-            } else if (this.state.currentView == "bioPic") {
+            } else if (this.state.currentView === "bioPic") {
                 var pageContainer = (
                     <div className="chatSection">
                         <WebcamCapture setImage={ this.setImage.bind(this) } />    
                     </div>
                 )
-            } else if (this.state.currentView == "chat") {
+            } else if (this.state.currentView === "chat") {
                 var pageContainer = (
                      <div className="topContainer">
                         <Chatbot imageSrc={ this.state.imageSrc } revertDisplay={ this.changeView.bind(this, "intro") } />   
                      </div>
                 )
-            } else if (this.state.currentView == "hobbies") {
-                var className = "selected";
+            } else if (this.state.currentView === "hobbies") {
                 var pageContent = (
                     <div className="textContainer hobbiesContainer">
                         <div className="innerTextContainer">
@@ -78,13 +76,13 @@ class About extends React.Component {
                             </p> 
                             <p>
                                 <span className="bold">📻 Music </span>
-                                I really enjoy the nuances and the details of mixing music. Interested? Feel free to check out my <a className="regularLink" href="https://www.mixcloud.com/mayer-seidman/" target="_blank">Mixcloud</a>.
+                                I really enjoy the nuances and the details of mixing music. Interested? Feel free to check out my <a className="regularLink" href="https://www.mixcloud.com/mayer-seidman/" target="_blank" rel="noopener noreferrer">Mixcloud</a>.
                                 <br/><span className="bold smBold">Favourite Band</span>: Outkast
                             </p>
                         </div>   
                     </div>
                 )
-            } else if (this.state.currentView == "skills") {
+            } else if (this.state.currentView === "skills") {
                 var pageContent = (
                     <div className="textContainer skillsContainer">
                         <div className="innerTextContainer">
@@ -100,13 +98,13 @@ class About extends React.Component {
                         </div>   
                     </div>
                 )
-            } else if (this.state.currentView == "journey") {
+            } else if (this.state.currentView === "journey") {
                 var pageContent = (
                     <div className="textContainer journeyContainer">
                         <div className="innerTextContainer">
                             <p>
                                 <span className="bold">🛣️ Journey </span>
-                                I got my bachelors in Talmudic Law (I'm totally down to chat with you about this or feel free to <a href="https://lmgtfy.com/?q=what+is+talmudic+law" target="_blank">google it</a>) and then an MBA.
+                                I got my bachelors in Talmudic Law (I'm totally down to chat with you about this or feel free to <a href="https://lmgtfy.com/?q=what+is+talmudic+law" target="_blank" rel="noopener noreferrer">google it</a>) and then an MBA.
                                 Wanting to gain tech skills, I attended a coding bootcamp in Austin, Texas. I left with solid programming skills and an excitement for technology.
                             </p>
                             <p>
@@ -120,14 +118,14 @@ class About extends React.Component {
                     </div>
                 )
             }
-            if (this.state.currentView == "hobbies" || this.state.currentView == "skills" || this.state.currentView == "journey" || this.state.currentView == "intro") {
+            if (this.state.currentView === "hobbies" || this.state.currentView === "skills" || this.state.currentView === "journey" || this.state.currentView === "intro") {
                 var image = <img className="img" src={ personalImg } alt="profile"/>
                 var linksContainer = (
                     <div className="linksContainer">
-                        <a className={ this.state.currentView == "hobbies" ? "selected" : "" } onClick={ this.changeView.bind(this, "hobbies") }>Hobbies</a>
-                        <a className={ this.state.currentView == "skills" ? "selected" : "" } onClick={ this.changeView.bind(this, "skills") }>Skills</a>
-                        <a className={ this.state.currentView == "journey" ? "selected" : "" } onClick={ this.changeView.bind(this, "journey") }>Journey</a>
-                        <a className={ this.state.currentView == "chat" ? "selected" : "" } onClick={ this.startChat.bind(this) }>Chat</a>
+                        <a className={ this.state.currentView === "hobbies" ? "selected" : "" } onClick={ this.changeView.bind(this, "hobbies") }>Hobbies</a>
+                        <a className={ this.state.currentView === "skills" ? "selected" : "" } onClick={ this.changeView.bind(this, "skills") }>Skills</a>
+                        <a className={ this.state.currentView === "journey" ? "selected" : "" } onClick={ this.changeView.bind(this, "journey") }>Journey</a>
+                        <a className={ this.state.currentView === "chat" ? "selected" : "" } onClick={ this.startChat.bind(this) }>Chat</a>
                     </div>    
                 )
                 var pageContainer = (
