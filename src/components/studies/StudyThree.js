@@ -13,11 +13,10 @@ import lofiOne from '../../assets/images/owl-shop/lofi-one.png';
 import lofiTwo from '../../assets/images/owl-shop/lofi-two.png';
 import lofiThree from '../../assets/images/owl-shop/lofi-three.png';
 import lofiFour from '../../assets/images/owl-shop/lofi-four.png';
-
-import colorPickerImg from '../../assets/images/owl-shop/color-picker-one.png';
 import lofiFive from '../../assets/images/owl-shop/lofi-five.png';
-import finalVersion from '../../assets/images/owl-shop/final-two.png';
 
+import colorPickerImg from '../../assets/images/owl-shop/color-picker.png';
+import finalVersion from '../../assets/images/owl-shop/final.png';
 import galleryImg from '../../assets/images/owl-shop/gallery.png';
 
 class StudyThree extends React.Component {

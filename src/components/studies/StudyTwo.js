@@ -12,7 +12,7 @@ import Magnifier from "react-magnifier";
 import oldOne from '../../assets/images/student-roster/old-one.png';
 import oldTwo from '../../assets/images/student-roster/old-two.png';
 
-import flowStructure from '../../assets/images/student-roster/flow-and-structure-2.png';
+import flowStructure from '../../assets/images/student-roster/flow-and-structure.png';
 import lofiImg from '../../assets/images/student-roster/lofi.png';
 import classDojoOne from '../../assets/images/student-roster/class-dojo-one.png';
 import classDojoTwo from '../../assets/images/student-roster/class-dojo-two.png';
@@ -20,9 +20,11 @@ import classDojoTwo from '../../assets/images/student-roster/class-dojo-two.png'
 import fullView from '../../assets/images/student-roster/full-view.png';
 import addClass from '../../assets/images/student-roster/add-class.png';
 import editClass from '../../assets/images/student-roster/edit-class.png';
+
 import addStudents from '../../assets/images/student-roster/add-students.png';
 import editStudent from '../../assets/images/student-roster/edit-student.png';
 import fullViewSelected from '../../assets/images/student-roster/full-view-selected.png';
+
 import logReading from '../../assets/images/student-roster/log-reading.png';
 import sendCoins from '../../assets/images/student-roster/send-coins.png';
 import sendNote from '../../assets/images/student-roster/send-note.png';

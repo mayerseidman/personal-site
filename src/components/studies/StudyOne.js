@@ -10,12 +10,13 @@ import '../../assets/sass/studies/study_one.scss';
 import '../../assets/sass/studies/study_three.scss';
 
 import ImageGallery from 'react-image-gallery';
+
+// Images
 import multipleChoice from '../../assets/images/wr-lite/multiple-choice.png';
 import comprehension from '../../assets/images/wr-lite/comprehension.png';
 import questionImg from '../../assets/images/wr-lite/question.png';
 
-import jobToBeDone from '../../assets/images/wr-lite/job-to-be-done-blue.png';
-
+import jobToBeDone from '../../assets/images/wr-lite/job-to-be-done.png';
 import featuresTable from '../../assets/images/wr-lite/features-table.png';
 import estimates from '../../assets/images/wr-lite/estimates.png';
 import trello from '../../assets/images/wr-lite/trello.png';
@@ -27,7 +28,7 @@ import teacherAssignmentsSpec from '../../assets/images/wr-lite/teacher-assignme
 import teacherAssignmentsSpecTwo from '../../assets/images/wr-lite/teacher-assignments-spec-two.png';
 
 
-import studentSiteMap from '../../assets/images/wr-lite/student-site-map-two.png';
+import studentSiteMap from '../../assets/images/wr-lite/student-site-map.png';
 import studentSM from '../../assets/images/wr-lite/student-exercises-sm.png';
 import studentGAS from '../../assets/images/wr-lite/student-exercises-gas.png';
 import studentGASTwo from '../../assets/images/wr-lite/student-exercises-gas-two.png';
@@ -36,17 +37,17 @@ import studentAssignmentsSpec from '../../assets/images/wr-lite/student-assignme
 import diagnosticIndivImg from '../../assets/images/wr-lite/diagnostic-individuals.png';
 import diagnosticGroupImg from '../../assets/images/wr-lite/diagnostic-group.png';
 
-import exercisesSkillsetsOne from '../../assets/images/wr-lite/exercises-skillsets-one.png';
-import exercisesDisplayOne from '../../assets/images/wr-lite/exercises-display-one.png';
+import exercisesSkillsetsOne from '../../assets/images/wr-lite/exercises-skillsets.png';
+import exercisesDisplayOne from '../../assets/images/wr-lite/exercises-display.png';
 import teacherAssignmentsTable from '../../assets/images/wr-lite/assignments-table.png';
 import insightsIndividualLofi from '../../assets/images/wr-lite/insights-individual-annotated.png';
 import insightsGroupLofi from '../../assets/images/wr-lite/insights-group-lofi.png';
 
-import teacherExercisesTwo from '../../assets/images/wr-lite/teacher-exercises-two.png';
-import studentExercisesTwo from '../../assets/images/wr-lite/student-exercises-two.png';
+import teacherExercisesTwo from '../../assets/images/wr-lite/teacher-exercises.png';
+import studentExercisesTwo from '../../assets/images/wr-lite/student-exercises.png';
 
-import teacherHomePageTwo from '../../assets/images/wr-lite/teacher-homepage-two.png';
-import insightsIndividualTwo from '../../assets/images/wr-lite/insights-individual-two.png';
+import teacherHomePageTwo from '../../assets/images/wr-lite/teacher-homepage.png';
+import insightsIndividualTwo from '../../assets/images/wr-lite/insights-individual.png';
 
 import teacherExercisesGif from '../../assets/images/wr-lite/teacher-exercises.gif';
 import teacherExercisesFinal from '../../assets/images/wr-lite/teacher-exercises-final.png';
