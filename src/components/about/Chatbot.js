@@ -80,9 +80,7 @@ export default class Chatbot extends Component {
         // Create a new array from current bot messages
         var updatedBotMessagesArr = this.state.botMessages;
 
-        if (text) {
-            text = text;
-        } else {
+        if (!text) {
             text = topic;
         }
         this.setState({
@@ -96,65 +94,65 @@ export default class Chatbot extends Component {
         setTimeout(function(){
             var topic = this.state.topic;
             var subtopic = this.state.subtopic;
-            if (topic == "Intro") {
+            if (topic === "Intro") {
                 var botResponse = this.state.botGreeting;
-            } else if (topic == "Hobbies") {
+            } else if (topic === "Hobbies") {
                 var botResponse = "Ok, kool. What specifically would you like to know more about?";
-            } else if (topic == "Reading") {
-                if (subtopic == "favourite") {
+            } else if (topic === "Reading") {
+                if (subtopic === "favourite") {
                     var botResponse = "Yes! My favourite book is Great Expectations by Charles Dickens. I won't spoil it for you :) .";
-                } else if (subtopic == "favourite2") {
+                } else if (subtopic === "favourite2") {
                     var botResponse = "Yes! My favourite book is Great Expectations by Charles Dickens. I won't spoil it for you :) . \n What else would you like to know about me?";
-                } else if (subtopic == "currently-reading") {
+                } else if (subtopic === "currently-reading") {
                     var botResponse = "I am currently reading The Death and Life of Great American Cities by Jane Jacobs. Its about urban and city design.";
-                } else if (subtopic == "currently-reading2") {
+                } else if (subtopic === "currently-reading2") {
                     var botResponse = "I am currently reading The Death and Life of Great American Cities by Jane Jacobs. Its about urban and city design. \n What else would you like to know about me?";
                 } else {
                     var botResponse = "I generally like reading non-fiction. When I read fiction I stick to the classics.";
                 }
-            } else if (topic == "Languages") {
-                if (subtopic == "languages") {
+            } else if (topic === "Languages") {
+                if (subtopic === "languages") {
                     var botResponse = "“In order of fluency, I speak: English \n Hebrew \n German \n Spanish/French";
-                } else if (subtopic == "hebrew") {
+                } else if (subtopic === "hebrew") {
                     var botResponse = "I grew up learning basic Hebrew in school! My name is actually a hebrew name as well (it means 'to illuminate')."
-                } else if (subtopic == "mandarin") {
+                } else if (subtopic === "mandarin") {
                     var botResponse = "Hmm, no. I am not particularly interested in it.";
                 } else {
                     var botResponse = "I really enjoy learning languages. It is always a challenge and helps me connect culturally with others (especially while traveling) too!";
                 }
-            } else if (topic == "Music") {
-                if (subtopic == "mixing" || subtopic == "mixing2") {
+            } else if (topic === "Music") {
+                if (subtopic === "mixing" || subtopic === "mixing2") {
                     var botResponse = "Yeah I really having fun with it and creating something unique. All kinds of genres."
                     // var str = "Free Web Building Tutorials!";
                     // var result = str.link("https://www.w3schools.com");
                     // document.getElementById("demo").textContent = result;
                     this.setState({ showSoundcloudLinks: true })
-                } else if (subtopic == "band" || subtopic == "band2") {
+                } else if (subtopic === "band" || subtopic === "band2") {
                     var botResponse = "Definitely Outkast."
                     this.setState({ showSoundcloudLinks: false })
                 } else {
                     var botResponse = "I am often grooving to something or having fun mixing some tunes."   
                 }
-            } else if (topic == "Skills") {
-                if (subtopic == "design" || subtopic == "design2") {
+            } else if (topic === "Skills") {
+                if (subtopic === "design" || subtopic === "design2") {
                     var botResponse = "I have been involved in almost every aspect of design. I have done UX Research, UX Strategy, Lo-fi and Hi-fi Mockups, Copy Writing, User Testing, Design (internal) Critiques, and Email Marketing.";
-                } else if (subtopic == "programming" || subtopic == "programming2") {
+                } else if (subtopic === "programming" || subtopic === "programming2") {
                     var botResponse = "On the front end, I have experience coding in Javascript (mostly REACT) and CSS. On the back end, I have experience in Ruby and Swift.";
-                } else if (subtopic == "other") {
+                } else if (subtopic === "other") {
                     var botResponse = "Yes! I have a lot of experience working in small teams where communication and interaction across departments is essential. I have also often done the role of design education from within our team. I have given design talks and breakdowns to non-technical colleagues-helping them understand from a design perspective the product decisions we made.";
                 } else {
                     var botResponse = "I am a UI/UX Designer and have coding experience as well (code quite often)."   
                 }
-            } else if (topic == "Journey") {
-                if (subtopic == "start") {
+            } else if (topic === "Journey") {
+                if (subtopic === "start") {
                     var botResponse = "I spent most of my childhood in Pittsburgh. I like school. A lot. I got my bachelors degree in Talmudic Law and then an MBA.";
-                } else if (subtopic == "talmud" || subtopic == "talmud2") {
+                } else if (subtopic === "talmud" || subtopic === "talmud2") {
                     var botResponse = "The Talmud is comprehensive written version of the Jewish oral law and the subsequent commentaries on it (stemming back to the 2nd century).";
-                } else if (subtopic == "tech" || subtopic == "tech2") {
+                } else if (subtopic === "tech" || subtopic === "tech2") {
                     var botResponse = "I wanted to gain some tech skills, so I decided to attend a coding bootcamp in Austin, Texas. I left with solid programming skills and a deep excitement for technology.";
-                } else if (subtopic == "afterATX") {
+                } else if (subtopic === "afterATX") {
                     var botResponse = "I got a job as the first technical employee at a small startup in San Diego, where I was fortunate to be exposed to all aspects of a company, including design. I fell in love with design and ultimately became the design lead."
-                } else if (subtopic == "currentLocation") {
+                } else if (subtopic === "currentLocation") {
                     var botResponse = "No, I started working remotely a few years ago. It enabled me to travel the world (literally) and to then settle down in beautiful Vancouver, Canada."
                 } else {
                     var botResponse = "I am currently a UI/UX design lead at an Ed-Tech company.";   
@@ -205,7 +203,7 @@ export default class Chatbot extends Component {
                 )
             }
 
-            if (this.state.subtopic == "mixing") {
+            if (this.state.subtopic === "mixing") {
                 var botBubble = (
                     <div>
                         <BotBubble message={botResponse} key={'b'+index} />
@@ -236,7 +234,7 @@ export default class Chatbot extends Component {
 
         return (
             <div id="app-container" className="chatbotContainer">
-                <img src={ arrowImg } className="arrowImg" onClick={ this.props.revertDisplay } />
+                <img src={ arrowImg } className="arrowImg" onClick={ this.props.revertDisplay } alt="arrow" />
                 <div className="convo-container">
                     <BotBubble message={this.state.botGreeting} key="bot-00" />
                     {this.showMessages()}
@@ -286,7 +284,7 @@ class BotBubble extends Component {
 
 class UserInput extends Component {
     optionSelected(value, topic, subtopic="", text="") {
-        if (topic == "Language") {
+        if (topic === "Language") {
             this.props.updateUserMessages(value, "Languages", "Languages", text);
         } else {
             this.props.updateUserMessages(value, topic, subtopic, text);
@@ -329,17 +327,17 @@ class UserInput extends Component {
     }
     renderReadingOptions() {
         var subtopic = this.props.subtopic;
-        if (subtopic == "currently-reading") {
+        if (subtopic === "currently-reading") {
             var optionOneText = "Have a favourite book?";
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 2, "Reading","favourite2", optionOneText) } key={ Math.random() }>{ optionOneText }</button>
             )
-        } else if (subtopic == "favourite") {
+        } else if (subtopic === "favourite") {
             var optionOneText = "What are you reading now?";
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 2, "Reading","currently-reading2", optionOneText) } key={ Math.random() }>{ optionOneText }</button>
             )       
-        } else if (subtopic == "favourite2" || subtopic == "currently-reading2") {
+        } else if (subtopic === "favourite2" || subtopic === "currently-reading2") {
             var options = this.renderHobbiesOptions();
         } else {
             var optionOneText = "What are you reading now?"
@@ -362,12 +360,12 @@ class UserInput extends Component {
 
     renderLanguagesOptions() {
         var subtopic = this.props.subtopic;
-        if (subtopic == "languages") {
+        if (subtopic === "languages") {
             var optionOneText = "Hebrew? That’s an exotic one!";
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 2, "Languages","hebrew", optionOneText) } key={ Math.random() }>{ optionOneText }</button>
             )
-        } else if (subtopic == "hebrew") {
+        } else if (subtopic === "hebrew") {
             var options = this.renderHobbiesOptions();
         } else {
             var optionOneText = "What languages do you speak?"

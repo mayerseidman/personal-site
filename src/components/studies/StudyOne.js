@@ -1,15 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import Magnifier from "react-magnifier";
-import Fade from 'react-reveal/Fade';
 // import ScrollAnimation from 'react-animate-on-scroll';
 import ReactTooltip from 'react-tooltip'
 
 
 import '../../assets/sass/studies/study_one.scss';
 import '../../assets/sass/studies/study_three.scss';
-
-import ImageGallery from 'react-image-gallery';
 
 // Images
 import multipleChoice from '../../assets/images/wr-lite/multiple-choice.png';
@@ -50,7 +47,6 @@ import teacherHomePageTwo from '../../assets/images/wr-lite/teacher-homepage.png
 import insightsIndividualTwo from '../../assets/images/wr-lite/insights-individual.png';
 
 import teacherExercisesGif from '../../assets/images/wr-lite/teacher-exercises.gif';
-import teacherExercisesFinal from '../../assets/images/wr-lite/teacher-exercises-final.png';
 import teacherHomePageFinal from '../../assets/images/wr-lite/teacher-homepage-final.png';
 import insightsIndividualFinal from '../../assets/images/wr-lite/insights-individual-final.png';
 import insightsGroupFinal from '../../assets/images/wr-lite/insights-group-final.png';
@@ -71,31 +67,31 @@ class StudyOne extends React.Component {
         super(props);
         this.state = {};
     }
-    componentDidMount() {
-        this.refs.container.addEventListener('scroll', this.handleScroll.bind(this));
-    }
-    componentWillUnmount() {
-        this.refs.container.removeEventListener('scroll', this.handleScroll.bind(this));
-    }
-    handleScroll(event) {
-        let scrollTop = event.srcElement.body.scrollTop,
-            itemTranslate = Math.min(0, scrollTop/3 - 60);
-        let yOffset = window.pageYOffset;
-        // if yOffset is > the div on the right's position then call this.props... and send upwards what the stage is into app.js
-        // and then pass that stage into leftContainer via state in app.js...
+    // componentDidMount() {
+    //     this.refs.container.addEventListener('scroll', this.handleScroll.bind(this));
+    // }
+    // componentWillUnmount() {
+    //     this.refs.container.removeEventListener('scroll', this.handleScroll.bind(this));
+    // }
+    // handleScroll(event) {
+    //     let scrollTop = event.srcElement.body.scrollTop,
+    //         itemTranslate = Math.min(0, scrollTop/3 - 60);
+    //     let yOffset = window.pageYOffset;
+    //     // if yOffset is > the div on the right's position then call this.props... and send upwards what the stage is into app.js
+    //     // and then pass that stage into leftContainer via state in app.js...
 
 
-        this.setState({
-          transform: itemTranslate
-        });
-    }
+    //     this.setState({
+    //       transform: itemTranslate
+    //     });
+    // }
     paneDidMount(node) {
         if (node) {
           node.addEventListener('scroll', () => console.log('scroll!'));
         }
       };
     render() {
-        if (this.props.currentView == "preview") {
+        if (this.props.currentView === "preview") {
             var startStudyLink = (
                 <button onClick={ this.props.startStudy }>Start the Study</button>
             )
@@ -111,7 +107,7 @@ class StudyOne extends React.Component {
             var lofiInsightsGroupImg = <Magnifier className="insightsGroupLofiImg noMargin" src={ insightsGroupLofi }></Magnifier>
             var finalTeacherExercisesImg = <Magnifier src={ teacherExercisesGif }></Magnifier>
         } else {
-            var featuresTableImg = <img className="" src={ featuresTable }/>
+            var featuresTableImg = <img className="" src={ featuresTable } alt="features-table" />
             var teacherSiteMapImg = <Magnifier src={ teacherSiteMap } className="lessMarginImg" />
             var teacherScenarioMapImg = <img src={ teacherSM } alt=""/>
             var teacherGASImg = <img src={ teacherGAS } alt=""/>
@@ -221,7 +217,7 @@ class StudyOne extends React.Component {
                                 <p className="workHeader">Scope</p>
                                 <div>
                                     <p className="subHeader">Features</p>
-                                    <p>We had a very long (over 30 minutes 😀) meeting and discussed the various features we could build to help meet the needs of our users.</p>
+                                    <p>We had a very long (over 30 minutes <span role="img" aria-label="smiley-face">😀</span>) meeting and discussed the various features we could build to help meet the needs of our users.</p>
                                     { featuresTableImg }
                                     <p className="captionText webHide">Scroll over image to zoom in</p>
                                 </div>

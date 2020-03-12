@@ -1,8 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import ImageGallery from 'react-image-gallery'
-import Fade from 'react-reveal/Fade';
-
 // Images
 import oldOne from '../../assets/images/owl-shop/old-one.png';
 import oldTwo from '../../assets/images/owl-shop/old-two.png';
@@ -24,24 +21,24 @@ class StudyThree extends React.Component {
         super(props);
         this.state = {};
     }
-    componentDidMount() {
-        this.refs.container.addEventListener('scroll', this.handleScroll.bind(this));
-    }
-    componentWillUnmount() {
-        this.refs.container.removeEventListener('scroll', this.handleScroll.bind(this));
-    }
-    handleScroll(event) {
-        let scrollTop = event.srcElement.body.scrollTop,
-            itemTranslate = Math.min(0, scrollTop/3 - 60);
-        let yOffset = window.pageYOffset;
-        // if yOffset is > the div on the right's position then call this.props... and send upwards what the stage is into app.js
-        // and then pass that stage into leftContainer via state in app.js...
+    // componentDidMount() {
+    //     this.refs.container.addEventListener('scroll', this.handleScroll.bind(this));
+    // }
+    // componentWillUnmount() {
+    //     this.refs.container.removeEventListener('scroll', this.handleScroll.bind(this));
+    // }
+    // handleScroll(event) {
+    //     let scrollTop = event.srcElement.body.scrollTop,
+    //         itemTranslate = Math.min(0, scrollTop/3 - 60);
+    //     let yOffset = window.pageYOffset;
+    //     // if yOffset is > the div on the right's position then call this.props... and send upwards what the stage is into app.js
+    //     // and then pass that stage into leftContainer via state in app.js...
 
 
-        this.setState({
-          transform: itemTranslate
-        });
-    }
+    //     this.setState({
+    //       transform: itemTranslate
+    //     });
+    // }
     paneDidMount(node) {
         if (node) {
           node.addEventListener('scroll', () => console.log('scroll!'));
@@ -72,7 +69,7 @@ class StudyThree extends React.Component {
                 original: lofiFour
             },
         ]
-        if (this.props.currentView == "preview") {
+        if (this.props.currentView === "preview") {
             var startStudyLink = (
                 <button onClick={ this.props.startStudy }>Start the Study</button>
             )

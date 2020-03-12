@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Webcam from "react-webcam";
 import defaultUser from '../../assets/images/misc/default-user.png';
 

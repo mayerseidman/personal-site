@@ -14,7 +14,7 @@ class Navbar extends React.Component {
         this.props.closeStudy()
     }
     setClass(route) {
-        let { match, location } = this.props;
+        let { location } = this.props;
         var path = location.pathname;
         if (path.includes("Studies")) {
             return "";
@@ -49,7 +49,7 @@ class Navbar extends React.Component {
                     <div className="rightLinks">
                         <li className="navItem"><Link to="/works" onClick={ this.changeView.bind(this, "/works") } className={ this.setClass("/works") }>Works</Link></li>
                         <li className="navItem"><Link to="/about" onClick={ this.changeView.bind(this, "/about") } className={ this.setClass("/about") }>About</Link></li>
-                        <li className="navItem"><a href={ resume } target="_blank">Resume</a></li>
+                        <li className="navItem"><a href={ resume } target="_blank" rel="noopener noreferrer">Resume</a></li>
                     </div>
                 </ul>
             </div>

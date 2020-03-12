@@ -4,7 +4,7 @@ import { withRouter } from "react-router";
 
 // Is there a way to access like this -- this.interval - dont use state?
 
-class leftContainer extends React.Component {
+class LeftContainer extends React.Component {
 	constructor(props) {
 	    super(props);
 	    this.state = { wordValue: "UI UX Designer", currentCount: 8, minimized: false };
@@ -25,9 +25,9 @@ class leftContainer extends React.Component {
 		var intervalIdScrambler = setInterval(this.changeText.bind(this), 1000);
 		this.setState({ intervalIdTimer: intervalIdTimer, intervalIdScrambler: intervalIdScrambler });
 
-		let { match, location, history } = this.props;
+		let { location } = this.props;
 		var path = location.pathname;
-		if (path == "/works/one") {
+		if (path === "/works/one") {
 			this.setState({ minimized: true })
 		}
 	}
@@ -48,16 +48,16 @@ class leftContainer extends React.Component {
 		}
 	}
     render() {
-    	if (this.state.currentCount == 0) {
+    	if (this.state.currentCount === 0) {
     		var title = "UI UX Designer";
     	} else {
     		var title = this.state.wordValue
     	}
-    	let { match, location, history } = this.props;
+    	let { location } = this.props;
     	var path = location.pathname;
     	if (path.includes("StudyOne")) {
     		var title = "Reading Comprehension Tool";
-    		if (this.props.currentView == "preview") {
+    		if (this.props.currentView === "preview") {
     			var classNameOne = "minimize"
     			var previewTopClassName = "previewTop"
     			var infoContainer = (
@@ -69,7 +69,7 @@ class leftContainer extends React.Component {
     			        <p className="studyRolesText">Research, UI/UX, Visual, User Feedback</p>
     				</div>
     			)	
-    		} else if (this.props.currentView == "startStudy") {
+    		} else if (this.props.currentView === "startStudy") {
     			var classNameOne = "exterminate"
     			var infoContainer = (
     				<div className="infoContainer">
@@ -81,7 +81,7 @@ class leftContainer extends React.Component {
     		}
     	} else if (path.includes("StudyTwo")) {
     		var title = "Student Roster Design";
-			if (this.props.currentView == "preview") {
+			if (this.props.currentView === "preview") {
 				var classNameOne = "minimize"
 				var previewTopClassName = "previewTop"
 				var infoContainer = (
@@ -93,7 +93,7 @@ class leftContainer extends React.Component {
 				        <p className="studyRolesText">Research, UI/UX, Visual</p>
 					</div>
 				)	
-			} else if (this.props.currentView == "startStudy") {
+			} else if (this.props.currentView === "startStudy") {
 				var classNameOne = "exterminate"
 				var infoContainer = (
 					<div className="infoContainer">
@@ -104,7 +104,7 @@ class leftContainer extends React.Component {
 				)
 			}
     	} else if (path.includes("StudyThree")) {
-			if (this.props.currentView == "preview") {
+			if (this.props.currentView === "preview") {
 				var classNameOne = "minimize"
 				var previewTopClassName = "previewTop"
 				var infoContainer = (
@@ -116,7 +116,7 @@ class leftContainer extends React.Component {
 				        <p className="studyRolesText">Research, UI/UX, Visual</p>
 					</div>
 				)	
-			} else if (this.props.currentView == "startStudy") {
+			} else if (this.props.currentView === "startStudy") {
 				var classNameOne = "exterminate"
 				var infoContainer = (
 					<div className="infoContainer">
@@ -127,7 +127,7 @@ class leftContainer extends React.Component {
 				)
 			}
     	} else {
-    		if (path == "/") {
+    		if (path === "/") {
     			var className = " fadeInLeft"
     		}
     		var infoContainer = (
@@ -148,4 +148,4 @@ class leftContainer extends React.Component {
 
 var i = 0;
 
-export default withRouter(leftContainer)
+export default withRouter(LeftContainer)
