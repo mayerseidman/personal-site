@@ -1,6 +1,5 @@
 import React from 'react'
-import StudyOne from '../studies/StudyOne';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Route, Link } from "react-router-dom";
 
 class Works extends React.Component {
     render() {
@@ -50,9 +49,9 @@ class Works extends React.Component {
                         <a className="regularLink" href="https://github.com/mayerseidman/Portfolio" target="_blank">Portfolio Code</a>
                     </div>
                     <div className="articlesLinksContainer">
-                        <a className="regularLink" href="https://medium.com/design-ideas-thoughts/designing-multi-step-processes-bd432bad78dd" target="_blank">Designing Multi-Step Processes</a>
-                        <a className="regularLink" href="https://medium.com/design-ideas-thoughts/designing-error-pages-8d82e16e3472" target="_blank">How to Design Better Error Pages</a>
-                        <a className="regularLink" href="https://medium.com/design-ideas-thoughts" target="_blank">UI UX Design Publication</a>
+                        <a className="regularLink" href="https://medium.com/design-ideas-thoughts/designing-multi-step-processes-bd432bad78dd" target="_blank" rel="noopener noreferrer">Designing Multi-Step Processes</a>
+                        <a className="regularLink" href="https://medium.com/design-ideas-thoughts/designing-error-pages-8d82e16e3472" target="_blank" rel="noopener noreferrer">How to Design Better Error Pages</a>
+                        <a className="regularLink" href="https://medium.com/design-ideas-thoughts" target="_blank" rel="noopener noreferrer">UI UX Design Publication</a>
                     </div>
                 </div>
                 { /* workId && <StudyOne workId={workId} /> */ }

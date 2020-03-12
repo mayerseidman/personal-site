@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import '../../assets/sass/about/chatbot.scss';
 import personalImg from '../../assets/images/misc/linkedIn.jpg';
 import arrowImg from '../../assets/images/misc/arrow.png'
@@ -385,7 +384,7 @@ class UserInput extends Component {
     }
     renderMusicOptions() {
         var subtopic = this.props.subtopic;
-        if (subtopic == "mixing") {
+        if (subtopic === "mixing") {
             var optionOneText = "Have a favourite band?";
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 2, "Music","band2", optionOneText) } key={ Math.random() }>{ optionOneText }</button>
@@ -393,7 +392,7 @@ class UserInput extends Component {
             var options = (
                 <div>{ optionOne }</div>
             )
-        } else if (subtopic == "band") {
+        } else if (subtopic === "band") {
             var optionTwoText = "Mixing, like DJ-ing?";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Music", "mixing2", optionTwoText) }>{ optionTwoText }</button>
@@ -401,7 +400,7 @@ class UserInput extends Component {
             var options = (
                 <div>{ optionTwo }</div>
             )
-        } else if (subtopic == "mixing2" || subtopic == "band2") {
+        } else if (subtopic === "mixing2" || subtopic === "band2") {
             var options = this.renderHobbiesOptions();
         } else {
             var optionOneText = "Have a favourite band?";
@@ -427,7 +426,7 @@ class UserInput extends Component {
     }
     renderSkillsOptions() {
         var subtopic = this.props.subtopic;
-        if (subtopic == "design") {
+        if (subtopic === "design") {
             var optionOneText = "Tell me more about programming.";
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 2, "Skills","programming2", optionOneText) } key={ Math.random() }>{ optionOneText }</button>
@@ -435,7 +434,7 @@ class UserInput extends Component {
             var options = (
                 <div>{ optionOne }</div>
             )
-        } else if (subtopic == "programming") {
+        } else if (subtopic === "programming") {
             var optionTwoText = "Tell me more about design";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Skills", "design2", optionTwoText) }>{ optionTwoText }</button>
@@ -443,7 +442,7 @@ class UserInput extends Component {
             var options = (
                 <div>{ optionTwo }</div>
             )
-        } else if (subtopic == "design2" || subtopic == "programming2") {
+        } else if (subtopic === "design2" || subtopic === "programming2") {
             var optionTwoText = "Ever work with non-technical people?";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Skills", "other", optionTwoText) }>{ optionTwoText }</button>
@@ -451,7 +450,7 @@ class UserInput extends Component {
             var options = (
                 <div>{ optionTwo }</div>
             )
-        } else if (subtopic == "other") {
+        } else if (subtopic === "other") {
             var options = this.renderHobbiesOptions();
         } else {
             var optionOneText = "Tell me more about design";
@@ -477,7 +476,7 @@ class UserInput extends Component {
     }
     renderJourneyOptions() {
         var subtopic = this.props.subtopic;
-        if (subtopic == "afterATX") {
+        if (subtopic === "afterATX") {
             var optionOneText = "Are you in San Diego now?";
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 2, "Journey","currentLocation", optionOneText) } key={ Math.random() }>{ optionOneText }</button>
@@ -485,9 +484,9 @@ class UserInput extends Component {
             var options = (
                 <div>{ optionOne }</div>
             )
-        } else if (subtopic == "currentLocation") {
+        } else if (subtopic === "currentLocation") {
             var options = this.renderHobbiesOptions();
-        } else if (subtopic == "talmud") {
+        } else if (subtopic === "talmud") {
             var optionTwoText = "How did you end up in tech?";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Journey", "tech2", optionTwoText) }>{ optionTwoText }</button>
@@ -495,8 +494,8 @@ class UserInput extends Component {
             var options = (
                 <div>{ optionTwo }</div>
             )
-        } else if (subtopic == "talmud2") {
-            var optionTwoText = "Ok, so after the coding bootcamp, where did you end up?";
+        } else if (subtopic === "talmud2") {
+            var optionTwoText = "Ok. So after the coding bootcamp, then what?";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Journey", "afterATX", optionTwoText) }>{ optionTwoText }</button>
             )
@@ -506,7 +505,7 @@ class UserInput extends Component {
                     { optionTwo }
                 </div>
             )
-        } else if (subtopic == "tech") {
+        } else if (subtopic === "tech") {
             var optionOneText = "What happened next?";
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Journey", "afterATX", optionOneText) }>{ optionOneText }</button>
@@ -521,7 +520,7 @@ class UserInput extends Component {
                     { optionTwo }
                 </div>
             )
-        } else if (subtopic == "tech2") {
+        } else if (subtopic === "tech2") {
             var optionTwoText = "What happened next?";
             var optionTwo = (
                 <button onClick={ this.optionSelected.bind(this, 1, "Journey", "afterATX", optionTwoText) }>{ optionTwoText }</button>
@@ -531,7 +530,7 @@ class UserInput extends Component {
                     { optionTwo }
                 </div>
             )
-        } else if (subtopic == "start") {
+        } else if (subtopic === "start") {
             var optionOneText = "Talmudic Law? What?";
             var optionOne = (
                 <button onClick={ this.optionSelected.bind(this, 2, "Journey","talmud", optionOneText) } key={ Math.random() }>{ optionOneText }</button>
@@ -566,21 +565,21 @@ class UserInput extends Component {
     }
     render() {
         var topic = this.props.topic;
-        if (topic == "Intro") {
+        if (topic === "Intro") {
             var options = this.renderIntroOptions();
-        } else if (topic == "Hobbies") {
+        } else if (topic === "Hobbies") {
             var options = this.renderHobbiesOptions();
-        } else if (topic == "Skills") {
+        } else if (topic === "Skills") {
             var options = this.renderSkillsOptions();
-        } else if (topic == "Journey") {
+        } else if (topic === "Journey") {
             var options = this.renderJourneyOptions();
         }
-        else if (topic == "Reading") {
+        else if (topic === "Reading") {
             var options = this.renderReadingOptions();
         }
-        else if (topic == "Languages") {
+        else if (topic === "Languages") {
             var options = this.renderLanguagesOptions();
-        } else if (topic == "Music") {
+        } else if (topic === "Music") {
             var options = this.renderMusicOptions();
         }
         
