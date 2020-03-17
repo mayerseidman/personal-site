@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.559b379e.chunk.css",
-    "main.js": "/static/js/main.7c946678.chunk.js",
-    "main.js.map": "/static/js/main.7c946678.chunk.js.map",
+    "main.js": "/static/js/main.32dae0d7.chunk.js",
+    "main.js.map": "/static/js/main.32dae0d7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.107bb8ca.js",
     "runtime-main.js.map": "/static/js/runtime-main.107bb8ca.js.map",
-    "static/css/2.366fd4d3.chunk.css": "/static/css/2.366fd4d3.chunk.css",
-    "static/js/2.571372e1.chunk.js": "/static/js/2.571372e1.chunk.js",
-    "static/js/2.571372e1.chunk.js.map": "/static/js/2.571372e1.chunk.js.map",
+    "static/css/2.4ffeba60.chunk.css": "/static/css/2.4ffeba60.chunk.css",
+    "static/js/2.799dfd53.chunk.js": "/static/js/2.799dfd53.chunk.js",
+    "static/js/2.799dfd53.chunk.js.map": "/static/js/2.799dfd53.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1ec5493839a2a0a82297568d9b5a92fa.js": "/precache-manifest.1ec5493839a2a0a82297568d9b5a92fa.js",
+    "precache-manifest.22ffe913dda422e9d53da6e5f2670fb3.js": "/precache-manifest.22ffe913dda422e9d53da6e5f2670fb3.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.366fd4d3.chunk.css.map": "/static/css/2.366fd4d3.chunk.css.map",
+    "static/css/2.4ffeba60.chunk.css.map": "/static/css/2.4ffeba60.chunk.css.map",
     "static/css/main.559b379e.chunk.css.map": "/static/css/main.559b379e.chunk.css.map",
-    "static/js/2.571372e1.chunk.js.LICENSE": "/static/js/2.571372e1.chunk.js.LICENSE",
+    "static/js/2.799dfd53.chunk.js.LICENSE": "/static/js/2.799dfd53.chunk.js.LICENSE",
     "static/media/inter.css": "/static/media/Inter.var.feca908d.woff2",
     "static/media/add-class.png": "/static/media/add-class.c83b017f.png",
     "static/media/add-students.png": "/static/media/add-students.68f5d1d6.png",
@@ -71,7 +71,6 @@
     "static/media/student-site-map.png": "/static/media/student-site-map.e1908eec.png",
     "static/media/teacher-assignments-spec-two.png": "/static/media/teacher-assignments-spec-two.cb3af69c.png",
     "static/media/teacher-assignments-spec.png": "/static/media/teacher-assignments-spec.5686c100.png",
-    "static/media/teacher-exercises-final.png": "/static/media/teacher-exercises-final.a85043ab.png",
     "static/media/teacher-exercises-gas.png": "/static/media/teacher-exercises-gas.528feb32.png",
     "static/media/teacher-exercises-sm.png": "/static/media/teacher-exercises-sm.40c5a5e9.png",
     "static/media/teacher-exercises.png": "/static/media/teacher-exercises.0ac34706.png",
@@ -84,9 +83,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.107bb8ca.js",
-    "static/css/2.366fd4d3.chunk.css",
-    "static/js/2.571372e1.chunk.js",
+    "static/css/2.4ffeba60.chunk.css",
+    "static/js/2.799dfd53.chunk.js",
     "static/css/main.559b379e.chunk.css",
-    "static/js/main.7c946678.chunk.js"
+    "static/js/main.32dae0d7.chunk.js"
   ]
 }

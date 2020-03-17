@@ -186,7 +186,7 @@ export default class Chatbot extends Component {
                     <div className="userInnerContainer">
                         <UserBubble message={data} key={'u'+index} />
                         <div className="img-avatar-container">
-                            <img src={ this.props.imageSrc } className="" />
+                            <img src={ this.props.imageSrc } className="" alt="avatar" />
                         </div>
                     </div>
                 )
@@ -244,7 +244,7 @@ export default class Chatbot extends Component {
                         updateUserMessages = { this.updateUserMessages.bind(this) }
                         topic={ this.state.topic } subtopic={ this.state.subtopic } />
                     <a className="regularLink backLink mobileHide" onClick={ this.returnToBeginning.bind(this) }>Back to beginning</a>
-                    <a className="regularLink backLink webHide mobileBackLink" onClick={ this.returnToBeginning.bind(this) }>Back</a>                
+                    <a className="regularLink backLink webHide mobileBackLink" href="#" onClick={ this.returnToBeginning.bind(this) }>Back</a>                
                 </div> 
             </div>
             
@@ -273,7 +273,7 @@ class BotBubble extends Component {
         return (
             <div className="bot-message-container">
                 <div className="img-avatar-container">
-                    <img src={ personalImg } className="profileImg" />
+                    <img src={ personalImg } className="profileImg" alt="profile" />
                 </div>
                 
                 <div id="demo" className="chat-bubble bot" ref="chatBubble">{this.props.message ? this.props.message : '...'}</div>

@@ -1,13 +1,21 @@
 a.regularLink {
 	&:hover {
 		/*color: #B51A17 !important;*/
-		color: #DE4D40 !important;
+		color: #D0021B !important;
 		text-decoration: underline !important;
 	}
 }
 
+a {
+	/*color: #D0021B;*/
+	color: #DE4D40;
+	text-decoration: none;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
 .noteText {
-	color: #B51A17;
+	/*color: #B51A17;*/
 	color: #DE4D40;
 }
 
@@ -257,13 +265,6 @@ p {
 		/*.push, .navbarContainer {
 			height: 165px;
 		}*/
-		a {
-			/*color: #D0021B;*/
-			color: #DE4D40;
-			text-decoration: none;
-			margin-bottom: 5px;
-			cursor: pointer;
-		}
 		.worksSection {
 			margin: auto;
 		}
@@ -516,7 +517,7 @@ p {
 					}
 				}
 				a {
-					color: #D0021B;
+					/*color: #D0021B;*/
 					text-decoration: none;
 					margin-bottom: 5px;
 					cursor: pointer;
@@ -780,13 +781,6 @@ p {
 		    /*height: 500px;*/
 		    height: auto;
 		    padding-top: 15px;
-		    a {
-		    	/*color: #D0021B;*/
-		    	color: #DE4D40;
-		    	text-decoration: none;
-		    	margin-bottom: 5px;
-		    	cursor: pointer;
-		    }
 		    &.preview {
 		    	height: 0px;
 		    }
