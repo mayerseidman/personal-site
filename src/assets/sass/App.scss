@@ -681,8 +681,10 @@ p {
 		    -ms-flex-pack: center;
 		    justify-content: center;
 			.infoContainer {
+
 				/*padding-top: 3%;*/
 				margin: auto;
+				margin-top: 15px;
 				/*margin-bottom: 5px;*/
 				/*width: 78%;*/
 				&.preview {
@@ -704,6 +706,9 @@ p {
 				}
 				.name, .title { 
 					font-size: 30px !important;
+				}
+				.name {
+					margin-bottom: 10px;
 				}
 			}
 		}
