@@ -259,8 +259,11 @@ p {
 		.outerContainer {
 			/*height: 350px;*/
 /*			border: 1px solid black;
-*/			margin-bottom: 75px;
+*/			margin-bottom: 50px;
 			border: 1px solid #f9f9ee;
+			@media only screen and (max-width: 425px) {
+				margin-bottom: 35px;
+			}
 		}
 		/*.push, .navbarContainer {
 			height: 165px;
@@ -475,7 +478,7 @@ p {
 		    }
 		}
 		.outerContainer {
-			height: 580px;
+			height: 600px;
 		}
 		.minimize {
 			/*background: #e4e469;*/
