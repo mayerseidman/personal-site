@@ -1,7 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Link } from "react-router-dom";
-// import ScrollAnimation from 'react-animate-on-scroll';
-
+// import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../../assets/sass/studies/study_one.scss';
 import ImageGallery from 'react-image-gallery';
 import Magnifier from "react-magnifier";
@@ -217,7 +216,6 @@ class StudyTwo extends React.Component {
                                     <ImageGallery items={ imagesTwo } showFullscreenButton={ false } showPlayButton={ false }
                                         showThumbnails={ false } />
                                 </div>
-                            <Link className="regularLink nextStudyLink" to="/works/Studies/StudyThree">Next Study</Link>   
                         </div>
                     </div>
                 </div>

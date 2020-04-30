@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Link } from "react-router-dom";
+// import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Magnifier from "react-magnifier";
 // import ScrollAnimation from 'react-animate-on-scroll';
 import ReactTooltip from 'react-tooltip'
@@ -455,7 +456,6 @@ class StudyOne extends React.Component {
                                     <img src={ exerciseTwoImg } alt=""/>
                                </div>
                             </div>
-                            <Link className="regularLink nextStudyLink" to="/works/Studies/StudyTwo">Next Study</Link>
                         </div>
                     </div>
                 </div>
