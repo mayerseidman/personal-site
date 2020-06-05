@@ -1,7 +1,7 @@
 
 ## Howdy!
 
-This is my portfolio site!
+This is my personal site!
 
 Under the hood its quite simple: REACT & a few fun plugins here and there.
 
