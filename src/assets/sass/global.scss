@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #171C46;
+   /* color: #555;*/
+    font-size: 16px;
+    font-family: muli;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
