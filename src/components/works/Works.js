@@ -1,3 +1,4 @@
+import React from 'react'
 import '../../assets/sass/works/works.scss';
 
 class Works extends React.Component {
