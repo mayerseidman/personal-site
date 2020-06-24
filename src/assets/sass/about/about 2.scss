@@ -1,0 +1,207 @@
+.aboutSection {
+	margin: auto;
+	width: 87%;
+	.topContainer {
+		/*height: 160px;*/
+		/*margin-bottom: 30px;*/
+		.img {
+			/*border: 4px solid #D0021B;*/
+			/*margin-left: 45%;*/
+			position: relative;
+			/*left: 91%;*/
+			border-radius: 5px;
+			border: 1px solid #363D45;
+		}
+		.imgContainer {
+			height: 160px;
+			position: relative;
+		}
+		.linksContainer {
+			/*display: inline-block;*/
+			float: left;
+			/*margin-right: 43%;*/
+			a {
+				margin-right: 15px;
+				&.selected {
+					color: #999;
+				}
+				&:hover {
+					color: #999 !important;
+				}
+			}
+		}
+	}
+	.introContainer {
+		clear: both;
+		.tldr {
+			font-weight: 550;
+			color: black;
+			color: #363D45;
+		}
+	}
+	.bottomContainer {
+		.chatButton {
+		    height: 35px;
+		    /*background: #D0021B;*/
+		    background: #408BDE;
+		    color: white;
+		    font-size: 1em;
+		    cursor: pointer;
+		    border-radius: 5px;
+		    border: none;
+		    &:hover {
+				cursor: pointer;
+		    }
+		}
+		p {
+			font-size: 0.8em;
+			text-align: center;
+		}
+	}
+	.topContainer {
+		.imageContainer {
+			/*display: inline-block;
+			height: 100px;
+			width: 0%;*/
+			position: relative;
+			float: right;
+		}
+	}
+	.bold {
+		color: #000;
+		color: #363D45;
+		font-weight: 550;
+	}
+	.smBold {
+		font-weight: 500;
+	}
+}
+.aboutLoadingSection {
+	padding-left: 200px;
+	padding-top: 120px;
+	.MuiCircularProgress-colorPrimary {
+		color: #D0021B;
+	}
+}
+
+@media only screen and (min-width: 1075px) and (max-width: 1300px) {
+	.imageContainer {
+		/*left: 20%;*/
+	}
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1075px) {
+	.imageContainer {
+		/*left: 3%;*/
+	}	
+}
+
+@media only screen and (min-width: 1300px) {
+	.imageContainer {
+		/*left: 33%;*/
+	}
+}
+
+.skillsContainer, .journeyContainer, .hobbiesContainer {
+	clear: both;
+}
+
+/* WEB Media Query  */
+@media only screen and (min-width: 1075px) {
+	.aboutSection {
+		padding-top: 100px;
+		/*padding-bottom: 11px;*/
+		/*padding-left: 75px;
+	    padding-right: 62px;*/
+        .bottomContainer {
+        	width: 40%;
+    		.chatButton {
+    			width: 100%;
+    		    margin-bottom: 5px;
+    		}
+        }
+		.topContainer {
+			.imageContainer {
+				margin-bottom: 15px;
+			}
+			.img {
+				width: 150px;
+				height: 150px;
+			}
+			.linksContainer {
+				transform: translateY(715%);
+			}
+		}
+		/*.textContainer {
+			margin-bottom: 55px;
+		}*/
+		.hobbiesContainer {
+			margin-bottom: 35px;
+		}
+		.introContainer {
+			/*padding-bottom: 129px;*/
+		}
+		.skillsContainer, .journeyContainer {
+			padding-bottom: 59px;
+		}
+	}
+	.aboutLoadingSection {
+		padding-left: 200px;
+		padding-bottom: 412px;
+	}
+}
+
+/* Mobile Media Query  */
+@media only screen and (max-width: 1075px) {
+	.aboutSection {
+		padding-bottom: 0px;
+		/*padding-left: 30px;
+	    padding-right: 15px;*/
+	    .bottomContainer {
+			.chatButton {
+				width: 100%;
+			    margin-bottom: 10px;
+			}
+	    }
+		.topContainer {
+			.imageContainer {
+				margin-bottom: 5px;
+			}
+			/*margin-bottom: 15px;*/
+			.img {
+				/*width: 100px;
+				left: 31%;*/
+				width: 85px;
+			}
+			.linksContainer {
+				/*margin-bottom: 15px;*/
+				/*width: 65%;
+				margin-right: 10%;*/
+				transform: translateY(370%);
+				a {
+					margin-right: 7px;
+				}
+			}
+		}
+		.textContainer {
+			padding-bottom: 26px;
+			.innerTextContainer {
+				overflow: auto;
+				padding-right: 5px;
+			}
+		}
+		.textContainer, .innerTextContainer {
+			height: 230px;
+			/*&.hobbiesContainer, &.journeyContainer, &.skillsContainer {
+				padding-bottom: 58px;
+			}*/
+		}
+		/*.introContainer {
+			padding-bottom: 67px;
+		}*/
+	}
+	.aboutLoadingSection {
+		padding-left: 135px;
+		padding-bottom: 246px;
+	}
+}
