@@ -129,7 +129,7 @@ function Work({ works, imageRef }) {
     useEffect(() => {
         const timer = setTimeout(() => {
             modalRef.current.classList.toggle("is-modal-open")
-        }, 600)
+        }, 50)
         // return clearTimeout(timer);
     }, [])
     

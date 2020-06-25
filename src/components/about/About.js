@@ -39,24 +39,24 @@ class About extends Component {
                                 <div className="text-container">
                                     <p className="about-text">About.</p>
                                     <div className='scroable-container'>
-                                        <div>
+                                        <div className="about-details">
                                             <p className="p-over">Descriptive text goes here…Descriptive text goes here escriptive </p>
                                             <p className="p-over">text goes here…Descriptive text goes here…Descriptive text goes </p>
                                             <p className="p-over">here…Descriptive text goes here…</p>
                                         </div>
-                                        <div>
+                                        <div className="about-details">
                                             <p className="emp-text">empathy.</p>
                                             <p className="p-over" >Descriptive text goes here…Descriptive text goes here escriptive </p>
                                             <p className="p-over" >text goes here…Descriptive text goes here…Descriptive text goes </p>
                                             <p className="p-over">here…Descriptive text goes here…</p>
                                         </div>
-                                        <div>
+                                        <div className="about-details">
                                             <p className="emp-text">growth.</p>
                                             <p className="p-over">Descriptive text goes here…Descriptive text goes here escriptive </p>
                                             <p className="p-over">text goes here…Descriptive text goes here…Descriptive text goes </p>
                                             <p className="p-over">here…Descriptive text goes here…</p>
                                         </div>
-                                        <div>
+                                        <div className="about-details">
                                             <p className="emp-text">growth.</p>
                                             <p className="p-over">Descriptive text goes here…Descriptive text goes here escriptive </p>
                                             <p className="p-over">text goes here…Descriptive text goes here…Descriptive text goes </p>
@@ -64,7 +64,6 @@ class About extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="float-white-box"></div>
                             </div>
                             <div className='main-empty-2'>
                                 <div className="float-dark-primary"></div>
