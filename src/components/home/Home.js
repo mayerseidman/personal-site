@@ -1,10 +1,9 @@
-import React,  { Component } from 'react'
+import React,{ Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import './styles.css';
 import image from "../../assets/images/linkedin-profile-mayer.png"
 
-import '../../assets/sass/about/about.scss';
-
-class About extends Component {
+export default class Home extends Component {
     constructor(props) {
         super(props)
         this.wrapperRef = React.createRef();
@@ -37,31 +36,15 @@ class About extends Component {
                             </div>
                             <div className='main-text'>
                                 <div className="text-container">
-                                    <p className="about-text">About.</p>
-                                    <div className='scroable-container'>
-                                        <div>
-                                            <p className="p-over">Descriptive text goes here…Descriptive text goes here escriptive </p>
-                                            <p className="p-over">text goes here…Descriptive text goes here…Descriptive text goes </p>
-                                            <p className="p-over">here…Descriptive text goes here…</p>
-                                        </div>
-                                        <div>
-                                            <p className="emp-text">empathy.</p>
-                                            <p className="p-over" >Descriptive text goes here…Descriptive text goes here escriptive </p>
-                                            <p className="p-over" >text goes here…Descriptive text goes here…Descriptive text goes </p>
-                                            <p className="p-over">here…Descriptive text goes here…</p>
-                                        </div>
-                                        <div>
-                                            <p className="emp-text">growth.</p>
-                                            <p className="p-over">Descriptive text goes here…Descriptive text goes here escriptive </p>
-                                            <p className="p-over">text goes here…Descriptive text goes here…Descriptive text goes </p>
-                                            <p className="p-over">here…Descriptive text goes here…</p>
-                                        </div>
-                                        <div>
-                                            <p className="emp-text">growth.</p>
-                                            <p className="p-over">Descriptive text goes here…Descriptive text goes here escriptive </p>
-                                            <p className="p-over">text goes here…Descriptive text goes here…Descriptive text goes </p>
-                                            <p className="p-over">here…Descriptive text goes here…</p>
-                                        </div>
+                                    <p className="large-text">Howdy.</p>
+                                    <div>
+                                        <p className="text-syle">My name is Mayer and I’m a ________</p>
+                                        <p className='text-paragraph text-syle'>I ‘m  a  versatile  problem solver who is </p> 
+                                        <p className='text-paragraph text-syle'>passionate about helping people and </p> 
+                                        <p className='text-paragraph text-syle'>uncovering emotions within products. </p>
+                                    </div>
+                                    <div>
+                                    <p>Learn more <span className="link-text"><a>about me</a></span> or view <span className="link-text"><a>my work</a></span></p>
                                     </div>
                                 </div>
                                 <div className="float-white-box"></div>
@@ -77,7 +60,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='floating-profilee'>
+                <div className='floating-profile-home'>
                     <div className="profile-image-container">
                         <img alt="profile" className="image-prof" src={ image } />
                     </div>
@@ -88,5 +71,3 @@ class About extends Component {
         )
     }
 }
-
-export default About
