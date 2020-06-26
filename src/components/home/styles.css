@@ -1,5 +1,5 @@
 @media screen 
-  and (min-device-width: 1200px) 
+  and (min-device-width: 2301px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
     .wrapper-main {
         display: flex;
@@ -42,6 +42,7 @@
     .right-container {
         width: 76%;
         display: flex;
+        background-color: #171C46;
     }
     
     .navigation {
@@ -196,21 +197,29 @@
 
 @media screen 
   and (min-device-width: 1200px) 
-  and (max-device-width: 1500px){
-    .floating-profile .profile-image-container {
+  and (max-device-width: 2300px){
+    .floating-profile-home {
         position: absolute;
-        width: 350px;
-        height: 550px;
+        left: 12%;
+        top:25%;
+        width: 28%;
+        height: 50%;
+        z-index: 2
+    }
+    .floating-profile-home .profile-image-container {
+        position: absolute;
+        width: 325px;
+        height: 325px;
         z-index: 2;
     }
     
-    .floating-profile .profile-image-blank {
+    .floating-profile-home .profile-image-blank {
         position: relative;
         background-color: #D26442;
         margin-top: 10%;
         margin-left: 10%;
-        height: 350px;
-        width: 350px;
+        height: 325px;
+        width: 325px;
         z-index: -1;
     }
   }
@@ -359,7 +368,7 @@
         display: block;
         height: 3px;
         margin: 7px 0;
-        transition: all .2s ease-in-out;
+        transition: all .1s ease-in-out;
       }
 
       .nav-icon.is-nav-open:before {

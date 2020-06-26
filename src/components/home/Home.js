@@ -47,7 +47,6 @@ export default class Home extends Component {
                                     <p>Learn more <span className="link-text"><a>about me</a></span> or view <span className="link-text"><a>my work</a></span></p>
                                     </div>
                                 </div>
-                                <div className="float-white-box"></div>
                             </div>
                             <div className='main-empty-2'>
                                 <div className="float-dark-primary"></div>

@@ -471,7 +471,7 @@
     }
     
     .main-text {
-        flex-grow: 25;
+        flex-grow: 20;
         color: white;
         display: flex;
         flex-direction: row;
@@ -499,7 +499,9 @@
         display: flex;
         justify-content: space-between;
     }
-
+    .work-text {
+        font-size: .6em;
+    }
     .work-image-wrapper {
         width: 30%;
         background-color: #D8D8D8 ;
@@ -693,7 +695,7 @@
     }
     
     .main-empty-2 {
-        flex-grow: 15;
+        flex-grow: 6;
     }
     
     .floating-profile {
