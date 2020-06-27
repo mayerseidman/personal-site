@@ -1,5 +1,5 @@
 import React,  { Component } from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import image from "../../assets/images/linkedin-profile-mayer.png"
 
 import '../../assets/sass/about/about.scss';
@@ -23,7 +23,7 @@ class About extends Component {
                 <div className='wrapper-main'>
                     <div className="left-container">
                         <div className="my-name">
-                            <span className="name-mayer">Mayer.</span>
+                            <span className="name-mayer"><Link className="plain-link" to="/" >Mayer.</Link></span>
                         </div>
                         <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handeleMenuClick()}>
                             <div></div>
@@ -32,7 +32,7 @@ class About extends Component {
                     </div>
                     <div className="right-container">
                         <div className="main-content">
-                            <div className='main-empty-1'>
+                            <div className='main-empty-about'>
                                 <div className="float-dark-light"></div>
                             </div>
                             <div className='main-text'>
@@ -76,9 +76,25 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='floating-profilee'>
+                <div className='floating-profile-a'>
                     <div className="profile-image-container">
-                        <img alt="profile" className="image-prof" src={ image } />
+                        <div className="row-gif">
+                            <div className="cell-gif">
+                                <img alt="profile" className="image-prof" src={ image } />
+                            </div>
+                            <div className="cell-gif">
+                                <img alt="profile" className="image-prof" src={ image } />
+                            </div>
+                        </div>
+                        <div className="row-gif">
+                            <div className="cell-gif">
+                                <img alt="profile" className="image-prof" src={ image } />
+                            </div>
+                            <div className="cell-gif">
+                                <img alt="profile" className="image-prof" src={ image } />
+                            </div>
+                        </div>
+                       
                     </div>
                     <div className="profile-image-blank"></div>
                 </div>

@@ -18,7 +18,6 @@ class Works extends Component {
         this.iconRef = React.createRef();
         this.imageRef = React.createRef();
         // this.props = props
-        window.p = 
         this.state = {
             works: {
                 'work-one':{
@@ -42,13 +41,14 @@ class Works extends Component {
     }
 
     render() {
-        let {path, url } = this.props.match
+        let {path, url } = this.props.match;
+        let { history } = this.props;
         return (
             <div className="wrapper">
                 <div className='wrapper-main'>
                     <div className="left-container">
                         <div className="my-name">
-                            <span className="name-mayer">Mayer.</span>
+                            <span className="name-mayer"><Link className="plain-link" to="/" >Mayer.</Link></span>
                         </div>
                         <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handeleMenuClick()}>
                             <div></div>
@@ -91,7 +91,6 @@ class Works extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="float-white-box"></div>
                             </div>
                             <div className='main-empty-2'>
                                 <div className="float-dark-primary"></div>
@@ -112,7 +111,7 @@ class Works extends Component {
                 </div>
                 <Switch>
                     <Route path={`${path}/:workId`}>
-                        <Work  works={this.state.works} imageRef={this.imageRef}/>
+                        <Work  works={this.state.works} imageRef={this.imageRef} history={history}/>
                     </Route>
                 </Switch>
             </div>
@@ -121,7 +120,7 @@ class Works extends Component {
     }
 }
 
-function Work({ works, imageRef }) {
+function Work({ works, imageRef, history }) {
     let { workId } = useParams();
     let modalRef = useRef(null)
     let work = works[workId]
@@ -129,7 +128,7 @@ function Work({ works, imageRef }) {
     useEffect(() => {
         const timer = setTimeout(() => {
             modalRef.current.classList.toggle("is-modal-open")
-        }, 50)
+        }, 10)
         // return clearTimeout(timer);
     }, [])
     
@@ -139,10 +138,13 @@ function Work({ works, imageRef }) {
             image.classList.toggle("blurred")
         }
     }
+    const goBack = () => {
+        history.goBack();
+    }
     return (
         <div className="work-modal">
             <div className="left-modal">
-                <div className="blurred-modal"></div>
+                <div className="blurred-modal" onClick={()=> goBack()}></div>
                 <div ref={modalRef} className="modal-main">
                     <div className="work-details">
                         <div className="top-content" > 

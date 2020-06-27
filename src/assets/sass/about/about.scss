@@ -63,7 +63,7 @@
         display: flex;
     }
     
-    .main-empty-1 {
+    .main-empty-about {
         flex-grow: 60;
     }
     
@@ -142,7 +142,7 @@
         flex-grow: 15;
     }
     
-    .floating-profilee {
+    .floating-profile-a {
         position: absolute;
         left: 12%;
         top:25%;
@@ -151,7 +151,7 @@
         z-index: 2
     }
     
-    .floating-profilee .profile-image-container {
+    .floating-profile-a .profile-image-container {
         position: absolute;
         width: 450px;
         height: 450px;
@@ -163,7 +163,7 @@
         
     }
     
-    .floating-profilee .profile-image-blank {
+    .floating-profile-a .profile-image-blank {
         position: relative;
         background-color: #D26442;
         margin-top: 10%;
@@ -172,6 +172,19 @@
         width: 450px;
         z-index: -1;
         box-shadow: 0 2px 4px 0 #000;
+    }
+
+    .profile-image-blank {
+        display: flex;
+    }
+    .row-gif {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        z-index: 2;
+    }
+    .cell-gif {
+        background-color: darkmagenta;
     }
 
     .nav-link:link {
@@ -195,7 +208,7 @@
   and (max-device-width: 2300px)
   and (-webkit-min-device-pixel-ratio: 1) {
     
-    .main-empty-1 {
+    .main-empty-about {
         flex-grow: 40;
     }
 
@@ -203,7 +216,7 @@
         font-size: 1.5em;
         margin: 5px 0;
     }
-    .floating-profilee {
+    .floating-profile-a {
         position: absolute;
         left: 12%;
         top:25%;
@@ -211,14 +224,14 @@
         height: 50%;
         z-index: 2
     }
-    .floating-profilee .profile-image-container {
+    .floating-profile-a .profile-image-container {
         position: absolute;
         width: 325px;
         height: 325px;
         z-index: 2;
     }
     
-    .floating-profilee .profile-image-blank {
+    .floating-profile-a .profile-image-blank {
         position: relative;
         background-color: #D26442;
         margin-top: 10%;
@@ -233,7 +246,129 @@
         margin: 20px 0;
         font-weight: 600;
     }
+    .profile-image-blank {
+        display: flex;
+    }
+    .row-gif {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        z-index: 2;
+    }
+    .cell-gif {
+        background-color: darkmagenta;
+    }
+    
   }
+
+  @media screen 
+  and (min-device-width: 700px) 
+  and (max-device-width: 1199px){
+    .floating-profile-a .profile-image-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 325px;
+        height: 325px;
+        z-index: 2;
+    }
+    
+    .floating-profile-a .profile-image-blank {
+        position: relative;
+        background-color: #D26442;
+        margin-top: 45px;
+        margin-left: 43%;
+        margin-right: auto;
+        height: 325px;
+        width: 325px;
+        z-index: -1;
+    }
+    .profile-image-blank {
+        display: flex;
+    }
+    .row-gif {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        z-index: 2;
+    }
+    .cell-gif {
+        background-color: darkmagenta;
+    }
+  }
+
+  @media screen 
+  and (min-device-width: 490px)
+  and (max-device-width: 699px) {
+    .floating-profile-a .profile-image-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        z-index: 2;
+    }
+    
+    .floating-profile-a .profile-image-blank {
+        position: relative;
+        background-color: #D26442;
+        margin-top: 45px;
+        margin-left: 33%;
+        height: 300px;
+        width: 300px;
+        z-index: -1;
+        box-shadow: 0 2px 4px 0 #000;
+    }
+    .profile-image-blank {
+        display: flex;
+    }
+    .row-gif {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        z-index: 2;
+    }
+    .cell-gif {
+        background-color: darkmagenta;
+    }
+  }
+  @media screen 
+  and (max-device-width: 489px){
+    .floating-profile-a .profile-image-container {
+        position: absolute;
+        left: 5%;
+        width: 300px;
+        height: 300px;
+        z-index: 2;
+    }
+    
+    .floating-profile-a .profile-image-blank {
+        position: relative;
+        background-color: #D26442;
+        margin-top: 45px;
+        margin-left: 15%;
+        height: 300px;
+        width: 300px;
+        z-index: -1;
+        box-shadow: 0 2px 4px 0 #000;
+    }
+
+    .profile-image-blank {
+        display: flex;
+    }
+    .row-gif {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        z-index: 2;
+    }
+    .cell-gif {
+        background-color: darkmagenta;
+    }
+  }
+  
 
   @media screen 
   and (max-device-width: 1199px) {
@@ -310,48 +445,31 @@
         flex-direction: column;
 
     }
-    .main-empty-1 {
-        height: 400px;
+    .main-empty-about {
+        height: 420px;
     }
     .main-text {
     }
     .main-empty-2 {
     }
 
-    .floating-profilee {
+    .floating-profile-a {
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        top:15%;
+        top: 120px;
         left: 0;
         right: 0;
         height: 50%;
         z-index: 2
     }
     
-    .floating-profilee .profile-image-container {
-        position: absolute;
-        left: 5%;
-        width: 300px;
-        height: 300px;
-        z-index: 2;
-    }
+ 
     
     .image-prof {
         width: 100%;
     }
     
-    .floating-profilee .profile-image-blank {
-        position: relative;
-        background-color: #D26442;
-        margin-top: 10%;
-        margin-left: 15%;
-        height: 300px;
-        width: 300px;
-        z-index: -1;
-        box-shadow: 0 2px 4px 0 #000;
-    }
-
     .large-text {
         color:  white;
         font-size: 5em;
@@ -428,6 +546,12 @@
       .about-details {
           display: flex;
           flex-direction: column;
-
+          align-items: center;
       }
+  }
+
+
+  .plain-link {
+      text-decoration: none;
+      color: inherit;
   }
