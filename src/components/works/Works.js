@@ -162,23 +162,23 @@ function Work({ works, imageRef, history }) {
                                 </div>
                             </div>
                             <div className="second-content">
-                                <div>
+                                <div className="section-intro">
                                     <h2>Introduction</h2>
-                                    <p>Since the beginning, Whooo's Reading (WR) has been very good at</p>
-                                    <p>helping teachers track their students' independent reading and</p>
-                                    <p>motivating students to read more on their own. While WHooo's Reading</p>
-                                    <p>did a good job managing and motivating independent reading, we</p>
-                                    <p>discovered that teachers and schools were most interested in WR</p>
-                                    <p>because of the questions that ask students about the books the read.</p>
+                                    <p>Since the beginning, Whooo's Reading (WR) has been very good at
+                                    helping teachers track their students' independent reading and
+                                    motivating students to read more on their own. While WHooo's Reading
+                                    did a good job managing and motivating independent reading, we
+                                    discovered that teachers and schools were most interested in WR
+                                    because of the questions that ask students about the books the read.</p>
                                     <br/>
-                                    <p>We learned that teachers were fed up with the factual-recall multiple</p>
-                                    <p>choice questions that programs would ask students</p>
+                                    <p>We learned that teachers were fed up with the factual-recall multiple
+                                    choice questions that programs would ask students</p>
                                     <br/>
-                                    <p>Questions like these do not prepare students for a world i which they</p>
-                                    <p>need to think creatively and analytically and one in which they can easily</p>
-                                    <p>google the answer to fact-recall questions. Moreover, the new standards</p>
-                                    <p>asks students to synthesize, cite evidence, analyze, and write and these</p>
-                                    <p>'old-school' multiple choice assessments were not cutting it anymore</p>
+                                    <p>Questions like these do not prepare students for a world i which they
+                                    need to think creatively and analytically and one in which they can easily
+                                    google the answer to fact-recall questions. Moreover, the new standards
+                                    asks students to synthesize, cite evidence, analyze, and write and these
+                                    'old-school' multiple choice assessments were not cutting it anymore</p>
                                 </div>
                                 <div className="double-images-wrapper">
                                     <div className="modal-small-img"></div>
@@ -199,65 +199,72 @@ function Work({ works, imageRef, history }) {
                             <div className="modal-justify-left">
                                 <p className="all-caps news-sub-heading">General Discovery</p>
                                 <div className="news-format">
-                                    <div className="quoted"><span className="quote-span">&#8220;</span></div>
-                                    <div className="news-format-left">
-                                        <p>I might have a student who is missing a particular skill: </p>
-                                        <p>maybe inferring, drawing conclusions, answering open-ended</p>
-                                        <p>questions, main ideas, supporting details, using evidence.</p>
-                                        <p>The way I currently handle this is to</p>
-                                        <p>introduce a concept to the whole class(e.g main ideas)</p>
-                                        <p>then do a lesson on the concept. Then I break them</p>
-                                        <p>into groups of 4, so they can start getting practice, and</p>
-                                        <p>so they can give support to each other</p>
+                                    <div className="with-quote">
+                                        <div className="quoted"><span className="quote-span">&#8220;</span></div>
+                                        <div className="news-format-left">
+                                            <p>I might have a student who is missing a particular skill: 
+                                            maybe inferring, drawing conclusions, answering open-ended
+                                            questions, main ideas, supporting details, using evidence.
+                                            The way I currently handle this is to
+                                            introduce a concept to the whole class(e.g main ideas)
+                                            then do a lesson on the concept. Then I break them
+                                            into groups of 4, so they can start getting practice, and
+                                            so they can give support to each other</p>
+                                        </div>
                                     </div>
                                     <div className="news-format-right">
-                                        <p>While some sites (e.g. Pinterest) offer graphic</p>
-                                        <p>organizers and other forms of assessments-- it often </p> 
-                                        <p>takes many hours to find the right types of reading</p>
-                                        <p>exercises, and they are rarely engaging for students.</p>
-                                        <p>In fact nearly very teacher we spoke to brought up some version of this problem</p>
+                                    <p>While some sites (e.g. Pinterest) offer graphic
+                                        organizers and other forms of assessments-- it often 
+                                        takes many hours to find the right types of reading
+                                        exercises, and they are rarely engaging for students.
+                                        In fact nearly very teacher we spoke to brought up some version of this problem</p>
                                     </div>
                                 </div>
                                 <p className="all-caps news-sub-heading">General Discovery</p>
                                 <div className="news-format">
-                                    <div className="quoted"><span className="quote-span">&#8220;</span></div>
-                                    <div className="news-format-left">
-                                        <p>I might have a student who is missing a particular skill: </p>
-                                        <p>maybe inferring, drawing conclusions, answering open-ended</p>
-                                        <p>questions, main ideas, supporting details, using evidence.</p>
-                                        <p>The way I currently handle this is to</p>
-                                        <p>introduce a concept to the whole class(e.g main ideas)</p>
-                                        <p>then do a lesson on the concept. Then I break them</p>
-                                        <p>into groups of 4, so they can start getting practice, and</p>
-                                        <p>so they can give support to each other</p>
+                                    <div className="with-quote">
+                                        <div className="quoted"><span className="quote-span">&#8220;</span></div>
+                                        <div className="news-format-left">
+                                            <p>I might have a student who is missing a particular skill: 
+                                            maybe inferring, drawing conclusions, answering open-ended
+                                            questions, main ideas, supporting details, using evidence.
+                                            The way I currently handle this is to
+                                            introduce a concept to the whole class(e.g main ideas)
+                                            then do a lesson on the concept. Then I break them
+                                            into groups of 4, so they can start getting practice, and
+                                            so they can give support to each other</p>
+                                        </div>
                                     </div>
+                                    
                                     <div className="news-format-right">
-                                        <p>While some sites (e.g. Pinterest) offer graphic</p>
-                                        <p>organizers and other forms of assessments-- it often </p> 
-                                        <p>takes many hours to find the right types of reading</p>
-                                        <p>exercises, and they are rarely engaging for students.</p>
-                                        <p>In fact nearly very teacher we spoke to brought up some version of this problem</p>
+                                        <p>While some sites (e.g. Pinterest) offer graphic
+                                        organizers and other forms of assessments-- it often 
+                                        takes many hours to find the right types of reading
+                                        exercises, and they are rarely engaging for students.
+                                        In fact nearly very teacher we spoke to brought up some version of this problem</p>
                                     </div>
                                 </div>
                                 <p className="all-caps news-sub-heading">General Discovery</p>
                                 <div className="news-format">
-                                    <div className="quoted"><span className="quote-span">&#8220;</span></div>
-                                    <div className="news-format-left">
-                                        <p>I might have a student who is missing a particular skill: </p>
-                                        <p>maybe inferring, drawing conclusions, answering open-ended</p>
-                                        <p>questions, main ideas, supporting details, using evidence.</p>
-                                        <p>The way I currently handle this is to</p>
-                                        <p>introduce a concept to the whole class(e.g main ideas)</p>
-                                        <p>then do a lesson on the concept. Then I break them</p>
-                                        <p>into groups of 4, so they can start getting practice, and</p>
-                                        <p>so they can give support to each other</p>
+                                    <div className="with-quote">
+                                        <div className="quoted"><span className="quote-span">&#8220;</span></div>
+                                        <div className="news-format-left">
+                                            <p>I might have a student who is missing a particular skill: 
+                                            maybe inferring, drawing conclusions, answering open-ended
+                                            questions, main ideas, supporting details, using evidence.
+                                            The way I currently handle this is to
+                                            introduce a concept to the whole class(e.g main ideas)
+                                            then do a lesson on the concept. Then I break them
+                                            into groups of 4, so they can start getting practice, and
+                                            so they can give support to each other</p>
+                                        </div>
                                     </div>
                                     <div className="news-format-right">
-                                        <p>While some sites (e.g. Pinterest) offer graphic</p>
-                                        <p>organizers and other forms of assessments-- it often </p> 
-                                        <p>takes many hours to find the right types of reading</p>
-                                        <p>exercises, and they are rarely engaging for students.</p>
-                                        <p>In fact nearly very teacher we spoke to brought up some version of this problem</p>
+                                    <p>While some sites (e.g. Pinterest) offer graphic
+                                        organizers and other forms of assessments-- it often 
+                                        takes many hours to find the right types of reading
+                                        exercises, and they are rarely engaging for students.
+                                        In fact nearly very teacher we spoke to brought up some version of this problem</p>
                                     </div>
                                 </div>
                             </div>
