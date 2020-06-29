@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef } from 'react'
+import React, { Component, useEffect, useRef, useState } from 'react'
 import { 
     NavLink,
     Switch,
@@ -17,6 +17,7 @@ class Works extends Component {
         this.wrapperRef = React.createRef();
         this.iconRef = React.createRef();
         this.imageRef = React.createRef();
+        this.mainRef = React.createRef();
         // this.props = props
         this.state = {
             works: {
@@ -31,8 +32,10 @@ class Works extends Component {
     handeleMenuClick() {
         const wrapper = this.wrapperRef.current;
         const icon = this.iconRef.current;
-        wrapper.classList.toggle("is-nav-open")
-        icon.classList.toggle("is-nav-open")
+        const mainRef = this.mainRef.current;
+        wrapper.classList.toggle("is-nav-open");
+        icon.classList.toggle("is-nav-open");
+        mainRef.classList.toggle("is-nav-open");
     }
 
     handleWork() {
@@ -56,7 +59,7 @@ class Works extends Component {
                         <div className="float-dark-box"></div>
                     </div>
                     <div className="right-container">
-                        <div className="main-content">
+                        <div ref={this.mainRef} className="main-content">
                             <div className='main-empty-'>
                                 <div className="float-dark-light"></div>
                             </div>
@@ -124,22 +127,39 @@ function Work({ works, imageRef, history }) {
     let { workId } = useParams();
     let modalRef = useRef(null)
     let work = works[workId]
+    let [isClose, setClose] = useState(false)
 
     useEffect(() => {
         const timer = setTimeout(() => {
             modalRef.current.classList.toggle("is-modal-open")
-        }, 10)
+            
+
+        }, 50)
+        let image = imageRef.current;
+        if (isClose) {
+            if (image.classList.contains("blurred")){
+                image.classList.toggle("blurred")
+            }
+            setTimeout(() => {
+                history.goBack();
+            }, 500)
+        }
         // return clearTimeout(timer);
-    }, [])
+    }, [isClose])
     
     const handleClick = () => {
         let image = imageRef.current
         if (image.classList.contains("blurred")){
             image.classList.toggle("blurred")
         }
+        setClose(true)
+
     }
     const goBack = () => {
-        history.goBack();
+        // modalRef.current.classList.toggle("is-modal-open")
+        setClose(true)
+
+        
     }
     return (
         <div className="work-modal">
@@ -148,7 +168,7 @@ function Work({ works, imageRef, history }) {
                 <div ref={modalRef} className="modal-main">
                     <div className="work-details">
                         <div className="top-content" > 
-                            <Link onClick={()=> handleClick()} className="close-modal" to="/works">← Close</Link>
+                            <span onClick={()=> handleClick()} className="close-modal" to="/works">← Close</span>
                         </div>
                         <div className="modal-section">
                             <div className="first-content">
