@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './styles.css';
 import image from "../../assets/images/linkedin-profile-mayer.png"
 
@@ -35,16 +35,18 @@ export default class Home extends Component {
                                 <div className="float-dark-light"></div>
                             </div>
                             <div className='main-text'>
+                                <div className="text-top"></div>
                                 <div className="text-container">
-                                    <p className="large-text">Howdy.</p>
-                                    <div>
-                                        <p className="text-syle">My name is Mayer and I’m a ________</p>
-                                        <p className='text-paragraph text-syle'>I ‘m  a  versatile  problem solver who is </p> 
-                                        <p className='text-paragraph text-syle'>passionate about helping people and </p> 
-                                        <p className='text-paragraph text-syle'>uncovering emotions within products. </p>
-                                    </div>
-                                    <div>
-                                    <p>Learn more <span className="link-text"><a>about me</a></span> or view <span className="link-text"><a>my work</a></span></p>
+                                    <div className="home-centered-text">
+                                        <div>
+                                            <p className="large-text">Howdy.</p>
+                                            <p className="text-syle">My name is Mayer and I’m a ________</p>
+                                            <p className='text-paragraph text-syle'>I ‘m  a  versatile  problem solver who is </p> 
+                                            <p className='text-paragraph text-syle'>passionate about helping people and </p> 
+                                            <p className='text-paragraph text-syle'>uncovering emotions within products. </p>
+                                            <p>Learn more <span className="link-text"><Link to='/about' className="plain-link">about me</Link></span> or view <span className="link-text"><Link to="/works" className="plain-link">my work</Link></span></p>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>

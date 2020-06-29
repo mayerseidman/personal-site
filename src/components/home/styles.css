@@ -100,11 +100,6 @@
     
     }
     
-    .large-text {
-        font-size: 5em;
-        margin: 20px 0;
-    }
-    
     .text-syle {
         font-size: larger;
         letter-spacing: 0.015em;
@@ -148,7 +143,6 @@
         left: 12%;
         top:25%;
         width: 28%;
-        height: 50%;
         z-index: 2
     }
     
@@ -198,12 +192,15 @@
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 2300px){
+    .main-empty-1 {
+        flex-grow: 50;
+    }
+    
     .floating-profile-home {
         position: absolute;
         left: 12%;
         top:25%;
         width: 28%;
-        height: 50%;
         z-index: 2
     }
     .floating-profile-home .profile-image-container {
@@ -292,10 +289,9 @@
         position: absolute;
         margin-left: auto;
         margin-right: auto;
-        top:12%;
+        top: 110px;
         left: 0;
         right: 0;
-        height: 50%;
         z-index: 2
     }
     
@@ -386,3 +382,128 @@
           color: #D26442;
       }
   }
+
+
+  @media screen 
+  and (min-device-width: 700px) 
+  and (max-device-width: 1199px){
+    .floating-profile-home .profile-image-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 325px;
+        height: 325px;
+        z-index: 2;
+    }
+    
+    .floating-profile-home .profile-image-blank {
+        position: relative;
+        background-color: #D26442;
+        margin-top: 45px;
+        margin-left: 43%;
+        margin-right: auto;
+        height: 325px;
+        width: 325px;
+        z-index: -1;
+    }
+    .profile-image-blank {
+        display: flex;
+    }
+    .row-gif {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        z-index: 2;
+    }
+    .cell-gif {
+        background-color: darkmagenta;
+    }
+  }
+
+  @media screen 
+  and (min-device-width: 490px)
+  and (max-device-width: 699px) {
+    .floating-profile-home .profile-image-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        z-index: 2;
+    }
+    
+    .floating-profile-home .profile-image-blank {
+        position: relative;
+        background-color: #D26442;
+        margin-top: 45px;
+        margin-left: 33%;
+        height: 300px;
+        width: 300px;
+        z-index: -1;
+        box-shadow: 0 2px 4px 0 #000;
+    }
+    .profile-image-blank {
+        display: flex;
+    }
+    .row-gif {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        z-index: 2;
+    }
+    .cell-gif {
+        background-color: darkmagenta;
+    }
+  }
+  @media screen 
+  and (max-device-width: 489px){
+    .floating-profile-home .profile-image-container {
+        position: absolute;
+        left: 5%;
+        width: 300px;
+        height: 300px;
+        z-index: 2;
+    }
+    
+    .floating-profile-home .profile-image-blank {
+        position: relative;
+        background-color: #D26442;
+        margin-top: 45px;
+        margin-left: 15%;
+        height: 300px;
+        width: 300px;
+        z-index: -1;
+        box-shadow: 0 2px 4px 0 #000;
+    }
+
+    .profile-image-blank {
+        display: flex;
+    }
+    .row-gif {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        z-index: 2;
+    }
+    .cell-gif {
+        background-color: darkmagenta;
+    }
+  }
+
+
+  .home-centered-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .large-text {
+    font-size: 5em;
+    margin: 20px 0;
+}
+
+.text-top {
+    flex-grow: 30;
+}
