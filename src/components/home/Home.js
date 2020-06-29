@@ -7,8 +7,30 @@ export default class Home extends Component {
     constructor(props) {
         super(props)
         this.wrapperRef = React.createRef();
-        this.iconRef = React.createRef()
+        this.iconRef = React.createRef();
+        this.imageRef = React.createRef();
+        this.profileRef = React.createRef();
+        this.rightContainer = React.createRef();
+        this.leftContainer = React.createRef();
     }
+
+    componentDidMount() {
+        setTimeout(() => {
+            let profileRef = this.profileRef.current;
+            let imageRef = this.imageRef.current;
+            let rightContainer = this.rightContainer.current;
+            let leftContainer = this.leftContainer.current;
+            let wrapperRef = this.wrapperRef.current;
+            profileRef.classList.toggle("is-loaded");
+            imageRef.classList.toggle('fade-in');
+            rightContainer.classList.toggle('slide-in');
+            leftContainer.classList.toggle('slide-in-left');
+            wrapperRef.classList.toggle('slide-in-nav');
+            
+        })
+        
+    }
+
     handeleMenuClick() {
         const wrapper = this.wrapperRef.current;
         const icon = this.iconRef.current;
@@ -20,7 +42,7 @@ export default class Home extends Component {
         return (
             <div className="wrapper">
                 <div className='wrapper-main'>
-                    <div className="left-container">
+                    <div ref={this.leftContainer} className="left-container">
                         <div className="my-name">
                             <span className="name-mayer">Mayer.</span>
                         </div>
@@ -29,7 +51,7 @@ export default class Home extends Component {
                         </div>
                         <div className="float-dark-box"></div>
                     </div>
-                    <div className="right-container">
+                    <div ref={this.rightContainer} className="right-container">
                         <div className="main-content">
                             <div className='main-empty-1'>
                                 <div className="float-dark-light"></div>
@@ -61,9 +83,9 @@ export default class Home extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='floating-profile-home'>
+                <div ref={this.profileRef} className='floating-profile-home'>
                     <div className="profile-image-container">
-                        <img alt="profile" className="image-prof" src={ image } />
+                        <img ref={this.imageRef} alt="profile" className="image-prof" src={ image } />
                     </div>
                     <div className="profile-image-blank"></div>
                 </div>
