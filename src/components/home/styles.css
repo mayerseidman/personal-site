@@ -22,8 +22,28 @@
         font-size: 2.5em;
         font-weight: 600;
         margin: 20px 0 0 40px;
+        transform: translateY(-170%);
+        opacity: 0.2;
+        transition: opacity 4s ease-in;
     }
 
+    .slide-down {
+        animation: slide-down 1.5s forwards 3s 1;
+        opacity: 1;
+    }
+
+    @keyframes slide-down {
+        100% { transform: translateY(0%);}
+    }
+
+    .float-white-box {
+        position: absolute;
+        background-color: #fff;
+        width: 22px;
+        height: 22px;
+        bottom: 10%;
+        left: -100%;
+    }
     .link-text {
         color: #D26442;
     }
@@ -150,6 +170,7 @@
     
     .main-empty-2 {
         flex-grow: 15;
+        position: relative;
     }
     
     .floating-profile-home {

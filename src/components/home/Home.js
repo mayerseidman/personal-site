@@ -12,6 +12,7 @@ export default class Home extends Component {
         this.profileRef = React.createRef();
         this.rightContainer = React.createRef();
         this.leftContainer = React.createRef();
+        this.nameWrapper = React.createRef();
     }
 
     componentDidMount() {
@@ -21,11 +22,13 @@ export default class Home extends Component {
             let rightContainer = this.rightContainer.current;
             let leftContainer = this.leftContainer.current;
             let wrapperRef = this.wrapperRef.current;
+            let nameWrapper = this.nameWrapper.current;
             profileRef.classList.toggle("is-loaded");
             imageRef.classList.toggle('fade-in');
             rightContainer.classList.toggle('slide-in');
             leftContainer.classList.toggle('slide-in-left');
             wrapperRef.classList.toggle('slide-in-nav');
+            nameWrapper.classList.toggle('slide-down')
             
         })
         
@@ -43,7 +46,7 @@ export default class Home extends Component {
             <div className="wrapper">
                 <div className='wrapper-main'>
                     <div ref={this.leftContainer} className="left-container">
-                        <div className="my-name">
+                        <div ref={this.nameWrapper} className="my-name">
                             <span className="name-mayer">Mayer.</span>
                         </div>
                         <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handeleMenuClick()}>
@@ -74,6 +77,7 @@ export default class Home extends Component {
                             </div>
                             <div className='main-empty-2'>
                                 <div className="float-dark-primary"></div>
+                                <div className="float-white-box"></div>
                             </div>
                         </div>
                         <div ref={this.wrapperRef} className="navigation">
