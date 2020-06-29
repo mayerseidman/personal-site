@@ -1,6 +1,6 @@
 @media screen 
-  and (min-device-width: 2301px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+  and (min-width: 1500px) 
+   { 
     .wrapper-main {
         display: flex;
         width: 100%;
@@ -158,10 +158,6 @@
         z-index: 2;
     }
     
-    .image-prof {
-        width: 100%;
-        
-    }
     
     .floating-profile-a .profile-image-blank {
         position: relative;
@@ -204,9 +200,9 @@
 }
 
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 2300px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (min-width: 1200px) 
+  and (max-width: 1499px)
+   {
     
     .main-empty-about {
         flex-grow: 40;
@@ -262,8 +258,8 @@
   }
 
   @media screen 
-  and (min-device-width: 700px) 
-  and (max-device-width: 1199px){
+  and (min-width: 700px) 
+  and (max-width: 1199px){
     .floating-profile-a .profile-image-container {
         position: absolute;
         left: 0;
@@ -299,8 +295,8 @@
   }
 
   @media screen 
-  and (min-device-width: 490px)
-  and (max-device-width: 699px) {
+  and (min-width: 490px)
+  and (max-width: 699px) {
     .floating-profile-a .profile-image-container {
         position: absolute;
         left: 0;
@@ -335,7 +331,7 @@
     }
   }
   @media screen 
-  and (max-device-width: 489px){
+  and (max-width: 489px){
     .floating-profile-a .profile-image-container {
         position: absolute;
         left: 5%;
@@ -371,7 +367,7 @@
   
 
   @media screen 
-  and (max-device-width: 1199px) {
+  and (max-width: 1199px) {
     .wrapper {
         width: 100%;
         height: 100vh;
@@ -555,3 +551,8 @@
       text-decoration: none;
       color: inherit;
   }
+
+  .image-prof {
+    width: 100%;
+    
+}
