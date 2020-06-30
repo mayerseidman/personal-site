@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef, useState } from 'react'
+import React, { Component, useEffect, useRef, useState } from 'react';
 import { 
     NavLink,
     Switch,
@@ -7,8 +7,8 @@ import {
     withRouter,
     Route
 
-} from 'react-router-dom'
-import image from "../../assets/images/linkedin-profile-mayer.png"
+} from 'react-router-dom';
+import image from "../../assets/images/linkedin-profile-mayer.png";
 import '../../assets/sass/works/works.scss';
 
 class Works extends Component {
@@ -31,11 +31,22 @@ class Works extends Component {
         // this.props = props
         this.state = {
             works: {
-                'work-one':{
+                'work-one': {
                     title: "Work Numero Uno",
                     description_one: "Descriptive text goes here…Descriptive text goes here…Descriptive text goes here dd.  Descriptive text goes here…ggoes here goes here.",
                     type: "Design | Prototype"
+                },
+                'work-two': {
+                    title: "Work Numero Dos",
+                    description_one: "Descriptive text goes here…Descriptive text goes here…Descriptive text goes here dd.  Descriptive text goes here…ggoes here goes here.",
+                    type: "Design | Prototype"
+                },
+                'work-three': {
+                    title: "Work Numero Tres",
+                    description_one: "Descriptive text goes here…Descriptive text goes here…Descriptive text goes here dd.  Descriptive text goes here…ggoes here goes here.",
+                    type: "Design | Prototype"
                 }
+
             }
         }
     }
@@ -45,7 +56,7 @@ class Works extends Component {
             // animations
             let textWrapper = this.textWrapper.current;
             textWrapper.classList.toggle('slide-down-works');
-        })
+        });
     }
     handeleMenuClick() {
         const wrapper = this.wrapperRef.current;
@@ -58,7 +69,7 @@ class Works extends Component {
 
     handleWork() {
         const image  = this.imageRef.current;
-        image.classList.toggle("blurred")
+        image.classList.toggle("blurred");
     }
 
     render() {
@@ -98,16 +109,20 @@ class Works extends Component {
                                         <div className="worker-separator"></div>
                                         <div className="each-work">
                                             <div className="work-text">
-                                                <p className="main-work-text">Work Numero Dos</p>
-                                                <p className="secondary-work-text">Design | Prototype</p>
+                                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-two`}>
+                                                    <p className="main-work-text">Work Numero Dos</p>
+                                                    <p className="secondary-work-text">Design | Prototype</p>
+                                                </Link>
                                             </div>
                                             <div className="work-image-wrapper"></div>
                                         </div>
                                         <div className="worker-separator"></div>
                                         <div className="each-work">
                                             <div className="work-text">
-                                                <p className="main-work-text">Work Numero Tres</p>
-                                                <p className="secondary-work-text">Design|Prototype</p>
+                                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-three`}>
+                                                    <p className="main-work-text">Work Numero Tres</p>
+                                                    <p className="secondary-work-text">Design|Prototype</p>
+                                                </Link>
                                             </div>
                                             <div className="work-image-wrapper"></div>
                                         </div>
@@ -139,22 +154,22 @@ class Works extends Component {
                 </Switch>
             </div>
       
-        )
+        );
     }
 }
 
 function Work({ works, imageRef, history }) {
     let { workId } = useParams();
-    let modalRef = useRef(null)
-    let work = works[workId]
-    let [isClose, setClose] = useState(false)
+    let modalRef = useRef(null);
+    let work = works[workId];
+    let [isClose, setClose] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
+        setTimeout(() => {
             modalRef.current.classList.toggle("is-modal-open")
             
 
-        }, 50)
+        }, 50);
         let image = imageRef.current;
         if (isClose) {
             if (image.classList.contains("blurred")){
@@ -162,25 +177,23 @@ function Work({ works, imageRef, history }) {
             }
             setTimeout(() => {
                 history.goBack();
-            }, 500)
+            }, 500);
         }
         // return clearTimeout(timer);
-    }, [isClose])
+    }, [isClose]);
     
     const handleClick = () => {
-        let image = imageRef.current
+        let image = imageRef.current;
         if (image.classList.contains("blurred")){
-            image.classList.toggle("blurred")
+            image.classList.toggle("blurred");
         }
-        setClose(true)
+        setClose(true);
 
     }
     const goBack = () => {
-        // modalRef.current.classList.toggle("is-modal-open")
-        setClose(true)
-
-        
+        setClose(true);
     }
+
     return (
         <div className="work-modal">
             <div className="left-modal">
@@ -313,7 +326,7 @@ function Work({ works, imageRef, history }) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default withRouter(Works)

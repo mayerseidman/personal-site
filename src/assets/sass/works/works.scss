@@ -854,6 +854,7 @@
     .work-image-wrapper {
         height: 100px;
         background-color: #D8D8D8 ;
+        margin: 0 20px;
     }
 
     .main-work-text {
@@ -861,10 +862,12 @@
         font-weight: 900;
         margin: 10px 0;
         color: white;
+        padding: 0 20px;
     }
     .secondary-work-text {
         font-size: 1em;
         color: #F5C509;
+        padding: 0 20px;
     }
     .floating-profile-work {
         position: absolute;
@@ -1108,6 +1111,9 @@
     .news-heading {
         font-weight: 900;
         margin: .5em 0;
+    }
+    .my-work {
+        padding: 0 20px
     }
   }
 

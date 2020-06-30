@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './styles.css';
-import image from "../../assets/images/linkedin-profile-mayer.png"
+import image from "../../assets/images/linkedin-profile-mayer.png";
 
 export default class Home extends Component {
     constructor(props) {

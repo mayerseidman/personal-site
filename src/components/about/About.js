@@ -1,28 +1,29 @@
-import React,  { Component } from 'react'
+import React,  { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import image from "../../assets/images/linkedin-profile-mayer.png"
+import image from "../../assets/images/linkedin-profile-mayer.png";
 
 import '../../assets/sass/about/about.scss';
 
 class About extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.wrapperRef = React.createRef();
-        this.iconRef = React.createRef()
+        this.iconRef = React.createRef();
         this.textWrapper = React.createRef();
     }
+
     handeleMenuClick() {
         const wrapper = this.wrapperRef.current;
         const icon = this.iconRef.current;
-        wrapper.classList.toggle("is-nav-open")
-        icon.classList.toggle("is-nav-open")
+        wrapper.classList.toggle("is-nav-open");
+        icon.classList.toggle("is-nav-open");
     }
 
     componentDidMount() {
         setTimeout(() => {
             let textWrapper = this.textWrapper.current;
             textWrapper.classList.toggle('slide-down-about');
-        })
+        });
        
     }
 
@@ -111,8 +112,8 @@ class About extends Component {
                 </div>
             </div>
       
-        )
+        );
     }
 }
 
-export default About
+export default About;
