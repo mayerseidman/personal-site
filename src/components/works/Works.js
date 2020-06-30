@@ -18,6 +18,16 @@ class Works extends Component {
         this.iconRef = React.createRef();
         this.imageRef = React.createRef();
         this.mainRef = React.createRef();
+
+        // animations
+        this.rightContainer = React.createRef();
+        this.leftContainer = React.createRef();
+        this.nameWrapper = React.createRef();
+        this.textWrapper = React.createRef();
+        this.delayedText = React.createRef();
+        this.textWrapper = React.createRef();
+        this.profileRef = React.createRef();
+
         // this.props = props
         this.state = {
             works: {
@@ -28,6 +38,14 @@ class Works extends Component {
                 }
             }
         }
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            // animations
+            let textWrapper = this.textWrapper.current;
+            textWrapper.classList.toggle('slide-down-works');
+        })
     }
     handeleMenuClick() {
         const wrapper = this.wrapperRef.current;
@@ -49,8 +67,8 @@ class Works extends Component {
         return (
             <div className="wrapper">
                 <div className='wrapper-main'>
-                    <div className="left-container">
-                        <div className="my-name">
+                    <div ref={this.leftContainer} className="left-container-works">
+                        <div ref={this.nameWrapper} className="my-name-works">
                             <span className="name-mayer"><Link className="plain-link" to="/" >Mayer.</Link></span>
                         </div>
                         <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handeleMenuClick()}>
@@ -58,13 +76,14 @@ class Works extends Component {
                         </div>
                         <div className="float-dark-box"></div>
                     </div>
-                    <div className="right-container">
+                    <div ref={this.rightContainer} className="right-container-works">
                         <div ref={this.mainRef} className="main-content">
                             <div className='main-empty-'>
                                 <div className="float-dark-light"></div>
                             </div>
                             <div className='main-text'>
-                                <div className="text-container">
+                                <div className="text-top"></div>
+                                <div ref={this.textWrapper} className="text-container-works">
                                     <p className="my-work">My Work.</p>
                                     <div className='all-works'>
                                         <div className="each-work">
@@ -97,18 +116,19 @@ class Works extends Component {
                             </div>
                             <div className='main-empty-2'>
                                 <div className="float-dark-primary"></div>
+                                <div className="float-white-box"></div>
                             </div>
                         </div>
-                        <div ref={this.wrapperRef} className="navigation">
+                        <div ref={this.wrapperRef} className="navigation-works">
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/writing'>Writing</NavLink></p>
                         </div>
                     </div>
                 </div>
-                <div className='floating-profile'>
+                <div ref={this.profileRef} className='floating-profile-work'>
                     <div className="profile-image-container">
-                        <img ref={ this.imageRef } alt="profile" className="image-prof" src={ image } />
+                        <img ref={ this.imageRef } alt="profile" className="image-prof-works" src={ image } />
                     </div>
                     <div className="profile-image-blank"></div>
                 </div>

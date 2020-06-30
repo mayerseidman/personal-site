@@ -13,11 +13,11 @@
         min-height: 100vh;
     }
     
-    .left-container {
+    .left-container-works {
         width: 24%;
         background-color: #F4C42F;
     }
-    .my-name {
+    .my-name-works {
         font-size: 2.5em;
         font-weight: 600;
         margin: 20px 0 0 40px;
@@ -39,13 +39,14 @@
         height: 22px;
     }
     
-    .right-container {
+    .right-container-works {
         width: 76%;
         display: flex;
         position: relative;
+        background-color: #171C46;
     }
     
-    .navigation {
+    .navigation-works {
         flex-grow: 1;
         color: white;
         border-width: 1px;
@@ -65,7 +66,7 @@
     }
     
     .main-empty- {
-        flex-grow: 40;
+        flex-grow: 45;
     }
     
     .my-work {
@@ -108,8 +109,6 @@
     
     .text-syle {
         font-size: larger;
-        letter-spacing: 0.015em;
-        word-spacing: 0.4em;
         color: #F4C42F;
     }
     .text-paragraph {
@@ -127,7 +126,7 @@
     }
 
     .work-image-wrapper {
-        width: 30%;
+        width: 20%;
         background-color: #D8D8D8 ;
     }
     .worker-separator {
@@ -145,7 +144,7 @@
     .secondary-work-text {
         font-size: 1.2em;
         color: #F5C509;
-        width: 35em;
+        width: 20em;
     }
     .work-modal {
         height: 100vh;
@@ -316,45 +315,57 @@
         background-color: rgba(151, 151, 151, .5);
         box-shadow: 0 0 1px rgba(255, 255, 255, .5);
     }
-    .text-container {
+    .text-container-works {
         width: 100%;
         font-size: 1em;
+        flex-grow: 6;
+        opacity: 0;
+        transform: translateY(-20%);
+        transition: opacity 2.5s ease-in;
+        transition-delay: .5s;
     }
     
     .main-empty-2 {
         flex-grow: 15;
     }
     
-    .floating-profile {
+    .floating-profile-work {
         position: absolute;
         left: 12%;
         top:25%;
+        opacity: 1;
         width: 28%;
         height: 50%;
-        z-index: 2
-    }
-    
-    .floating-profile .profile-image-container {
-        position: absolute;
-        width: 450px;
-        height: 450px;
         z-index: 2;
     }
     
-    .image-prof {
+    .floating-profile-work .profile-image-container {
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        z-index: 2;
+    }
+    
+    .image-prof-works {
         width: 100%;
         
     }
     
-    .floating-profile .profile-image-blank {
+    .floating-profile-work .profile-image-blank {
         position: relative;
         background-color: #D26442;
         margin-top: 10%;
         margin-left: 10%;
-        height: 450px;
-        width: 450px;
+        height: 350px;
+        width: 350px;
         z-index: -1;
         box-shadow: 0 2px 4px 0 #000;
+    }
+
+    .floating-profile-work.is-loaded {
+        top: 25%;
+        left: 12%;
+        opacity: 1;
     }
 
     .nav-link:link {
@@ -392,15 +403,23 @@
         min-height: 100vh;
     }
     
-    .left-container {
+    .left-container-works {
         width: 24%;
         background-color: #F4C42F;
     }
 
-    .my-name {
+    .my-name-works {
         font-size: 2.5em;
         font-weight: 600;
         margin: 20px 0 0 40px;
+    }
+    .text-container-works {
+        flex-grow: 4;
+        width: 100%;
+        opacity: 0;
+        transform: translateY(-20%);
+        transition: opacity 2.5s ease-in;
+        transition-delay: .5s;
     }
 
     .link-text {
@@ -419,13 +438,14 @@
         height: 22px;
     }
     
-    .right-container {
+    .right-container-works {
         width: 76%;
         display: flex;
         position: relative;
+        background-color: #171C46;
     }
     
-    .navigation {
+    .navigation-works {
         flex-grow: 1;
         color: white;
         border-width: 1px;
@@ -460,12 +480,6 @@
         height: 22px;
     }
 
-    .float-white-box {
-        position: absolute;
-        background-color: #fff;
-        width: 22px;
-        height: 22px;
-    }
     
     .float-dark-primary {
         position: relative;
@@ -480,7 +494,7 @@
         flex-grow: 20;
         color: white;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: left;
     
@@ -488,8 +502,6 @@
     
     .text-syle {
         font-size: larger;
-        letter-spacing: 0.015em;
-        word-spacing: 0.4em;
         color: #F4C42F;
     }
     
@@ -528,7 +540,7 @@
     .secondary-work-text {
         font-size: 1.2em;
         color: #F5C509;
-        width: 35em;
+        width: 20em;
     }
     .work-modal {
         height: 100vh;
@@ -593,16 +605,6 @@
         color: white;
         padding: 0 40px;
     }
-    // .second-content {
-    //     height: 55%;
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: space-between;
-    //     background-color: white;
-    //     color: #171C46;
-    //     padding: 0 40px;
-    //     background-color: azure;
-    // }
     .modal-img-one {
         width: 400px;
         height: 250px;
@@ -682,30 +684,12 @@
         font-size: 4.5em;
         margin: 20px 0;
     }
-    .scroable-container {
-        height: 500px;
-        overflow-y: auto
-    }
-    .scroable-container::-webkit-scrollbar {
-        -webkit-appearance: none;
-        width: 10px;
-    }
-      
-    .scroable-container::-webkit-scrollbar-thumb {
-        border-radius: 4px;
-        background-color: rgba(151, 151, 151, .5);
-        box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-    }
-    // .text-container {
-    //     width: 100%;
-    //     font-size: 1em;
-    // }
     
     .main-empty-2 {
         flex-grow: 6;
     }
     
-    .floating-profile {
+    .floating-profile-work {
         position: absolute;
         left: 12%;
         top:25%;
@@ -714,7 +698,7 @@
         z-index: 2
     }
     
-    .floating-profile .profile-image-container {
+    .floating-profile-work .profile-image-container {
         position: absolute;
         width: 325px;
         height: 325px;
@@ -726,7 +710,7 @@
         
     }
     
-    .floating-profile .profile-image-blank {
+    .floating-profile-work .profile-image-blank {
         position: relative;
         background-color: #D26442;
         margin-top: 10%;
@@ -790,7 +774,7 @@
         flex-direction: column;
         z-index: 0;
     } 
-    .left-container {
+    .left-container-works {
         background-color: #F4C42F;
         height: 70px;
     }
@@ -803,15 +787,13 @@
 
     .text-syle {
         font-size: medium;
-        letter-spacing: 0.015em;
-        word-spacing: 0.4em;
         color: #F4C42F;
     }
 
     .text-paragraph {
         margin: 4px 0;
     }
-    .my-name {
+    .my-name-works {
         font-size: 1.5em;
         font-weight: 600;
         margin: 20px 0 0 20px;
@@ -820,13 +802,14 @@
     .name-mayer {
         border-bottom: solid 7px #171C46;
     }
-    .right-container {
+    .right-container-works {
         display: flex;
         flex-direction: column;
         justify-items: left;
         align-items: center;
-        height: 100%;
+        height: 100vh;
         position: relative;
+        background-color: #171C46;
     }
 
     .main-content {
@@ -841,6 +824,7 @@
     }
     .main-text {
         display: flex;
+        flex-direction: column;
     }
     .main-empty-2 {
         display: none;
@@ -882,7 +866,7 @@
         font-size: 1em;
         color: #F5C509;
     }
-    .floating-profile {
+    .floating-profile-work {
         position: absolute;
         margin-left: auto;
         margin-right: auto;
@@ -904,14 +888,14 @@
     .no-dec:visited {
         color: white;
     }
-    .floating-profile{
+    .floating-profile-work{
         display: none;
     }
     .my-work { 
         font-size: 1.2em;
     }
 
-    .floating-profile .profile-image-container {
+    .floating-profile-work .profile-image-container {
         position: absolute;
         left: 5%;
         width: 300px;
@@ -923,7 +907,7 @@
         width: 100%;
     }
     
-    .floating-profile .profile-image-blank {
+    .floating-profile-work .profile-image-blank {
         position: relative;
         background-color: #D26442;
         margin-top: 10%;
@@ -940,7 +924,7 @@
         margin: 20px 0;
     }
 
-    .navigation {
+    .navigation-works {
         left: -100%;
         display: flex;
         flex-direction: column;
@@ -953,11 +937,11 @@
         transition: left .5s;
         justify-content: center;
     }
-    .navigation p {
+    .navigation-works p {
         margin: 10px 0 10px 0
     }
 
-    .navigation.is-nav-open {
+    .navigation-works.is-nav-open {
         left: 0;
         padding-left: 20px;
 
@@ -1061,9 +1045,6 @@
         top: 10px;
     }
     
-    .modal-section {
-        // height: 100vh;
-    }
 
     .first-content {
         display: flex;
@@ -1153,3 +1134,12 @@
   .with-quote {
       display: flex;
   }
+
+  .close-modal {
+      cursor: pointer;
+  }
+
+  .slide-down-works {
+    animation: slide-down 2.5s forwards .5s 1;
+    opacity: 1;
+}
