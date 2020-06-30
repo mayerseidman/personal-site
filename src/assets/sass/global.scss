@@ -1,14 +1,25 @@
+html{
+    height: 100%;
+}
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+<<<<<<< HEAD
     /*background: #171C46;*/
+=======
+    // background: #171C46;
+    background-color: #fff;
+>>>>>>> b4ee5a821e2176182032af703c1622baa75bff63
    /* color: #555;*/
     font-size: 16px;
     font-family: effra, sans-serif;
-    height: 100vh;
+    min-height: 100%;
 }
 
+#root {
+    min-height: 100vh;
+}
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

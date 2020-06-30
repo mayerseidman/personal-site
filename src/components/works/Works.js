@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef, useState } from 'react'
+import React, { Component, useEffect, useRef, useState } from 'react';
 import { 
     NavLink,
     Switch,
@@ -7,8 +7,8 @@ import {
     withRouter,
     Route
 
-} from 'react-router-dom'
-import image from "../../assets/images/linkedin-profile-mayer.png"
+} from 'react-router-dom';
+import image from "../../assets/images/linkedin-profile-mayer.png";
 import '../../assets/sass/works/works.scss';
 
 class Works extends Component {
@@ -18,16 +18,45 @@ class Works extends Component {
         this.iconRef = React.createRef();
         this.imageRef = React.createRef();
         this.mainRef = React.createRef();
+
+        // animations
+        this.rightContainer = React.createRef();
+        this.leftContainer = React.createRef();
+        this.nameWrapper = React.createRef();
+        this.textWrapper = React.createRef();
+        this.delayedText = React.createRef();
+        this.textWrapper = React.createRef();
+        this.profileRef = React.createRef();
+
         // this.props = props
         this.state = {
             works: {
-                'work-one':{
+                'work-one': {
                     title: "Work Numero Uno",
                     description_one: "Descriptive text goes here…Descriptive text goes here…Descriptive text goes here dd.  Descriptive text goes here…ggoes here goes here.",
                     type: "Design | Prototype"
+                },
+                'work-two': {
+                    title: "Work Numero Dos",
+                    description_one: "Descriptive text goes here…Descriptive text goes here…Descriptive text goes here dd.  Descriptive text goes here…ggoes here goes here.",
+                    type: "Design | Prototype"
+                },
+                'work-three': {
+                    title: "Work Numero Tres",
+                    description_one: "Descriptive text goes here…Descriptive text goes here…Descriptive text goes here dd.  Descriptive text goes here…ggoes here goes here.",
+                    type: "Design | Prototype"
                 }
+
             }
         }
+    }
+
+    componentDidMount() {
+        setTimeout(() => {
+            // animations
+            let textWrapper = this.textWrapper.current;
+            textWrapper.classList.toggle('slide-down-works');
+        });
     }
     handeleMenuClick() {
         const wrapper = this.wrapperRef.current;
@@ -40,7 +69,7 @@ class Works extends Component {
 
     handleWork() {
         const image  = this.imageRef.current;
-        image.classList.toggle("blurred")
+        image.classList.toggle("blurred");
     }
 
     render() {
@@ -49,8 +78,8 @@ class Works extends Component {
         return (
             <div className="wrapper">
                 <div className='wrapper-main'>
-                    <div className="left-container">
-                        <div className="my-name">
+                    <div ref={this.leftContainer} className="left-container-works">
+                        <div ref={this.nameWrapper} className="my-name-works">
                             <span className="name-mayer"><Link className="plain-link" to="/" >Mayer.</Link></span>
                         </div>
                         <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handeleMenuClick()}>
@@ -58,13 +87,14 @@ class Works extends Component {
                         </div>
                         <div className="float-dark-box"></div>
                     </div>
-                    <div className="right-container">
+                    <div ref={this.rightContainer} className="right-container-works">
                         <div ref={this.mainRef} className="main-content">
                             <div className='main-empty-'>
                                 <div className="float-dark-light"></div>
                             </div>
                             <div className='main-text'>
-                                <div className="text-container">
+                                <div className="text-top"></div>
+                                <div ref={this.textWrapper} className="text-container-works">
                                     <p className="my-work">My Work.</p>
                                     <div className='all-works'>
                                         <div className="each-work">
@@ -79,16 +109,20 @@ class Works extends Component {
                                         <div className="worker-separator"></div>
                                         <div className="each-work">
                                             <div className="work-text">
-                                                <p className="main-work-text">Work Numero Dos</p>
-                                                <p className="secondary-work-text">Design | Prototype</p>
+                                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-two`}>
+                                                    <p className="main-work-text">Work Numero Dos</p>
+                                                    <p className="secondary-work-text">Design | Prototype</p>
+                                                </Link>
                                             </div>
                                             <div className="work-image-wrapper"></div>
                                         </div>
                                         <div className="worker-separator"></div>
                                         <div className="each-work">
                                             <div className="work-text">
-                                                <p className="main-work-text">Work Numero Tres</p>
-                                                <p className="secondary-work-text">Design|Prototype</p>
+                                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-three`}>
+                                                    <p className="main-work-text">Work Numero Tres</p>
+                                                    <p className="secondary-work-text">Design|Prototype</p>
+                                                </Link>
                                             </div>
                                             <div className="work-image-wrapper"></div>
                                         </div>
@@ -97,18 +131,19 @@ class Works extends Component {
                             </div>
                             <div className='main-empty-2'>
                                 <div className="float-dark-primary"></div>
+                                <div className="float-white-box"></div>
                             </div>
                         </div>
-                        <div ref={this.wrapperRef} className="navigation">
+                        <div ref={this.wrapperRef} className="navigation-works">
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/writing'>Writing</NavLink></p>
                         </div>
                     </div>
                 </div>
-                <div className='floating-profile'>
+                <div ref={this.profileRef} className='floating-profile-work'>
                     <div className="profile-image-container">
-                        <img ref={ this.imageRef } alt="profile" className="image-prof" src={ image } />
+                        <img ref={ this.imageRef } alt="profile" className="image-prof-works" src={ image } />
                     </div>
                     <div className="profile-image-blank"></div>
                 </div>
@@ -119,22 +154,22 @@ class Works extends Component {
                 </Switch>
             </div>
       
-        )
+        );
     }
 }
 
 function Work({ works, imageRef, history }) {
     let { workId } = useParams();
-    let modalRef = useRef(null)
-    let work = works[workId]
-    let [isClose, setClose] = useState(false)
+    let modalRef = useRef(null);
+    let work = works[workId];
+    let [isClose, setClose] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
+        setTimeout(() => {
             modalRef.current.classList.toggle("is-modal-open")
             
 
-        }, 50)
+        }, 50);
         let image = imageRef.current;
         if (isClose) {
             if (image.classList.contains("blurred")){
@@ -142,25 +177,23 @@ function Work({ works, imageRef, history }) {
             }
             setTimeout(() => {
                 history.goBack();
-            }, 500)
+            }, 500);
         }
         // return clearTimeout(timer);
-    }, [isClose])
+    }, [isClose]);
     
     const handleClick = () => {
-        let image = imageRef.current
+        let image = imageRef.current;
         if (image.classList.contains("blurred")){
-            image.classList.toggle("blurred")
+            image.classList.toggle("blurred");
         }
-        setClose(true)
+        setClose(true);
 
     }
     const goBack = () => {
-        // modalRef.current.classList.toggle("is-modal-open")
-        setClose(true)
-
-        
+        setClose(true);
     }
+
     return (
         <div className="work-modal">
             <div className="left-modal">
@@ -293,7 +326,7 @@ function Work({ works, imageRef, history }) {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default withRouter(Works)
