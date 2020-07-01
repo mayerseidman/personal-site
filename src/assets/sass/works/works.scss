@@ -65,6 +65,7 @@
     
     .main-empty- {
         flex-grow: 45;
+        position: relative;
     }
     
     .my-work {
@@ -73,10 +74,11 @@
     .float-dark-light {
         position: relative;
         top: 20%;
-        left: 40%;
+        left: 30%;
         background-color: #F4C42F;
         width: 22px;
         height: 22px;
+        z-index: 2;
     }
 
     .float-white-box {
@@ -84,12 +86,14 @@
         background-color: #fff;
         width: 22px;
         height: 22px;
+        right: 20%;
+        z-index: 2;
     }
     
     .float-dark-primary {
         position: relative;
         top: 5%;
-        left: 20%;
+        right: 10%;
         background-color: #D26442;
         width: 22px;
         height: 22px;
@@ -472,7 +476,7 @@
     .float-dark-light {
         position: relative;
         top: 20%;
-        left: 40%;
+        left: 30%;
         background-color: #F4C42F;
         width: 22px;
         height: 22px;
@@ -480,12 +484,13 @@
 
     
     .float-dark-primary {
-        position: relative;
+        position: absolute;
         top: 5%;
-        left: 20%;
+        right: 10%;
         background-color: #D26442;
         width: 22px;
         height: 22px;
+        z-index: 2;
     }
     
     .main-text {

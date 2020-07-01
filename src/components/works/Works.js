@@ -86,11 +86,14 @@ class Works extends Component {
                             <div></div>
                         </div>
                         <div className="float-dark-box"></div>
+                        <div className="float-dark-light"></div>
+                        <div className="float-dark-primary"></div>
+                        <div className="float-white-box"></div>
                     </div>
                     <div ref={this.rightContainer} className="right-container-works">
                         <div ref={this.mainRef} className="main-content">
                             <div className='main-empty-'>
-                                <div className="float-dark-light"></div>
+                            
                             </div>
                             <div className='main-text'>
                                 <div className="text-top"></div>
@@ -130,8 +133,6 @@ class Works extends Component {
                                 </div>
                             </div>
                             <div className='main-empty-2'>
-                                <div className="float-dark-primary"></div>
-                                <div className="float-white-box"></div>
                             </div>
                         </div>
                         <div ref={this.wrapperRef} className="navigation-works">

@@ -73,7 +73,7 @@
         margin: 5px 0;
     }
     .float-dark-light {
-        position: relative;
+        position: fixed;
         top: 20%;
         left: 40%;
         background-color: #F4C42F;
@@ -82,9 +82,9 @@
     }
     
     .float-dark-primary {
-        position: relative;
+        position: absolute;
         top: 5%;
-        left: 20%;
+        right: 10%;
         background-color: #D26442;
         width: 22px;
         height: 22px;
@@ -247,7 +247,8 @@
         width: 22px;
         height: 22px;
         bottom: 10%;
-        left: -100%;
+        right: 20%;
+        z-index: 2;
     }
 
     .text-container-about {
