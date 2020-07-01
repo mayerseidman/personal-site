@@ -2,8 +2,8 @@ import React,{ Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './styles.css';
 import image from "../../assets/images/linkedin-profile-mayer.png";
-
-export default class Home extends Component {
+import { withLoadState } from '../contexts/LoadStateContext';
+class Home extends Component {
     constructor(props) {
         super(props)
         this.wrapperRef = React.createRef();
@@ -15,19 +15,37 @@ export default class Home extends Component {
         this.nameWrapper = React.createRef();
         this.textWrapper = React.createRef();
         this.delayedText = React.createRef();
+        console.log(props)
     }
 
     componentDidMount() {
+        let rightContainer = this.rightContainer.current;
+        let leftContainer = this.leftContainer.current;
+        let wrapperRef = this.wrapperRef.current; 
+        let nameWrapper = this.nameWrapper.current;
+
+        console.log("Has home page loaded?:", this.props.context.state.homeLoaded)
+        if (!this.props.context.state.homeLoaded) {
+              rightContainer.classList.toggle('animate-right-container');
+              leftContainer.classList.toggle('animate-left-container');
+              wrapperRef.classList.toggle('animate-navigation');
+              nameWrapper.classList.toggle('animate-my-name');
+              this.props.context.updateLoaded();
+        }else {
+            
+        }
         setTimeout(() => {
             let profileRef = this.profileRef.current;
             let imageRef = this.imageRef.current;
             // animations 
-            let rightContainer = this.rightContainer.current;
-            let leftContainer = this.leftContainer.current;
-            let wrapperRef = this.wrapperRef.current;
-            let nameWrapper = this.nameWrapper.current;
+            rightContainer = this.rightContainer.current;
+            leftContainer = this.leftContainer.current;
+            wrapperRef = this.wrapperRef.current;
+            nameWrapper = this.nameWrapper.current;
+
             let textWrapper = this.textWrapper.current;
             let delayedText = this.delayedText.current;
+
             profileRef.classList.toggle("is-loaded");
             imageRef.classList.toggle('fade-in');
             // animations
@@ -37,6 +55,8 @@ export default class Home extends Component {
             nameWrapper.classList.toggle('slide-down');
             textWrapper.classList.toggle('slide-down');
             delayedText.classList.toggle('show');
+
+         
         })
         
     }
@@ -52,19 +72,21 @@ export default class Home extends Component {
         return (
             <div className="wrapper">
                 <div className='wrapper-main'>
-                    <div ref={this.leftContainer} className="left-container">
-                        <div ref={this.nameWrapper} className="my-name">
+                    <div ref={this.leftContainer} className="left-container-home">
+                        <div ref={this.nameWrapper} className="my-name-home">
                             <span className="name-mayer">Mayer.</span>
                         </div>
                         <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handeleMenuClick()}>
                             <div></div>
                         </div>
                         <div className="float-dark-box"></div>
+                        <div className="float-dark-light"></div>
+                        <div className="float-dark-primary"></div>
+                        <div className="float-white-box"></div>
                     </div>
-                    <div ref={this.rightContainer} className="right-container">
+                    <div ref={this.rightContainer} className="right-container-home">
                         <div className="main-content">
-                            <div className='main-empty-1'>
-                                <div className="float-dark-light"></div>
+                            <div className='main-empty-1'>  
                             </div>
                             <div className='main-text self-align'>
                                 <div className="text-top"></div>
@@ -84,11 +106,10 @@ export default class Home extends Component {
                                 </div>
                             </div>
                             <div className='main-empty-2'>
-                                <div className="float-dark-primary"></div>
-                                <div className="float-white-box"></div>
+                                
                             </div>
                         </div>
-                        <div ref={this.wrapperRef} className="navigation">
+                        <div ref={this.wrapperRef} className="navigation-home">
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/writing'>Writing</NavLink></p>
@@ -106,3 +127,4 @@ export default class Home extends Component {
         )
     }
 }
+export default withLoadState(Home);

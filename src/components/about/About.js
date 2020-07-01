@@ -39,11 +39,14 @@ class About extends Component {
                             <div></div>
                         </div>
                         <div className="float-dark-box"></div>
+                        <div className="float-dark-light"></div>
+                        <div className="float-dark-primary"></div>
+                        <div className="float-white-box"></div>
                     </div>
                     <div className="right-container-about">
                         <div className="main-content">
                             <div className='main-empty-about'>
-                                <div className="float-dark-light"></div>
+                                
                             </div>
                             <div className='main-text'>
                                 <div className="text-top"></div>
@@ -77,8 +80,7 @@ class About extends Component {
                                 </div>
                             </div>
                             <div className='main-empty-2'>
-                                <div className="float-dark-primary"></div>
-                                <div className="float-white-box"></div>
+                                
                             </div>
                         </div>
                         <div ref={this.wrapperRef} className="navigation-about">
