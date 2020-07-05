@@ -85,26 +85,32 @@
     }
     
     .navigation-home {
-        flex-grow: 1;
+        /* flex-grow: 1; */
         color: white;
-        border-width: 1px;
+        position: absolute;
+        right: 100%;
+        opacity: 0;
+        border-style: solid;
+        border-width: 0  0  0 1px;
+        border-color: #F4C42F;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 1.2em;
-        min-height: 600px;  
+        height: 100%;  
+        margin: 0 20px;
+        padding: 0 0 0 20px;
+        display: none;
+        transition-delay: 3.5s;
     }
 
     .animate-navigation {
-        transform: translateX(3000%); 
+        transform: translateX(4000%); 
         display: none;
     }
 
     .main-content {
         flex-grow: 12;
-        border-style: solid;
-        border-color: #F4C42F;
-        border-width: 0 1px 0 0;
         display: flex;
     }
     
@@ -303,20 +309,31 @@
     }
 
     .navigation-home {
-        flex-grow: 1;
+        /* flex-grow: 1; */
         color: white;
         border-width: 1px;
+        right: 100%;
+        border-style: solid;
+        border-width: 0  0  0 1px;
+        border-color: #F4C42F;
+        border-width: 0  0  0 1px;
+        padding: 0 0 0 20px;
+        position: absolute;
         display: flex;
+        opacity: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         font-size: 1.2em; 
-        min-height: 600px;  
+        height: 100%;  
+        margin: 0 20px;
+        transition: opacity 2.5s;
     }
 
     .animate-navigation {
-        transform: translateX(3000%); 
+        transform: translateX(4000%); 
         display: none;
+        opacity: 1;
     }
 
     .text-delayed {
@@ -328,9 +345,9 @@
 
     .main-content {
         flex-grow: 12;
-        border-style: solid;
+        /* border-style: solid;
         border-color: #F4C42F;
-        border-width: 0 1px 0 0;
+        border-width: 0 1px 0 0; */
         display: flex;
     }
 
@@ -753,6 +770,8 @@
 
 .slide-in-nav {
     display: flex;
+    right: 0;
+    opacity: 1;
     animation: slide-in 1.8s forwards 1.8s 1;
 }
 
