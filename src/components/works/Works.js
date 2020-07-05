@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef, useState, useLayoutEffect } from 'react';
+import React, { Component, useEffect, useRef, useState} from 'react';
 import { 
     NavLink,
     Switch,
@@ -8,6 +8,9 @@ import {
     Route
 
 } from 'react-router-dom';
+import { withLoadState } from '../contexts/LoadStateContext';
+
+
 import image from "../../assets/images/linkedin-profile-mayer.png";
 import '../../assets/sass/works/works.scss';
 
@@ -52,6 +55,7 @@ class Works extends Component {
     }
 
     componentDidMount() {
+        this.props.context.setLastLocation(this.props.location)
         setTimeout(() => {
             // animations
             let textWrapper = this.textWrapper.current;
@@ -606,4 +610,4 @@ function Work({ works, imageRef, history }) {
     );
 }
 
-export default withRouter(Works)
+export default withLoadState(withRouter(Works))

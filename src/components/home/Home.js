@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, withRouter } from 'react-router-dom';
 import './styles.css';
 import image from "../../assets/images/linkedin-profile-mayer.png";
 import { withLoadState } from '../contexts/LoadStateContext';
@@ -18,12 +18,14 @@ class Home extends Component {
         console.log(props)
     }
 
+
     componentDidMount() {
+        this.props.context.setLastLocation(this.props.location)
         let rightContainer = this.rightContainer.current;
         let leftContainer = this.leftContainer.current;
         let wrapperRef = this.wrapperRef.current; 
         let nameWrapper = this.nameWrapper.current;
-
+        console.log("prev", this.props.context.state.lastLocation)
         console.log("Has home page loaded?:", this.props.context.state.homeLoaded)
         if (!this.props.context.state.homeLoaded) {
               rightContainer.classList.toggle('animate-right-container');
@@ -59,13 +61,15 @@ class Home extends Component {
          
         })
         
+        
     }
 
     handeleMenuClick() {
         const wrapper = this.wrapperRef.current;
         const icon = this.iconRef.current;
-        wrapper.classList.toggle("is-nav-open")
-        icon.classList.toggle("is-nav-open")
+        wrapper.classList.toggle("is-nav-open");
+        icon.classList.toggle("is-nav-open");
+        this.profileRef.current.classList.toggle("hide-profile");
     }
 
     render() {
@@ -127,4 +131,4 @@ class Home extends Component {
         )
     }
 }
-export default withLoadState(Home);
+export default withLoadState(withRouter(Home));

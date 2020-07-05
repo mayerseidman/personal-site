@@ -1,6 +1,7 @@
 import React,  { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, withRouter } from 'react-router-dom';
 import image from "../../assets/images/linkedin-profile-mayer.png";
+import { withLoadState } from '../contexts/LoadStateContext';
 
 import '../../assets/sass/about/about.scss';
 
@@ -20,6 +21,7 @@ class About extends Component {
     }
 
     componentDidMount() {
+        this.props.context.setLastLocation(this.props.location)
         setTimeout(() => {
             let textWrapper = this.textWrapper.current;
             textWrapper.classList.toggle('slide-down-about');
@@ -118,4 +120,4 @@ class About extends Component {
     }
 }
 
-export default About;
+export default withLoadState(withRouter(About));
