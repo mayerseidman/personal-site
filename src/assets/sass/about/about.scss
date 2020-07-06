@@ -215,13 +215,38 @@
     .image-prof-a {
         width: 100%; 
     }
+    .animate-from-a {
+        top: 0%;
+        left: 0%;
+        opacity: 1;
+        transition: all 1.2s ease-in;
+    
+    }
+    .set-up-profile-about {
+        left: 14%;
+        top: -15%;
+        opacity: 0;
+    }
 }
 
 @media screen 
   and (min-width: 1200px) 
   and (max-width: 1499px)
    {
+    .set-up-profile-about {
+        left: 14%;
+        top: -15%;
+        opacity: 0;
+    }
+
+    .animate-from-a {
+        top: 0%;
+        left: 0%;
+        opacity: 1;
+        transition: all 1.2s ease-in;
     
+    }
+
     .left-container-about {
         width: 24%;
         background-color: #F4C42F;
@@ -312,6 +337,7 @@
         width: 325px;
         height: 325px;
         z-index: 2;
+        box-shadow: 0 2px 4px 0 #000;
     }
     
     .floating-profile-a .profile-image-blank {
@@ -322,6 +348,7 @@
         height: 325px;
         width: 325px;
         z-index: -1;
+        box-shadow: 0 2px 4px 0 #000;
     }
     .emp-text {
         color: #F4C42F;

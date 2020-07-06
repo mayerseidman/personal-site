@@ -232,8 +232,6 @@
     
     .text-delayed {
         opacity: 0;
-        transition: opacity 2s;
-        transition-delay: 5.8s;
     }
 
     .text-delayed.show {
@@ -243,6 +241,11 @@
         top: 25%;
         left: 12%;
         opacity: 1;
+    }
+    .set-up-profile {
+        left: 14%;
+        top: -15%;
+        opacity: 0;
     }
 }
 
@@ -338,8 +341,6 @@
 
     .text-delayed {
         opacity: 0;
-        transition: opacity 2s;
-        transition-delay: 5.8s;
     }
 
 
@@ -377,7 +378,6 @@
         transform: translateY(-10%);
         opacity: 0;
         transition: opacity 3.5s ease-in;
-        transition-delay: 3.5s;
         flex-grow: 4;
     }
 
@@ -424,9 +424,18 @@
         top:20%;
         width: 28%;
         z-index: 2;
-        opacity: 0;
+        opacity: 0; 
+    }
+
+    .animate-profile-home {
         transition: all 2.8s ease-in;
         transition-delay: 1.5s;
+    }
+
+    .set-up-profile {
+        left: 14%;
+        top: -15%;
+        opacity: 0;
     }
 
     .text-delayed.show {
@@ -436,6 +445,9 @@
     .floating-profile-home.is-loaded {
         top: 25%;
         left: 12%;
+        opacity: 1;
+    }
+    .make-visible {
         opacity: 1;
     }
     .floating-profile-home .profile-image-container {
@@ -453,6 +465,7 @@
         height: 325px;
         width: 325px;
         z-index: -1;
+        box-shadow: 0 2px 4px 0 #000;
     }
   }
 
@@ -766,6 +779,10 @@
     animation: slide-in 2.5s forwards .5s 1;
     opacity: 1;
 }
+.slide-down-slower {
+    animation: slide-down 1.5s forwards .5s 1;
+    opacity: 1;
+}
 
 .slide-in-left {
     /* animation: slide-in 2s forwards 1s 1; */
@@ -778,9 +795,38 @@
     opacity: 1;
     animation: slide-in 1.8s forwards 1.8s 1;
 }
+.slide-in-nav-fast {
+    right: 0;
+    opacity: 1;
+    display: flex;
+}
+
+.delayed-main {
+    transition: opacity 1.5s ease-in;
+    transition-delay: 0.5s;
+}
+.main-slow {
+    transition: opacity 3.5s ease-in;
+    transition-delay: 3.5s;
+}
+
+.animate-from-about {
+    top: 0%;
+    left: 0%;
+    opacity: 1;
+    transition: all 1.2s ease-in;
+
+}
 
 
-
+.main-delayed-text {
+    transition: opacity 2s;
+    transition-delay: 5.8s;
+}
+.slow-delayed-text {
+    transition: opacity 2s;
+    transition-delay: 1.5s;
+}
 
 @keyframes slide-down {
     100% { transform: translateY(0%);}
