@@ -821,7 +821,7 @@
 
 .main-delayed-text {
     transition: opacity 2s;
-    transition-delay: 5.8s;
+    transition-delay: 4.8s;
 }
 .slow-delayed-text {
     transition: opacity 2s;
