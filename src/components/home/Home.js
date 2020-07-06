@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, withRouter } from 'react-router-dom';
 import './styles.css';
 import image from "../../assets/images/linkedin-profile-mayer.png";
 import { withLoadState } from '../contexts/LoadStateContext';
@@ -15,27 +15,46 @@ class Home extends Component {
         this.nameWrapper = React.createRef();
         this.textWrapper = React.createRef();
         this.delayedText = React.createRef();
+        this.imageContainer = React.createRef();
         console.log(props)
     }
+
 
     componentDidMount() {
         let rightContainer = this.rightContainer.current;
         let leftContainer = this.leftContainer.current;
         let wrapperRef = this.wrapperRef.current; 
         let nameWrapper = this.nameWrapper.current;
+        let profileRef = this.profileRef.current;
+        let textWrapper = this.textWrapper.current;
+        let delayedText = this.delayedText.current;
 
+        console.log("prev", this.props.context.state.lastLocation)
         console.log("Has home page loaded?:", this.props.context.state.homeLoaded)
+        
         if (!this.props.context.state.homeLoaded) {
               rightContainer.classList.toggle('animate-right-container');
               leftContainer.classList.toggle('animate-left-container');
               wrapperRef.classList.toggle('animate-navigation');
               nameWrapper.classList.toggle('animate-my-name');
+              profileRef.classList.toggle('animate-profile-home');
+              textWrapper.classList.toggle("main-slow");
+              delayedText.classList.toggle("main-delayed-text")
               this.props.context.updateLoaded();
         }else {
-            
+            if(this.props.context.state.lastLocation.pathname === '/about'){
+                console.log('coming from about')
+                profileRef.classList.toggle('is-loaded')
+                this.imageContainer.current.classList.toggle('set-up-profile');
+            }else{
+                profileRef.classList.toggle("is-loaded");
+            }
+            textWrapper.classList.toggle('delayed-main');
+            delayedText.classList.toggle("slow-delayed-text");
+            wrapperRef.classList.toggle('slide-in-nav-fast');
         }
         setTimeout(() => {
-            let profileRef = this.profileRef.current;
+            profileRef = this.profileRef.current;
             let imageRef = this.imageRef.current;
             // animations 
             rightContainer = this.rightContainer.current;
@@ -43,29 +62,45 @@ class Home extends Component {
             wrapperRef = this.wrapperRef.current;
             nameWrapper = this.nameWrapper.current;
 
-            let textWrapper = this.textWrapper.current;
-            let delayedText = this.delayedText.current;
-
-            profileRef.classList.toggle("is-loaded");
+            textWrapper = this.textWrapper.current;
+            delayedText = this.delayedText.current;
+            if (!this.props.context.state.lastLocation){
+                profileRef.classList.toggle("is-loaded");
+                textWrapper.classList.toggle('slide-down');
+                wrapperRef.classList.toggle('slide-in-nav');
+            }else{
+                if(this.props.context.state.lastLocation.pathname === '/about'){
+                    this.imageContainer.current.classList.toggle('animate-from-about')
+                }
+                textWrapper.classList.toggle("slide-down-slower");
+                
+            }
+           
+           
             imageRef.classList.toggle('fade-in');
             // animations
             rightContainer.classList.toggle('slide-in');
             leftContainer.classList.toggle('slide-in-left');
-            wrapperRef.classList.toggle('slide-in-nav');
+            
             nameWrapper.classList.toggle('slide-down');
-            textWrapper.classList.toggle('slide-down');
+            
             delayedText.classList.toggle('show');
 
+            this.props.context.setLastLocation(this.props.location)
          
         })
+        
+
+        
         
     }
 
     handeleMenuClick() {
         const wrapper = this.wrapperRef.current;
         const icon = this.iconRef.current;
-        wrapper.classList.toggle("is-nav-open")
-        icon.classList.toggle("is-nav-open")
+        wrapper.classList.toggle("is-nav-open");
+        icon.classList.toggle("is-nav-open");
+        this.profileRef.current.classList.toggle("hide-profile");
     }
 
     render() {
@@ -117,7 +152,7 @@ class Home extends Component {
                     </div>
                 </div>
                 <div ref={this.profileRef} className='floating-profile-home'>
-                    <div className="profile-image-container">
+                    <div ref={this.imageContainer} className="profile-image-container">
                         <img ref={this.imageRef} alt="profile" className="image-prof" src={ image } />
                     </div>
                     <div className="profile-image-blank"></div>
@@ -127,4 +162,4 @@ class Home extends Component {
         )
     }
 }
-export default withLoadState(Home);
+export default withLoadState(withRouter(Home));

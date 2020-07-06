@@ -11,16 +11,20 @@ class App extends Component {
 	constructor(props) {
 	    super(props);
 	    this.state = {
-			homeLoaded: false
+			homeLoaded: false,
+			lastLocation: null
 		 };
 	}
 	updateLoaded = () => {
 		this.setState({homeLoaded: true});
 	}
+	setLastLocation = (location) => {
+		this.setState({lastLocation: location})
+	}
 	render() {
     	
 		return (
-			<LoadStateContext.Provider value={{state: this.state, updateLoaded: this.updateLoaded}}>	
+			<LoadStateContext.Provider value={{state: this.state, updateLoaded: this.updateLoaded, setLastLocation: this.setLastLocation}}>	
 				<Router>
 					<Switch>
 						<Route exact path="/" component={ Home } />
