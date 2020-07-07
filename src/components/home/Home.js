@@ -28,6 +28,8 @@ class Home extends Component {
         let profileRef = this.profileRef.current;
         let textWrapper = this.textWrapper.current;
         let delayedText = this.delayedText.current;
+        let imageRef = this.imageRef.current;
+
 
         console.log("prev", this.props.context.state.lastLocation)
         console.log("Has home page loaded?:", this.props.context.state.homeLoaded)
@@ -39,7 +41,8 @@ class Home extends Component {
               nameWrapper.classList.toggle('animate-my-name');
               profileRef.classList.toggle('animate-profile-home');
               textWrapper.classList.toggle("main-slow");
-              delayedText.classList.toggle("main-delayed-text")
+              delayedText.classList.toggle("main-delayed-text");
+              imageRef.classList.toggle('animate-image-prof');
               this.props.context.updateLoaded();
         }else {
             if(this.props.context.state.lastLocation.pathname === '/about'){
@@ -55,7 +58,7 @@ class Home extends Component {
         }
         setTimeout(() => {
             profileRef = this.profileRef.current;
-            let imageRef = this.imageRef.current;
+            imageRef = this.imageRef.current;
             // animations 
             rightContainer = this.rightContainer.current;
             leftContainer = this.leftContainer.current;
@@ -68,6 +71,8 @@ class Home extends Component {
                 profileRef.classList.toggle("is-loaded");
                 textWrapper.classList.toggle('slide-down');
                 wrapperRef.classList.toggle('slide-in-nav');
+                imageRef.classList.toggle('fade-in');
+
             }else{
                 if(this.props.context.state.lastLocation.pathname === '/about'){
                     this.imageContainer.current.classList.toggle('animate-from-about')
@@ -77,7 +82,6 @@ class Home extends Component {
             }
            
            
-            imageRef.classList.toggle('fade-in');
             // animations
             rightContainer.classList.toggle('slide-in');
             leftContainer.classList.toggle('slide-in-left');
