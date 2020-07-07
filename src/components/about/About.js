@@ -22,6 +22,7 @@ class About extends Component {
     }
 
     componentDidMount() {
+        this.props.context.updateLoaded()
         this.props.context.setLastLocation(this.props.location);
         this.imageContainer.current.classList.toggle('set-up-profile-about');
         setTimeout(() => {

@@ -30,6 +30,7 @@ class Works extends Component {
         this.delayedText = React.createRef();
         this.textWrapper = React.createRef();
         this.profileRef = React.createRef();
+        this.imageContainer = React.createRef();
 
         // this.props = props
         this.state = {
@@ -55,11 +56,21 @@ class Works extends Component {
     }
 
     componentDidMount() {
-        this.props.context.setLastLocation(this.props.location)
+        this.props.context.updateLoaded()
+        if( this.props.context.state.lastLocation !== null && this.props.context.state.lastLocation.pathname === '/about' ){
+            this.imageContainer.current.classList.toggle('set-up-profile');
+        }
         setTimeout(() => {
             // animations
             let textWrapper = this.textWrapper.current;
             textWrapper.classList.toggle('slide-down-works');
+            if( this.props.context.state.lastLocation !== null && this.props.context.state.lastLocation.pathname === '/about' ){
+                this.imageContainer.current.classList.toggle('animate-from-about');
+                console.log("done!")
+            }
+
+            this.props.context.setLastLocation(this.props.location)
+
         });
     }
     handeleMenuClick() {
@@ -128,7 +139,7 @@ class Works extends Component {
                                             <div className="work-text">
                                                 <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-three`}>
                                                     <p className="main-work-text">Work Numero Tres</p>
-                                                    <p className="secondary-work-text">Design|Prototype</p>
+                                                    <p className="secondary-work-text">Design | Prototype</p>
                                                 </Link>
                                             </div>
                                             <div className="work-image-wrapper"></div>
@@ -147,7 +158,7 @@ class Works extends Component {
                     </div>
                 </div>
                 <div ref={this.profileRef} className='floating-profile-work'>
-                    <div className="profile-image-container">
+                    <div ref={this.imageContainer} className="profile-image-container">
                         <img ref={ this.imageRef } alt="profile" className="image-prof-works" src={ image } />
                     </div>
                     <div className="profile-image-blank"></div>

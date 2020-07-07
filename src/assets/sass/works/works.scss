@@ -419,6 +419,20 @@ $primary-white: #fff;
   and (min-width: 1200px) 
   and (max-width: 1499px)
   { 
+
+    .set-up-profile {
+        left: 14%;
+        top: -15%;
+        opacity: 0;
+    }
+    .animate-from-about {
+        top: 0%;
+        left: 0%;
+        opacity: 1;
+        transition: all 1.2s ease-in;
+    
+    }
+
     .wrapper-main {
         display: flex;
         width: 100%;
@@ -1001,13 +1015,14 @@ $primary-white: #fff;
     // main wrapper
     .wrapper {
         width: 100%;
-        height: 100vh;
+        height: 100%;
     }
     .wrapper-main {
         display: flex;
         width: 100%;
         flex-direction: column;
         z-index: 0;
+        height: 100%;
     } 
     .left-container-works {
         background-color: #F4C42F;
@@ -1032,6 +1047,7 @@ $primary-white: #fff;
         font-size: 1.5em;
         font-weight: 600;
         margin: 20px 0 0 20px;
+        height: 70px;
     }
     
     .name-mayer {
@@ -1369,6 +1385,13 @@ $primary-white: #fff;
         display: flex;
         flex-direction: column;
     }
+    .my-name-works {
+        font-size: 1.5em;
+        font-weight: 600;
+        margin: 20px 0 0 20px;
+        height: 70px;
+    }
+    
   }
 
 
