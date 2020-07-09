@@ -643,7 +643,6 @@
     .navigation-about.is-nav-open {
         left: 0;
         padding-left: 20px;
-
     }
     .nav-icon {
         margin: 1em;
@@ -652,10 +651,10 @@
         right: 5px;
         top: 0;
         bottom: 0;
-      }
+    }
       
-      .nav-icon:after, 
-      .nav-icon:before, 
+    .nav-icon:after, 
+    .nav-icon:before, 
       .nav-icon div {
         background-color: #171C46;
         border-radius: 3px;
@@ -677,10 +676,9 @@
       .nav-icon.is-nav-open div {
         transform: scale(0);
       }
-      .link-text {
-          color: #D26442;
-          text-decoration: none;
-      }
+        .link-text {
+            text-decoration: none;
+        }
       .nav-link:link {
         text-decoration: none;
         color: #171C46;
@@ -690,11 +688,11 @@
           color: #171C46;
       }
 
-      .about-details {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-      }
+    .about-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
 

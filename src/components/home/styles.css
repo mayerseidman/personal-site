@@ -849,7 +849,9 @@
     transition-delay: 3.5s;
 }
 
-
+.link-text {
+    color: #D26442;
+}
 
 .main-delayed-text {
     transition: opacity 2s;
