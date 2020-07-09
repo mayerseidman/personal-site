@@ -12,6 +12,7 @@ class About extends Component {
         this.iconRef = React.createRef();
         this.textWrapper = React.createRef();
         this.imageContainer = React.createRef();
+        this.prof = React.createRef();
     }
 
     handeleMenuClick() {
@@ -25,10 +26,12 @@ class About extends Component {
         this.props.context.updateLoaded()
         this.props.context.setLastLocation(this.props.location);
         this.imageContainer.current.classList.toggle('set-up-profile-about');
+        this.prof.current.classList.toggle('animate-profile');
         setTimeout(() => {
             let textWrapper = this.textWrapper.current;
             textWrapper.classList.toggle('slide-down-about');
             this.imageContainer.current.classList.toggle('animate-from-a')
+            this.prof.current.classList.toggle('on-load-profile');
         });
        
     }
@@ -96,7 +99,7 @@ class About extends Component {
                         </div>
                     </div>
                 </div>
-                <div className='floating-profile-a'>
+                <div ref={this.prof} className='floating-profile-a'>
                     <div ref={this.imageContainer} className="profile-image-container">
                         <div className="row-gif">
                             <div className="cell-gif">

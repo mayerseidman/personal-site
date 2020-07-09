@@ -35,15 +35,20 @@ class Home extends Component {
         console.log("Has home page loaded?:", this.props.context.state.homeLoaded)
         
         if (!this.props.context.state.homeLoaded) {
-              rightContainer.classList.toggle('animate-right-container');
-              leftContainer.classList.toggle('animate-left-container');
-              wrapperRef.classList.toggle('animate-navigation');
-              nameWrapper.classList.toggle('animate-my-name');
-              profileRef.classList.toggle('animate-profile-home');
-              textWrapper.classList.toggle("main-slow");
-              delayedText.classList.toggle("main-delayed-text");
-              imageRef.classList.toggle('animate-image-prof');
-              this.props.context.updateLoaded();
+            rightContainer.classList.toggle('animate-right-container');
+            leftContainer.classList.toggle('animate-left-container');
+            wrapperRef.classList.toggle('animate-navigation');
+            nameWrapper.classList.toggle('animate-my-name');
+            profileRef.classList.toggle('animate-profile-home');
+            textWrapper.classList.toggle("main-slow");
+            delayedText.classList.toggle("main-delayed-text");
+            imageRef.classList.toggle('animate-image-prof');
+
+
+            // mobile animations
+            profileRef.classList.toggle('animate-profile')
+
+            this.props.context.updateLoaded();
         }else {
             if(this.props.context.state.lastLocation.pathname === '/about'){
                 console.log('coming from about')
@@ -55,6 +60,9 @@ class Home extends Component {
             textWrapper.classList.toggle('delayed-main');
             delayedText.classList.toggle("slow-delayed-text");
             wrapperRef.classList.toggle('slide-in-nav-fast');
+
+            // mobile animations
+            profileRef.classList.toggle('animate-profile')
         }
         setTimeout(() => {
             profileRef = this.profileRef.current;
@@ -89,8 +97,10 @@ class Home extends Component {
             nameWrapper.classList.toggle('slide-down');
             
             delayedText.classList.toggle('show');
-
+            // mobile 
+            profileRef.classList.toggle('on-load-profile');
             this.props.context.setLastLocation(this.props.location)
+
          
         })
         
@@ -110,6 +120,7 @@ class Home extends Component {
     render() {
         return (
             <div className="wrapper">
+                <div className="base-background"></div>
                 <div className='wrapper-main'>
                     <div ref={this.leftContainer} className="left-container-home">
                         <div ref={this.nameWrapper} className="my-name-home">
