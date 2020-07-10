@@ -81,12 +81,16 @@ class Home extends Component {
                 wrapperRef.classList.toggle('slide-in-nav');
                 imageRef.classList.toggle('fade-in');
 
+                // mobile
+                profileRef.classList.toggle('on-load-profile');
+
             }else{
                 if(this.props.context.state.lastLocation.pathname === '/about'){
                     this.imageContainer.current.classList.toggle('animate-from-about')
                 }
                 textWrapper.classList.toggle("slide-down-slower");
-                
+
+                profileRef.classList.toggle('on-load-profile-fast');
             }
            
            
@@ -98,7 +102,7 @@ class Home extends Component {
             
             delayedText.classList.toggle('show');
             // mobile 
-            profileRef.classList.toggle('on-load-profile');
+            
             this.props.context.setLastLocation(this.props.location)
 
          
