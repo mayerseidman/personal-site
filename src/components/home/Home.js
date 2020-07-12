@@ -124,7 +124,6 @@ class Home extends Component {
     render() {
         return (
             <div className="wrapper">
-                <div className="base-background"></div>
                 <div className='wrapper-main'>
                     <div ref={this.leftContainer} className="left-container-home">
                         <div ref={this.nameWrapper} className="my-name-home">
