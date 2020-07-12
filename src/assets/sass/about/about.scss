@@ -312,18 +312,18 @@
     }
     
 
-    .animate-profile {
-        transform-style: preserve-3d;
-        transition: all 1600ms ease 1s;
-        opacity: 0;
-        transform: translateX(0px) translateY(-100px) translateZ(0px);
-    }
+    // .animate-profile {
+    //     transform-style: preserve-3d;
+    //     transition: all 1600ms ease 1s;
+    //     opacity: 0;
+    //     transform: translateX(0px) translateY(-100px) translateZ(0px);
+    // }
 
-    .on-load-profile {
-        transition: all 1800ms ease 1s;
-        transform: translateX(0px) translateY(0px) translateZ(0px);
-        opacity: 1;
-    }
+    // .on-load-profile {
+    //     transition: all 1800ms ease 1s;
+    //     transform: translateX(0px) translateY(0px) translateZ(0px);
+    //     opacity: 1;
+    // }
     .main-empty-about {
         flex-grow: 40;
     }
