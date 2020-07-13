@@ -115,35 +115,35 @@ class Works extends Component {
                                 <div ref={this.textWrapper} className="text-container-works">
                                     <p className="my-work">My Work.</p>
                                     <div className='all-works'>
-                                        <div className="each-work">
-                                            <div className="work-text">
-                                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-one`}>
+                                        <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-one`}>
+                                            <div className="each-work">  
+                                                <div className="work-text">
                                                     <p className="main-work-text">Work Numero Uno</p>
                                                     <p className="secondary-work-text">Design | Prototype</p>
-                                                </Link>
+                                                </div>
+                                                <div className="work-image-wrapper"></div>
                                             </div>
-                                            <div className="work-image-wrapper"></div>
-                                        </div>
+                                         </Link>
                                         <div className="worker-separator"></div>
-                                        <div className="each-work">
-                                            <div className="work-text">
-                                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-two`}>
+                                        <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-two`}>
+                                            <div className="each-work">
+                                                <div className="work-text">
                                                     <p className="main-work-text">Work Numero Dos</p>
                                                     <p className="secondary-work-text">Design | Prototype</p>
-                                                </Link>
+                                                </div>
+                                                <div className="work-image-wrapper"></div>
                                             </div>
-                                            <div className="work-image-wrapper"></div>
-                                        </div>
+                                        </Link>
                                         <div className="worker-separator"></div>
-                                        <div className="each-work">
-                                            <div className="work-text">
-                                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-three`}>
+                                        <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-three`}>
+                                            <div className="each-work">
+                                                <div className="work-text">
                                                     <p className="main-work-text">Work Numero Tres</p>
                                                     <p className="secondary-work-text">Design | Prototype</p>
-                                                </Link>
+                                                </div>
+                                                <div className="work-image-wrapper"></div>
                                             </div>
-                                            <div className="work-image-wrapper"></div>
-                                        </div>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -233,8 +233,8 @@ function Work({ works, imageRef, history }) {
                 <div className="blurred-modal" onClick={()=> goBack()}></div>
                 <div ref={modalRef} className="modal-main">
                     <div ref={workDetailRef} className="work-details">
-                        <div ref={topRef} className="top-content" > 
-                            <span onClick={()=> handleClick()} className="close-modal" to="/works">← Close</span>
+                        <div ref={topRef} className="top-content" >
+                            <span onClick={()=> handleClick()} className="close-modal" to="/works">X</span>
                         </div>
                         <div ref={goTopRef} className="go-to-top hide" onClick={()=> handleScrollUp()}>↑ Go Up</div>
                         <div className="modal-section">

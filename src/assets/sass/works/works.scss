@@ -79,6 +79,7 @@ $primary-white: #fff;
     
     .my-work {
         font-size: 1.3em;
+        opacity: 0.9;
     }
     .float-dark-light {
         position: relative;
@@ -128,12 +129,15 @@ $primary-white: #fff;
 
     .all-works {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     .each-work {
         display: flex;
         justify-content: space-between;
+        &:hover { 
+            opacity: 0.7;
+        }
     }
 
     .work-image-wrapper {
@@ -198,6 +202,8 @@ $primary-white: #fff;
 
     .close-modal {
         margin: 20px 20px;
+        display: none;
+        font-size: 1.3em;
     }
 
 
@@ -219,6 +225,7 @@ $primary-white: #fff;
         background-color: #171C46;
         color: white;
         padding: 0 40px;
+        opacity: 0.9;
     }
     .second-content {
         // height: 55%;
@@ -391,7 +398,8 @@ $primary-white: #fff;
     }
 
     .nav-link:hover {
-        color: yellow;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #fff;
       }
 
     .section-intro {
@@ -409,11 +417,11 @@ $primary-white: #fff;
     .bottom-div {
         display: flex;
         justify-content: space-between;
+        opacity: 0.9;
     }
     .bottom-content {
         width: 48%;
     }
-    
 }
 @media screen 
   and (min-width: 1200px) 
@@ -436,13 +444,13 @@ $primary-white: #fff;
     .wrapper-main {
         display: flex;
         width: 100%;
-        min-height: 100%;
+        height: 100%;
         flex-direction: row;
         z-index: 0;
     }
     .wrapper {
         width: 100%;
-        min-height: 100%;
+        height: 100%;
     }
     
     .left-container-works {
@@ -522,6 +530,7 @@ $primary-white: #fff;
     
     .my-work {
         font-size: 1.3em;
+        opacity: 0.9;
     }
     .float-dark-light {
         position: relative;
@@ -570,9 +579,9 @@ $primary-white: #fff;
     .each-work {
         display: flex;
         justify-content: space-between;
-    }
-    .work-text {
-        /*font-size: .6em;*/
+        &:hover { 
+            opacity: 0.7;
+        }
     }
     .work-image-wrapper {
         width: 30%;
@@ -636,6 +645,7 @@ $primary-white: #fff;
 
     .close-modal {
         margin: 20px 20px;
+        display: none;
     }
 
 
@@ -786,7 +796,8 @@ $primary-white: #fff;
     }
 
     .nav-link:hover {
-        color: yellow;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #fff;
       }
 
       .second-content {
@@ -1047,7 +1058,7 @@ $primary-white: #fff;
     .my-name-works {
         font-size: 1.5em;
         font-weight: 600;
-        margin: 20px 0 0 20px;
+        margin: 12px 0 0 20px;
         height: 70px;
     }
     
@@ -1098,6 +1109,9 @@ $primary-white: #fff;
     .each-work {
         display: flex;
         flex-direction: column-reverse;
+        &:hover { 
+            opacity: 0.7;
+        }
     }
 
     .worker-separator {
@@ -1152,6 +1166,7 @@ $primary-white: #fff;
     }
     .my-work { 
         font-size: 1.3em;
+        opacity: 0.9;
     }
 
     .floating-profile-work .profile-image-container {
@@ -1285,6 +1300,11 @@ $primary-white: #fff;
     .close-modal {
         color: #D26442;
         margin: 20px 20px;
+        font-size: 1.3em;
+        &:hover {
+            padding-bottom: 2px;
+            border-bottom: 1px solid #D26442;
+        }
     }
 
     .top-content {
@@ -1369,7 +1389,8 @@ $primary-white: #fff;
         margin: .5em 0;
     }
     .my-work {
-        padding: 0 20px
+        padding: 0 20px;
+        opacity: 0.9;
     }
   }
 
@@ -1393,7 +1414,7 @@ $primary-white: #fff;
     .my-name-works {
         font-size: 1.5em;
         font-weight: 600;
-        margin: 20px 0 0 20px;
+        margin: 12px 0 0 20px;
         height: 70px;
     }
 
@@ -1417,6 +1438,11 @@ $primary-white: #fff;
 
   .close-modal {
       cursor: pointer;
+      font-size: 1.3em;
+        &:hover {
+            padding-bottom: 2px;
+            border-bottom: 1px solid #D26442;
+        }
   }
 
   .slide-down-works {
@@ -1445,6 +1471,7 @@ $primary-white: #fff;
 }
 
 .middle-section {
+    opacity: 0.9;
     padding: 30px 20px ;
 }
 .flex-row {
@@ -1488,6 +1515,10 @@ $primary-white: #fff;
     color: #fff;
     padding: 20px;
     margin-top: 20px;
+    opacity: 0.9;
+    h3, p {
+        opacity: 0.9;
+    }
 }
 
 .bottom-box-content {
@@ -1513,4 +1544,7 @@ $primary-white: #fff;
 .image-prof-works {
     width: 100%;
     
+}
+.work-text {
+    opacity: 0.9
 }

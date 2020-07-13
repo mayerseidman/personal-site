@@ -79,6 +79,7 @@
     .about-text {
         font-size: 1.3em;
         margin: 5px 0;
+        opacity: 0.9;
     }
     .float-dark-light {
         position: fixed;
@@ -123,19 +124,20 @@
     
     .emp-text {
         color: #F4C42F;
-        font-size: 4.5em;
+        font-size: 4.25em;
         margin: 20px 0;
     }
-    .scroable-container {
+    .scrollable-container {
+        opacity: 0.9;
         height: 500px;
-        overflow-y: auto
+        overflow-y: auto;
     }
-    .scroable-container::-webkit-scrollbar {
+    .scrollable-container::-webkit-scrollbar {
         -webkit-appearance: none;
         width: 10px;
     }
       
-    .scroable-container::-webkit-scrollbar-thumb {
+    .scrollable-container::-webkit-scrollbar-thumb {
         border-radius: 4px;
         background-color: rgba(151, 151, 151, .5);
         box-shadow: 0 0 1px rgba(255, 255, 255, .5);
@@ -195,6 +197,7 @@
     }
 
     .nav-link:link {
+        opacity: 0.9;
         color: #D8D8D8;
         font-size: 1.3rem;
         line-height: 1.3rem;
@@ -206,7 +209,8 @@
     }
 
     .nav-link:hover {
-        color: yellow;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #fff;
     }
     .image-prof-a {
         width: 100%; 
@@ -227,6 +231,9 @@
     .slide-down-about {
         animation: slide-down 2.6s forwards .5s 1;
         opacity: 1;
+    }
+    .p-over {
+        width: 450px;
     }
   
 }
@@ -339,6 +346,10 @@
     .about-text {
         font-size: 1.3em;
         margin: 5px 0;
+        opacity: 0.9;
+    }
+    .p-over {
+        width: 450px;
     }
     .floating-profile-a {
         position: absolute;
@@ -368,7 +379,7 @@
     }
     .emp-text {
         color: #F4C42F;
-        font-size: 3.5em;
+        font-size: 3.25em;
         margin: 20px 0;
         font-weight: 600;
     }
@@ -388,16 +399,17 @@
         width: 100%; 
     }
     
-    .scroable-container {
+    .scrollable-container {
+        opacity: 0.9;
         height: 500px;
-        overflow-y: auto
+        overflow-y: auto;
     }
-    .scroable-container::-webkit-scrollbar {
+    .scrollable-container::-webkit-scrollbar {
         -webkit-appearance: none;
         width: 10px;
     }
       
-    .scroable-container::-webkit-scrollbar-thumb {
+    .scrollable-container::-webkit-scrollbar-thumb {
         border-radius: 4px;
         background-color: rgba(151, 151, 151, .5);
         box-shadow: 0 0 1px rgba(255, 255, 255, .5);
@@ -571,6 +583,7 @@
     .about-text {
         font-size: 1.3em;
         margin: 5px 20px;
+        opacity: 0.9;
         // position: absolute;
         // top: 80px;
         // left: 8%;
@@ -581,9 +594,12 @@
         // word-spacing: 0.4em;
         color: #F4C42F;
     }
-    .scroable-container {
+    .scrollable-container {
+        opacity: 0.9;
         display: flex;
         flex-direction: column;
+        position: relative;
+        bottom: 20px;
     }
 
     .main-text {
@@ -591,7 +607,7 @@
     }
     .emp-text {
         color: #F4C42F;
-        font-size: 4.5em;
+        font-size: 4.25em;
         margin: 20px 20px;
     }
     .p-over {
@@ -606,7 +622,7 @@
     .my-name-about {
         font-size: 1.5em;
         font-weight: 600;
-        margin: 20px 0 0 20px;
+        margin: 12px 0 0 20px;
         height: 70px;
     }
     
@@ -715,6 +731,7 @@
           text-decoration: none;
       }
       .nav-link:link {
+
         text-decoration: none;
         color: #171C46;
       }
@@ -734,6 +751,26 @@
         opacity: 1;
     }
   }
+
+.p-over {
+    a {
+        margin-bottom: 15px;
+        color: #F4C42F;
+        display: block;
+        font-size: 1.3em;
+        width: auto;
+        text-decoration: none;
+        padding-bottom: 2px;
+        border-bottom:solid 1.5px transparent;
+        &:hover {
+            border-bottom: 1.5px solid #F4C42F;
+        }
+    }
+}
+
+.emp-text {
+    font-weight: 600;
+}
 
 
 .plain-link {

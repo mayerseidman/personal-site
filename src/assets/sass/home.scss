@@ -231,7 +231,9 @@
     }
 
     .nav-link:hover {
-        color: yellow;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #fff;
+        opacity: 1;
       }
     
     .text-delayed {
@@ -309,8 +311,6 @@
     .left-container-home {
         width: 24%;
         background-color: #F4C42F;
-        height: 100vh;
-
     }
     .animate-left-container {
         opacity: 0;
@@ -321,6 +321,7 @@
         font-size: 2.5em;
         font-weight: 600;
         margin: 20px 0 0 40px;
+        height: 70px;
     }
     .animate-my-name {
         transform: translateY(-170%);
@@ -446,7 +447,8 @@
     }
 
     .nav-link:hover {
-        color: yellow;
+        padding-bottom: 2px;
+        border-bottom: 1px solid #fff;
     }
 
 
@@ -583,7 +585,7 @@
     .my-name-home {
         font-size: 1.5em;
         font-weight: 600;
-        margin: 20px 0 0 20px;
+        margin: 12px 0 0 20px;
     }
     
     .name-mayer {
@@ -814,7 +816,7 @@
     .my-name-home {
         font-size: 1.5em;
         font-weight: 600;
-        margin: 20px 0 0 20px;
+        margin: 12px 0 0 20px;
         height: 70px;
     }
     .floating-profile-home .profile-image-container {
@@ -886,7 +888,7 @@ and (max-width: 489px) {
     .my-name-home {
         font-size: 1.5em;
         font-weight: 600;
-        margin: 20px 0 0 20px;
+        margin: 12px 0 0 20px;
         height: 70px;
     }
 }
@@ -895,6 +897,7 @@ and (max-width: 489px) {
 .home-centered-text {
     display: flex;
     flex-direction: column;
+    opacity: 0.9;
     .text-style {
         font-size: 1.375em;
         line-height: 1.5em;
@@ -913,6 +916,7 @@ and (max-width: 489px) {
             padding-bottom: 2px;
             &:hover {
                 border-bottom: 2px solid #D26442;
+                opacity: 1;
             };
         }
     }

@@ -3,8 +3,10 @@ html{
 }
 
 @font-face {
-    font-family: 'effra',
-    /*src: url('../fonts/') format('');*/
+    font-family: 'effra';
+    src: url('../fonts/effra/Effra_Std_Bd') format('ttf'),
+        url('../fonts/effra/Effra_Std_Lt') format('ttf'),
+        url('../fonts/effra/Effra_Std_Rg') format('ttf')
 }
 body {
     margin: 0;
