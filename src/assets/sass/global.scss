@@ -10,9 +10,7 @@ body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    // background: #171C46;
     background-color: #fff;
-   /* color: #555;*/
     font-size: 16px;
     font-family: effra, sans-serif;
     height: 100%;
@@ -27,3 +25,7 @@ code {
 }
 
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.name-mayer {
+    color: #181d45;
+}

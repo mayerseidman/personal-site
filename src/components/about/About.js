@@ -95,7 +95,9 @@ class About extends Component {
                         <div ref={this.wrapperRef} className="navigation-about">
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
-                            <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/writing'>Writing</NavLink></p>
+                            <p><a className="nav-link" activeStyle={{ color: 'white' }} 
+                                href="https://medium.com/design-ideas-thoughts" target="_blank">Writing</a>
+                            </p>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import { NavLink, Link, withRouter } from 'react-router-dom';
-import './styles.css';
+import '../../assets/sass/home.scss';
 import image from "../../assets/images/linkedin-profile-mayer.png";
 import { withLoadState } from '../contexts/LoadStateContext';
 class Home extends Component {
@@ -147,12 +147,15 @@ class Home extends Component {
                                     <div className="home-centered-text">
                                         <div>
                                             <p className="large-text">Howdy.</p>
-                                            <p className="text-syle">My name is Mayer and I’m a ________</p>
+                                            <p className="text-style">My name is Mayer and I'm a ________.</p>
                                             <section ref={this.delayedText} className='text-delayed'>
-                                            <p className='text-paragraph text-syle'>I ‘m  a  versatile  problem solver who is </p> 
-                                            <p className='text-paragraph text-syle'>passionate about helping people and </p> 
-                                            <p className='text-paragraph text-syle'>uncovering emotions within products. </p>
-                                            <p>Learn more <span className="link-text"><Link to='/about' className="plain-link">about me</Link></span> or view <span className="link-text"><Link to="/works" className="plain-link">my work</Link></span></p>
+                                            <p className='text-paragraph text-style'>I'm a <span className="highlighted-word">versatile</span> problem solver</p> 
+                                            <p className='text-paragraph text-style'>passionate about helping people and </p> 
+                                            <p className='text-paragraph text-style'>uncovering emotions within products. </p>
+                                            <p className="learn-more">Learn more <span className="link-text">
+                                                <Link to='/about' className="plain-link">about me</Link></span> or view <span className="link-text">
+                                                <Link to="/works" className="plain-link">my work</Link></span>
+                                            </p>
                                             </section>
                                         </div>
                                     </div>
@@ -165,7 +168,9 @@ class Home extends Component {
                         <div ref={this.wrapperRef} className="navigation-home">
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
-                            <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/writing'>Writing</NavLink></p>
+                            <p><a className="nav-link" activeStyle={{ color: 'white' }} 
+                                href="https://medium.com/design-ideas-thoughts" target="_blank">Writing</a>
+                            </p>
                         </div>
                     </div>
                 </div>

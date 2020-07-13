@@ -52,7 +52,7 @@
         background-color: #fff;
         width: 22px;
         height: 22px;
-        bottom: 10%;
+        bottom: 6%;
         right: 20%;
         z-index: 2;
     }
@@ -123,15 +123,15 @@
         font-size: 1.2em;
         margin: 5px 0;
     }
-   /* .float-dark-light {
+    .float-dark-light {
         position: fixed;
-        top: 20%;
-        left: 30%;
+        top: 14%;
+        left: 34%;
         background-color: #F4C42F;
         width: 22px;
         height: 22px;
         z-index: 2;
-    }*/
+    }
     
     .float-dark-primary {
         position: absolute;
@@ -309,6 +309,7 @@
     .left-container-home {
         width: 24%;
         background-color: #F4C42F;
+        height: 100vh;
 
     }
     .animate-left-container {
@@ -393,15 +394,15 @@
         display: flex;
     }
 
-    /*.float-dark-light {
+    .float-dark-light {
         position: absolute;
-        top: 20%;
-        left: 30%;
+        top: 14%;
+        left: 34%;
         background-color: #F4C42F;
         width: 22px;
         height: 22px;
         z-index: 2;
-    }*/
+    }
 
     .main-text {
         flex-grow: 25;
@@ -819,7 +820,7 @@
     .floating-profile-home .profile-image-container {
         position: absolute;
         left: 0;
-        right: 0;
+        right: 10%;
         margin: auto;
         width: 300px;
         height: 300px;
@@ -830,7 +831,7 @@
         position: relative;
         background-color: #D26442;
         margin-top: 45px;
-        margin-left: 33%;
+        margin-left: 24%;
         height: 300px;
         width: 300px;
         z-index: -1;
@@ -894,13 +895,27 @@ and (max-width: 489px) {
 .home-centered-text {
     display: flex;
     flex-direction: column;
-}
-.learn-more {
-    font-size: 1.3rem;
-}
-
-.plain-link {
-    font-weight: bold;
+    .text-style {
+        font-size: 1.375em;
+        line-height: 1.5em;
+    } 
+    .text-paragraph {
+        .highlighted-word {
+            background: #fff;
+            padding: 5px;
+            color: #555;
+        }
+    }
+    .learn-more {
+        font-size: 1.3rem;
+        .plain-link {
+            font-weight: bold;
+            padding-bottom: 2px;
+            &:hover {
+                border-bottom: 2px solid #D26442;
+            };
+        }
+    }
 }
 
 .large-text {
