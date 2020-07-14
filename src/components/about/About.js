@@ -117,7 +117,7 @@ class About extends Component {
                                         </div>
                                         <div className="about-details">
                                             <p className="emp-text">creations.</p>
-                                            <p className="p-over">
+                                            <p className="p-over links">
                                                 <a href="">Pinterest</a>
                                                 <a href="">Mixcloud</a>
                                                 <a href="">Sunsets</a>
@@ -125,7 +125,7 @@ class About extends Component {
                                         </div>
                                         <div className="about-details">
                                             <p className="emp-text">links.</p>
-                                            <p className="p-over">
+                                            <p className="p-over links">
                                                 <a href="">Medium</a>
                                                 <a href="">Instagram</a>
                                                 <a href="">LinkedIn</a>

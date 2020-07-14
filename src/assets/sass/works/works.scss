@@ -785,14 +785,16 @@ $primary-white: #fff;
     }
 
     .nav-link:link {
-        color: #D8D8D8;
+        color: #fff;
+        opacity: 0.8;
         font-size: 1.3rem;
         line-height: 1.3rem;
         text-decoration: none;
     }
 
     .nav-link:visited {
-        color: #D8D8D8;
+        color: #fff;
+        opacity: 1;
     }
 
     .nav-link:hover {
@@ -1426,6 +1428,11 @@ $primary-white: #fff;
         transform: translateY(-20%);
         transition: opacity 2.5s ease-in;
         transition-delay: .9s;
+    }
+    .right-container-works {
+        .main-content {
+            height: 100vh;
+        }
     }
     
   }

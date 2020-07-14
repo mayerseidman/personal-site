@@ -3,6 +3,7 @@ import { NavLink, Link, withRouter } from 'react-router-dom';
 import '../../assets/sass/home.scss';
 import image from "../../assets/images/linkedin-profile-mayer.png";
 import { withLoadState } from '../contexts/LoadStateContext';
+
 class Home extends Component {
     constructor(props) {
         super(props)
@@ -16,10 +17,30 @@ class Home extends Component {
         this.textWrapper = React.createRef();
         this.delayedText = React.createRef();
         this.imageContainer = React.createRef();
-        console.log(props)
+        this.state = { wordValue: "UI UX Designer", currentCount: 8 };
     }
 
-
+    getChangedText() {
+        console.log("CHANGE")
+        var words = ["Human", "Doodler", "Brother", "Dad-jokes", "Pescatarian", "Surfer", "Coder"];
+        i = (i + 1) % words.length;
+        return words[i];
+    }
+    changeText() {
+        var text = this.getChangedText();
+        console.log(text)
+        this.setState({ wordValue: text })
+    }
+    timer() {
+        var newCount = this.state.currentCount - 1;
+        console.log(this.state.currentCount, newCount)
+        if(newCount >= 0) { 
+          this.setState({ currentCount: newCount });
+        } else {
+          clearInterval(this.state.intervalIdTimer);
+          clearInterval(this.state.intervalIdScrambler)
+        }
+    }
     componentDidMount() {
         let rightContainer = this.rightContainer.current;
         let leftContainer = this.leftContainer.current;
@@ -29,10 +50,6 @@ class Home extends Component {
         let textWrapper = this.textWrapper.current;
         let delayedText = this.delayedText.current;
         let imageRef = this.imageRef.current;
-
-
-        console.log("prev", this.props.context.state.lastLocation)
-        console.log("Has home page loaded?:", this.props.context.state.homeLoaded)
         
         if (!this.props.context.state.homeLoaded) {
             rightContainer.classList.toggle('animate-right-container');
@@ -51,7 +68,6 @@ class Home extends Component {
             this.props.context.updateLoaded();
         }else {
             if(this.props.context.state.lastLocation.pathname === '/about'){
-                console.log('coming from about')
                 profileRef.classList.toggle('is-loaded')
                 this.imageContainer.current.classList.toggle('set-up-profile');
             }else{
@@ -84,7 +100,7 @@ class Home extends Component {
                 // mobile
                 profileRef.classList.toggle('on-load-profile');
 
-            }else{
+            } else {
                 if(this.props.context.state.lastLocation.pathname === '/about'){
                     this.imageContainer.current.classList.toggle('animate-from-about')
                 }
@@ -104,85 +120,108 @@ class Home extends Component {
             // mobile 
             
             this.props.context.setLastLocation(this.props.location)
-
-         
         })
-        
-
-        
-        
+        var intervalIdTimer = setInterval(this.timer.bind(this, 1000));
+        var intervalIdScrambler = setInterval(this.changeText.bind(this, 1000));
+        this.setState({ intervalIdTimer: intervalIdTimer, intervalIdScrambler: intervalIdScrambler });
     }
 
-    handeleMenuClick() {
+    componentWillUnmount() {
+       // use intervalId from the state to clear the interval
+       clearInterval(this.state.intervalIdTimer);
+    }
+
+    handleMenuClick() {
         const wrapper = this.wrapperRef.current;
         const icon = this.iconRef.current;
         wrapper.classList.toggle("is-nav-open");
         icon.classList.toggle("is-nav-open");
         this.profileRef.current.classList.toggle("hide-profile");
     }
+    renderLeftContainer() {
+        return (
+            <div ref={this.leftContainer} className="left-container-home">
+                <div ref={this.nameWrapper} className="my-name-home">
+                    <span className="name-mayer">Mayer.</span>
+                </div>
+                <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handleMenuClick()}>
+                    <div></div>
+                </div>
+                <div className="float-dark-box"></div>
+                <div className="float-dark-light"></div>
+                <div className="float-dark-primary"></div>
+                <div className="float-white-box"></div>
+            </div>
+        )
+    }
 
+    renderRightContainer() {
+        if (this.state.currentCount === 0) {
+            var title = "UI UX Designer";
+        } else {
+            var title = this.state.wordValue;
+        }
+        return (
+            <div ref={this.rightContainer} className="right-container-home">
+                <div className="main-content">
+                    <div className='main-empty-1'>  
+                    </div>
+                    <div className='main-text self-align'>
+                        <div className="text-top"></div>
+                        <div ref={this.textWrapper} className="text-container">
+                            <div className="home-centered-text">
+                                <div>
+                                    <p className="large-text">Howdy.</p>
+                                    <p className="text-style">My name is Mayer and I'm a { title }.</p>
+                                    <section ref={this.delayedText} className='text-delayed'>
+                                    <p className='text-paragraph text-style'>I'm a versatile problem solver passionate</p> 
+                                    <p className='text-paragraph text-style'>about helping people and uncovering</p> 
+                                    <p className='text-paragraph text-style'>emotions within products. </p>
+                                    <p className="learn-more">Learn more <span className="link-text">
+                                        <Link to='/about' className="plain-link">about me</Link></span> or view <span className="link-text">
+                                        <Link to="/works" className="plain-link">my work</Link></span>
+                                    </p>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='main-empty-2'>
+                        
+                    </div>
+                </div>
+                <div ref={this.wrapperRef} className="navigation-home">
+                    <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
+                    <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
+                    <p><a className="nav-link" activeStyle={{ color: 'white' }} 
+                        href="https://medium.com/design-ideas-thoughts" target="_blank">Writing</a>
+                    </p>
+                </div>
+            </div>
+        )
+    }
+
+    renderImage() {
+        return (
+            <div ref={this.profileRef} className='floating-profile-home'>
+                <div ref={this.imageContainer} className="profile-image-container">
+                    <img ref={this.imageRef} alt="profile" className="image-prof" src={ image } />
+                </div>
+                <div className="profile-image-blank"></div>
+            </div>
+        )
+    }
     render() {
         return (
             <div className="wrapper">
                 <div className='wrapper-main'>
-                    <div ref={this.leftContainer} className="left-container-home">
-                        <div ref={this.nameWrapper} className="my-name-home">
-                            <span className="name-mayer">Mayer.</span>
-                        </div>
-                        <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handeleMenuClick()}>
-                            <div></div>
-                        </div>
-                        <div className="float-dark-box"></div>
-                        <div className="float-dark-light"></div>
-                        <div className="float-dark-primary"></div>
-                        <div className="float-white-box"></div>
-                    </div>
-                    <div ref={this.rightContainer} className="right-container-home">
-                        <div className="main-content">
-                            <div className='main-empty-1'>  
-                            </div>
-                            <div className='main-text self-align'>
-                                <div className="text-top"></div>
-                                <div ref={this.textWrapper} className="text-container">
-                                    <div className="home-centered-text">
-                                        <div>
-                                            <p className="large-text">Howdy.</p>
-                                            <p className="text-style">My name is Mayer and I'm a ________.</p>
-                                            <section ref={this.delayedText} className='text-delayed'>
-                                            <p className='text-paragraph text-style'>I'm a <span className="highlighted-word">versatile</span> problem solver</p> 
-                                            <p className='text-paragraph text-style'>passionate about helping people and </p> 
-                                            <p className='text-paragraph text-style'>uncovering emotions within products. </p>
-                                            <p className="learn-more">Learn more <span className="link-text">
-                                                <Link to='/about' className="plain-link">about me</Link></span> or view <span className="link-text">
-                                                <Link to="/works" className="plain-link">my work</Link></span>
-                                            </p>
-                                            </section>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='main-empty-2'>
-                                
-                            </div>
-                        </div>
-                        <div ref={this.wrapperRef} className="navigation-home">
-                            <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
-                            <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
-                            <p><a className="nav-link" activeStyle={{ color: 'white' }} 
-                                href="https://medium.com/design-ideas-thoughts" target="_blank">Writing</a>
-                            </p>
-                        </div>
-                    </div>
+                    { this.renderLeftContainer() }
+                    { this.renderRightContainer() }
                 </div>
-                <div ref={this.profileRef} className='floating-profile-home'>
-                    <div ref={this.imageContainer} className="profile-image-container">
-                        <img ref={this.imageRef} alt="profile" className="image-prof" src={ image } />
-                    </div>
-                    <div className="profile-image-blank"></div>
-                </div>
+                { this.renderImage() }
             </div>
-      
         )
     }
 }
+var i = 0;
 export default withLoadState(withRouter(Home));

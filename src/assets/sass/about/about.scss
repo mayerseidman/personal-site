@@ -197,15 +197,15 @@
     }
 
     .nav-link:link {
-        opacity: 0.9;
-        color: #D8D8D8;
+        opacity: 0.8;
+        color: #fff;;
         font-size: 1.3rem;
         line-height: 1.3rem;
         text-decoration: none;
     }
 
     .nav-link:visited {
-        color: #D8D8D8;
+        opacity: 1;
     }
 
     .nav-link:hover {
@@ -422,7 +422,7 @@
     .floating-profile-a .profile-image-container {
         position: absolute;
         left: 0;
-        right: 0;
+        right: 10%;
         margin: auto;
         width: 325px;
         height: 325px;
@@ -433,7 +433,7 @@
         position: relative;
         background-color: #D26442;
         margin-top: 45px;
-        margin-left: 43%;
+        margin-left: 32%;
         margin-right: auto;
         height: 325px;
         width: 325px;
@@ -603,18 +603,27 @@
     }
 
     .main-text {
-        color: white;    
+        color: white;
+        margin-top: 15px;  
     }
     .emp-text {
         color: #F4C42F;
         font-size: 4.25em;
         margin: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .p-over {
         overflow-wrap: break-word;
         word-wrap: break-word;
         hyphens: auto;
-        padding: 0 20px;
+       /* padding: 0 20px;*/
+        width: 75%;
+        margin: auto;
+        &.links {
+            text-align: center;
+        }
     }
     .text-paragraph {
         margin: 4px 0;
