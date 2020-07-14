@@ -15,7 +15,7 @@ class About extends Component {
         this.prof = React.createRef();
     }
 
-    handeleMenuClick() {
+    handleMenuClick() {
         const wrapper = this.wrapperRef.current;
         const icon = this.iconRef.current;
         wrapper.classList.toggle("is-nav-open");
@@ -44,7 +44,7 @@ class About extends Component {
                         <div className="my-name-about">
                             <span className="name-mayer"><Link className="plain-link" to="/" >Mayer.</Link></span>
                         </div>
-                        <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handeleMenuClick()}>
+                        <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handleMenuClick()}>
                             <div></div>
                         </div>
                         <div className="float-dark-box"></div>
@@ -139,7 +139,8 @@ class About extends Component {
                             </div>
                         </div>
                         <div ref={this.wrapperRef} className="navigation-about">
-                            <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
+                            <p>
+                            <NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
                             <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
                             <p><a className="nav-link" activeStyle={{ color: 'white' }} 
                                 href="https://medium.com/design-ideas-thoughts" target="_blank">Writing</a>

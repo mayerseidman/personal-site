@@ -73,7 +73,7 @@ class Works extends Component {
 
         });
     }
-    handeleMenuClick() {
+    handleMenuClick() {
         const wrapper = this.wrapperRef.current;
         const icon = this.iconRef.current;
         const mainRef = this.mainRef.current;
@@ -97,7 +97,7 @@ class Works extends Component {
                         <div ref={this.nameWrapper} className="my-name-works">
                             <span className="name-mayer"><Link className="plain-link" to="/" >Mayer.</Link></span>
                         </div>
-                        <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handeleMenuClick()}>
+                        <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handleMenuClick()}>
                             <div></div>
                         </div>
                         <div className="float-dark-box"></div>
