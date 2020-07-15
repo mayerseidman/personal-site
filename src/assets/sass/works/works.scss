@@ -1,9 +1,7 @@
 $primary-light: #F4C42F;
 $primary-white: #fff;
 
-@media screen 
-  and (min-width: 1500px) 
- { 
+@media screen and (min-width: 1500px) { 
     .wrapper-main {
         display: flex;
         width: 100%;
@@ -21,7 +19,7 @@ $primary-white: #fff;
         background-color: #F4C42F;
     }
     .my-name-works {
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 600;
         margin: 20px 0 0 40px;
     }
@@ -216,6 +214,8 @@ $primary-white: #fff;
     
     .modal-section {
         // height: 100vh;
+        padding: 40px;
+        padding-top: 0px;
     }
     .first-content {
         // height: 45%;
@@ -224,36 +224,47 @@ $primary-white: #fff;
         justify-content: space-between;
         background-color: #171C46;
         color: white;
-        padding: 0 40px;
+        padding: 40px;
         opacity: 0.9;
+        .main-work-text {
+            font-size: 2.5em;
+        }
     }
     .second-content {
         // height: 55%;
         display: flex;
-        align-items: center;
+        /*align-items: center;*/
         justify-content: space-between;
         background-color: white;
         color: #171C46;
-        padding: 0 40px;
-        background-color: azure;
+        padding: 40px;
+        padding-bottom: 15px;
+        p {
+            width: 85%;
+        }
     }
     .modal-img-one {
-        width: 400px;
-        height: 250px;
-        background-color: white;
-        padding-right: 20px;
+        img {
+            width: 450px;
+        }
     }
 
     .double-images-wrapper {
         display: flex;
         flex-direction: column;
     }
-
     .modal-small-img {
-        width: 330px;
-        height: 200px;
-        margin: 15px;
-        background-color: #F5C509;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        img {
+            width: 450px;
+            &.red {
+                border: 2px solid #C07676;
+            }
+            &.green {
+                border: 2px solid #8CC177;
+            }
+        }
     }
     .work-details {
         display: flex;
@@ -270,7 +281,6 @@ $primary-white: #fff;
         margin: 20px 20px 0 20px;
     }
     .works-type {
-        font-weight: 600;
         margin-top: 40px;
     }
 
@@ -406,9 +416,9 @@ $primary-white: #fff;
         transition: all 0.25;
       }
 
-    .section-intro {
+    /*.section-intro {
         width: 512px;
-    }
+    }*/
 
     .all-blue {
         background-color: #171C46;
@@ -427,9 +437,7 @@ $primary-white: #fff;
         width: 48%;
     }
 }
-@media screen 
-  and (min-width: 1200px) 
-  and (max-width: 1499px)
+@media screen and (min-width: 1200px) and (max-width: 1499px)
   { 
 
     .set-up-profile {
@@ -464,7 +472,7 @@ $primary-white: #fff;
     }
 
     .my-name-works {
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 600;
         margin: 20px 0 0 40px;
     }
@@ -662,6 +670,8 @@ $primary-white: #fff;
     
     .modal-section {
         // height: 100vh;
+        padding: 40px;
+        padding-top: 0px;
     }
     .first-content {
         // height: 45%;
@@ -670,13 +680,15 @@ $primary-white: #fff;
         justify-content: space-between;
         background-color: #171C46;
         color: white;
-        padding: 0 40px;
+        padding: 40px;
+        .main-work-text {
+            font-size: 2.5em;
+        }
     }
     .modal-img-one {
-        width: 400px;
-        height: 250px;
-        background-color: white;
-        padding-right: 20px;
+        img {
+            width: 450px;
+        }
     }
 
     .double-images-wrapper {
@@ -685,10 +697,17 @@ $primary-white: #fff;
     }
 
     .modal-small-img {
-        width: 330px;
-        height: 200px;
-        margin: 15px;
-        background-color: #F5C509;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        img {
+            width: 450px;
+            &.red {
+                border: 2px solid #C07676;
+            }
+            &.green {
+                border: 2px solid #8CC177;
+            }
+        }
     }
     .work-details {
         display: flex;
@@ -705,8 +724,10 @@ $primary-white: #fff;
         margin: 20px 20px 0 20px;
     }
     .works-type {
-        font-weight: 600;
         margin-top: 40px;
+        span {
+            font-weight: 600;
+        }
     }
 
     .news-format {
@@ -810,12 +831,15 @@ $primary-white: #fff;
 
       .second-content {
         display: flex;
-        align-items: center;
+        /*align-items: center;*/
         justify-content: space-between;
         background-color: white;
         color: #171C46;
-        padding: 0 40px;
-        background-color: azure;
+        padding: 40px;
+        padding-bottom: 15px;
+        p {
+            width: 85%;
+        }
     }
 
     .left-to-full {
@@ -873,12 +897,9 @@ $primary-white: #fff;
     .bottom-content {
         width: 48%;
     }
-    
 }
 
-@media screen 
-  and (min-width: 1324px) 
-  and (max-width: 1750px){
+@media screen and (min-width: 1324px) and (max-width: 1750px) {
     .grey-boxes {
         display: flex;
         justify-content: space-between;
@@ -1338,32 +1359,27 @@ $primary-white: #fff;
         justify-content: space-between;
         background-color: #171C46;
         color: white;
-        padding: 0 40px;
+        padding: 40px;
     }
     
     .second-content {
         display: flex;
-        margin: 10px;
+        /*margin: 10px;*/
         font-size: 16px;
         justify-content: space-around;
-        align-items: center;
+       /* align-items: center;*/
+       p {
+            width: 85%;
+        }
     }
-    .section-intro {
+   /* .section-intro {
         width: 300px;
-    }
+    }*/
 
     .double-images-wrapper {
         display: flex;
         flex-direction: column;
     }
-
-    .modal-small-img {
-        width: 330px;
-        height: 200px;
-        margin: 15px;
-        background-color: #F5C509;
-    }
-
     .modal-justify-left {
         display: flex;
         flex-direction: column;
@@ -1402,8 +1418,7 @@ $primary-white: #fff;
   }
 
 
-  @media screen 
-  and (max-width: 549px){
+  @media screen and (max-width: 800px){
     .news-format {
         display: flex;
         flex-direction: column;
@@ -1417,6 +1432,9 @@ $primary-white: #fff;
     .second-content {
         display: flex;
         flex-direction: column;
+        p {
+            width: 100%;
+        }
     }
     .my-name-works {
         font-size: 1.5em;
@@ -1460,6 +1478,60 @@ $primary-white: #fff;
   .slide-down-works {
     animation: slide-down 2.5s forwards .5s 1;
     opacity: 1;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+    .modal-small-img {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        img {
+            width: 450px;
+            &.red {
+                border: 2px solid #C07676;
+            }
+            &.green {
+                border: 2px solid #8CC177;
+            }
+        }
+    }
+    .first-content {
+        .main-work-text, .secondary-work-text {
+            padding: inherit;
+        } 
+        .modal-img-one {
+            img {
+                width: 450px;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 399px) and (max-width: 799px) {
+    .first-content {
+        display: inherit;
+        .main-work-text, .secondary-work-text {
+            padding: inherit;
+        } 
+    }
+    .modal-img-one, .modal-small-img {
+        img {
+            width: 450px;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .first-content {
+        display: inherit;
+        .main-work-text, .secondary-work-text {
+            padding: inherit;
+        } 
+    }
+    .modal-img-one, .modal-small-img {
+        img {
+            width: 300px;
+        }
+    }
 }
 
 // colors
@@ -1506,6 +1578,17 @@ $primary-white: #fff;
     justify-content: space-between;
 }
 
+.works-type {
+    span {
+        font-weight: 600;
+    }
+}
+
+.second-content {
+    padding: 40px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
 
 .overlap-box-left {
     width: 90%;
@@ -1520,6 +1603,7 @@ $primary-white: #fff;
     background-color: #D8D8D8;
     bottom: 0;
     right: 0;
+    visibility: hidden;
 }
 
 .feedback-box {
@@ -1559,4 +1643,16 @@ $primary-white: #fff;
 }
 .work-text {
     opacity: 0.9
+}
+.modal-small-img {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    img {
+        &.red {
+            border: 2px solid #C07676;
+        }
+        &.green {
+            border: 2px solid #8CC177;
+        }
+    }
 }

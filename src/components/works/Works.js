@@ -8,10 +8,14 @@ import {
     Route
 
 } from 'react-router-dom';
+
+// IMAGES
 import { withLoadState } from '../contexts/LoadStateContext';
-
-
 import image from "../../assets/images/linkedin-profile-mayer.png";
+import finalVersion from "../../assets/images/wr-lite/teacher-exercises.gif";
+import multipleChoice from "../../assets/images/wr-lite/multiple-choice.png";
+import comprehension from "../../assets/images/wr-lite/comprehension.png";
+
 import '../../assets/sass/works/works.scss';
 
 class Works extends Component {
@@ -36,9 +40,9 @@ class Works extends Component {
         this.state = {
             works: {
                 'work-one': {
-                    title: "Work Numero Uno",
-                    description_one: "Descriptive text goes here…Descriptive text goes here…Descriptive text goes here dd.  Descriptive text goes here…ggoes here goes here.",
-                    type: "Design | Prototype"
+                    title: "Reading Comprehension Tool",
+                    description_one: "Whooo’s Reading product designed to change the way teachers help students improve reading comprehension skills",
+                    type: "Research, Structure, Interaction, Visual, User Feedback"
                 },
                 'work-two': {
                     title: "Work Numero Dos",
@@ -108,7 +112,6 @@ class Works extends Component {
                     <div ref={this.rightContainer} className="right-container-works">
                         <div ref={this.mainRef} className="main-content">
                             <div className='main-empty-'>
-                            
                             </div>
                             <div className='main-text'>
                                 <div className="text-top"></div>
@@ -118,7 +121,7 @@ class Works extends Component {
                                         <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-one`}>
                                             <div className="each-work">  
                                                 <div className="work-text">
-                                                    <p className="main-work-text">Work Numero Uno</p>
+                                                    <p className="main-work-text">Reading Comprehension Tool</p>
                                                     <p className="secondary-work-text">Design | Prototype</p>
                                                 </div>
                                                 <div className="work-image-wrapper"></div>
@@ -227,6 +230,13 @@ function Work({ works, imageRef, history }) {
         setClose(true);
     }
 
+    if (history.location.pathname == "/works/work-one") {
+        console.log("ONE")
+        var finalVersionImg = <img src={ finalVersion } alt="final-version"/>
+    } else {
+        console.log("TWO")
+    }
+
     return (
         <div className="work-modal">
             <div className="left-modal">
@@ -237,39 +247,50 @@ function Work({ works, imageRef, history }) {
                             <span onClick={()=> handleClick()} className="close-modal" to="/works">X</span>
                         </div>
                         <div ref={goTopRef} className="go-to-top hide" onClick={()=> handleScrollUp()}>↑ Go Up</div>
-                        <div className="modal-section">
+                        <div className="">
                             <div className="first-content">
                                 <div>
                                     <p className="main-work-text">{ work.title }</p>
                                     <p className="secondary-work-text">{ work.description_one }</p>
-                                    <p className="works-type">{ work.type }</p>
+                                    <p className="works-type"><span>MY ROLE:</span> { work.type }</p>
                                 </div>
                                 <div className="modal-img-one">
-
+                                    { finalVersionImg }
                                 </div>
                             </div>
                             <div className="second-content">
                                 <div className="section-intro">
                                     <h2>Introduction</h2>
-                                    <p>Since the beginning, Whooo's Reading (WR) has been very good at
-                                    helping teachers track their students' independent reading and
-                                    motivating students to read more on their own. While WHooo's Reading
-                                    did a good job managing and motivating independent reading, we
-                                    discovered that teachers and schools were most interested in WR
-                                    because of the questions that ask students about the books the read.</p>
-                                    <br/>
-                                    <p>We learned that teachers were fed up with the factual-recall multiple
-                                    choice questions that programs would ask students</p>
-                                    <br/>
-                                    <p>Questions like these do not prepare students for a world i which they
-                                    need to think creatively and analytically and one in which they can easily
-                                    google the answer to fact-recall questions. Moreover, the new standards
-                                    asks students to synthesize, cite evidence, analyze, and write and these
-                                    'old-school' multiple choice assessments were not cutting it anymore</p>
+                                    <p>
+                                        Since the beginning, Whooo's Reading (WR) has been great at
+                                        helping teachers track their students' independent reading and
+                                        motivating students to read more on their own. While WHooo's Reading
+                                        did a good job managing and motivating independent reading, we
+                                        discovered that teachers and schools were most interested in WR
+                                        because of the questions that ask students about the books the read.
+                                    </p>
+                                    <p>
+                                        Teachers were fed up with the factual-recall multiple choice questions 
+                                        that programs would ask students. These questions do not prepare students 
+                                        for a world in which they need to think creatively and analytically 
+                                        and one in which they can easily google the answer to fact-recall questions. 
+                                        Moreover, the new standards ask students to synthesize, cite evidence, analyze, 
+                                        and write and these ‘old-school’ multiple choice assessments 
+                                        were not cutting it anymore.
+                                    </p>
+                                    <p>
+                                       The best way to help teachers with our program was to improve our reading questions 
+                                       and assessment content. To make these improvements, we turned to our teachers 
+                                       for their invaluable feedback and input. 
+                                    </p>
                                 </div>
                                 <div className="double-images-wrapper">
-                                    <div className="modal-small-img"></div>
-                                    <div className="modal-small-img"></div>
+                                    <div className="modal-small-img">
+                                        <img className="red" src={ multipleChoice } alt="multiple-choice-question"/>
+                                    </div>
+                                    <div className="modal-small-img green">
+                                        <img className="green" src={ comprehension } alt="comprehension-question"/>
+                                    </div>
                                 </div>
                             </div>
                         </div> 

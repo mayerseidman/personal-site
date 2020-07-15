@@ -1,8 +1,8 @@
 import React,{ Component } from 'react';
 import { NavLink, Link, withRouter } from 'react-router-dom';
-import '../../assets/sass/home.scss';
 import image from "../../assets/images/linkedin-profile-mayer.png";
 import { withLoadState } from '../contexts/LoadStateContext';
+import '../../assets/sass/home.scss';
 
 class Home extends Component {
     constructor(props) {
