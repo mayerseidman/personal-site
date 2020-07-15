@@ -235,6 +235,7 @@
     .nav-link:hover {
         padding-bottom: 2px;
         border-bottom: 1px solid #fff;
+        opacity: 1;
       }
     
     .text-delayed {
@@ -438,18 +439,22 @@
     }
 
     .nav-link:link {
-        color: #D8D8D8;
+        color: #fff;
+        opacity: 0.8;
         font-size: 1.3rem;
         line-height: 1.3rem;
         text-decoration: none;
     }
     .nav-link:visited {
-        color: #D8D8D8;
+        color: #fff;
+        opacity: 1;
     }
 
     .nav-link:hover {
         padding-bottom: 2px;
         border-bottom: 1px solid #fff;
+        opacity: 1;
+        transition: all 0.25;
     }
 
 

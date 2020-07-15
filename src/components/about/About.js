@@ -65,17 +65,21 @@ class About extends Component {
                                         <div className="about-details">
                                             <p className="emp-text">journey.</p>
                                             <p className="p-over">
-                                                With a bachelors in Talmudic Law (link) and an MBA, I was still looking for more. 
-                                                I wanted to be a part of a movement and to have a real impact. 
+                                                With a bachelors in <a className="p-link" 
+                                                href="shorturl.at/epyFP" target="_blank" style={{ display: "inline-block" }}>
+                                                Talmudic Law</a> and an MBA, 
+                                                I was still looking for more. 
+                                                I wanted to be a part of a movement and to have a meaningful impact. 
                                             </p>
                                             <p className="p-over">
                                                 I joined a coding bootcamp in Austin, TX and left with programming skills
                                                 and a growing excitement for technology.
                                             </p>
                                             <p className="p-over">
-                                                Shortly after, I was hired at an ed-tech startup in San Diego as a full stack developer. 
-                                                I was fortunate to wear multiple hats-including a design one. 
-                                                I quickly became focused about design and the rest is history.
+                                                Shortly after, I worked at an ed-tech startup in San Diego as a full stack developer. 
+                                                I was fortunate to be able to help students learn, grow, and reach their potential. 
+                                                I was also able to wear multiple hats and became involved with the design of the product. 
+                                                I became focused and passionate about design and the rest is history.
                                             </p>
                                             <p className="p-over">
                                                 I started working remotely a few years ago and traveled the world (literally). 
@@ -87,48 +91,55 @@ class About extends Component {
                                             <p className="p-over">
                                                 From UX research through user feedback (after production), I have immersed myself in design and 
                                                 am experienced in all design areas.
-                                                I enjoy iterating on a product or feature and seeing it through till the end.
+                                                I enjoy iterating on a product or feature and seeing it through till the end. 
+                                                I believe that when you sweat out the details it changes a user's experience and they can feel it too.
                                             </p>
                                             <p className="p-over">
                                                 I like using my coding experience and versatility whenever I can. 
                                                 I use my coding skills to prototype (Javascript/REACT), make final touches on a product (CSS), 
-                                                and empathize with developers (Ruby and Swift).
+                                                and deeply understand the workflow of developers (Ruby and Swift).
                                             </p>
                                             <p className="p-over">
-                                                I believe it is highly beneficial for everyone on the team to understand why the product looks 
-                                                and feels the way it does-not just product members. 
-                                                Whether through writing (link) or presentations, I enjoy sharing my ideas and process with others.
+                                                I believe it is highly beneficial for everyone on a team (not just product people) to understand why the product acts, looks, 
+                                                and feels the way it does.
+                                                Whether through <a className="p-link" href="https://medium.com/design-ideas-thoughts" target="_blank">writing </a> or presentations, 
+                                                I enjoy sharing my ideas and processes with others.
                                             </p>
                                         </div>
                                         <div className="about-details">
                                             <p className="emp-text">growth.</p>
                                             <p className="p-over">
-                                                Growth is of utmost importance to me and I make sure to continually push myself. 
-                                                My curiosity and world travel gave me many opportunities to learn about myself and other cultures. 
-                                                Learning languages challenges me and also helps me connect with other people. 
+                                                I believe that learning and self growth are precious tools we can use to improve ourselves and bring our dreams to life.
+                                                Whether <a className="p-link" href="http://instagram.com/mayerseidman" target="_blank">traveling the world</a>, learning a new language, 
+                                                or digging into a new design system, I try to grow and learn continually.
                                                 In my free time you can find me reading, writing, studying languages, or mixing music.
                                             </p>
-                                            <p className="p-over">
-                                                Favourite Book: Great Expectations by Charles Dickens <br/>
-                                                Current Design Book: Technically Wrong by... <br/>
-                                                Languages (by fluency): Hebrew, German, Spanish
+                                            <p className="p-over currentInterests">
+                                                <div><span className="item">Current Design Book</span><span className="value"> Technically Wrong by Sara Wachter-Boettcher</span></div>
+                                                <div><span className="item">Favourite Book</span><span className="value"> Great Expectations by Charles Dickens</span></div>
+                                                <span className="item">Languages (by fluency)</span><span className="value"> Hebrew, German, Spanish</span>
                                             </p>
-                                            <p className="p-over">here…Descriptive text goes here…</p>
                                         </div>
                                         <div className="about-details">
                                             <p className="emp-text">creations.</p>
                                             <p className="p-over links">
-                                                <a href="">Pinterest</a>
-                                                <a href="">Mixcloud</a>
-                                                <a href="">Sunsets</a>
+                                                <a className="mixcloud" 
+                                                    href="https://www.mixcloud.com/mayer-seidman/" target="_blank">Mixcloud</a>
+                                                <a className="regular" 
+                                                    href="https://www.pinterest.com/mayerseidman/projects/" target="_blank">Pinterest</a>
+                                                <a className="small" 
+                                                    href="https://sunsets-are-awesome.herokuapp.com/" target="_blank">Sunsets</a>
                                             </p>
                                         </div>
                                         <div className="about-details">
                                             <p className="emp-text">links.</p>
                                             <p className="p-over links">
-                                                <a href="">Medium</a>
-                                                <a href="">Instagram</a>
-                                                <a href="">LinkedIn</a>
+                                                <a className="long" 
+                                                    href="https://www.instagram.com/mayerseidman/" target="_blank">Instagram</a>
+                                                <a className="small" 
+                                                    href="https://medium.com/design-ideas-thoughts" target="_blank">Medium</a>
+                                                <a className="linkedIn" 
+                                                    href="https://www.linkedin.com/in/mayer-seidman/" target="_blank">LinkedIn</a>
                                             </p>
                                         </div>
                                     </div>
