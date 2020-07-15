@@ -1,6 +1,6 @@
 import React,  { Component } from 'react';
 import { NavLink, Link, withRouter } from 'react-router-dom';
-import image from "../../assets/images/linkedin-profile-mayer.png";
+import image from "../../assets/images/misc/linkedin-profile-mayer.png";
 import { withLoadState } from '../contexts/LoadStateContext';
 
 import '../../assets/sass/about/about.scss';

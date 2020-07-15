@@ -11,8 +11,11 @@ import {
 
 // IMAGES
 import { withLoadState } from '../contexts/LoadStateContext';
-import image from "../../assets/images/linkedin-profile-mayer.png";
-import finalVersion from "../../assets/images/wr-lite/teacher-exercises.gif";
+import image from "../../assets/images/misc/linkedin-profile-mayer.png";
+import finalVersionData from "../../assets/images/data-center-redesign/final-version.gif";
+import finalVersionWRLite from "../../assets/images/wr-lite/teacher-exercises.gif";
+import finalVersionStudentRoster from "../../assets/images/student-roster/final-version.gif";
+
 import multipleChoice from "../../assets/images/wr-lite/multiple-choice.png";
 import comprehension from "../../assets/images/wr-lite/comprehension.png";
 
@@ -119,32 +122,38 @@ class Works extends Component {
                                     <p className="my-work">My Work.</p>
                                     <div className='all-works'>
                                         <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-one`}>
-                                            <div className="each-work">  
+                                            <div className="each-work">
                                                 <div className="work-text">
-                                                    <p className="main-work-text">Reading Comprehension Tool</p>
-                                                    <p className="secondary-work-text">Design | Prototype</p>
+                                                    <p className="main-work-text">Data Center</p>
+                                                    <p className="secondary-work-text">Research, Structure, Interaction, Visual</p>
                                                 </div>
-                                                <div className="work-image-wrapper"></div>
+                                                <div className="work-image-wrapper">
+                                                    <img src={ finalVersionData } alt="final-version"/>
+                                                </div>
                                             </div>
                                          </Link>
                                         <div className="worker-separator"></div>
                                         <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-two`}>
-                                            <div className="each-work">
+                                            <div className="each-work">  
                                                 <div className="work-text">
-                                                    <p className="main-work-text">Work Numero Dos</p>
-                                                    <p className="secondary-work-text">Design | Prototype</p>
+                                                    <p className="main-work-text">Reading Comprehension Tool</p>
+                                                    <p className="secondary-work-text">Research, Structure, Interaction, Visual, User Feedback</p>
                                                 </div>
-                                                <div className="work-image-wrapper"></div>
+                                                <div className="work-image-wrapper">
+                                                   <img src={ finalVersionWRLite } alt="final-version"/>
+                                                </div>
                                             </div>
                                         </Link>
                                         <div className="worker-separator"></div>
                                         <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-three`}>
                                             <div className="each-work">
                                                 <div className="work-text">
-                                                    <p className="main-work-text">Work Numero Tres</p>
-                                                    <p className="secondary-work-text">Design | Prototype</p>
+                                                    <p className="main-work-text">Student Roster</p>
+                                                    <p className="secondary-work-text">Research, Interaction, Visual</p>
                                                 </div>
-                                                <div className="work-image-wrapper"></div>
+                                                <div className="work-image-wrapper">
+                                                    <img src={ finalVersionStudentRoster } alt="final-version"/>
+                                                </div>
                                             </div>
                                         </Link>
                                     </div>
@@ -230,11 +239,16 @@ function Work({ works, imageRef, history }) {
         setClose(true);
     }
 
-    if (history.location.pathname == "/works/work-one") {
+    let path = history.location.pathname;
+    if (path == "/works/work-one") {
         console.log("ONE")
-        var finalVersionImg = <img src={ finalVersion } alt="final-version"/>
-    } else {
+        var finalVersionImg = <img src={ finalVersionData } alt="final-version"/>
+    } else if (path == "/works/work-two") {
         console.log("TWO")
+        var finalVersionImg = <img src={ finalVersionWRLite } alt="final-version"/>
+    } else {
+        console.log("THREE")
+        var finalVersionImg = <img src={ finalVersionStudentRoster } alt="final-version"/>
     }
 
     return (
