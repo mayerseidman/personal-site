@@ -138,7 +138,9 @@ class Home extends Component {
                             <div className="home-centered-text">
                                 <div>
                                     <p className="large-text">Howdy.</p>
-                                    <p className="text-style">My name is Mayer and I'm a { title }.</p>
+                                    <p className="text-style">My name is Mayer and I'm a 
+                                        <span className="highlighted-word"> { title }.</span>
+                                    </p>
                                     <section ref={this.delayedText} className='text-delayed'>
                                     <p className='text-paragraph text-style'>I'm a versatile problem solver passionate</p> 
                                     <p className='text-paragraph text-style'>about helping people and uncovering</p> 
