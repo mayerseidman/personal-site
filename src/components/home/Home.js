@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import { NavLink, Link, withRouter } from 'react-router-dom';
 import image from "../../assets/images/misc/linkedin-profile-mayer.png";
 import { withLoadState } from '../contexts/LoadStateContext';
+import Text from './text'
 import '../../assets/sass/home.scss';
 
 class Home extends Component {
@@ -17,29 +18,6 @@ class Home extends Component {
         this.textWrapper = React.createRef();
         this.delayedText = React.createRef();
         this.imageContainer = React.createRef();
-        this.state = { wordValue: "UI UX Designer", currentCount: 8 };
-    }
-
-    getChangedText() {
-        console.log("CHANGE")
-        var words = ["Human", "Doodler", "Brother", "Dad-jokes", "Pescatarian", "Surfer", "Coder"];
-        i = (i + 1) % words.length;
-        return words[i];
-    }
-    changeText() {
-        var text = this.getChangedText();
-        console.log(text)
-        this.setState({ wordValue: text })
-    }
-    timer() {
-        var newCount = this.state.currentCount - 1;
-        console.log(this.state.currentCount, newCount)
-        if(newCount >= 0) { 
-          this.setState({ currentCount: newCount });
-        } else {
-          clearInterval(this.state.intervalIdTimer);
-          clearInterval(this.state.intervalIdScrambler)
-        }
     }
     componentDidMount() {
         let rightContainer = this.rightContainer.current;
@@ -121,14 +99,6 @@ class Home extends Component {
             
             this.props.context.setLastLocation(this.props.location)
         })
-        var intervalIdTimer = setInterval(this.timer.bind(this, 1000));
-        var intervalIdScrambler = setInterval(this.changeText.bind(this, 1000));
-        this.setState({ intervalIdTimer: intervalIdTimer, intervalIdScrambler: intervalIdScrambler });
-    }
-
-    componentWillUnmount() {
-       // use intervalId from the state to clear the interval
-       clearInterval(this.state.intervalIdTimer);
     }
 
     handleMenuClick() {
@@ -156,11 +126,7 @@ class Home extends Component {
     }
 
     renderRightContainer() {
-        if (this.state.currentCount === 0) {
-            var title = "UI UX Designer";
-        } else {
-            var title = this.state.wordValue;
-        }
+        const title =  <Text delay={ 5000 } />
         return (
             <div ref={this.rightContainer} className="right-container-home">
                 <div className="main-content">
