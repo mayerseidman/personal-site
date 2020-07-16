@@ -216,7 +216,6 @@ $primary-white: #fff;
     .modal-section {
         // height: 100vh;
         padding: 40px;
-        padding-top: 0px;
     }
     .first-content {
         // height: 45%;
@@ -279,7 +278,6 @@ $primary-white: #fff;
     .modal-justify-left {
         display: flex;
         flex-direction: column;
-        margin: 20px 20px 0 20px;
     }
     .works-type {
         margin-top: 40px;
@@ -289,7 +287,7 @@ $primary-white: #fff;
         display: flex;
     }
     .news-format-left {
-        margin-left: 20px;
+        margin-left: 10px;
         width: 450px;
 
     }
@@ -302,7 +300,6 @@ $primary-white: #fff;
         font-size: 3em;
         position: relative;
         top: 10px;
-        left: 10px;
         color: #D26442;
     }
 
@@ -680,7 +677,6 @@ $primary-white: #fff;
     .modal-section {
         // height: 100vh;
         padding: 40px;
-        padding-top: 0px;
     }
     .first-content {
         // height: 45%;
@@ -730,7 +726,6 @@ $primary-white: #fff;
     .modal-justify-left {
         display: flex;
         flex-direction: column;
-        margin: 20px 20px 0 20px;
     }
     .works-type {
         margin-top: 40px;
@@ -743,17 +738,18 @@ $primary-white: #fff;
         display: flex;
     }
     .news-format-left {
-        margin-left: 20px;
+        margin-left: 10px;
+        width: 450px;
     }
     .news-format-right {
         margin-left: 40px;
         color: #D26442;
+        width: 400px;
     }
     .quoted {
         font-size: 3em;
         position: relative;
         top: 10px;
-        left: 10px;
         color: #D26442;
     }
 
@@ -906,6 +902,9 @@ $primary-white: #fff;
     .bottom-content {
         width: 48%;
     }
+    .text {
+        width: 60%;
+    }
 }
 
 @media screen and (min-width: 1324px) and (max-width: 1750px) {
@@ -984,6 +983,21 @@ $primary-white: #fff;
     }
     .bottom-content {
         width: 48%;
+    }
+    .text {
+        width: 60%;
+    }
+      .second-content {
+        display: flex;
+        /*align-items: center;*/
+        justify-content: space-between;
+        background-color: white;
+        color: #171C46;
+        padding: 40px;
+        padding-bottom: 15px;
+        p {
+            width: 85%;
+        }
     }
   }
 
@@ -1368,7 +1382,6 @@ $primary-white: #fff;
         justify-content: space-between;
         background-color: #171C46;
         color: white;
-        padding: 40px;
     }
     
     .second-content {
@@ -1392,14 +1405,13 @@ $primary-white: #fff;
     .modal-justify-left {
         display: flex;
         flex-direction: column;
-        margin: 20px 20px 0 20px;
     }
 
     .news-format {
         display: flex;
     }
     .news-format-left {
-        margin-left: 20px;
+        margin-left: 10px;
     }
     .news-format-right {
         margin-left: 40px;
@@ -1409,7 +1421,6 @@ $primary-white: #fff;
         font-size: 3em;
         position: relative;
         top: 10px;
-        left: 10px;
         color: #D26442;
     }
 
@@ -1434,7 +1445,6 @@ $primary-white: #fff;
       .modal-justify-left {
         display: flex;
         flex-direction: column;
-        margin: 20px 20px 0 20px;
     }
 
     .second-content {
@@ -1443,6 +1453,9 @@ $primary-white: #fff;
         p {
             width: 100%;
         }
+    }
+    .first-content, .second-content, .modal-section {
+        padding: 20px;
     }
     .my-name-works {
         font-size: 1.5em;
@@ -1463,15 +1476,15 @@ $primary-white: #fff;
     }
     .right-container-works {
         .main-content {
-            height: 100vh;
         }
     }
-    
   }
 
 
   .with-quote {
       display: flex;
+      position: relative;
+        bottom: 25px;
   }
 
   .close-modal {
@@ -1512,6 +1525,15 @@ $primary-white: #fff;
                 padding-left: 15px;
             }
         }
+    }
+    .modal-section, .second-content {
+        padding: 40px;
+    }
+    .news-format-right {
+        width: 400px;
+    }
+    .news-format-left {
+        width: 450px;
     }
 }
 @media only screen and (min-width: 399px) and (max-width: 799px) {
@@ -1554,6 +1576,10 @@ $primary-white: #fff;
     margin: 5px 0;
 }
 
+.grey {
+    background: #fafafa;
+}
+
 .basic-session {
     margin: 15px 0;
 }
@@ -1590,12 +1616,6 @@ $primary-white: #fff;
     span {
         font-weight: 600;
     }
-}
-
-.second-content {
-    padding: 40px;
-    padding-bottom: 5px;
-    padding-top: 20px;
 }
 
 .overlap-box-left {

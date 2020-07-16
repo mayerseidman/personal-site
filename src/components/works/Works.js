@@ -308,85 +308,102 @@ function Work({ works, imageRef, history }) {
                                 </div>
                             </div>
                         </div> 
-                        <div className="modal-section">
+                        <div className="modal-section grey">
                             <div className="modal-justify-left">
                                 <p className="news-heading">RESEARCH, STRATEGY, and CONCEPT</p>
-                                <div>
+                                <div className="text">
                                     <p className="all-caps news-sub-heading">User Interviews</p>
-                                    <p>For two weeks we had phone calls with dozens of teachers around the</p>
-                                    <p>country and learned that a major problem is finding formative</p>
-                                    <p>assessments that align with the standards and reinforce and the reading</p>
+                                    <p>For two weeks we had phone calls with dozens of teachers around the
+                                        country and learned that a major problem is finding formative
+                                        assessments that align with the standards and reinforce and the reading
+                                    </p>
                                 </div>
                             </div>
                             <div className="modal-justify-left">
-                                <p className="all-caps news-sub-heading">General Discovery</p>
+                                <p className="all-caps news-sub-heading">GENERAL DISCOVERY</p>
                                 <div className="news-format">
                                     <div className="with-quote">
                                         <div className="quoted"><span className="quote-span">&#8220;</span></div>
                                         <div className="news-format-left">
-                                            <p>I might have a student who is missing a particular skill: 
-                                            maybe inferring, drawing conclusions, answering open-ended
-                                            questions, main ideas, supporting details, using evidence.
-                                            The way I currently handle this is to
-                                            introduce a concept to the whole class(e.g main ideas)
-                                            then do a lesson on the concept. Then I break them
-                                            into groups of 4, so they can start getting practice, and
-                                            so they can give support to each other</p>
+                                            <p>
+                                                I might have a student who is missing a particular skill: 
+                                                maybe inferring, drawing conclusions, answering open-ended
+                                                questions, main ideas, supporting details, using evidence.
+                                                The way I currently handle this is to
+                                                introduce a concept to the whole class(e.g main ideas)
+                                                then do a lesson on the concept. Then I break them
+                                                into groups of 4, so they can start getting practice, and
+                                                so they can give support to each other
+                                            </p>
+
+                                            <p>
+                                                The worst part of this process is coming up with activities for 
+                                                the 3 or 4 person groups and grading them. My expertise is in teaching 
+                                                the lesson and helping groups and students understand what was taught. 
+                                                I want to hand off coming up with ways to practice the reading skills.
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="news-format-right">
-                                    <p>While some sites (e.g. Pinterest) offer graphic
-                                        organizers and other forms of assessments-- it often 
-                                        takes many hours to find the right types of reading
-                                        exercises, and they are rarely engaging for students.
-                                        In fact nearly very teacher we spoke to brought up some version of this problem</p>
+                                        <p>
+                                            While some sites (e.g. Pinterest) offer graphic
+                                            organizers and other forms of assessments-- it often 
+                                            takes many hours to find the right types of reading
+                                            exercises, and they are rarely engaging for students.
+                                            In fact nearly very teacher we spoke to brought up some version of this problem
+                                        </p>
                                     </div>
                                 </div>
-                                <p className="all-caps news-sub-heading">General Discovery</p>
+                                <p className="all-caps news-sub-heading">CREATING ASSIGNMENTS</p>
                                 <div className="news-format">
                                     <div className="with-quote">
                                         <div className="quoted"><span className="quote-span">&#8220;</span></div>
                                         <div className="news-format-left">
-                                            <p>I might have a student who is missing a particular skill: 
-                                            maybe inferring, drawing conclusions, answering open-ended
-                                            questions, main ideas, supporting details, using evidence.
-                                            The way I currently handle this is to
-                                            introduce a concept to the whole class(e.g main ideas)
-                                            then do a lesson on the concept. Then I break them
-                                            into groups of 4, so they can start getting practice, and
-                                            so they can give support to each other</p>
+                                            <p>
+                                                I want to assign exercises for students to work on that’s aligned 
+                                                with unit I am focusing on. I want to check up on my computer during the period 
+                                                where students are regarding finishing the exercises (I like how google classroom does this).
+                                            </p>
+                                            <p>
+                                                Its very important for me to be able to assign students exercises 
+                                                based on their individual needs.
+                                            </p>
                                         </div>
                                     </div>
                                     
                                     <div className="news-format-right">
-                                        <p>While some sites (e.g. Pinterest) offer graphic
-                                        organizers and other forms of assessments-- it often 
-                                        takes many hours to find the right types of reading
-                                        exercises, and they are rarely engaging for students.
-                                        In fact nearly very teacher we spoke to brought up some version of this problem</p>
+                                        <p>
+                                            Teachers want to assign 1-3 exercises that are 
+                                            aligned with standards that their students can then work on. 
+                                            Teachers want to assign different assignments to different 
+                                            groups of students (depending on their specific needs and pace).
+                                        </p>
                                     </div>
                                 </div>
-                                <p className="all-caps news-sub-heading">General Discovery</p>
+                                <p className="all-caps news-sub-heading">DATA</p>
                                 <div className="news-format">
                                     <div className="with-quote">
                                         <div className="quoted"><span className="quote-span">&#8220;</span></div>
                                         <div className="news-format-left">
-                                            <p>I might have a student who is missing a particular skill: 
-                                            maybe inferring, drawing conclusions, answering open-ended
-                                            questions, main ideas, supporting details, using evidence.
-                                            The way I currently handle this is to
-                                            introduce a concept to the whole class(e.g main ideas)
-                                            then do a lesson on the concept. Then I break them
-                                            into groups of 4, so they can start getting practice, and
-                                            so they can give support to each other</p>
+                                            <p>
+                                                My time is so limited. At the beginning of the year, you have to look at their test scores
+                                                from last year or get to know them before you can determine how to group them. I want reports 
+                                                that tell me who’s mastering which skill sets. I would still look deep into it, but when I'm short on time, 
+                                                I would have the information right at my fingertips.
+                                            </p>
+                                            <p>
+                                                Both individual and group data are crucial. I would use individual data for small groups, 
+                                                and whole class data for informing my instruction.”
+                                            </p>
                                         </div>
                                     </div>
                                     <div className="news-format-right">
-                                    <p>While some sites (e.g. Pinterest) offer graphic
-                                        organizers and other forms of assessments-- it often 
-                                        takes many hours to find the right types of reading
-                                        exercises, and they are rarely engaging for students.
-                                        In fact nearly very teacher we spoke to brought up some version of this problem</p>
+                                    <p>
+                                        Teachers are very short on time. They usually have to look in several places to analyze data to determine 
+                                        where their students are at. Teachers highly value data that shows outliers: who is totally underperforming 
+                                        (and needs more hands on attention) and who is over-performing (needs to be challenged). 
+                                        They want to see this data broken down by skillset comprehension.
+                                    </p>
                                     </div>
                                 </div>
                             </div>
