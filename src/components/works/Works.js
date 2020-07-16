@@ -26,6 +26,16 @@ import goalsActionsScreen from "../../assets/images/wr-lite/goals-actions-screen
 import scenarioMapping from "../../assets/images/wr-lite/scenario-mapping.png";
 import narrativeSummary from "../../assets/images/wr-lite/narrative-summary.png";
 
+import lofiOne from "../../assets/images/wr-lite/lofi-one.png";
+import lofiTwo from "../../assets/images/wr-lite/lofi-two.png";
+import lofiThree from "../../assets/images/wr-lite/lofi-three.png";
+import lofisAnnotated from "../../assets/images/wr-lite/lofis-annotated.png";
+
+import teacherExercisesWireframe from "../../assets/images/wr-lite/teacher-exercises.png";
+import studentExercisesWireframe from "../../assets/images/wr-lite/student-exercises.png";
+import teacherHomePageWireframe from "../../assets/images/wr-lite/teacher-homepage.png";
+
+
 import '../../assets/sass/works/works.scss';
 
 class Works extends Component {
@@ -576,114 +586,112 @@ function Work({ works, imageRef, history }) {
                                <img className="full-width" src={ narrativeSummary } alt="narrative-summary" />
                             </div>
                         </div>
-                        <div className="modal-section">
+                        <div className="modal-section contains-colored-background">
                             <div className='left-to-full'>
                                 <div className="color-box-sections">
-                                    <div>
+                                    <div className="sketchingTitles">
                                         <h3>LOFI, SKETCHING and ANNOTATING</h3>
-                                        <p>Text goes here…</p>
+                                        <b>BROWSING and SELECTING EXERCISES</b>
                                     </div>
                                     <div className="grey-boxes">
                                         <div className="box-left-red">
-
+                                            <img className="full-width" src={ lofiOne } alt="lofi-one" />
                                         </div>
                                         <div className="box-right-green">
-
+                                            <img className="full-width" src={ lofiTwo } alt="lofi-two" />
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div className="feedback-box">
                                 <h3>FEEDBACK</h3>
-                                <p>We did user testing in the office (with non product employees) to get a quick feel for the basic layouts we chose. (FIX)</p>  
-                                <p>They preferred Version two for browsing exercises since it was more direct and less clunky; all filters/controls were placed above the exercises. (FIX)</p>
+                                <p>I did user testing in the office (with non product employees) to get some quick thoughts on the layouts.</p>  
+                                <p>
+                                    The second version was preferred for browsing exercises since it was more direct and less clunky. 
+                                    All  of the filters/controls were placed above the exercises and could be done in one step.
+                                </p>
                             </div>
                             <div className='left-to-full'>
                                 <div className="dark-section">
                                     <div className="container-left primary-dark-text ">
-                                        <p>Teacher Assignments Progress Table</p>
-                                        <p>The table on this page simply shows the progress students have made on the teacher's assignment (assigned exercises).</p>
+                                        <b>TEACHER ASSIGNMENTS PROGRESS TABLE</b>
+                                        <p>The table on this page shows the progress students have made on the teacher's assignment (assigned exercises).</p>
                                     </div>
-                                    <div className="grey-box">
-
+                                    <div className="bigger-container">
+                                        <img className="" src={ lofiThree } alt="" />
                                     </div>
                                 </div>
                                 <div className="dark-section">
                                     <div className="container-left" >
-                                        <h5>INSIGHTS</h5>
-                                        <div className="flex-row align-center">
-                                           <div className="dot">
-                                            </div> 
-                                            <div>
-                                                <p className="boxed-text primary-dark-text">POINT ON</p>
-                                                <p className="boxed-text primary-dark-text">Explanation Text goes here…</p>
+                                        <span className="subtitle"><b>INSIGHTS</b></span>
+                                        <div>
+                                           <div className="dot"><span>1</span></div> 
+                                            <div className="annotationText">
+                                                <p className="boxed-text primary-dark-text"><b>STUDENTS LIST</b></p>
+                                                <p className="boxed-text primary-dark-text">
+                                                    Students listed by class are changeable here. (One student is selected at any given time.)
+                                                </p>
                                             </div>
                                         </div>
-                                        <div className="flex-row align-center">
-                                           <div className="dot">
-                                            </div> 
-                                            <div>
-                                                <p className="boxed-text primary-dark-text">POINT ON</p>
-                                                <p className="boxed-text primary-dark-text">Explanation Text goes here…</p>
+                                        <div>
+                                           <div className="dot"><span>2</span></div> 
+                                            <div className="annotationText">
+                                                <p className="boxed-text primary-dark-text"><b>SKILLSET VALUES</b></p>
+                                                <p className="boxed-text primary-dark-text">
+                                                    A list of the top 3 skillset weaknesses and strengths of the student. 
+                                                    (One skillset is selected at any given time.)
+                                                </p>
                                             </div>
                                         </div>
-                                        <div className="flex-row align-center">
-                                           <div className="dot">
-                                            </div> 
-                                            <div>
-                                                <p className="boxed-text primary-dark-text">POINT ON</p>
-                                                <p className="boxed-text primary-dark-text">Explanation Text goes here…</p>
+                                        <div>
+                                           <div className="dot"><span>3</span></div> 
+                                            <div className="annotationText">
+                                                <p className="boxed-text primary-dark-text"><b>SKILLSET EXAMPLES</b></p>
+                                                <p className="boxed-text primary-dark-text">Writing examples of the selected skillset.</p>
                                             </div>
                                         </div>
-                                        <div className="flex-row align-center">
-                                           <div className="dot">
-                                            </div> 
-                                            <div>
-                                                <p className="boxed-text primary-dark-text">POINT ON</p>
-                                                <p className="boxed-text primary-dark-text">Explanation Text goes here…</p>
+                                        <div>
+                                            <div className="dot"><span>4</span></div> 
+                                            <div className="annotationText">
+                                                <p className="boxed-text primary-dark-text"><b>PRACTICE EXERCISES</b></p>
+                                                <p className="boxed-text primary-dark-text">Suggested exercises to assign for the skillset currently selected.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="bigger-container">
-                                        <div className="overlap-box-left">
-
-                                        </div>
-                                        <div className="overlap-box-right">
-
-                                        </div>
+                                       <img src={ lofisAnnotated } alt="lofi-annotated" />
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                        <div className="modal-section">
+                        <div className="modal-section wireframes grey contains-colored-background">
                             <div className="modal-justify-left">
-                                <h5>WIREFRAMES</h5>
-                                <h6>TEACHER EXERCISES</h6>
+                                <h3>WIREFRAMES</h3>
+                                <span className="subtitle"><b>TEACHER EXERCISES</b></span>
                                 <div className="wireframe">
-
+                                    <img className="full-width" src={ teacherExercisesWireframe } alt="teacher-exercises-wireframe" />
                                 </div>
                             </div>
                             <div className="modal-justify-left">
-                            <h6>STUDENT EXERCISES</h6>
-                                <p>The student experience is very simple as the only thing they can do is select and work on exercises.</p>
+                            <span className="subtitle exercises"><b>STUDENT EXERCISES</b></span>
+                                <p>The student experience is quite simple as the only thing they can do is select an exercise to work on.</p>
                                 <div className="wireframe">
-
+                                    <img className="full-width" src={ studentExercisesWireframe } alt="student-exercises-wireframe" />
                                 </div>
                             </div>
                             <div className="modal-justify-left">
-                                <h6>ASSIGNMENTS</h6>
+                                <span><b>ASSIGNMENTS</b></span>
                                 <p>The teacher dashboard has a progress table (bottom right) that shows student progression on their assignment.</p>
                                 <div className="wireframe">
-
+                                    <img className="full-width" src={ teacherHomePageWireframe } alt="teacher-exercises-wireframe" />
                                 </div>
                             </div>
 
                             <div className="bottom-box-content">
-                                <h4>FEEDBACK</h4>
+                                <h3>FEEDBACK</h3>
                                 <div className="bottom-div">
                                     <div className='bottom-content'>
-                                        <h5>FILTERING</h5>
+                                        <b>FILTERING</b>
                                         <p>Some teachers had trouble finding the exercises they wanted. We came up with several ideas of potential filters:</p>
                                         <p>Filter exercises by learning type (visual, audible, reading, etc)
                                            Filter exercises by prior reading vs. text provided in exercise
@@ -693,19 +701,19 @@ function Work({ works, imageRef, history }) {
                                         </p>
                                     </div>
                                     <div className="bottom-content">
-                                        <h5>CONSTRAINTS</h5>
+                                        <b>CONSTRAINTS</b>
                                         <p>Teachers often have 20 or 30 students in their assignment progress table, and maybe only assign 2 exercises. This would create a pretty big discrepancy between the height of the assignments box and the height of the progress table-making it a bit of an awkward experience.</p>
                                     </div>
                                 </div>
                                 <div className="bottom-div">
                                     <div className='bottom-content'>
-                                        <h5>WORDING</h5>
+                                        <b>WORDING</b>
                                         <p>
                                         In the assignment creation, the word "delete" was confusing as it seemed to imply that doing so would delete the exercises (instead of merely deleting the assignment).
                                         </p>
                                     </div>
                                     <div className="bottom-content">
-                                        <h5>DIFFERENTIATE</h5>
+                                        <b>DIFFERENTIATE</b>
                                         <p>To start, we only supported the ability to assign exercises to all of a teacher's students at once. There was already a lot of interest in being able to assign groups of students different exercises.</p>
                                     </div>
                                 </div>

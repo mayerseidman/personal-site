@@ -844,6 +844,17 @@
     }
 }
 
+.nav-link {
+    color: #fff;
+    opacity: 0.8;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    text-decoration: none;
+    &.active {
+        opacity: 1 !important;
+    }
+}
+
 .emp-text {
     font-weight: 600;
 }
