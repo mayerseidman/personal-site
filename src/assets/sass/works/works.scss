@@ -433,7 +433,7 @@ $primary-white: #fff;
         width: 48%;
     }
 }
-@media screen and (min-width: 1200px) and (max-width: 1350px) {
+@media screen and (min-width: 1200px) and (max-width: 1450px) {
     .all-works {
         zoom: 83%;
     }
@@ -1065,7 +1065,6 @@ $primary-white: #fff;
 
     .main-content {
         width: 100%;
-
     }
     .main-content.is-nav-open {
         display: none;
@@ -1716,5 +1715,13 @@ $primary-white: #fff;
     &.exercises {
         margin-bottom: 0px;
         margin-top: 25px;
+    }
+}
+.final-section {
+    .container {
+        margin-bottom: 30px;
+        img {
+            margin-top: 15px;
+        }
     }
 }

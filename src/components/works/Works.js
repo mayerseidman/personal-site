@@ -35,6 +35,9 @@ import teacherExercisesWireframe from "../../assets/images/wr-lite/teacher-exerc
 import studentExercisesWireframe from "../../assets/images/wr-lite/student-exercises.png";
 import teacherHomePageWireframe from "../../assets/images/wr-lite/teacher-homepage.png";
 
+import assignmentsFinal from "../../assets/images/wr-lite/teacher-homepage-final.png";
+import insightsFinal from "../../assets/images/wr-lite/insights-final.png";
+
 
 import '../../assets/sass/works/works.scss';
 
@@ -717,6 +720,35 @@ function Work({ works, imageRef, history }) {
                                         <p>To start, we only supported the ability to assign exercises to all of a teacher's students at once. There was already a lot of interest in being able to assign groups of students different exercises.</p>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div className="modal-section final-section">
+                            <div className="container">
+                                <h3>FINAL VERSION</h3>
+                                <b>TEACHER EXERCISES</b>
+                                <p>
+                                    After hearing teachers talk about their use of Pinterest again, I decided that we should use 
+                                    their knowledge of that interface to our advantage.  By mimicking aspects of that interface we could 
+                                    make their experience on Whooo's Reading that much smoother. 
+                                </p>
+                                <p>
+                                    The loading animation, buttons and thumbnail image on each exercise were all designed to orient users to 
+                                    their experience on Pinterest. I also decided to simplify it and remove the "inactive" exercises section. 
+                                    Meaning, that outside of assignments, teachers would not be able to control the exercises students do (on their own).
+                                </p>
+                                <img className="full-width" src={ finalVersionWRLite } alt="final-version"/>
+                            </div>
+                            <div className="container">
+                                <b>ASSIGNMENTS</b>
+                                <p>
+                                    I neatly stacked the assignment details on top of the assignments progress table. I also 
+                                    decided to simplify it and remove the frequency component for the first iteration.
+                                </p>
+                                <img className="full-width" src={ assignmentsFinal } alt="assignments"/>
+                            </div>
+                            <div className="container">
+                                <b>INSIGHTS</b>
+                                <img className="full-width insights" src={ insightsFinal } alt="insights"/>
                             </div>
                         </div>
                     </div>

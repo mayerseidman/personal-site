@@ -602,7 +602,6 @@
     .main-content {
         display: flex;
         flex-direction: column;
-        height: 100vh;
     }
     .main-empty-1 {
         display: block;
@@ -939,7 +938,6 @@ and (max-width: 489px) {
 @media screen and (min-width: 600px) { 
     .home-centered-text {
         width: 450px;
-        margin-left: 10%;
     }
 }
 
