@@ -146,18 +146,6 @@ class Works extends Component {
                                         </div>
                                     </div>
                                 </Link>
-                                <div className="worker-separator"></div>
-                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/work-three`}>
-                                    <div className="each-work">
-                                        <div className="work-text">
-                                            <p className="main-work-text">Student Roster</p>
-                                            <p className="secondary-work-text">Research, Interaction, Visual</p>
-                                        </div>
-                                        <div className="work-image-wrapper">
-                                            <img src={ finalVersionStudentRoster } alt="final-version"/>
-                                        </div>
-                                    </div>
-                                </Link>
                             </div>
                         </div>
                     </div>
@@ -227,8 +215,6 @@ function Work({ works, imageRef, history }) {
         })
         setTimeout(() => {
             modalRef.current.classList.toggle("is-modal-open")
-            
-
         }, 50);
         let image = imageRef.current;
         if (isClose) {
@@ -260,6 +246,27 @@ function Work({ works, imageRef, history }) {
     let path = history.location.pathname;
     if (path == "/works/data-center") {
         var finalVersionImg = <img src={ finalVersionData } alt="final-version"/>
+        var content = (
+            <div ref={modalRef} className="modal-main">
+                <div ref={workDetailRef} className="work-details">
+                    <div ref={topRef} className="top-content" >
+                        <span onClick={()=> handleClick()} className="close-modal" to="/works">X</span>
+                    </div>
+                    <div ref={goTopRef} className="go-to-top hide" onClick={()=> handleScrollUp()}>↑ Go Up</div>
+                    <div className="first-content">
+                        <div>
+                            <p className="main-work-text">{ work.title }</p>
+                            <p className="secondary-work-text">{ work.description_one }</p>
+                            <p className="works-type"><span>MY ROLE:</span> { work.type }</p>
+                        </div>
+                        <div className="modal-img-one">
+                            { finalVersionImg }
+                        </div>
+                    </div>
+                    <WorkOne />
+                </div>
+            </div>    
+        )
     } else if (path == "/works/reading-comprehension-tool") {
         var finalVersionImg = <img src={ finalVersionWRLite } alt="final-version"/>
         var content = (

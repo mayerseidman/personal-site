@@ -17,8 +17,8 @@ import comprehension from "../../assets/images/wr-lite/comprehension.png";
 import studentSiteMap from "../../assets/images/wr-lite/student-site-map.png";
 import teacherSiteMap from "../../assets/images/wr-lite/teacher-site-map.png";
 
-import goalsActionsScreen from "../../assets/images/wr-lite/goals-actions-screen.png";
 import scenarioMapping from "../../assets/images/wr-lite/scenario-mapping.png";
+import goalsActionsScreen from "../../assets/images/wr-lite/goals-actions-screen.png";
 import narrativeSummary from "../../assets/images/wr-lite/narrative-summary.png";
 
 import lofiOne from "../../assets/images/wr-lite/lofi-one.png";
@@ -507,7 +507,7 @@ class WorkOne extends React.Component {
 			            their experience on Pinterest. I also decided to simplify it and remove the "inactive" exercises section. 
 			            Meaning, that outside of assignments, teachers would not be able to control the exercises students do (on their own).
 			        </p>
-			        <img className="full-width" src={ finalVersionWRLite } alt="final-version"/>
+			        <img className="full-width gif-border" src={ finalVersionWRLite } alt="final-version"/>
 			    </div>
 			    <div className="container">
 			        <b>ASSIGNMENTS</b>

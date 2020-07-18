@@ -79,7 +79,7 @@ class About extends Component {
                                     <p className="emp-text">journey.</p>
                                     <p className="p-over">
                                         With a bachelors in <a className="p-link" 
-                                        href="shorturl.at/epyFP" target="_blank" style={{ display: "inline-block" }}>
+                                        href="https://en.wikipedia.org/wiki/Talmudic_law" target="_blank" style={{ display: "inline-block" }}>
                                         Talmudic Law</a> and an MBA, 
                                         I was still looking for more. 
                                         I wanted to be a part of a movement and to have a meaningful impact. 
