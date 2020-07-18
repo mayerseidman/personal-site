@@ -1,6 +1,4 @@
-@media only screen 
-  and (min-width: 1500px) 
-   { 
+@media only screen and (min-width: 1500px) { 
     .wrapper-main {
         display: flex;
         width: 100%;
@@ -53,7 +51,7 @@
         width: 22px;
         height: 22px;
         bottom: 6%;
-        right: 20%;
+        right: 35%;
         z-index: 2;
     }
     .link-text {
@@ -284,15 +282,10 @@
     .slide-down-slower {
         animation: slide-down 1.5s forwards .5s 1;
         opacity: 1;
-    }
-    
-    
+    }   
 }
 
-@media only screen 
-  and (min-width: 1200px)
-  and (max-width: 1499px) 
-  {
+@media only screen and (min-width: 1200px) and (max-width: 1499px) {
     .main-empty-1 {
         flex-grow: 40;
     }
@@ -538,10 +531,9 @@
         z-index: -1;
         box-shadow: 0 2px 4px 0 #000;
     }
-  }
+}
 
-@media only screen 
-  and (max-width: 1199px) {
+@media only screen and (max-width: 1199px) {
     .wrapper {
         width: 100%;
         height: 100%;
@@ -730,9 +722,11 @@
     }
     .navigation-home {
        .nav-link {
-           font-size: 1.2em;
-           font-weight: 600;
-           color: #fff;
+            font-size: 1.2em;
+            color: #171C46;
+            &:hover {
+                opacity: 1;
+            }
        }
     }
     .nav-icon {
@@ -775,12 +769,10 @@
         left: 12%;
         opacity: 1;
     } */
-  }
+}
 
 
-  @media screen 
-  and (min-width: 700px) 
-  and (max-width: 1199px){
+@media screen and (min-width: 700px) and (max-width: 1199px) {
     .floating-profile-home .profile-image-container {
         position: absolute;
         left: 0;
@@ -813,10 +805,9 @@
     .cell-gif {
         background-color: darkmagenta;
     }
-  }
+}
 
-  @media only screen 
-  and (max-width: 699px) {
+@media only screen and (max-width: 699px) {
     .my-name-home {
         font-size: 1.5em;
         font-weight: 600;
@@ -856,8 +847,7 @@
         background-color: darkmagenta;
     }
 }
-@media screen 
-and (max-width: 489px) {
+@media screen and (max-width: 489px) {
     .floating-profile-home .profile-image-container {
         position: absolute;
         left: 0%;
@@ -904,8 +894,21 @@ and (max-width: 489px) {
             font-size: 1.35em !important;
         } 
     }
+    .main-text {
+        margin-top: 0px;
+    }
 }
 
+@media screen and (min-width: 600px) { 
+    .home-centered-text {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 600px) { 
+    .home-centered-text {
+        width: 350px;
+    }
+}
 
 .home-centered-text {
     display: flex;
@@ -932,12 +935,6 @@ and (max-width: 489px) {
                 opacity: 1;
             };
         }
-    }
-}
-
-@media screen and (min-width: 600px) { 
-    .home-centered-text {
-        width: 450px;
     }
 }
 
