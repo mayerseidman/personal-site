@@ -1601,7 +1601,9 @@ $primary-white: #fff;
 }
 
 .slide-down-works {
-    animation: slide-down 2.5s forwards .5s 1;
+/*    animation: slide-down 2.5s forwards .5s 1;
+*/    transition: all 2.5s .5s;
+    transform: translateY(0);
     opacity: 1;
 }
 
