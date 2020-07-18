@@ -124,52 +124,61 @@ class Home extends Component {
             </div>
         )
     }
-
-    renderRightContainer() {
+    renderNav() {
+        return (
+            <div ref={this.wrapperRef} className="navigation-home">
+                <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
+                <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
+                <p><a className="nav-link" activeStyle={{ color: 'white' }} 
+                    href="https://medium.com/design-ideas-thoughts" target="_blank">Writing</a>
+                </p>
+            </div>
+        )
+    }
+    renderContent() {
         const title =  <Text delay={ 5000 } />
         return (
-            <div ref={this.rightContainer} className="right-container-home">
-                <div className="main-content">
-                    <div className='main-empty-1'>  
-                    </div>
-                    <div className='main-text self-align'>
-                        <div className="text-top"></div>
-                        <div ref={this.textWrapper} className="text-container">
-                            <div className="home-centered-text">
-                                <div>
-                                    <p className="large-text">Howdy.</p>
-                                    <p className="text-style intro-text">My name is Mayer and I'm a 
-                                        <span className="highlighted-word"> { title }.</span>
-                                    </p>
-                                    <section ref={this.delayedText} className='text-delayed'>
-                                    <p className='text-paragraph text-style'>I'm a versatile problem solver passionate</p> 
-                                    <p className='text-paragraph text-style'>about helping people and uncovering</p> 
-                                    <p className='text-paragraph text-style'>emotions within products. </p>
-                                    <p className="learn-more">Learn more <span className="link-text">
-                                        <Link to='/about' className="plain-link">about me</Link></span> or view <span className="link-text">
-                                        <Link to="/works" className="plain-link">my work</Link></span>
-                                    </p>
-                                    </section>
-                                </div>
+            <div className="main-content">
+                <div className='main-empty-1'>  
+                </div>
+                <div className='main-text self-align'>
+                    <div className="text-top"></div>
+                    <div ref={this.textWrapper} className="text-container">
+                        <div className="home-centered-text">
+                            <div>
+                                <p className="large-text">Howdy.</p>
+                                <p className="text-style intro-text">I'm Mayer and I'm a 
+                                    <span className="highlighted-word"> { title }.</span>
+                                </p>
+                                <section ref={this.delayedText} className='text-delayed'>
+                                <p className='text-paragraph text-style'>I'm a versatile problem solver passionate</p> 
+                                <p className='text-paragraph text-style'>about helping people and uncovering</p> 
+                                <p className='text-paragraph text-style'>emotions within products. </p>
+                                <p className="learn-more">Learn more <span className="link-text">
+                                    <Link to='/about' className="plain-link">about me</Link></span> or view <span className="link-text">
+                                    <Link to="/works" className="plain-link">my work</Link></span>
+                                </p>
+                                </section>
                             </div>
                         </div>
                     </div>
-                    <div className='main-empty-2'>
-                        
-                    </div>
                 </div>
-                <div ref={this.wrapperRef} className="navigation-home">
-                    <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
-                    <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
-                    <p><a className="nav-link" activeStyle={{ color: 'white' }} 
-                        href="https://medium.com/design-ideas-thoughts" target="_blank">Writing</a>
-                    </p>
+                <div className='main-empty-2'>
+                    
                 </div>
             </div>
         )
     }
+    renderRightContainer() {
+        return (
+            <div ref={this.rightContainer} className="right-container-home">
+                { this.renderContent() }
+               { this.renderNav() }
+            </div>
+        )
+    }
 
-    renderImage() {
+    renderImageContainer() {
         return (
             <div ref={this.profileRef} className='floating-profile-home'>
                 <div ref={this.imageContainer} className="profile-image-container">
@@ -186,7 +195,7 @@ class Home extends Component {
                     { this.renderLeftContainer() }
                     { this.renderRightContainer() }
                 </div>
-                { this.renderImage() }
+                { this.renderImageContainer() }
             </div>
         )
     }

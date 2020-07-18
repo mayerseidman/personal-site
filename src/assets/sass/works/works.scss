@@ -23,7 +23,7 @@ $primary-white: #fff;
         background-color: #F4C42F;
     }
     .my-name-works {
-        font-size: 2em;
+        font-size: 2.5em;
         font-weight: 600;
         margin: 20px 0 0 40px;
     }
@@ -98,7 +98,7 @@ $primary-white: #fff;
         background-color: #fff;
         width: 22px;
         height: 22px;
-        right: 20%;
+        right: 35%;
         z-index: 2;
     }
     
@@ -433,9 +433,9 @@ $primary-white: #fff;
         width: 48%;
     }
 }
-@media screen and (min-width: 1200px) and (max-width: 1450px) {
+@media screen and (min-width: 1200px) and (max-width: 1325px) {
     .all-works {
-        zoom: 83%;
+        font-size: 0.75em;
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1499px)
@@ -473,7 +473,7 @@ $primary-white: #fff;
     }
 
     .my-name-works {
-        font-size: 2em;
+        font-size: 2.5em;
         font-weight: 600;
         margin: 20px 0 0 40px;
     }
@@ -1065,6 +1065,7 @@ $primary-white: #fff;
 
     .main-content {
         width: 100%;
+        padding-bottom: 35px;
     }
     .main-content.is-nav-open {
         display: none;
@@ -1094,7 +1095,7 @@ $primary-white: #fff;
         flex-direction: column;
     }
     .each-work {
-        display: flex;
+        display: inherit;
         flex-direction: column-reverse;
         &:hover { 
             opacity: 0.7;
@@ -1111,7 +1112,7 @@ $primary-white: #fff;
     .work-image-wrapper {
         margin: 0 20px;
         img {
-            width: 75%;
+            width: 100%;
         }
     }
 
@@ -1307,7 +1308,8 @@ $primary-white: #fff;
      .top-content {
         position: fixed;
         color: #D26442;
-        top: 10px;
+        top: 0px;
+        left: -14px;
     }
     
 
@@ -1507,7 +1509,7 @@ $primary-white: #fff;
     }
     .modal-img-one, .modal-small-img {
         img {
-            width: 450px;
+            width: 100%;
         }
     }
 }
@@ -1521,7 +1523,7 @@ $primary-white: #fff;
     }
     .modal-img-one, .modal-small-img {
         img {
-            width: 300px;
+            width: 100%;
         }
     }
 }
