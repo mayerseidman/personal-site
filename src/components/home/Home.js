@@ -136,7 +136,14 @@ class Home extends Component {
         )
     }
     renderContent() {
-        const title =  <Text delay={ 5000 } />
+        if (this.props.context.state.lastLocation) {
+            if (this.props.context.state.lastLocation.pathname === '/about' || this.props.context.state.lastLocation.pathname === '/works') {
+               var delay = 3000;
+            } else {
+               var delay = 5000;
+            }    
+        }
+        const title =  <Text delay={ delay } />
         return (
             <div className="main-content">
                 <div className='main-empty-1'>  
