@@ -211,10 +211,10 @@
         background-color: #D26442;
         margin-top: 10%;
         margin-left: 10%;
-        height: 350px;
+        height: 378px;
         width: 350px;
         z-index: -1;
-        box-shadow: 0 2px 4px 0 #000;
+       border: 3.5px solid #171c46;
     }
 
     .nav-link:link {
@@ -283,6 +283,12 @@
         animation: slide-down 1.5s forwards .5s 1;
         opacity: 1;
     }   
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    .large-text {
+        margin-top: 50px !important;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
@@ -526,10 +532,10 @@
         background-color: #D26442;
         margin-top: 10%;
         margin-left: 10%;
-        height: 325px;
+        height: 350px;
         width: 325px;
         z-index: -1;
-        box-shadow: 0 2px 4px 0 #000;
+        border: 3.5px solid #171c46;
     }
 }
 
@@ -683,11 +689,11 @@
         position: relative;
         background-color: #D26442;
         margin-top: 10%;
-        margin-left: 15%;
+        margin-left: 10%;
         height: 300px;
         width: 300px;
         z-index: -1;
-        box-shadow: 0 2px 4px 0 #000;
+       border: 3.5px solid #171c46;
     }
 
     .large-text {
@@ -725,7 +731,8 @@
             font-size: 1.2em;
             color: #171C46;
             &:hover {
-                opacity: 1;
+                color: #fff;
+                opacity: 0.7;
             }
        }
     }
@@ -789,7 +796,7 @@
         margin-top: 45px;
         margin-left: 32%;
         margin-right: auto;
-        height: 325px;
+        height: 350px;
         width: 325px;
         z-index: -1;
     }
@@ -829,10 +836,10 @@
         background-color: #D26442;
         margin-top: 45px;
         margin-left: 24%;
-        height: 300px;
+        height: 325px;
         width: 300px;
         z-index: -1;
-        box-shadow: 0 2px 4px 0 #000;
+        border: 3.5px solid #171c46;
     }
     .profile-image-blank {
         display: flex;
@@ -862,10 +869,10 @@
         background-color: #D26442;
         margin-top: 45px;
         margin-left: 15%;
-        height: 300px;
+        height: 325px;
         width: 300px;
         z-index: -1;
-        box-shadow: 0 2px 4px 0 #000;
+       border: 3.5px solid #171c46;
     }
 
     .profile-image-blank {
@@ -988,6 +995,10 @@
     padding: 4.5px;
     color: #181c45;
     margin-left: 5px;
+}
+
+.image-prof {
+    border: 3.5px solid #171c46;
 }
 
 .link-text {

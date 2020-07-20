@@ -1,6 +1,10 @@
 import React,  { Component } from 'react';
 import { NavLink, Link, withRouter } from 'react-router-dom';
-import image from "../../assets/images/misc/linkedin-profile-mayer.png";
+import hat from "../../assets/images/about/hat.gif";
+import cooking from "../../assets/images/about/cooking.gif";
+import music from "../../assets/images/about/drawing.gif";
+import drawing from "../../assets/images/about/music.gif";
+
 import { withLoadState } from '../contexts/LoadStateContext';
 
 import '../../assets/sass/about/about.scss';
@@ -172,20 +176,12 @@ class About extends Component {
             <div ref={this.prof} className='floating-profile-a'>
                 <div ref={this.imageContainer} className="profile-image-container">
                     <div className="row-gif">
-                        <div className="cell-gif">
-                            <img alt="profile" className="image-prof-a" src={ image } />
-                        </div>
-                        <div className="cell-gif">
-                            <img alt="profile" className="image-prof-a" src={ image } />
-                        </div>
+                        <img alt="profile" className="image-prof-a" src={ cooking } />
+                        <img alt="profile" className="image-prof-a lower" src={ music } />                        
                     </div>
                     <div className="row-gif">
-                        <div className="cell-gif">
-                            <img alt="profile" className="image-prof-a" src={ image } />
-                        </div>
-                        <div className="cell-gif">
-                            <img alt="profile" className="image-prof-a" src={ image } />
-                        </div>
+                        <img alt="profile" className="image-prof-a" src={ drawing } />
+                        <img alt="profile" className="image-prof-a lower" src={ hat } />
                     </div>
                 </div>
                 <div className="profile-image-blank"></div>

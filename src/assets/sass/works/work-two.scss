@@ -1,0 +1,80 @@
+.work-two-container {
+	.second-content p {
+		width: 100%;
+	}
+	.second-content.survey p {
+		width: 90%;
+	}
+	.news-heading  {
+		margin-bottom: -15px;
+		.text {
+			margin-bottom: 15px;
+			width: 100%;
+		}
+	}
+	.news-format {
+		.with-quote {
+			bottom: 15px;
+		}
+	}
+	.news-format-left {
+		width: 100%;
+	}
+	.second-quote {
+		margin-left: 15px;
+	}
+	.no-margin {
+		margin-top: 0px;
+	}
+	.modal-justify-left, .concept {
+		padding-bottom: 0px !important;
+	}
+	/*.survey {
+		padding: 0px;
+	}*/
+	.usability {
+		padding: 40px;
+		padding-top: 0px;
+	}
+	.summary  {
+		ul {
+			padding-left: 20px;
+		}
+	}
+	.with-quote {
+    	display: flex;
+    	position: relative;
+    	bottom: 25px;
+	}
+	.concept {
+		img {
+			margin-bottom: 30px;
+		}
+		.lessMargin {
+			margin-bottom: 15px;
+		}
+	}
+	li {
+		margin-bottom: 10px;
+	}
+	.structure img {
+		margin-bottom: 15px;
+	}
+	.data-annotation {
+		margin-top: 30px;
+	}
+	.dark-section {
+		margin-top: 30px;
+		.bigger-container {
+			margin-top: 0px;
+		}
+	}
+	.wireframes {
+		.hifi-one {
+			margin-bottom: 30px;
+		}
+	}
+	.final-section {
+		padding-top: 0px;
+	}
+}

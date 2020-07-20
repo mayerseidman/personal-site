@@ -9,11 +9,13 @@ import {
 
 } from 'react-router-dom';
 import { withLoadState } from '../contexts/LoadStateContext';
+import Magnifier from "react-magnifier";
 
 // IMAGES
 import multipleChoice from "../../assets/images/wr-lite/multiple-choice.png";
 import comprehension from "../../assets/images/wr-lite/comprehension.png";
 
+import combinedSiteMaps from "../../assets/images/wr-lite/combined-sitemaps.png";
 import studentSiteMap from "../../assets/images/wr-lite/student-site-map.png";
 import teacherSiteMap from "../../assets/images/wr-lite/teacher-site-map.png";
 
@@ -311,8 +313,7 @@ class WorkOne extends React.Component {
 			            Each method had a slightly different approach. 
 			        </p>
 			        <p><b>SITE MAPS</b></p>
-			        <img className="full-width" src={ studentSiteMap } alt="student-site-map"/>
-			        <img className="full-width" src={ teacherSiteMap } alt="teacher-site-map"/>
+			        <img className="full-width" src={ combinedSiteMaps } alt="site-maps"/>
 			    </div>
 			    <div className="modal-justify-left framework">
 			        <b>SCENARIO MAPPING</b>
@@ -347,7 +348,7 @@ class WorkOne extends React.Component {
 			<div className='modal-section left-to-full'>
 			    <div className="color-box-sections">
 			        <div className="sketchingTitles">
-			            <h3>LOFI, SKETCHING and ANNOTATING</h3>
+			            <h3>LOFI and SKETCHING </h3>
 			            <b>BROWSING and SELECTING EXERCISES</b>
 			        </div>
 			        <div className="grey-boxes">
@@ -366,12 +367,12 @@ class WorkOne extends React.Component {
 		return (
 		    <div className='left-to-full'>
 		        <div className="dark-section">
-		            <div className="container-left primary-dark-text ">
+		            <div className="container-left primary-dark-text">
 		                <b>TEACHER ASSIGNMENTS PROGRESS TABLE</b>
 		                <p>The table on this page shows the progress students have made on the teacher's assignment (assigned exercises).</p>
 		            </div>
-		            <div className="bigger-container">
-		                <img className="" src={ lofiThree } alt="" />
+		            <div className="bigger-container assignments">
+		                <img className="full-width" src={ lofiThree } alt="" />
 		            </div>
 		        </div>
 		        <div className="dark-section">
@@ -412,7 +413,7 @@ class WorkOne extends React.Component {
 		                </div>
 		            </div>
 		            <div className="bigger-container">
-		               <img src={ lofisAnnotated } alt="lofi-annotated" />
+		               <img className="full-width" src={ lofisAnnotated } alt="lofi-annotated" />
 		            </div>
 		        </div>
 		    </div>
@@ -436,21 +437,21 @@ class WorkOne extends React.Component {
 	renderWireframes() {
 		return (
 		    <div className="modal-section wireframes grey contains-colored-background">
-		        <div className="modal-justify-left">
+		        <div className="regular">
 		            <h3>WIREFRAMES</h3>
 		            <span className="subtitle"><b>TEACHER EXERCISES</b></span>
 		            <div className="wireframe">
 		                <img className="full-width" src={ teacherExercisesWireframe } alt="teacher-exercises-wireframe" />
 		            </div>
 		        </div>
-		        <div className="modal-justify-left">
+		        <div className="no-top">
 		        <span className="subtitle exercises"><b>STUDENT EXERCISES</b></span>
 		            <p>The student experience is quite simple as the only thing they can do is select an exercise to work on.</p>
 		            <div className="wireframe">
 		                <img className="full-width" src={ studentExercisesWireframe } alt="student-exercises-wireframe" />
 		            </div>
 		        </div>
-		        <div className="modal-justify-left">
+		        <div className="no-top">
 		            <span><b>ASSIGNMENTS</b></span>
 		            <p>The teacher dashboard has a progress table (bottom right) that shows student progression on their assignment.</p>
 		            <div className="wireframe">
@@ -519,7 +520,7 @@ class WorkOne extends React.Component {
 			    </div>
 			    <div className="container">
 			        <b>INSIGHTS</b>
-			        <img className="full-width insights" src={ insightsFinal } alt="insights"/>
+			        <img className="full-width insights gif-border" src={ insightsFinal } alt="insights"/>
 			    </div>
 			</div>
 		)

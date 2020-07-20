@@ -3,12 +3,13 @@ import { NavLink, Switch, Link, useParams, withRouter,Route } from 'react-router
 import { withLoadState } from '../contexts/LoadStateContext';
 
 // IMAGES
-import image from "../../assets/images/misc/linkedin-profile-mayer.png";
-import finalVersionData from "../../assets/images/data-center-redesign/final-version.gif";
+import image from "../../assets/images/misc/export-three-shorter.png";
+import finalVersionData from "../../assets/images/data-center/final-version.gif";
 import finalVersionWRLite from "../../assets/images/wr-lite/teacher-exercises.gif";
 import finalVersionStudentRoster from "../../assets/images/student-roster/final-version.gif";
 
 import WorkOne from "./WorkOne";
+import WorkTwo from "./WorkTwo";
 
 import '../../assets/sass/works/works.scss';
 
@@ -34,14 +35,14 @@ class Works extends Component {
         this.state = {
             works: {
                 'data-center': {
-                    title: "Data Title goes here...",
+                    title: "Data Experience Redesign",
                     description_one: "Whooo’s Reading product designed to change the way teachers help students improve reading comprehension skills",
                     type: "Research, Structure, Interaction, Visual, User Feedback"
                 },
                 'reading-comprehension-tool': {
-                    title: "Work Numero Dos",
-                    description_one: "Descriptive text goes here…Descriptive text goes here…Descriptive text goes here dd.  Descriptive text goes here…ggoes here goes here.",
-                    type: "Design | Prototype"
+                    title: "Reading Comprehension Tool",
+                    description_one: "Whooo’s Reading product designed to change the way teachers help students work on reading comprehension skills",
+                    type: "Research, Structure, Interaction, Visual, User Feedback"
                 },
                 'work-three': {
                     title: "Work Numero Tres",
@@ -126,7 +127,7 @@ class Works extends Component {
                                 <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/data-center`}>
                                     <div className="each-work">
                                         <div className="work-text">
-                                            <p className="main-work-text">Data Center</p>
+                                            <p className="main-work-text">Data Experience</p>
                                             <p className="secondary-work-text">Research, Structure, Interaction, Visual</p>
                                         </div>
                                         <div className="work-image-wrapper">
@@ -263,7 +264,7 @@ function Work({ works, imageRef, history }) {
                             { finalVersionImg }
                         </div>
                     </div>
-                    <WorkOne />
+                    <WorkTwo />
                 </div>
             </div>    
         )
