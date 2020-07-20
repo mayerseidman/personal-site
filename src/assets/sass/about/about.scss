@@ -260,9 +260,9 @@
     }
 
     .animate-from-a {
-        top: 0%;
-        left: 0%;
-        left: -7%;
+        top: -5%;
+        /*left: 0%;*/
+        left: -1%;
         opacity: 1;
         transition: all 1.2s ease-in;
     }
@@ -437,7 +437,7 @@
     .floating-profile-a .profile-image-container {
         position: absolute;
         left: 0;
-        right: 20%;
+        right: 13%;
         margin: auto;
         width: 325px;
         height: 325px;
@@ -536,7 +536,7 @@
         position: relative;
         background-color: #D26442;
         margin-top: 45px;
-        margin-left: 15%;
+        margin-left: 11%;
         height: 325px;
         width: 300px;
         z-index: -1;
@@ -576,7 +576,8 @@
 
 @media screen and (max-width: 800px) {
     .image-prof-a {
-        width: 150px !important;
+        width: 135px !important;
+        height: 160px !important;
     }
 }
 
