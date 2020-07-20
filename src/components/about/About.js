@@ -142,7 +142,7 @@ class About extends Component {
                                     <p className="p-over links">
                                         <a className="mixcloud" 
                                             href="https://www.mixcloud.com/mayer-seidman/" target="_blank">Mixcloud</a>
-                                        <a className="regular" 
+                                        <a className="regular-link" 
                                             href="https://www.pinterest.com/mayerseidman/projects/" target="_blank">Pinterest</a>
                                         <a className="small" 
                                             href="https://sunsets-are-awesome.herokuapp.com/" target="_blank">Sunsets</a>
