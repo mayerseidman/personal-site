@@ -880,10 +880,13 @@
     /*width: 100%;*/
     /*border: 3.5px solid #171c46;
     height: 250px;*/
-    width: 174px;
+    width: 47%;
     border: 3.5px solid #171c46;
     height: 180px;
+    margin: 1px;
     filter: grayscale(100%);
+    display: inline-block;
+    vertical-align: top;
 }
 
 .hide {

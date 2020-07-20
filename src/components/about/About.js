@@ -175,14 +175,10 @@ class About extends Component {
         return (
             <div ref={this.prof} className='floating-profile-a'>
                 <div ref={this.imageContainer} className="profile-image-container">
-                    <div className="row-gif">
-                        <img alt="profile" className="image-prof-a" src={ cooking } />
-                        <img alt="profile" className="image-prof-a lower" src={ music } />                        
-                    </div>
-                    <div className="row-gif">
-                        <img alt="profile" className="image-prof-a" src={ drawing } />
-                        <img alt="profile" className="image-prof-a lower" src={ hat } />
-                    </div>
+                    <img alt="profile" className="image-prof-a" src={ cooking } />
+                    <img alt="profile" className="image-prof-a lower" src={ music } />
+                    <img alt="profile" className="image-prof-a" src={ drawing } />
+                    <img alt="profile" className="image-prof-a lower" src={ hat } />
                 </div>
                 <div className="profile-image-blank"></div>
             </div>
