@@ -36,7 +36,9 @@ class About extends Component {
             textWrapper.classList.toggle('slide-down-about');
             this.imageContainer.current.classList.toggle('animate-from-a')
             this.prof.current.classList.toggle('on-load-profile');
-        });  
+        });
+        const imagesToBePreloaded = [hat, cooking, music, drawing]
+        imagesToBePreloaded.forEach(image => { new Image().src = image })
     }
 
     renderLeftContainer() {

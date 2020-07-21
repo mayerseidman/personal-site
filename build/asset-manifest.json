@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.aee84cfa.chunk.css",
-    "main.js": "/static/js/main.721d75c3.chunk.js",
-    "main.js.map": "/static/js/main.721d75c3.chunk.js.map",
+    "main.js": "/static/js/main.d9f6ea54.chunk.js",
+    "main.js.map": "/static/js/main.d9f6ea54.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.83c3e0c4.js",
     "runtime-main.js.map": "/static/js/runtime-main.83c3e0c4.js.map",
     "static/js/2.3d293100.chunk.js": "/static/js/2.3d293100.chunk.js",
     "static/js/2.3d293100.chunk.js.map": "/static/js/2.3d293100.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.4e33ddaed8f8e7192a14ae99e1d31c27.js": "/precache-manifest.4e33ddaed8f8e7192a14ae99e1d31c27.js",
+    "precache-manifest.c07a729cc3ca0718aef9662aa7310f1d.js": "/precache-manifest.c07a729cc3ca0718aef9662aa7310f1d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.aee84cfa.chunk.css.map": "/static/css/main.aee84cfa.chunk.css.map",
     "static/js/2.3d293100.chunk.js.LICENSE.txt": "/static/js/2.3d293100.chunk.js.LICENSE.txt",
@@ -19,15 +19,15 @@
     "static/media/combined-sitemaps.png": "/static/media/combined-sitemaps.6b4b2653.png",
     "static/media/comprehension.png": "/static/media/comprehension.74f16d62.png",
     "static/media/controls.png": "/static/media/controls.fae69d91.png",
-    "static/media/cooking-new.gif": "/static/media/cooking-new.6234ffcd.gif",
+    "static/media/cooking.webp": "/static/media/cooking.02f42f6d.webp",
     "static/media/dashboard-final.gif": "/static/media/dashboard-final.d288dd54.gif",
     "static/media/dashboard-old.png": "/static/media/dashboard-old.421fdd02.png",
     "static/media/data-old.png": "/static/media/data-old.769b727d.png",
-    "static/media/drawing-new.gif": "/static/media/drawing-new.ba30cc01.gif",
+    "static/media/drawing.webp": "/static/media/drawing.5366a167.webp",
     "static/media/export-three-shorter.png": "/static/media/export-three-shorter.ec3dad18.png",
     "static/media/final-version.gif": "/static/media/final-version.ae8ea6f9.gif",
     "static/media/goals-actions-screen.png": "/static/media/goals-actions-screen.e1356143.png",
-    "static/media/hat-new-new.gif": "/static/media/hat-new-new.9c0042c7.gif",
+    "static/media/hat.webp": "/static/media/hat.6696c35a.webp",
     "static/media/hifi-dashboard-one.png": "/static/media/hifi-dashboard-one.9e3c3553.png",
     "static/media/hifi-dashboard-two.png": "/static/media/hifi-dashboard-two.c5b231e2.png",
     "static/media/hifi-data-one.png": "/static/media/hifi-data-one.03d17443.png",
@@ -38,7 +38,7 @@
     "static/media/lofi-two.png": "/static/media/lofi-two.7fc86b79.png",
     "static/media/lofis-annotated.png": "/static/media/lofis-annotated.2930dc68.png",
     "static/media/multiple-choice.png": "/static/media/multiple-choice.b19b5790.png",
-    "static/media/music-new.gif": "/static/media/music-new.1204fbd7.gif",
+    "static/media/music.webp": "/static/media/music.cc4f2636.webp",
     "static/media/narrative-summary.png": "/static/media/narrative-summary.332ae459.png",
     "static/media/nr.png": "/static/media/nr.60d66701.png",
     "static/media/question-one.png": "/static/media/question-one.ffd5cffe.png",
@@ -58,6 +58,6 @@
     "static/js/runtime-main.83c3e0c4.js",
     "static/js/2.3d293100.chunk.js",
     "static/css/main.aee84cfa.chunk.css",
-    "static/js/main.721d75c3.chunk.js"
+    "static/js/main.d9f6ea54.chunk.js"
   ]
 }
