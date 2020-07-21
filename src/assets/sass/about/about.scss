@@ -229,11 +229,6 @@
         opacity: 1;
         transition: all 1.2s ease-in;
         left: -3%;
-        .lower {
-            position: relative;
-            bottom: 4px;
-        }
-    
     }
 
     .slide-down-about {
@@ -437,11 +432,12 @@
     .floating-profile-a .profile-image-container {
         position: absolute;
         left: 0;
-        right: 13%;
+        right: 5%;
         margin: auto;
         width: 325px;
         height: 325px;
         z-index: 2;
+        bottom: 31%;
     }
     
     .floating-profile-a .profile-image-blank {
@@ -574,7 +570,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .image-prof-a {
         width: 135px !important;
         height: 160px !important;
