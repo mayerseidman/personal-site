@@ -218,6 +218,9 @@
     .image-prof-about {
         width: 100%; 
     }
+    .image-prof-a {
+        height: 190px;
+    }
     .set-up-profile-about {
         left: 14%;
         top: -15%;
@@ -225,10 +228,9 @@
     }
     .animate-from-a {
         top: 0%;
-       /* left: 0%;*/
+        left: 0%;
         opacity: 1;
         transition: all 1.2s ease-in;
-        left: -3%;
     }
 
     .slide-down-about {
@@ -237,13 +239,6 @@
     }
     .p-over {
         width: 450px;
-    }
-    &.links {
-        .small { width: 17% }
-        .regular-link { width: 19%}
-        .long { width: 21%; }
-        .mixcloud { width: 18% }
-        .linkedIn { width: 17.5% }
     }
 }
 
@@ -255,9 +250,8 @@
     }
 
     .animate-from-a {
-        top: -5%;
-        /*left: 0%;*/
-        left: -1%;
+        top: 0%;
+        left: 0%;
         opacity: 1;
         transition: all 1.2s ease-in;
     }
@@ -278,6 +272,10 @@
         width: 76%;
         display: flex;
         background-color: #171C46;
+    }
+
+    .image-prof-a {
+        height: 175px;
     }
 
     .navigation-about {
@@ -419,27 +417,23 @@
         background-color: rgba(151, 151, 151, .5);
         box-shadow: 0 0 1px rgba(255, 255, 255, .5);
     }
-    .links {
-        .small { width: 17% }
-        .regular-link { width: 19%}
-        .long { width: 21%; }
-        .mixcloud { width: 18% }
-        .linkedIn { width: 17.5% }
-    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1199px) {
     .floating-profile-a .profile-image-container {
         position: absolute;
         left: 0;
-        right: 5%;
+        right: 10%;
         margin: auto;
         width: 325px;
         height: 325px;
         z-index: 2;
         bottom: 31%;
     }
-    
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1199px) {
     .floating-profile-a .profile-image-blank {
         position: relative;
         background-color: #D26442;
@@ -468,20 +462,16 @@
     .p-over {
         margin-bottom: 15px;
     }
-    .links {
-        .small { width: 17% }
-        .regular-link { width: 19%}
-        .long { width: 21%; }
-        .mixcloud { width: 19% }
-        .linkedIn { width: 17.5% }
+    .image-prof-a {
+        height: 175px;
     }
 }
 
 @media screen and (min-width: 490px) and (max-width: 699px) {
     .floating-profile-a .profile-image-container {
         position: absolute;
-        left: 0;
-        right: 12%;
+        left: 2%;
+        right: 10%;
         margin: auto;
         width: 300px;
         height: 300px;
@@ -513,19 +503,22 @@
     .image-prof-about {
         width: 100%; 
     }
-    .links {
-        a {
-            width: 25% !important;
-        }
+    .image-prof-a {
+        height: 162.5px;
     }
 }
 @media screen and (max-width: 489px) {
     .floating-profile-a .profile-image-container {
         position: absolute;
-        left: 4%;
+        left: 3%;
         width: 300px;
         height: 300px;
         z-index: 2;
+    }
+
+    .about-text {
+        margin-top: 15px !important;
+        margin-bottom: -10px;
     }
     
     .floating-profile-a .profile-image-blank {
@@ -562,6 +555,9 @@
             width: 40% !important;
         }
     }
+    .image-prof-a {
+        height: 162.5px;
+    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -571,10 +567,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    .image-prof-a {
-        width: 135px !important;
-        height: 160px !important;
-    }
 }
 
   
@@ -627,6 +619,7 @@
         font-size: 1.3em;
         margin: 5px 20px;
         opacity: 0.9;
+         margin-bottom: -10px;
         // position: absolute;
         // top: 80px;
         // left: 8%;
@@ -863,10 +856,27 @@
     }
 }
 
+.links {
+    .small { width: 74px }
+    .regular-link { width: 83px }
+    .long { width: 93px }
+    .mixcloud { width: 81px }
+    .linkedIn { width: 77px }
+}
+
 .emp-text {
     font-weight: 600;
 }
 
+.left {
+    position: relative;
+    left: 2px;
+}
+
+.lower {
+    position: relative;
+    bottom: 2px;
+}
 
 .plain-link {
       text-decoration: none;
@@ -877,11 +887,7 @@
     /*width: 100%;*/
     /*border: 3.5px solid #171c46;
     height: 250px;*/
-    width: 47%;
-    border: 3.5px solid #171c46;
-    height: 180px;
-    margin: 1px;
-    filter: grayscale(100%);
+    width: 50%;
     display: inline-block;
     vertical-align: top;
 }

@@ -1,9 +1,9 @@
 import React,  { Component } from 'react';
 import { NavLink, Link, withRouter } from 'react-router-dom';
-import hat from "../../assets/images/about/hat.gif";
-import cooking from "../../assets/images/about/cooking.gif";
-import music from "../../assets/images/about/drawing.gif";
-import drawing from "../../assets/images/about/music.gif";
+import hat from "../../assets/images/about/hat-new.gif";
+import cooking from "../../assets/images/about/cooking-new.gif";
+import music from "../../assets/images/about/drawing-new.gif";
+import drawing from "../../assets/images/about/music-new.gif";
 
 import { withLoadState } from '../contexts/LoadStateContext';
 
@@ -175,9 +175,9 @@ class About extends Component {
         return (
             <div ref={this.prof} className='floating-profile-a'>
                 <div ref={this.imageContainer} className="profile-image-container">
-                    <img alt="profile" className="image-prof-a" src={ cooking } />
-                    <img alt="profile" className="image-prof-a lower" src={ music } />
-                    <img alt="profile" className="image-prof-a" src={ drawing } />
+                    <img alt="profile" className="image-prof-a left" src={ cooking } />
+                    <img alt="profile" className="image-prof-a" src={ music } />
+                    <img alt="profile" className="image-prof-a left lower" src={ drawing } />
                     <img alt="profile" className="image-prof-a lower" src={ hat } />
                 </div>
                 <div className="profile-image-blank"></div>
