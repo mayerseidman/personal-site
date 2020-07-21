@@ -18,10 +18,12 @@ class Text extends Component {
 	}
 
 	componentDidMount() {
+		console.log(this.state.delay)
+		var delay = this.state.delay;
 		setTimeout(() => {
-			const intervalId = setInterval(this.decrementCount, 1000)
+			const intervalId = setInterval(this.decrementCount, 1150)
 			this.setState({intervalId})
-		}, this.state.delay)	
+		}, delay)	
 	}
 
 	render() {
