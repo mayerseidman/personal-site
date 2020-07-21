@@ -1,9 +1,9 @@
 import React,  { Component } from 'react';
 import { NavLink, Link, withRouter } from 'react-router-dom';
-import hat from "../../assets/images/about/hat-new-new.gif";
-import cooking from "../../assets/images/about/cooking-new.gif";
-import music from "../../assets/images/about/drawing-new.gif";
-import drawing from "../../assets/images/about/music-new.gif";
+import hat from "../../assets/images/about/hat.webp";
+import cooking from "../../assets/images/about/cooking.webp";
+import music from "../../assets/images/about/drawing.webp";
+import drawing from "../../assets/images/about/music.webp";
 
 import { withLoadState } from '../contexts/LoadStateContext';
 
