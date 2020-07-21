@@ -160,9 +160,11 @@ class Home extends Component {
                                     <span className="highlighted-word"> { title }.</span>
                                 </p>
                                 <section ref={this.delayedText} className='text-delayed'>
-                                <p className='text-paragraph text-style'>I'm a versatile problem solver passionate</p> 
-                                <p className='text-paragraph text-style'>about helping people and uncovering</p> 
-                                <p className='text-paragraph text-style'>emotions within products. </p>
+                                <p className='text-paragraph text-style'>
+                                    I'm a versatile problem solver passionate
+                                    about helping people and uncovering
+                                    emotions within products. 
+                                </p>
                                 <p className="learn-more">Learn more <span className="link-text">
                                     <Link to='/about' className="plain-link">about me</Link></span> or view <span className="link-text">
                                     <Link to="/works" className="plain-link">my work</Link></span>
