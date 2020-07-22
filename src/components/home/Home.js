@@ -39,14 +39,14 @@ class Home extends Component {
             textWrapper.classList.toggle("main-slow");
             delayedText.classList.toggle("main-delayed-text");
             imageRef.classList.toggle('animate-image-prof');
-
-
+            var delay = 0;
             // mobile animations
             profileRef.classList.toggle('animate-profile')
 
             this.props.context.updateLoaded();
             this.setState({ delay: 10000 })
-        }else {
+        } else {
+            var delay = 800;
             if(this.props.context.state.lastLocation.pathname === '/about'){
                 this.setState({ delay: 5000 })
                 profileRef.classList.toggle('is-loaded')
@@ -102,7 +102,7 @@ class Home extends Component {
             // mobile 
             
             this.props.context.setLastLocation(this.props.location)
-        })
+        }, delay)
     }
 
     handleMenuClick() {

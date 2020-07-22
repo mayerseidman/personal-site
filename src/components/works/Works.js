@@ -58,6 +58,9 @@ class Works extends Component {
         this.props.context.updateLoaded()
         if( this.props.context.state.lastLocation !== null && this.props.context.state.lastLocation.pathname === '/about' ){
             this.imageContainer.current.classList.toggle('set-up-profile');
+            var delay = 1000;
+        } else {
+            var delay = 0;
         }
         setTimeout(() => {
             // animations
@@ -69,7 +72,7 @@ class Works extends Component {
 
             this.props.context.setLastLocation(this.props.location)
 
-        });
+        }, delay);
     }
     handleMenuClick() {
         const wrapper = this.wrapperRef.current;
