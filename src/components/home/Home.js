@@ -18,7 +18,6 @@ class Home extends Component {
         this.textWrapper = React.createRef();
         this.delayedText = React.createRef();
         this.imageContainer = React.createRef();
-        this.state = {};
     }
     componentDidMount() {
         let rightContainer = this.rightContainer.current;
@@ -44,15 +43,12 @@ class Home extends Component {
             profileRef.classList.toggle('animate-profile')
 
             this.props.context.updateLoaded();
-            this.setState({ delay: 10000 })
         } else {
             var delay = 1000;
             if(this.props.context.state.lastLocation.pathname === '/about'){
-                this.setState({ delay: 5000 })
                 profileRef.classList.toggle('is-loaded')
                 this.imageContainer.current.classList.toggle('set-up-profile');
             } else {
-                this.setState({ delay: 5000 })
                 profileRef.classList.toggle("is-loaded");
             }
             textWrapper.classList.toggle('delayed-main');
@@ -143,7 +139,7 @@ class Home extends Component {
         if (!this.props.context.state.homeLoaded) {
             var delay = 5000;
         } else {
-            var delay = 1000;
+            var delay = 2000;
         }
         const title =  <Text delay={ delay } />
         return (
