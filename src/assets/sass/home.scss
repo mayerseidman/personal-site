@@ -670,6 +670,8 @@
     
     .right-container-home  {
         .main-content {
+            -webkit-perspective: 1000;
+            -webkit-backface-visibility: hidden;
             -webkit-transform-style: preserve-3d;   
         }
     }
