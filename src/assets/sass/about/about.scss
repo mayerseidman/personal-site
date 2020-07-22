@@ -156,9 +156,9 @@
     .floating-profile-a {
         position: absolute;
         left: 12%;
-        top:25%;
+        top: 25%;
         width: 28%;
-        height: 50%;
+        /*height: 50%;*/
         z-index: 2
     }
     
@@ -428,7 +428,6 @@
         width: 325px;
         height: 325px;
         z-index: 2;
-        bottom: 31%;
     }
 
 }
@@ -550,11 +549,11 @@
     .item {
         margin-bottom: 10px !important;
     }
-    .links {
+   /* .links {
         a {
             width: 40% !important;
         }
-    }
+    }*/
     .image-prof-a {
         height: 162.5px;
     }
@@ -698,7 +697,7 @@
         top: 120px;
         left: 0;
         right: 0;
-        height: 50%;
+        /*height: 50%;*/
         z-index: 2
     }
     
@@ -862,6 +861,7 @@
     .long { width: 93px }
     .mixcloud { width: 81px }
     .linkedIn { width: 77px }
+    .xl { width: 160px }
 }
 
 .emp-text {

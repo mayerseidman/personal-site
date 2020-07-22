@@ -91,7 +91,7 @@ class About extends Component {
                                     <p className="emp-text">journey.</p>
                                     <p className="p-over">
                                         With a bachelors in <a className="p-link" 
-                                        href="https://en.wikipedia.org/wiki/Talmudic_law" target="_blank" style={{ display: "inline-block" }}>
+                                        href="https://en.wikipedia.org/wiki/Talmudic_law" target="_blank">
                                         Talmudic Law</a> and an MBA, 
                                         I was still looking for more. 
                                         I wanted to be a part of a movement and to have a meaningful impact. 
@@ -152,8 +152,8 @@ class About extends Component {
                                             href="https://www.mixcloud.com/mayer-seidman/" target="_blank">Mixcloud</a>
                                         <a className="regular-link" 
                                             href="https://www.pinterest.com/mayerseidman/projects/" target="_blank">Pinterest</a>
-                                        <a className="small" 
-                                            href="https://sunsets-are-awesome.herokuapp.com/" target="_blank">Sunsets</a>
+                                        <a className="xl" 
+                                            href="https://whooosreading.org" target="_blank">Whooo's Reading</a>
                                     </p>
                                 </div>
                                 <div className="about-details">

@@ -116,7 +116,7 @@ class WorkTwo extends React.Component {
 				            </div>
 				        </div>
 				    </div>
-				    <p className="no-margin">
+				    <p className="no-margin summary-of-interviews">
 				    	I discovered that with many options to choose from, teachers are most interested in a few types of data and metrics. 
 				    	Additionally, teachers use data to keep tabs on their students’ quantitative (goals) and qualitative work. 
 				    </p>

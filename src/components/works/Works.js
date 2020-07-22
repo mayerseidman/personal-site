@@ -260,6 +260,7 @@ function Work({ works, imageRef, history }) {
                             <p className="main-work-text">{ work.title }</p>
                             <p className="secondary-work-text">{ work.description_one }</p>
                             <p className="works-type"><span>MY ROLE:</span> { work.type }</p>
+                            <p className="source"><a href="https://www.whooosreading.org" target="_blank">www.whooosreading.org</a></p>
                         </div>
                         <div className="modal-img-one">
                             { finalVersionImg }
@@ -283,6 +284,7 @@ function Work({ works, imageRef, history }) {
                             <p className="main-work-text">{ work.title }</p>
                             <p className="secondary-work-text">{ work.description_one }</p>
                             <p className="works-type"><span>MY ROLE:</span> { work.type }</p>
+                            <p className="source"><a href="https://www.whooosreading.org" target="_blank">www.whooosreading.org</a></p>
                         </div>
                         <div className="modal-img-one">
                             { finalVersionImg }
