@@ -1,6 +1,6 @@
 import React,  { Component } from 'react';
 import { NavLink, Link, withRouter } from 'react-router-dom';
-import hat from "../../assets/images/about/hat-new.gif";
+import hat from "../../assets/images/about/hat-new-new.gif";
 import cooking from "../../assets/images/about/cooking-new.gif";
 import music from "../../assets/images/about/drawing-new.gif";
 import drawing from "../../assets/images/about/music-new.gif";
@@ -73,7 +73,6 @@ class About extends Component {
 
     handleImageLoaded = () => {
         console.log("loaded")
-        counter.current += 1;
         this.setState({ loadedCounter: this.state.loadedCounter + 1 });
      }
 
@@ -181,16 +180,27 @@ class About extends Component {
     }
 
     renderImageContainer() {
-        if (this.state.loadingHat) {
-            var loadingImage = <span>LOADING</span>
-        }
+        // if (this.state.loadedCounter < 4) {
+        //     var loadingImages = (
+        //         <div>
+        //             <div className="image-prof-a left">LOADING</div>
+        //             <div className="image-prof-a">LOADING</div>
+        //             <div className="image-prof-a left lower">LOADING</div>
+        //             <div className="image-prof-a lower">LOADING</div>
+        //         </div>
+        //     )
+        // }
         return (
             <div ref={this.prof} className='floating-profile-a'>
                 <div ref={this.imageContainer} className="profile-image-container">
-                    <img alt="profile" className="image-prof-a left" src={ cooking } />
-                    <img alt="profile" className="image-prof-a" src={ music } />
-                    <img alt="profile" className="image-prof-a left lower" src={ drawing } />
-                    <img alt="profile" className="image-prof-a lower" src={ hat } />   
+                    <img alt="profile" className="image-prof-a left" src={ cooking } 
+                        onLoad={ this.handleImageLoaded } />
+                    <img alt="profile" className="image-prof-a" src={ music } 
+                        onLoad={ this.handleImageLoaded } />
+                    <img alt="profile" className="image-prof-a left lower" src={ drawing } 
+                        onLoad={ this.handleImageLoaded } />
+                    <img alt="profile" className="image-prof-a lower" src={ hat }
+                        onLoad={ this.handleImageLoaded } />  
                 </div>
                 <div className="profile-image-blank"></div>
             </div>
