@@ -46,7 +46,7 @@ class Home extends Component {
             this.props.context.updateLoaded();
             this.setState({ delay: 10000 })
         } else {
-            var delay = 800;
+            var delay = 1000;
             if(this.props.context.state.lastLocation.pathname === '/about'){
                 this.setState({ delay: 5000 })
                 profileRef.classList.toggle('is-loaded')
