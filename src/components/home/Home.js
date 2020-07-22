@@ -98,7 +98,7 @@ class Home extends Component {
             // mobile 
             
             this.props.context.setLastLocation(this.props.location)
-        })
+        }, delay)
     }
 
     handleMenuClick() {

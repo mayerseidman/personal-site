@@ -58,10 +58,8 @@ class Works extends Component {
         this.props.context.updateLoaded()
         if( this.props.context.state.lastLocation !== null && this.props.context.state.lastLocation.pathname === '/about' ){
             this.imageContainer.current.classList.toggle('set-up-profile');
-            var delay = 1000;
-        } else {
-            var delay = 0;
         }
+        var delay = 1000;
         setTimeout(() => {
             // animations
             let textWrapper = this.textWrapper.current;

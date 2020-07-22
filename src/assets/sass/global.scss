@@ -15,7 +15,6 @@ body {
     background-color: #fff;
     font-size: 16px;
     font-family: effra, sans-serif;
-    height: 100%;
 }
 
 #root {
@@ -34,4 +33,10 @@ code {
 
 .nav-icon {
     cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+    .main-content {
+        height: 100vh;
+    }
 }
