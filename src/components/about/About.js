@@ -1,13 +1,15 @@
 import React,  { Component } from 'react';
 import { NavLink, Link, withRouter } from 'react-router-dom';
-import hat from "../../assets/images/about/hat.webp";
-import cooking from "../../assets/images/about/cooking.webp";
-import music from "../../assets/images/about/drawing.webp";
-import drawing from "../../assets/images/about/music.webp";
+import hat from "../../assets/images/about/hat-new.gif";
+import cooking from "../../assets/images/about/cooking-new.gif";
+import music from "../../assets/images/about/drawing-new.gif";
+import drawing from "../../assets/images/about/music-new.gif";
 
 import { withLoadState } from '../contexts/LoadStateContext';
 
 import '../../assets/sass/about/about.scss';
+
+const counter = 0;
 
 class About extends Component {
     constructor(props) {
@@ -17,6 +19,7 @@ class About extends Component {
         this.textWrapper = React.createRef();
         this.imageContainer = React.createRef();
         this.prof = React.createRef();
+        this.state = { loadedCounter: 0 }
     }
 
     handleMenuClick() {
@@ -67,6 +70,12 @@ class About extends Component {
             </div>
         )
     }
+
+    handleImageLoaded = () => {
+        console.log("loaded")
+        counter.current += 1;
+        this.setState({ loadedCounter: this.state.loadedCounter + 1 });
+     }
 
     renderRightContainer() {
         return (
@@ -172,13 +181,16 @@ class About extends Component {
     }
 
     renderImageContainer() {
+        if (this.state.loadingHat) {
+            var loadingImage = <span>LOADING</span>
+        }
         return (
             <div ref={this.prof} className='floating-profile-a'>
                 <div ref={this.imageContainer} className="profile-image-container">
                     <img alt="profile" className="image-prof-a left" src={ cooking } />
                     <img alt="profile" className="image-prof-a" src={ music } />
                     <img alt="profile" className="image-prof-a left lower" src={ drawing } />
-                    <img alt="profile" className="image-prof-a lower" src={ hat } />
+                    <img alt="profile" className="image-prof-a lower" src={ hat } />   
                 </div>
                 <div className="profile-image-blank"></div>
             </div>
