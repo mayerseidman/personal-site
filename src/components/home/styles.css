@@ -2,13 +2,13 @@
     .wrapper-main {
         display: flex;
         width: 100%;
-        min-height: 100vh;
+        height: 100%;
         flex-direction: row;
         z-index: 0;
     }
     .wrapper {
         width: 100%;
-        min-height: 100vh;
+        height: 100%;
     }
     
     .left-container-home {
