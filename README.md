@@ -3,9 +3,10 @@
 
 This is my personal site!
 
-Under the hood its quite simple: REACT & a few fun plugins here and there.
+Under the hood its quite simple: REACT.
 
-### Notable plugins:
-Chatbot: https://github.com/Endore8/i-chatbot
+### Enjoy!
 
-Webcam: https://github.com/mozmorris/react-webcam
+Feel free to check out the site and if you wan't to reach me, [say hello](https://twitter.com/mayerseidman).<br/><br/>
+
+Live Site: https://mayerseidman.com
