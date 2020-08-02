@@ -3,7 +3,7 @@ import { NavLink, Switch, Link, useParams, withRouter,Route } from 'react-router
 import { withLoadState } from '../contexts/LoadStateContext';
 
 // IMAGES
-import image from "../../assets/images/misc/export-three-shorter.png";
+import image from "../../assets/images/misc/profile.png";
 import finalVersionData from "../../assets/images/data-center/final-version.gif";
 import finalVersionWRLite from "../../assets/images/wr-lite/teacher-exercises.gif";
 import finalVersionStudentRoster from "../../assets/images/student-roster/final-version.gif";
