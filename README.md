@@ -3,7 +3,7 @@
 
 This is my personal site!
 
-Under the hood its quite simple: REACT.
+Under the hood it is quite simple: REACT.
 
 ### Enjoy!
 
