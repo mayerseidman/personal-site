@@ -7,6 +7,7 @@ import image from "../../assets/images/misc/profile.png";
 import finalVersionData from "../../assets/images/data-center/final-version.gif";
 import finalVersionWRLite from "../../assets/images/wr-lite/teacher-exercises.gif";
 import finalVersionStudentRoster from "../../assets/images/student-roster/final-version.gif";
+import finalVersionSunsets from "../../assets/images/sunsets-are-awesome.gif";
 
 import WorkOne from "./WorkOne";
 import WorkTwo from "./WorkTwo";
@@ -148,6 +149,18 @@ class Works extends Component {
                                         </div>
                                     </div>
                                 </Link>
+                                <div className="worker-separator"></div>
+                                <a href="https://sunsets-are-awesome.herokuapp.com/" target="_blank" className="no-dec sunsets">
+                                    <div className="each-work">  
+                                        <div className="work-text">
+                                            <p className="main-work-text">Sunsets Are Awesome</p>
+                                            <p className="secondary-work-text">Structure, Interaction, Visual </p>
+                                        </div>
+                                        <div className="work-image-wrapper">
+                                           <img src={ finalVersionSunsets } alt="final-version"/>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
