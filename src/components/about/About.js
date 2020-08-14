@@ -154,6 +154,8 @@ class About extends Component {
                                             href="https://www.pinterest.com/mayerseidman/projects/" target="_blank">Pinterest</a>
                                         <a className="xl" 
                                             href="https://whooosreading.org" target="_blank">Whooo's Reading</a>
+                                        <a className="sunsets" 
+                                            href="https://sunsets-are-awesome.herokuapp.com/" target="_blank">Sunsets Are Awesome</a>
                                     </p>
                                 </div>
                                 <div className="about-details">

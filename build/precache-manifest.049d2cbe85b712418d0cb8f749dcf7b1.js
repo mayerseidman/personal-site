@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e92d638af4a42580e08ec0c37099ebe0",
+    "revision": "7cb06febeb46aabbd514421aede8a415",
     "url": "/index.html"
   },
   {
-    "revision": "9ca8859e158ba0b6fa83",
-    "url": "/static/css/main.b6050354.chunk.css"
+    "revision": "c247ba1b708da8128880",
+    "url": "/static/css/main.dd7c3348.chunk.css"
   },
   {
-    "revision": "01e7a5a3f666b636cc2c",
-    "url": "/static/js/2.3d293100.chunk.js"
+    "revision": "e0fca3aa50822c1e8353",
+    "url": "/static/js/2.2a9d4d29.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.3d293100.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.2a9d4d29.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9ca8859e158ba0b6fa83",
-    "url": "/static/js/main.4f3af708.chunk.js"
+    "revision": "c247ba1b708da8128880",
+    "url": "/static/js/main.65c93358.chunk.js"
   },
   {
     "revision": "73635f645c271e35ff15",
@@ -178,6 +178,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "36b925bee88785866b8106c14890df49",
     "url": "/static/media/student-exercises.36b925be.png"
+  },
+  {
+    "revision": "852e6020102b7489a8be203cd69e086d",
+    "url": "/static/media/sunsets-are-awesome.852e6020.gif"
   },
   {
     "revision": "8cf8e870f33ba5f1f8561cbd6f97db90",
