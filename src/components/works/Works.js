@@ -37,18 +37,18 @@ class Works extends Component {
             works: {
                 'data-center': {
                     title: "Data Experience Redesign",
-                    description_one: "Whooo’s Reading product designed to change the way teachers help students improve reading comprehension skills",
-                    type: "Research, Structure, Interaction, Visual, User Feedback"
+                    description_one: "Whooo’s Reading product designed to change the way teachers help students improve reading comprehension skills.",
+                    type: "Research, Structure, Interaction, Visual"
                 },
                 'reading-comprehension-tool': {
                     title: "Reading Comprehension Tool",
-                    description_one: "Whooo’s Reading product designed to change the way teachers help students work on reading comprehension skills",
+                    description_one: "Whooo’s Reading product designed to change the way teachers help students work on reading comprehension skills.",
                     type: "Research, Structure, Interaction, Visual, User Feedback"
                 },
-                'work-three': {
-                    title: "Work Numero Tres",
-                    description_one: "Descriptive text goes here…Descriptive text goes here…Descriptive text goes here dd.  Descriptive text goes here…ggoes here goes here.",
-                    type: "Design | Prototype"
+                'sunsets-are-awesome': {
+                    title: "Sunsets are Awesome",
+                    description_one: "A fun project to keep you informed of the daily sunset forecast in your area.",
+                    type: "Research, Structure, Interaction, Visual"
                 }
 
             }
@@ -150,17 +150,17 @@ class Works extends Component {
                                     </div>
                                 </Link>
                                 <div className="worker-separator"></div>
-                                <a href="https://sunsets-are-awesome.herokuapp.com/" target="_blank" className="no-dec sunsets">
+                                <Link onClick={()=> this.handleWork()} className="no-dec sunsets" to={`${url}/sunsets-are-awesome`}>
                                     <div className="each-work">  
                                         <div className="work-text">
                                             <p className="main-work-text">Sunsets Are Awesome</p>
-                                            <p className="secondary-work-text">Structure, Interaction, Visual </p>
+                                            <p className="secondary-work-text">Research, Structure, Interaction, Visual </p>
                                         </div>
                                         <div className="work-image-wrapper">
                                            <img src={ finalVersionSunsets } alt="final-version"/>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -273,7 +273,7 @@ function Work({ works, imageRef, history }) {
                             <p className="main-work-text">{ work.title }</p>
                             <p className="secondary-work-text">{ work.description_one }</p>
                             <p className="works-type"><span>MY ROLE:</span> { work.type }</p>
-                            <p className="source"><a href="https://www.whooosreading.org" target="_blank">www.whooosreading.org</a></p>
+                            <p className="source"><span><b>SOURCE:</b></span> <a href="https://www.whooosreading.org" target="_blank">www.whooosreading.org</a></p>
                         </div>
                         <div className="modal-img-one">
                             { finalVersionImg }
@@ -297,7 +297,7 @@ function Work({ works, imageRef, history }) {
                             <p className="main-work-text">{ work.title }</p>
                             <p className="secondary-work-text">{ work.description_one }</p>
                             <p className="works-type"><span>MY ROLE:</span> { work.type }</p>
-                            <p className="source"><a href="https://www.whooosreading.org" target="_blank">www.whooosreading.org</a></p>
+                            <p className="source"><b>SOURCE:</b> <a href="https://www.whooosreading.org" target="_blank">www.whooosreading.org</a></p>
                         </div>
                         <div className="modal-img-one">
                             { finalVersionImg }
@@ -309,6 +309,28 @@ function Work({ works, imageRef, history }) {
         )
     } else {
         var finalVersionImg = <img src={ finalVersionStudentRoster } alt="final-version"/>
+        var content = (
+            <div ref={modalRef} className="modal-main">
+                <div ref={workDetailRef} className="work-details">
+                    <div ref={topRef} className="top-content" >
+                        <span onClick={()=> handleClick()} className="close-modal" to="/works">X</span>
+                    </div>
+                    <div ref={goTopRef} className="go-to-top hide" onClick={()=> handleScrollUp()}>↑ Go Up</div>
+                    <div className="first-content">
+                        <div>
+                            <p className="main-work-text">{ work.title }</p>
+                            <p className="secondary-work-text">{ work.description_one }</p>
+                            <p className="works-type"><span>MY ROLE:</span> { work.type }</p>
+                            <p className="source"><b>SOURCE:</b> <a href="https://sunsets-are-awesome.herokuapp.com" target="_blank">sunsets-are-awesome.herokuapp.com</a></p>
+                        </div>
+                        <div className="modal-img-one">
+                            { finalVersionImg }
+                        </div>
+                    </div>
+                    <WorkOne />
+                </div>
+            </div>    
+        )
     }
 
     return (
