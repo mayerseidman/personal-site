@@ -251,6 +251,12 @@ $primary-white: #fff;
         }
     }
 
+    .modal-img-three {
+        img {
+            width: 535px;
+        }
+    }
+
     .double-images-wrapper {
         display: flex;
         flex-direction: column;
@@ -694,6 +700,12 @@ $primary-white: #fff;
     .modal-img-one {
         img {
             width: 450px;
+        }
+    }
+
+    .modal-img-three {
+        img {
+            width: 535px;
         }
     }
 

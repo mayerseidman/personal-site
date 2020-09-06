@@ -11,6 +11,7 @@ import finalVersionSunsets from "../../assets/images/sunsets-are-awesome.gif";
 
 import WorkOne from "./WorkOne";
 import WorkTwo from "./WorkTwo";
+import WorkThree from "./WorkThree";
 
 import '../../assets/sass/works/works.scss';
 
@@ -308,7 +309,7 @@ function Work({ works, imageRef, history }) {
             </div>    
         )
     } else {
-        var finalVersionImg = <img src={ finalVersionStudentRoster } alt="final-version"/>
+        var finalVersionImg = <img src={ finalVersionSunsets } alt="final-version"/>
         var content = (
             <div ref={modalRef} className="modal-main">
                 <div ref={workDetailRef} className="work-details">
@@ -323,11 +324,11 @@ function Work({ works, imageRef, history }) {
                             <p className="works-type"><span>MY ROLE:</span> { work.type }</p>
                             <p className="source"><b>SOURCE:</b> <a href="https://sunsets-are-awesome.herokuapp.com" target="_blank">sunsets-are-awesome.herokuapp.com</a></p>
                         </div>
-                        <div className="modal-img-one">
+                        <div className="modal-img-three">
                             { finalVersionImg }
                         </div>
                     </div>
-                    <WorkOne />
+                    <WorkThree />
                 </div>
             </div>    
         )
