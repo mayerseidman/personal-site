@@ -7,7 +7,7 @@ import image from "../../assets/images/misc/profile.png";
 import finalVersionData from "../../assets/images/data-center/final-version.gif";
 import finalVersionWRLite from "../../assets/images/wr-lite/teacher-exercises.gif";
 import finalVersionStudentRoster from "../../assets/images/student-roster/final-version.gif";
-import finalVersionSunsets from "../../assets/images/sunsets-are-awesome.gif";
+import finalVersionSunsets from "../../assets/images/sunsets-are-awesome/final-version.gif";
 
 import WorkOne from "./WorkOne";
 import WorkTwo from "./WorkTwo";
