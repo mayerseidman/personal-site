@@ -11,21 +11,6 @@ import {
 import { withLoadState } from '../contexts/LoadStateContext';
 
 // IMAGES
-import multipleChoice from "../../assets/images/wr-lite/multiple-choice.png";
-import comprehension from "../../assets/images/wr-lite/comprehension.png";
-
-import combinedSiteMaps from "../../assets/images/wr-lite/combined-sitemaps.png";
-import studentSiteMap from "../../assets/images/wr-lite/student-site-map.png";
-import teacherSiteMap from "../../assets/images/wr-lite/teacher-site-map.png";
-
-import scenarioMapping from "../../assets/images/wr-lite/scenario-mapping.png";
-import goalsActionsScreen from "../../assets/images/wr-lite/goals-actions-screen.png";
-import narrativeSummary from "../../assets/images/wr-lite/narrative-summary.png";
-
-import lofiOne from "../../assets/images/wr-lite/lofi-one.png";
-import lofiTwo from "../../assets/images/wr-lite/lofi-two.png";
-import lofiThree from "../../assets/images/wr-lite/lofi-three.png";
-import lofisAnnotated from "../../assets/images/wr-lite/lofis-annotated.png";
 
 import teacherExercisesWireframe from "../../assets/images/wr-lite/teacher-exercises.png";
 import studentExercisesWireframe from "../../assets/images/wr-lite/student-exercises.png";
@@ -34,10 +19,16 @@ import teacherHomePageWireframe from "../../assets/images/wr-lite/teacher-homepa
 import assignmentsFinal from "../../assets/images/wr-lite/teacher-homepage-final.png";
 import insightsFinal from "../../assets/images/wr-lite/insights-final.png";
 
+import VideoLooper from 'react-video-looper';
+import sampleVideo from '../../assets/images/sunsets-are-awesome/sunsets.mp4'
+
 import sunsetMountains from "../../assets/images/sunsets-are-awesome/sunset-mountains.png";
 import dribbbleImage from "../../assets/images/sunsets-are-awesome/dribbble.png";
+
 import lofisCombined from "../../assets/images/sunsets-are-awesome/lofis-combined.png";
 import hifiInitialImage from "../../assets/images/sunsets-are-awesome/hifi-initial.png";
+import hifiSecondImage from "../../assets/images/sunsets-are-awesome/hifi-second.png";
+
 import finalVersionSunsets from "../../assets/images/sunsets-are-awesome/final-version.gif";
 import sunsetWXInfo from "../../assets/images/sunsets-are-awesome/sunsetwx-info.png";
 
@@ -140,7 +131,7 @@ class WorkOne extends React.Component {
 			        	<li>They were often quite light on information.</li>
 			        	<li>The designs often had nice visuals associated with weather-i.e., backgrounds, colors, and images.</li>
 			        </ul>
-			        <img className="full-width lofisCombinedImg" src={ dribbbleImage } alt="lofi-one" />
+			        <img className="full-width extraMargin" src={ dribbbleImage } alt="lofi-one" />
 			    </div>
 			</div>
 		)
@@ -157,7 +148,7 @@ class WorkOne extends React.Component {
 			        	this experience to be light on information and that I would have plenty of room to play with. 
 			        	I felt that the best option was the simple side by side layout. On mobile, this would then stack.
 			        </p>
-			        <img className="full-width lofisCombinedImg" src={ lofisCombined } alt="lofi-one" />
+			        <img className="full-width extraMargin" src={ lofisCombined } alt="lofi-one" />
 			    </div>
 			</div>
 		)
@@ -168,13 +159,15 @@ class WorkOne extends React.Component {
 		        <div className="regular">
 		            <h3>WIREFRAMES</h3>
 		            <p>
-		            	I thought it would be neat to adjust the background of the results section (on the right) 
+		            	I added two dynamic elements that I thought would tie together the experience nicely and make it more enjoyable. The first, was
+		            	to make the sun spin around when the <i>Find My Sunset</i> was clicked or if the sun was clicked directly.
+		            	The second, was to adjust the background of the results section (on the right) 
 		            	based on the the user’s (forecasted) sunset quality-i.e., <i>Great</i>, would be the most vibrant and 
 		            	<i> Poor</i> would be rather dark and gloomy. I used gradients for the background as I 
 		            	thought that aligns nicely with the way sunsets happen in nature.
 		            </p>
 		            <div className="wireframe">
-		                <img className="full-width" src={ hifiInitialImage } alt="teacher-exercises-wireframe" />
+		                <img className="full-width extraMargin" src={ hifiInitialImage } alt="teacher-exercises-wireframe" />
 		            </div>
 		        </div>
 			</div>
@@ -184,11 +177,11 @@ class WorkOne extends React.Component {
 		return (
 			<div className="modal-section contains-colored-background">
 			    <div className="feedback-box">
-			        <h3>Edits</h3>
-			        <p>....</p>  
-			        <p>
-			           ...
-			        </p>
+			        <h3>Feedback</h3>
+			    	<p>
+			        	I showed the mockups to a few potential users and got valuable feedback. They felt that the results section could 
+			        	be more dynamic. It fell kind of flat and was missing something.
+			    	</p>
 			    </div>
 			</div>
 		)
@@ -198,9 +191,18 @@ class WorkOne extends React.Component {
 		    <div className="modal-section wireframes grey contains-colored-background">
 		        <div className="regular">
 		            <h3>WIREFRAMES</h3>
-		            <span className="subtitle"><b>TEACHER EXERCISES</b></span>
+		            <p>
+		            	I tried using a real sunset image as the background instead of the gradient. It was nicer to look at and definitely
+		            	more engaging. However, there were two issues with this approach:
+		            	<ol>
+		            		<li>
+		            			It was difficult to find images that did not obscure the results content.
+		            		</li>
+		            		<li>It was also difficult to find images that represented each quality type (<i>Great, Good, Fair, Poor</i>) clearly.</li>
+		            	</ol>
+		            </p>
 		            <div className="wireframe">
-		                <img className="full-width" src={ teacherExercisesWireframe } alt="teacher-exercises-wireframe" />
+		                <img className="full-width extraMargin" src={ hifiSecondImage } alt="teacher-exercises-wireframe" />
 		            </div>
 		        </div>
 			</div>
@@ -213,7 +215,7 @@ class WorkOne extends React.Component {
 			        <h3>FINAL VERSION</h3>
 			        <p>
 			        </p>
-			        <img className="full-width gif-border" src={ finalVersionSunsets } alt="final-version"/>
+			        <div className="video"><VideoLooper source= { sampleVideo } objectFit="contain" start={ 0 } end={ 10 } /></div> 
 			    </div>
 			</div>
 		)

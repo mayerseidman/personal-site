@@ -1515,7 +1515,7 @@ $primary-white: #fff;
         .main-work-text, .secondary-work-text {
             padding: inherit;
         } 
-        .modal-img-one {
+        .modal-img-one, .modal-img-three {
             img {
                 width: 450px;
                 padding-left: 15px;
@@ -1554,7 +1554,7 @@ $primary-white: #fff;
             padding: inherit;
         } 
     }
-    .modal-img-one, .modal-small-img {
+    .modal-img-one, .modal-small-img, .modal-img-three {
         img {
             width: 100%;
         }
@@ -1568,7 +1568,7 @@ $primary-white: #fff;
             padding: inherit;
         } 
     }
-    .modal-img-one, .modal-small-img {
+    .modal-img-one, .modal-small-img, .modal-img-three {
         img {
             width: 100%;
         }
@@ -1831,7 +1831,58 @@ h3 {
     }
 }
 .sunsetsWork {
-    .lofisCombinedImg {
+    .extraMargin {
         margin-top: 15px;
+    }
+    .video {
+        border: 1px solid #bbb;
+        @media only screen and (max-width: 499px) {
+            zoom: 0.19;
+        }
+        @media screen and (min-width: 500px) and (max-width: 599px) {
+            zoom: 0.3;
+        }
+        @media screen and (min-width: 600px) and (max-width: 699px) {
+            zoom: 0.3;
+        }
+        @media screen and (min-width: 700px) and (max-width: 868px) {
+            zoom: 0.3;
+        }
+        @media screen and (min-width: 868px) and (max-width: 999px) {
+            zoom: 0.6;
+        }
+        @media screen and (min-width: 1000px) and (max-width: 1119px) {
+            zoom: 0.45;
+        }
+        @media screen and (min-width: 1120px) and (max-width: 1199px) {
+            zoom: 0.7;
+        }
+        @media screen and (min-width: 1200px) and (max-width: 1299px) {
+            zoom: 0.45;
+        }
+        @media screen and (min-width: 1300px) and (max-width: 1399px) {
+            zoom: 0.7;
+        }
+        @media screen and (min-width: 1400px) and (max-width: 1499px) {
+            zoom: 0.7;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1599px) {
+            zoom: 0.65;
+        }
+        @media screen and (min-width: 1600px) and (max-width: 1699px) {
+            zoom: 0.6;
+        }
+        @media screen and (min-width: 1700px) and (max-width: 1799px) {
+            zoom: 0.7;
+        }
+        @media screen and (min-width: 1800px) and (max-width: 1899px) {
+            zoom: 0.675;
+        }
+        @media screen and (min-width: 1900px) and (max-width: 1999px) {
+            zoom: 0.7;
+        }
+        @media screen and (min-width: 2000px) {
+            zoom: 0.8;
+        }
     }
 }
