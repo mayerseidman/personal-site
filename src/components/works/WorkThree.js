@@ -26,8 +26,10 @@ import sunsetMountains from "../../assets/images/sunsets-are-awesome/sunset-moun
 import dribbbleImage from "../../assets/images/sunsets-are-awesome/dribbble.png";
 
 import lofisCombined from "../../assets/images/sunsets-are-awesome/lofis-combined.png";
-import hifiInitialImage from "../../assets/images/sunsets-are-awesome/hifi-initial.png";
-import hifiSecondImage from "../../assets/images/sunsets-are-awesome/hifi-second.png";
+import hifiFirstImage from "../../assets/images/sunsets-are-awesome/hifi-one.png";
+import hifiSecondImage from "../../assets/images/sunsets-are-awesome/hifi-two.png";
+import hifiThirdImage from "../../assets/images/sunsets-are-awesome/hifi-three.png";
+import hifiMobileImage from "../../assets/images/sunsets-are-awesome/hifi-mobile.png";
 
 import finalVersionSunsets from "../../assets/images/sunsets-are-awesome/final-version.gif";
 import sunsetWXInfo from "../../assets/images/sunsets-are-awesome/sunsetwx-info.png";
@@ -67,7 +69,7 @@ class WorkOne extends React.Component {
 		                    	</p>
 		                    </div>
 		                    <div className="bigger-container assignments">
-		                        <img src={ sunsetMountains } className="full-width"></img>
+		                        <img src={ sunsetMountains } className="full-width" alt="sunset-mountains"></img>
 		                    </div>
 		                </div>
 		            </div>
@@ -108,7 +110,7 @@ class WorkOne extends React.Component {
 			                	</p>
 			                </div>
 			                <div className="bigger-container assignments">
-			                   <img src={ sunsetWXInfo } className="full-width"></img>
+			                   <img src={ sunsetWXInfo } className="full-width" alt="sunset-api-information"></img>
 			                </div>
 			            </div>
 			        </div>
@@ -131,7 +133,7 @@ class WorkOne extends React.Component {
 			        	<li>They were often quite light on information.</li>
 			        	<li>The designs often had nice visuals associated with weather-i.e., backgrounds, colors, and images.</li>
 			        </ul>
-			        <img className="full-width extraMargin" src={ dribbbleImage } alt="lofi-one" />
+			        <img className="full-width extraMargin" src={ dribbbleImage } alt="dribbble" />
 			    </div>
 			</div>
 		)
@@ -148,7 +150,7 @@ class WorkOne extends React.Component {
 			        	this experience to be light on information and that I would have plenty of room to play with. 
 			        	I felt that the best option was the simple side by side layout. On mobile, this would then stack.
 			        </p>
-			        <img className="full-width extraMargin" src={ lofisCombined } alt="lofi-one" />
+			        <img className="full-width extraMargin" src={ lofisCombined } alt="lofis" />
 			    </div>
 			</div>
 		)
@@ -167,7 +169,7 @@ class WorkOne extends React.Component {
 		            	thought that aligns nicely with the way sunsets happen in nature.
 		            </p>
 		            <div className="wireframe">
-		                <img className="full-width extraMargin" src={ hifiInitialImage } alt="teacher-exercises-wireframe" />
+		                <img className="full-width extraMargin" src={ hifiFirstImage } alt="hifi-one" />
 		            </div>
 		        </div>
 			</div>
@@ -191,6 +193,7 @@ class WorkOne extends React.Component {
 		    <div className="modal-section wireframes grey contains-colored-background">
 		        <div className="regular">
 		            <h3>WIREFRAMES</h3>
+		            <b>INITIAL VERSION</b>
 		            <p>
 		            	I tried using a real sunset image as the background instead of the gradient. It was nicer to look at and definitely
 		            	more engaging. However, there were two issues with this approach:
@@ -199,10 +202,26 @@ class WorkOne extends React.Component {
 		            			It was difficult to find images that did not obscure the results content.
 		            		</li>
 		            		<li>It was also difficult to find images that represented each quality type (<i>Great, Good, Fair, Poor</i>) clearly.</li>
+		            		<li>The sun image needed work to fit with the realistic aesthetic.</li>
 		            	</ol>
 		            </p>
 		            <div className="wireframe">
-		                <img className="full-width extraMargin" src={ hifiSecondImage } alt="teacher-exercises-wireframe" />
+		                <img className="full-width extraMargin" src={ hifiSecondImage } alt="hifi-two" />
+		            </div>
+		            <div className="secondVersion">
+		            	<b>SECOND VERSION</b>
+		            	<p>
+		            		I found a light image of clouds and decided to use that as the background for the home page. This image worked so well that
+		            		I decided to layer the gradients over it for the various quality types. This looked nice and also made the overall experience
+		            		more consistent. 
+		            	</p>
+		            	<div className="wireframe">
+		            	    <img className="full-width extraMargin" src={ hifiThirdImage } alt="hifi-three" />
+		            	</div>
+		            	<div className="wireframe">
+		            	    <img className="full-width extraMargin hifiMobile" src={ hifiMobileImage } alt="hifi-mobile" />
+		            	</div>
+		            	<b>SUN IMAGE</b>
 		            </div>
 		        </div>
 			</div>
