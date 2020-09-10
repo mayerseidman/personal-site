@@ -11,16 +11,11 @@ import {
 import { withLoadState } from '../contexts/LoadStateContext';
 
 // IMAGES
-
-import teacherExercisesWireframe from "../../assets/images/wr-lite/teacher-exercises.png";
-import studentExercisesWireframe from "../../assets/images/wr-lite/student-exercises.png";
-import teacherHomePageWireframe from "../../assets/images/wr-lite/teacher-homepage.png";
-
-import assignmentsFinal from "../../assets/images/wr-lite/teacher-homepage-final.png";
-import insightsFinal from "../../assets/images/wr-lite/insights-final.png";
-
 import VideoLooper from 'react-video-looper';
 import sampleVideo from '../../assets/images/sunsets-are-awesome/sunsets.mp4'
+
+import finalVersionSunsets from "../../assets/images/sunsets-are-awesome/final-version.gif";
+import sunsetWXInfo from "../../assets/images/sunsets-are-awesome/sunsetwx-info.png";
 
 import sunsetMountains from "../../assets/images/sunsets-are-awesome/sunset-mountains.png";
 import dribbbleImage from "../../assets/images/sunsets-are-awesome/dribbble.png";
@@ -31,8 +26,9 @@ import hifiSecondImage from "../../assets/images/sunsets-are-awesome/hifi-two.pn
 import hifiThirdImage from "../../assets/images/sunsets-are-awesome/hifi-three.png";
 import hifiMobileImage from "../../assets/images/sunsets-are-awesome/hifi-mobile.png";
 
-import finalVersionSunsets from "../../assets/images/sunsets-are-awesome/final-version.gif";
-import sunsetWXInfo from "../../assets/images/sunsets-are-awesome/sunsetwx-info.png";
+import oldSMS from "../../assets/images/sunsets-are-awesome/old-sms.png";
+import newSMS from "../../assets/images/sunsets-are-awesome/new-sms.png";
+import imageWork from "../../assets/images/sunsets-are-awesome/sun-images.png";
 
 class WorkOne extends React.Component {
 	constructor(props) {
@@ -90,7 +86,7 @@ class WorkOne extends React.Component {
 			                    <b>IDEA</b>
 			                	<p>
 			                		After some research (hint-Googling), I discovered a really neat service called 
-			                		<a href="https://sunsetwx.com/" target="_blank"> SunsetWx</a> that uses numerous meteorological 
+			                		<a className="text-link" href="https://sunsetwx.com/" target="_blank"> SunsetWx</a> that uses numerous meteorological 
 			                		factors to create sunrise and sunset forecasts. I discovered their API and found that it provided a nice amount
 			                		of information to work with.
 			                	</p>
@@ -190,9 +186,8 @@ class WorkOne extends React.Component {
 	}
 	renderWireframesFinal() {
 		return (
-		    <div className="modal-section wireframes grey contains-colored-background">
+		    <div className="modal-section wireframes contains-colored-background">
 		        <div className="regular">
-		            <h3>WIREFRAMES</h3>
 		            <b>INITIAL VERSION</b>
 		            <p>
 		            	I tried using a real sunset image as the background instead of the gradient. It was nicer to look at and definitely
@@ -221,24 +216,101 @@ class WorkOne extends React.Component {
 		            	<div className="wireframe">
 		            	    <img className="full-width extraMargin hifiMobile" src={ hifiMobileImage } alt="hifi-mobile" />
 		            	</div>
-		            	<b>SUN IMAGE</b>
 		            </div>
 		        </div>
 			</div>
 		)
 	}
-	renderFinalVersion() {
+
+	renderSMS() {
+		return (
+			<div>
+				<div className="second-content grey survey">
+				    <div className="section-intro">
+						<h3>DAILY SMS</h3>
+						<p>
+							I thought it would be really handy and helpful to get a daily SMS containing your sunset forecast. I constructed an
+							SMS that had an image (of a city) with the sunset information placed on top of it. 
+							The implementation was a bit tricky and required
+							several steps:
+							<ul>
+								<li>Retrieve user's sunset forecast from the API</li>
+								<li>Create a PDF and position the image and text on it (<a className="text-link" href="https://github.com/foliojs/pdfkit" target="_blank">PDFKit</a>)</li>
+								<li>Take a screenshot of that PDF (<a className="text-link" href="https://github.com/yakovmeister/pdf2image" target="_blank">pdf2image</a>)</li>
+								<li>Send the image within the SMS via <a className="text-link" href="https://www.twilio.com/" target="_blank">Twilio</a></li>
+							</ul>
+				        </p>
+				    </div>
+				    <div className="double-images-wrapper">
+				        <div className="modal-small-img">
+				            <img src={ oldSMS } alt="survey-question-one"/>
+				        </div>
+				    </div>
+				</div>
+				<div className="second-content grey survey">
+				    <div className="section-intro">
+				        <p>
+				        	Although the technical implementation was fun and a challenge, the solution was a bit clunky and also unecessary. I realized (and got feedback from others too)
+				        	that the current text message was too complicated. It would be far simpler and useful to receive a text message that basically mirrored the sunset forecast 
+				        	information shown on the web app.
+				        </p>
+				    </div>
+				    <div className="double-images-wrapper">
+				        <div className="modal-small-img">
+				            <img src={ newSMS } alt="survey-question-two"/>
+				        </div>
+				    </div>
+				</div>
+			</div>
+		)
+	}
+
+	renderImageWork() {
 		return (
 			<div className="modal-section final-section">
 			    <div className="container">
-			        <h3>FINAL VERSION</h3>
+			        <h3>IMAGE WORK</h3>
 			        <p>
+			        	I wanted a sun image that would be fun, light, and fit the overall theme of the site (soft shapes like the clouds). Here is the 
+			        	evolution of the sun and how it turned out!
 			        </p>
+			        <div className="wireframe">
+		            	<img className="full-width extraMargin" src={ imageWork } alt="hifi-mobile" />
+		            </div>
+			    </div>
+			</div>
+		)
+	}	
+
+	renderFinalVersion() {
+		return (
+			<div className="modal-section grey">
+			    <div className="container">
+			        <h3>FINAL VERSION</h3>
 			        <div className="video"><VideoLooper source= { sampleVideo } objectFit="contain" start={ 0 } end={ 10 } /></div> 
 			    </div>
 			</div>
 		)
 	}	
+	renderTakeaways() {
+		return (
+			<div className="modal-section contains-colored-background">
+			    <div className="feedback-box">
+			    	<h3>WHAT I LEARNED</h3>
+			        <div className=''>
+			            <b>INSPIRATION</b>
+			            <p>
+			            	Use nature as inspiration-especially when creating something related to it.
+			            </p>
+			        </div>
+			        <div className="">
+			            <b>USE CASES</b>
+			            <p>Make sure you know what information users really need and how they will use it.</p>
+				    </div>
+			    </div>
+			</div>
+		)
+	}
 	render() {
 		return (
 			<div className="sunsetsWork">
@@ -249,7 +321,10 @@ class WorkOne extends React.Component {
 				{ this.renderWireframesInitial() }
 				{ this.renderRevision() }
 				{ this.renderWireframesFinal() }
+				{ this.renderSMS() }
+				{ this.renderImageWork() }
 				{ this.renderFinalVersion() }
+				{ this.renderTakeaways() }
 			</div>
 		);
 	}
