@@ -49,20 +49,6 @@ class WorkOne extends React.Component {
 		                    		It seemed that really cloudy days did not produce great sunsets but other than that, I had no idea what to expect. 
 		                    		I needed a reliable way of predicting the day's sunset quality.
 		                    	</p>
-		                    	<p>
-		                    		I wanted to create a web app that would find and display the user’s sunset forecast. 
-		                    		I also wanted to allow users to be able to receive a daily SMS with their sunset forecast. 
-		                    		I thought the SMS would be helpful as a quick, simple, and consistent way to learn about the upcoming sunset. 
-		                    	</p>	
-		                    	<p className="">
-		                    		Here are the basic tasks I wanted a user to be able to accomplish:
-		                    		<ol>
-		                    			<li>Find sunset forecast</li>
-		                    			<li>View forecasting rubric (based on the API documentation)</li>
-		                    			<li>Sign up for daily SMS</li>
-		                    			<li>Receive daily SMS</li>
-		                    		</ol>
-		                    	</p>
 		                    </div>
 		                    <div className="bigger-container assignments">
 		                        <img src={ sunsetMountains } className="full-width" alt="sunset-mountains"></img>
@@ -85,23 +71,23 @@ class WorkOne extends React.Component {
 			                <div className="container-left primary-dark-text">
 			                    <b>IDEA</b>
 			                	<p>
-			                		After some research (hint-Googling), I discovered a really neat service called 
+			                		After doing some research, I discovered a really neat service called 
 			                		<a className="text-link" href="https://sunsetwx.com/" target="_blank"> SunsetWx</a> that uses numerous meteorological 
 			                		factors to create sunrise and sunset forecasts. I discovered their API and found that it provided a nice amount
 			                		of information to work with.
 			                	</p>
 			                	<p>
 			                		I wanted to create a web app that would find and display the user’s sunset forecast. 
-			                		I also wanted to allow users to be able to receive a daily SMS with their sunset forecast. 
-			                		I thought the SMS would be helpful as a quick, simple, and consistent way to learn about the upcoming sunset. 
+			                		I also wanted to allow users to be able to receive a daily text message with their sunset forecast. 
+			                		I thought the text message would be helpful as a quick, simple, and consistent way to learn about the upcoming sunset. 
 			                	</p>	
 			                	<p className="">
 			                		Here are the basic tasks I wanted a user to be able to accomplish:
 			                		<ol>
 			                			<li>Find sunset forecast</li>
 			                			<li>View forecasting rubric (based on the API documentation)</li>
-			                			<li>Sign up for daily SMS</li>
-			                			<li>Receive daily SMS</li>
+			                			<li>Sign up for daily text message</li>
+			                			<li>Receive daily text message</li>
 			                		</ol>
 			                	</p>
 			                </div>
@@ -142,7 +128,7 @@ class WorkOne extends React.Component {
 			            <h3>LOFI and SKETCHING </h3>
 			        </div>
 			        <p>
-			        	I did a quick sketch to get a feel for what the layout could be. I expected 
+			        	I did a quick sketch to get a feel for what the layout could look like. I expected 
 			        	this experience to be light on information and that I would have plenty of room to play with. 
 			        	I felt that the best option was the simple side by side layout. On mobile, this would then stack.
 			        </p>
@@ -157,7 +143,7 @@ class WorkOne extends React.Component {
 		        <div className="regular">
 		            <h3>WIREFRAMES</h3>
 		            <p>
-		            	I added two dynamic elements that I thought would tie together the experience nicely and make it more enjoyable. The first, was
+		            	I added two dynamic elements that I thought would tie the experience together nicely and make it more enjoyable. The first, was
 		            	to make the sun spin around when the <i>Find My Sunset</i> was clicked or if the sun was clicked directly.
 		            	The second, was to adjust the background of the results section (on the right) 
 		            	based on the the user’s (forecasted) sunset quality-i.e., <i>Great</i>, would be the most vibrant and 
@@ -207,7 +193,7 @@ class WorkOne extends React.Component {
 		            	<b>SECOND VERSION</b>
 		            	<p>
 		            		I found a light image of clouds and decided to use that as the background for the home page. This image worked so well that
-		            		I decided to layer the gradients over it for the various quality types. This looked nice and also made the overall experience
+		            		I chose to layer the gradients over it for the various quality types. This looked nice and also made the overall experience
 		            		more consistent. 
 		            	</p>
 		            	<div className="wireframe">
@@ -227,17 +213,17 @@ class WorkOne extends React.Component {
 			<div>
 				<div className="second-content grey survey">
 				    <div className="section-intro">
-						<h3>DAILY SMS</h3>
+						<h3>DAILY TEXT MESSAGE</h3>
 						<p>
-							I thought it would be really handy and helpful to get a daily SMS containing your sunset forecast. I constructed an
-							SMS that had an image (of a city) with the sunset information placed on top of it. 
+							I constructed a text message
+							that had an image (of a city) with the sunset information placed on top of it. 
 							The implementation was a bit tricky and required
 							several steps:
 							<ul>
 								<li>Retrieve user's sunset forecast from the API</li>
 								<li>Create a PDF and position the image and text on it (<a className="text-link" href="https://github.com/foliojs/pdfkit" target="_blank">PDFKit</a>)</li>
 								<li>Take a screenshot of that PDF (<a className="text-link" href="https://github.com/yakovmeister/pdf2image" target="_blank">pdf2image</a>)</li>
-								<li>Send the image within the SMS via <a className="text-link" href="https://www.twilio.com/" target="_blank">Twilio</a></li>
+								<li>Send the image within the text message via <a className="text-link" href="https://www.twilio.com/" target="_blank">Twilio</a></li>
 							</ul>
 				        </p>
 				    </div>
@@ -250,7 +236,7 @@ class WorkOne extends React.Component {
 				<div className="second-content grey survey">
 				    <div className="section-intro">
 				        <p>
-				        	Although the technical implementation was fun and a challenge, the solution was a bit clunky and also unecessary. I realized (and got feedback from others too)
+				        	Although the technical implementation was fun and a challenge, the solution was a bit clunky and also unecessary. I realized (and got feedback)
 				        	that the current text message was too complicated. It would be far simpler and useful to receive a text message that basically mirrored the sunset forecast 
 				        	information shown on the web app.
 				        </p>

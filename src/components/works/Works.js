@@ -154,7 +154,7 @@ class Works extends Component {
                                 <Link onClick={()=> this.handleWork()} className="no-dec sunsets" to={`${url}/sunsets-are-awesome`}>
                                     <div className="each-work">  
                                         <div className="work-text">
-                                            <p className="main-work-text">Sunsets Are Awesome</p>
+                                            <p className="main-work-text">Sunsets are Awesome</p>
                                             <p className="secondary-work-text">Research, Structure, Interaction, Visual </p>
                                         </div>
                                         <div className="work-image-wrapper">
