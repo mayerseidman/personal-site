@@ -36,7 +36,7 @@ class Works extends Component {
         // this.props = props
         this.state = {
             works: {
-                'data-center': {
+                'data-experience': {
                     title: "Data Experience Redesign",
                     description_one: "Whooo’s Reading product designed to change the way teachers help students improve reading comprehension skills.",
                     type: "Research, Structure, Interaction, Visual"
@@ -127,7 +127,7 @@ class Works extends Component {
                         <div ref={this.textWrapper} className="text-container-works">
                             <p className="my-work">My Work.</p>
                             <div className='all-works'>
-                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/data-center`}>
+                                <Link onClick={()=> this.handleWork()} className="no-dec" to={`${url}/data-experience`}>
                                     <div className="each-work">
                                         <div className="work-text">
                                             <p className="main-work-text">Data Experience</p>
@@ -260,7 +260,7 @@ function Work({ works, imageRef, history }) {
     }
 
     let path = history.location.pathname;
-    if (path == "/works/data-center") {
+    if (path == "/works/data-experience") {
         var finalVersionImg = <img src={ finalVersionData } alt="final-version"/>
         var content = (
             <div ref={modalRef} className="modal-main">
