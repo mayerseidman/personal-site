@@ -238,7 +238,7 @@ function Work({ works, imageRef, history }) {
                 image.classList.toggle("blurred")
             }
             setTimeout(() => {
-                history.goBack();
+                 history.push(history.location.pathname.split('/').slice(0, -1).join('/'))
             }, 500);
         }
         // return clearTimeout(timer);

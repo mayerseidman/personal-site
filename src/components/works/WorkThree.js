@@ -236,7 +236,7 @@ class WorkOne extends React.Component {
 				<div className="second-content grey survey">
 				    <div className="section-intro">
 				        <p>
-				        	Although the technical implementation was fun and a challenge, the solution was a bit clunky and also unecessary. I realized (and got feedback)
+				        	Although the technical implementation was fun and challenging, the solution was a bit clunky and also unecessary. I realized (and got feedback)
 				        	that the current text message was too complicated. It would be far simpler and useful to receive a text message that basically mirrored the sunset forecast 
 				        	information shown on the web app.
 				        </p>
