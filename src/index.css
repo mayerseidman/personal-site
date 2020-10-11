@@ -1,0 +1,52 @@
+/* @import "./assets/fonts/effra/Effra_Std_Rg.ttf";
+@import "./assets/fonts/effra/Effra_Std_Lt.ttf";
+@import "./assets/fonts/effra/Effra_Std_Bd.ttf"; */
+
+* {
+    font-family: effra, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.top-nav {
+    margin-top: 30px;
+    list-style: none;
+}
+
+.top-nav li {
+    color: #171C46 !important;
+    width: 100px;
+    float: left;
+}
+
+.top-nav li .nav-link {
+    color: #191D44 !important;
+    font-weight: bold;
+}
+
+.top-nav li .nav-link:hover {
+    color: #191D44 !important;
+    border-bottom: 4px solid #191D44;
+}
+
+.side-nav-content {
+    width: 380px;
+    height: 252px;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+
+.side-nav-content img{
+    width: 380px;
+    height: 252px;
+}
+
+
+
+.name-mayer {
+    width: 83%;
+    font-weight: bold;
+    display: block;
+}
