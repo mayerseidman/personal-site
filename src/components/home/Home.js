@@ -114,6 +114,11 @@ class Home extends Component {
             this.props.context.setLastLocation(this.props.location)
         }, delay)
     }
+    
+    handleWork() {
+        const image  = this.imageRef.current;
+        image.classList.toggle("blurred");
+    }
 
     handleMenuClick() {
         const navContainer = this.navContainer.current;
@@ -147,29 +152,38 @@ class Home extends Component {
     renderAside() {
         return (
             <div ref={this.wrapperRef} className="right-aside">
-                        <div className="side-nav-content">
-                            <img src={ finalVersionData } alt="final-version" height="250px"/>
-                            <div className="dark-area">
-                                <h4>Teacher Data Experience</h4>
-                                <p>Improving classroom data for teachers </p>
-                            </div>
-                        </div>
-                        
-                        <div className="side-nav-content">
-                            <img src={ finalVersionSunsets } alt="final-version" height="250px"/>
-                            <div className="dark-area">
-                                <h4>Sunsets are Awesome</h4>
-                                <p>Discovering the daily sunset forecast </p>
-                            </div>
-                        </div>
+                                   
 
-                        <div className="side-nav-content">
-                            <img src={ finalVersionData } alt="final-version" height="250px"/>
-                            <div className="dark-area">
-                                <h4>Teacher Data Experience</h4>
-                                <p>Improving classroom data for teachers </p>
+                        <Link className="no-dec" to={`/works/data-experience`}>
+                            <div className="side-nav-content">
+                                <img src={ finalVersionData } alt="final-version" height="250px"/>
+                                <div className="dark-area">
+                                    <h4>Teacher Data Experience</h4>
+                                    <p>Improving classroom data for teachers </p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
+                        
+
+                        <Link className="no-dec" to={`/works/sunsets-are-awesome`}>
+                            <div className="side-nav-content">
+                                <img src={ finalVersionSunsets } alt="final-version" height="250px"/>
+                                <div className="dark-area">
+                                    <h4>Sunsets are Awesome</h4>
+                                    <p>Discovering the daily sunset forecast </p>
+                                </div>
+                            </div>
+                        </Link>
+
+                        <Link className="no-dec" to={`/works/data-experience`}>
+                            <div className="side-nav-content">
+                                <img src={ finalVersionData } alt="final-version" height="250px"/>
+                                <div className="dark-area">
+                                    <h4>Reading Comprehension Tool</h4>
+                                    <p>Improving classroom data for teachers </p>
+                                </div>
+                            </div>
+                        </Link>
             </div>
         )
     }
@@ -189,7 +203,7 @@ class Home extends Component {
                     <div className="text-top">
                     </div>
 
-                    <div className="text-top-work">
+                    <div ref={this.textWrapper} className="text-top-work">
                         <h4>MY WORK.</h4>
                     </div>
 
