@@ -21,6 +21,7 @@ class Home extends Component {
         this.profileRef = React.createRef();
         this.rightContainer = React.createRef();
         this.leftContainer = React.createRef();
+        this.leftMyWork = React.createRef();
         this.nameWrapper = React.createRef();
         this.navContainer = React.createRef();
         this.textWrapper = React.createRef();
@@ -32,6 +33,7 @@ class Home extends Component {
         let leftContainer = this.leftContainer.current;
         let wrapperRef = this.wrapperRef.current; 
         let nameWrapper = this.nameWrapper.current;
+        let leftMyWork = this.leftMyWork.current;
         let navContainer = this.navContainer.current;
         let profileRef = this.profileRef.current;
         let textWrapper = this.textWrapper.current;
@@ -42,11 +44,12 @@ class Home extends Component {
             rightContainer.classList.toggle('animate-right-container');
             leftContainer.classList.toggle('animate-left-container');
             wrapperRef.classList.toggle('animate-navigation');
-            navContainer.classList.toggle('animate-navigation');
+            navContainer.classList.toggle('animate-my-name');
             nameWrapper.classList.toggle('animate-my-name');
             profileRef.classList.toggle('animate-profile-home');
             textWrapper.classList.toggle("main-slow");
             delayedText.classList.toggle("main-delayed-text");
+            leftMyWork.classList.toggle("animate-left-container");
             imageRef.classList.toggle('animate-image-prof');
             var delay = 0;
             // mobile animations
@@ -64,7 +67,7 @@ class Home extends Component {
             textWrapper.classList.toggle('delayed-main');
             delayedText.classList.toggle("slow-delayed-text");
             wrapperRef.classList.toggle('slide-in-nav-fast');
-            navContainer.classList.toggle('slide-in-nav-fast');
+            navContainer.classList.toggle('animate-my-name');
 
             // mobile animations
             profileRef.classList.toggle('animate-profile')
@@ -78,6 +81,7 @@ class Home extends Component {
             wrapperRef = this.wrapperRef.current;
             nameWrapper = this.nameWrapper.current;
             navContainer = this.navContainer.current;
+            leftMyWork = this.leftMyWork.current;
 
             textWrapper = this.textWrapper.current;
             delayedText = this.delayedText.current;
@@ -85,7 +89,7 @@ class Home extends Component {
                 profileRef.classList.toggle("is-loaded");
                 textWrapper.classList.toggle('slide-down');
                 wrapperRef.classList.toggle('slide-in-nav');
-                navContainer.classList.toggle('slide-in-nav');
+                //navContainer.classList.toggle('slide-in-nav');
                 imageRef.classList.toggle('fade-in');
 
                 // mobile
@@ -104,6 +108,7 @@ class Home extends Component {
             // animations
             rightContainer.classList.toggle('slide-in');
             leftContainer.classList.toggle('slide-in-left');
+            leftMyWork.classList.toggle('slide-in-left');
             
             nameWrapper.classList.toggle('slide-down');
             navContainer.classList.toggle('slide-down');
@@ -152,8 +157,6 @@ class Home extends Component {
     renderAside() {
         return (
             <div ref={this.wrapperRef} className="right-aside">
-                                   
-
                         <Link className="no-dec" to={`/works/data-experience`}>
                             <div className="side-nav-content">
                                 <img src={ finalVersionData } alt="final-version" height="250px"/>
@@ -203,7 +206,7 @@ class Home extends Component {
                     <div className="text-top">
                     </div>
 
-                    <div ref={this.textWrapper} className="text-top-work">
+                    <div ref={this.leftMyWork} className="text-top-work">
                         <h4>MY WORK.</h4>
                     </div>
 
