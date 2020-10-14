@@ -72,6 +72,7 @@ class Home extends Component {
             // mobile animations
             profileRef.classList.toggle('animate-profile')
         }
+        
         setTimeout(() => {
             profileRef = this.profileRef.current;
             imageRef = this.imageRef.current;

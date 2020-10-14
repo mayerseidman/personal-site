@@ -25,6 +25,7 @@ class Works extends Component {
 
         // animations
         this.rightContainer = React.createRef();
+        this.navContainer = React.createRef();
         this.leftContainer = React.createRef();
         this.nameWrapper = React.createRef();
         this.textWrapper = React.createRef();
@@ -57,6 +58,8 @@ class Works extends Component {
     }
 
     componentDidMount() {
+        let navContainer = this.navContainer.current;
+
         this.props.context.updateLoaded()
         if( this.props.context.state.lastLocation !== null && this.props.context.state.lastLocation.pathname === '/about' ){
             this.imageContainer.current.classList.toggle('set-up-profile');
@@ -75,10 +78,10 @@ class Works extends Component {
         }, delay);
     }
     handleMenuClick() {
-        const wrapper = this.wrapperRef.current;
+        const navContainer = this.navContainer.current;
         const icon = this.iconRef.current;
         const mainRef = this.mainRef.current;
-        wrapper.classList.toggle("is-nav-open");
+        navContainer.classList.toggle("is-nav-open");
         icon.classList.toggle("is-nav-open");
         mainRef.classList.toggle("is-nav-open");
     }
@@ -97,24 +100,18 @@ class Works extends Component {
                 <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handleMenuClick()}>
                     <div></div>
                 </div>
-                <div className="float-dark-box"></div>
-                <div className="float-dark-light"></div>
-                <div className="float-dark-primary"></div>
-                <div className="float-white-box"></div>
+            
+                <ul ref={this.navContainer} className="top-nav">
+                    <li><NavLink className="nav-link" activeStyle={{ color: 'black' }} to='/about'>About</NavLink></li>
+                    <li><NavLink className="nav-link" activeStyle={{ color: 'black' }} to='/works'>Work</NavLink></li>
+                    <li><a className="nav-link" activeStyle={{ color: 'black' }} 
+                    href="https://medium.com/design-ideas-thoughts" target="_blank">Blog</a></li>
+                </ul>
+
             </div>
         )
     }
-    renderNav() {
-        return (
-            <div ref={this.wrapperRef} className="navigation-works">
-                <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
-                <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
-                <p><a className="nav-link" activeStyle={{ color: 'white' }} 
-                    href="https://medium.com/design-ideas-thoughts" target="_blank">Writing</a>
-                </p>
-            </div>
-        )
-    }
+
     renderRightContainer() {
         let url = this.props.match.url;
         return (
@@ -168,7 +165,7 @@ class Works extends Component {
                     <div className='main-empty-2'>
                     </div>
                 </div>
-                { this.renderNav() }
+                
             </div>
         )
     }

@@ -20,7 +20,7 @@
 
 .top-nav li .nav-link {
     color: #191D44 !important;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .top-nav li .nav-link:hover {
@@ -38,8 +38,8 @@
 
 
 .side-nav-content img{
-    width: 380px;
-    height: 252px;
+    width: 330px;
+    height: 250px;
 }
 
 

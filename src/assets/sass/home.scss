@@ -1,14 +1,39 @@
 
 @media only screen and (min-width: 1500px) { 
-    .top-nav li {
-        width: 81.5px;
-        float: left;
+    .large-text {
+        font-size: 48px;
+        margin: 20px 0;
+        font-weight: 550;
+    }
+
+    .side-nav-content img{
+        width: 380px;
+        height: 250px;
+    }
+
+    ul.top-nav.is-nav-open {
+        background: transparent;
+        width: 16% !important;
+        padding: 0px 0px !important;
     }
 
     .top-nav li .nav-link {
-        color: #191D44 !important;
-        font-weight: bold;
+        color: #171C46 !important;
+        width: 30.5px;
+        float: left;
+        font-weight: bold !important;
         font-size: 16px !important;
+    }
+
+    .top-nav li .nav-link:hover {
+        font-weight: bold !important;
+        font-size: 16px !important;
+        border: 1px solid transparent;
+    }
+
+    .top-nav li {
+        width: 81.5px !important;
+        float: left;
     }
 
     .large-text {
@@ -339,20 +364,45 @@
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+    ul.top-nav.is-nav-open {
+        background: transparent;
+        width: 16% !important;
+        height: 50px !important;
+        padding: 0px 0px !important;
+    }
+
+    .top-nav li .nav-link {
+        color: #171C46 !important;
+        width: 30.5px;
+        float: left;
+        font-weight: bold !important;
+        font-size: 16px !important;
+    }
+
+    .top-nav li .nav-link:hover {
+        font-weight: bold !important;
+        font-size: 16px !important;
+        border: 1px solid transparent;
+    }
+
+    .top-nav li {
+        width: 51.5px !important;
+        float: left;
+    }
+
     .right-aside {
         width: 330px !important;
     }
 
-    .top-nav li {
-        color: #171C46 !important;
-        width: 59.5px;
-        float: left;
+    .side-nav-content img{
+        width: 380px;
+        height: 250px;
     }
 
-    .top-nav li .nav-link {
-        color: #191D44 !important;
-        font-weight: bold;
-        font-size: 16px !important;
+    .large-text {
+        font-size: 46px;
+        margin: 20px 0;
+        font-weight: 550;
     }
     
     .dark-area {
@@ -638,6 +688,12 @@
 }
 
 @media only screen and (max-width: 1199px) {
+    .top-nav li .nav-link {
+        color: #191D44 !important;
+        font-size: 50px;
+
+    }
+
     .top-nav li {
         color: #171C46 !important;
         width: 100%;
@@ -1148,7 +1204,7 @@
         margin-top: -10px;
         padding: 30px 0;
         width: 100%;
-        height: 100px;
+        height: 100%;
         z-index: 9999;
         position: absolute;
         left: 0;
@@ -1167,6 +1223,7 @@
         justify-self: center;
         text-align: center;
     }
+
 
 
 
@@ -1227,6 +1284,12 @@
 }
 @media screen and (max-width: 489px) {
 
+    .top-nav li .nav-link {
+        text-align: left !important;
+        align-self: left !important;
+        justify-self: left !important;
+    }
+
     .name-mayer {
         width: 30% !important;
         font-weight: bold;
@@ -1260,7 +1323,7 @@
         margin-top: -10px;
         padding: 30px 0;
         width: 100%;
-        height: 250px;
+        height: 250%;
         z-index: 9999;
         position: absolute;
         left: 0;
@@ -1276,9 +1339,9 @@
     
     ul.top-nav.is-nav-open li {
         padding: 20px;
-        align-self: center;
-        justify-self: center;
-        text-align: center;
+        text-align: left !important;
+        align-self: left !important;
+        justify-self: left !important;
     }
 
     
@@ -1392,9 +1455,14 @@
         color: #171C46 !important;
         width: 100%;
         line-height: 50px;
-        font-size: 30px;
-        padding: 0px;
+        font-size: 50px;
+        padding: 30% 0px;
         float: left;
+
+
+        text-align: left !important;
+        align-self: left !important;
+        justify-self: left !important;
     }
     
 
@@ -1440,7 +1508,7 @@
         margin-top: -10px;
         padding: 30px 0;
         width: 100%;
-        height: 100px;
+        height: 100%;
         z-index: 9999;
         position: absolute;
         left: 0;
@@ -1504,11 +1572,7 @@
     position: relative;
 }
 
-.large-text {
-    font-size: 48px;
-    margin: 20px 0;
-    font-weight: 550;
-}
+
 
 .text-top {
     text-align: right;
