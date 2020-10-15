@@ -270,6 +270,10 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1499px) {
+    .top-nav {
+        margin-top: -30px !important;
+    }
+    
     ul.top-nav li {
         width: 55px;
     }
@@ -287,6 +291,7 @@
     }
 
     .top-nav li .nav-link {
+        text-align: center !important;
         color: #171C46 !important;
         width: 30.5px;
         float: left;

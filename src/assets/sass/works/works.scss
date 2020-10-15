@@ -486,7 +486,10 @@ $primary-white: #fff;
     //     width: 51.5px !important;
     //     float: left;
     // }
-
+    .top-nav {
+        margin-top: -30px !important;
+    }
+    
     ul.top-nav.is-nav-open {
         background: transparent;
         width: 16% !important;
