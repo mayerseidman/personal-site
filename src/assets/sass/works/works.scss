@@ -31,7 +31,7 @@ $primary-white: #fff;
         float: left;
     }
 
-    
+
     .wrapper-main {
         display: flex;
         width: 100%;
@@ -478,6 +478,15 @@ $primary-white: #fff;
     }
 }
 @media screen and (min-width: 1200px) and (max-width: 1499px) { 
+    ul.top-nav li {
+        width: 55px;
+    }
+
+    // .top-nav li {
+    //     width: 51.5px !important;
+    //     float: left;
+    // }
+
     ul.top-nav.is-nav-open {
         background: transparent;
         width: 16% !important;
@@ -499,10 +508,7 @@ $primary-white: #fff;
         border: 1px solid transparent;
     }
 
-    .top-nav li {
-        width: 51.5px !important;
-        float: left;
-    }
+
 
     .set-up-profile {
         left: 14%;

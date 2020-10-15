@@ -14,6 +14,7 @@ const counter = 0;
 class About extends Component {
     constructor(props) {
         super(props);
+        this.navContainer = React.createRef();
         this.wrapperRef = React.createRef();
         this.iconRef = React.createRef();
         this.textWrapper = React.createRef();
@@ -23,9 +24,9 @@ class About extends Component {
     }
 
     handleMenuClick() {
-        const wrapper = this.wrapperRef.current;
+        const navContainer = this.navContainer.current;
         const icon = this.iconRef.current;
-        wrapper.classList.toggle("is-nav-open");
+        navContainer.classList.toggle("is-nav-open");
         icon.classList.toggle("is-nav-open");
     }
 
@@ -51,25 +52,19 @@ class About extends Component {
                 <div ref={this.iconRef} className="nav-icon" onClick={ () => this.handleMenuClick()}>
                     <div></div>
                 </div>
-                <div className="float-dark-box"></div>
-                <div className="float-dark-light"></div>
-                <div className="float-dark-primary"></div>
-                <div className="float-white-box"></div>
+
+                <ul ref={this.navContainer} className="top-nav">
+                    <li><NavLink className="nav-link" activeStyle={{ color: 'black' }} to='/about'>About</NavLink></li>
+                    <li><NavLink className="nav-link" activeStyle={{ color: 'black' }} to='/works'>Work</NavLink></li>
+                    <li><a className="nav-link" activeStyle={{ color: 'black' }} 
+                    href="https://medium.com/design-ideas-thoughts" target="_blank">Blog</a></li>
+                </ul>
+
             </div>
         )
     }
 
-    renderNav() {
-        return (
-            <div ref={this.wrapperRef} className="navigation-about">
-                <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/works'>Work</NavLink></p>
-                <p><NavLink className="nav-link" activeStyle={{ color: 'white' }} to='/about'>About</NavLink></p>
-                <p><a className="nav-link" activeStyle={{ color: 'white' }} 
-                    href="https://medium.com/design-ideas-thoughts" target="_blank">Writing</a>
-                </p>
-            </div>
-        )
-    }
+
 
     handleImageLoaded = () => {
         console.log("loaded")
@@ -176,7 +171,7 @@ class About extends Component {
                         
                     </div>
                 </div>
-                { this.renderNav() }
+              
             </div>
         )
     }

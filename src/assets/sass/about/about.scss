@@ -1,4 +1,31 @@
 @media screen and (min-width: 1500px) { 
+
+    ul.top-nav.is-nav-open {
+        background: transparent;
+        width: 16% !important;
+        padding: 0px 0px !important;
+    }
+
+    .top-nav li .nav-link {
+        color: #171C46 !important;
+        width: 30.5px;
+        float: left;
+        font-weight: bold !important;
+        font-size: 16px !important;
+    }
+
+    .top-nav li .nav-link:hover {
+        font-weight: bold !important;
+        font-size: 16px !important;
+        border: 1px solid transparent;
+    }
+
+    .top-nav li {
+        width: 81.5px !important;
+        float: left;
+    }
+
+
     .wrapper-main {
         display: flex;
         width: 100%;
@@ -243,6 +270,36 @@
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1499px) {
+    ul.top-nav li {
+        width: 55px;
+    }
+
+    // .top-nav li {
+    //     width: 51.5px !important;
+    //     float: left;
+    // }
+
+    ul.top-nav.is-nav-open {
+        background: transparent;
+        width: 16% !important;
+        height: 50px !important;
+        padding: 0px 0px !important;
+    }
+
+    .top-nav li .nav-link {
+        color: #171C46 !important;
+        width: 30.5px;
+        float: left;
+        font-weight: bold !important;
+        font-size: 16px !important;
+    }
+
+    .top-nav li .nav-link:hover {
+        font-weight: bold !important;
+        font-size: 16px !important;
+        border: 1px solid transparent;
+    }
+
     .set-up-profile-about {
         left: 14%;
         top: -15%;
@@ -570,6 +627,17 @@
 
   
 @media screen and (max-width: 1199px) {
+    ul.top-nav.is-nav-open {
+        margin-top: -10px;
+        padding: 30px 0;
+        width: 100%;
+        height: 100vh !important;
+        z-index: 9999;
+        position: absolute;
+        left: 0;
+        background: #F4C42F;
+    }
+
     .wrapper {
         width: 100%;
         height: 100%;
