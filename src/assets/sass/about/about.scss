@@ -529,6 +529,7 @@
 }
 
 @media screen and (min-width: 489px) and (max-width: 699px) {
+
     .floating-profile-a .profile-image-container {
         position: absolute;
         left: 2%;
@@ -621,6 +622,11 @@
     }
 }
 
+@media screen and (max-width: 489px) {
+    .main-text {
+        margin-top: 10px !important;
+    }
+}
 @media screen and (min-width: 800px) and (max-width: 1199px) {
     .about-text {
         margin-top: 25px !important;
