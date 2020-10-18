@@ -1634,6 +1634,15 @@ $primary-white: #fff;
     }
 }
 
+@media screen and (max-width: 489px) {
+    .name-mayer {
+        width: 10% !important;
+        font-weight: bold;
+        display: block;
+    }
+    
+}
+
 @media only screen and (max-width: 400px) {
     .first-content {
         display: block;

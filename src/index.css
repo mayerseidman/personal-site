@@ -8,6 +8,11 @@
     font-weight: 300;
 }
 
+a.plain-link {
+    font-weight: bold;
+}
+
+
 .top-nav {
     margin-top: 3px;
     list-style: none;

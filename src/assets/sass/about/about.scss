@@ -528,6 +528,18 @@
     }
 }
 
+
+
+@media screen and (min-width: 600px) {
+
+.name-mayer {
+    width: 10% !important;
+    font-weight: bold;
+    display: block;
+}
+
+}
+
 @media screen and (min-width: 489px) and (max-width: 699px) {
 
     .floating-profile-a .profile-image-container {
@@ -623,6 +635,12 @@
 }
 
 @media screen and (max-width: 489px) {
+    .name-mayer {
+        width: 10% !important;
+        font-weight: bold;
+        display: block;
+    }
+    
     .main-text {
         margin-top: 10px !important;
     }

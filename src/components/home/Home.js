@@ -213,7 +213,7 @@ class Home extends Component {
 
                
 
-                    <div ref={this.textWrapper} className="text-container">
+                    <div ref={this.textWrapper} className="text-container marginTopM">
                         <div className="home-centered-text">
                             <div>
                                 <p className="large-text">Howdy! <br/>
