@@ -1372,13 +1372,17 @@
         flex-direction: column;
         width: 93%;
         font-size: 3em;
-        height: 980px !important;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        height: 100% !important;
+        
         z-index: 3;
         transition: left .5s;
         justify-content: center;
         align-self: center !important;
+    }
+
+    .side-nav-content img {
+        width: 385px !important;
+        height: 230px !important;
     }
 
 
