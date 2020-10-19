@@ -49,7 +49,7 @@ class Home extends Component {
             profileRef.classList.toggle('animate-profile-home');
             textWrapper.classList.toggle("main-slow");
             delayedText.classList.toggle("main-delayed-text");
-            leftMyWork.classList.toggle("animate-left-container");
+            leftMyWork.classList.toggle("animate-navigation");
             imageRef.classList.toggle('animate-image-prof');
             var delay = 0;
             // mobile animations
@@ -109,7 +109,7 @@ class Home extends Component {
             // animations
             rightContainer.classList.toggle('slide-in');
             leftContainer.classList.toggle('slide-in-left');
-            leftMyWork.classList.toggle('slide-in');
+            leftMyWork.classList.toggle('slide-in-nav');
             
             nameWrapper.classList.toggle('slide-down');
             navContainer.classList.toggle('slide-down');

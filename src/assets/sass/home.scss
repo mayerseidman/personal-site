@@ -194,7 +194,7 @@
     }
     
     .main-empty-1 {
-        flex-grow: 10;
+        flex-grow: 8;
         position: relative;
     }
     
@@ -472,7 +472,7 @@
 
     .text-top-work {
         position: absolute;
-        right: 40%;
+        right: 40% !important;
         top: 3%;
     }
 
@@ -482,7 +482,7 @@
 
 
     .main-empty-1 {
-        flex-grow: 10;
+        flex-grow: 8;
     }
     
     .wrapper-main {
