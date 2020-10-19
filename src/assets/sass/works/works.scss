@@ -862,7 +862,7 @@ $primary-white: #fff;
     
     .floating-profile-work {
         position: absolute;
-        left: 5%;
+        left: 8%;
         top:25%;
         width: 28%;
         height: 50%;
@@ -872,8 +872,8 @@ $primary-white: #fff;
     
     .floating-profile-work .profile-image-container {
         position: absolute;
-        width: 325px;
-        height: 325px;
+        width: 263px;
+        height: 223px;
         z-index: 2;
     }
     
@@ -886,8 +886,8 @@ $primary-white: #fff;
         background-color: #D26442;
         margin-top: 10%;
         margin-left: 10%;
-        height: 350px;
-        width: 325px;
+        height: 283px;
+        width: 263px;
         z-index: -1;
         border: 3.5px solid #171c46;
     }
@@ -988,7 +988,7 @@ $primary-white: #fff;
     }
     .floating-profile .profile-image-container {
         position: absolute;
-        width: 325px;
+        width: 305px;
         height: 325px;
         z-index: 2;
     }

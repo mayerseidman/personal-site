@@ -109,7 +109,7 @@ class Home extends Component {
             // animations
             rightContainer.classList.toggle('slide-in');
             leftContainer.classList.toggle('slide-in-left');
-            leftMyWork.classList.toggle('slide-in-left');
+            leftMyWork.classList.toggle('slide-in');
             
             nameWrapper.classList.toggle('slide-down');
             navContainer.classList.toggle('slide-down');
