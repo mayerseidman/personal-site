@@ -28,7 +28,6 @@
     .top-nav li .nav-link:hover {
         font-weight: bold !important;
         font-size: 16px !important;
-        border: 1px solid transparent;
     }
 
     .top-nav li {
@@ -416,7 +415,7 @@
         color: #171C46 !important;
         width: 30.5px;
         float: left;
-        font-weight: bold !important;
+        font-weight: 400 !important;
         font-size: 16px !important;
     }
 
@@ -427,12 +426,13 @@
     }
 
     .top-nav li {
+        margin-top: 50px !important;
         width: 51.5px !important;
         float: left;
     }
 
     .top-nav {
-        margin-top: -30px !important;
+        margin-top: -50px !important;
     }
 
     .right-aside {
@@ -1156,7 +1156,11 @@
         position: absolute;
         left: 0;
         background: #F4C42F;
+
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
+
 
     .top-nav li {
         //width: 250px !important;
@@ -1247,6 +1251,9 @@
         position: absolute;
         left: 0;
         background: #F4C42F;
+
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     .top-nav li {
@@ -1370,6 +1377,9 @@
         position: absolute;
         left: 0;
         background: #F4C42F;
+
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
 
@@ -1504,7 +1514,7 @@
     .top-nav li .nav-link{
         color: #171C46 !important;
         width: 100%;
-        line-height: 50px;
+        line-height: 10px;
         font-size: 50px;
         padding: 30% 0px;
         float: left;
@@ -1563,6 +1573,9 @@
         position: absolute;
         left: 0;
         background: #F4C42F;
+
+        -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     .top-nav li {
@@ -1707,3 +1720,29 @@ html,body {
         min-height: 100vh;
     }
 }
+
+
+
+  @-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+    }
+  }
+  
+  

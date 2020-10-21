@@ -19,16 +19,18 @@ a.plain-link {
 }
 
 .top-nav li {
+    padding-top: -30px;
     color: #171C46 !important;
     float: left;
 }
 
 .top-nav li .nav-link {
     color: #191D44 !important;
-    font-weight: 300;
+    font-weight: 700 !important;
 }
 
 .top-nav li .nav-link:hover {
+    font-weight: 700 !important;
     color: #0a0c1f !important;
     text-decoration: none !important;
 }
