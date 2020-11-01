@@ -915,6 +915,9 @@
     .home-centered-text {
         width: 325px;
     }
+    .headline {
+        margin-top: 35px;
+    }
 }
 
 /*@media screen and (min-width: 489px) {
@@ -952,14 +955,21 @@
         }
     }
     .learn-more {
+        color: #F4C42F;
         font-size: 1.3rem;
+        margin-top: 15px;
         .plain-link {
             font-weight: bold;
             padding-bottom: 2px;
             &:hover {
-                border-bottom: 2px solid #D26442;
+/*                border-bottom: 2px solid #D26442;
+*/                border-bottom: 2px solid #fff;
                 opacity: 1;
             };
+        }
+        .home-link {
+            margin-left: 4px;
+            color: #fff;
         }
     }
 }
@@ -972,6 +982,16 @@
     font-size: 5em;
     margin: 20px 0;
     font-weight: 550;
+}
+
+.headline {
+    font-size: 2.85em;
+    font-weight: bold;
+    margin: 20px 0;
+    margin-bottom: 25px;
+    .word {
+        border-bottom: 5px solid #d26442;
+    }
 }
 
 .text-top {

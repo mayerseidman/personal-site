@@ -151,19 +151,18 @@ class Home extends Component {
                     <div ref={this.textWrapper} className="text-container">
                         <div className="home-centered-text">
                             <div>
-                                <p className="large-text">Howdy.</p>
-                                <p className="text-style intro-text">I'm Mayer and I'm a 
-                                    <span className="highlighted-word"> { title }.</span>
-                                </p>
+                                <p className="headline">Howdy! I'm Mayer and I'm a <span className="word">{ title }</span>.</p>
                                 <section ref={this.delayedText} className='text-delayed'>
                                 <p className='text-paragraph text-style'>
-                                    I'm a versatile problem solver passionate
-                                    about helping people and uncovering
-                                    emotions within products. 
+                                    I'm passionate about Ed-Tech, self learning, and frontend development.
                                 </p>
-                                <p className="learn-more">Learn more <span className="link-text">
-                                    <Link to='/about' className="plain-link">about me</Link></span> or view <span className="link-text">
-                                    <Link to="/works" className="plain-link">my work</Link></span>
+                                <p className="learn-more">Learn more 
+                                    <span className="home-link">
+                                        <Link to='/about' className="plain-link">about me</Link>
+                                    </span> or view 
+                                    <span className="home-link">
+                                        <Link to="/works" className="plain-link">my work</Link>
+                                    </span>
                                 </p>
                                 </section>
                             </div>
