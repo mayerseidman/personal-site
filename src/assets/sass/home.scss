@@ -992,6 +992,9 @@
     .word {
         border-bottom: 5px solid #d26442;
     }
+    @media screen and (max-width: 489px) {
+        margin-top: 35px;
+    }
 }
 
 .text-top {
