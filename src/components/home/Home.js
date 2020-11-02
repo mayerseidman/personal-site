@@ -154,7 +154,7 @@ class Home extends Component {
                                 <p className="headline">Howdy! I'm Mayer and I'm a <span className="word">{ title }</span>.</p>
                                 <section ref={this.delayedText} className='text-delayed'>
                                 <p className='text-paragraph text-style'>
-                                    I'm passionate about Ed-Tech, self learning, and frontend development.
+                                    I'm passionate about Ed-Tech, self learning, and creating memorable experiences.
                                 </p>
                                 <p className="learn-more">Learn more 
                                     <span className="home-link">
