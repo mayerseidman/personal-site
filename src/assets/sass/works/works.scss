@@ -144,7 +144,8 @@ $primary-white: #fff;
 
     .work-image-wrapper {
        img {
-        width: 200px;
+            height: 125px;
+            width: 200px;
        }
     }
     .worker-separator {
@@ -610,6 +611,7 @@ $primary-white: #fff;
     }
     .work-image-wrapper {
          img {
+            height: 125px;
             width: 200px;
         }
     }
@@ -1135,6 +1137,7 @@ $primary-white: #fff;
     .work-image-wrapper {
         margin: 0 20px;
         img {
+            height: auto;
             width: 100%;
         }
     }
@@ -1825,9 +1828,9 @@ h3 {
 }
 @media only screen and (min-width: 1200px) {
     .sunsets {
-        img  {
+        /*img  {
             height: 115px;
-        }
+        }*/
     }
 }
 .sunsetsWork {
