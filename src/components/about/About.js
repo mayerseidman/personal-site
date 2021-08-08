@@ -156,6 +156,8 @@ class About extends Component {
                                             href="https://whooosreading.org" target="_blank">Whooo's Reading</a>
                                         <a className="sunsets" 
                                             href="https://sunsets-are-awesome.herokuapp.com/" target="_blank">Sunsets Are Awesome</a>
+                                        <a className="discover" 
+                                            href="https://discover-new-tunes.herokuapp.com/" target="_blank">Discover New Tunes</a>
                                     </p>
                                 </div>
                                 <div className="about-details">
