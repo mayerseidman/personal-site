@@ -128,11 +128,6 @@ class Works extends Component {
     return (
       <div ref={this.wrapperRef} className="navigation-works">
         <p>
-          <NavLink className="nav-link" to="/">
-            Home
-          </NavLink>
-        </p>
-        <p>
           <NavLink className="nav-link" to="/works">
             Work
           </NavLink>
