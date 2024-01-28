@@ -128,6 +128,11 @@ class Works extends Component {
     return (
       <div ref={this.wrapperRef} className="navigation-works">
         <p>
+          <NavLink className="nav-link" to="/">
+            Home
+          </NavLink>
+        </p>
+        <p>
           <NavLink className="nav-link" to="/works">
             Work
           </NavLink>
@@ -308,7 +313,7 @@ function Work({ works, imageRef }) {
       }, 500);
     }
     // return clearTimeout(timer);
-  }, [isClose, imageRef]);
+  }, [isClose, imageRef, navigate]);
 
   const handleClick = () => {
     let image = imageRef.current;
