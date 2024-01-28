@@ -3,32 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.10.1",
-    "acorn": "^7.2.0",
-    "cjs-module": "^1.5.0",
-    "i-chatbot": "^0.2.11",
-    "node-sass": "^4.14.1",
-    "react": "^16.13.1",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-animation": "^1.2.2",
-    "react-dom": "^16.13.1",
-    "react-image-gallery": "^0.9.1",
-    "react-image-zoom": "^1.1.0",
-    "react-lazy-load-image-component": "^1.5.0",
-    "react-magnifier": "^3.0.4",
-    "react-reveal": "^1.1.9-beta.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.1",
-    "react-tooltip": "^3.11.6",
-    "react-video-looper": "^1.0.16",
-    "react-webcam": "^3.1.1",
-    "typeface-inconsolata": "0.0.72",
-    "typeface-inter": "^3.12.0",
-    "typeface-karla": "0.0.72",
-    "typeface-martel": "0.0.72",
-    "typeface-muli": "^1.1.3",
-    "typeface-roboto": "0.0.75",
-    "wow.js": "^1.2.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-image-gallery": "^1.3.0",
+    "react-router-dom": "^6.21.3",
+    "react-scripts": "5.0.1",
+    "typeface-inconsolata": "1.1.13",
+    "typeface-inter": "^3.18.1",
+    "typeface-karla": "1.1.13",
+    "typeface-martel": "1.1.13",
+    "typeface-muli": "^1.1.13",
+    "typeface-roboto": "1.1.13"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,7 +22,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -50,5 +38,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "resolutions": {
+    "workbox-webpack-plugin": "6.4.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "sass": "^1.70.0"
   }
 }
