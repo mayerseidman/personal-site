@@ -46,7 +46,7 @@ class About extends Component {
         <div className="my-name-about">
           <span className="name-mayer">
             <Link className="plain-link" to="/">
-              Mayer SEI
+              Mayer S
             </Link>
           </span>
         </div>
