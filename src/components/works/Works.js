@@ -106,7 +106,7 @@ class Works extends Component {
         <div ref={this.nameWrapper} className="my-name-works">
           <span className="name-mayer">
             <Link className="plain-link" to="/">
-              Mayer.
+              Mayer IS DA BEST
             </Link>
           </span>
         </div>
