@@ -437,6 +437,7 @@
     height: 350px;
     width: 325px;
     z-index: -1;
+
   }
   .profile-image-blank {
     display: flex;
@@ -531,6 +532,7 @@
     @media screen and (max-width: 450px) {
       margin-left: 0;
       width: auto;
+      margin-top: 25px;
     }
   }
 
@@ -705,6 +707,9 @@
     right: 0;
     /*height: 50%;*/
     z-index: 2;
+    @media screen and (max-width: 450px) {
+      width: 80%;
+    }
   }
 
   .image-prof-about {
