@@ -11,7 +11,7 @@ import {
 import { withLoadState } from "../contexts/LoadStateContext";
 
 // IMAGES
-import image from "../../assets/images/misc/profile.png";
+import image from "../../assets/images/misc/new-profile.png";
 import finalVersionData from "../../assets/images/data-center/final-version.gif";
 import finalVersionWRLite from "../../assets/images/wr-lite/teacher-exercises.gif";
 import finalVersionSunsets from "../../assets/images/sunsets-are-awesome/final-version.gif";
@@ -106,7 +106,7 @@ class Works extends Component {
         <div ref={this.nameWrapper} className="my-name-works">
           <span className="name-mayer">
             <Link className="plain-link" to="/">
-              Mayer IS DA BEST
+              Mayer.
             </Link>
           </span>
         </div>

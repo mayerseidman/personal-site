@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink, Link } from "react-router-dom";
-import image from "../../assets/images/misc/profile.png";
+import image from "../../assets/images/misc/new-profile.png";
 import { withLoadState } from "../contexts/LoadStateContext";
 import Text from "./text";
 import "../../assets/sass/home.scss";
