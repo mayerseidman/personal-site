@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.39fbc567.css",
-    "main.js": "/static/js/main.db327518.js",
+    "main.js": "/static/js/main.ab71df5d.js",
     "static/media/sunsets.gif": "/static/media/sunsets.be8f9ce35a12f24a52c7.gif",
     "static/media/teacher-exercises.gif": "/static/media/teacher-exercises.9d19229eafe56ecb3d82.gif",
     "static/media/music.gif": "/static/media/music.a5ecadf5c44ea7cec9a8.gif",
     "static/media/drawing.gif": "/static/media/drawing.51dd532e5cec37bcb370.gif",
     "static/media/cooking.gif": "/static/media/cooking.8d11529c1f8f2bfd93de.gif",
+    "static/media/new-profile.png": "/static/media/new-profile.e19a228aa867e71742f4.png",
     "static/media/dashboard-final.gif": "/static/media/dashboard-final.e714ce117c4796544ac1.gif",
     "static/media/final-version.gif": "/static/media/final-version.45a9197dee450a349911.gif",
     "static/media/hat.gif": "/static/media/hat.7206806955f4c7e4f2e6.gif",
     "static/media/lofis-combined.png": "/static/media/lofis-combined.79334d30073b06821085.png",
     "static/media/hifi-three.png": "/static/media/hifi-three.8c4397585be352afbfe9.png",
     "static/media/dribbble.png": "/static/media/dribbble.9f436d8405cfac8914e9.png",
-    "static/media/profile.png": "/static/media/profile.b4a617aaf1be44e7400b.png",
     "static/media/hifi-two.png": "/static/media/hifi-two.303fb350d85ecefa988a.png",
     "static/media/annotation-dashboard.png": "/static/media/annotation-dashboard.5db15412e59394775b12.png",
     "static/media/annotation-data.png": "/static/media/annotation-data.bc009985892ddbb08bbb.png",
@@ -58,10 +58,10 @@
     "static/media/comprehension.png": "/static/media/comprehension.f97f8922c3b44ebcfd6e.png",
     "index.html": "/index.html",
     "main.39fbc567.css.map": "/static/css/main.39fbc567.css.map",
-    "main.db327518.js.map": "/static/js/main.db327518.js.map"
+    "main.ab71df5d.js.map": "/static/js/main.ab71df5d.js.map"
   },
   "entrypoints": [
     "static/css/main.39fbc567.css",
-    "static/js/main.db327518.js"
+    "static/js/main.ab71df5d.js"
   ]
 }

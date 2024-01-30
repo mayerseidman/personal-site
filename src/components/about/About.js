@@ -108,7 +108,7 @@ class About extends Component {
               <p className="about-text">About.</p>
               <div className="scrollable-container">
                 <div className="about-details">
-                  <p className="emp-text">journey.</p>
+                  <p className="emp-text">journey</p>
                   <p className="p-over">
                     With a bachelors in{" "}
                     <a
