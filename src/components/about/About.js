@@ -141,7 +141,7 @@ class About extends Component {
                   </p>
                 </div>
                 <div className="about-details">
-                  <p className="emp-text">skills.</p>
+                  <p className="emp-text">skills</p>
                   <p className="p-over">
                     From UX research through user feedback (after production), I
                     have immersed myself in design and am experienced in all
@@ -173,7 +173,7 @@ class About extends Component {
                   </p>
                 </div>
                 <div className="about-details">
-                  <p className="emp-text">growth.</p>
+                  <p className="emp-text">growth</p>
                   <p className="p-over">
                     I believe that learning and self growth are precious tools
                     we can use to improve ourselves and bring our dreams to
@@ -211,7 +211,7 @@ class About extends Component {
                   </div>
                 </div>
                 <div className="about-details">
-                  <p className="emp-text">creations.</p>
+                  <p className="emp-text">creations</p>
                   <p className="p-over links">
                     <a
                       className="mixcloud"
@@ -256,7 +256,7 @@ class About extends Component {
                   </p>
                 </div>
                 <div className="about-details">
-                  <p className="emp-text">links.</p>
+                  <p className="emp-text">links</p>
                   <p className="p-over links">
                     <a
                       className="long"

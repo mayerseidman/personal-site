@@ -29,7 +29,6 @@ class Text extends Component {
   };
 
   componentDidMount() {
-    console.log(this.state.delay);
     var delay = this.state.delay;
     setTimeout(() => {
       const intervalId = setInterval(this.decrementCount, 1150);

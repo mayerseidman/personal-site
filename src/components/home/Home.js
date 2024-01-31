@@ -80,7 +80,6 @@ class Home extends Component {
           this.imageContainer.current.classList.toggle("animate-from-about");
         }
         textWrapper.classList.toggle("slide-down-slower");
-
         profileRef.classList.toggle("on-load-profile-fast");
       }
 
