@@ -737,8 +737,7 @@
       font-size: 1.2em;
       color: #171c46;
       &:hover {
-        color: #fff;
-        opacity: 0.7;
+        text-decoration: underline;
       }
     }
   }
@@ -804,6 +803,7 @@
   .links {
     a {
       margin-bottom: 15px;
+      opacity: 0.8;
       color: #f4c42f;
       display: block;
       font-size: 1.3em;
@@ -811,7 +811,9 @@
       padding-bottom: 2px;
       border-bottom: solid 1.5px transparent;
       &:hover {
-        border-bottom: 1.5px solid #f4c42f;
+       /* border-bottom: 1.5px solid #f4c42f;*/
+        text-decoration: underline;
+        opacity: 1;
       }
     }
   }
@@ -828,13 +830,19 @@
   }
 }
 
+.currentInterests {
+  margin-top: 5px;
+}
+
 .p-over {
   .p-link {
     display: inline-block;
     color: #f4c430;
     text-decoration: none;
+    opacity: 0.8;
     &:hover {
       text-decoration: underline;
+      opacity: 1;
     }
   }
   .item {
@@ -844,11 +852,12 @@
   }
   .value {
     display: block;
-    margin-bottom: 10px;
-    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-top: 8px;
   }
   &.links {
     a {
+      opacity: 0.8;
       margin-bottom: 15px;
       color: #f4c42f;
       display: block;
@@ -857,14 +866,16 @@
       padding-bottom: 2px;
       border-bottom: solid 1.5px transparent;
       &:hover {
-        border-bottom: 1.5px solid #f4c42f;
+        text-decoration: underline;
+        opacity: 1;
+        /*border-bottom: 1.5px solid #f4c42f;*/
       }
     }
   }
 }
 
 .links {
-  .small {
+  /*.small {
     width: 75px;
   }
   .regular-link {
@@ -887,7 +898,7 @@
   }
   .discover {
     width: 185px;
-  }
+  }*/
 }
 
 .emp-text {

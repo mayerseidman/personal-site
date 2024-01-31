@@ -238,14 +238,6 @@ class About extends Component {
                       Whooo's Reading
                     </a>
                     <a
-                      className="sunsets"
-                      href="https://sunsets-are-awesome.herokuapp.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Sunsets Are Awesome
-                    </a>
-                    <a
                       className="discover"
                       href="https://discover-new-tunes.herokuapp.com/"
                       target="_blank"

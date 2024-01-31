@@ -159,12 +159,12 @@ class Works extends Component {
             <div className="text-top"></div>
             <div ref={this.textWrapper} className="text-container-works">
               <p className="my-work">My Work.</p>
+              <div className="scrollable-container">
               <div className="all-works">
                 <Link
                   onClick={() => this.handleWork()}
                   className="no-dec"
-                  to={`/works/data-experience`}
-                >
+                  to={`/works/data-experience`}>
                   <div className="each-work">
                     <div className="work-text">
                       <p className="main-work-text">Data Experience</p>
@@ -181,8 +181,24 @@ class Works extends Component {
                 <Link
                   onClick={() => this.handleWork()}
                   className="no-dec"
-                  to={`/works/reading-comprehension-tool`}
-                >
+                  to={`/works/data-experience`}>
+                  <div className="each-work">
+                    <div className="work-text">
+                      <p className="main-work-text">Data Experience</p>
+                      <p className="secondary-work-text">
+                        Research, Structure, Interaction, Visual
+                      </p>
+                    </div>
+                    <div className="work-image-wrapper">
+                      <img src={finalVersionData} alt="final-version" />
+                    </div>
+                  </div>
+                </Link>
+                <div className="worker-separator"></div>
+                <Link
+                  onClick={() => this.handleWork()}
+                  className="no-dec"
+                  to={`/works/reading-comprehension-tool`}>
                   <div className="each-work">
                     <div className="work-text">
                       <p className="main-work-text">
@@ -215,6 +231,7 @@ class Works extends Component {
                     </div>
                   </div>
                 </Link>
+              </div>
               </div>
             </div>
           </div>
