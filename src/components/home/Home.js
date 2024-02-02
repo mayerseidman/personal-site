@@ -5,6 +5,8 @@ import { withLoadState } from "../contexts/LoadStateContext";
 import Text from "./text";
 import "../../assets/sass/home.scss";
 import withRouter from "../../utils/WithRouter";
+import Hotjar from '@hotjar/browser';
+
 
 class Home extends Component {
   constructor(props) {
@@ -21,6 +23,10 @@ class Home extends Component {
     this.imageContainer = React.createRef();
   }
   componentDidMount() {
+    const siteId = 3849611;
+    const hotjarVersion = 6;
+    Hotjar.init(siteId, hotjarVersion);
+    
     let rightContainer = this.rightContainer.current;
     let leftContainer = this.leftContainer.current;
     let wrapperRef = this.wrapperRef.current;
