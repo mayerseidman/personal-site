@@ -790,7 +790,7 @@
   .about-details {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: baseline;
   }
 
   .slide-down-about {
@@ -802,11 +802,11 @@
   }
   .links {
     a {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       opacity: 0.8;
       color: #f4c42f;
       display: block;
-      font-size: 1.3em;
+      font-size: 1em;
       text-decoration: none;
       padding-bottom: 2px;
       border-bottom: solid 1.5px transparent;
@@ -825,9 +825,12 @@
   font-size: 1.3rem;
   line-height: 1.3rem;
   text-decoration: none;
-  &.active {
+  /*&.active {
     opacity: 0.8 !important;
-  }
+  }*/
+  @media only screen and (max-width: 450px) {
+        opacity: 1;
+      }
 }
 
 .currentInterests {
@@ -858,10 +861,10 @@
   &.links {
     a {
       opacity: 0.8;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       color: #f4c42f;
       display: block;
-      font-size: 1.3em;
+      font-size: 1em;
       text-decoration: none;
       padding-bottom: 2px;
       border-bottom: solid 1.5px transparent;

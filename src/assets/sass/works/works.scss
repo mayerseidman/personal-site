@@ -807,7 +807,7 @@ $primary-white: #fff;
     
     .floating-profile-work {
         position: absolute;
-        left: 12%;
+        left: 10%;
         top:25%;
         width: 28%;
         height: 50%;
@@ -1704,6 +1704,13 @@ $primary-white: #fff;
     }
 }
 
+.mobileShow {
+    display: none;
+    @media only screen and (max-width: 450px) {
+        display: block;
+    }
+}
+
 .dot {
     background-color: #FCC300;
     color: #171C46;
@@ -1790,9 +1797,6 @@ $primary-white: #fff;
     font-size: 1.3rem;
     line-height: 1.3rem;
     text-decoration: none;
-    &.active {
-        opacity: 0.8 !important;
-    }
 }
 .sketchingTitles {
     margin-bottom: 15px;

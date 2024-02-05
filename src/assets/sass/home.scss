@@ -395,6 +395,12 @@
     z-index: 2;
   }
 
+  .right-container-home {
+    .main-text {
+      flex-grow: 75;
+    }
+  }
+
   .main-text {
     flex-grow: 25;
     color: white;
@@ -433,11 +439,12 @@
     text-decoration: none;
   }
 
-  .nav-link:hover {
-    padding-bottom: 2px;
-    border-bottom: 1px solid #fff;
-    opacity: 1;
-    transition: all 0.25;
+  .nav-link:hover,
+  .nav-link.active {
+      padding-bottom: 2px;
+      border-bottom: 1px solid #fff;
+      opacity: 1;
+      transition: all 0.25s; /* Added 's' for seconds */
   }
 
   .float-dark-primary {
@@ -504,7 +511,7 @@
 
   .floating-profile-home.is-loaded {
     top: 25%;
-    left: 12%;
+    left: 10%;
     opacity: 1;
   }
   .make-visible {

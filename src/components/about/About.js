@@ -105,7 +105,7 @@ class About extends Component {
           <div className="main-text">
             <div className="text-top"></div>
             <div ref={this.textWrapper} className="text-container-about">
-              <p className="about-text">About.</p>
+              <p className="about-text mobileShow">About.</p>
               <div className="scrollable-container">
                 <div className="about-details">
                   <p className="emp-text">journey</p>

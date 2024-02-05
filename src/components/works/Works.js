@@ -158,7 +158,7 @@ class Works extends Component {
           <div className="main-text">
             <div className="text-top"></div>
             <div ref={this.textWrapper} className="text-container-works">
-              <p className="my-work">My Work.</p>
+              <p className="my-work mobileShow">Work.</p>
               <div className="scrollable-container">
               <div className="all-works">
                 <Link
