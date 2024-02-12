@@ -5,6 +5,7 @@ import { withLoadState } from "../contexts/LoadStateContext";
 import Text from "./text";
 import "../../assets/sass/home.scss";
 import withRouter from "../../utils/WithRouter";
+import { Naviagtion } from "../../navigation/NavUtil";
 
 class Home extends Component {
   constructor(props) {
@@ -29,8 +30,11 @@ class Home extends Component {
     let textWrapper = this.textWrapper.current;
     let delayedText = this.delayedText.current;
     let imageRef = this.imageRef.current;
-
-    if (!this.props.context.state.homeLoaded) {
+    const path = this.props.context.state.lastLocation?.pathname;
+    if (
+      !this.props.context.state.homeLoaded ||
+      ![Naviagtion.DEAFULT, Naviagtion.HOME, "/work"].includes(path)
+    ) {
       rightContainer.classList.toggle("animate-right-container");
       leftContainer.classList.toggle("animate-left-container");
       wrapperRef.classList.toggle("animate-navigation");
@@ -67,10 +71,9 @@ class Home extends Component {
 
       textWrapper = this.textWrapper.current;
       delayedText = this.delayedText.current;
+      wrapperRef.classList.add("slide-in-nav");
       if (!this.props.context.state.lastLocation) {
-        profileRef.classList.toggle("is-loaded");
         textWrapper.classList.toggle("slide-down");
-        wrapperRef.classList.toggle("slide-in-nav");
         imageRef.classList.toggle("fade-in");
 
         // mobile
@@ -92,9 +95,8 @@ class Home extends Component {
       delayedText.classList.toggle("show");
       // mobile
 
-      this.props.context.setLastLocation(this.props.location);
       if (!profileRef.classList.contains("is-loaded")) {
-        profileRef.classList.toggle("is-loaded");
+        profileRef.classList.add("is-loaded");
       }
     }, delay);
   }
@@ -130,7 +132,7 @@ class Home extends Component {
     return (
       <div ref={this.wrapperRef} className="navigation-home">
         <p>
-          <NavLink className="nav-link" to="/works">
+          <NavLink className="nav-link" to="/work">
             Work
           </NavLink>
         </p>
@@ -160,6 +162,7 @@ class Home extends Component {
       var delay = 2000;
     }
     const title = <Text delay={delay} />;
+    const blurb = "I'm passionate about Ed-Tech, self learning, and creating memorable experiences."
     return (
       <div className="main-content">
         <div className="main-empty-1"></div>
@@ -174,8 +177,7 @@ class Home extends Component {
                 </p>
                 <section ref={this.delayedText} className="text-delayed">
                   <p className="text-paragraph text-style">
-                    I'm passionate about Ed-Tech, self learning, and creating
-                    memorable experiences.
+                    I passionate about self learning and designing experiences that enrich people's lives.
                   </p>
                   <p className="learn-more">
                     Learn more
@@ -186,7 +188,7 @@ class Home extends Component {
                     </span>{" "}
                     or view
                     <span className="home-link">
-                      <Link to="/works" className="plain-link">
+                      <Link to="/work" className="plain-link">
                         my work
                       </Link>
                     </span>
@@ -210,8 +212,15 @@ class Home extends Component {
   }
 
   renderImageContainer() {
+    const profileIsLoaded =
+      this.props.context.state.lastLocation?.pathname == "/work"
+        ? "is-loaded"
+        : null;
     return (
-      <div ref={this.profileRef} className="floating-profile-home">
+      <div
+        ref={this.profileRef}
+        className={`floating-profile-home ${profileIsLoaded}`}
+      >
         <div ref={this.imageContainer} className="profile-image-container">
           <img
             ref={this.imageRef}
@@ -223,6 +232,10 @@ class Home extends Component {
         <div className="profile-image-blank"></div>
       </div>
     );
+  }
+
+  componentWillUnmount() {
+    this.props.context.setLastLocation(this.props.location);
   }
   render() {
     return (

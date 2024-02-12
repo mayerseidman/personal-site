@@ -5,7 +5,7 @@ import About from "./components/about/About";
 import Works from "./components/works/Works";
 import { Home } from "./components/home";
 import LoadStateContext from "./components/contexts/LoadStateContext";
-
+import { Naviagtion } from "./navigation/NavUtil";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -31,9 +31,9 @@ class App extends Component {
       >
         <Router>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
-            <Route path="/works/*" element={<Works />} />
+            <Route exact path={Naviagtion.DEAFULT} element={<Home />} />
+            <Route exact path={Naviagtion.ABOUT} element={<About />} />
+            <Route path={Naviagtion.WORK} element={<Works />} />
           </Routes>
         </Router>
       </LoadStateContext.Provider>

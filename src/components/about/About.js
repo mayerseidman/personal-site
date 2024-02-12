@@ -8,6 +8,7 @@ import drawing from "../../assets/images/about/music.gif";
 import { withLoadState } from "../contexts/LoadStateContext";
 
 import "../../assets/sass/about/about.scss";
+import withRouter from "../../utils/WithRouter";
 
 class About extends Component {
   constructor(props) {
@@ -69,7 +70,7 @@ class About extends Component {
     return (
       <div ref={this.wrapperRef} className="navigation-about">
         <p>
-          <NavLink className="nav-link" to="/works">
+          <NavLink className="nav-link" to="/work">
             Work
           </NavLink>
         </p>
@@ -343,4 +344,4 @@ class About extends Component {
   }
 }
 
-export default withLoadState(About);
+export default withLoadState(withRouter(About));
