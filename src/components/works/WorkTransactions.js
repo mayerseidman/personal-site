@@ -309,10 +309,10 @@ class WorkOne extends React.Component {
     }
     renderFinalVersion() {
         return (
-            <div className="modal-section">
+            <div className="modal-section finalTransactions">
                 <h3>FINAL VERSION</h3>
                 <div className="color-box-sections">
-                    <div>
+                    <div className="">
                         <p className="all-caps news-sub-heading">ADMIN VIEW</p>
                         <img className="full-width" src={ finalVersionIMG1 } alt="final-version-3" />
                     </div>

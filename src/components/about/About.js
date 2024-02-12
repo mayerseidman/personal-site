@@ -136,26 +136,23 @@ class About extends Component {
                     design and the rest is history.
                   </p>
                   <p className="p-over">
-                    I started working remotely a few years ago and traveled the
-                    world (literally). I now live in beautiful Vancouver,
-                    Canada.
+                    I started working remotely 7 years ago and have traveled the
+                    world.
                   </p>
                 </div>
                 <div className="about-details">
                   <p className="emp-text">skills</p>
                   <p className="p-over">
-                    From UX research through user feedback (after production), I
-                    have immersed myself in design and am experienced in all
-                    design areas. I enjoy iterating on a product or feature and
+                    From UX research through user feedback, I
+                    am experienced in all areas of design. I enjoy iterating on a product or feature and
                     seeing it through till the end. I believe that when you
                     sweat out the details it changes a user's experience and
                     they can feel it too.
                   </p>
                   <p className="p-over">
-                    I like using my coding experience and versatility whenever I
-                    can. I use my coding skills to prototype (Javascript/REACT),
-                    make final touches on a product (CSS), and deeply understand
-                    the workflow of developers (Ruby and Swift).
+                    I use my coding skills and versatility to prototype,
+                    make final touches on a product, and to collaborate deeply
+                    with developers.
                   </p>
                   <p className="p-over">
                     I believe it is highly beneficial for everyone on a team
@@ -189,7 +186,7 @@ class About extends Component {
                     </a>
                     , learning a new language, or digging into a new design
                     system, I try to grow and learn continually. In my free time
-                    you can find me reading, writing, studying languages, or
+                    you can find me reading, creating a side project, studying languages, or
                     mixing music.
                   </p>
                   <div className="p-over currentInterests">
@@ -220,7 +217,7 @@ class About extends Component {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Mixcloud
+                      Music Mixes (Mixcloud)
                     </a>
                     <a
                       className="regular-link"
@@ -228,7 +225,7 @@ class About extends Component {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      Pinterest
+                      Fashion Creations (Pinterest)
                     </a>
                     <a
                       className="xl"
@@ -245,6 +242,13 @@ class About extends Component {
                       rel="noreferrer"
                     >
                       Discover New Tunes
+                    </a>
+                    <a
+                      href="https://fresh-prince.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Fresh Prince Generator
                     </a>
                   </p>
                 </div>
