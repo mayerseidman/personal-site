@@ -177,7 +177,7 @@ class Home extends Component {
                 </p>
                 <section ref={this.delayedText} className="text-delayed">
                   <p className="text-paragraph text-style">
-                    I passionate about self learning and designing experiences that enrich people's lives.
+                    I'm passionate about designing experiences that enrich people's lives and self learning.
                   </p>
                   <p className="learn-more">
                     Learn more
