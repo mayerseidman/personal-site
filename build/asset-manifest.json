@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ac84f26f.css",
-    "main.js": "/static/js/main.19ea4017.js",
+    "main.js": "/static/js/main.1d37c091.js",
     "static/media/sunsets.gif": "/static/media/sunsets.be8f9ce35a12f24a52c7.gif",
     "static/media/teacher-exercises.gif": "/static/media/teacher-exercises.9d19229eafe56ecb3d82.gif",
     "static/media/music.gif": "/static/media/music.a5ecadf5c44ea7cec9a8.gif",
@@ -19,7 +19,7 @@
     "static/media/final-version-2.png": "/static/media/final-version-2.fdeb27967f734ce72860.png",
     "static/media/hifi-two.png": "/static/media/hifi-two.303fb350d85ecefa988a.png",
     "static/media/problem-img.png": "/static/media/problem-img.758980b16470760de5ed.png",
-    "static/media/final-version-1.png": "/static/media/final-version-1.0f71a4df67cfa590d8f2.png",
+    "static/media/final-version-1.png": "/static/media/final-version-1.43da255c06d18f141247.png",
     "static/media/final-img.png": "/static/media/final-img.b8aea98ebe709e94366f.png",
     "static/media/annotation-dashboard.png": "/static/media/annotation-dashboard.5db15412e59394775b12.png",
     "static/media/annotation-data.png": "/static/media/annotation-data.bc009985892ddbb08bbb.png",
@@ -79,10 +79,10 @@
     "static/media/ideation-img.png": "/static/media/ideation-img.f9a463d9c17b7f21f98a.png",
     "index.html": "/index.html",
     "main.ac84f26f.css.map": "/static/css/main.ac84f26f.css.map",
-    "main.19ea4017.js.map": "/static/js/main.19ea4017.js.map"
+    "main.1d37c091.js.map": "/static/js/main.1d37c091.js.map"
   },
   "entrypoints": [
     "static/css/main.ac84f26f.css",
-    "static/js/main.19ea4017.js"
+    "static/js/main.1d37c091.js"
   ]
 }
