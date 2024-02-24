@@ -38,7 +38,7 @@ class WorkTwo extends React.Component {
     return (
       <div className="second-content">
         <div className="section-intro">
-          <h3>INTRODUCTION</h3>
+          <h3>BACKGROUND</h3>
           <p>
             The Whooo's Reading platform is a higher-level thinking alternative
             to multiple choice. Students write responses to open-ended questions

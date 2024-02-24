@@ -33,7 +33,7 @@ class WorkOne extends React.Component {
     return (
       <div className="second-content">
         <div className="section-intro">
-          <h3>INTRODUCTION</h3>
+          <h3>BACKGROUND</h3>
           <p>
             Since the beginning, Whooo's Reading (WR) has been great at helping
             teachers track their students' independent reading and motivating
