@@ -51,7 +51,7 @@ class Works extends Component {
         this.state = {
             works: {
                 "data-experience": {
-                    title: "Data Experience Redesign",
+                    title: "Data Experience",
                     description_one:
                     "A more robust and easy to use data experience to help teachers understand student progression",
                     type: "Research, Structure, Interaction, Visual",
