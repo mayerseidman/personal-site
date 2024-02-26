@@ -449,348 +449,336 @@ function Work({ works, imageRef }) {
         }
         // return clearTimeout(timer);
     }, [isClose, imageRef, navigate]);
-
-  const handleClick = () => {
-    let image = imageRef.current;
-    if (image.classList.contains("blurred")) {
-      image.classList.toggle("blurred");
+    const handleClick = () => {
+        let image = imageRef.current;
+        if (image.classList.contains("blurred")) {
+            image.classList.toggle("blurred");
+        }
+        setClose(true);
+    };
+    const handleScrollUp = () => {
+        workDetailRef.current.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    const goBack = () => {
+        setClose(true);
+    };
+    let path = location.pathname;
+    var content;
+    if (path === "/work/data-experience") {
+        let finalVersionImg = <img src={finalVersionData} alt="final-version" />;
+        content = (
+            <div ref={modalRef} className="modal-main">
+                <div ref={workDetailRef} className="work-details">
+                    <div ref={topRef} className="top-content">
+                        <span
+                          onClick={() => handleClick()}
+                          className="close-modal"
+                          to="/works"
+                        >X
+                        </span>
+                    </div>
+                <div
+                    ref={goTopRef}
+                    className="go-to-top hide"
+                    onClick={() => handleScrollUp()}>↑ Go Up</div>
+                <div className="first-content">
+                    <div>
+                        <p className="main-work-text">{work.title}</p>
+                        <p className="source">
+                            <a
+                              href="https://www.whooosreading.org/"
+                              target="_blank"
+                              rel="noreferrer">
+                                Whooo's Reading - a K-12 reading comprehension company
+                            </a>
+                        </p>
+                        <p className="secondary-work-text">{work.description_one}</p>
+                          {/*<p className="works-type">
+                            <span>MY ROLE:</span> {work.type}
+                          </p>
+                          <p className="source">
+                            <span>
+                              <b>SOURCE:</b>
+                            </span>{" "}
+                            <a
+                              href="https://www.whooosreading.org"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              www.whooosreading.org
+                            </a>
+                          </p>*/}
+                        </div>
+                        <div className="modal-img-one">{finalVersionImg}</div>
+                    </div>
+                    <WorkTwo />
+                </div>
+            </div>
+        );
+    } else if (path === "/work/reading-comprehension-tool") {
+        var finalVersionImg = <img src={finalVersionWRLite} alt="final-version" />;
+    content = (
+        <div ref={modalRef} className="modal-main">
+            <div ref={workDetailRef} className="work-details">
+                <div ref={topRef} className="top-content">
+                    <span
+                      onClick={() => handleClick()}
+                      className="close-modal"
+                      to="/works"
+                    >
+                      X
+                    </span>
+                </div>
+                <div
+                    ref={goTopRef}
+                    className="go-to-top hide"
+                    onClick={() => handleScrollUp()}
+                  >↑ Go Up
+                </div>
+                <div className="first-content">
+                    <div>
+                        <p className="main-work-text">{work.title}</p>
+                        <p className="source">
+                            <a
+                              href="https://whooosreading.org"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              Whooo's Reading - a K-12 reading comprehension company
+                            </a>
+                        </p>
+                        <p className="secondary-work-text">{work.description_one}</p>
+                          {/*<p className="works-type">
+                            <span>MY ROLE:</span> {work.type}
+                          </p>
+                          <p className="source">
+                            <b>SOURCE:</b>{" "}
+                            <a
+                              href="https://www.whooosreading.org"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              www.whooosreading.org
+                            </a>
+                          </p>*/}
+                    </div>
+                    <div className="modal-img-one">{finalVersionImg}</div>
+                </div>
+                <WorkOne />
+            </div>
+        </div>
+    );
+    } else if (path === "/works/sunsets-are-awesome") {
+        let finalVersionImg = <img src={finalVersionSunsets} alt="final-version" />;
+        content = (
+            <div ref={modalRef} className="modal-main">
+                <div ref={workDetailRef} className="work-details">
+                    <div ref={topRef} className="top-content">
+                        <span
+                        onClick={() => handleClick()}
+                        className="close-modal"
+                        to="/works"
+                        >
+                          X
+                        </span>
+                  </div>
+                  <div
+                    ref={goTopRef}
+                    className="go-to-top hide"
+                    onClick={() => handleScrollUp()}
+                  >
+                    ↑ Go Up
+                </div>
+                <div className="first-content">
+                    <div>
+                        <p className="main-work-text">{work.title}</p>
+                        <p className="secondary-work-text">{work.description_one}</p>
+                        <p className="works-type">
+                            <span>MY ROLE:</span> {work.type}
+                        </p>
+                        <p className="source">
+                            <b>SOURCE:</b>{" "}
+                            <a
+                              href="https://sunsets-are-awesome.herokuapp.com"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                                sunsets-are-awesome.herokuapp.com
+                            </a>
+                        </p>
+                    </div>
+                    <div className="modal-img-three">{finalVersionImg}</div>
+                </div>
+            <WorkThree />
+        </div>
+      </div>
+    );
+    } else if (path === "/work/my-career") {
+        let finalVersionImg = <img src={ finalImg } alt="final-version" />;
+        content = (
+            <div ref={modalRef} className="modal-main">
+                <div ref={workDetailRef} className="work-details">
+                    <div ref={topRef} className="top-content">
+                        <span
+                          onClick={() => handleClick()}
+                          className="close-modal"
+                          to="/works"
+                        >
+                          X
+                        </span>
+                    </div>
+                <div
+                    ref={goTopRef}
+                    className="go-to-top hide"
+                    onClick={() => handleScrollUp()}>
+                    ↑ Go Up
+                </div>
+                <div className="first-content">
+                    <div>
+                        <p className="main-work-text">{work.title}</p>
+                        <p className="source">
+                            <a
+                              href="https://www.pairin.com/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              PAIRIN - a workforce development solutions company
+                            </a>
+                        </p>
+                        <p className="secondary-work-text">{work.description_one}</p>
+                    </div>
+                    <div className="modal-img-three">{ finalVersionImg }</div>
+                </div>
+                <WorkMyCareer />
+            </div>
+        </div>
+    );
+    } else if (path === "/work/fresh-prince-generator") {
+        let finalVersionImg = <img src={finalVersionSunsets} alt="final-version" />;
+            content = (
+                <div ref={modalRef} className="modal-main">
+                    <div ref={workDetailRef} className="work-details">
+                        <div ref={topRef} className="top-content">
+                        <span
+                          onClick={() => handleClick()}
+                          className="close-modal"
+                          to="/works"
+                        >
+                          X
+                        </span>
+                    </div>
+                <div
+                    ref={goTopRef}
+                    className="go-to-top hide"
+                    onClick={() => handleScrollUp()}>
+                        ↑ Go Up
+                </div>
+            <div className="first-content">
+                <div>
+                    <p className="main-work-text">{work.title}</p>
+                    <p className="secondary-work-text">{work.description_one}</p>
+                    <p className="works-type">
+                        <span>MY ROLE:</span> {work.type}
+                    </p>
+                    <p className="source">
+                        <b>SOURCE:</b>{" "}
+                        <a
+                          href="https://sunsets-are-awesome.herokuapp.com"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          sunsets-are-awesome.herokuapp.com
+                        </a>
+                    </p>
+                </div>
+                <div className="modal-img-three">{finalVersionImg}</div>
+              </div>
+                <WorkThree />
+            </div>
+        </div>
+    );
+    } else if (path === "/work/dynamic-querying") {
+        let finalVersionImg = <img src={ dqGIF } alt="final-version" />;
+        content = (
+            <div ref={modalRef} className="modal-main">
+                <div ref={workDetailRef} className="work-details">
+                    <div ref={topRef} className="top-content">
+                        <span
+                          onClick={() => handleClick()}
+                          className="close-modal"
+                          to="/works"
+                        >
+                          X
+                        </span>
+                    </div>
+                <div
+                    ref={goTopRef}
+                    className="go-to-top hide"
+                    onClick={() => handleScrollUp()}>
+                        ↑ Go Up
+                </div>
+                <div className="first-content">
+                    <div>
+                        <p className="main-work-text">{work.title}</p>
+                        <p className="source">
+                            <a
+                              href="https://www.pairin.com/"
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              PAIRIN - a workforce development solutions company
+                            </a>
+                        </p>
+                        <p className="secondary-work-text">{work.description_one}</p>
+                    </div>
+                    <div className="modal-img-three">{ finalVersionImg }</div>
+                </div>
+                <WorkDQ />
+            </div>
+        </div>
+    );
+    } else if (path === "/work/transactions-tracker") {
+        let finalVersionImg = <img src={ transactionsGIF } alt="final-version" />;
+            content = (
+                <div ref={ modalRef } className="modal-main">
+                    <div ref={ workDetailRef } className="work-details">
+                        <div ref={ topRef } className="top-content">
+                            <span
+                              onClick={ () => handleClick() }
+                              className="close-modal"
+                              to="/works"
+                            >
+                              X
+                            </span>
+                        </div>
+                    <div
+                        ref={ goTopRef }
+                        className="go-to-top hide"
+                        onClick={ () => handleScrollUp() }
+                    >
+                        ↑ Go Up
+                    </div>
+                        <div className="first-content">
+                            <div>
+                                <p className="main-work-text">{ work.title }</p>
+                                <p className="source">
+                                    <a
+                                    href="https://www.pairin.com/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    >
+                                    PAIRIN - a workforce development solutions company
+                                    </a>
+                                </p>
+                                <p className="secondary-work-text">{ work.description_one }</p>
+                            </div>
+                        <div className="modal-img-three">{ finalVersionImg }</div>
+                    </div>
+                    <WorkTransactions />
+                </div>
+            </div>
+        );
     }
-    setClose(true);
-  };
-  const handleScrollUp = () => {
-    workDetailRef.current.scrollTo({ top: 0, behavior: "smooth" });
-  };
-  const goBack = () => {
-    setClose(true);
-  };
-
-  let path = location.pathname;
-  var content;
-  if (path === "/work/data-experience") {
-    let finalVersionImg = <img src={finalVersionData} alt="final-version" />;
-    content = (
-      <div ref={modalRef} className="modal-main">
-        <div ref={workDetailRef} className="work-details">
-          <div ref={topRef} className="top-content">
-            <span
-              onClick={() => handleClick()}
-              className="close-modal"
-              to="/works"
-            >
-              X
-            </span>
-          </div>
-          <div
-            ref={goTopRef}
-            className="go-to-top hide"
-            onClick={() => handleScrollUp()}
-          >
-            ↑ Go Up
-          </div>
-          <div className="first-content">
-            <div>
-              <p className="main-work-text">{work.title}</p>
-              <p className="source">
-                <a
-                  href="https://www.whooosreading.org/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Whooo's Reading - a K-12 reading comprehension company
-                </a>
-              </p>
-              <p className="secondary-work-text">{work.description_one}</p>
-              {/*<p className="works-type">
-                <span>MY ROLE:</span> {work.type}
-              </p>
-              <p className="source">
-                <span>
-                  <b>SOURCE:</b>
-                </span>{" "}
-                <a
-                  href="https://www.whooosreading.org"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  www.whooosreading.org
-                </a>
-              </p>*/}
-            </div>
-            <div className="modal-img-one">{finalVersionImg}</div>
-          </div>
-          <WorkTwo />
-        </div>
-      </div>
-    );
-  } else if (path === "/work/reading-comprehension-tool") {
-    console.log("WE GOT THE ROUTE")
-    var finalVersionImg = <img src={finalVersionWRLite} alt="final-version" />;
-    content = (
-      <div ref={modalRef} className="modal-main">
-        <div ref={workDetailRef} className="work-details">
-          <div ref={topRef} className="top-content">
-            <span
-              onClick={() => handleClick()}
-              className="close-modal"
-              to="/works"
-            >
-              X
-            </span>
-          </div>
-          <div
-            ref={goTopRef}
-            className="go-to-top hide"
-            onClick={() => handleScrollUp()}
-          >
-            ↑ Go Up
-          </div>
-          <div className="first-content">
-            <div>
-              <p className="main-work-text">{work.title}</p>
-              <p className="source">
-                <a
-                  href="https://whooosreading.org"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Whooo's Reading - a K-12 reading comprehension company
-                </a>
-              </p>
-              <p className="secondary-work-text">{work.description_one}</p>
-              {/*<p className="works-type">
-                <span>MY ROLE:</span> {work.type}
-              </p>
-              <p className="source">
-                <b>SOURCE:</b>{" "}
-                <a
-                  href="https://www.whooosreading.org"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  www.whooosreading.org
-                </a>
-              </p>*/}
-            </div>
-            <div className="modal-img-one">{finalVersionImg}</div>
-          </div>
-          <WorkOne />
-        </div>
-      </div>
-    );
-  } else if (path === "/works/sunsets-are-awesome") {
-    let finalVersionImg = <img src={finalVersionSunsets} alt="final-version" />;
-    content = (
-      <div ref={modalRef} className="modal-main">
-        <div ref={workDetailRef} className="work-details">
-          <div ref={topRef} className="top-content">
-            <span
-              onClick={() => handleClick()}
-              className="close-modal"
-              to="/works"
-            >
-              X
-            </span>
-          </div>
-          <div
-            ref={goTopRef}
-            className="go-to-top hide"
-            onClick={() => handleScrollUp()}
-          >
-            ↑ Go Up
-          </div>
-          <div className="first-content">
-            <div>
-              <p className="main-work-text">{work.title}</p>
-              <p className="secondary-work-text">{work.description_one}</p>
-              <p className="works-type">
-                <span>MY ROLE:</span> {work.type}
-              </p>
-              <p className="source">
-                <b>SOURCE:</b>{" "}
-                <a
-                  href="https://sunsets-are-awesome.herokuapp.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  sunsets-are-awesome.herokuapp.com
-                </a>
-              </p>
-            </div>
-            <div className="modal-img-three">{finalVersionImg}</div>
-          </div>
-          <WorkThree />
-        </div>
-      </div>
-    );
-  } else if (path === "/work/my-career") {
-    let finalVersionImg = <img src={ finalImg } alt="final-version" />;
-    content = (
-      <div ref={modalRef} className="modal-main">
-        <div ref={workDetailRef} className="work-details">
-          <div ref={topRef} className="top-content">
-            <span
-              onClick={() => handleClick()}
-              className="close-modal"
-              to="/works"
-            >
-              X
-            </span>
-          </div>
-          <div
-            ref={goTopRef}
-            className="go-to-top hide"
-            onClick={() => handleScrollUp()}
-          >
-            ↑ Go Up
-          </div>
-          <div className="first-content">
-            <div>
-              <p className="main-work-text">{work.title}</p>
-              <p className="source">
-                <a
-                  href="https://www.pairin.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  PAIRIN - a workforce development solutions company
-                </a>
-              </p>
-              <p className="secondary-work-text">{work.description_one}</p>
-            </div>
-            <div className="modal-img-three">{ finalVersionImg }</div>
-          </div>
-          <WorkMyCareer />
-        </div>
-      </div>
-    );
-  } else if (path === "/work/fresh-prince-generator") {
-    let finalVersionImg = <img src={finalVersionSunsets} alt="final-version" />;
-    content = (
-      <div ref={modalRef} className="modal-main">
-        <div ref={workDetailRef} className="work-details">
-          <div ref={topRef} className="top-content">
-            <span
-              onClick={() => handleClick()}
-              className="close-modal"
-              to="/works"
-            >
-              X
-            </span>
-          </div>
-          <div
-            ref={goTopRef}
-            className="go-to-top hide"
-            onClick={() => handleScrollUp()}
-          >
-            ↑ Go Up
-          </div>
-          <div className="first-content">
-            <div>
-              <p className="main-work-text">{work.title}</p>
-              <p className="secondary-work-text">{work.description_one}</p>
-              <p className="works-type">
-                <span>MY ROLE:</span> {work.type}
-              </p>
-              <p className="source">
-                <b>SOURCE:</b>{" "}
-                <a
-                  href="https://sunsets-are-awesome.herokuapp.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  sunsets-are-awesome.herokuapp.com
-                </a>
-              </p>
-            </div>
-            <div className="modal-img-three">{finalVersionImg}</div>
-          </div>
-          <WorkThree />
-        </div>
-      </div>
-    );
-  } else if (path === "/work/dynamic-querying") {
-    let finalVersionImg = <img src={ dqGIF } alt="final-version" />;
-    content = (
-      <div ref={modalRef} className="modal-main">
-        <div ref={workDetailRef} className="work-details">
-          <div ref={topRef} className="top-content">
-            <span
-              onClick={() => handleClick()}
-              className="close-modal"
-              to="/works"
-            >
-              X
-            </span>
-          </div>
-          <div
-            ref={goTopRef}
-            className="go-to-top hide"
-            onClick={() => handleScrollUp()}
-          >
-            ↑ Go Up
-          </div>
-          <div className="first-content">
-            <div>
-              <p className="main-work-text">{work.title}</p>
-              <p className="source">
-                <a
-                  href="https://www.pairin.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  PAIRIN - a workforce development solutions company
-                </a>
-              </p>
-              <p className="secondary-work-text">{work.description_one}</p>
-            </div>
-            <div className="modal-img-three">{ finalVersionImg }</div>
-          </div>
-          <WorkDQ />
-        </div>
-      </div>
-    );
-  } else if (path === "/work/transactions-tracker") {
-    let finalVersionImg = <img src={ transactionsGIF } alt="final-version" />;
-    content = (
-      <div ref={ modalRef } className="modal-main">
-        <div ref={ workDetailRef } className="work-details">
-          <div ref={ topRef } className="top-content">
-            <span
-              onClick={ () => handleClick() }
-              className="close-modal"
-              to="/works"
-            >
-              X
-            </span>
-          </div>
-          <div
-            ref={ goTopRef }
-            className="go-to-top hide"
-            onClick={ () => handleScrollUp() }
-          >
-            ↑ Go Up
-          </div>
-          <div className="first-content">
-            <div>
-              <p className="main-work-text">{ work.title }</p>
-              <p className="source">
-                <a
-                  href="https://www.pairin.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  PAIRIN - a workforce development solutions company
-                </a>
-              </p>
-              <p className="secondary-work-text">{ work.description_one }</p>
-            </div>
-            <div className="modal-img-three">{ finalVersionImg }</div>
-          </div>
-          <WorkTransactions />
-        </div>
-      </div>
-    );
-  }
 
     return (
         <div className="work-modal">

@@ -531,7 +531,7 @@ class WorkTwo extends React.Component {
   renderTakeaways() {
     return (
       <div className="bottom-box-content">
-        <h3>WHAT I LEARNED</h3>
+        <h3>TAKEAWAYS</h3>
         <div className="bottom-div">
           <div className="bottom-content">
             <b>NAVIGATION</b>
