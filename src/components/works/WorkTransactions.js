@@ -21,23 +21,6 @@ import finalVersionIMG2 from "../../assets/images/transactions/final-version-2.p
 
 import combinedSiteMaps from "../../assets/images/wr-lite/combined-sitemaps.png";
 
-import scenarioMapping from "../../assets/images/wr-lite/scenario-mapping.png";
-import goalsActionsScreen from "../../assets/images/wr-lite/goals-actions-screen.png";
-import narrativeSummary from "../../assets/images/wr-lite/narrative-summary.png";
-
-import lofiOne from "../../assets/images/wr-lite/lofi-one.png";
-import lofiTwo from "../../assets/images/wr-lite/lofi-two.png";
-import lofiThree from "../../assets/images/wr-lite/lofi-three.png";
-import lofisAnnotated from "../../assets/images/wr-lite/lofis-annotated.png";
-
-import teacherExercisesWireframe from "../../assets/images/wr-lite/teacher-exercises.png";
-import studentExercisesWireframe from "../../assets/images/wr-lite/student-exercises.png";
-import teacherHomePageWireframe from "../../assets/images/wr-lite/teacher-homepage.png";
-
-import assignmentsFinal from "../../assets/images/wr-lite/teacher-homepage-final.png";
-import insightsFinal from "../../assets/images/wr-lite/insights-final.png";
-import finalVersionWRLite from "../../assets/images/wr-lite/teacher-exercises.gif";
-
 class WorkOne extends React.Component {
     constructor(props) {
         super(props);
@@ -58,72 +41,72 @@ class WorkOne extends React.Component {
                         associated with specific services, such as vendor payments or approved expenses, 
                         streamlining the process of financial management and ensuring transparent accountability.
                     </p>
-          <div className="spaced-section">
-            <p className="all-caps news-sub-heading">ROLE</p>
-            <p>
-              Through iterative processes, I focused on addressing user pain points effectively, 
-              ensuring that our solution was intuitive and seamless. 
-              My contributions involved crafting and refining the user interface and experience, 
-              leveraging the collective feedback and ideas generated within the team to continuously improve our product.
-            </p>
-            <p>
-              I spent a lot of time on creating and  refining the structure of the various flows of a 
-              financial service, ensuring seamless navigation and user interaction.
-            </p>
-          </div>
-        </div>
-        <div className="double-images-wrapper">
-          <div className="modal-small-img">
-            <img
-              className=""
-              src={ backgroundIMG }
-              alt="final-gif"
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
-  renderProblem() {
-    return (
-      <div className="second-content grey">
-        <div className="section-intro">
-          <h3>DEFINING THE PROBLEM</h3>
-          <p className="all-caps news-sub-heading">THE PROBLEM</p>
-          <p>
-            Case managers encountered difficulties in efficiently tracking services provided to their constituents 
-            that involved funding-related aspects, as our Service Tracker (existing system) lacked the capacity to 
-            manage financial services and associated workflows. Additionally, admins needed a way to approve 
-            obligations and expenses across different case managers, adding another layer of complexity to the workflow.  
-          </p>
-          <p>
-            With multiple steps required, including tracking service details, obtaining approvals, 
-            transitioning from obligation to expense, and securing subsequent approvals, there was a need for 
-            a streamlined method to manage these tasks seamlessly.
-          </p>
-           <div className="spaced-section">
-            <p className="all-caps news-sub-heading">PROJECT GOAL</p>
-            <p>
-             Create an experience that empowers case managers and admins alike in accurately logging, 
-             managing, and tracking services, obligations, and expenses for their constituents. 
-             Ultimately, this experience aims to provide comprehensive insights into participant 
-             progress and facilitate informed decision-making and personalized support for 
-             both case managers and admins.
-            </p>
-          </div>  
-        </div>
-        <div className="double-images-wrapper">
-          <div className="modal-small-img">
-            <img
-              className=""
-              src={ problemIMG }
-              alt="problem-img"
-            />
-          </div>
-        </div>
-      </div>   
-    );
-  }
+                    <div className="spaced-section">
+                        <p className="all-caps news-sub-heading">ROLE</p>
+                        <p>
+                            Through iterative processes, I focused on addressing user pain points effectively, 
+                            ensuring that our solution was intuitive and seamless. 
+                            My contributions involved crafting and refining the user interface and experience, 
+                            leveraging the collective feedback and ideas generated within the team to continuously improve our product.
+                        </p>
+                        <p>
+                            I spent a lot of time on creating and  refining the structure of the various flows of a 
+                            financial service, ensuring seamless navigation and user interaction.
+                        </p>
+                    </div>
+                </div>
+                <div className="double-images-wrapper">
+                    <div className="modal-small-img">
+                        <img
+                            className=""
+                            src={ backgroundIMG }
+                            alt="final-gif"
+                        />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    renderProblem() {
+        return (
+            <div className="second-content grey">
+                <div className="section-intro">
+                    <h3>DEFINING THE PROBLEM</h3>
+                    <p className="all-caps news-sub-heading">THE PROBLEM</p>
+                    <p>
+                        Case managers encountered difficulties in efficiently tracking services provided to their constituents 
+                        that involved funding-related aspects, as our Service Tracker (existing system) lacked the capacity to 
+                        manage financial services and associated workflows. Additionally, admins needed a way to approve 
+                        obligations and expenses across different case managers, adding another layer of complexity to the workflow.  
+                    </p>
+                    <p>
+                        With multiple steps required, including tracking service details, obtaining approvals, 
+                        transitioning from obligation to expense, and securing subsequent approvals, there was a need for 
+                        a streamlined method to manage these tasks seamlessly.
+                    </p>
+                    <div className="spaced-section">
+                        <p className="all-caps news-sub-heading">PROJECT GOAL</p>
+                        <p>
+                            Create an experience that empowers case managers and admins alike in accurately logging, 
+                            managing, and tracking services, obligations, and expenses for their constituents. 
+                            Ultimately, this experience aims to provide comprehensive insights into participant 
+                            progress and facilitate informed decision-making and personalized support for 
+                            both case managers and admins.
+                        </p>
+                    </div>  
+                </div>
+                    <div className="double-images-wrapper">
+                        <div className="modal-small-img">
+                        <img
+                            className=""
+                            src={ problemIMG }
+                            alt="problem-img"
+                        />
+                    </div>
+                </div>
+            </div>   
+        );
+    }
     renderUnderstandingUsers() {
         return (
             <div className="second-content">
@@ -155,37 +138,33 @@ class WorkOne extends React.Component {
             </div>
         );
     }
-  renderStructure() {
-    return (
-      <div className="modal-section grey">
-        <div className="modal-justify-left structure">
-          <p>
-            <b>FLOW and STRUCTURE</b>
-          </p>
-          <p>
-            Managing the lifecycle of an obligation or expense involves several stages that can 
-            pose challenges in maintaining a seamless workflow. These Stages are:
-            <ol>
-              <li>
-                Creating an obligation from the service
-              </li>
-              <li>The ability to edit/approve the obligation</li>
-              <li>Submitting the obligation as an expense (after obligation is approved) after money has been spent</li>
-              <li>The ability to edit/approve the expense</li>
-              <li>The ability (by anyone) to mark the task as done</li>
-            </ol>
-            I used a variety of methods to determine what the teacher’s
-            experience would look like. Each method had a slightly different
-            approach.
-          </p>
-          <p>
-            <b>SITE MAPS</b>
-          </p>
-          <img className="full-width" src={combinedSiteMaps} alt="site-maps" />
-        </div>
-      </div>
-    );
-  }
+    renderStructure() {
+        return (
+            <div className="modal-section grey">
+                <div className="modal-justify-left structure">
+                    <p>
+                        <b>FLOW and STRUCTURE</b>
+                    </p>
+                    <p>
+                        Managing the lifecycle of an obligation or expense involves several stages that can 
+                        pose challenges in maintaining a seamless workflow. These Stages are:
+                        <ol>
+                            <li>Creating an obligation from the service</li>
+                            <li>The ability to edit/approve the obligation</li>
+                            <li>Submitting the obligation as an expense (after obligation is approved) after money has been spent</li>
+                            <li>The ability to edit/approve the expense</li>
+                            <li>The ability (by anyone) to mark the task as done</li>
+                        </ol>
+                            I used a variety of methods to determine what the teacher’s
+                            experience would look like. Each method had a slightly different
+                            approach.
+                    </p>
+                    <p><b>SITE MAPS</b></p>
+                    <img className="full-width" src={combinedSiteMaps} alt="site-maps" />
+                </div>
+            </div>
+        );
+    }
     renderIdeation() {
         return (
             <div className="ideation">

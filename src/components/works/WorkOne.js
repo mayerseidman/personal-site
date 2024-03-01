@@ -423,274 +423,268 @@ class WorkOne extends React.Component {
       </div>
     );
   }
-  renderAnnotations() {
-    return (
-      <div className="left-to-full">
-        <div className="dark-section">
-          <div className="container-left primary-dark-text">
-            <b>TEACHER ASSIGNMENTS PROGRESS TABLE</b>
-            <p>
-              The table on this page shows the progress students have made on
-              the teacher's assignment (assigned exercises).
-            </p>
-          </div>
-          <div className="bigger-container assignments">
-            <img className="full-width" src={lofiThree} alt="" />
-          </div>
-        </div>
-        <div className="dark-section">
-          <div className="container-left">
-            <span className="subtitle">
-              <b>INSIGHTS</b>
-            </span>
+    renderAnnotations() {
+        return (
+            <div className="left-to-full">
+                <div className="dark-section">
+                    <div className="container-left primary-dark-text">
+                        <b>TEACHER ASSIGNMENTS PROGRESS TABLE</b>
+                        <p>
+                          The table on this page shows the progress students have made on
+                          the teacher's assignment (assigned exercises).
+                        </p>
+                    </div>
+                    <div className="bigger-container assignments">
+                        <img className="full-width" src={lofiThree} alt="" />
+                    </div>
+                </div>
+                <div className="dark-section">
+                    <div className="container-left">
+                        <span className="subtitle">
+                            <b>INSIGHTS</b>
+                        </span>
+                        <div>
+                            <div className="dot"><span>1</span></div>
+                            <div className="annotationText">
+                                <p className="boxed-text primary-dark-text">
+                                    <b>STUDENTS LIST</b>
+                                </p>
+                                <p className="boxed-text primary-dark-text">
+                                    Students listed by class are changeable here. (One student is
+                                    selected at any given time.)
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="dot"><span>2</span></div>
+                            <div className="annotationText">
+                                <p className="boxed-text primary-dark-text">
+                                    <b>SKILLSET VALUES</b>
+                                </p>
+                                <p className="boxed-text primary-dark-text">
+                                    A list of the top 3 skillset weaknesses and strengths of the
+                                    student. (One skillset is selected at any given time.)
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="dot">
+                                <span>3</span>
+                            </div>
+                            <div className="annotationText">
+                                <p className="boxed-text primary-dark-text">
+                                    <b>SKILLSET EXAMPLES</b>
+                                </p>
+                                <p className="boxed-text primary-dark-text">
+                                    Writing examples of the selected skillset.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div className="dot">
+                                <span>4</span>
+                            </div>
+                            <div className="annotationText">
+                                <p className="boxed-text primary-dark-text">
+                                    <b>PRACTICE EXERCISES</b>
+                                </p>
+                                <p className="boxed-text primary-dark-text">
+                                    Suggested exercises to assign for the skillset currently
+                                    selected.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="bigger-container">
+                        <img
+                          className="full-width"
+                          src={ lofisAnnotated }
+                          alt="lofi-annotated"
+                        />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    renderFeedbackAndMore() {
+        return (
+            <div className="modal-section contains-colored-background">
+                <div className="feedback-box">
+                    <h3>FEEDBACK</h3>
+                    <p>
+                        I did user testing in the office (with non product employees) to get
+                        some quick thoughts on the layouts.
+                    </p>
+                    <p>
+                        The second version was preferred for browsing exercises since it was
+                        more direct and less clunky. All of the filters/controls were placed
+                        above the exercises and could be done in one step.
+                    </p>
+                </div>
+                { this.renderAnnotations() }
+            </div>
+        );
+    }
+    renderWireframes() {
+        return (
+                <div className="modal-section wireframes grey contains-colored-background">
+                    <div className="regular">
+                        <h3>WIREFRAMES</h3>
+                        <span className="subtitle">
+                            <b>TEACHER EXERCISES</b>
+                        </span>
+                        <div className="wireframe">
+                            <img
+                              className="full-width"
+                              src={teacherExercisesWireframe}
+                              alt="teacher-exercises-wireframe"
+                            />
+                        </div>
+                    </div>
+                    <div className="no-top">
+                        <span className="subtitle exercises">
+                            <b>STUDENT EXERCISES</b>
+                        </span>
+                        <p>
+                            The student experience is quite simple as the only thing they can do
+                            is select an exercise to work on.
+                        </p>
+                        <div className="wireframe">
+                            <img
+                              className="full-width"
+                              src={ studentExercisesWireframe }
+                              alt="student-exercises-wireframe"
+                            />
+                        </div>
+                    </div>
+                    <div className="no-top">
+                        <span><b>ASSIGNMENTS</b></span>
+                        <p>
+                            The teacher dashboard has a progress table (bottom right) that shows
+                            student progression on their assignment.
+                        </p>
+                        <div className="wireframe">
+                            <img
+                              className="full-width"
+                              src={ teacherHomePageWireframe }
+                              alt="teacher-exercises-wireframe"
+                            />
+                        </div>
+                    </div>
+                    <div className="bottom-box-content">
+                        <h3>FEEDBACK</h3>
+                        <div className="bottom-div">
+                        <div className="bottom-content">
+                            <b>FILTERING</b>
+                            <p>
+                                Some teachers had trouble finding the exercises they wanted. We
+                                came up with several ideas of potential filters:
+                            </p>
+                            <p>
+                                Filter exercises by learning type (visual, audible, reading,
+                                etc) Filter exercises by prior reading vs. text provided in
+                                exercise Filter exercises by time estimate Filter exercises by
+                                traditional (mostly writing) vs. reward (more creative) Filter
+                                exercises by difficulty level
+                            </p>
+                        </div>
+                        <div className="bottom-content">
+                            <b>CONSTRAINTS</b>
+                            <p>
+                                Teachers often have 20 or 30 students in their assignment
+                                progress table, and maybe only assign 2 exercises. This would
+                                create a pretty big discrepancy between the height of the
+                                assignments box and the height of the progress table-making it a
+                                bit of an awkward experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="bottom-div">
+                        <div className="bottom-content">
+                            <b>WORDING</b>
+                            <p>
+                                In the assignment creation, the word "delete" was confusing as
+                                it seemed to imply that doing so would delete the exercises
+                                (instead of merely deleting the assignment).
+                            </p>
+                        </div>
+                        <div className="bottom-content">
+                            <b>DIFFERENTIATE</b>
+                            <p>
+                                To start, we only supported the ability to assign exercises to
+                                all of a teacher's students at once. There was already a lot of
+                                interest in being able to assign groups of students different
+                                exercises.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
+    renderFinalVersion() {
+        return (
+            <div className="modal-section final-section">
+                <div className="container">
+                    <h3>FINAL VERSION</h3>
+                    <b>TEACHER EXERCISES</b>
+                    <p>
+                        After hearing teachers talk about their use of Pinterest again, I
+                        decided that we should use their knowledge of that interface to our
+                        advantage. By mimicking aspects of that interface we could make
+                        their experience on Whooo's Reading that much smoother.
+                    </p>
+                    <p>
+                        The loading animation, buttons and thumbnail image on each exercise
+                        were all designed to orient users to their experience on Pinterest.
+                        I also decided to simplify it and remove the "inactive" exercises
+                        section. Meaning, that outside of assignments, teachers would not be
+                        able to control the exercises students do (on their own).
+                    </p>
+                    <img
+                        className="full-width gif-border"
+                        src={ finalVersionWRLite }
+                        alt="final-version"
+                    />
+                </div>
+                <div className="container">
+                    <b>ASSIGNMENTS</b>
+                    <p>
+                        I neatly stacked the assignment details on top of the assignments
+                        progress table. I also decided to simplify it and remove the
+                        frequency component for the first iteration.
+                    </p>
+                    <img
+                        className="full-width"
+                        src={ assignmentsFinal }
+                        alt="assignments"
+                    />
+                </div>
+                <div className="container">
+                    <b>INSIGHTS</b>
+                    <img
+                        className="full-width insights gif-border"
+                        src={ insightsFinal }
+                        alt="insights"
+                    />
+                </div>
+            </div>
+        );
+    }
+    render() {
+        return (
             <div>
-              <div className="dot">
-                <span>1</span>
-              </div>
-              <div className="annotationText">
-                <p className="boxed-text primary-dark-text">
-                  <b>STUDENTS LIST</b>
-                </p>
-                <p className="boxed-text primary-dark-text">
-                  Students listed by class are changeable here. (One student is
-                  selected at any given time.)
-                </p>
-              </div>
+                { this.renderIntroduction() }
+                { this.renderResearch() }
+                { this.renderStrategy() }
+                { this.renderStructure() }
+                { this.renderSketching() }
+                { this.renderFeedbackAndMore() }
+                { this.renderWireframes() }
+                { this.renderFinalVersion() }
             </div>
-            <div>
-              <div className="dot">
-                <span>2</span>
-              </div>
-              <div className="annotationText">
-                <p className="boxed-text primary-dark-text">
-                  <b>SKILLSET VALUES</b>
-                </p>
-                <p className="boxed-text primary-dark-text">
-                  A list of the top 3 skillset weaknesses and strengths of the
-                  student. (One skillset is selected at any given time.)
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="dot">
-                <span>3</span>
-              </div>
-              <div className="annotationText">
-                <p className="boxed-text primary-dark-text">
-                  <b>SKILLSET EXAMPLES</b>
-                </p>
-                <p className="boxed-text primary-dark-text">
-                  Writing examples of the selected skillset.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="dot">
-                <span>4</span>
-              </div>
-              <div className="annotationText">
-                <p className="boxed-text primary-dark-text">
-                  <b>PRACTICE EXERCISES</b>
-                </p>
-                <p className="boxed-text primary-dark-text">
-                  Suggested exercises to assign for the skillset currently
-                  selected.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="bigger-container">
-            <img
-              className="full-width"
-              src={lofisAnnotated}
-              alt="lofi-annotated"
-            />
-          </div>
-        </div>
-      </div>
-    );
-  }
-  renderFeedbackAndMore() {
-    return (
-      <div className="modal-section contains-colored-background">
-        <div className="feedback-box">
-          <h3>FEEDBACK</h3>
-          <p>
-            I did user testing in the office (with non product employees) to get
-            some quick thoughts on the layouts.
-          </p>
-          <p>
-            The second version was preferred for browsing exercises since it was
-            more direct and less clunky. All of the filters/controls were placed
-            above the exercises and could be done in one step.
-          </p>
-        </div>
-        {this.renderAnnotations()}
-      </div>
-    );
-  }
-  renderWireframes() {
-    return (
-      <div className="modal-section wireframes grey contains-colored-background">
-        <div className="regular">
-          <h3>WIREFRAMES</h3>
-          <span className="subtitle">
-            <b>TEACHER EXERCISES</b>
-          </span>
-          <div className="wireframe">
-            <img
-              className="full-width"
-              src={teacherExercisesWireframe}
-              alt="teacher-exercises-wireframe"
-            />
-          </div>
-        </div>
-        <div className="no-top">
-          <span className="subtitle exercises">
-            <b>STUDENT EXERCISES</b>
-          </span>
-          <p>
-            The student experience is quite simple as the only thing they can do
-            is select an exercise to work on.
-          </p>
-          <div className="wireframe">
-            <img
-              className="full-width"
-              src={studentExercisesWireframe}
-              alt="student-exercises-wireframe"
-            />
-          </div>
-        </div>
-        <div className="no-top">
-          <span>
-            <b>ASSIGNMENTS</b>
-          </span>
-          <p>
-            The teacher dashboard has a progress table (bottom right) that shows
-            student progression on their assignment.
-          </p>
-          <div className="wireframe">
-            <img
-              className="full-width"
-              src={teacherHomePageWireframe}
-              alt="teacher-exercises-wireframe"
-            />
-          </div>
-        </div>
-        <div className="bottom-box-content">
-          <h3>FEEDBACK</h3>
-          <div className="bottom-div">
-            <div className="bottom-content">
-              <b>FILTERING</b>
-              <p>
-                Some teachers had trouble finding the exercises they wanted. We
-                came up with several ideas of potential filters:
-              </p>
-              <p>
-                Filter exercises by learning type (visual, audible, reading,
-                etc) Filter exercises by prior reading vs. text provided in
-                exercise Filter exercises by time estimate Filter exercises by
-                traditional (mostly writing) vs. reward (more creative) Filter
-                exercises by difficulty level
-              </p>
-            </div>
-            <div className="bottom-content">
-              <b>CONSTRAINTS</b>
-              <p>
-                Teachers often have 20 or 30 students in their assignment
-                progress table, and maybe only assign 2 exercises. This would
-                create a pretty big discrepancy between the height of the
-                assignments box and the height of the progress table-making it a
-                bit of an awkward experience.
-              </p>
-            </div>
-          </div>
-          <div className="bottom-div">
-            <div className="bottom-content">
-              <b>WORDING</b>
-              <p>
-                In the assignment creation, the word "delete" was confusing as
-                it seemed to imply that doing so would delete the exercises
-                (instead of merely deleting the assignment).
-              </p>
-            </div>
-            <div className="bottom-content">
-              <b>DIFFERENTIATE</b>
-              <p>
-                To start, we only supported the ability to assign exercises to
-                all of a teacher's students at once. There was already a lot of
-                interest in being able to assign groups of students different
-                exercises.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  renderFinalVersion() {
-    return (
-      <div className="modal-section final-section">
-        <div className="container">
-          <h3>FINAL VERSION</h3>
-          <b>TEACHER EXERCISES</b>
-          <p>
-            After hearing teachers talk about their use of Pinterest again, I
-            decided that we should use their knowledge of that interface to our
-            advantage. By mimicking aspects of that interface we could make
-            their experience on Whooo's Reading that much smoother.
-          </p>
-          <p>
-            The loading animation, buttons and thumbnail image on each exercise
-            were all designed to orient users to their experience on Pinterest.
-            I also decided to simplify it and remove the "inactive" exercises
-            section. Meaning, that outside of assignments, teachers would not be
-            able to control the exercises students do (on their own).
-          </p>
-          <img
-            className="full-width gif-border"
-            src={finalVersionWRLite}
-            alt="final-version"
-          />
-        </div>
-        <div className="container">
-          <b>ASSIGNMENTS</b>
-          <p>
-            I neatly stacked the assignment details on top of the assignments
-            progress table. I also decided to simplify it and remove the
-            frequency component for the first iteration.
-          </p>
-          <img
-            className="full-width"
-            src={assignmentsFinal}
-            alt="assignments"
-          />
-        </div>
-        <div className="container">
-          <b>INSIGHTS</b>
-          <img
-            className="full-width insights gif-border"
-            src={insightsFinal}
-            alt="insights"
-          />
-        </div>
-      </div>
-    );
-  }
-  render() {
-    return (
-      <div>
-        {this.renderIntroduction()}
-        {this.renderResearch()}
-        {this.renderStrategy()}
-        {this.renderStructure()}
-        {this.renderSketching()}
-        {this.renderFeedbackAndMore()}
-        {this.renderWireframes()}
-        {this.renderFinalVersion()}
-      </div>
-    );
-  }
+        );
+    }
 }
 
 export default withLoadState(WorkOne);
