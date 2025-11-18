@@ -98,10 +98,6 @@ class About extends Component {
                     design of the product. I became focused and passionate about
                     design and the rest is history.
                 </p>
-                <p className="p-over">
-                    I started working remotely 7 years ago and have traveled the
-                    world.
-                </p>
             </div>
         )
         const skills = (
@@ -138,12 +134,7 @@ class About extends Component {
                 <p className="p-over">
                     I believe that learning and self growth are precious tools
                     we can use to improve ourselves and bring our dreams to
-                    life. Whether{" "}
-                    <a className="p-link" href="http://instagram.com/mayerseidman"
-                      target="_blank" rel="noreferrer">
-                      traveling the world
-                    </a>
-                    , learning a new language, or digging into a new design
+                    life. Whether travelling, learning a new language, or digging into a new design
                     system, I try to grow and learn continually. In my free time
                     you can find me reading, creating a side project, studying languages, or
                     mixing music.
@@ -172,13 +163,13 @@ class About extends Component {
             <div className="about-details">
                 <p className="emp-text">creations</p>
                 <p className="p-over links">
-                    <a className="mixcloud" href="https://www.mixcloud.com/mayer-seidman/"
+                    <a className="mixcloud" href="https://www.mixcloud.com/gucci_jaggers/"
                         target="_blank" rel="noreferrer">
-                        Music Mixes (Mixcloud)
+                        Music (Mixcloud)
                     </a>
                     <a className="regular-link" href="https://www.pinterest.com/mayerseidman/projects/"
                         target="_blank" rel="noreferrer">
-                        Fashion Creations (Pinterest)
+                        Fashion (Pinterest)
                     </a>
                     <a className="xl" href="https://whooosreading.org"
                         target="_blank" rel="noreferrer">
