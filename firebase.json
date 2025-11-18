@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "portfolio-mzs-87",
     "public": "build",
     "ignore": [
       "firebase.json",
