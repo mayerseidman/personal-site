@@ -163,10 +163,6 @@ class About extends Component {
             <div className="about-details">
                 <p className="emp-text">creations</p>
                 <p className="p-over links">
-                    <a className="mixcloud" href="https://www.mixcloud.com/gucci_jaggers/"
-                        target="_blank" rel="noreferrer">
-                        Music (Mixcloud)
-                    </a>
                     <a className="regular-link" href="https://www.pinterest.com/mayerseidman/projects/"
                         target="_blank" rel="noreferrer">
                         Fashion (Pinterest)
